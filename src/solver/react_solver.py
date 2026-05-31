@@ -172,7 +172,8 @@ class ReActChemSolver:
                     {"role": "user", "content": user_msg},
                 ],
                 temperature=0.0,
-                max_tokens=512,
+                max_tokens=16384,
+                extra_body={"thinking": {"type": "disabled"}},
             )
             raw = (response.choices[0].message.content or "").strip()
             if raw.startswith("```"):
