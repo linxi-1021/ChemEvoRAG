@@ -77,6 +77,7 @@ class ReActChemSolver:
         top_k: int = 8,
     ) -> GroundedAnswer:
         """ReAct loop: iterative retrieval with evidence assessment."""
+        import sys
         accumulated_evidence: list = []
         accumulated_provenance = []
         retrieval_path: list[str] = []
@@ -85,6 +86,8 @@ class ReActChemSolver:
 
         for round_num in range(self.max_rounds):
             current_query = round_queries[-1]
+            print(f"\n{'='*50}", file=sys.stderr)
+            print(f"[ReAct] Round {round_num + 1}: \"{current_query}\"", file=sys.stderr)
 
             # Retrieve
             package = self.router.retrieve(
@@ -92,27 +95,37 @@ class ReActChemSolver:
             )
 
             # Accumulate new evidence (deduplicate)
+            new_count = 0
             for c in package.candidate_evidence:
                 if c.evidence_id not in seen_evidence_ids:
                     accumulated_evidence.append(c)
                     seen_evidence_ids.add(c.evidence_id)
+                    new_count += 1
             accumulated_provenance.extend(package.provenance)
             retrieval_path.extend(package.retrieval_path)
+            print(f"[ReAct] Retrieved {len(package.candidate_evidence)} candidates, {new_count} new (total: {len(accumulated_evidence)})", file=sys.stderr)
 
             # Assess evidence sufficiency
             if round_num < self.max_rounds - 1:  # Don't assess on last round
                 assessment = self._assess_evidence(query, accumulated_evidence, round_num)
+                sufficient = assessment.get("sufficient", False)
+                reason = assessment.get("reason", "")
+                refined = assessment.get("refined_query")
+                print(f"[ReAct] Assessment: sufficient={sufficient}, reason={reason[:100]}", file=sys.stderr)
 
-                if assessment.get("sufficient"):
+                if sufficient:
+                    print(f"[ReAct] Evidence sufficient, stopping.", file=sys.stderr)
                     break
 
-                refined = assessment.get("refined_query")
                 if refined and refined not in round_queries:
+                    print(f"[ReAct] Refined query: \"{refined}\"", file=sys.stderr)
                     round_queries.append(refined)
                 else:
-                    break  # No new query to try
+                    print(f"[ReAct] No refined query, stopping.", file=sys.stderr)
+                    break
 
         # Build final answer from accumulated evidence
+        print(f"[ReAct] Finished: {len(round_queries)} rounds, {len(accumulated_evidence)} evidence items", file=sys.stderr)
         merged_package = EvidencePackage(
             query=query,
             intent=package.intent,
