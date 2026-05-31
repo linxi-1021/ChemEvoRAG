@@ -1,0 +1,69 @@
+name: chemevorag
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # ── core runtime ──────────────────────────────────────────
+  - python=3.10
+  - pydantic=2.13.4
+  - pyyaml=6.0.3
+  - pytest=9.0.3
+  - pip=26.1.1
+
+  # ── RDKit (molecular normalization) ───────────────────────
+  - rdkit=2024.3.6
+
+  # ── Poppler (PDF text extraction, required by pdftotext) ──
+  - poppler=22.12.0
+  - poppler-cpp=22.12.0
+  - poppler-data=0.4.12
+
+  # ── pip packages ──────────────────────────────────────────
+  - pip:
+      # database / search
+      - neo4j==6.2.0
+      - psycopg2-binary==2.9.12
+      - qdrant-client
+      # LLM / embedding
+      - openai==2.37.0
+      - sentence-transformers==2.7.0
+      # RDKit Python wrapper (separate from conda rdkit)
+      - rdkit-pypi==2022.9.5
+
+      # ── OpenChemIE stack (versions pinned for compatibility) ──
+      # torch <2.0 required by OpenChemIE
+      - torch==1.13.1
+      - torchvision==0.14.1
+      - torchtext==0.5.0
+      # numpy <2 required by opencv-python + MolScribe (NumPy 1.x ABI)
+      - numpy==1.26.4
+      # transformers pinned for chemrxnextractor (needs AdamW)
+      - transformers==4.36.2
+      - tokenizers==0.15.2
+      - huggingface-hub==0.36.2
+      # OpenChemIE core dependencies
+      - opencv-python==4.5.5.64
+      - opencv-python-headless==4.5.4.60
+      - Pillow==9.5.0
+      - layoutparser==0.3.4
+      - pdf2image==1.17.0
+      - PyPDF2==3.0.1
+      - pdftotext==3.0.0
+      - ipython==8.39.0
+      # OpenChemIE sub-packages (installed via local external/ paths)
+      # MolScribe, RxnScribe, ChemIENER, chemrxnextractor, OpenChemIE
+      # are installed with: pip install -e external/<path>
+      - MolScribe==1.1.1
+      - RxnScribe==1.0
+      - ChemIENER==0.1.0
+      - chemrxnextractor==1.1.0
+      - albumentations==1.1.0
+      - easyocr==1.7.2
+      - pytorch-lightning==2.2.5
+      - OpenNMT-py==2.2.0
+      - scikit-image==0.24.0
+      - timm==0.4.12
+      - effdet==0.3.0
+      - SmilesPE==0.0.3
+      - seqeval==1.2.2
+      - gensim==4.4.0

@@ -1,0 +1,2488 @@
+[
+  {
+    "block_id": "block_18_0000",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "paper Aerobic Oxidation of Propargylic Alcohols to  \\mathbf { \\delta } \\mathbf { q } , \\mathbf { \\delta } \\mathbf { \\beta } \\mathbf { \\beta } \\mathbf { - } \\mathbf { U } nsaturated Alkynals or Alkynones Catalyzed by  \\mathbf { F e } ( \\mathbf { N O } _ { 3 } ) _ { 3 } { \\cdot } \\mathbf { 9 } \\mathbf { H } _ { 2 } \\mathbf { O } , TEMPO and Sodium Chloride in Toluene",
+    "page": 1,
+    "bbox": [
+      78.0,
+      57.0,
+      885.0,
+      117.0
+    ],
+    "section": "paper Aerobic Oxidation of Propargylic Alcohols to  \\mathbf { \\delta } \\mathbf { q } , \\mathbf { \\delta } \\mathbf { \\bet",
+    "prev_block_id": null,
+    "next_block_id": "block_18_0001",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0001",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "Aerobic Oxidation of Propargylic Alcohols Jinxian Liu,a Xi Xie,a Shengming Ma*a,b",
+    "page": 1,
+    "bbox": [
+      78.0,
+      125.0,
+      369.0,
+      140.0
+    ],
+    "section": "paper Aerobic Oxidation of Propargylic Alcohols to  \\mathbf { \\delta } \\mathbf { q } , \\mathbf { \\delta } \\mathbf { \\bet",
+    "prev_block_id": "block_18_0000",
+    "next_block_id": "block_18_0002",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0002",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "Received: 10.02.2012; Accepted after revision: 04.03.2012",
+    "page": 1,
+    "bbox": [
+      78.0,
+      210.0,
+      440.0,
+      223.0
+    ],
+    "section": "paper Aerobic Oxidation of Propargylic Alcohols to  \\mathbf { \\delta } \\mathbf { q } , \\mathbf { \\delta } \\mathbf { \\bet",
+    "prev_block_id": "block_18_0001",
+    "next_block_id": "block_18_0003",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0003",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "Abstract: A practical aerobic oxidation of propargylic alcohols using  \\mathrm { F e ( N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } \\mathrm { O } , TEMPO and sodium chloride in toluene at room temperature was applied to various type of propargylic alcohols affording α,β-unsaturated alkynals or alkynones in good to excellent yields. This protocol could be applied in academic laboratories as well as in industrial-scale production.",
+    "page": 1,
+    "bbox": [
+      78.0,
+      280.0,
+      487.0,
+      355.0
+    ],
+    "section": "paper Aerobic Oxidation of Propargylic Alcohols to  \\mathbf { \\delta } \\mathbf { q } , \\mathbf { \\delta } \\mathbf { \\bet",
+    "prev_block_id": "block_18_0002",
+    "next_block_id": "block_18_0004",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0004",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "Key words: aerobic oxidation, propargylic alcohols, catalysis, iron nitrate, TEMPO",
+    "page": 1,
+    "bbox": [
+      78.0,
+      358.0,
+      487.0,
+      383.0
+    ],
+    "section": "paper Aerobic Oxidation of Propargylic Alcohols to  \\mathbf { \\delta } \\mathbf { q } , \\mathbf { \\delta } \\mathbf { \\bet",
+    "prev_block_id": "block_18_0003",
+    "next_block_id": "block_18_0005",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0005",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "As important intermediates in organic synthesis, α,β-unsaturated alkynals and alkynones are very useful precursors for the preparation of various aromatic compounds,1 heterocyclic compounds,2 α,β-enones,3 β-keto-1,3-dithianes,4 α,β,γ,δ-dienones,5 chiral propargylic alcohols6 as well as other compounds.7 Many approaches for the synthesis of  \\alpha , \\beta \\cdot -unsaturated alkynals or alkynones such as acylation of alkynyl organometallic reagents8 or alkynylboronates,9 cross-coupling between terminal alkynes and acyl chlorides,10 and carbonylative Sonogashira coupling reaction have been reported.11 The most convenient way to prepare such compounds should be the oxidation of its corresponding propargylic alcohols. Various recipes for such purpose using stoichiometric oxidants such as  \\mathrm { M n O } _ { 2 } \\mathrm { , } ^ { \\cdot _ { 1 2 } } \\dot { \\mathrm { P C C } } / \\mathrm { P D C } , ^ { \\cdot _ { 1 3 } } 3 Swern oxidation,14 and hypervalent iodine compounds15 have so far been reported in literature. However, the reaction would yield almost the same amount of oxidant-derived wastes, thus, causing heavy burden to the environment. Therefore, development of a new catalytic method using a clean oxidant under mild reaction conditions suitable for industrial production is highly desirable.",
+    "page": 1,
+    "bbox": [
+      77.0,
+      413.0,
+      489.0,
+      720.0
+    ],
+    "section": "paper Aerobic Oxidation of Propargylic Alcohols to  \\mathbf { \\delta } \\mathbf { q } , \\mathbf { \\delta } \\mathbf { \\bet",
+    "prev_block_id": "block_18_0004",
+    "next_block_id": "block_18_0006",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0006",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "In the last decade, many aerobic oxidation examples were developed using copper, vanadium, ruthenium, or cobalt complex as catalysts for primary and secondly propargylic alcohols. Ishii and co-workers16 reported the first example of aerobic oxidation of secondly propargylic alcohol using Cu(acac)2-NHPI (N-hydroxyphthalimide) in acetonitrile at  7 0 ^ { \\circ } \\mathrm { C } , but the conversion was low. Uemura17 and Hanson18 reported two different aerobic catalytic oxidation using vanadium complex as catalyst at 80–100 °C for primary and secondly propargylic alcohols; Sain19 developed a cobalt phthalocyanine complex catalyzed aerobic oxidation in xylene under reflux while Pedro20 reported another cobalt o-phenylenebis(N-methyloxamidate) complex catalyzed aerobic oxidation in acetonitrile at room temperature for secondly propargylic alcohols independently; and Katsuki and co-workers21 reported a kinetic resolution of sec-alcohols including sec-propargylic alcohol using a Ru complex as catalyst through catalytic aerobic oxidation. However, heating or precious metal catalyst was required in these protocols.",
+    "page": 1,
+    "bbox": [
+      77.0,
+      725.0,
+      489.0,
+      824.0
+    ],
+    "section": "paper Aerobic Oxidation of Propargylic Alcohols to  \\mathbf { \\delta } \\mathbf { q } , \\mathbf { \\delta } \\mathbf { \\bet",
+    "prev_block_id": "block_18_0005",
+    "next_block_id": "block_18_0007",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0007",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "Recently, our group22 has reported a general and practical approach to aerobic oxidation of alcohols bearing a wide range of substrates including propargylic alcohols at room temperature using  \\mathrm { F e ( N O _ { 3 } ) _ { 3 } { \\cdot } \\bar { 9 } H _ { 2 } O } , TEMPO and sodium chloride as catalyst in 1,2-dichloroethane, yielding aldehydes or ketones in good to excellent yields. However, such a chlorinated solvent is disfavored for large scale industrial application. In this paper, we wish to report an industrially practical protocol for such a purpose by using toluene as the solvent.",
+    "page": 1,
+    "bbox": [
+      504.0,
+      458.0,
+      917.0,
+      599.0
+    ],
+    "section": "paper Aerobic Oxidation of Propargylic Alcohols to  \\mathbf { \\delta } \\mathbf { q } , \\mathbf { \\delta } \\mathbf { \\bet",
+    "prev_block_id": "block_18_0006",
+    "next_block_id": "block_18_0008",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0008",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "The solvent effect of the aerobic oxidation reaction at room temperature was first examined in order to select an industrial-friendly solvent with 1-phenyl-3-(trimethylsilyl)prop-2-yn-1-ol (1a) as the substrate. The results of the oxidation of this substrate in the presence of 5 mol%  \\mathrm { F e ( N O _ { 3 } ) } _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } \\mathrm { O } , 3 mol% TEMPO, and 5 mol% NaCl under the atmospheric pressure of oxygen in different solvents are summarized in Table 1. We were delighted to find that when using toluene, p-xylene, acetonitrile, and 1,2-dichloroethane (DCE) as the solvent, the substrate could be converted into its corresponding ynone 2a within two hours in almost quantitative yield (Table 1, entries 1, 2, 4, and 5). As a cheap solvent, toluene is widely used for industrial production.23 Therefore, 5 mol%  \\mathrm { F e ( N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } \\mathrm { O } , 3 mol% TEMPO, and 5 mol% NaCl in toluene were chosen as the standard reaction conditions.",
+    "page": 1,
+    "bbox": [
+      504.0,
+      602.0,
+      917.0,
+      826.0
+    ],
+    "section": "paper Aerobic Oxidation of Propargylic Alcohols to  \\mathbf { \\delta } \\mathbf { q } , \\mathbf { \\delta } \\mathbf { \\bet",
+    "prev_block_id": "block_18_0007",
+    "next_block_id": "block_18_0009",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0009",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "The scope of substrates for the aerobic oxidation of propargylic alcohols under the optimized conditions was examined. First, different substituents in the aromatic ring a Yield determined by 1 H NMR analysis.",
+    "page": 1,
+    "bbox": [
+      504.0,
+      830.0,
+      917.0,
+      874.0
+    ],
+    "section": "paper Aerobic Oxidation of Propargylic Alcohols to  \\mathbf { \\delta } \\mathbf { q } , \\mathbf { \\delta } \\mathbf { \\bet",
+    "prev_block_id": "block_18_0008",
+    "next_block_id": "block_18_0010",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0010",
+    "doc_id": "18",
+    "block_type": "table",
+    "text": "TMS $\\overset{\\text{1a}}{\\underset{\\text{(1 mmol)}}{\\text{=}}}$ | Fe(NO3)3·9H2O (5 mol%)TEMPO (3 mol%)NaCl (5 mol%)solvent (1.0 M), O2, r.t., 2 h | TMS $\\overset{\\text{2a}}{\\underset{\\text{(Ph)}}{\\text{=}}}$; Entry | Solvent | Yield of 2a (%)a; 1 | toluene | 99; 2 | p-xylene | 99; 3 | acetone | 11(84)b; 4 | MeCN | 99; 5 | DCE | 98 | Table 1 Room-Temperature | \\mathrm { F e ( N O _ { 3 } ) _ { 3 } } { \\cdot } 9 \\mathrm { H } _ { 2 } \\mathrm { O } { - } \\mathrm { C } | atalyted Aerobic Oxidation of Propargylic Alcohol 1a to Ketone 2a in Different Solvents",
+    "page": 2,
+    "bbox": [
+      78.0,
+      91.0,
+      487.0,
+      288.0
+    ],
+    "section": "paper Aerobic Oxidation of Propargylic Alcohols to  \\mathbf { \\delta } \\mathbf { q } , \\mathbf { \\delta } \\mathbf { \\bet",
+    "prev_block_id": "block_18_0009",
+    "next_block_id": "block_18_0011",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "table"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0011",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "b The yield was 11% and the recovery of alcohol was 84%.",
+    "page": 2,
+    "bbox": [
+      78.0,
+      302.0,
+      428.0,
+      315.0
+    ],
+    "section": "paper Aerobic Oxidation of Propargylic Alcohols to  \\mathbf { \\delta } \\mathbf { q } , \\mathbf { \\delta } \\mathbf { \\bet",
+    "prev_block_id": "block_18_0010",
+    "next_block_id": "block_18_0012",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0012",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "of 4-aryl-3-propargylic alcohols were examined (Table 2). A wide range of functional groups such as F, Cl, Br, I, CO2Et, CN,  \\mathrm { N O } _ { 2 } , NHTs, alkyl, MeO, etc. were smoothly tolerated. When R = m-F, o-F, p-Cl, p-CO2Et, and  p { \\mathrm { - N O } } _ { 2 } , , the substrates were efficiently oxidized to give the corresponding ketones in high yields with 5 mol%  \\hat { \\mathrm { F e } } ( \\mathrm { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } \\mathrm { O } , 3 mol% TEMPO, and 5 mol% NaCl (Table 2, entries 5, 6, 7, 12, and 15); when R = H, p-F, p-Br,  p \\mathrm { - } \\mathrm { I } , p \\mathrm { - } \\mathrm { C N } , p \\mathrm { - } \\mathrm { N } \\mathrm { H T s } , the substrates were oxidized to give the corresponding ketones in full conversion with 5 mol%  \\mathrm { F e ( N O } _ { 3 } ) _ { 3 } { \\cdot } \\mathrm { \\bar { 9 } H _ { 2 } O } , 5 mol% TEMPO, and 10 mol% NaCl (Table 2, entries 2, 4, 9, 11, 14, and 17). Compared to the electron-withdrawing group, when an electron-donating group was present in the aromatic ring, the reaction was obviously slower. When  { \\sf R } = \\mathrm { \\Gamma } _ { O - { \\bf M } e O } , m-MeO, and  p \\mathrm { - } MeO, the catalyst loading should be increased to 10 mol%  \\mathrm { F e } ( \\mathrm { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } \\mathrm { O } . , 10 mol% TEMPO, and 10 mol% NaCl for full conversion of the substrate (Table 2, entries 20, 22, and 23).",
+    "page": 2,
+    "bbox": [
+      77.0,
+      340.0,
+      489.0,
+      606.0
+    ],
+    "section": "paper Aerobic Oxidation of Propargylic Alcohols to  \\mathbf { \\delta } \\mathbf { q } , \\mathbf { \\delta } \\mathbf { \\bet",
+    "prev_block_id": "block_18_0011",
+    "next_block_id": "block_18_0013",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0013",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "The optimized conditions were next applied to 1-substituted or unsubstituted undec-2-yn-1-ols (Table 3). When  { \\mathrm { R } } = { \\mathrm { a r y l } } , the reaction could reach completion in 7.1 hours (Table 3, entries 1–5). A slight difference in reaction time was noted when changing the position of the substituent in the aryl ring (Table 3, entries 3–5). When  { \\mathrm { R } } = { \\mathrm { H } } _ { ; } , the reaction could reach completion in five hours (Table 3, entry 7); however, when R = alkyl, the reaction time increased to 10.3 hours (Table 3, entry 6). In all the cases, the yields were excellent.",
+    "page": 2,
+    "bbox": [
+      77.0,
+      610.0,
+      489.0,
+      751.0
+    ],
+    "section": "paper Aerobic Oxidation of Propargylic Alcohols to  \\mathbf { \\delta } \\mathbf { q } , \\mathbf { \\delta } \\mathbf { \\bet",
+    "prev_block_id": "block_18_0012",
+    "next_block_id": "block_18_0014",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0014",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "Further study indicates that the scope is very broad. When  \\mathbb { R } ^ { 1 } = \\operatorname { P h } and  \\mathrm { R } ^ { 2 } = \\mathrm { P h } or H, the reaction could reach completion within two hours (Table 4, entries 1 and 2); with  \\mathbf { \\hat { R } } ^ { 1 } = \\mathbf { a r y l } and  \\mathrm { R } ^ { 2 } = \\mathrm { a l k y l } , the reaction was much slower, although the yield was still excellent (Table 4, entry 3). The optimized reaction conditions were also applied to terminal propargylic alcohols (Table 4, entries 4 and 5). The TMS-substituted propargylic alcohols also worked smoothly (Table 4, entries 7 and 8).",
+    "page": 2,
+    "bbox": [
+      77.0,
+      755.0,
+      490.0,
+      882.0
+    ],
+    "section": "paper Aerobic Oxidation of Propargylic Alcohols to  \\mathbf { \\delta } \\mathbf { q } , \\mathbf { \\delta } \\mathbf { \\bet",
+    "prev_block_id": "block_18_0013",
+    "next_block_id": "block_18_0015",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0015",
+    "doc_id": "18",
+    "block_type": "table",
+    "text": "Entry | Substrate | R | Method | Time (h) | Isolated yield of 2 (%); 1 | 1b | H | A | 24 | $77(2b)^b$; 2 | 1b | H | B | 2 | 91 (2b); 3 | 1c | p-F | A | 24 | $58(2c)^b$; 4 | 1c | p-F | B | 2 | 90 (2c); 5 | 1d | m-F | A | 12 | 83 (2d); 6 | 1e | o-F | A | 4.5 | 94 (2e); 7 | 1f | p-Cl | A | 9.5 | 86 (2f); 8 | 1g | p-Br | A | 24 | $75(2g)^b$; 9 | 1g | p-Br | B | 3.3 | 93 (2g); 10 | 1h | p-I | A | 24 | $59(2h)^b$; 11 | 1h | p-I | B | 2 | 82 (2h); 12 | 1i | p- $CO_2Et$ | A | 24 | 79 (2i); 13 | 1j | p-CN | A | 24 | $65(11)(2j)^c$; 14 | 1j | p-CN | B | 2.7 | 87 (2j); 15 | 1k | p- $NO_2$ | A | 12.4 | 92 (2k); 16 | 1l | p-NHTs | A | 46 | $61(2l)^d$; 17 | 1l | p-NHTs | B | 2 | 84 (2l); 18 | 1m | p-Me | A | 24 | $36(41)(2m)^c$; 19 | 1m | p-Me | B | 2.1 | 91 (2m); 20 | 1n | p-MeO | C | 4.2 | 70 (2n); 21 | 1o | m-MeO | A | 24 | $55(27)(2o)^c$; 22 | 1o | m-MeO | C | 1.8 | 91 (2o); 23 | 1p | o-MeO | C | 1.8 | 87 (2p) | Table 2 Room-Temperature Aerobic Oxidation of 4-Aryl-3-propargylic Alcohols to the Corresponding Ketonesa",
+    "page": 2,
+    "bbox": [
+      505.0,
+      91.0,
+      917.0,
+      690.0
+    ],
+    "section": "paper Aerobic Oxidation of Propargylic Alcohols to  \\mathbf { \\delta } \\mathbf { q } , \\mathbf { \\delta } \\mathbf { \\bet",
+    "prev_block_id": "block_18_0014",
+    "next_block_id": "block_18_0016",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "table"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0016",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "a Method A: substrate (10 mmol),  \\mathrm { F e } ( \\mathrm { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } \\mathrm { O } ( 5  mol%), TEMPO (3 mol%), and NaCl (5 mol%) in toluene (10 mL); Method B: substrate (10 mmol),  \\mathrm { F e } ( \\mathrm { N O } _ { 3 } ) _ { 3 } 39H2O (5 mol%), TEMPO (5 mol%), and NaCl (10 mol%) in toluene (10 mL); Method C: substrate (10 mmol), Fe(NO3)39H2O (10 mol%), TEMPO (10 mol%), and NaCl (10 mol%) in toluene (10 mL).",
+    "page": 2,
+    "bbox": [
+      505.0,
+      693.0,
+      915.0,
+      764.0
+    ],
+    "section": "paper Aerobic Oxidation of Propargylic Alcohols to  \\mathbf { \\delta } \\mathbf { q } , \\mathbf { \\delta } \\mathbf { \\bet",
+    "prev_block_id": "block_18_0015",
+    "next_block_id": "block_18_0017",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0017",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "b Incomplete conversion as monitored by TLC after 24 h.",
+    "page": 2,
+    "bbox": [
+      507.0,
+      764.0,
+      847.0,
+      777.0
+    ],
+    "section": "paper Aerobic Oxidation of Propargylic Alcohols to  \\mathbf { \\delta } \\mathbf { q } , \\mathbf { \\delta } \\mathbf { \\bet",
+    "prev_block_id": "block_18_0016",
+    "next_block_id": "block_18_0018",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0018",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "c Isolated yield with the recovery of starting alcohol is shown in the parentheses.",
+    "page": 2,
+    "bbox": [
+      507.0,
+      777.0,
+      909.0,
+      800.0
+    ],
+    "section": "paper Aerobic Oxidation of Propargylic Alcohols to  \\mathbf { \\delta } \\mathbf { q } , \\mathbf { \\delta } \\mathbf { \\bet",
+    "prev_block_id": "block_18_0017",
+    "next_block_id": "block_18_0019",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0019",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "d The yield was determined by 1 H NMR analysis and 24% of starting material (propargylic alcohol) was recovered.",
+    "page": 2,
+    "bbox": [
+      507.0,
+      800.0,
+      914.0,
+      825.0
+    ],
+    "section": "paper Aerobic Oxidation of Propargylic Alcohols to  \\mathbf { \\delta } \\mathbf { q } , \\mathbf { \\delta } \\mathbf { \\bet",
+    "prev_block_id": "block_18_0018",
+    "next_block_id": "block_18_0020",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0020",
+    "doc_id": "18",
+    "block_type": "table",
+    "text": "$n-C_{8}H_{17} \\xrightarrow{1q-w (10\\ \\text{mmol})} \\begin{array}{c}\\text{OH} \\\\|\\\\\\text{R}\\end{array} \\xrightarrow[\\text{toluene (1.0 M), O}_2, \\text{ r.t.}]{\\text{Fe(NO}_3)_3 \\cdot 9\\text{H}_2\\text{O (5 mol\\%)}\\text{TEMPO (3 mol\\%)}} \\begin{array}{c}n-C_{8}H_{17} \\xrightarrow{} \\text{O}\\\\|\\\\\\text{R}\\end{array}$; Entry | Substrate | R | Time(h) | Isolated yield of 2(%); 1 | 1q | $p\\text{-ClC}_6\\text{H}_4$ | 2.5 | 98 (2q); 2 | 1r | $p\\text{-CF}_3\\text{C}_6\\text{H}_4$ | 2.5 | 98 (2r); 3 | 1s | $p\\text{-MeOC}_6\\text{H}_4$ | 2.5 | 92 (2s); 4 | 1t | $m\\text{-MeOC}_6\\text{H}_4$ | 3.3 | 99 (2t); 5 | 1u | $o\\text{-MeOC}_6\\text{H}_4$ | 7.1 | 96 (2u); 6 | 1v | $n\\text{-C}_5\\text{H}_{11}$ | 10.3 | 98 (2v); 7 | 1w | H | 5 | 97 (2w) | Table 3 Room-Temperature Aerobic Oxidation of 1-Substituted/ Unsubstituted Undec-2-yn-1-ols to the Corresponding Aldehydes or Ketones | a Standard reaction conditions: substrate (10 mmol), | \\mathrm { F e } ( \\mathrm { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } \\mathrm { O } | (5 mol%), TEMPO (3 mol%), and NaCl (5 mol%) in toluene (10 mL).",
+    "page": 3,
+    "bbox": [
+      80.0,
+      102.0,
+      489.0,
+      356.0
+    ],
+    "section": "paper Aerobic Oxidation of Propargylic Alcohols to  \\mathbf { \\delta } \\mathbf { q } , \\mathbf { \\delta } \\mathbf { \\bet",
+    "prev_block_id": "block_18_0019",
+    "next_block_id": "block_18_0021",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "table"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0021",
+    "doc_id": "18",
+    "block_type": "table",
+    "text": "Entry | Substrate | $R^1$ | $R^2$ | Time (h) | Isolated yield of 2 (%); 1 | 1x | Ph | H | 2 | 94 (2x); 2 | 1y | Ph | Ph | 1.8 | 99 (2y); 3 | 1z | Ph | $n-C_4H_9$ | 16.5 | 93 (2z); 4 | 1α | H | Ph | 6.8 | 92 (2α); 5 | 1β | H | $n-C_9H_{19}$ | 13.2 | 95 (2β); 6 | 1γ | $n-C_4H_9$ | $p-CF_3C_6H_4$ | 4 | 87 (2γ); 7 | 1τ | TMS | $n-C_5H_{11}$ | 11.5 | 97 (2τ); 8 | 1a | TMS | Ph | 3.5 | 98 (2a) | Table 4 Room-Temperature Aerobic Oxidation of Differently Substituted Propargylic Alcohols to the Corresponding Aldehydes or Ketones | a Standard reaction conditions: of substrate (10 mmol), Fe(NO3)39H2O (5 mol%), TEMPO (3 mol%), and NaCl (5 mol%) in toluene (10 mL).",
+    "page": 3,
+    "bbox": [
+      77.0,
+      463.0,
+      489.0,
+      742.0
+    ],
+    "section": "paper Aerobic Oxidation of Propargylic Alcohols to  \\mathbf { \\delta } \\mathbf { q } , \\mathbf { \\delta } \\mathbf { \\bet",
+    "prev_block_id": "block_18_0020",
+    "next_block_id": "block_18_0022",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "table"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0022",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "A Large-Scale Reaction for Practical Use",
+    "page": 3,
+    "bbox": [
+      505.0,
+      58.0,
+      831.0,
+      73.0
+    ],
+    "section": "A Large-Scale Reaction for Practical Use",
+    "prev_block_id": "block_18_0021",
+    "next_block_id": "block_18_0023",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0023",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "To further show the practicality and efficiency of this catalytic system, a 1.0 mol reaction of 4-(trimethylsilyl)but- 3 - y \\mathrm { n - 2 - o l } was conducted by using 2 mol% each of  \\mathrm { F e ( N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } \\mathrm { O } _ { 3 } , TEMPO, and NaCl to give 4-(trimethylsilyl)but-3-yn-2-one (2ω) in 90% isolated yield in eight hours by simple distillation (Scheme 1).",
+    "page": 3,
+    "bbox": [
+      505.0,
+      86.0,
+      919.0,
+      172.0
+    ],
+    "section": "A Large-Scale Reaction for Practical Use",
+    "prev_block_id": "block_18_0022",
+    "next_block_id": "block_18_0024",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0024",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "In summary, we have developed a practical aerobic oxidation protocol for various types of propargylic alcohols using  \\mathrm { \\bar { F e ( N O _ { 3 } ) _ { 3 } { \\cdot } 9 H _ { 2 } O / T E M P O / N a C l } } in toluene at room temperature affording the α,β-unsaturated alkynal or alkynones in good to excellent yields. This eco-friendly oxidation system may be applied in academic laboratories as well as industrial scale production.",
+    "page": 3,
+    "bbox": [
+      505.0,
+      283.0,
+      917.0,
+      384.0
+    ],
+    "section": "A Large-Scale Reaction for Practical Use",
+    "prev_block_id": "block_18_0023",
+    "next_block_id": "block_18_0025",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0025",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "1 H and  ^ { 1 3 } \\mathrm { C } NMR spectra were recorded with an instrument operating at 300 MHz for 1 H NMR and 75 MHz for  ^ { 1 3 } \\mathrm { C } NMR in CDCl3. Chemical shifts (δ) are given in parts per million (ppm). Infrared spectra were recorded on an FTIR spectrometer. MS and HRMS data were collected in EI mode. Compounds 1b–p and 1x were synthesized by Sonogashira coupling24 and all the other starting materials were synthesized according to the literature.25 Other reagents were commercially available. Petroleum ether (PE) used refers to the fraction boiling in the range  6 0 { - } 9 0 \\ ^ { \\circ } \\mathrm { C } .",
+    "page": 3,
+    "bbox": [
+      505.0,
+      401.0,
+      917.0,
+      511.0
+    ],
+    "section": "A Large-Scale Reaction for Practical Use",
+    "prev_block_id": "block_18_0024",
+    "next_block_id": "block_18_0026",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0026",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "Oxidation of Propargylic Alcohols; General Procedure",
+    "page": 3,
+    "bbox": [
+      505.0,
+      517.0,
+      865.0,
+      529.0
+    ],
+    "section": "Oxidation of Propargylic Alcohols; General Procedure",
+    "prev_block_id": "block_18_0025",
+    "next_block_id": "block_18_0027",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0027",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "To a 50 mL three-necked flask were added Fe(NO3)39H2O (0.5 mmol), TEMPO (0.30 mmol), NaCl (0.50 mmol), and toluene (10 mL). The propargylic alcohol (10 mmol) was then added to the suspension and the resulting mixture was placed under the atmosphere of  \\mathrm { O } _ { 2 } from a balloon and stirred at r.t. until the reaction was complete as monitored by TLC (eluent: PE–EtOAc, 10:1). The resulting mixture was purified by column chromatography on silica gel [PE: 200 mL,  \\mathrm { P E - E t } _ { 2 } \\mathrm { O } (10:1): 300–400 mL] to afford the corresponding aldehyde or ketone. The reagent amounts used for methods A–C are given below (cf. Table 2).",
+    "page": 3,
+    "bbox": [
+      505.0,
+      529.0,
+      917.0,
+      650.0
+    ],
+    "section": "Oxidation of Propargylic Alcohols; General Procedure",
+    "prev_block_id": "block_18_0026",
+    "next_block_id": "block_18_0028",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0028",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "Method A: Alcohol (10 mmol),  \\mathrm { F e } ( \\mathrm { N O } _ { 3 } ) _ { 3 } 9H2O (5 mol%), TEMPO (3 mol%), and NaCl (5 mol%) in toluene (10 mL).",
+    "page": 3,
+    "bbox": [
+      505.0,
+      652.0,
+      917.0,
+      678.0
+    ],
+    "section": "Oxidation of Propargylic Alcohols; General Procedure",
+    "prev_block_id": "block_18_0027",
+    "next_block_id": "block_18_0029",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0029",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "Method B: Alcohol (10 mmol),  \\mathrm { F e } ( \\mathrm { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } \\mathrm { O } ( 5  mol%), TEMPO (5 mol%), and NaCl (10 mol%) in toluene (10 mL).",
+    "page": 3,
+    "bbox": [
+      505.0,
+      680.0,
+      917.0,
+      706.0
+    ],
+    "section": "Oxidation of Propargylic Alcohols; General Procedure",
+    "prev_block_id": "block_18_0028",
+    "next_block_id": "block_18_0030",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0030",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "Method C: Alcohol (10 mmol), Fe(NO3)39H2O (10 mol%), TEMPO (10 mol%), and NaCl (10 mol%) in toluene (10 mL).",
+    "page": 3,
+    "bbox": [
+      505.0,
+      709.0,
+      917.0,
+      735.0
+    ],
+    "section": "Oxidation of Propargylic Alcohols; General Procedure",
+    "prev_block_id": "block_18_0029",
+    "next_block_id": "block_18_0031",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0031",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "4-Phenylbut-3-yn-2-one (2b)",
+    "page": 3,
+    "bbox": [
+      505.0,
+      743.0,
+      695.0,
+      755.0
+    ],
+    "section": "4-Phenylbut-3-yn-2-one (2b)",
+    "prev_block_id": "block_18_0030",
+    "next_block_id": "block_18_0032",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0032",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "Method A: The reaction of 4-phenylbut-3-yn-2-ol (1.4420 g, 10 mmol), Fe(NO3)39H2O (205.0 mg, 0.5 mmol), TEMPO (47.4 mg, 0.3 mmol), and NaCl (29.0 mg, 0.5 mmol) in toluene (10 mL) afforded 2b (1.0926 g, 77%) as an oil.",
+    "page": 3,
+    "bbox": [
+      505.0,
+      754.0,
+      917.0,
+      802.0
+    ],
+    "section": "4-Phenylbut-3-yn-2-one (2b)",
+    "prev_block_id": "block_18_0031",
+    "next_block_id": "block_18_0033",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0033",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "Method B: The reaction of 4-phenylbut-3-yn-2-ol (1.4620 g, 10 mmol), Fe(NO3)39H2O (202.3 mg, 0.5 mmol), TEMPO (78.4 mg, 0.5 mmol), and NaCl (58.5 mg, 1.0 mmol) in toluene (10 mL) afforded  2  { \\mathbf { b } } ^ { 2 6 } (1.3131 g, 91%) as an oil.",
+    "page": 3,
+    "bbox": [
+      505.0,
+      805.0,
+      917.0,
+      855.0
+    ],
+    "section": "4-Phenylbut-3-yn-2-one (2b)",
+    "prev_block_id": "block_18_0032",
+    "next_block_id": "block_18_0034",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0034",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "IR (neat): 2202, 1672, 1490, 1444, 1415, 1359, 1325, 1280, 1157, 1067, 1025, 977  \\mathrm { c m ^ { - 1 } } . .",
+    "page": 3,
+    "bbox": [
+      505.0,
+      857.0,
+      917.0,
+      883.0
+    ],
+    "section": "4-Phenylbut-3-yn-2-one (2b)",
+    "prev_block_id": "block_18_0033",
+    "next_block_id": "block_18_0035",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0035",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "4-(4-Fluorophenyl)but-3-yn-2-one (2c)",
+    "page": 4,
+    "bbox": [
+      80.0,
+      137.0,
+      329.0,
+      149.0
+    ],
+    "section": "4-(4-Fluorophenyl)but-3-yn-2-one (2c)",
+    "prev_block_id": "block_18_0034",
+    "next_block_id": "block_18_0036",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0036",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "4-(3-Fluorophenyl)but-3-yn-2-one (2d)",
+    "page": 4,
+    "bbox": [
+      80.0,
+      387.0,
+      329.0,
+      399.0
+    ],
+    "section": "4-(3-Fluorophenyl)but-3-yn-2-one (2d)",
+    "prev_block_id": "block_18_0035",
+    "next_block_id": "block_18_0037",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0037",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "4-(2-Fluorophenyl)but-3-yn-2-one (2e)",
+    "page": 4,
+    "bbox": [
+      80.0,
+      615.0,
+      329.0,
+      625.0
+    ],
+    "section": "4-(2-Fluorophenyl)but-3-yn-2-one (2e)",
+    "prev_block_id": "block_18_0036",
+    "next_block_id": "block_18_0038",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0038",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "4-(4-Chlorophenyl)but-3-yn-2-one (2f)",
+    "page": 4,
+    "bbox": [
+      80.0,
+      840.0,
+      329.0,
+      853.0
+    ],
+    "section": "4-(4-Chlorophenyl)but-3-yn-2-one (2f)",
+    "prev_block_id": "block_18_0037",
+    "next_block_id": "block_18_0039",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0039",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "4-(4-Bromophenyl)but-3-yn-2-one (2g)",
+    "page": 4,
+    "bbox": [
+      507.0,
+      206.0,
+      759.0,
+      218.0
+    ],
+    "section": "4-(4-Bromophenyl)but-3-yn-2-one (2g)",
+    "prev_block_id": "block_18_0038",
+    "next_block_id": "block_18_0040",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0040",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "4-(4-Iodophenyl)but-3-yn-2-one (2h)",
+    "page": 4,
+    "bbox": [
+      507.0,
+      464.0,
+      744.0,
+      475.0
+    ],
+    "section": "4-(4-Iodophenyl)but-3-yn-2-one (2h)",
+    "prev_block_id": "block_18_0039",
+    "next_block_id": "block_18_0041",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0041",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "Ethyl 4-(3-Oxobut-1-ynyl)benzoate (2i)",
+    "page": 4,
+    "bbox": [
+      507.0,
+      714.0,
+      763.0,
+      726.0
+    ],
+    "section": "Ethyl 4-(3-Oxobut-1-ynyl)benzoate (2i)",
+    "prev_block_id": "block_18_0040",
+    "next_block_id": "block_18_0042",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0042",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "MS (EI): m/z = 216 (M+, 29.16), 201 (100).",
+    "page": 5,
+    "bbox": [
+      80.0,
+      58.0,
+      344.0,
+      72.0
+    ],
+    "section": "Ethyl 4-(3-Oxobut-1-ynyl)benzoate (2i)",
+    "prev_block_id": "block_18_0041",
+    "next_block_id": "block_18_0043",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0043",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "Anal. Calcd for  \\mathrm { C } _ { 1 3 } \\mathrm { H } _ { 1 2 } \\mathrm { O } _ { 3 } ; C, 72.21; H, 5.59. Found: C, 72.26; H, 5.53.",
+    "page": 5,
+    "bbox": [
+      80.0,
+      74.0,
+      487.0,
+      99.0
+    ],
+    "section": "Ethyl 4-(3-Oxobut-1-ynyl)benzoate (2i)",
+    "prev_block_id": "block_18_0042",
+    "next_block_id": "block_18_0044",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0044",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "4-(3-Oxobut-1-ynyl)benzonitrile (2j)",
+    "page": 5,
+    "bbox": [
+      80.0,
+      108.0,
+      315.0,
+      121.0
+    ],
+    "section": "4-(3-Oxobut-1-ynyl)benzonitrile (2j)",
+    "prev_block_id": "block_18_0043",
+    "next_block_id": "block_18_0045",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0045",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "Method A: The reaction of 4-(3-hydroxybut-1-ynyl)benzonitrile (1.7122 g, 10 mmol), Fe(NO3)39H2O (202.3 mg, 0.5 mmol), TEMPO (46.7 mg, 0.3 mmol), and NaCl (29.4 mg, 0.5 mmol) in toluene (10 mL) afforded 2j (1.1018 g, 65%) as a solid.",
+    "page": 5,
+    "bbox": [
+      80.0,
+      119.0,
+      487.0,
+      167.0
+    ],
+    "section": "4-(3-Oxobut-1-ynyl)benzonitrile (2j)",
+    "prev_block_id": "block_18_0044",
+    "next_block_id": "block_18_0046",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0046",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "Method B: The reaction of 4-(3-hydroxybut-1-ynyl)benzonitrile (1.7117 g, 10 mmol), Fe(NO3)39H2O (202.3 mg, 0.5 mmol), TEMPO (78.1 mg, 0.5 mmol), and NaCl (58.7 mg, 1.0 mmol) in toluene (10 mL) afforded 2j (1.4745 g, 87%) as a solid; mp 106– 107 °C (c-hexane).",
+    "page": 5,
+    "bbox": [
+      80.0,
+      169.0,
+      487.0,
+      231.0
+    ],
+    "section": "4-(3-Oxobut-1-ynyl)benzonitrile (2j)",
+    "prev_block_id": "block_18_0045",
+    "next_block_id": "block_18_0047",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0047",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "IR (neat): 2227, 2206, 1671, 1499, 1408, 1359, 1277, 1186, 1152, 1018, 981 cm–1.",
+    "page": 5,
+    "bbox": [
+      80.0,
+      233.0,
+      487.0,
+      258.0
+    ],
+    "section": "4-(3-Oxobut-1-ynyl)benzonitrile (2j)",
+    "prev_block_id": "block_18_0046",
+    "next_block_id": "block_18_0048",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0048",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "1 H NMR (300 MHz, CDCl3): δ = 7.71–7.62 (m, 4 H, ArH), 2.47 (s, 3 H, CH3).",
+    "page": 5,
+    "bbox": [
+      80.0,
+      263.0,
+      487.0,
+      289.0
+    ],
+    "section": "4-(3-Oxobut-1-ynyl)benzonitrile (2j)",
+    "prev_block_id": "block_18_0047",
+    "next_block_id": "block_18_0049",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0049",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "13C NMR (75.4 MHz, CDCl3): δ = 183.91, 133.17, 132.19, 124.65, 117.79, 113.92, 90.50, 86.78, 32.65.",
+    "page": 5,
+    "bbox": [
+      80.0,
+      292.0,
+      487.0,
+      317.0
+    ],
+    "section": "4-(3-Oxobut-1-ynyl)benzonitrile (2j)",
+    "prev_block_id": "block_18_0048",
+    "next_block_id": "block_18_0050",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0050",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "MS (EI): m/z (%) = 169 (M+, 12.91), 154 (100).",
+    "page": 5,
+    "bbox": [
+      80.0,
+      320.0,
+      371.0,
+      334.0
+    ],
+    "section": "4-(3-Oxobut-1-ynyl)benzonitrile (2j)",
+    "prev_block_id": "block_18_0049",
+    "next_block_id": "block_18_0051",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0051",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "Anal. Calcd for C11H7NO: C, 78.09; H, 4.17; N, 8.28. Found: C, 77.89; H, 4.24; N, 8.11.",
+    "page": 5,
+    "bbox": [
+      80.0,
+      337.0,
+      487.0,
+      362.0
+    ],
+    "section": "4-(3-Oxobut-1-ynyl)benzonitrile (2j)",
+    "prev_block_id": "block_18_0050",
+    "next_block_id": "block_18_0052",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0052",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "4-(4-Nitrophenyl)but-3-yn-2-one (2k)",
+    "page": 5,
+    "bbox": [
+      80.0,
+      371.0,
+      322.0,
+      383.0
+    ],
+    "section": "4-(4-Nitrophenyl)but-3-yn-2-one (2k)",
+    "prev_block_id": "block_18_0051",
+    "next_block_id": "block_18_0053",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0053",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "Method A: The reaction of 4-(4-nitrophenyl)but-3-yn-2-ol (1.8921 g, 10 mmol), Fe(NO3)39H2O (201.9 mg, 0.5 mmol), TEMPO (46.6 mg, 0.3 mmol), and NaCl (29.3 mg, 0.5 mmol) in toluene (10 mL) afforded 2k (1.7159 g, 92%) as a solid (eluent: PE–EtOAc, 10:1); mp 113–114 °C (c-hexane).",
+    "page": 5,
+    "bbox": [
+      80.0,
+      382.0,
+      487.0,
+      441.0
+    ],
+    "section": "4-(4-Nitrophenyl)but-3-yn-2-one (2k)",
+    "prev_block_id": "block_18_0052",
+    "next_block_id": "block_18_0054",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0054",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "IR (neat): 2208, 1672, 1597, 1518, 1403, 1340, 1309, 1277, 1213, 1179, 1156, 1109, 1013, 977 cm–1.",
+    "page": 5,
+    "bbox": [
+      80.0,
+      445.0,
+      487.0,
+      469.0
+    ],
+    "section": "4-(4-Nitrophenyl)but-3-yn-2-one (2k)",
+    "prev_block_id": "block_18_0053",
+    "next_block_id": "block_18_0055",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0055",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "1 H NMR (300 MHz, CDCl3): δ = 8.24 (d, J = 8.7 Hz, 2 H, ArH), 7.72 (d, J = 8.7 Hz, 2 H, ArH), 2.48 (s, 3 H, CH3).",
+    "page": 5,
+    "bbox": [
+      80.0,
+      473.0,
+      487.0,
+      500.0
+    ],
+    "section": "4-(4-Nitrophenyl)but-3-yn-2-one (2k)",
+    "prev_block_id": "block_18_0054",
+    "next_block_id": "block_18_0056",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0056",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "13C NMR (75.4 MHz, CDCl3): δ = 183.87, 148.60, 133.59, 126.54, 123.73, 90.96, 86.33, 32.68.",
+    "page": 5,
+    "bbox": [
+      80.0,
+      501.0,
+      487.0,
+      526.0
+    ],
+    "section": "4-(4-Nitrophenyl)but-3-yn-2-one (2k)",
+    "prev_block_id": "block_18_0055",
+    "next_block_id": "block_18_0057",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0057",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "MS (EI) m/z (%) = 189 (M+, 18.15), 174 (100).",
+    "page": 5,
+    "bbox": [
+      80.0,
+      530.0,
+      366.0,
+      543.0
+    ],
+    "section": "4-(4-Nitrophenyl)but-3-yn-2-one (2k)",
+    "prev_block_id": "block_18_0056",
+    "next_block_id": "block_18_0058",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0058",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "Anal. Calcd for C10H7NO3: C, 63.49; H, 3.73; N, 7.40. Found: C, 63.46; H, 3.75; N, 7.28.",
+    "page": 5,
+    "bbox": [
+      80.0,
+      547.0,
+      487.0,
+      572.0
+    ],
+    "section": "4-(4-Nitrophenyl)but-3-yn-2-one (2k)",
+    "prev_block_id": "block_18_0057",
+    "next_block_id": "block_18_0059",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0059",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "4-Methyl-N-[4-(3-oxobut-1-ynyl)phenyl]benzenesulfonamide (2l)",
+    "page": 5,
+    "bbox": [
+      80.0,
+      581.0,
+      472.0,
+      603.0
+    ],
+    "section": "4-Methyl-N-[4-(3-oxobut-1-ynyl)phenyl]benzenesulfonamide (2l)",
+    "prev_block_id": "block_18_0058",
+    "next_block_id": "block_18_0060",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0060",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "Method A: To a 50 mL three-necked flask were added Fe(NO3)39H2O (203.7 mg, 0.5 mmol), TEMPO (47.5 mg, 0.3 mmol), NaCl (29.5 mg, 0.5 mmol), and toluene (10 mL). N-[4-(3- Hydroxybut-1-ynyl)phenyl]-4-methylbenzenesulfonamide (3.1596 g, 10 mmol) was then added to the suspension and the resulting mixture was placed under the atmosphere of O2 from a balloon and stirred at r.t. for 46 h. The resulting mixture was filtered and concentrated in vacuo to give the crude product. 1 H NMR analysis indicated that the yield of 2l was 61% and 24% of the alcohol was recovered.",
+    "page": 5,
+    "bbox": [
+      80.0,
+      603.0,
+      487.0,
+      720.0
+    ],
+    "section": "4-Methyl-N-[4-(3-oxobut-1-ynyl)phenyl]benzenesulfonamide (2l)",
+    "prev_block_id": "block_18_0059",
+    "next_block_id": "block_18_0061",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0061",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "Method B: The reaction of N-[4-(3-hydroxybut-1-ynyl)phenyl]-4- methylbenzenesulfonamide (3.1484 g, 10 mmol), Fe(NO3)39H2O (201.4 mg, 0.5 mmol), TEMPO (78.8 mg, 0.5 mmol), and NaCl (58.8 mg, 1.0 mmol) in toluene (10 mL) afforded 2l (2.6167 g, 84%) as a solid; mp 124–125 °C (c-hexane–Et2O).",
+    "page": 5,
+    "bbox": [
+      80.0,
+      725.0,
+      487.0,
+      786.0
+    ],
+    "section": "4-Methyl-N-[4-(3-oxobut-1-ynyl)phenyl]benzenesulfonamide (2l)",
+    "prev_block_id": "block_18_0060",
+    "next_block_id": "block_18_0062",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0062",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "IR (neat): 3313, 2988, 2901, 2838, 2203, 1694, 1664, 1604, 1506, 1453, 1401, 1362, 1331, 1282, 1222, 1157, 1087, 1017, 978, 921 cm–1.",
+    "page": 5,
+    "bbox": [
+      80.0,
+      789.0,
+      487.0,
+      825.0
+    ],
+    "section": "4-Methyl-N-[4-(3-oxobut-1-ynyl)phenyl]benzenesulfonamide (2l)",
+    "prev_block_id": "block_18_0061",
+    "next_block_id": "block_18_0063",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0063",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "1 H NMR (300 MHz, CDCl3): δ = 7.74 (d, J = 8.4 Hz, 2 H, ArH), 7.67 (br d, 1 H, NH), 7.43 (d, J = 8.7 Hz, 2 H, ArH), 7.26 (d, J = 7.8 Hz, 2 H, ArH), 7.12 (d, J = 8.7 Hz, 2 H, ArH), 2.43 (s, 3 H, ArCH3), 2.38 (s, 3 H, CH3).",
+    "page": 5,
+    "bbox": [
+      80.0,
+      828.0,
+      487.0,
+      878.0
+    ],
+    "section": "4-Methyl-N-[4-(3-oxobut-1-ynyl)phenyl]benzenesulfonamide (2l)",
+    "prev_block_id": "block_18_0062",
+    "next_block_id": "block_18_0064",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0064",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "13C NMR (75.4 MHz, CDCl3): δ = 184.91, 144.48, 139.19, 135.64, 134.45, 129.88, 127.21, 119.56, 115.62, 90.24, 88.56, 32.64, 21.53. MS (EI): m/z (%) = 313 (M+, 100.00).",
+    "page": 5,
+    "bbox": [
+      509.0,
+      58.0,
+      915.0,
+      99.0
+    ],
+    "section": "4-Methyl-N-[4-(3-oxobut-1-ynyl)phenyl]benzenesulfonamide (2l)",
+    "prev_block_id": "block_18_0063",
+    "next_block_id": "block_18_0065",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0065",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "Anal. Calcd for C17H15NO3S: C, 65.16; H, 4.82; N, 4.47. Found: C, 64.98; H, 4.79; N, 4.20.",
+    "page": 5,
+    "bbox": [
+      509.0,
+      103.0,
+      915.0,
+      128.0
+    ],
+    "section": "4-Methyl-N-[4-(3-oxobut-1-ynyl)phenyl]benzenesulfonamide (2l)",
+    "prev_block_id": "block_18_0064",
+    "next_block_id": "block_18_0066",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0066",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "4-(p-Tolyl)but-3-yn-2-one (2m)",
+    "page": 5,
+    "bbox": [
+      509.0,
+      137.0,
+      710.0,
+      149.0
+    ],
+    "section": "4-(p-Tolyl)but-3-yn-2-one (2m)",
+    "prev_block_id": "block_18_0065",
+    "next_block_id": "block_18_0067",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0067",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "Method A: The reaction of 4-(p-tolyl)but-3-yn-2-ol (1.6021 g, 10 mmol), Fe(NO3)39H2O (202.3 mg, 0.5 mmol), TEMPO (46.7 mg, 0.3 mmol), and NaCl (29.5 mg, 0.5 mmol) in toluene (10 mL) afforded 2m (0.5663 g, 36%) as an oil.",
+    "page": 5,
+    "bbox": [
+      509.0,
+      149.0,
+      915.0,
+      195.0
+    ],
+    "section": "4-(p-Tolyl)but-3-yn-2-one (2m)",
+    "prev_block_id": "block_18_0066",
+    "next_block_id": "block_18_0068",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0068",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "Method B: The reaction of 4-(p-tolyl)but-3-yn-2-ol (1.6022 g, 10 mmol), Fe(NO3)39H2O (202.2 mg, 0.5 mmol), TEMPO (78.3 mg, 0.5 mmol), and NaCl (58.6 mg, 1.0 mmol) in toluene (10 mL) afforded 2m29 (1.4464 g, 91%) as an oil.",
+    "page": 5,
+    "bbox": [
+      509.0,
+      199.0,
+      915.0,
+      247.0
+    ],
+    "section": "4-(p-Tolyl)but-3-yn-2-one (2m)",
+    "prev_block_id": "block_18_0067",
+    "next_block_id": "block_18_0069",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0069",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "IR (neat): 2224, 1668, 1606, 1509, 1454, 1414, 1357, 1281, 1152, 1063, 1019, 975 cm–1.",
+    "page": 5,
+    "bbox": [
+      509.0,
+      251.0,
+      915.0,
+      275.0
+    ],
+    "section": "4-(p-Tolyl)but-3-yn-2-one (2m)",
+    "prev_block_id": "block_18_0068",
+    "next_block_id": "block_18_0070",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0070",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "1 H NMR (300 MHz, CDCl3): δ = 7.47 (d, J = 8.1 Hz, 2 H, ArH), 7.19 (d, J = 7.8 Hz, 2 H, ArH), 2.44 (s, 3 H, ArCH3), 2.38 (s, 3 H, CH3).",
+    "page": 5,
+    "bbox": [
+      509.0,
+      280.0,
+      915.0,
+      317.0
+    ],
+    "section": "4-(p-Tolyl)but-3-yn-2-one (2m)",
+    "prev_block_id": "block_18_0069",
+    "next_block_id": "block_18_0071",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0071",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "13C NMR (75.4 MHz, CDCl3): δ = 184.51, 141.27, 132.90, 129.24, 116.55, 90.81, 87.95, 32.51, 21.52.",
+    "page": 5,
+    "bbox": [
+      509.0,
+      320.0,
+      915.0,
+      344.0
+    ],
+    "section": "4-(p-Tolyl)but-3-yn-2-one (2m)",
+    "prev_block_id": "block_18_0070",
+    "next_block_id": "block_18_0072",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0072",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "MS (EI): m/z (%) = 158 (M+, 22.30), 143 (100).",
+    "page": 5,
+    "bbox": [
+      509.0,
+      349.0,
+      800.0,
+      362.0
+    ],
+    "section": "4-(p-Tolyl)but-3-yn-2-one (2m)",
+    "prev_block_id": "block_18_0071",
+    "next_block_id": "block_18_0073",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0073",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "4-(4-Methoxyphenyl)but-3-yn-2-one (2n)",
+    "page": 5,
+    "bbox": [
+      509.0,
+      371.0,
+      773.0,
+      383.0
+    ],
+    "section": "4-(4-Methoxyphenyl)but-3-yn-2-one (2n)",
+    "prev_block_id": "block_18_0072",
+    "next_block_id": "block_18_0074",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0074",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "Method C: The reaction of 4-(4-methoxyphenyl)but-3-yn-2-ol (1.7621 g, 10 mmol), Fe(NO3)39H2O (404.1 mg, 1.0 mmol), TEMPO (156.0 mg, 1.0 mmol), and NaCl (58.4 mg, 1.0 mmol) in toluene (10 mL) afforded 2n30 (1.2180 g, 70%) as an oil.",
+    "page": 5,
+    "bbox": [
+      509.0,
+      382.0,
+      915.0,
+      429.0
+    ],
+    "section": "4-(4-Methoxyphenyl)but-3-yn-2-one (2n)",
+    "prev_block_id": "block_18_0073",
+    "next_block_id": "block_18_0075",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0075",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "IR (neat): 2196, 1665, 1602, 1568, 1509, 1461, 1442, 1419, 1357, 1280, 1252, 1150, 1109, 1026, 976 cm–1.",
+    "page": 5,
+    "bbox": [
+      509.0,
+      433.0,
+      915.0,
+      458.0
+    ],
+    "section": "4-(4-Methoxyphenyl)but-3-yn-2-one (2n)",
+    "prev_block_id": "block_18_0074",
+    "next_block_id": "block_18_0076",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0076",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "1 H NMR (300 MHz, CDCl3): δ = 7.51 (dt, J = 9.0, 2.4 Hz, 2 H, ArH), 6.88 (dt, J = 8.7, 2.4 Hz, 2 H, ArH), 3.82 (s, 3 H, OCH3), 2.41 (s, 3 H, CH3).",
+    "page": 5,
+    "bbox": [
+      509.0,
+      461.0,
+      915.0,
+      500.0
+    ],
+    "section": "4-(4-Methoxyphenyl)but-3-yn-2-one (2n)",
+    "prev_block_id": "block_18_0075",
+    "next_block_id": "block_18_0077",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0077",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "13C NMR (75.4 MHz, CDCl3): δ = 184.53, 161.52, 134.97, 114.22, 111.45, 91.38, 88.08, 55.26, 32.47.",
+    "page": 5,
+    "bbox": [
+      509.0,
+      501.0,
+      915.0,
+      526.0
+    ],
+    "section": "4-(4-Methoxyphenyl)but-3-yn-2-one (2n)",
+    "prev_block_id": "block_18_0076",
+    "next_block_id": "block_18_0078",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0078",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "MS (EI): m/z (%) = 174 (M+, 35.40), 159 (100).",
+    "page": 5,
+    "bbox": [
+      509.0,
+      530.0,
+      800.0,
+      543.0
+    ],
+    "section": "4-(4-Methoxyphenyl)but-3-yn-2-one (2n)",
+    "prev_block_id": "block_18_0077",
+    "next_block_id": "block_18_0079",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0079",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "4-(3-Methoxyphenyl)but-3-yn-2-one (2o)",
+    "page": 5,
+    "bbox": [
+      509.0,
+      553.0,
+      771.0,
+      564.0
+    ],
+    "section": "4-(3-Methoxyphenyl)but-3-yn-2-one (2o)",
+    "prev_block_id": "block_18_0078",
+    "next_block_id": "block_18_0080",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0080",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "Method A: The reaction of 4-(3-methoxyphenyl)but-3-yn-2-ol (1.7618 g, 10 mmol), Fe(NO3)39H2O (202.3 mg, 0.5 mmol), TEMPO (46.9 mg, 0.3 mmol), and NaCl (29.2 mg, 0.5 mmol) in toluene (10 mL) afforded 2o (0.9523 g, 55%) as a solid.",
+    "page": 5,
+    "bbox": [
+      509.0,
+      564.0,
+      915.0,
+      611.0
+    ],
+    "section": "4-(3-Methoxyphenyl)but-3-yn-2-one (2o)",
+    "prev_block_id": "block_18_0079",
+    "next_block_id": "block_18_0081",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0081",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "Method C: The reaction of 4-(3-methoxyphenyl)but-3-yn-2-ol (1.7618 g, 10 mmol), Fe(NO3)39H2O (404.3 mg, 1.0 mmol), TEMPO (156.5 mg, 1.0 mmol), and NaCl (58.4 mg, 1.0 mmol) in toluene (10 mL) afforded 2o (1.5865 g, 91%) as a solid; mp 54– 55 °C (c-hexane).",
+    "page": 5,
+    "bbox": [
+      509.0,
+      615.0,
+      915.0,
+      675.0
+    ],
+    "section": "4-(3-Methoxyphenyl)but-3-yn-2-one (2o)",
+    "prev_block_id": "block_18_0080",
+    "next_block_id": "block_18_0082",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0082",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "IR (neat): 2195, 1668, 1602, 1573, 1510, 1483, 1465, 1425, 1356, 1321, 1284, 1254, 1221, 1185, 1153, 1093, 1041, 980 cm–1.",
+    "page": 5,
+    "bbox": [
+      509.0,
+      679.0,
+      915.0,
+      704.0
+    ],
+    "section": "4-(3-Methoxyphenyl)but-3-yn-2-one (2o)",
+    "prev_block_id": "block_18_0081",
+    "next_block_id": "block_18_0083",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0083",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "1 H NMR (300 MHz, CDCl3): δ = 7.31 (t, J = 8.1 Hz, 1 H, ArH), 7.17 (dt, J = 7.5, 1.2 Hz, 1 H, ArH), 7.10–7.06 (m, 1 H, ArH), 7.15 (ddd, J = 8.4, 2.7, 0.9 Hz, 1 H, ArH), 3.82 (s, 3 H, OCH3), 2.46 (s, 3 H, CH3).",
+    "page": 5,
+    "bbox": [
+      509.0,
+      707.0,
+      915.0,
+      756.0
+    ],
+    "section": "4-(3-Methoxyphenyl)but-3-yn-2-one (2o)",
+    "prev_block_id": "block_18_0082",
+    "next_block_id": "block_18_0084",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0084",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "13C NMR (75.4 MHz, CDCl3): δ = 184.56, 159.33, 129.67, 125.48, 120.73, 117.47, 117.45, 90.15, 87.86, 55.29, 32.65.",
+    "page": 5,
+    "bbox": [
+      509.0,
+      758.0,
+      915.0,
+      783.0
+    ],
+    "section": "4-(3-Methoxyphenyl)but-3-yn-2-one (2o)",
+    "prev_block_id": "block_18_0083",
+    "next_block_id": "block_18_0085",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0085",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "MS (EI): m/z (%) = 174 (M+, 34.12), 159 (100).",
+    "page": 5,
+    "bbox": [
+      509.0,
+      788.0,
+      800.0,
+      801.0
+    ],
+    "section": "4-(3-Methoxyphenyl)but-3-yn-2-one (2o)",
+    "prev_block_id": "block_18_0084",
+    "next_block_id": "block_18_0086",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0086",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "Anal. Calcd for  { \\mathrm { C } } _ { 1 1 } { \\mathrm { H } } _ { 1 0 } { \\mathrm { O } } _ { 2 } ; C, 75.84; H, 5.79. Found: C, 75.94; H, 5.78.",
+    "page": 5,
+    "bbox": [
+      509.0,
+      805.0,
+      915.0,
+      828.0
+    ],
+    "section": "4-(3-Methoxyphenyl)but-3-yn-2-one (2o)",
+    "prev_block_id": "block_18_0085",
+    "next_block_id": "block_18_0087",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0087",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "4-(2-Methoxyphenyl)but-3-yn-2-one (2p)",
+    "page": 5,
+    "bbox": [
+      509.0,
+      839.0,
+      773.0,
+      851.0
+    ],
+    "section": "4-(2-Methoxyphenyl)but-3-yn-2-one (2p)",
+    "prev_block_id": "block_18_0086",
+    "next_block_id": "block_18_0088",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0088",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "Method C: The reaction of 4-(2-methoxyphenyl)but-3-yn-2-ol (1.7624 g, 10 mmol), Fe(NO3)39H2O (404.2 mg, 1.0 mmol),",
+    "page": 5,
+    "bbox": [
+      509.0,
+      851.0,
+      915.0,
+      875.0
+    ],
+    "section": "4-(2-Methoxyphenyl)but-3-yn-2-one (2p)",
+    "prev_block_id": "block_18_0087",
+    "next_block_id": "block_18_0089",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0089",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "1-(4-Chlorophenyl)undec-2-yn-1-one (2q)",
+    "page": 6,
+    "bbox": [
+      80.0,
+      245.0,
+      349.0,
+      258.0
+    ],
+    "section": "1-(4-Chlorophenyl)undec-2-yn-1-one (2q)",
+    "prev_block_id": "block_18_0088",
+    "next_block_id": "block_18_0090",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0090",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "1-(4-(Trifluoromethyl)phenyl)undec-2-yn-1-one (2r)",
+    "page": 6,
+    "bbox": [
+      80.0,
+      492.0,
+      418.0,
+      503.0
+    ],
+    "section": "1-(4-(Trifluoromethyl)phenyl)undec-2-yn-1-one (2r)",
+    "prev_block_id": "block_18_0089",
+    "next_block_id": "block_18_0091",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0091",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "1-(4-Methoxyphenyl)undec-2-yn-1-one (2s)",
+    "page": 6,
+    "bbox": [
+      80.0,
+      731.0,
+      357.0,
+      743.0
+    ],
+    "section": "1-(4-Methoxyphenyl)undec-2-yn-1-one (2s)",
+    "prev_block_id": "block_18_0090",
+    "next_block_id": "block_18_0092",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0092",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "1-(3-Methoxyphenyl)undec-2-yn-1-one (2t)",
+    "page": 6,
+    "bbox": [
+      509.0,
+      137.0,
+      786.0,
+      149.0
+    ],
+    "section": "1-(3-Methoxyphenyl)undec-2-yn-1-one (2t)",
+    "prev_block_id": "block_18_0091",
+    "next_block_id": "block_18_0093",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0093",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "1-(2-Methoxyphenyl)undec-2-yn-1-one (2u)",
+    "page": 6,
+    "bbox": [
+      509.0,
+      371.0,
+      789.0,
+      382.0
+    ],
+    "section": "1-(2-Methoxyphenyl)undec-2-yn-1-one (2u)",
+    "prev_block_id": "block_18_0092",
+    "next_block_id": "block_18_0094",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0094",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "Hexadec-7-yn-6-one (2v)",
+    "page": 6,
+    "bbox": [
+      509.0,
+      593.0,
+      668.0,
+      605.0
+    ],
+    "section": "Hexadec-7-yn-6-one (2v)",
+    "prev_block_id": "block_18_0093",
+    "next_block_id": "block_18_0095",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0095",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "Undec-2-ynal (2w)",
+    "page": 6,
+    "bbox": [
+      509.0,
+      815.0,
+      628.0,
+      827.0
+    ],
+    "section": "Undec-2-ynal (2w)",
+    "prev_block_id": "block_18_0094",
+    "next_block_id": "block_18_0096",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0096",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "3-Phenylpropynal (2x)",
+    "page": 7,
+    "bbox": [
+      80.0,
+      176.0,
+      228.0,
+      188.0
+    ],
+    "section": "3-Phenylpropynal (2x)",
+    "prev_block_id": "block_18_0095",
+    "next_block_id": "block_18_0097",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0097",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "1-Phenyl-3-phenylprop-2-yn-1-one (2y)",
+    "page": 7,
+    "bbox": [
+      80.0,
+      302.0,
+      334.0,
+      314.0
+    ],
+    "section": "1-Phenyl-3-phenylprop-2-yn-1-one (2y)",
+    "prev_block_id": "block_18_0096",
+    "next_block_id": "block_18_0098",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0098",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "1-Phenylhept-1-yn-3-one (2z)",
+    "page": 7,
+    "bbox": [
+      80.0,
+      484.0,
+      270.0,
+      496.0
+    ],
+    "section": "1-Phenylhept-1-yn-3-one (2z)",
+    "prev_block_id": "block_18_0097",
+    "next_block_id": "block_18_0099",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0099",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "1-Phenylprop-2-yn-1-one (2α)",
+    "page": 7,
+    "bbox": [
+      80.0,
+      619.0,
+      275.0,
+      631.0
+    ],
+    "section": "1-Phenylprop-2-yn-1-one (2α)",
+    "prev_block_id": "block_18_0098",
+    "next_block_id": "block_18_0100",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0100",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "Undec-1-yn-3-one (2β)",
+    "page": 7,
+    "bbox": [
+      80.0,
+      802.0,
+      226.0,
+      813.0
+    ],
+    "section": "Undec-1-yn-3-one (2β)",
+    "prev_block_id": "block_18_0099",
+    "next_block_id": "block_18_0101",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0101",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "1-(4-Trifluoromethylphenyl)hept-2-yn-1-one (2γ)",
+    "page": 7,
+    "bbox": [
+      509.0,
+      131.0,
+      826.0,
+      144.0
+    ],
+    "section": "1-(4-Trifluoromethylphenyl)hept-2-yn-1-one (2γ)",
+    "prev_block_id": "block_18_0100",
+    "next_block_id": "block_18_0102",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0102",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "1-(Trimethylsilyl)oct-1-yn-3-one (2τ)",
+    "page": 7,
+    "bbox": [
+      509.0,
+      309.0,
+      747.0,
+      321.0
+    ],
+    "section": "1-(Trimethylsilyl)oct-1-yn-3-one (2τ)",
+    "prev_block_id": "block_18_0101",
+    "next_block_id": "block_18_0103",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0103",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "1-Phenyl-3-(trimethylsilyl)propynone (2a)",
+    "page": 7,
+    "bbox": [
+      509.0,
+      530.0,
+      781.0,
+      543.0
+    ],
+    "section": "1-Phenyl-3-(trimethylsilyl)propynone (2a)",
+    "prev_block_id": "block_18_0102",
+    "next_block_id": "block_18_0104",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0104",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "4-(Trimethylsilyl)but-3-yn-2-one (2ω)",
+    "page": 7,
+    "bbox": [
+      509.0,
+      668.0,
+      752.0,
+      679.0
+    ],
+    "section": "4-(Trimethylsilyl)but-3-yn-2-one (2ω)",
+    "prev_block_id": "block_18_0103",
+    "next_block_id": "block_18_0105",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0105",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "IR (neat): 2965, 2153, 1679, 1421, 1358, 1253, 1198, 979 cm–1.",
+    "page": 8,
+    "bbox": [
+      80.0,
+      58.0,
+      467.0,
+      72.0
+    ],
+    "section": "4-(Trimethylsilyl)but-3-yn-2-one (2ω)",
+    "prev_block_id": "block_18_0104",
+    "next_block_id": "block_18_0106",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0106",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "1 H NMR (300 MHz, CDCl3): δ = 2.33 (s, 3 H, CH3), 0.23 [s, 9 H, Si(CH3)3].",
+    "page": 8,
+    "bbox": [
+      80.0,
+      74.0,
+      487.0,
+      100.0
+    ],
+    "section": "4-(Trimethylsilyl)but-3-yn-2-one (2ω)",
+    "prev_block_id": "block_18_0105",
+    "next_block_id": "block_18_0107",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0107",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "13C NMR (75.4 MHz, CDCl3): δ = 184.44, 102.34, 97.34, 32.47, –0.83.",
+    "page": 8,
+    "bbox": [
+      80.0,
+      103.0,
+      487.0,
+      128.0
+    ],
+    "section": "4-(Trimethylsilyl)but-3-yn-2-one (2ω)",
+    "prev_block_id": "block_18_0106",
+    "next_block_id": "block_18_0108",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0108",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "MS (EI): m/z (%) = 140 (M+, 2.04), 125 (100).",
+    "page": 8,
+    "bbox": [
+      80.0,
+      131.0,
+      363.0,
+      144.0
+    ],
+    "section": "4-(Trimethylsilyl)but-3-yn-2-one (2ω)",
+    "prev_block_id": "block_18_0107",
+    "next_block_id": "block_18_0109",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0109",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "Acknowledgment",
+    "page": 8,
+    "bbox": [
+      80.0,
+      165.0,
+      218.0,
+      179.0
+    ],
+    "section": "Acknowledgment",
+    "prev_block_id": "block_18_0108",
+    "next_block_id": "block_18_0110",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0110",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "We greatly acknowledge the financial support from the Major State Basic Research Development Program of China (NO. 2009CB825300) and the NSF of China (20732005). We thank C. Xue of our group for reproducing the results of entry 4 and entry 22 in Table 2, entry 4 in Table 3, and entry 8 in Table 4 presented in this study.",
+    "page": 8,
+    "bbox": [
+      78.0,
+      185.0,
+      489.0,
+      260.0
+    ],
+    "section": "Acknowledgment",
+    "prev_block_id": "block_18_0109",
+    "next_block_id": "block_18_0111",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0111",
+    "doc_id": "18",
+    "block_type": "paragraph",
+    "text": "Supporting Information for this article is available online at http://www.thieme-connect.com/ejournals/toc/synthesis. onori",
+    "page": 8,
+    "bbox": [
+      78.0,
+      280.0,
+      487.0,
+      306.0
+    ],
+    "section": "Acknowledgment",
+    "prev_block_id": "block_18_0110",
+    "next_block_id": "block_18_0112",
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_18_0112",
+    "doc_id": "18",
+    "block_type": "title",
+    "text": "References",
+    "page": 8,
+    "bbox": [
+      80.0,
+      326.0,
+      166.0,
+      339.0
+    ],
+    "section": "References",
+    "prev_block_id": "block_18_0111",
+    "next_block_id": null,
+    "source_file": "18.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  }
+]

@@ -1,0 +1,2856 @@
+[
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "www.chemeurj.org"
+                    }
+                ]
+            },
+            "bbox": [
+                789,
+                66,
+                924,
+                80
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Aerobic Oxidation of PMB Ethers to Carboxylic Acids"
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                73,
+                98,
+                820,
+                123
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Qian Zhang,[a] Jiabin Zhang,[b] Hui Qian,*[a] and Shengming Ma*[a, b, c]"
+                    }
+                ]
+            },
+            "bbox": [
+                72,
+                131,
+                695,
+                151
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The first aerobic protocol of direct transformation of pmethoxybenzyl (PMB) ethers to carboxylic acids efficiently with Fe(NO3)3 · 9H2O and TEMPO as catalysts at room temperature has been developed. The reaction accommodates C\u0000 Br bond, terminal/non-terminal C\u0000 C triple bond, amide, cyano, nitro, ester, and trifluoromethyl groups. Even highly selective oxida-"
+                    }
+                ]
+            },
+            "bbox": [
+                72,
+                180,
+                492,
+                268
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Introduction"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                73,
+                287,
+                186,
+                302
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Applying protecting groups is a common strategy in multi-step syntheses. p-Methoxybenzyl (PMB) ether is one of the most frequently applied protecting strategies for alcohol protection attributing to its high chemical stability in the sequential protection and targeted transformation as well as the easiness of deprotection under mild conditions (Scheme 1a).[1] On the other hand, direct transformations of PMB ethers without deprotection step to other targeted synthetically versatile functionalities are of high interest for the sake of step-economy. Known reports are on the direct conversions of such PMB ethers to aldehydes in a deprotective manner[2] and to the synthetically less attractive p-methoxy-1-benzoates by the p-methoxybenzylic oxygenation[3] under aerobic conditions (Scheme 1b), however, their direct conversion to carboxylic acids[4] has never been achieved. Herein, we report a very mild Fe(NO ) · 9H O/ TEMPO-cocatalyzed direct deprotective aerobic oxidation of PMB ethers to carboxylic acids efficiently (Scheme 1c)."
+                    }
+                ]
+            },
+            "bbox": [
+                70,
+                317,
+                492,
+                561
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Results and Discussion"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                72,
+                587,
+                275,
+                602
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "We chose the PMB ether of C12 alcohol 1a as the model substrate. After trial and error, 1 a was successfully converted to the C12 carboxylic acid 2 a in 94 % NMR yield and interestingly the PMB part was formed as the aldehyde, 4-methoxybenzaldehyde 4a, in 93% NMR yield with 10 mol% each of Fe-"
+                    }
+                ]
+            },
+            "bbox": [
+                70,
+                617,
+                492,
+                689
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "tive deprotection of different benzylic PMB ethers has been realized. The reaction has been successfully applied to the total synthesis of natural product, (R)-6-hydroxy-7,9-octadecadiynoic acid, demonstrating the practicality of the method. Based on experimental studies, a possible mechanism involving oxygenstabilized benzylic cation has been proposed."
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                180,
+                926,
+                267
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "(a) Traditional approach"
+                    }
+                ]
+            },
+            "bbox": [
+                510,
+                286,
+                648,
+                299
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/5ecde10b103993126ee5523d88ffcbabdb8227e5974aa0871d69d8a404388118.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "(b) Catalytic aerobic oxidations of PMB ethers to esters and aldehydes"
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td rowspan=\"3\">OH</td><td>1. Protection as PMB ether</td><td>R²OH</td></tr><tr><td>2. Transformation</td><td></td></tr><tr><td>3. Deprotection</td><td></td></tr></table>",
+                "table_type": "complex_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                566,
+                306,
+                873,
+                344
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/0ef489058569c840f3ca5c7d5cfd9ff79efe6eea95f602c418cfe2e34d07898e.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(c) This work: Iron/TEMPO-cocatalyzed aerobic oxidation of PMB ethers to carboxylic acids"
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                514,
+                373,
+                922,
+                423
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/87a69c8e14b2e65a89a0e6821f72f9be2d3a75ef5037551bae5cfa455d93e94f.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Compatible FG: bromo, terminal/non terminal C-C triple bond, amide, cyano, nitro, trifluoromethyl, and ester group"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Scheme 1. The traditional protection strategy for the reaction of alcohols and catalytic aerobic oxidations of PMB ethers."
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                534,
+                461,
+                899,
+                514
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "(NO3)3 · 9H2O, TEMPO, and KCl in DCE at room temperature (Table 1, entry 1). Using DCM as the solvent gave a similar result (91 % NMR yield of 2a, Table 1, entry 2). The reaction in MeCN afforded a mixture of C12 carboxylic acid 2 a and the corresponding C12 aldehyde 3 a[2] (Table 1, entry 3). Reducing the loading of Fe(NO ) ·9H O or TEMPO led to a lower yield of 2 a (Table 1, entries 4 and 5). Control experiment showed that the reaction worked more efficiently without KCl within a shortened time of 8 h (Table 1, entry 7). In the absence of Fe(NO ) · 9H O or TEMPO, no reaction occurred (Table 1, entries 8 and 9). The reaction with 4-OH-TEMPO replacing TEMPO is much slower (Table 1, entry 10)."
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                617,
+                926,
+                788
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Subsequently, we examined the scope of the Fe-(NO ) · 9H O/TEMPO-cocatalyzed aerobic oxidative process. As shown in Scheme 2, PMB ethers with various length of alkyl chains for the R group gave the corresponding carboxylic acids 2 a–c in generally decent yields. Two mmol scale reaction of 1 a could successfully afford the corresponding acid 2 a in a high yield of 95 %. The reaction could also be performed by using an air balloon for 23 h with a yield of 89%. The substrate with a highly sterically hindering group such as adamantyl also worked (2 d). Synthetically versatile functional groups, such as bromo, terminal/non-terminal C\u0000 C triple bond, and phenyl group, were also applicable (2 e–h). Importantly, the substrates derived from pharmaceuticals and natural products including felbilnac (2 k), naproxen (2 l), ibuprofen (2 m) and sclareolide (2 n), also proceeded well. Furthermore, the optically active substrates worked without any racemization [(S)-2 h, (S)- or (R)-2 i, (S)- or (R)-2 j, (S)-2 l, (S)-2 m]. Optically active tricyclic lactone sclareolide 2 n was also formed in 80 % yield from PMB ether 1 n bearing a free tertiary hydroxy group. Last but not least, monoand bis- PMB ethers of 1,8-octanediol, 1p and 1o, both afforded diacid 2 o."
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                788,
+                926,
+                889
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "© 2024 Wiley-VCH GmbH"
+                    }
+                ]
+            },
+            "bbox": [
+                794,
+                908,
+                924,
+                921
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Check for updates"
+                    }
+                ]
+            },
+            "bbox": [
+                0,
+                0,
+                126,
+                14
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Chemistry—A European Journal"
+                    }
+                ]
+            },
+            "bbox": [
+                52,
+                33,
+                299,
+                49
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Research Article doi.org/10.1002/chem.202401815"
+                    }
+                ]
+            },
+            "bbox": [
+                339,
+                20,
+                586,
+                48
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Chemistry Europe European Chemical Societies Publishing"
+                    }
+                ]
+            },
+            "bbox": [
+                840,
+                8,
+                947,
+                47
+            ]
+        },
+        {
+            "type": "page_footnote",
+            "content": {
+                "page_footnote_content": [
+                    {
+                        "type": "text",
+                        "content": "[a] Q. Zhang, H. Qian, S. Ma Research Center for Molecular Recognition and Synthesis, Department of Chemistry, Fudan University, 220 Handan Lu, Shanghai 200433, China E-mail: masm@sioc.ac.cn qian_hui@fudan.edu.cn"
+                    }
+                ]
+            },
+            "bbox": [
+                72,
+                708,
+                477,
+                765
+            ]
+        },
+        {
+            "type": "page_footnote",
+            "content": {
+                "page_footnote_content": [
+                    {
+                        "type": "text",
+                        "content": "[b] J. Zhang, S. Ma Laboratory of Molecular Recognition and Synthesis, Department of Chemistry, Zhejiang University, Hangzhou 310027, Zhejiang Province, China"
+                    }
+                ]
+            },
+            "bbox": [
+                72,
+                766,
+                489,
+                803
+            ]
+        },
+        {
+            "type": "page_footnote",
+            "content": {
+                "page_footnote_content": [
+                    {
+                        "type": "text",
+                        "content": "[c] S. Ma State Key Laboratory of Organometallic Chemistry, Shanghai Institute of Organic Chemistry, Chinese Academy of Sciences, 345 Lingling Lu, Shanghai 200032, China"
+                    }
+                ]
+            },
+            "bbox": [
+                72,
+                804,
+                490,
+                851
+            ]
+        },
+        {
+            "type": "page_footnote",
+            "content": {
+                "page_footnote_content": [
+                    {
+                        "type": "text",
+                        "content": "Supporting information for this article is available on the WWWSupporting information for this article is available on the WWW under https://doi.org/ 10.1002/chem.202401815"
+                    }
+                ]
+            },
+            "bbox": [
+                72,
+                852,
+                492,
+                888
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Chem. Eur. J. 2024, 30, e202401815 (1 of 8)"
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                908,
+                289,
+                921
+            ]
+        }
+    ],
+    [
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/a3c1836f859b8b5cd9ee3d5711f15893eb911f31649582c2bb3c0ca40737c4a9.jpg"
+                },
+                "table_caption": [],
+                "table_footnote": [
+                    {
+                        "type": "text",
+                        "content": "[a] Reaction conditions: 1 a (0.5 mmol), Fe(NO ) · 9H O (X mol %), TEMPO (Y mol %), and KCl (Z mol %) in solvent (1.0 mL) with an oxygen balloon at rt. The recovery and NMR yield were determined by 1 H NMR analysis of the crude product. [b] NMR yield of 4-methoxybenzoic acid 5 a is shown in the parenthesis. [c] 4-OH-TEMPO was used instead of TEMPO."
+                    }
+                ],
+                "html": "<table><tr><td colspan=\"8\">Taleptization thereaction cditi</td></tr><tr><td></td><td></td><td>Y mol% TEMPO n-C11H3COOH 2a Z mol% KCI</td><td>X mol1% Fe(NO3)3·9H20</td><td>CHO</td><td></td><td></td></tr><tr><td rowspan=\"3\">Entry</td><td></td><td>n-C11H23OPMB 1a</td><td>O balloon, Solvent, rt, t</td><td>n-C11H23CHO 3a MeO I</td><td>4a</td><td></td></tr><tr><td>X/Y/Z</td><td>Solvent</td><td>t (h)</td><td>Recovery of 1 a (%)</td><td>NMR yield (%)</td><td></td></tr><tr><td></td><td></td><td></td><td></td><td>2a 3a</td><td>4alb</td></tr><tr><td>1</td><td>10/10/10</td><td>DCE</td><td>18</td><td>0</td><td>94 0</td><td>93 (5)</td></tr><tr><td>2</td><td>10/10/10</td><td>DCM</td><td>18</td><td>0</td><td>91 0</td><td>90 (2)</td></tr><tr><td>3</td><td>10/10/10</td><td>MeCN</td><td>18</td><td>o</td><td>29 56</td><td>99</td></tr><tr><td>4</td><td>5/10/10</td><td>DCE</td><td>18</td><td>o</td><td>80 9</td><td>99</td></tr><tr><td>5</td><td>10/5/10</td><td>DCE</td><td>18</td><td>o</td><td>90 5</td><td>99</td></tr><tr><td>6</td><td>10/10/5</td><td>DCE</td><td>12</td><td>o</td><td>97 0</td><td>93 (5)</td></tr><tr><td>7</td><td>10/10/0</td><td>DCE</td><td>8</td><td>0</td><td>95 0</td><td>93 (3)</td></tr><tr><td>8</td><td>10/0/0</td><td>DCE</td><td>8</td><td>100</td><td>0 0</td><td>0</td></tr><tr><td>9</td><td>0/10/0</td><td>DCE</td><td>8</td><td>100</td><td>0 0</td><td>0</td></tr><tr><td>10(c</td><td>10/10/0</td><td>DCE</td><td>8</td><td>17</td><td>6 62</td><td>82</td></tr></table>",
+                "table_type": "complex_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                75,
+                77,
+                921,
+                336
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                72,
+                417,
+                492,
+                617
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "We further scrutinized the substrate scope of the rather challenging differently substituted benzylic PMB ethers. As shown in Scheme 3, the electron-withdrawing and potentially useful groups such as cyano, nitro, trifluoromethyl, or ester groups are all compatible affording the non-methoxy-substituted benzoic acids 2 r–u highly selectively in good yields using 15 mol% each of Fe(NO ) ·9H O and TEMPO. When there is a meta-nitro group, extending the reaction time to 72 h was required affording the m-nitrobenzoic acid 2 v. Notably, by using 20 mol% each of Fe(NO ) · 9H O and TEMPO, benzylic PMB ether 1 q itself could also react smoothly to give benzoic acid 2 q in 79 % yield within 48 h, accompanied by just 6 % benzaldehyde 3 q. Moreover, under standard conditions, for 1,6- diol substrates with one hydroxy proteced as PMB ether and the other protected as p-CN (1 w) or p-CF (1 x) benzylic ether, the PMB ether was highly selectively removed affording 2 w and 2 x with the p-CN (1w) or p-CF (1x) benzylic ether untouched due to the much lower reactivity of electronwithdrawing benzylic ethers under the current aerobic conditions."
+                    }
+                ]
+            },
+            "bbox": [
+                70,
+                617,
+                492,
+                875
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                505,
+                417,
+                924,
+                444
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In order to demonstrate the practicality of this method, the natural product (R)-12[5] was synthesized in 8 steps from the commercially available 1,6-hexanediol (Scheme 4): Aldehyde 8 was obtained from 1,6-hexanediol 6 via protection and oxidation in 74 % and 76 % yields, respectively. By applying sequential alkynylation, two consecutive Novozym 435-catalyzed kinetic resolutions,[6] and acetylation, propargylic acetate (R)-10 was obtained in >99 % ee. The current aerobic oxidation of (R)-10 successfully afforded (R)-11 in 97% NMR yield under the standard conditions, which was submitted to next step without further purification. Finally, the copper-catalyzed coupling of (R)-11 with alkynyl bromide yielded (R)-12 in 88% yield with 95 % ee.[7]"
+                    }
+                ]
+            },
+            "bbox": [
+                504,
+                445,
+                924,
+                631
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "To gain insight into the mechanism, the corresponding esters 13[8] and 14[9] were synthesized deliberately and submitted to the standard conditions. Interestingly no reaction was observed, excluding the intermediacy of these two esters (Equations (1) and (2))."
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                631,
+                924,
+                702
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/2a4e0ff0fb566cfbfd794e040fd4e629ad375d9f421d4cd559f943ec8c1b51e9.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                504,
+                712,
+                870,
+                757
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "(1)"
+                    }
+                ]
+            },
+            "bbox": [
+                902,
+                756,
+                922,
+                769
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/5b18ea3780e132679aa518b21fe9b9eb29e6d270dc1e9576c22540beb9809a48.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                505,
+                764,
+                868,
+                810
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/6fff71acf82311df0cd076e35353239e5002f6b666b4cc110eb4db653ee9ee0a.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                505,
+                834,
+                870,
+                882
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "(2)"
+                    }
+                ]
+            },
+            "bbox": [
+                902,
+                853,
+                922,
+                866
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Chemistry—A European Journal"
+                    }
+                ]
+            },
+            "bbox": [
+                52,
+                33,
+                299,
+                49
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Research Article doi.org/10.1002/chem.202401815"
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                20,
+                586,
+                48
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Chemistry Europe European Chemical Societies Publishing"
+                    }
+                ]
+            },
+            "bbox": [
+                840,
+                7,
+                946,
+                47
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": []
+            },
+            "bbox": [
+                968,
+                16,
+                983,
+                980
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Chem. Eur. J. 2024, 30, e202401815 (2 of 8)"
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                908,
+                287,
+                921
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "© 2024 Wiley-VCH GmbH"
+                    }
+                ]
+            },
+            "bbox": [
+                793,
+                908,
+                924,
+                920
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Scheme 2. Scope study. Reaction conditions: 1 (0.5 mmol), Fe(NO3)3 · 9H2O (10 mol%), and TEMPO (10 mol%) in DCE (1.0 mL) with an oxygen balloon at rt. All yields were isolated yields. [a] 2 mmol of 1 a were used. [b] Air balloon was used instead of oxygen balloon and the reaction was conducted at 25 °C. [c] The acid was not easy to isolate. We characterized the corresponding methyl ester after esterification with TMSCHN . [d] 10 mol % of KCl was added. [e] 2.0 mL of DCE were used. [f] 1o (1.0 mmol), Fe(NO ) ·9H O (10 mol%), TEMPO (10 mol%), and KCl (15 mol%) in DCE (4.0 mL) with an oxygen balloon at rt."
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                73,
+                76,
+                490,
+                456
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Based on these results and the literature,[10–12] a possible mechanism is proposed as shown in Scheme 5: *NO and *NO have been reported to be readily generated via the interaction of Fe(NO3)3 · 9H2O with TEMPO.[13] *NO2 would abstract the benzylic hydrogen atom producing benzylic radical Int 1.[10]"
+                    }
+                ]
+            },
+            "bbox": [
+                70,
+                601,
+                492,
+                675
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/8fe652f3acca45eceb868b81c3fe2612ba23854b2dd3f0cfe612ba34086464b6.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Scheme 3. Scope of aerobic oxidaton of benzylic PMB ethers and selective aerobic oxidation of different benzylic ethers. Reaction conditions: 1 (0.5 mmol), Fe(NO ) · 9H O (15 mol %), and TEMPO (15 mol %) in DCE (1.0 mL) with an oxygen balloon at 25 °C. All yields were isolated yields unless otherwise mentioned. [a] Fe(NO ) · 9H O (20 mol %) and TEMPO (20 mol %) were used; 6 % NMR yield of benzaldehyde 3 q was determined by 1 H NMR analysis of the crude product. [b] The acid was not easy to isolate. We characterized the corresponding methyl ester after esterification with TMSCHN . [c] 2 % NMR yield of 4-(methoxycarbonyl)benzaldehyde 3 r was determined by 1 H NMR analysis of the crude product. [d] Fe(NO ) · 9H O (10 mol %) and TEMPO (10 mol %) were used."
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                510,
+                76,
+                919,
+                335
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Next, Int 1 may couple with *NO affording nitro ester Int 2 or Int 2’, which would undergo rearrangement to afford 4- methoxybenzaldehyde 4 a and nitrite 1a’’. [10,11] With the help of *NO , the transformation of nitrite 1a’’ to nitrite radical Int 3 leads to aldehyde 3 a by the elimination of *NO radical from the Int 3.[12] Upon further oxidization, carboxylic acid product 2 a would be delivered."
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                502,
+                924,
+                602
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In order to see whether mechanism A is rational, substrates 1 y and 1 z each with a cyclopropyl unit were synthesized and submitted to the standard conditions. No ring opening products were observed (Equations (3) and (4)). Moreover, nitrite 1a’’ was recovered in 30 % yield with only 8% yield of 2 a and 31% of aldehyde 4a under the standard conditions (Equation (5)), excluding the intermediacy of both benzylic radical Int 1 and the nitrite 1a’’. These results rule out mechanism A."
+                    }
+                ]
+            },
+            "bbox": [
+                504,
+                602,
+                924,
+                675
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Scheme 4. Total synthesis of (R)-6-hydroxy-7,9-octadecadiynoic acid (R)-12."
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                72,
+                707,
+                922,
+                868
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": []
+            },
+            "bbox": [
+                968,
+                17,
+                983,
+                979
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Chemistry—A European Journal"
+                    }
+                ]
+            },
+            "bbox": [
+                52,
+                33,
+                299,
+                49
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Research Article doi.org/10.1002/chem.202401815"
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                20,
+                584,
+                48
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Chemistry Europe European Chemical Societies Publishing"
+                    }
+                ]
+            },
+            "bbox": [
+                840,
+                7,
+                947,
+                47
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Chem. Eur. J. 2024, 30, e202401815 (3 of 8)"
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                908,
+                289,
+                921
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "© 2024 Wiley-VCH GmbH"
+                    }
+                ]
+            },
+            "bbox": [
+                793,
+                908,
+                924,
+                920
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Scheme 5. The possible mechanism A."
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                75,
+                77,
+                489,
+                379
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                72,
+                431,
+                490,
+                488
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/47b030d496d5feaba1efdc96e320dbb465994ec788a7ce6566f40f3b7d5ffad4.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                72,
+                497,
+                455,
+                549
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "(3)"
+                    }
+                ]
+            },
+            "bbox": [
+                470,
+                517,
+                487,
+                530
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/0ccb97a3d1f7d4744c0715a35b8511015cf82429d9c1ce05f832804f8d9e8561.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                72,
+                573,
+                455,
+                625
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "(4)"
+                    }
+                ]
+            },
+            "bbox": [
+                470,
+                595,
+                487,
+                607
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/b1ebe327343d1cd1300c537c986f7706207a7000e381efa0abd636679af97815.jpg"
+                },
+                "content": "",
+                "chart_caption": [],
+                "chart_footnote": []
+            },
+            "bbox": [
+                77,
+                652,
+                502,
+                858
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\tag{5}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/444be10772efeb8ca88d43d4c07bc032f72f228c60ffbdf2791df1a30f875e66.jpg"
+                }
+            },
+            "bbox": [
+                507,
+                73,
+                855,
+                135
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Subsequently, Fe(NO ) · 9H O/TEMPO-catalyzed and NO /TEM-PO-catalyzed aerobic oxidation of 1 a were monitored (Figure 1). We found that 15 mol% of NO and 10 mol% of TEMPOcatalyzed aerobic oxidation of PMB ether matched the data of the current standard conditions of 10 mol% of Fe(NO ) ·9H O and 10 mol % of TEMPO catalytic recipe (for more details, see SI). Surprisingly, only 6 % of 4-methoxybenzaldehyde 4 a was oxidized to 4-methoxybenzoic acid 5 a as observed during the monitoring of the whole reaction process. These results illustrated *NO radical may be involved in this reaction."
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                146,
+                924,
+                288
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Next, the corresponding alcohol 1 a’ was submitted to the standard conditions.[4n] Surprisingly, the reaction was very slow yielding only 55% NMR yield of acid 2a with 40% NMR yield of aldehyde 3 a even after 11.5 hours. Given that 4-methoxybenzaldehyde 4 a was detected as the product in the current transformation, we reasoned that aldehyde 4 a may accelerate the process of oxidation of alcohol. Indeed, when using 4- methoxybenzaldehyde 4 a (40 mol %) as additive under the standard conditions, the alcohol 1 a’ was transformed to acid within 11.5 hours (Equation (6)). We then monitored the reactions of PMB ether and alcohol (Figure 2a and b) and found that indeed the reaction rate of PMB ether 1 a is much faster than that of alcohol 1a’ under the standard conditions. This phenomenon has been further confirmed by monitoring of alcohol 1 a’ in the presence of 4-methoxybenzaldehyde 4 a (Figure 2c). In addition, it is also surprising that only 5 % of pmethoxybenzaldehyde 4 a was oxidized to the corresponding 4- methoxybenzoic acid 5 a (Figure 2c)."
+                    }
+                ]
+            },
+            "bbox": [
+                504,
+                288,
+                926,
+                546
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\tag{6}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/624d9dae1d33139ee8d0655a87f8dfae74828cc3c091a38894bdb2fe00c0625c.jpg"
+                }
+            },
+            "bbox": [
+                507,
+                552,
+                852,
+                620
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/e15bc79193be7f8f1220811aa773a7029e0cb605f3d49463399549f8ccc09d54.jpg"
+                },
+                "content": "",
+                "chart_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 1. Comparison of catalytic aerobic oxidations of PMB ether 1a: 10 mol % of Fe(NO ) · 9H O vs. 15 mol% of NO ; (a) 10 mol % of Fe(NO ) · 9H O and 10 mol % of TEMPO-catalyzed aerobic oxidation of 1 a; (b) 15 mol % of NO and 10 mol % of TEMPO-catalyzed aerobic oxidation of 1a."
+                    }
+                ],
+                "chart_footnote": []
+            },
+            "bbox": [
+                499,
+                652,
+                922,
+                858
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": []
+            },
+            "bbox": [
+                968,
+                17,
+                983,
+                979
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Chemistry—A European Journal"
+                    }
+                ]
+            },
+            "bbox": [
+                52,
+                33,
+                299,
+                49
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Research Article doi.org/10.1002/chem.202401815"
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                20,
+                586,
+                48
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Chemistry Europe European Chemical Societies Publishing"
+                    }
+                ]
+            },
+            "bbox": [
+                842,
+                7,
+                947,
+                47
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Chem. Eur. J. 2024, 30, e202401815 (4 of 8)"
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                908,
+                287,
+                921
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "© 2024 Wiley-VCH GmbH"
+                    }
+                ]
+            },
+            "bbox": [
+                794,
+                908,
+                924,
+                920
+            ]
+        }
+    ],
+    [
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/a3dc6912dcd5d0741170c7cc79e8eb86d4bf7b19a8184248c3567e5239291293.jpg"
+                },
+                "content": "",
+                "chart_caption": [
+                    {
+                        "type": "text",
+                        "content": "(b)"
+                    }
+                ],
+                "chart_footnote": []
+            },
+            "bbox": [
+                78,
+                80,
+                537,
+                300
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/c3d3cc2cad78e97aa1119892c141722eacb308c102941c4dcdbddeca432c9263.jpg"
+                },
+                "content": "",
+                "chart_caption": [],
+                "chart_footnote": []
+            },
+            "bbox": [
+                537,
+                85,
+                919,
+                300
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/8b017ddb2ec56dc1d6543d05808c1d7793ed9e072147b04aa0ca210390e34baa.jpg"
+                },
+                "content": "",
+                "chart_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 2. Comparison of the reaction of PMB ether 1 a with that of alcohol 1a’; (a) 10 mol % of Fe(NO ) · 9H O and 10 mol % of TEMPO-catalyzed aerobic oxidation of 1a; (b) 10 mol % of Fe(NO ) ·9H O and 10 mol % of TEMPO-catalyzed aerobic oxidation of 1a’; (c) 10 mol % of Fe(NO ) ·9H O, 10 mol % of TEMPO, and 40 mol % of 4 a-catalyzed aerobic oxidation of 1 a’."
+                    }
+                ],
+                "chart_footnote": []
+            },
+            "bbox": [
+                272,
+                302,
+                732,
+                520
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This was further confirmed by the fact that under the standard conditions, the reaction of p-methoxybenzyl PMB ether 1 A afforded 4-methoxybenzoic acid 5 a only 7% NMR yield with 93 % NMR yield of 4-methoxybenzaldehyde 4a, which is matched with the results in monitoring that only 6% of 4- methoxybenzoic acid 5 a was detected (Equation (7) vs. Figure 1)."
+                    }
+                ]
+            },
+            "bbox": [
+                70,
+                602,
+                492,
+                702
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/f027a6ab8e84e33eb8076f06f24cfae28d1e2e6c51b5d32d408d6ca64c97e1e4.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                72,
+                711,
+                489,
+                757
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "We also set up the competitive experiment of alcohol 1 a’ (0.50 mmol) and PMB ether 1a (0.50 mmol) with 0.05 mmol each of Fe(NO ) · 9H O and TEMPO as catalysts (Equation (8)): 0.24 mmol of aldehyde 3a, 0.10 mmol of nitrite 1a’’, and 0.04 mmol of 4-methoxybenzaldehyde 4 a were afforded after 8 h. The amounts of recovered alcohol 1 a’ and PMB ether 1 a were 0.15 mmol and 0.46 mmol, respectively. These results demonstrated that the alcohol 1a’ was much more reactive when the alcohol and the PMB ether both existed, which was consistent with the observion in the monitoring experiment (Figure 1a) that the concentration of alcohol was low during the reaction."
+                    }
+                ]
+            },
+            "bbox": [
+                70,
+                774,
+                492,
+                889
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                504,
+                602,
+                924,
+                659
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\tag{8}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/0b4c4f78677bee5c48238f31f8515f7c335becdb6b8217864f266a1ab10ca893.jpg"
+                }
+            },
+            "bbox": [
+                505,
+                667,
+                865,
+                734
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In addition, isotopic 18O labeled substrate 1 a-18O was submitted to the standard conditions, the content of isotopic 18O in the acid 2 a is much higher than 4-methoxybenzaldehyde 4 a (Equation (9)). Oxygen atom exchange experiments of 2 a or 4 a with H 18O were also conducted: Oxygen in the acid 2 a remained almost unchanged (Equation (10)), however, the oxygen in 4-methoxybenzaldehyde 4 a exchanged with H 18O affording 33% 18O labeled 4-methoxybenzaldehyde under the standard conditions (Equation (11)). Thus, it is concluded that the isotopic 18O in the acid 2 a came from 1 a-18O (Equation (9))."
+                    }
+                ]
+            },
+            "bbox": [
+                504,
+                745,
+                926,
+                889
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": []
+            },
+            "bbox": [
+                968,
+                17,
+                983,
+                979
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Chemistry—A European Journal"
+                    }
+                ]
+            },
+            "bbox": [
+                52,
+                33,
+                299,
+                49
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Research Article doi.org/10.1002/chem.202401815"
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                20,
+                586,
+                48
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Chemistry Europe European Chemical Societies Publishing"
+                    }
+                ]
+            },
+            "bbox": [
+                840,
+                7,
+                947,
+                47
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Chem. Eur. J. 2024, 30, e202401815 (5 of 8)"
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                908,
+                289,
+                921
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "© 2024 Wiley-VCH GmbH"
+                    }
+                ]
+            },
+            "bbox": [
+                793,
+                908,
+                924,
+                921
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "All of these results indicated the cleavage of C\u0000 O bond connected to PMB group (Equation (9))."
+                    }
+                ]
+            },
+            "bbox": [
+                72,
+                74,
+                490,
+                103
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/c70cd44b88c02240ebd57730a539e19ab818deb65a9cbaa260f7fde11c4da1f1.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                70,
+                114,
+                442,
+                350
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "(9)"
+                    }
+                ]
+            },
+            "bbox": [
+                468,
+                145,
+                487,
+                159
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "(10)"
+                    }
+                ]
+            },
+            "bbox": [
+                462,
+                234,
+                487,
+                248
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "(11)"
+                    }
+                ]
+            },
+            "bbox": [
+                462,
+                315,
+                489,
+                329
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/a8a08c33bbfa5ab495e06c8172b53044a4807f688dde83c5af03663bea500e2c.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Based on these data, an alternative mechanism is proposed (Scheme 6): the oxoammonium cation TEMPO+[14] was generated via the interaction of TEMPO with nitrates in the presence of H+ as the catalytically active species. An oxonium ion Int 4 is formed by hydride transfer from the benzylic position of 1a to the oxygen atom of TEMPO+.[15] The in situ generated TEMPOH was subsequently oxidized by *NO to regenerate TEMPO+.[16] Meanwhile *NO was reducted to *NO, which would be oxidized by oxygen to regenerate *NO . Int 4 would react with water to form the hemiacetal Int 5, which would form 4-methoxybenzaldehyde 4 a and alcohol 1 a’ upon hydrolysis. The resulting alcohol 1 a’ would be further oxidized to give the carboxylic"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Scheme 6. The possible mechanism B."
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                73,
+                562,
+                489,
+                868
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "acid product 2 a. [4n] However, the oxidation of 4-methoxybenzaldehyde 4 a to 4-methoxybenzoic acid 5a was slow. The role of 4-methoxybenzaldehyde 4 a on the oxidation of alcohol to carboxylic acid is still unclear."
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                74,
+                924,
+                131
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In order to further verify the intermediacy of oxonium ion Int 4, we investigated the effect of para-substituent group in the phenyl ring of 1 (Table 2). The reactivity of 1 dropped along with the electron-withdrawing ability of this R group: 4- methoxybenzyl ether 1 a was fully consumed in only 8 h (Table 2, entry 1) while the 4-cyanobenzyl substrate 1 a–C was totally inert under the standard conditions (Table 2, entry 4). The results fitted the Hammett plot[17] of log(k /k ) versus σ, as shown in Scheme 7. The Hammett slope of ρ=\u0000 2.28422 suggests the formation of this positively charge species,[15] further supporting the formation of Int 4."
+                    }
+                ]
+            },
+            "bbox": [
+                504,
+                131,
+                924,
+                290
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/a36ce60460f69979f1fe8eb7ad2993a200b567426ebb147270be77ebd6167854.jpg"
+                }
+            },
+            "bbox": [
+                522,
+                401,
+                598,
+                413
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/487ce68a931f753f64aa3382abbb9b47d81df9da8ac3208607acf9fb0312f1b7.jpg"
+                },
+                "table_caption": [],
+                "table_footnote": [
+                    {
+                        "type": "text",
+                        "content": "[a] Reaction conditions: 1 (0.5 mmol), Fe(NO ) · 9H O (10 mol%), and TEMPO (10 mol %) in DCE (1.0 mL) with an oxygen balloon at rt for 8 h. The recovery and NMR yield were determined by 1 H NMR analysis of the crude product. [b] NMR yield of corrosponding benzoic acid of 5 is shown in the parenthesis."
+                    }
+                ],
+                "html": "<table><tr><td colspan=\"2\">1a, 0.5 mmol</td><td colspan=\"4\">2a, 85% 4a, 95% NMR yield 5a, 2% NMR yield</td></tr><tr><td>Entry</td><td>R</td><td>Recovery of 1 a (%)</td><td colspan=\"3\">NMR yield (%)</td></tr><tr><td></td><td></td><td></td><td>2a</td><td>3a</td><td>4(b]</td></tr><tr><td></td><td>OMe (1 a)</td><td>0</td><td>95</td><td>o</td><td>93 (3)</td></tr><tr><td>2</td><td>Me (1 a-A)</td><td>11</td><td>73</td><td>16</td><td>88</td></tr><tr><td>3</td><td>H (1 a-B)</td><td>39</td><td>45</td><td>9</td><td>55</td></tr><tr><td>4</td><td>CN (1 a-C)</td><td>97</td><td>o</td><td>0</td><td>o</td></tr></table>",
+                "table_type": "complex_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                510,
+                424,
+                917,
+                535
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/27487fa616530ab4db73e8d7b78db977c7388e1d8e75c976a7fb79bdd04eae24.jpg"
+                },
+                "content": "",
+                "chart_caption": [
+                    {
+                        "type": "text",
+                        "content": "Scheme 7. Hammett plot for the aerobic oxidation of 4-R-substituted benzylic ethers under the standard reaction conditions."
+                    }
+                ],
+                "chart_footnote": []
+            },
+            "bbox": [
+                509,
+                620,
+                924,
+                856
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": []
+            },
+            "bbox": [
+                968,
+                19,
+                983,
+                979
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Chemistry—A European Journal"
+                    }
+                ]
+            },
+            "bbox": [
+                52,
+                33,
+                299,
+                49
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Research Article doi.org/10.1002/chem.202401815"
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                20,
+                586,
+                48
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Chemistry Europe European Chemical Societies Publishing"
+                    }
+                ]
+            },
+            "bbox": [
+                840,
+                7,
+                947,
+                48
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Chem. Eur. J. 2024, 30, e202401815 (6 of 8)"
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                908,
+                287,
+                921
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "© 2024 Wiley-VCH GmbH"
+                    }
+                ]
+            },
+            "bbox": [
+                794,
+                908,
+                924,
+                921
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Conclusions"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                73,
+                73,
+                183,
+                89
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In summary, we have developed an efficient and highly selective aerobic transformation of PMB ethers affording the corresponding carboxylic acids under the catalysis of Fe-(NO ) · 9H O/TEMPO with pure oxygen or air as the green oxidant. The reaction proceeds under very mild reaction conditions and allows transformation of a variety of PMB ethers accomodating many functionalities. No racemization occurred for PMB ethers of optically active alcohols. Moreover, total synthesis of natural product (R)-6-hydroxy-7,9-octadecadiynoic acid (R)-12 has been realized with this reaction as the key step. Experimental studies indicated a unique mechanism involving oxygen-stabilized benzylic cation. Further studies are being actively pursued in our laboratory."
+                    }
+                ]
+            },
+            "bbox": [
+                70,
+                104,
+                492,
+                290
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Experimental Section"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                73,
+                316,
+                262,
+                331
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/468031b027db22a3ed42457c51aa20ec457e80db13018659a024a7544e8ea59d.jpg"
+                }
+            },
+            "bbox": [
+                72,
+                338,
+                462,
+                372
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Fe(NO ) ·9H O (20.9 mg, 0.05 mmol), TEMPO (8.2 mg, 0.05 mmol), and 1a (153.8 mg, 0.5 mmol) were added to 25 mL flask sequentially. The flask was degassed to remove the air inside completely and refilled with O2 by an O2 balloon for three times. After adding DCE (1.0 mL), the resulting mixture was stirred at room temperature for 8 h until completion of the reaction as monitored by TLC (petroleum ether/ethyl acetate = 5/1). The resulting mixture was diluted with DCM and filtrated through a short column of silica gel eluted with DCM (120 mL). After evaporation, 95% NMR yield of 4a and 2 % NMR yield of 5a were determined by 1 H NMR analysis of the crude product with CH Br (35.0 μL) as the internal standard. After evaporation, an aqueous solution of Na CO (pH=11~12, 10 mL) was added to the crude product 2 a. The aqueous layer was extracted with ethyl acetate (20 mL×3). Then an aqueous solution of HCl (3.0 M) was added to the aqueous layer for adjusting pH of the solution to 1~2. The aqueous layer was diluted with ethyl acetate and extracted with ethyl acetate (20 mL×3). The organic layer was separated, washed with brine, dried over anhydrous Na SO , filtrated, concentrated, and evaporated to remove the solvent to afford 2 a[4n] (85.0 mg, 85 %) as solid: m.p. 43.1–43.9 °C (petroleum ether/ethyl acetate) (reported:[4n] m.p. 43–44 °C (petroleum ether/ethyl acetate)); 1 H NMR (400 MHz, CDCl ): δ 11.87 (brs, 1 H, COOH), 2.34 (t, J = 7.4 Hz, 2 H, CH ), 1.63 (quint, J = 7.3 Hz, 2 H, CH ), 1.42–1.17 (m, 16 H, 8×CH ), 0.88 (t, J=6.8 Hz, 3 H, CH ); 13C NMR (100 MHz, CDCl ): δ 180.7, 34.1, 31.9, 29.6, 29.4, 29.3, 29.2, 29.1, 24.6, 22.7, 14.0."
+                    }
+                ]
+            },
+            "bbox": [
+                70,
+                386,
+                492,
+                702
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Supporting Information"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                72,
+                730,
+                284,
+                746
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The authors have cited additional references within the Supporting Information.[18–57]"
+                    }
+                ]
+            },
+            "bbox": [
+                72,
+                759,
+                490,
+                788
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Acknowledgements"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                72,
+                815,
+                242,
+                831
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Financial supports from the National Key R&D Program of China (2022 YFA1503200) and National Natural Science Foundation of China (grant no. 21988101) are greatly appreciated. We thank"
+                    }
+                ]
+            },
+            "bbox": [
+                72,
+                845,
+                492,
+                889
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Mr En Zheng in this group for reproducing the results of (R)-2 j’, (S)-2 l’ and 2 t’ presented in Scheme 2 and Scheme 3."
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                74,
+                924,
+                103
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Conflict of Interests"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                507,
+                130,
+                675,
+                146
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The authors declare no conflict of interest."
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                160,
+                783,
+                174
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Data Availability Statement"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                507,
+                202,
+                744,
+                217
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The data that support the findings of this study are available in the supplementary material of this article."
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                231,
+                924,
+                261
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Keywords: Functional group interconversion · PMB ethers · Aerobic oxidation · Iron catalysis · Carboxylic acids"
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                279,
+                926,
+                309
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[1] P. G. M. Wuts, T. W. Greene, Protective Groups in Organic Synthesis, John Wiley & Sons, New York, 1999."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[2] a) For reports on conversions of PMB ethers to aldehydes, see: K. Walsh, H. F. Sneddon, C. J. Moody, Tetrahedron 2014, 70, 7380–7387; b) Z. Shen, M. Chen, T. Fang, M. Li, W. Mo, B. Hu, N. Sun, X. Hu, Tetrahedron Lett. 2015, 56, 2768–2772; c) T. Katsina, L. Clavier, J.-F. Giffard, N. Macedo Portela da Silva, J. Fournier, R. Tamion, C. Copin, S. Arseniyadis, A. Jean, Org. Process Res. Dev. 2020, 24, 856–860; d) D. Kumar, A. Salam, T. K. Sahu, S. S. Sahoo, T. Khan, J. Org. Chem. 2021, 86, 15096–15116."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[3] a) For reports on conversions of PMB ethers to esters under aerobic conditions, see: J. A. Pincock, A. L. Pincock, M. A. Fox, Tetrahedron 1985, 41, 4107–4117; b) Y. Hae Kim, Y. Il Kim, J. Young Kim, J. Chem. Soc., Perkin Trans. 1 1998, 4, 633–634; c) B. Mühldorf, R. Wolf, Angew. Chem. Int. Ed. 2016, 55, 427–430; d) L. Ren, M.-M. Yang, C.-H. Tung, L.-Z. Wu, H. Cong, ACS Catal. 2017, 7, 8134–8138; e) H. Tanaka, K. Oisaki, M. Kanai, Synlett 2017, 28, 1576–1580; f) L. C. Finney, L. J. Mitchell, C. J. Moody, Green Chem. 2018, 20, 2242–2249."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[4] a) For the reviews on aerobic oxidation of primary alcohols to carboxylic acids, see: T. Mallat, A. Baiker, Chem. Rev. 2004, 104, 3037–3058; b) C. Parmeggiani, F. Cardona, Green Chem. 2012, 14, 547–564; c) For the selected reports on noble metal-catalyzed aerobic oxidation of primary alcohols to carboxylic acids, see: H. Ji, T. Mizugaki, K. Ebitani, K. Kaneda, Tetrahedron Lett. 2002, 43, 7179–7183; d) Y. M. A. Yamada, T. Arakawa, H. Hocke, Y. Uozumi, Angew. Chem. Int. Ed. 2007, 46, 704–706; e) R. Kumar, E. Gravel, A. Hagège, H. Li, D. V. Jawale, D. Verma, I. N. N. Namboothiri, E. Doris, Nanoscale 2013, 5, 6491–6497; f) L. Tang, X. Guo, Y. Li, S. Zhang, Z. Zha, Z. Wang, Chem. Commun. 2013, 49, 5213–5215; g) L. Han, P. Xing, B. Jiang, Org. Lett. 2014, 16, 3428–3431; h) M. S. Ahmed, D. S. Mannel, T. W. Root, S. S. Stahl, Org. Process Res. Dev. 2017, 21, 1388–1393; i) For the selected reports on earth-abundant metalcatalyzed aerobic oxidation of primary alcohols to carboxylic acids, see: T. Iwahama, Y. Yoshino, T. Keitoku, S. Sakaguchi, Y. Ishii, J. Org. Chem. 2000, 65, 6502–6507; j) N. Jiang, A. J. Ragauskas, J. Org. Chem. 2007, 72, 7030–7033; k) Y. Kuang, Y. Nabae, T. Hayakawa, M.-a. Kakimoto, Appl. Catal. A-Gen. 2012, 423–424, 52–58; l) G. Urgoitia, R. SanMartin, M. T. Herrero, E. Domínguez, Chem. Commun. 2015, 51, 4799–4802; m) K. Lagerblom, P. Wrigstedt, J. Keskiväli, A. Parviainen, T. Repo, ChemPlusChem 2016, 81, 1160–1165; n) X. Jiang, J. Zhang, S. Ma, J. Am. Chem. Soc. 2016, 138, 8344–8347; o) X. Jiang, S. Ma, Synthesis 2018, 50, 1629– 1639; p) Y. Yu, D. Zhai, Z. Zhou, S. Jiang, H. Qian, S. Ma, Chem. Commun. 2023, 59, 5281–5284; q) For the selected report on aerobic oxidation of primary alcohols to carboxylic acids with organocatalysis, see:D.-F. Yu, P. Xing, B. Jiang, Tetrahedron 2015, 71, 4269–4273; r) For the selected reports on aerobic oxidation of primary alcohols to carboxylic acids with photocatalysis, see: S.-i. Hirashima, A. Itoh, Green Chem. 2007, 9, 318–320; s) X. Zhu, C. Liu, Y. Liu, H. Yang, H. Fu, Chem. Commun. 2020, 56, 12443–12446; t) For the selected reports on Fe(NO3)3· 9H2Ocatalyzed aerobic oxidation of aldehydes or 1,4-diols, see:X. Jiang, Y. Zhai, J. Chen, Y. Han, Z. Yang, S. Ma, Chin. J. Chem. 2018, 36, 15–19; u) J. Li, J. Liu, C. Fu, S. Ma, Chin. J. Chem. 2023, 41, 1963–1966."
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                514,
+                350,
+                922,
+                373
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": []
+            },
+            "bbox": [
+                968,
+                16,
+                983,
+                982
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Chemistry—A European Journal"
+                    }
+                ]
+            },
+            "bbox": [
+                52,
+                33,
+                299,
+                48
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Research Article doi.org/10.1002/chem.202401815"
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                20,
+                584,
+                48
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Chemistry Europe European Chemical Societies Publishing"
+                    }
+                ]
+            },
+            "bbox": [
+                840,
+                8,
+                946,
+                47
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Chem. Eur. J. 2024, 30, e202401815 (7 of 8)"
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                908,
+                287,
+                921
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "© 2024 Wiley-VCH GmbH"
+                    }
+                ]
+            },
+            "bbox": [
+                793,
+                908,
+                924,
+                920
+            ]
+        }
+    ],
+    [
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[5] a) A. D. Patil, J. A. Chan, P. Lois-Flamberg, R. J. Mayer, J. W. Westley, J. Nat. Prod. 1989, 52, 153–161; b) S. Y. Mhaskar, G. Lakshminarayana, Tetrahedron Lett. 1990, 31, 7227–7228."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[6] D. Xu, Z. Li, S. Ma, Tetrahedron Lett. 2003, 44, 6343–6346."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[7] P. C. Knutson, H. E. Fredericks, E. M. Ferreira, Org. Lett. 2018, 20, 6845– 6849."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[8] a) For synthetic method of 13, see: B. Neises, W. Steglich, Angew. Chem. Int. Ed. 1978, 17, 522–524; b) For report on the analytical data of 13, see:J. P. Shah, C. M. Russo, K. T. Howard, J. D. Chisholm, Tetrahedron Lett. 2014, 55, 1740–1742."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[9] a) For synthetic method of 14, see: C. Saturnino, S. Petrosino, A. Ligresti, C. Palladino, G. D. Martino, T. Bisogno, V. D. Marzo, Bioorg. Med. Chem. Lett. 2010, 20, 1210–1213; b) For report on the analytical data of 14, see:X. Zhu, Q. Fan, W. Luo, D. Wang, Y. Jia, H. Li, Z. Wang, Q. Xiao, X. He, Chin. J. Chem. 2023, 41, 411–416."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[10] T. Nishiguchi, H. Okamoto, J. Chem. Soc., Chem. Commun. 1990, 1990, 1607–1608."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[11] P. Strazzolini, A. Runcio, Eur. J. Org. Chem. 2003, 2003, 526–536."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[12] Z. Shen, Z. Zhao, Y.-L. Ren, W. Liu, X. Tian, X. Zheng, B. Zhao, ChemistrySelect 2020, 5, 14288–14291."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[13] a) Y. Kuang, H. Rokubuichi, Y. Nabae, T. Hayakawa, M.-a. Kakimoto, Adv. Synth. Catal. 2010, 352, 2635–2642; b) J. E. Nutting, K. Mao, S. S. Stahl, J. Am. Chem. Soc. 2021, 143, 10565–10570; c) Q. Zhang, J. Zhang, H. Qian, S. Ma, Org. Chem. Front. 2023, 10, 1505–1511."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[14] a) For the recent reviews on oxoammonium catalyzed conversion of alcohols and ethers, see: D. Leifert, A. Studer, Chem. Rev. 2023, 123, 10302–10380; b) J. M. Bray, S. M. Stephens, S. M. Weierbach, K. Vargas, K. M. Lambert, Chem. Commun. 2023, 59, 14063–14092; c) For the recent reports on oxoammonium catalyzed conversion of alcohols and ethers, see: C. Risi, F. Zhao, D. Castagnolo, ACS Catal. 2019, 9, 7264–7269; d) P. Thapa, S. Hazoor, B. Chouhan, T. T. Vuong, F. W. Foss Jr., J. Org. Chem. 2020, 85, 9096–9105; e) P. Borowiecki, A. Rudzka, T. Reiter, W. Kroutil, Catal. Sci. Technol. 2022, 12, 4312–4324; f) A. Mishra, J. Kim, M. Zorigt, A. I. B. Romo, R. Gaddam, J. E. Braun, D. Ziviani, J. Rodríguez-López, ACS Sustainable Chem. Eng. 2023, 11, 6241–6249; g) B. Mohamad Ali, Z. Yu, Z. Tao, T. Zhang, L. Wang, C. He, H. Zhang, J. Wang, ACS Appl. Mater. Interfaces 2024, 16, 20409–20418."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[15] a) F. d’Acunzo, P. Baiocco, M. Fabbrini, C. Galli, P. Gentili, Eur. J. Org. Chem. 2002, 2002, 4195–4201; b) For the report on stoichiometric 4- acetamido-TEMPO as oxidant to convert PMB ethers to acids, see: P. P. Pradhan, J. M. Bobbitt, W. F. Bailey, J. Org. Chem. 2009, 74, 9524–9527."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[16] X. He, Z. Shen, W. Mo, N. Sun, B. Hu, X. Hu, Adv. Synth. Catal. 2009, 351, 89–92."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[17] C. Hansch, A. Leo, R. W. Taft, Chem. Rev. 1991, 91, 165–195."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[18] G. Bianchini, M. Aschi, G. Cavicchio, M. Crucianelli, S. Preziuso, C. Gallina, A. Nastari, E. Gavuzzo, F. Mazza, Bioorgan. Med. Chem. 2005, 13, 4740– 4749."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[19] U. Farid, M. L. Aiello, S. J. Connon, Chem. Eur. J. 2019, 25, 10074–10079."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[20] A. Basak, A. Nag, G. Bhattacharya, S. Mandal, S. Nag, Tetrahedron: Asymmetry 2000, 11, 2403–2407."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[21] J. A. Friest, Y. Maezato, S. Broussy, P. Blum, D. B. Berkowitz, J. Am. Chem. Soc. 2010, 132, 5930–5931."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[22] S. Poigny, S. Nouri, A. Chiaroni, M. Guyot, M. Samadi, J. Org. Chem. 2001, 66, 7263–7269."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[23] R. A. Green, K. E. Jolley, A. A. M. Al-Hadedi, D. Pletcher, D. C. Harrowven, O. De Frutos, C. Mateos, D. J. Klauber, J. A. Rincón, R. C. D. Brown, Org. Lett. 2017, 19, 2050–2053."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[24] N. Kern, T. Dombray, A. Blanc, J.-M. Weibel, P. Pale, J. Org. Chem. 2012, 77, 9227–9235."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[25] G. Pandey, A. Krishna, Synthetic Commun. 1988, 18, 2309–2314."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[26] B. Sui, E. A. H. Yeh, D. P. Curran, J. Org. Chem. 2010, 75, 2942–2954."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[27] A. Mart, M. S. Shashidhar, Tetrahedron 2012, 68, 9769–9776."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[28] T. Jaschinski, M. Hiersemann, Org. Lett. 2012, 14, 4114–4117."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[29] a) For synthetic method of 1 t and 1 A, see: H. Matsubara, T. Maegawa, Y. Kita, T. Yokoji, A. Nomoto, Org. Biomol. Chem. 2014, 12, 5442–5447; b) For report on the analytical data of 1 t and 1 A, see: G. A. Molander, B. Canturk, Org. Lett. 2008, 10, 2135–2138."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[30] P. R. Krishna, B. Lavanya, A. K. Mahalingam, V. V. R. Reddy, G. V. M. Sharma, Lett. Org. Chem. 2005, 2, 360–363."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[31] N. Yasukawa, T. Kanie, M. Kuwata, Y. Monguchi, H. Sajiki, Y. Sawama, Chem. Eur. J. 2017, 23, 10974–10977."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[32] For synthetic method and analytical data of S1, see: D. Zhuang, T. Gatera, R. Yan, Tetrahedron Lett. 2020, 61, 152506."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[33] For synthetic method and analytical data of S4-18O, see: T. M. Haas, S. Mundinger, D. Qiu, N. Jork, K. Ritter, T. Dürr-Mayer, A. Ripp, A. Saiardi, G. Schaaf, H. J. Jessen, Angew. Chem. Int. Ed. 2022, 61, e202112457."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[34] a) For synthetic method of S6, see: M. Puigmarti, M. P. Bosch, A. Guerrero, Synthesis-Stuttgart 2015, 47, 961–968; b) For report on the analytical data of S6, see: K. Lehr, S. Schulthoff, Y. Ueda, R. Mariz, L. Leseurre, B. Gabor, A. Fürstner, Chem. Eur. J. 2015, 21, 219–227"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[35] L. A. Marcaurelle, E. Comer, S. Dandapani, J. R. Duvall, B. Gerard, S. Kesavan, M. D. I. V. Lee, H. Liu, J. T. Lowe, J.-C. Marie, C. A. Mulrooney, B. A. Pandya, A. Rowley, T. D. Ryba, B.-C. Suh, J. Wei, D. W. Young, L. B. Akella, N. T. Ross, Y.-L. Zhang, D. M. Fass, S. A. Reis, W.-N. Zhao, S. J. Haggarty, M. Palmer, M. A. Foley, J. Am. Chem. Soc. 2010, 132, 16962– 16976."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[36] M. Yar, E. M. McGarrigle, V. K. Aggarwal, Angew. Chem. Int. Ed. 2008, 47, 3784–3786."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[37] T. Vilaivan, Tetrahedron Lett. 2006, 47, 6739–6742."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[38] J. Wang, F. Jiang, C. Tao, H. Yu, L. Ruhlmann, Y. Wei, Green Chem. 2021, 23, 2652–2657."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[39] T. Utsumi, K. Noda, D. Kawauchi, H. Ueda, H. Tokuyama, Adv. Synth. Catal. 2020, 362, 3583–3588."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[40] L. L. Chng, J. Yang, J. Y. Ying, ChemSusChem 2015, 8, 1916–1925."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[41] F. Hou, X.-C. Wang, Z.-J. Quan, Org. Biomol. Chem. 2018, 16, 9472–9476."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[42] Y. Chen, X. Yi, Y. Cheng, A. Huang, Z. Yang, X. Zhao, F. Ling, W. Zhong, J. Org. Chem. 2022, 87, 7864–7874."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[43] J. Xu, B. Lin, X. Jiang, Z. Jia, J. Wu, W.-M. Dai, Org. Lett. 2019, 21, 830– 834."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[44] Y. Tsukamoto, S. Itoh, M. Kobayashi, Y. Obora, Org. Lett. 2019, 21, 3299– 3303."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[45] C. Audubert, O. J. Gamboa Marin, H. Lebel, Angew. Chem. Int. Ed. 2017, 56, 6294–6297."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[46] I. González-Gil, D. Zian, H. Vázquez-Villa, G. Hernández-Torres, R. F. Martínez, N. Khiar-Fernández, R. Rivera, Y. Kihara, I. Devesa, S. Mathivanan, C. R. del Valle, E. Zambrana-Infantes, M. Puigdomenech, G. Cincilla, M. Sanchez-Martinez, F. Rodríguez de Fonseca, A. V. Ferrer-Montiel, J. Chun, R. López-Vales, M. L. López-Rodríguez, S. Ortega-Gutiérrez, J. Med. Chem. 2020, 63, 2372–2390."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[47] X. Zhang, X. Xie, Y. Liu, J. Am. Chem. Soc. 2018, 140, 7385–7389."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[48] D. Song, G. Blond, A. Fürstner, Tetrahedron 2003, 59, 6899–6904."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[49] M. J. Corr, R. A. Cormanich, C. N. von Hahmann, M. Bühl, D. B. Cordes, A. M. Z. Slawin, D. O’Hagan, Org. Biomol. Chem. 2016, 14, 211–219."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[50] M. Mąkosza, M. Barbasiewicz, K. Wojciechowski, Synlett 2001, 2001, 1121–1122."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[51] T. Kitanosono, A. Hashidoko, Y. Yamashita, S. Kobayashi, Chem. Asian J. 2022, 17, e202200457."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[52] G. Pandey, S. K. Tiwari, B. Singh, K. Vanka, S. Jain, Chem. Commun. 2017, 53, 12337–12340."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[53] J.-N. Yang, X.-Q. Zhou, X.-H. Nong, J. Cao, Y. Hui, M. Wen, W.-H. Chen, Nat. Prod. Res. 2021, 35, 3504–3508."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[54] H.-J. Lehmler, M. O. Oyewumi, M. Jay, P. M. Bummer, J. Fluorine Chem. 2001, 107, 141–146."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[55] Y.-H. Yang, M. Shi, Org. Lett. 2006, 8, 1709–1712."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[56] R. Lin, F. Chen, N. Jiao, Org. Lett. 2012, 14, 4158–4161."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[57] S. R. Crosby, J. R. Harding, C. D. King, G. D. Parker, C. L. Willis, Org. Lett. 2002, 4, 3407–3410."
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                76,
+                489,
+                108
+            ]
+        },
+        {
+            "type": "page_footnote",
+            "content": {
+                "page_footnote_content": [
+                    {
+                        "type": "text",
+                        "content": "Version of record online: August 29, 2024"
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                782,
+                736,
+                794
+            ]
+        },
+        {
+            "type": "page_footnote",
+            "content": {
+                "page_footnote_content": [
+                    {
+                        "type": "text",
+                        "content": "Accepted manuscript online: June 24, 2024"
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                771,
+                742,
+                782
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": []
+            },
+            "bbox": [
+                968,
+                20,
+                983,
+                979
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Chemistry—A European Journal"
+                    }
+                ]
+            },
+            "bbox": [
+                52,
+                33,
+                299,
+                48
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Research Article doi.org/10.1002/chem.202401815"
+                    }
+                ]
+            },
+            "bbox": [
+                341,
+                21,
+                586,
+                48
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Chemistry Europe European Chemical Societies Publishing"
+                    }
+                ]
+            },
+            "bbox": [
+                840,
+                8,
+                947,
+                47
+            ]
+        },
+        {
+            "type": "page_footnote",
+            "content": {
+                "page_footnote_content": [
+                    {
+                        "type": "text",
+                        "content": "Manuscript received: May 9, 2024"
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                759,
+                692,
+                771
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Chem. Eur. J. 2024, 30, e202401815 (8 of 8)"
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                908,
+                287,
+                920
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "© 2024 Wiley-VCH GmbH"
+                    }
+                ]
+            },
+            "bbox": [
+                794,
+                908,
+                924,
+                920
+            ]
+        }
+    ]
+]

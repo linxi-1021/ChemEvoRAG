@@ -1,0 +1,4638 @@
+[
+  {
+    "molecule_card_id": "mol_23_0000",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[2*]C(C)O.[7*]n1ccc2ccccc21",
+    "canonical_smiles": "[2*]C(C)O.[7*]n1ccc2ccccc21",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "e2ddd62567e411cbdad6bd560a2b97f8fb406506672b662969967835a54db503",
+        "figure_id": "e2ddd62567e411cbdad6bd560a2b97f8fb406506672b662969967835a54db503",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 1,
+          "bbox": [
+            581.0,
+            370.0,
+            855.0,
+            501.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.04502251125562781,
+          0.09299107241344153,
+          0.34067033516758377,
+          0.4903888177700292
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "e2ddd62567e411cbdad6bd560a2b97f8fb406506672b662969967835a54db503"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0001",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[7*]n1ccc2ccccc21",
+    "canonical_smiles": "[7*]n1ccc2ccccc21",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "e2ddd62567e411cbdad6bd560a2b97f8fb406506672b662969967835a54db503",
+        "figure_id": "e2ddd62567e411cbdad6bd560a2b97f8fb406506672b662969967835a54db503",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 1,
+          "bbox": [
+            581.0,
+            370.0,
+            855.0,
+            501.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.04502251125562781,
+          0.6016601864698738,
+          0.34067033516758377,
+          1.0030319092800273
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "e2ddd62567e411cbdad6bd560a2b97f8fb406506672b662969967835a54db503"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0002",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[1*]n1ccc2ccccc21.[2*]C(C)=O",
+    "canonical_smiles": "[1*]n1ccc2ccccc21.[2*]C(C)=O",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "e2ddd62567e411cbdad6bd560a2b97f8fb406506672b662969967835a54db503",
+        "figure_id": "e2ddd62567e411cbdad6bd560a2b97f8fb406506672b662969967835a54db503",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 1,
+          "bbox": [
+            581.0,
+            370.0,
+            855.0,
+            501.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7218609304652326,
+          0.10968177771841821,
+          0.9949974987493747,
+          0.511848296019285
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "e2ddd62567e411cbdad6bd560a2b97f8fb406506672b662969967835a54db503"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0003",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[2*]C(C)=O.[7*]n1ccc2ccccc21",
+    "canonical_smiles": "[2*]C(C)=O.[7*]n1ccc2ccccc21",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "e2ddd62567e411cbdad6bd560a2b97f8fb406506672b662969967835a54db503",
+        "figure_id": "e2ddd62567e411cbdad6bd560a2b97f8fb406506672b662969967835a54db503",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 1,
+          "bbox": [
+            581.0,
+            370.0,
+            855.0,
+            501.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.727863931965983,
+          0.5921226405813157,
+          1.0,
+          0.9942891588821825
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "e2ddd62567e411cbdad6bd560a2b97f8fb406506672b662969967835a54db503"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0004",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "Cc1ccc(S(=O)(=O)n2cc(CO)c3ccccc32)cc1",
+    "canonical_smiles": "Cc1ccc(S(=O)(=O)n2cc(CO)c3ccccc32)cc1",
+    "inchi_key": "AOYYOOZRBUTQBJ-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "7b28575f15b8781163fddd5fc5788a1ffd5b0b2f1a703a38222a495e30f5abda",
+        "figure_id": "7b28575f15b8781163fddd5fc5788a1ffd5b0b2f1a703a38222a495e30f5abda",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 3,
+          "bbox": [
+            112.0,
+            152.0,
+            442.0,
+            364.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.01250625312656328,
+          0.690585274827975,
+          0.24562281140570286,
+          0.9411673779899745
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "7b28575f15b8781163fddd5fc5788a1ffd5b0b2f1a703a38222a495e30f5abda"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0005",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "Cc1ccc(S(=O)(=O)n2c(CO)cc3ccccc32)cc1",
+    "canonical_smiles": "Cc1ccc(S(=O)(=O)n2c(CO)cc3ccccc32)cc1",
+    "inchi_key": "WMPGQVHONWECLT-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "7b28575f15b8781163fddd5fc5788a1ffd5b0b2f1a703a38222a495e30f5abda",
+        "figure_id": "7b28575f15b8781163fddd5fc5788a1ffd5b0b2f1a703a38222a495e30f5abda",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 3,
+          "bbox": [
+            112.0,
+            152.0,
+            442.0,
+            364.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.01250625312656328,
+          0.3354949959396439,
+          0.28064032016008006,
+          0.5201656928196957
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "7b28575f15b8781163fddd5fc5788a1ffd5b0b2f1a703a38222a495e30f5abda"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0006",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[2*]n1ccc2ccccc21.[3*]C(C)O.[7*]C[7*]",
+    "canonical_smiles": "[2*]n1ccc2ccccc21.[3*]C(C)O.[7*]C[7*]",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "7b28575f15b8781163fddd5fc5788a1ffd5b0b2f1a703a38222a495e30f5abda",
+        "figure_id": "7b28575f15b8781163fddd5fc5788a1ffd5b0b2f1a703a38222a495e30f5abda",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 3,
+          "bbox": [
+            112.0,
+            152.0,
+            442.0,
+            364.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.01250625312656328,
+          0.02493945102560185,
+          0.27613806903451726,
+          0.2642394215807815
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "7b28575f15b8781163fddd5fc5788a1ffd5b0b2f1a703a38222a495e30f5abda"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0007",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "Cc1ccc(S(=O)(=O)n2c(CO)cc3cc(F)ccc32)cc1",
+    "canonical_smiles": "Cc1ccc(S(=O)(=O)n2c(CO)cc3cc(F)ccc32)cc1",
+    "inchi_key": "UDQYDMQVHNIWSW-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "7b28575f15b8781163fddd5fc5788a1ffd5b0b2f1a703a38222a495e30f5abda",
+        "figure_id": "7b28575f15b8781163fddd5fc5788a1ffd5b0b2f1a703a38222a495e30f5abda",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 3,
+          "bbox": [
+            112.0,
+            152.0,
+            442.0,
+            364.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.33766883441720863,
+          0.32718184559777663,
+          0.6508254127063532,
+          0.5201656928196957
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "7b28575f15b8781163fddd5fc5788a1ffd5b0b2f1a703a38222a495e30f5abda"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0008",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CC(=O)n1cc(C(O)c2ccccc2)c2ccccc21",
+    "canonical_smiles": "CC(=O)n1cc(C(O)c2ccccc2)c2ccccc21",
+    "inchi_key": "TVLBSANTYSQVCY-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "7b28575f15b8781163fddd5fc5788a1ffd5b0b2f1a703a38222a495e30f5abda",
+        "figure_id": "7b28575f15b8781163fddd5fc5788a1ffd5b0b2f1a703a38222a495e30f5abda",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 3,
+          "bbox": [
+            112.0,
+            152.0,
+            442.0,
+            364.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.38469234617308656,
+          0.6644582308963921,
+          0.607303651825913,
+          0.9459177496138986
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "7b28575f15b8781163fddd5fc5788a1ffd5b0b2f1a703a38222a495e30f5abda"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0009",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "Cc1ccc(S(=O)(=O)n2c(C(C)O)cc3ccccc32)cc1",
+    "canonical_smiles": "Cc1ccc(S(=O)(=O)n2c(C(C)O)cc3ccccc32)cc1",
+    "inchi_key": "QZMRLRBYRHGELP-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "7b28575f15b8781163fddd5fc5788a1ffd5b0b2f1a703a38222a495e30f5abda",
+        "figure_id": "7b28575f15b8781163fddd5fc5788a1ffd5b0b2f1a703a38222a495e30f5abda",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 3,
+          "bbox": [
+            112.0,
+            152.0,
+            442.0,
+            364.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7263631815907954,
+          0.34143296046954913,
+          0.992496248124062,
+          0.5261036573496009
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "7b28575f15b8781163fddd5fc5788a1ffd5b0b2f1a703a38222a495e30f5abda"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0010",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[1*]C.[2*]n1ccc2ccccc21.[3*]C(C)=O",
+    "canonical_smiles": "[1*]C.[2*]n1ccc2ccccc21.[3*]C(C)=O",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "7b28575f15b8781163fddd5fc5788a1ffd5b0b2f1a703a38222a495e30f5abda",
+        "figure_id": "7b28575f15b8781163fddd5fc5788a1ffd5b0b2f1a703a38222a495e30f5abda",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 3,
+          "bbox": [
+            112.0,
+            152.0,
+            442.0,
+            364.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7293646823411706,
+          0.0,
+          0.9949974987493747,
+          0.24048756346116068
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "7b28575f15b8781163fddd5fc5788a1ffd5b0b2f1a703a38222a495e30f5abda"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0011",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CCC(O)c1cn(C(C)=O)c2ccccc12",
+    "canonical_smiles": "CCC(O)c1cn(C(C)=O)c2ccccc12",
+    "inchi_key": "QQVYRYODUVJSPO-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "7b28575f15b8781163fddd5fc5788a1ffd5b0b2f1a703a38222a495e30f5abda",
+        "figure_id": "7b28575f15b8781163fddd5fc5788a1ffd5b0b2f1a703a38222a495e30f5abda",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 3,
+          "bbox": [
+            112.0,
+            152.0,
+            442.0,
+            364.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7293646823411706,
+          0.6686148060673257,
+          0.9699849924962481,
+          0.9459177496138986
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "7b28575f15b8781163fddd5fc5788a1ffd5b0b2f1a703a38222a495e30f5abda"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0012",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "Cc1ccc(S(=O)(=O)n2cc(CO)c3ccccc32)cc1",
+    "canonical_smiles": "Cc1ccc(S(=O)(=O)n2cc(CO)c3ccccc32)cc1",
+    "inchi_key": "AOYYOOZRBUTQBJ-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "5b42a9d141e56ec7c729c92c895171f025289f6a586cd340c259616dac5f9453",
+        "figure_id": "5b42a9d141e56ec7c729c92c895171f025289f6a586cd340c259616dac5f9453",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 3,
+          "bbox": [
+            124.0,
+            510.0,
+            431.0,
+            581.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.01250625312656328,
+          0.10920845037903569,
+          0.26313156578289143,
+          0.8587755416169625
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "5b42a9d141e56ec7c729c92c895171f025289f6a586cd340c259616dac5f9453"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0013",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[H]C(=O)c1cn(S(=O)(=O)c2ccc(C)cc2)c2ccccc12",
+    "canonical_smiles": "Cc1ccc(S(=O)(=O)n2cc(C=O)c3ccccc32)cc1",
+    "inchi_key": "OIPHRFQIBIQGJF-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "5b42a9d141e56ec7c729c92c895171f025289f6a586cd340c259616dac5f9453",
+        "figure_id": "5b42a9d141e56ec7c729c92c895171f025289f6a586cd340c259616dac5f9453",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 3,
+          "bbox": [
+            124.0,
+            510.0,
+            431.0,
+            581.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7718859429714857,
+          0.014892061415323047,
+          1.0,
+          0.8687035825605112
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "5b42a9d141e56ec7c729c92c895171f025289f6a586cd340c259616dac5f9453"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0014",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "Cc1ccc(S(=O)(=O)n2c(CO)cc3ccccc32)cc1",
+    "canonical_smiles": "Cc1ccc(S(=O)(=O)n2c(CO)cc3ccccc32)cc1",
+    "inchi_key": "WMPGQVHONWECLT-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "46a87b5f921480ea11583df0e6faef3e621b89c6c2ac16787f8c13f38cb7b2e5",
+        "figure_id": "46a87b5f921480ea11583df0e6faef3e621b89c6c2ac16787f8c13f38cb7b2e5",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 3,
+          "bbox": [
+            561.0,
+            509.0,
+            873.0,
+            564.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.01250625312656328,
+          0.11149626260075376,
+          0.29314657328664334,
+          0.8319336517133165
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "46a87b5f921480ea11583df0e6faef3e621b89c6c2ac16787f8c13f38cb7b2e5"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0015",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "Cc1ccc(S(=O)(=O)n2c(C=O)cc3ccccc32)cc1",
+    "canonical_smiles": "Cc1ccc(S(=O)(=O)n2c(C=O)cc3ccccc32)cc1",
+    "inchi_key": "HLEBZLRXCJWYNE-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "46a87b5f921480ea11583df0e6faef3e621b89c6c2ac16787f8c13f38cb7b2e5",
+        "figure_id": "46a87b5f921480ea11583df0e6faef3e621b89c6c2ac16787f8c13f38cb7b2e5",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 3,
+          "bbox": [
+            561.0,
+            509.0,
+            873.0,
+            564.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7418709354677339,
+          0.10291962701608039,
+          1.0,
+          0.8319336517133165
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "46a87b5f921480ea11583df0e6faef3e621b89c6c2ac16787f8c13f38cb7b2e5"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0016",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "Cc1ccc(S(=O)(=O)n2c(CO)cc3ccccc32)cc1",
+    "canonical_smiles": "Cc1ccc(S(=O)(=O)n2c(CO)cc3ccccc32)cc1",
+    "inchi_key": "WMPGQVHONWECLT-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "241d2f9ac3ad889c81170c3d744a698e92280c22da23dfa79aab0dfd89bb60b8",
+        "figure_id": "241d2f9ac3ad889c81170c3d744a698e92280c22da23dfa79aab0dfd89bb60b8",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 3,
+          "bbox": [
+            569.0,
+            826.0,
+            867.0,
+            883.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.009504752376188095,
+          0.1592438010049801,
+          0.3036518259129565,
+          0.8420015978138323
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "241d2f9ac3ad889c81170c3d744a698e92280c22da23dfa79aab0dfd89bb60b8"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0017",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[H]C(=O)c1cc2ccccc2n1S(=O)(=O)c1ccc(C)cc1",
+    "canonical_smiles": "Cc1ccc(S(=O)(=O)n2c(C=O)cc3ccccc32)cc1",
+    "inchi_key": "HLEBZLRXCJWYNE-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "241d2f9ac3ad889c81170c3d744a698e92280c22da23dfa79aab0dfd89bb60b8",
+        "figure_id": "241d2f9ac3ad889c81170c3d744a698e92280c22da23dfa79aab0dfd89bb60b8",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 3,
+          "bbox": [
+            569.0,
+            826.0,
+            867.0,
+            883.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7253626813406704,
+          0.11147066070348607,
+          1.0,
+          0.7902473624872138
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "241d2f9ac3ad889c81170c3d744a698e92280c22da23dfa79aab0dfd89bb60b8"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0018",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "Cc1ccc(S(=O)(=O)n2c(CO)cc3cc(F)ccc32)cc1",
+    "canonical_smiles": "Cc1ccc(S(=O)(=O)n2c(CO)cc3cc(F)ccc32)cc1",
+    "inchi_key": "UDQYDMQVHNIWSW-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "2c1e6162398519c58e8bae0061d8f435572a8243bfde86cbc6976797e2aab473",
+        "figure_id": "2c1e6162398519c58e8bae0061d8f435572a8243bfde86cbc6976797e2aab473",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            95.0,
+            145.0,
+            463.0,
+            206.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.009504752376188095,
+          0.0836367336210478,
+          0.3051525762881441,
+          0.8047210045700817
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "2c1e6162398519c58e8bae0061d8f435572a8243bfde86cbc6976797e2aab473"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0019",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[H]C(=O)c1cc2cc(F)ccc2n1S(=O)(=O)c1ccc(C)cc1",
+    "canonical_smiles": "Cc1ccc(S(=O)(=O)n2c(C=O)cc3cc(F)ccc32)cc1",
+    "inchi_key": "CGAJHCSWUKMNCG-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "2c1e6162398519c58e8bae0061d8f435572a8243bfde86cbc6976797e2aab473",
+        "figure_id": "2c1e6162398519c58e8bae0061d8f435572a8243bfde86cbc6976797e2aab473",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            95.0,
+            145.0,
+            463.0,
+            206.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7103551775887944,
+          0.09493899492118942,
+          0.9964982491245623,
+          0.8047210045700817
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "2c1e6162398519c58e8bae0061d8f435572a8243bfde86cbc6976797e2aab473"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0020",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "Cc1ccc(S(=O)(=O)n2c(CO)cc3cc(F)ccc32)cc1",
+    "canonical_smiles": "Cc1ccc(S(=O)(=O)n2c(CO)cc3cc(F)ccc32)cc1",
+    "inchi_key": "UDQYDMQVHNIWSW-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "fe37e62b50a49d07b3bfb708948845ee901ffc45a65b013cd70e284c099ea19f",
+        "figure_id": "fe37e62b50a49d07b3bfb708948845ee901ffc45a65b013cd70e284c099ea19f",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            109.0,
+            499.0,
+            448.0,
+            560.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.01250625312656328,
+          0.12162370493422811,
+          0.327663831915958,
+          0.8387841719601938
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "fe37e62b50a49d07b3bfb708948845ee901ffc45a65b013cd70e284c099ea19f"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0021",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "Cc1ccc(S(=O)(=O)n2c(C=O)cc3cc(F)ccc32)cc1",
+    "canonical_smiles": "Cc1ccc(S(=O)(=O)n2c(C=O)cc3cc(F)ccc32)cc1",
+    "inchi_key": "CGAJHCSWUKMNCG-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "fe37e62b50a49d07b3bfb708948845ee901ffc45a65b013cd70e284c099ea19f",
+        "figure_id": "fe37e62b50a49d07b3bfb708948845ee901ffc45a65b013cd70e284c099ea19f",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            109.0,
+            499.0,
+            448.0,
+            560.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7078539269634817,
+          0.09436321934552182,
+          0.9964982491245623,
+          0.7842632007827813
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "fe37e62b50a49d07b3bfb708948845ee901ffc45a65b013cd70e284c099ea19f"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0022",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "COCc1ccc2c(c1)cc(CO)n2S(=O)(=O)c1ccc(C)cc1",
+    "canonical_smiles": "COCc1ccc2c(c1)cc(CO)n2S(=O)(=O)c1ccc(C)cc1",
+    "inchi_key": "GXXOTGKYDOVWMG-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "a58c1ef49e5e5e409a2baee2f39f25006a7d22e8b06f80672b6d702e9f902d96",
+        "figure_id": "a58c1ef49e5e5e409a2baee2f39f25006a7d22e8b06f80672b6d702e9f902d96",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            78.0,
+            684.0,
+            480.0,
+            744.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.006003001500750375,
+          0.07549057547641745,
+          0.3391695847923962,
+          0.7825856324388609
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "a58c1ef49e5e5e409a2baee2f39f25006a7d22e8b06f80672b6d702e9f902d96"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0023",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "COc1ccc2c(c1)cc(C=O)n2S(=O)(=O)c1ccc(C)cc1",
+    "canonical_smiles": "COc1ccc2c(c1)cc(C=O)n2S(=O)(=O)c1ccc(C)cc1",
+    "inchi_key": "URPQFZNPVGTEDU-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "a58c1ef49e5e5e409a2baee2f39f25006a7d22e8b06f80672b6d702e9f902d96",
+        "figure_id": "a58c1ef49e5e5e409a2baee2f39f25006a7d22e8b06f80672b6d702e9f902d96",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            78.0,
+            684.0,
+            480.0,
+            744.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.6873436718359179,
+          0.07549057547641745,
+          1.0,
+          0.787618337470622
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "a58c1ef49e5e5e409a2baee2f39f25006a7d22e8b06f80672b6d702e9f902d96"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0024",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "Cc1ccc(S(=O)(=O)n2c(C(C)O)cc3ccccc32)cc1",
+    "canonical_smiles": "Cc1ccc(S(=O)(=O)n2c(C(C)O)cc3ccccc32)cc1",
+    "inchi_key": "QZMRLRBYRHGELP-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "cc0ef87f0453a3400d89744c3d322556fed645ce40866f329abc1c360e0df4e7",
+        "figure_id": "cc0ef87f0453a3400d89744c3d322556fed645ce40866f329abc1c360e0df4e7",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            551.0,
+            175.0,
+            885.0,
+            238.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.011005502751375688,
+          0.11720102475480164,
+          0.2876438219109555,
+          0.7739309048463626
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "cc0ef87f0453a3400d89744c3d322556fed645ce40866f329abc1c360e0df4e7"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0025",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CC(=O)c1cc2ccccc2n1S(=O)(=O)c1ccc(C)cc1",
+    "canonical_smiles": "CC(=O)c1cc2ccccc2n1S(=O)(=O)c1ccc(C)cc1",
+    "inchi_key": "JFGZFSNYUQWBQT-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "cc0ef87f0453a3400d89744c3d322556fed645ce40866f329abc1c360e0df4e7",
+        "figure_id": "cc0ef87f0453a3400d89744c3d322556fed645ce40866f329abc1c360e0df4e7",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            551.0,
+            175.0,
+            885.0,
+            238.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7368684342171086,
+          0.11720102475480164,
+          0.992496248124062,
+          0.7759516121697213
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "cc0ef87f0453a3400d89744c3d322556fed645ce40866f329abc1c360e0df4e7"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0026",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "Cc1ccc(S(=O)(=O)n2c(C(C)O)cc3ccccc32)cc1",
+    "canonical_smiles": "Cc1ccc(S(=O)(=O)n2c(C(C)O)cc3ccccc32)cc1",
+    "inchi_key": "QZMRLRBYRHGELP-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "58fbecb3c63a6df9456a394e360252c2438fc24df59559c757f3a7655328401c",
+        "figure_id": "58fbecb3c63a6df9456a394e360252c2438fc24df59559c757f3a7655328401c",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            559.0,
+            531.0,
+            875.0,
+            587.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.011005502751375688,
+          0.1533929904249249,
+          0.29064532266133064,
+          0.8457919055374332
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "58fbecb3c63a6df9456a394e360252c2438fc24df59559c757f3a7655328401c"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0027",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CC(=O)c1cc2ccccc2n1S(=O)(=O)c1ccc(C)cc1",
+    "canonical_smiles": "CC(=O)c1cc2ccccc2n1S(=O)(=O)c1ccc(C)cc1",
+    "inchi_key": "JFGZFSNYUQWBQT-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "58fbecb3c63a6df9456a394e360252c2438fc24df59559c757f3a7655328401c",
+        "figure_id": "58fbecb3c63a6df9456a394e360252c2438fc24df59559c757f3a7655328401c",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            559.0,
+            531.0,
+            875.0,
+            587.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7398699349674838,
+          0.11078382641800133,
+          1.0,
+          0.7967913669294711
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "58fbecb3c63a6df9456a394e360252c2438fc24df59559c757f3a7655328401c"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0028",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*C(O)c1cc2ccccc2n1S(=O)(=O)c1ccc(C)cc1",
+    "canonical_smiles": "*C(O)c1cc2ccccc2n1S(=O)(=O)c1ccc(C)cc1",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "ad060308689a50d09e4fc81f8b3f11d99e6807c040e446a558b8635ec375e0c5",
+        "figure_id": "ad060308689a50d09e4fc81f8b3f11d99e6807c040e446a558b8635ec375e0c5",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            526.0,
+            697.0,
+            907.0,
+            759.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.009504752376188095,
+          0.09691004671886116,
+          0.3051525762881441,
+          0.7660508454919501
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "ad060308689a50d09e4fc81f8b3f11d99e6807c040e446a558b8635ec375e0c5"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0029",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "Cc1ccc(S(=O)(=O)N2C(C(=O)[CsH17])=CC3=CC=CC=C32)cc1",
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "ad060308689a50d09e4fc81f8b3f11d99e6807c040e446a558b8635ec375e0c5",
+        "figure_id": "ad060308689a50d09e4fc81f8b3f11d99e6807c040e446a558b8635ec375e0c5",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            526.0,
+            697.0,
+            907.0,
+            759.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7078539269634817,
+          0.1107543391072699,
+          1.0,
+          0.7822025199450936
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "mineru_image_hash": "ad060308689a50d09e4fc81f8b3f11d99e6807c040e446a558b8635ec375e0c5"
+    },
+    "errors": [
+      "RDKit could not parse SMILES: Cc1ccc(S(=O)(=O)N2C(C(=O)[CsH17])=CC3=CC=CC=C32)cc1"
+    ]
+  },
+  {
+    "molecule_card_id": "mol_23_0030",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "Cc1ccc(S(=O)(=O)n2cc(CO)c3ccccc32)cc1",
+    "canonical_smiles": "Cc1ccc(S(=O)(=O)n2cc(CO)c3ccccc32)cc1",
+    "inchi_key": "AOYYOOZRBUTQBJ-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "219f7f53d86051a3e2a06dac11ba74ac070538a6c3eafd97d90897f81e8affd5",
+        "figure_id": "219f7f53d86051a3e2a06dac11ba74ac070538a6c3eafd97d90897f81e8affd5",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 5,
+          "bbox": [
+            124.0,
+            206.0,
+            433.0,
+            270.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.009504752376188095,
+          0.032975278848215314,
+          0.25812906453226614,
+          0.872012929541694
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "219f7f53d86051a3e2a06dac11ba74ac070538a6c3eafd97d90897f81e8affd5"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0031",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "Cc1ccc(S(=O)(=O)n2cc(C=O)c3ccccc32)cc1",
+    "canonical_smiles": "Cc1ccc(S(=O)(=O)n2cc(C=O)c3ccccc32)cc1",
+    "inchi_key": "OIPHRFQIBIQGJF-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "219f7f53d86051a3e2a06dac11ba74ac070538a6c3eafd97d90897f81e8affd5",
+        "figure_id": "219f7f53d86051a3e2a06dac11ba74ac070538a6c3eafd97d90897f81e8affd5",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 5,
+          "bbox": [
+            124.0,
+            206.0,
+            433.0,
+            270.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7718859429714857,
+          0.04579899840029905,
+          1.0,
+          0.872012929541694
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "219f7f53d86051a3e2a06dac11ba74ac070538a6c3eafd97d90897f81e8affd5"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0032",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "Cc1ccc(S(=O)(=O)n2cc(CO)c3ccccc32)cc1",
+    "canonical_smiles": "Cc1ccc(S(=O)(=O)n2cc(CO)c3ccccc32)cc1",
+    "inchi_key": "AOYYOOZRBUTQBJ-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "717ab141feb3067f6005bf659799904dfbf50e19ce2d8b6a6bd2ca5945f7118e",
+        "figure_id": "717ab141feb3067f6005bf659799904dfbf50e19ce2d8b6a6bd2ca5945f7118e",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 5,
+          "bbox": [
+            137.0,
+            534.0,
+            421.0,
+            609.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.01250625312656328,
+          0.1499304255982381,
+          0.28114057028514255,
+          0.8467499274262399
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "717ab141feb3067f6005bf659799904dfbf50e19ce2d8b6a6bd2ca5945f7118e"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0033",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[H]C(=O)c1cn(S(=O)(=O)c2ccc(C)cc2)c2ccccc12",
+    "canonical_smiles": "Cc1ccc(S(=O)(=O)n2cc(C=O)c3ccccc32)cc1",
+    "inchi_key": "OIPHRFQIBIQGJF-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "717ab141feb3067f6005bf659799904dfbf50e19ce2d8b6a6bd2ca5945f7118e",
+        "figure_id": "717ab141feb3067f6005bf659799904dfbf50e19ce2d8b6a6bd2ca5945f7118e",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 5,
+          "bbox": [
+            137.0,
+            534.0,
+            421.0,
+            609.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7483741870935467,
+          0.03569772038053288,
+          0.9939969984992496,
+          0.8210475687522563
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "717ab141feb3067f6005bf659799904dfbf50e19ce2d8b6a6bd2ca5945f7118e"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0034",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "Cc1ccc(S(=O)(=O)n2cc(CO)c3ccccc32)cc1",
+    "canonical_smiles": "Cc1ccc(S(=O)(=O)n2cc(CO)c3ccccc32)cc1",
+    "inchi_key": "AOYYOOZRBUTQBJ-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "a994c3021bb5bde4119b4fdcc7387de9796300e3f5a70a9a531ebc91a53180d3",
+        "figure_id": "a994c3021bb5bde4119b4fdcc7387de9796300e3f5a70a9a531ebc91a53180d3",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 5,
+          "bbox": [
+            126.0,
+            720.0,
+            433.0,
+            790.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.009004502251125562,
+          0.10093508292607843,
+          0.25662831415707854,
+          0.8587755416169625
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "a994c3021bb5bde4119b4fdcc7387de9796300e3f5a70a9a531ebc91a53180d3"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0035",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[H]C(=O)c1cn(S(=O)(=O)c2ccc(C)cc2)c2ccccc12",
+    "canonical_smiles": "Cc1ccc(S(=O)(=O)n2cc(C=O)c3ccccc32)cc1",
+    "inchi_key": "OIPHRFQIBIQGJF-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "a994c3021bb5bde4119b4fdcc7387de9796300e3f5a70a9a531ebc91a53180d3",
+        "figure_id": "a994c3021bb5bde4119b4fdcc7387de9796300e3f5a70a9a531ebc91a53180d3",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 5,
+          "bbox": [
+            126.0,
+            720.0,
+            433.0,
+            790.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7668834417208604,
+          0.009928040943548698,
+          1.0,
+          0.8587755416169625
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "a994c3021bb5bde4119b4fdcc7387de9796300e3f5a70a9a531ebc91a53180d3"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0036",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CC(C)(C)OC(=O)n1cc(CO)c2ccccc21",
+    "canonical_smiles": "CC(C)(C)OC(=O)n1cc(CO)c2ccccc21",
+    "inchi_key": "OOVPQKQFSDFRFA-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "27b4071116df6061f18dbd330e8ddf8e68174677c93cf30d3ee2c99561c21770",
+        "figure_id": "27b4071116df6061f18dbd330e8ddf8e68174677c93cf30d3ee2c99561c21770",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 5,
+          "bbox": [
+            564.0,
+            147.0,
+            870.0,
+            219.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.009004502251125562,
+          0.09410301257684803,
+          0.25812906453226614,
+          0.8371923187871309
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "27b4071116df6061f18dbd330e8ddf8e68174677c93cf30d3ee2c99561c21770"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0037",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[H]C(=O)c1cn(C(=O)OC(C)(C)C)c2ccccc12",
+    "canonical_smiles": "CC(C)(C)OC(=O)n1cc(C=O)c2ccccc21",
+    "inchi_key": "GDYHUGFAKMUUQL-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "27b4071116df6061f18dbd330e8ddf8e68174677c93cf30d3ee2c99561c21770",
+        "figure_id": "27b4071116df6061f18dbd330e8ddf8e68174677c93cf30d3ee2c99561c21770",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 5,
+          "bbox": [
+            564.0,
+            147.0,
+            870.0,
+            219.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7718859429714857,
+          0.00973479440450152,
+          1.0,
+          0.8371923187871309
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "27b4071116df6061f18dbd330e8ddf8e68174677c93cf30d3ee2c99561c21770"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0038",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CC(=O)n1cc(CO)c2ccccc21",
+    "canonical_smiles": "CC(=O)n1cc(CO)c2ccccc21",
+    "inchi_key": "DBTMWGYRMRRCRG-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "74c8183f646700098dd1ffaec5316faada04ea2bc7713cee218fd29e7e351d51",
+        "figure_id": "74c8183f646700098dd1ffaec5316faada04ea2bc7713cee218fd29e7e351d51",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 5,
+          "bbox": [
+            564.0,
+            469.0,
+            870.0,
+            543.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.009504752376188095,
+          0.09708075995038092,
+          0.25812906453226614,
+          0.8387141064565696
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "74c8183f646700098dd1ffaec5316faada04ea2bc7713cee218fd29e7e351d51"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0039",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[H]C(=O)c1cn(C(C)=O)c2ccccc12",
+    "canonical_smiles": "CC(=O)n1cc(C=O)c2ccccc21",
+    "inchi_key": "LCJLFGSKHBDOAY-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "74c8183f646700098dd1ffaec5316faada04ea2bc7713cee218fd29e7e351d51",
+        "figure_id": "74c8183f646700098dd1ffaec5316faada04ea2bc7713cee218fd29e7e351d51",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 5,
+          "bbox": [
+            564.0,
+            469.0,
+            870.0,
+            543.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7718859429714857,
+          0.009548927208234189,
+          1.0,
+          0.8450800579287256
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "74c8183f646700098dd1ffaec5316faada04ea2bc7713cee218fd29e7e351d51"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0040",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CC(=O)n1cc(C(O)c2ccccc2)c2ccccc21",
+    "canonical_smiles": "CC(=O)n1cc(C(O)c2ccccc2)c2ccccc21",
+    "inchi_key": "TVLBSANTYSQVCY-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "f565a3fba3ce669fd41c63e6c6cb9c425faf90eb19899af81b670b145d36cb5e",
+        "figure_id": "f565a3fba3ce669fd41c63e6c6cb9c425faf90eb19899af81b670b145d36cb5e",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 5,
+          "bbox": [
+            564.0,
+            808.0,
+            870.0,
+            881.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.006003001500750375,
+          0.028646781624702564,
+          0.2496248124062031,
+          0.8514460094008818
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "f565a3fba3ce669fd41c63e6c6cb9c425faf90eb19899af81b670b145d36cb5e"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0041",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CC(=O)n1cc(C(=O)c2ccccc2)c2ccccc21",
+    "canonical_smiles": "CC(=O)n1cc(C(=O)c2ccccc2)c2ccccc21",
+    "inchi_key": "KJHUAHYHMHFUKZ-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "f565a3fba3ce669fd41c63e6c6cb9c425faf90eb19899af81b670b145d36cb5e",
+        "figure_id": "f565a3fba3ce669fd41c63e6c6cb9c425faf90eb19899af81b670b145d36cb5e",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 5,
+          "bbox": [
+            564.0,
+            808.0,
+            870.0,
+            881.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7643821910955477,
+          0.028646781624702564,
+          1.0,
+          0.8514460094008818
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "f565a3fba3ce669fd41c63e6c6cb9c425faf90eb19899af81b670b145d36cb5e"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0042",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CC(=O)n1cc(C(O)c2ccccc2)c2ccccc21",
+    "canonical_smiles": "CC(=O)n1cc(C(O)c2ccccc2)c2ccccc21",
+    "inchi_key": "TVLBSANTYSQVCY-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "87e9645a616f00f80ff877dc695f0fcce827eae61536eeeaea28bd4d7acc5c7f",
+        "figure_id": "87e9645a616f00f80ff877dc695f0fcce827eae61536eeeaea28bd4d7acc5c7f",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 6,
+          "bbox": [
+            139.0,
+            304.0,
+            418.0,
+            379.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.015007503751875938,
+          0.046230047797007755,
+          0.2836418209104552,
+          0.8545554289749917
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "87e9645a616f00f80ff877dc695f0fcce827eae61536eeeaea28bd4d7acc5c7f"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0043",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CC(=O)n1cc(C(=O)c2ccccc2)c2ccccc21",
+    "canonical_smiles": "CC(=O)n1cc(C(=O)c2ccccc2)c2ccccc21",
+    "inchi_key": "KJHUAHYHMHFUKZ-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "87e9645a616f00f80ff877dc695f0fcce827eae61536eeeaea28bd4d7acc5c7f",
+        "figure_id": "87e9645a616f00f80ff877dc695f0fcce827eae61536eeeaea28bd4d7acc5c7f",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 6,
+          "bbox": [
+            139.0,
+            304.0,
+            418.0,
+            379.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7303651825912957,
+          0.035022763482581626,
+          1.0,
+          0.8251363076496232
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "87e9645a616f00f80ff877dc695f0fcce827eae61536eeeaea28bd4d7acc5c7f"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0044",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[CH-]n1cc(C(O)CC)c2ccccc21",
+    "canonical_smiles": "[CH-]n1cc(C(O)CC)c2ccccc21",
+    "inchi_key": "DALTUNUALYKBID-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "0cdf7b7507776d6bd6434468cf088427bbf30fbc5b3ba8edef8043a01384a174",
+        "figure_id": "0cdf7b7507776d6bd6434468cf088427bbf30fbc5b3ba8edef8043a01384a174",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 6,
+          "bbox": [
+            122.0,
+            487.0,
+            433.0,
+            564.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.01250625312656328,
+          0.03832375958093989,
+          0.27163581790895447,
+          0.8247273061818265
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "0cdf7b7507776d6bd6434468cf088427bbf30fbc5b3ba8edef8043a01384a174"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0045",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CCC(=O)c1cn(C(C)=O)c2ccccc12",
+    "canonical_smiles": "CCC(=O)c1cn(C(C)=O)c2ccccc12",
+    "inchi_key": "IATDJONDTFGJBN-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "0cdf7b7507776d6bd6434468cf088427bbf30fbc5b3ba8edef8043a01384a174",
+        "figure_id": "0cdf7b7507776d6bd6434468cf088427bbf30fbc5b3ba8edef8043a01384a174",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 6,
+          "bbox": [
+            122.0,
+            487.0,
+            433.0,
+            564.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7553776888444222,
+          0.03832375958093989,
+          1.0,
+          0.8201284550321137
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "0cdf7b7507776d6bd6434468cf088427bbf30fbc5b3ba8edef8043a01384a174"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0046",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CCC(O)c1cn(C(C)=O)c2ccccc12",
+    "canonical_smiles": "CCC(O)c1cn(C(C)=O)c2ccccc12",
+    "inchi_key": "QQVYRYODUVJSPO-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "e3ae033e0db52d8dd3219dbccde67c124d4e02223ea3ae6cec70b39c0f01ce2e",
+        "figure_id": "e3ae033e0db52d8dd3219dbccde67c124d4e02223ea3ae6cec70b39c0f01ce2e",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 6,
+          "bbox": [
+            132.0,
+            840.0,
+            423.0,
+            920.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.01250625312656328,
+          0.05150905306515471,
+          0.2851425712856428,
+          0.8283212587504608
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "e3ae033e0db52d8dd3219dbccde67c124d4e02223ea3ae6cec70b39c0f01ce2e"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0047",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CCC(=O)c1cn(C(C)=O)c2ccccc12",
+    "canonical_smiles": "CCC(=O)c1cn(C(C)=O)c2ccccc12",
+    "inchi_key": "IATDJONDTFGJBN-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "e3ae033e0db52d8dd3219dbccde67c124d4e02223ea3ae6cec70b39c0f01ce2e",
+        "figure_id": "e3ae033e0db52d8dd3219dbccde67c124d4e02223ea3ae6cec70b39c0f01ce2e",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 6,
+          "bbox": [
+            132.0,
+            840.0,
+            423.0,
+            920.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.735367683841921,
+          0.03480341423321264,
+          1.0,
+          0.8116156199185188
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "e3ae033e0db52d8dd3219dbccde67c124d4e02223ea3ae6cec70b39c0f01ce2e"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0048",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "C#CC(O)c1cn(C(C)=O)c2ccccc12",
+    "canonical_smiles": "C#CC(O)c1cn(C(C)=O)c2ccccc12",
+    "inchi_key": "MMOISDRSKOHHPA-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "cf181398730003a471ef3df3a6f436a8e21fa80e50fa3509096adbe6c07d732f",
+        "figure_id": "cf181398730003a471ef3df3a6f436a8e21fa80e50fa3509096adbe6c07d732f",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 6,
+          "bbox": [
+            559.0,
+            187.0,
+            873.0,
+            263.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.01250625312656328,
+          0.03941095843429989,
+          0.27763881940970486,
+          0.8213243737708098
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "cf181398730003a471ef3df3a6f436a8e21fa80e50fa3509096adbe6c07d732f"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0049",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "C#CC(=O)c1cn(C(C)=O)c2ccccc12",
+    "canonical_smiles": "C#CC(=O)c1cn(C(C)=O)c2ccccc12",
+    "inchi_key": "CCDUGFVFDKCENJ-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "cf181398730003a471ef3df3a6f436a8e21fa80e50fa3509096adbe6c07d732f",
+        "figure_id": "cf181398730003a471ef3df3a6f436a8e21fa80e50fa3509096adbe6c07d732f",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 6,
+          "bbox": [
+            559.0,
+            187.0,
+            873.0,
+            263.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7378689344672336,
+          0.03941095843429989,
+          1.0,
+          0.8213243737708098
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "cf181398730003a471ef3df3a6f436a8e21fa80e50fa3509096adbe6c07d732f"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0050",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[C-]n1cc(C(O)C=C=C)c2ccccc21",
+    "canonical_smiles": "[C-]n1cc(C(O)C=C=C)c2ccccc21",
+    "inchi_key": "BTHDMNBOQDWIAI-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "6f8a9e0919d435335a906daf891879743c29a6a3f7b247f2049abcab5d7021d3",
+        "figure_id": "6f8a9e0919d435335a906daf891879743c29a6a3f7b247f2049abcab5d7021d3",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 6,
+          "bbox": [
+            559.0,
+            581.0,
+            873.0,
+            655.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.015007503751875938,
+          0.04017068775351531,
+          0.29364682341170584,
+          0.8130547201311498
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "6f8a9e0919d435335a906daf891879743c29a6a3f7b247f2049abcab5d7021d3"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_23_0051",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "C=C=CC(=O)c1cn(C(C)=O)c2ccccc12",
+    "canonical_smiles": "C=C=CC(=O)c1cn(C(C)=O)c2ccccc12",
+    "inchi_key": "ZQWGPXYSNCPIDZ-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "6f8a9e0919d435335a906daf891879743c29a6a3f7b247f2049abcab5d7021d3",
+        "figure_id": "6f8a9e0919d435335a906daf891879743c29a6a3f7b247f2049abcab5d7021d3",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 6,
+          "bbox": [
+            559.0,
+            581.0,
+            873.0,
+            655.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7253626813406704,
+          0.04017068775351531,
+          1.0,
+          0.8130547201311498
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "6f8a9e0919d435335a906daf891879743c29a6a3f7b247f2049abcab5d7021d3"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_tbl_23_0000",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [
+      "(1-tosyl-1-indol-2-yl)-carbinol"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [
+      "(1-tosyl-1-indol-2-yl)-carbinol"
+    ],
+    "source_mentions": [
+      {
+        "mention": "(1-tosyl-1-indol-2-yl)-carbinol",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 2,
+          "bbox": [
+            67.0,
+            91.0,
+            492.0,
+            165.0
+          ],
+          "block_id": "block_23_0014",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_23_0014"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_23_0001",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [
+      "Fe(NO3)3·9H2O"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [
+      {
+        "mention": "Fe(NO3)3·9H2O",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 2,
+          "bbox": [
+            505.0,
+            243.0,
+            931.0,
+            328.0
+          ],
+          "block_id": "block_23_0021",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "ion of indole carbinols using Fe(NO3)3·9H2O/TEMPO/NaCl as catalysts†",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 1,
+          "bbox": [
+            285.0,
+            170.0,
+            786.0,
+            220.0
+          ],
+          "block_id": "block_23_0000",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Aerobic oxidation of indole carbinols using Fe(NO3)3·9H2O/TEMPO/NaCl as catalysts†",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "| Ts1a (1 mmol) | x mol% Fe(NO3)3·9H2Ox mol% TEMPOx mol% NaCIsolvent",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 2,
+          "bbox": [
+            505.0,
+            684.0,
+            931.0,
+            834.0
+          ],
+          "block_id": "block_23_0024",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_23_0021"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_23_0002",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [
+      "TEMPO"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [
+      {
+        "mention": "TEMPO",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 2,
+          "bbox": [
+            505.0,
+            243.0,
+            931.0,
+            328.0
+          ],
+          "block_id": "block_23_0021",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "carbinols using Fe(NO3)3·9H2O/TEMPO/NaCl as catalysts†",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 1,
+          "bbox": [
+            285.0,
+            170.0,
+            786.0,
+            220.0
+          ],
+          "block_id": "block_23_0000",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Aerobic oxidation of indole carbinols using Fe(NO3)3·9H2O/TEMPO/NaCl as catalysts†",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "Tetramethylpiperidine-N-oxyl (TEMPO) has been used as a catalyst",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 1,
+          "bbox": [
+            63.0,
+            581.0,
+            492.0,
+            795.0
+          ],
+          "block_id": "block_23_0010",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Introduction",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "lerator for the Fe(NO ) ·9H O/TEMPO-catalyzed aerobic oxidation o",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 1,
+          "bbox": [
+            502.0,
+            645.0,
+            929.0,
+            922.0
+          ],
+          "block_id": "block_23_0012",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "2 } \\mathrm { O } , | 10 mol% TEMPO, and 10 mol% NaCl in 4 mL of",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 2,
+          "bbox": [
+            65.0,
+            165.0,
+            492.0,
+            278.0
+          ],
+          "block_id": "block_23_0015",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "{ 2 } \\mathrm { O } , 10 mol% TEMPO, and 10 mol% NaCl were used,",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 2,
+          "bbox": [
+            63.0,
+            400.0,
+            490.0,
+            553.0
+          ],
+          "block_id": "block_23_0016",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "{ 2 } \\mathrm { O } , 10 mol% TEMPO, and 10 mol% NaCl in DCE as s",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 2,
+          "bbox": [
+            63.0,
+            554.0,
+            492.0,
+            679.0
+          ],
+          "block_id": "block_23_0017",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "hrm { O } _ { 3 } | , 10 mol% TEMPO, and 10 mol% NaCl in 4 mL of",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 2,
+          "bbox": [
+            502.0,
+            331.0,
+            931.0,
+            446.0
+          ],
+          "block_id": "block_23_0022",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "H } _ { 2 } \\mathrm { O } , , TEMPO, and NaCl, the reaction time",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 2,
+          "bbox": [
+            502.0,
+            504.0,
+            929.0,
+            627.0
+          ],
+          "block_id": "block_23_0023",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "| x mol% Fe(NO3)3·9H2Ox mol% TEMPOx mol% NaCIsolvent, air (ballo",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 2,
+          "bbox": [
+            505.0,
+            684.0,
+            931.0,
+            834.0
+          ],
+          "block_id": "block_23_0024",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "{ H } _ { 2 } \\mathrm { O } , TEMPO and NaCl to give 1-tosyl-1H-i",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 3,
+          "bbox": [
+            65.0,
+            426.0,
+            492.0,
+            503.0
+          ],
+          "block_id": "block_23_0027",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "arbinols using Fe-(NO ) ·9H O/TEMPO/NaCl as catalysts under mild",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 3,
+          "bbox": [
+            65.0,
+            641.0,
+            490.0,
+            750.0
+          ],
+          "block_id": "block_23_0029",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Conclusions",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "2 } \\mathrm { O } (0.1 mmol), TEMPO (0.1 mmol), NaCl (0.1 mmol) a",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 3,
+          "bbox": [
+            502.0,
+            143.0,
+            929.0,
+            296.0
+          ],
+          "block_id": "block_23_0034",
+          "figure_id": null,
+          "table_id": null,
+          "section": "General procedure for the synthesis of aldehydes or ketones using molecular oxygen as oxidant (Method A)",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "} \\mathrm { O } (0.05 mmol), TEMPO (0.05 mmol), NaCl (0.05 mmol)",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 3,
+          "bbox": [
+            502.0,
+            349.0,
+            929.0,
+            487.0
+          ],
+          "block_id": "block_23_0036",
+          "figure_id": null,
+          "table_id": null,
+          "section": "General procedure for the synthesis of aldehydes or ketones using air as oxidant (Method B)",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "rm { O } (40.5 mg, 0.1 mmol), TEMPO (15.6 mg, 0.1 mmol), and NaCl",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 3,
+          "bbox": [
+            502.0,
+            573.0,
+            929.0,
+            664.0
+          ],
+          "block_id": "block_23_0038",
+          "figure_id": null,
+          "table_id": null,
+          "section": "1. Synthesis of 1-tosyl-1H-indole-2-carbaldehyde (2a).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "TEMPO (8.0 mg, 0.05 mmol), and NaCl",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            65.0,
+            60.0,
+            490.0,
+            106.0
+          ],
+          "block_id": "block_23_0041",
+          "figure_id": null,
+          "table_id": null,
+          "section": "1. Synthesis of 1-tosyl-1H-indole-2-carbaldehyde (2a).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "rm { O } (40.6 mg, 0.1 mmol), TEMPO (15.6 mg, 0.1 mmol), and NaCl",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            65.0,
+            215.0,
+            490.0,
+            306.0
+          ],
+          "block_id": "block_23_0043",
+          "figure_id": null,
+          "table_id": null,
+          "section": "1. Synthesis of 1-tosyl-1H-indole-2-carbaldehyde (2a).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "m { O } (20.8 mg, 0.05 mmol), TEMPO (7.9 mg, 0.1 mmol), and NaCl",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            65.0,
+            569.0,
+            490.0,
+            646.0
+          ],
+          "block_id": "block_23_0045",
+          "figure_id": null,
+          "table_id": null,
+          "section": "1. Synthesis of 1-tosyl-1H-indole-2-carbaldehyde (2a).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "rm { O } (40.3 mg, 0.1 mmol), TEMPO (15.8 mg, 0.1 mmol), and NaCl",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            65.0,
+            753.0,
+            490.0,
+            845.0
+          ],
+          "block_id": "block_23_0047",
+          "figure_id": null,
+          "table_id": null,
+          "section": "1. Synthesis of 1-tosyl-1H-indole-2-carbaldehyde (2a).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "rm { O } (40.1 mg, 0.1 mmol), TEMPO (15.7 mg, 0.1 mmol), and NaCl",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            502.0,
+            246.0,
+            929.0,
+            338.0
+          ],
+          "block_id": "block_23_0050",
+          "figure_id": null,
+          "table_id": null,
+          "section": "1. Synthesis of 1-tosyl-1H-indole-2-carbaldehyde (2a).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "m { O } (20.0 mg, 0.05 mmol), TEMPO (7.9 mg, 0.05 mmol), and NaCl",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            502.0,
+            596.0,
+            929.0,
+            673.0
+          ],
+          "block_id": "block_23_0052",
+          "figure_id": null,
+          "table_id": null,
+          "section": "1. Synthesis of 1-tosyl-1H-indole-2-carbaldehyde (2a).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "rm { O } (40.1 mg, 0.1 mmol), TEMPO (15.6 mg, 0.1 mmol), and NaCl",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            502.0,
+            768.0,
+            929.0,
+            860.0
+          ],
+          "block_id": "block_23_0054",
+          "figure_id": null,
+          "table_id": null,
+          "section": "1. Synthesis of 1-tosyl-1H-indole-2-carbaldehyde (2a).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "rm { O } (40.6 mg, 0.1 mmol), TEMPO (15.8 mg, 0.1 mmol), and NaCl",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 5,
+          "bbox": [
+            65.0,
+            279.0,
+            490.0,
+            372.0
+          ],
+          "block_id": "block_23_0058",
+          "figure_id": null,
+          "table_id": null,
+          "section": "6. Synthesis of 1-tosyl-1H-indole-3-carbaldehyde (2f ).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "m { O } (20.8 mg, 0.05 mmol), TEMPO (7.9 mg, 0.05 mmol), and NaCl",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 5,
+          "bbox": [
+            65.0,
+            618.0,
+            490.0,
+            695.0
+          ],
+          "block_id": "block_23_0060",
+          "figure_id": null,
+          "table_id": null,
+          "section": "6. Synthesis of 1-tosyl-1H-indole-3-carbaldehyde (2f ).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "m { O } (0.8090 g, 2.0 mmol), TEMPO (0.3130 g, 2.0 mmol), NaCl (0",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 5,
+          "bbox": [
+            65.0,
+            799.0,
+            490.0,
+            922.0
+          ],
+          "block_id": "block_23_0061",
+          "figure_id": null,
+          "table_id": null,
+          "section": "6. Synthesis of 1-tosyl-1H-indole-3-carbaldehyde (2f ).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "rm { O } (40.0 mg, 0.1 mmol), TEMPO (15.7 mg, 0.1 mmol), and NaCl",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 5,
+          "bbox": [
+            502.0,
+            229.0,
+            929.0,
+            320.0
+          ],
+          "block_id": "block_23_0063",
+          "figure_id": null,
+          "table_id": null,
+          "section": "7. Synthesis of tert-butyl 3-formyl-1H-indole-1-carboxylate (2g).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "rm { O } (40.3 mg, 0.1 mmol), TEMPO (15.4 mg, 0.1 mmol), and NaCl",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 5,
+          "bbox": [
+            502.0,
+            553.0,
+            929.0,
+            659.0
+          ],
+          "block_id": "block_23_0066",
+          "figure_id": null,
+          "table_id": null,
+          "section": "8. Synthesis of 1-acetyl-1H-indole-3-carbaldehyde (2h).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "m { O } (20.0 mg, 0.05 mmol), TEMPO (7.7 mg, 0.05 mmol), and NaCl",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 6,
+          "bbox": [
+            65.0,
+            387.0,
+            490.0,
+            465.0
+          ],
+          "block_id": "block_23_0071",
+          "figure_id": null,
+          "table_id": null,
+          "section": "9. Synthesis of 1-(3-benzoyl-1H-indol-1-yl)ethanone (2i).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "m { O } (20.6 mg, 0.05 mmol), TEMPO (7.6 mg, 0.05 mmol), and NaCl",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 6,
+          "bbox": [
+            502.0,
+            60.0,
+            929.0,
+            137.0
+          ],
+          "block_id": "block_23_0075",
+          "figure_id": null,
+          "table_id": null,
+          "section": "9. Synthesis of 1-(3-benzoyl-1H-indol-1-yl)ethanone (2i).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "rm { O } (40.4 mg, 0.1 mmol), TEMPO (15.4 mg, 0.1 mmol), and NaCl",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 6,
+          "bbox": [
+            502.0,
+            284.0,
+            929.0,
+            391.0
+          ],
+          "block_id": "block_23_0077",
+          "figure_id": null,
+          "table_id": null,
+          "section": "9. Synthesis of 1-(3-benzoyl-1H-indol-1-yl)ethanone (2i).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_23_0021"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_23_0003",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [
+      "NaCl"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [
+      {
+        "mention": "NaCl",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 2,
+          "bbox": [
+            505.0,
+            243.0,
+            931.0,
+            328.0
+          ],
+          "block_id": "block_23_0021",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "ols using Fe(NO3)3·9H2O/TEMPO/NaCl as catalysts†",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 1,
+          "bbox": [
+            285.0,
+            170.0,
+            786.0,
+            220.0
+          ],
+          "block_id": "block_23_0000",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Aerobic oxidation of indole carbinols using Fe(NO3)3·9H2O/TEMPO/NaCl as catalysts†",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "ns using Fe(NO ) ·9H O/TEMPO/ NaCl as catalyst, yielding aldehyd",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 1,
+          "bbox": [
+            63.0,
+            581.0,
+            492.0,
+            795.0
+          ],
+          "block_id": "block_23_0010",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Introduction",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "). We found that when 10 mol% NaCl was added, the catalytic effi",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 1,
+          "bbox": [
+            502.0,
+            645.0,
+            929.0,
+            922.0
+          ],
+          "block_id": "block_23_0012",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "| 10 mol% TEMPO, and 10 mol% NaCl in 4 mL of DCE. b Without the",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 2,
+          "bbox": [
+            65.0,
+            165.0,
+            492.0,
+            278.0
+          ],
+          "block_id": "block_23_0015",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": ", 10 mol% TEMPO, and 10 mol% NaCl were used, the reaction could",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 2,
+          "bbox": [
+            63.0,
+            400.0,
+            490.0,
+            553.0
+          ],
+          "block_id": "block_23_0016",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": ", 10 mol% TEMPO, and 10 mol% NaCl in DCE as standard reaction c",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 2,
+          "bbox": [
+            63.0,
+            554.0,
+            492.0,
+            679.0
+          ],
+          "block_id": "block_23_0017",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "| 10 mol% TEMPO, and 10 mol% NaCl in 4 mL of DCE.",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 2,
+          "bbox": [
+            67.0,
+            734.0,
+            492.0,
+            892.0
+          ],
+          "block_id": "block_23_0018",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": ", 10 mol% TEMPO, and 10 mol% NaCl in 4 mL of DCE.",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 2,
+          "bbox": [
+            502.0,
+            331.0,
+            931.0,
+            446.0
+          ],
+          "block_id": "block_23_0022",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "\\mathrm { O } , , TEMPO, and NaCl, the reaction time doubled (T",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 2,
+          "bbox": [
+            502.0,
+            504.0,
+            929.0,
+            627.0
+          ],
+          "block_id": "block_23_0023",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "2 } \\mathrm { O } , TEMPO and NaCl to give 1-tosyl-1H-indole-3-c",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 3,
+          "bbox": [
+            65.0,
+            426.0,
+            492.0,
+            503.0
+          ],
+          "block_id": "block_23_0027",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "ls using Fe-(NO ) ·9H O/TEMPO/NaCl as catalysts under mild condi",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 3,
+          "bbox": [
+            65.0,
+            641.0,
+            490.0,
+            750.0
+          ],
+          "block_id": "block_23_0029",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Conclusions",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "(0.1 mmol), TEMPO (0.1 mmol), NaCl (0.1 mmol) and DCE (4 mL). Al",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 3,
+          "bbox": [
+            502.0,
+            143.0,
+            929.0,
+            296.0
+          ],
+          "block_id": "block_23_0034",
+          "figure_id": null,
+          "table_id": null,
+          "section": "General procedure for the synthesis of aldehydes or ketones using molecular oxygen as oxidant (Method A)",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": ".05 mmol), TEMPO (0.05 mmol), NaCl (0.05 mmol) and toluene (4 mL",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 3,
+          "bbox": [
+            502.0,
+            349.0,
+            929.0,
+            487.0
+          ],
+          "block_id": "block_23_0036",
+          "figure_id": null,
+          "table_id": null,
+          "section": "General procedure for the synthesis of aldehydes or ketones using air as oxidant (Method B)",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "EMPO (15.6 mg, 0.1 mmol), and NaCl (5.8 mg, 0.1 mmol) in DCE (4",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 3,
+          "bbox": [
+            502.0,
+            573.0,
+            929.0,
+            664.0
+          ],
+          "block_id": "block_23_0038",
+          "figure_id": null,
+          "table_id": null,
+          "section": "1. Synthesis of 1-tosyl-1H-indole-2-carbaldehyde (2a).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "EMPO (8.0 mg, 0.05 mmol), and NaCl (3.0 mg, 0.05 mmol) in toluen",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            65.0,
+            60.0,
+            490.0,
+            106.0
+          ],
+          "block_id": "block_23_0041",
+          "figure_id": null,
+          "table_id": null,
+          "section": "1. Synthesis of 1-tosyl-1H-indole-2-carbaldehyde (2a).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "EMPO (15.6 mg, 0.1 mmol), and NaCl (5.9 mg, 0.1 mmol) in DCE (4",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            65.0,
+            215.0,
+            490.0,
+            306.0
+          ],
+          "block_id": "block_23_0043",
+          "figure_id": null,
+          "table_id": null,
+          "section": "1. Synthesis of 1-tosyl-1H-indole-2-carbaldehyde (2a).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "TEMPO (7.9 mg, 0.1 mmol), and NaCl (2.7 mg, 0.1 mmol) in toluene",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            65.0,
+            569.0,
+            490.0,
+            646.0
+          ],
+          "block_id": "block_23_0045",
+          "figure_id": null,
+          "table_id": null,
+          "section": "1. Synthesis of 1-tosyl-1H-indole-2-carbaldehyde (2a).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "EMPO (15.8 mg, 0.1 mmol), and NaCl (5.7 mg, 0.1 mmol) in DCE (4",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            65.0,
+            753.0,
+            490.0,
+            845.0
+          ],
+          "block_id": "block_23_0047",
+          "figure_id": null,
+          "table_id": null,
+          "section": "1. Synthesis of 1-tosyl-1H-indole-2-carbaldehyde (2a).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "EMPO (15.7 mg, 0.1 mmol), and NaCl (5.9 mg, 0.1 mmol) in DCE (4",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            502.0,
+            246.0,
+            929.0,
+            338.0
+          ],
+          "block_id": "block_23_0050",
+          "figure_id": null,
+          "table_id": null,
+          "section": "1. Synthesis of 1-tosyl-1H-indole-2-carbaldehyde (2a).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "EMPO (7.9 mg, 0.05 mmol), and NaCl (3.0 mg, 0.05 mmol) in toluen",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            502.0,
+            596.0,
+            929.0,
+            673.0
+          ],
+          "block_id": "block_23_0052",
+          "figure_id": null,
+          "table_id": null,
+          "section": "1. Synthesis of 1-tosyl-1H-indole-2-carbaldehyde (2a).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "EMPO (15.6 mg, 0.1 mmol), and NaCl (5.6 mg, 0.1 mmol) in DCE (4",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            502.0,
+            768.0,
+            929.0,
+            860.0
+          ],
+          "block_id": "block_23_0054",
+          "figure_id": null,
+          "table_id": null,
+          "section": "1. Synthesis of 1-tosyl-1H-indole-2-carbaldehyde (2a).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "EMPO (15.8 mg, 0.1 mmol), and NaCl (5.9 mg, 0.1 mmol) in DCE (4",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 5,
+          "bbox": [
+            65.0,
+            279.0,
+            490.0,
+            372.0
+          ],
+          "block_id": "block_23_0058",
+          "figure_id": null,
+          "table_id": null,
+          "section": "6. Synthesis of 1-tosyl-1H-indole-3-carbaldehyde (2f ).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "EMPO (7.9 mg, 0.05 mmol), and NaCl (2.9 mg, 0.05 mmol) in toluen",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 5,
+          "bbox": [
+            65.0,
+            618.0,
+            490.0,
+            695.0
+          ],
+          "block_id": "block_23_0060",
+          "figure_id": null,
+          "table_id": null,
+          "section": "6. Synthesis of 1-tosyl-1H-indole-3-carbaldehyde (2f ).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": ", TEMPO (0.3130 g, 2.0 mmol), NaCl (0.1180 g, 2.0 mmol) and DCE",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 5,
+          "bbox": [
+            65.0,
+            799.0,
+            490.0,
+            922.0
+          ],
+          "block_id": "block_23_0061",
+          "figure_id": null,
+          "table_id": null,
+          "section": "6. Synthesis of 1-tosyl-1H-indole-3-carbaldehyde (2f ).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "EMPO (15.4 mg, 0.1 mmol), and NaCl (5.9 mg, 0.1 mmol) in DCE (4",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 5,
+          "bbox": [
+            502.0,
+            553.0,
+            929.0,
+            659.0
+          ],
+          "block_id": "block_23_0066",
+          "figure_id": null,
+          "table_id": null,
+          "section": "8. Synthesis of 1-acetyl-1H-indole-3-carbaldehyde (2h).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "EMPO (15.7 mg, 0.1 mmol), and NaCl (5.8 mg, 0.1 mmol) in DCE (4",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 5,
+          "bbox": [
+            502.0,
+            892.0,
+            929.0,
+            922.0
+          ],
+          "block_id": "block_23_0069",
+          "figure_id": null,
+          "table_id": null,
+          "section": "9. Synthesis of 1-(3-benzoyl-1H-indol-1-yl)ethanone (2i).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "EMPO (7.7 mg, 0.05 mmol), and NaCl (3.0 mg, 0.05 mmol) in toluen",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 6,
+          "bbox": [
+            65.0,
+            387.0,
+            490.0,
+            465.0
+          ],
+          "block_id": "block_23_0071",
+          "figure_id": null,
+          "table_id": null,
+          "section": "9. Synthesis of 1-(3-benzoyl-1H-indol-1-yl)ethanone (2i).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "EMPO (7.6 mg, 0.05 mmol), and NaCl (2.9 mg, 0.05 mmol) in toluen",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 6,
+          "bbox": [
+            502.0,
+            60.0,
+            929.0,
+            137.0
+          ],
+          "block_id": "block_23_0075",
+          "figure_id": null,
+          "table_id": null,
+          "section": "9. Synthesis of 1-(3-benzoyl-1H-indol-1-yl)ethanone (2i).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "EMPO (15.4 mg, 0.1 mmol), and NaCl (5.5 mg, 0.1 mmol) in DCE (4",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 6,
+          "bbox": [
+            502.0,
+            284.0,
+            929.0,
+            391.0
+          ],
+          "block_id": "block_23_0077",
+          "figure_id": null,
+          "table_id": null,
+          "section": "9. Synthesis of 1-(3-benzoyl-1H-indol-1-yl)ethanone (2i).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "EMPO (15.7 mg, 0.1 mmol), and NaCl (5.7 mg, 0.1 mmol) in DCE (4",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 6,
+          "bbox": [
+            502.0,
+            676.0,
+            929.0,
+            768.0
+          ],
+          "block_id": "block_23_0080",
+          "figure_id": null,
+          "table_id": null,
+          "section": "9. Synthesis of 1-(3-benzoyl-1H-indol-1-yl)ethanone (2i).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_23_0021"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_23_0004",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [
+      "DCE"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [
+      {
+        "mention": "DCE",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 2,
+          "bbox": [
+            505.0,
+            243.0,
+            931.0,
+            328.0
+          ],
+          "block_id": "block_23_0021",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "O } / \\mathsf { N a C l } in DCE at room temperature and atmos",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 1,
+          "bbox": [
+            284.0,
+            265.0,
+            929.0,
+            341.0
+          ],
+          "block_id": "block_23_0007",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Aerobic oxidation of indole carbinols using Fe(NO3)3·9H2O/TEMPO/NaCl as catalysts†",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "out in ethyl acetate, THF or DCE due to its high reactivity. F",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 1,
+          "bbox": [
+            502.0,
+            645.0,
+            929.0,
+            922.0
+          ],
+          "block_id": "block_23_0012",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "me (h) | Yield of 2a (%); 1 | DCE | 2 | 99; $2^b$ | DCE | 15 |",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 2,
+          "bbox": [
+            65.0,
+            165.0,
+            492.0,
+            278.0
+          ],
+          "block_id": "block_23_0015",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "lity and efficiency, we chose DCE as solvent in this reaction.",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 2,
+          "bbox": [
+            63.0,
+            400.0,
+            490.0,
+            553.0
+          ],
+          "block_id": "block_23_0016",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "l% TEMPO, and 10 mol% NaCl in DCE as standard reaction conditio",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 2,
+          "bbox": [
+            63.0,
+            554.0,
+            492.0,
+            679.0
+          ],
+          "block_id": "block_23_0017",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": ", and 10 mol% NaCl in 4 mL of DCE.",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 2,
+          "bbox": [
+            67.0,
+            734.0,
+            492.0,
+            892.0
+          ],
+          "block_id": "block_23_0018",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "ield of 2a (%, NMR); 1 | 10 | DCE | 3 | 97; 2 | 5 | DCE | 8 | 9",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 2,
+          "bbox": [
+            505.0,
+            684.0,
+            931.0,
+            834.0
+          ],
+          "block_id": "block_23_0024",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": ".1 mmol), NaCl (0.1 mmol) and DCE (4 mL). Alcohol (1 mmol) was",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 3,
+          "bbox": [
+            502.0,
+            143.0,
+            929.0,
+            296.0
+          ],
+          "block_id": "block_23_0034",
+          "figure_id": null,
+          "table_id": null,
+          "section": "General procedure for the synthesis of aldehydes or ketones using molecular oxygen as oxidant (Method A)",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "nd NaCl (5.8 mg, 0.1 mmol) in DCE (4 mL) afforded 1-tosyl-1H-in",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 3,
+          "bbox": [
+            502.0,
+            573.0,
+            929.0,
+            664.0
+          ],
+          "block_id": "block_23_0038",
+          "figure_id": null,
+          "table_id": null,
+          "section": "1. Synthesis of 1-tosyl-1H-indole-2-carbaldehyde (2a).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "nd NaCl (5.9 mg, 0.1 mmol) in DCE (4 mL) afforded 5-fluoro-1-to",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            65.0,
+            215.0,
+            490.0,
+            306.0
+          ],
+          "block_id": "block_23_0043",
+          "figure_id": null,
+          "table_id": null,
+          "section": "1. Synthesis of 1-tosyl-1H-indole-2-carbaldehyde (2a).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "nd NaCl (5.7 mg, 0.1 mmol) in DCE (4 mL) afforded methyl 2-form",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            65.0,
+            753.0,
+            490.0,
+            845.0
+          ],
+          "block_id": "block_23_0047",
+          "figure_id": null,
+          "table_id": null,
+          "section": "1. Synthesis of 1-tosyl-1H-indole-2-carbaldehyde (2a).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "nd NaCl (5.9 mg, 0.1 mmol) in DCE (4 mL) afforded 1-(1-tosyl-1H",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            502.0,
+            246.0,
+            929.0,
+            338.0
+          ],
+          "block_id": "block_23_0050",
+          "figure_id": null,
+          "table_id": null,
+          "section": "1. Synthesis of 1-tosyl-1H-indole-2-carbaldehyde (2a).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "nd NaCl (5.6 mg, 0.1 mmol) in DCE (4 mL) afforded 1-(1-tosyl-1H",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 4,
+          "bbox": [
+            502.0,
+            768.0,
+            929.0,
+            860.0
+          ],
+          "block_id": "block_23_0054",
+          "figure_id": null,
+          "table_id": null,
+          "section": "1. Synthesis of 1-tosyl-1H-indole-2-carbaldehyde (2a).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "nd NaCl (5.9 mg, 0.1 mmol) in DCE (4 mL) afforded 1-tosyl-1H-in",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 5,
+          "bbox": [
+            65.0,
+            279.0,
+            490.0,
+            372.0
+          ],
+          "block_id": "block_23_0058",
+          "figure_id": null,
+          "table_id": null,
+          "section": "6. Synthesis of 1-tosyl-1H-indole-3-carbaldehyde (2f ).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "NaCl (0.1180 g, 2.0 mmol) and DCE (100 mL). (1-tosyl-1H-indol-3",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 5,
+          "bbox": [
+            65.0,
+            799.0,
+            490.0,
+            922.0
+          ],
+          "block_id": "block_23_0061",
+          "figure_id": null,
+          "table_id": null,
+          "section": "6. Synthesis of 1-tosyl-1H-indole-3-carbaldehyde (2f ).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "nd NaCl (5.9 mg, 0.1 mmol) in DCE (4 mL) afforded tert-butyl 3-",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 5,
+          "bbox": [
+            502.0,
+            229.0,
+            929.0,
+            320.0
+          ],
+          "block_id": "block_23_0063",
+          "figure_id": null,
+          "table_id": null,
+          "section": "7. Synthesis of tert-butyl 3-formyl-1H-indole-1-carboxylate (2g).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "nd NaCl (5.9 mg, 0.1 mmol) in DCE (4 mL) afforded 1-acetyl-1H-i",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 5,
+          "bbox": [
+            502.0,
+            553.0,
+            929.0,
+            659.0
+          ],
+          "block_id": "block_23_0066",
+          "figure_id": null,
+          "table_id": null,
+          "section": "8. Synthesis of 1-acetyl-1H-indole-3-carbaldehyde (2h).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "nd NaCl (5.8 mg, 0.1 mmol) in DCE (4 mL) afforded 1-(3-benzoyl-",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 5,
+          "bbox": [
+            502.0,
+            892.0,
+            929.0,
+            922.0
+          ],
+          "block_id": "block_23_0069",
+          "figure_id": null,
+          "table_id": null,
+          "section": "9. Synthesis of 1-(3-benzoyl-1H-indol-1-yl)ethanone (2i).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "nd NaCl (5.9 mg, 0.1 mmol) in DCE (4 mL) afforded 1-(1-acetyl-1",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 6,
+          "bbox": [
+            63.0,
+            572.0,
+            490.0,
+            679.0
+          ],
+          "block_id": "block_23_0073",
+          "figure_id": null,
+          "table_id": null,
+          "section": "9. Synthesis of 1-(3-benzoyl-1H-indol-1-yl)ethanone (2i).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "nd NaCl (5.5 mg, 0.1 mmol) in DCE (4 mL) afforded 1-(1-acetyl-1",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 6,
+          "bbox": [
+            502.0,
+            284.0,
+            929.0,
+            391.0
+          ],
+          "block_id": "block_23_0077",
+          "figure_id": null,
+          "table_id": null,
+          "section": "9. Synthesis of 1-(3-benzoyl-1H-indol-1-yl)ethanone (2i).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "nd NaCl (5.7 mg, 0.1 mmol) in DCE (4 mL) afforded 1-(1-acetyl-1",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 6,
+          "bbox": [
+            502.0,
+            676.0,
+            929.0,
+            768.0
+          ],
+          "block_id": "block_23_0080",
+          "figure_id": null,
+          "table_id": null,
+          "section": "9. Synthesis of 1-(3-benzoyl-1H-indol-1-yl)ethanone (2i).",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_23_0021"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_23_0005",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [
+      "O2"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [
+      {
+        "mention": "O2",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 2,
+          "bbox": [
+            505.0,
+            243.0,
+            931.0,
+            328.0
+          ],
+          "block_id": "block_23_0021",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_23_0021"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_23_0006",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [
+      "1"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [
+      "indole-3-carbinols"
+    ],
+    "source_mentions": [
+      {
+        "mention": "1",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 2,
+          "bbox": [
+            505.0,
+            243.0,
+            931.0,
+            328.0
+          ],
+          "block_id": "block_23_0021",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "t both indole-2-carbinols and indole-3-carbinols could be transformed to corre",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 3,
+          "bbox": [
+            63.0,
+            60.0,
+            492.0,
+            121.0
+          ],
+          "block_id": "block_23_0026",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_23_0021"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_23_0007",
+    "doc_id": "23",
+    "local_ids": [],
+    "names": [
+      "2"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [
+      "corresponding aldehydes or ketones"
+    ],
+    "source_mentions": [
+      {
+        "mention": "2",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 2,
+          "bbox": [
+            505.0,
+            243.0,
+            931.0,
+            328.0
+          ],
+          "block_id": "block_23_0021",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "tion of indole-2-carbinols to corresponding aldehydes or ketones | a Standard reaction conditi",
+        "provenance": {
+          "doc_id": "23",
+          "source_file": "23.pdf",
+          "page": 2,
+          "bbox": [
+            67.0,
+            734.0,
+            492.0,
+            892.0
+          ],
+          "block_id": "block_23_0018",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_23_0021"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  }
+]

@@ -1,0 +1,295 @@
+"""Structure-based retrieval: substructure, similarity, functional group search."""
+
+from __future__ import annotations
+
+import os
+from pathlib import Path
+from typing import Any
+
+from evidence import CandidateEvidence, SourceProvenance
+from storage.local_store import LocalStore
+
+# RDKit lazy import
+_rdkit_available: bool | None = None
+
+# Load .env
+_dotenv = Path(__file__).resolve().parents[2] / ".env"
+if _dotenv.exists():
+    from dotenv import load_dotenv as _load_dotenv
+    _load_dotenv(_dotenv)
+
+
+def _check_rdkit() -> bool:
+    global _rdkit_available
+    if _rdkit_available is None:
+        try:
+            from rdkit import Chem  # noqa: F401
+            _rdkit_available = True
+        except ImportError:
+            _rdkit_available = False
+    return _rdkit_available
+
+
+_SMARTS_SYSTEM = """\
+You are a chemistry assistant. Convert the user's functional group description \
+into a valid RDKit SMARTS pattern.
+
+Rules:
+- Return ONLY the SMARTS string, nothing else.
+- Use standard RDKit SMARTS syntax.
+- Examples:
+  "hydroxyl" → "[OX2H]"
+  "ester" → "[CX3](=O)[OX2]"
+  "benzene ring" → "c1ccccc1"
+  "amine" → "[NX3;H2]"
+  "carboxylic acid" → "[CX3](=O)[OX2H]"
+  "aldehyde" → "[CX3H1](=O)"
+  "ketone" → "[CX3](=O)[#6]"
+  "卤素" → "[F,Cl,Br,I]"
+  "酯基" → "[CX3](=O)[OX2]"
+  "苯环" → "c1ccccc1"
+"""
+
+
+def _query_to_smarts(query: str) -> str | None:
+    """用 LLM 将官能团描述转为 SMARTS 模式。"""
+    key = os.environ.get("API_KEY")
+    if not key:
+        return None
+
+    try:
+        from openai import OpenAI  # type: ignore
+    except ImportError:
+        return None
+
+    client = OpenAI(api_key=key, base_url=os.environ.get("BASE_URL") or None)
+    model = os.environ.get("LLM_MODEL", "gpt-4o-mini")
+
+    try:
+        response = client.chat.completions.create(
+            model=model,
+            messages=[
+                {"role": "system", "content": _SMARTS_SYSTEM},
+                {"role": "user", "content": query},
+            ],
+            temperature=0.0,
+            max_tokens=128,
+        )
+        raw = (response.choices[0].message.content or "").strip()
+        # 清理可能的 markdown 包裹
+        if raw.startswith("```"):
+            raw = raw.split("```")[1].strip()
+        return raw if raw else None
+    except Exception:
+        return None
+
+
+def structure_search(
+    query: str,
+    store: LocalStore,
+    *,
+    elementkg_client: Any | None = None,
+    search_type: str = "auto",
+    top_k: int = 10,
+) -> list[CandidateEvidence]:
+    """结构检索入口。
+
+    Args:
+        query: SMILES 字符串、SMARTS 模式或官能团描述（中英文均可）
+        store: 本地 evidence 存储
+        elementkg_client: ElementKG 客户端（可选）
+        search_type: "substructure" | "similarity" | "functional_group" | "auto"
+        top_k: 返回数量
+    """
+    if not _check_rdkit():
+        return []
+
+    from rdkit import Chem
+
+    # 自动检测查询类型
+    if search_type == "auto":
+        search_type = _detect_search_type(query)
+
+    # 收集候选 SMILES
+    candidates_smiles = _collect_smiles(store, elementkg_client)
+
+    if search_type == "similarity":
+        return _similarity_search(query, candidates_smiles, top_k)
+    elif search_type == "substructure":
+        return _substructure_search(query, candidates_smiles, top_k)
+    elif search_type == "functional_group":
+        return _functional_group_search(query, candidates_smiles, top_k)
+    return []
+
+
+def _detect_search_type(query: str) -> str:
+    """自动检测查询类型。"""
+    from rdkit import Chem
+
+    # 检查是否是有效 SMILES
+    mol = Chem.MolFromSmiles(query)
+    if mol is not None:
+        return "similarity"
+
+    # 检查是否是 SMARTS
+    patt = Chem.MolFromSmarts(query)
+    if patt is not None:
+        return "substructure"
+
+    # 其他情况 → 尝试用 LLM 转为 SMARTS（官能团描述）
+    return "functional_group"
+
+
+def _collect_smiles(store: LocalStore, elementkg_client: Any | None) -> list[dict]:
+    """从本地 evidence 和 ElementKG 收集 SMILES。"""
+    results: list[dict] = []
+
+    # 本地 evidence
+    try:
+        doc_ids = [
+            p.stem.replace(".molecules", "")
+            for p in store.evidence_dir.glob("*.molecules.json")
+        ]
+    except Exception:
+        doc_ids = []
+
+    for doc_id in doc_ids:
+        try:
+            mols = store.load_molecules(doc_id)
+        except Exception:
+            continue
+        for m in mols:
+            smi = m.canonical_smiles or m.raw_smiles
+            if smi:
+                results.append({
+                    "smiles": smi,
+                    "source_id": m.molecule_card_id,
+                    "doc_id": doc_id,
+                    "names": m.names + m.aliases,
+                    "source": "evidence",
+                })
+
+    # ElementKG
+    if elementkg_client:
+        try:
+            with elementkg_client._driver.session() as session:
+                r = session.run(
+                    "MATCH (m:Molecule) WHERE m.smiles IS NOT NULL "
+                    "RETURN m.id, m.smiles, m.iupac_name LIMIT 5000"
+                )
+                for rec in r:
+                    results.append({
+                        "smiles": rec["m.smiles"],
+                        "source_id": rec["m.id"],
+                        "doc_id": "elementkg",
+                        "names": [rec["m.iupac_name"]] if rec["m.iupac_name"] else [],
+                        "source": "elementkg",
+                    })
+        except Exception:
+            pass
+
+    return results
+
+
+def _similarity_search(
+    query: str, candidates: list[dict], top_k: int
+) -> list[CandidateEvidence]:
+    """结构相似性搜索（Tanimoto + Morgan fingerprint）。"""
+    from rdkit import Chem, DataStructs
+    from rdkit.Chem import AllChem
+
+    query_mol = Chem.MolFromSmiles(query)
+    if query_mol is None:
+        return []
+
+    query_fp = AllChem.GetMorganFingerprintAsBitVect(query_mol, 2)
+
+    scored: list[tuple[float, dict]] = []
+    for c in candidates:
+        mol = Chem.MolFromSmiles(c["smiles"])
+        if mol is None:
+            continue
+        fp = AllChem.GetMorganFingerprintAsBitVect(mol, 2)
+        sim = DataStructs.TanimotoSimilarity(query_fp, fp)
+        if sim > 0.1:
+            scored.append((sim, c))
+
+    scored.sort(key=lambda x: x[0], reverse=True)
+
+    results: list[CandidateEvidence] = []
+    for sim, c in scored[:top_k]:
+        results.append(_to_candidate(c, confidence=sim, search_type="similarity"))
+    return results
+
+
+def _substructure_search(
+    query: str, candidates: list[dict], top_k: int
+) -> list[CandidateEvidence]:
+    """子结构匹配搜索。"""
+    from rdkit import Chem
+
+    pattern = Chem.MolFromSmarts(query)
+    if pattern is None:
+        mol = Chem.MolFromSmiles(query)
+        if mol is not None:
+            pattern = Chem.MolFromSmarts(Chem.MolToSmiles(mol))
+    if pattern is None:
+        return []
+
+    results: list[CandidateEvidence] = []
+    for c in candidates:
+        mol = Chem.MolFromSmiles(c["smiles"])
+        if mol is None:
+            continue
+        if mol.HasSubstructMatch(pattern):
+            results.append(_to_candidate(c, confidence=0.9, search_type="substructure"))
+            if len(results) >= top_k:
+                break
+    return results
+
+
+def _functional_group_search(
+    query: str, candidates: list[dict], top_k: int
+) -> list[CandidateEvidence]:
+    """官能团匹配搜索 — 用 LLM 将描述转为 SMARTS，再做子结构匹配。"""
+    from rdkit import Chem
+
+    # 用 LLM 将官能团描述转为 SMARTS
+    smarts = _query_to_smarts(query)
+    if not smarts:
+        return []
+
+    pattern = Chem.MolFromSmarts(smarts)
+    if pattern is None:
+        return []
+
+    results: list[CandidateEvidence] = []
+    for c in candidates:
+        mol = Chem.MolFromSmiles(c["smiles"])
+        if mol is None:
+            continue
+        if mol.HasSubstructMatch(pattern):
+            results.append(_to_candidate(c, confidence=0.85, search_type="functional_group"))
+            if len(results) >= top_k:
+                break
+    return results
+
+
+def _to_candidate(c: dict, *, confidence: float, search_type: str) -> CandidateEvidence:
+    """将内部候选转为 CandidateEvidence。"""
+    names = c.get("names", [])
+    summary = " | ".join(n for n in [c["smiles"]] + names if n)
+    return CandidateEvidence(
+        evidence_id=c["source_id"],
+        evidence_type="molecule",
+        summary=summary,
+        structured_slots={
+            "doc_id": c["doc_id"],
+            "smiles": c["smiles"],
+            "names": names,
+            "search_type": search_type,
+            "source": c.get("source", "unknown"),
+        },
+        source=SourceProvenance(doc_id=c["doc_id"]),
+        confidence=confidence,
+    )

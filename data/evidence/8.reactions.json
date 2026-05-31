@@ -1,0 +1,433 @@
+[
+  {
+    "reaction_event_id": "rxn_8_0000",
+    "doc_id": "8",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "OCc1ccc2c(c1)OCO2",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "O=C(O)c1ccc2c(c1)OCO2",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "O=Cc1ccc2c(c1)OCO2",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "8",
+      "source_file": "8.pdf",
+      "page": 2,
+      "bbox": [
+        515.0,
+        784.0,
+        910.0,
+        865.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "0d5ef896d22869d897a1c8ce5052c5dcf9670a6ee4ba600005d40bab7f13172b"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_8_0001",
+    "doc_id": "8",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "CO",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "[AlH2]",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "*",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "8",
+      "source_file": "8.pdf",
+      "page": 3,
+      "bbox": [
+        87.0,
+        134.0,
+        468.0,
+        208.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "cf780e535c7472e8253bafd780c1c04011d5f8879a8b9e5061dedd8f435d4367"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_8_0002",
+    "doc_id": "8",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "I.OCc1ccc2c(c1)OCO2",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "O=Cc1ccc2c(c1)OCO2",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "8",
+      "source_file": "8.pdf",
+      "page": 3,
+      "bbox": [
+        94.0,
+        404.0,
+        472.0,
+        477.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "2b427d33e4b21f60bb11ca2332011f3f597706174f08a71cb3960e93020233a0"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_8_0003",
+    "doc_id": "8",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "CC12C(=C)*13*21*32*13C21C32C13C21C32*345*67*89**%10*6(*8)*36*%109*74*6125",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "CC12C(=C)*13*21*32C13C21C24*56C2(C314)*512*34*5**37**53*71*3462",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "8",
+      "source_file": "8.pdf",
+      "page": 3,
+      "bbox": [
+        539.0,
+        134.0,
+        880.0,
+        409.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "4da4111fe38b6429ea88508bfe1c1fe5d25171a77b734517a249a482f63fc999"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_8_0004",
+    "doc_id": "8",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "C.O",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "CC12C(=C)*13*21*32C13C21C24*56C2(C314)*512*34*5**37**53*71*3462",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "8",
+      "source_file": "8.pdf",
+      "page": 3,
+      "bbox": [
+        539.0,
+        134.0,
+        880.0,
+        409.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "4da4111fe38b6429ea88508bfe1c1fe5d25171a77b734517a249a482f63fc999"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_8_0005",
+    "doc_id": "8",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "CC",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "8",
+      "source_file": "8.pdf",
+      "page": 3,
+      "bbox": [
+        539.0,
+        134.0,
+        880.0,
+        409.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "4da4111fe38b6429ea88508bfe1c1fe5d25171a77b734517a249a482f63fc999"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_8_0006",
+    "doc_id": "8",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "*C/C=C/C(=C)OC",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "[CH2]CCC1C2C13C21C32C13C21C32C13C21C32C13C21C32C13C21C32C134C215C326C4137C5214C6325C7136C4217C5324C6135C7216C4327C5134C6215C7326C4137C5214C6325C7136C4217C5324C6135C7216C4327C5134C6215C7326C4137C5214C6325C7136C4217C5324C6135C7216C4327C5134C6215C7326C4137C5214C6325C7136C4217C5324C6135C72168C43279C5134%10C6215%11C87326%12C941378C%1052149C%116325%10C%127136%11C84217%12C953248C%1061359C%117216%10C%124327%11C85134%12C962158C%1073269C%114137%10C%125214%11C86325%12C971368C%1042179C%115324%10C%126135%11C87216%12C943278C%1051349C%116215%10C%127326%11C84137%12%13C952148%14C%1063259%15C%117136%10%16C%124217%11%17C%1385324%12%18C%14961358%13C%15%1072169%14C%16%114327%10%15C%17%125134%11%16C%1886215%12%17%19C%13973268%18%20C%14%1041379%13%21C%15%115214%10%14%22C%16%126325%11%15%23C%1787136%12%16%24C%19%18942178%17%25%26C%20%13%1053249%18%19%27C%21%14%116135%10%13%20%28%29%30%31%32C%22%15%127216%11%14%21%33%34%35%36%37%38%39%40%41C%23%1684327%12%15%22%42%43%44%45%46%47%48%49%50%51C%24%17951348%16%23%52%53%54%55%56%57%58%59%60%61%62C%25%18%1062159%17%24%63%64%65%66%67%68%69%70%71%72%73%74C%26%19%13%117326%10%18%25%75%76%77%78%79%80%81%82%83%84%85%86%87C%27%20%14%124137%11%13%19%26%88%89%90%91%92%93%94%95%96%97%98%99C14%12%14%20%27%(100)%(101)%(102)%(103)%(104)%(105)%(106)%(107)%(108)%(109)%(110)%(111)%(112)%(113)%(114)%(115)%(116)%(117)%(118)C%(119)%(120)%(121)%(122)%(123)%(124)%(125)%(126)%(127)%(128)%(129)%(130)C1%(131)%(132)%(133)%(134)%(135)%(136)%(137)%(138)%(139)%(140)%(141)%(142)%(143)%(144)%(145)%(146)%(147)%(148)%(149)%(150)C41%(151)%(152)%(153)%(154)%(155)%(156)%(157)%(158)%(159)%(160)%(161)%(162)%(163)%(164)%(165)%(166)%(167)%(168)C%(131)%124%(169)%(170)%(171)%(172)%(173)%(174)%(175)%(176)%(177)%(178)%(179)%(180)%(181)%(182)%(183)%(184)%(185)C1%(132)%12%(131)%(186)%(187)%(188)%(189)%(190)%(191)%(192)%(193)%(194)%(195)%(196)%(197)%(198)%(199)%(200)%(201)C1%(132)%(202)%(203)%(204)%(205)%(206)%(207)%(208)%(209)%(210)%(211)%(212)%(213)%(214)%(215)%(216)%(217)%(218)%(219)C%14%(220)%(221)%(222)%(223)%(224)%(225)%(226)%(227)%(228)%(229)%(230)%(231)%(232)%(233)%(234)%(235)%(236)C1%20%14%(237)%(238)%(239)%(240)%(241)%(242)%(243)%(244)%(245)%(246)%(247)%(248)%(249)%(250)%(251)%(252)C%(220)%(132)%271%20%(253)%(254)%(255)%(256)%(257)%(258)%(259)%(260)%(261)%(262)%(263)%(264)%(265)%(266)C%(221)%14%(202)%(100)%27%(132)%(220)%(267)%(268)%(269)%(270)%(271)%(272)%(273)%(274)%(275)%(276)%(277)%(278)C%(222)%(237)1%(203)%12%14%(100)%(202)%(221)%(279)%(280)%(281)%(282)%(283)%(284)%(285)%(286)%(287)%(288)%(289)%(290)C%(223)%(238)%20%27%(204)%(131)1%12%(203)%(222)%(237)%(291)%(292)%(293)%(294)%(295)%(296)%(297)%(298)%(299)%(300)C%(239)%(253)%(132)%(205)4%(186)%14%20%27%(131)%(204)%(223)%(238)%(301)%(302)%(303)%(304)%(305)%(306)%(307)%(308)C%(151)%(169)%(187)%(133)%(100)%(101)4%14%(132)%(186)%(205)%(239)%(253)%(309)%(310)%(311)%(312)%(313)%(314)%(315)%(316)C%(240)%(254)%(152)%(206)%(170)%(188)%(202)1%20%(100)%(101)%(133)%(151)%(169)%(187)%(317)%(318)%(319)%(320)%(321)%(322)C%(153)%(171)%(189)%(134)%(221)%124%271%20%(152)%(170)%(188)%(202)%(206)%(240)%(254)%(323)%(324)%(325)%(326)C%(241)%(154)%(207)%(172)%(190)%(135)%(279)%(203)%14%(131)%(100)4%12%27%(134)%(153)%(171)%(189)%(221)%(327)%(328)C%(119)%(224)%(242)%(255)%(220)%(208)%(280)%(222)%(204)%(101)523%(102)%14%(100)%(131)%(135)%(154)%(172)%(190)%(203)%(207)%(241)%(279)%(329)%(330)%(331)%(332)%(333)%(334)C%(120)%(225)%(256)%(267)%(155)%(173)%(136)%(132)1%(103)235%(101)%(102)%(119)%(204)%(208)%(220)%(222)%(224)%(242)%(255)C%(121)%(226)%(268)%(156)%(174)%(191)%(137)%(186)%20%(104)%141%(103)%(120)%(132)%(136)%(155)%(173)%(225)%(256)%(267)%(280)%(335)C%28%21%1589267%(105)%(100)%14%20%(104)%(121)%(137)%(156)%(174)%(186)%(191)%(226)%(268)%(336)%(337)%(338)%(339)C%33%(157)%22%(138)%16%1731%10%11%(106)%(131)26789%15%21%28%(100)%(105)%(340)%(341)%(342)%(343)C%(122)%(227)%(243)%(257)%(269)%(158)%(209)%(175)%(139)%(237)5%(103)%18%13%(107)%14%(135)13%10%11%16%17%22%33%(106)%(131)C%(123)%(228)%(244)%(258)%(270)%(159)%(210)%(140)%(281)%(291)%(101)%(120)%25%19%(108)%202%(154)5%13%14%18%(103)%(107)%(122)%(135)%(138)%(139)C%34%(160)%42%(176)%(141)%(205)%23%24%(102)%(132)%75%26%(109)%(104)61%(172)2%19%20%25%(101)%(108)%(120)%(123)%(140)%(154)%(157)C%35%(161)%43%(177)%(142)%(239)%(152)%52%63%(119)%(136)%76%88%(110)%(121)735%(190)16%23%24%26%34%42%75%(102)%(104)C%(124)%(229)%(245)%(259)%(271)%(211)%(143)%(282)%(292)%(223)%(133)%64%(204)%(155)%77%89%(111)%(137)8%10%132%(203)357%35%43%52%63%76C%29%36%(162)%44%(178)%(192)%(144)%(253)%(170)%534%65%(208)%(173)%78%90%(112)%(156)9%11%14%191%(207)28%10%13%64%77%88%89C%(125)%(230)%(246)%(260)%(272)%(212)%(193)%(283)%(293)%(309)%(238)%(151)%(188)%54%12%66%79%91%(113)%(174)%15%16%18%2063%(241)149%11%14%19%29C%(126)%(231)%(247)%(261)%(273)%(213)%(194)%(284)%(294)%(301)%(169)%(202)%55%27%67%(220)%80%92%(114)%(186)%21%17%(103)%25%235%(279)236%12%15%16%18C%30%37%(163)%45%(179)%(195)%(145)%(310)%(302)%(187)%(206)%56%(134)%68%(222)%(225)%81%93%(115)%(191)%28%22%(107)%(101)%247%(329)8125%17%20%21C%(127)%(232)%(248)%(262)%(274)%(214)%46%(180)%(196)%(285)%(295)%(311)%(303)%(317)%(240)%57%(153)%69%82%94%(226)%(100)%33%(122)%(108)%26%35%(330)%1043178%22C%31%38%(164)%(215)%47%(181)%(197)%(146)%(286)%(296)%(312)%(304)%(318)%(254)%58%(171)%70%(224)%(256)%83%95%(116)%(268)%(105)%(106)%(135)%(120)%34%43%1396234%10C%(128)%(233)%(249)%(263)%(275)%(165)%(216)%48%(182)%(198)%(147)%(287)%(297)%(313)%(305)%(319)%(323)%59%(189)%71%84%96%(336)%(340)%(138)%(123)%42%52%(331)%64%11%125126C%(129)%(234)%39%(250)%(264)%(276)%(166)%(217)%49%(183)%(199)%(148)%(288)%(298)%(314)%(306)%(320)%(324)%60%(221)%72%(267)%85%97%(337)%(341)%(139)%(140)%75%63%(332)%77%14%15%17731C%32%(235)%40%(251)%(265)%(277)%(167)%(218)%50%(184)%(200)%(149)%(289)%(299)%(315)%(307)%(321)%(325)%61%(327)%73%(242)%(280)%86%98%(117)%(338)%(342)%(131)%(154)%(102)%(333)%88%19%16%20842C%(130)%(236)%41%(252)%(266)%(278)%(168)%(219)%51%(185)%(201)%(150)%(290)%(300)%(316)%(308)%(322)%(326)%62%(328)%74%(255)%(335)%87%99%(118)%(339)%(343)%(157)%(104)%76%(334)%89%29%18%21%22%1061",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "CCCC(C)C(C)C(C)C",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "8",
+      "source_file": "8.pdf",
+      "page": 3,
+      "bbox": [
+        273.0,
+        789.0,
+        724.0,
+        905.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "dda55572433cd79773b1ae80bf8c31460b615b668236056f6adcc6619984425f"
+    },
+    "errors": []
+  }
+]

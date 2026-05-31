@@ -1,0 +1,126 @@
+.card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: all 0.15s;
+  background: var(--color-card);
+}
+
+.card:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 1px var(--color-primary-light);
+}
+
+.highlighted {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+  box-shadow: 0 0 0 2px rgba(22, 119, 255, 0.15);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.typeIcon {
+  font-size: 12px;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.typeLabel {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.level {
+  font-size: 10px;
+  color: var(--color-primary);
+  background: var(--color-primary-light);
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.crossPageBadge {
+  font-size: 10px;
+  color: var(--color-warning);
+  background: #fff7e6;
+  padding: 1px 6px;
+  border-radius: 3px;
+  border: 1px solid #ffe58f;
+}
+
+.pageBadge {
+  font-size: 10px;
+  color: var(--color-text-muted);
+  background: var(--color-bg);
+  padding: 1px 5px;
+  border-radius: 3px;
+  margin-left: auto;
+}
+
+.copyBtn {
+  font-size: 12px;
+  padding: 2px 4px;
+  border-radius: 3px;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.card:hover .copyBtn {
+  opacity: 1;
+}
+
+.copyBtn:hover {
+  background: var(--color-bg);
+}
+
+.content {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.textContent {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.imageWrapper {
+  text-align: center;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 200px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+}
+
+.tableContent {
+  overflow-x: auto;
+}
+
+.tableContent :global(table) {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.tableContent :global(td),
+.tableContent :global(th) {
+  border: 1px solid var(--color-border);
+  padding: 4px 8px;
+  text-align: left;
+}
+
+.tableContent :global(th) {
+  background: var(--color-bg);
+  font-weight: 600;
+}

@@ -1,0 +1,2202 @@
+[
+  {
+    "block_id": "block_4_0000",
+    "doc_id": "4",
+    "block_type": "title",
+    "text": "Room temperature Fe(NO3)3$9H2O/TEMPO/NaCl-catalyzed aerobic oxidation of homopropargylic alcohols",
+    "page": 1,
+    "bbox": [
+      67.0,
+      219.0,
+      786.0,
+      263.0
+    ],
+    "section": "Room temperature Fe(NO3)3$9H2O/TEMPO/NaCl-catalyzed aerobic oxidation of homopropargylic alcohols",
+    "prev_block_id": null,
+    "next_block_id": "block_4_0001",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0001",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "CrossMark",
+    "page": 1,
+    "bbox": [
+      885.0,
+      230.0,
+      946.0,
+      243.0
+    ],
+    "section": "Room temperature Fe(NO3)3$9H2O/TEMPO/NaCl-catalyzed aerobic oxidation of homopropargylic alcohols",
+    "prev_block_id": "block_4_0000",
+    "next_block_id": "block_4_0002",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0002",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "Jinxian Liu a,b , Shengming Ma a,c,*",
+    "page": 1,
+    "bbox": [
+      65.0,
+      272.0,
+      354.0,
+      291.0
+    ],
+    "section": "Room temperature Fe(NO3)3$9H2O/TEMPO/NaCl-catalyzed aerobic oxidation of homopropargylic alcohols",
+    "prev_block_id": "block_4_0001",
+    "next_block_id": "block_4_0003",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0003",
+    "doc_id": "4",
+    "block_type": "title",
+    "text": "a r t i c l e i n f o",
+    "page": 1,
+    "bbox": [
+      65.0,
+      379.0,
+      231.0,
+      392.0
+    ],
+    "section": "a r t i c l e i n f o",
+    "prev_block_id": "block_4_0002",
+    "next_block_id": "block_4_0004",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0004",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "Article history:",
+    "page": 1,
+    "bbox": [
+      65.0,
+      404.0,
+      144.0,
+      416.0
+    ],
+    "section": "a r t i c l e i n f o",
+    "prev_block_id": "block_4_0003",
+    "next_block_id": "block_4_0005",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0005",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "Received 28 June 2013",
+    "page": 1,
+    "bbox": [
+      68.0,
+      417.0,
+      186.0,
+      427.0
+    ],
+    "section": "a r t i c l e i n f o",
+    "prev_block_id": "block_4_0004",
+    "next_block_id": "block_4_0006",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0006",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "Received in revised form 13 August 2013",
+    "page": 1,
+    "bbox": [
+      68.0,
+      428.0,
+      280.0,
+      437.0
+    ],
+    "section": "a r t i c l e i n f o",
+    "prev_block_id": "block_4_0005",
+    "next_block_id": "block_4_0007",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0007",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "Accepted 24 August 2013",
+    "page": 1,
+    "bbox": [
+      68.0,
+      438.0,
+      201.0,
+      448.0
+    ],
+    "section": "a r t i c l e i n f o",
+    "prev_block_id": "block_4_0006",
+    "next_block_id": "block_4_0008",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0008",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "Available online 9 September 2013",
+    "page": 1,
+    "bbox": [
+      68.0,
+      448.0,
+      248.0,
+      459.0
+    ],
+    "section": "a r t i c l e i n f o",
+    "prev_block_id": "block_4_0007",
+    "next_block_id": "block_4_0009",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0009",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "Keywords:",
+    "page": 1,
+    "bbox": [
+      65.0,
+      472.0,
+      122.0,
+      484.0
+    ],
+    "section": "a r t i c l e i n f o",
+    "prev_block_id": "block_4_0008",
+    "next_block_id": "block_4_0010",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0010",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "Aerobic oxidation",
+    "page": 1,
+    "bbox": [
+      68.0,
+      485.0,
+      161.0,
+      494.0
+    ],
+    "section": "a r t i c l e i n f o",
+    "prev_block_id": "block_4_0009",
+    "next_block_id": "block_4_0011",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0011",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "Homopropargylic alcohol",
+    "page": 1,
+    "bbox": [
+      68.0,
+      496.0,
+      200.0,
+      505.0
+    ],
+    "section": "a r t i c l e i n f o",
+    "prev_block_id": "block_4_0010",
+    "next_block_id": "block_4_0012",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0012",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "Iron nitrate",
+    "page": 1,
+    "bbox": [
+      68.0,
+      506.0,
+      129.0,
+      515.0
+    ],
+    "section": "a r t i c l e i n f o",
+    "prev_block_id": "block_4_0011",
+    "next_block_id": "block_4_0013",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0013",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "TEMPO",
+    "page": 1,
+    "bbox": [
+      68.0,
+      517.0,
+      107.0,
+      525.0
+    ],
+    "section": "a r t i c l e i n f o",
+    "prev_block_id": "block_4_0012",
+    "next_block_id": "block_4_0014",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0014",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "NaCl",
+    "page": 1,
+    "bbox": [
+      68.0,
+      527.0,
+      95.0,
+      535.0
+    ],
+    "section": "a r t i c l e i n f o",
+    "prev_block_id": "block_4_0013",
+    "next_block_id": "block_4_0015",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0015",
+    "doc_id": "4",
+    "block_type": "title",
+    "text": "a b s t r a c t",
+    "page": 1,
+    "bbox": [
+      342.0,
+      379.0,
+      463.0,
+      392.0
+    ],
+    "section": "a b s t r a c t",
+    "prev_block_id": "block_4_0014",
+    "next_block_id": "block_4_0016",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0016",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "A practical and eco-friendly aerobic oxidation of homopropargylic alcohols using  \\mathrm { F e } ( \\mathrm { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } 0 / TEMPO/NaCl as catalysts at room temperature under atmospheric pressure was developed affording corresponding homopropargylic ketones with moderate to good yields. Aryl, heteroaryl as well as alkyl 1,2-allenic ketones were obtained by the isomerization of corresponding terminal homopropargylic ketones through column chromatographic workup on silica gel.",
+    "page": 1,
+    "bbox": [
+      339.0,
+      404.0,
+      947.0,
+      466.0
+    ],
+    "section": "a b s t r a c t",
+    "prev_block_id": "block_4_0015",
+    "next_block_id": "block_4_0017",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0017",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "\u0001 2013 Elsevier Ltd. All rights reserved.",
+    "page": 1,
+    "bbox": [
+      710.0,
+      465.0,
+      944.0,
+      477.0
+    ],
+    "section": "a b s t r a c t",
+    "prev_block_id": "block_4_0016",
+    "next_block_id": "block_4_0018",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0018",
+    "doc_id": "4",
+    "block_type": "title",
+    "text": "1. Introduction",
+    "page": 1,
+    "bbox": [
+      67.0,
+      602.0,
+      176.0,
+      616.0
+    ],
+    "section": "1. Introduction",
+    "prev_block_id": "block_4_0017",
+    "next_block_id": "block_4_0019",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0019",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "Numerous oxidation methods towards alcohols have been reported using at least a stoichiometric amount of oxidants, such as  \\mathrm { { M n O } } _ { 2 } , chromium oxides, DMSO as well as hypervalent iodine compounds in literature.1 However, those conventional oxidants would produce almost the same amount of oxidant-derived waste causing serious environmental problems. As a mild and natural terminal oxidant, molecular oxygen would be the best alternative from the viewpoint of eco-friendly and economic advantages.2 On the other hand, 2,2,6,6-tetramethylpiperidine-N-oxyl (TEMPO) has been reported as the catalyst to oxidize alcohols with various oxidants including molecular oxygen in literature.3 Therefore, developing novel protocol for the oxidation of alcohols using molecular oxygen as terminal oxidant under mild conditions is highly required.",
+    "page": 1,
+    "bbox": [
+      63.0,
+      629.0,
+      492.0,
+      814.0
+    ],
+    "section": "1. Introduction",
+    "prev_block_id": "block_4_0018",
+    "next_block_id": "block_4_0020",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0020",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "Homopropargylic ketones, which could be easily isomerized to allenic ketones, could be synthesized by the oxidation of corresponding alcohols, and there are few reports for this transformation using at least stoichiometric amount of oxidants.4e7 In 1992, Marshall and co-workers reported the oxidation of homopropargylic alcohols by DesseMartin reagent or Swern oxidation followed by a basic workup to afford corresponding allenic ketones in good yields;4 In 1998, Hashmi and co-workers found that oxidation of homopropargylic alcohols by DesseMartin reagent followed by a chromatographic workup on silica gel would also yield allenic ketones conveniently in good yields;5 Fan’s group have developed a RuCl -catalyzed protocol using TBHP as terminal oxidant in [bmin]PF6 at 80 \u0001C to afford allenic ketones in moderate yields;6 Alsters7a and  \\mathrm { F a n ^ { 7 b } } have developed two different Crcatalyzed protocols for the oxidation of homopropargylic alcohols affording corresponding allenic ketones with good yields independently. However, as far as we know, there is no catalytic aerobic oxidation protocol for such transformation reported in literature.",
+    "page": 1,
+    "bbox": [
+      65.0,
+      814.0,
+      492.0,
+      868.0
+    ],
+    "section": "1. Introduction",
+    "prev_block_id": "block_4_0019",
+    "next_block_id": "block_4_0021",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0021",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "Recently, this group has established a general protocol for the aerobic oxidation of alcohols bearing a wide range of substrates especially for propargylic alcohols under mild conditions using  \\mathrm { F e } ( \\mathsf { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathsf { H } _ { 2 } 0 / \\mathrm { T E M P O } / \\mathsf { N a C l } as catalyst, yielding corresponding aldehydes or ketones in good to excellent yields.8 Therefore, we wish to investigate the application of this green and efficient protocol for the oxidation of homopropargylic alcohols (Scheme 1).",
+    "page": 1,
+    "bbox": [
+      515.0,
+      800.0,
+      947.0,
+      907.0
+    ],
+    "section": "1. Introduction",
+    "prev_block_id": "block_4_0020",
+    "next_block_id": "block_4_0022",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0022",
+    "doc_id": "4",
+    "block_type": "title",
+    "text": "2. Results and discussion",
+    "page": 2,
+    "bbox": [
+      50.0,
+      234.0,
+      226.0,
+      247.0
+    ],
+    "section": "2. Results and discussion",
+    "prev_block_id": "block_4_0021",
+    "next_block_id": "block_4_0023",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0023",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "We have initially tried this aerobic oxidation of 1-phenyl-butyl-3-yl-1-ol (Scheme 2). To our surprise, when 10 mol % Fe(NO3)3$9H2O, 10 mol % TEMPO, and 10 mol % NaCl (the role of Cl\u0003 in this reaction is not quite clear yet, it is probably working as a ligand to  \\mathsf { F e } ^ { 3 + } to accelerate the oxidation8a) were used, this reaction could work smoothly at room temperature under atmospheric pressure of molecular oxygen affording corresponding homopropargylic ketone 2a in 91% NMR yield.",
+    "page": 2,
+    "bbox": [
+      48.0,
+      259.0,
+      478.0,
+      366.0
+    ],
+    "section": "2. Results and discussion",
+    "prev_block_id": "block_4_0022",
+    "next_block_id": "block_4_0024",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0024",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "Based on this observation, we tried to optimize the reaction conditions based on solvent effect, catalyst loading as well as different nitrate, the results were summarized in Table 1. Compared to toluene, ethyl acetate, and THF, the full conversion and highest NMR yield could be achieved when using DCE as solvent (Table 1, entries 1e4). Lowering the catalyst to 5 mol % each of  \\mathrm { F e } ( \\mathsf { N O } _ { 3 } ) _ { 3 } $9H O/TEMPO/NaCl, only 76% NMR yield of 2a and 14% recovery of homopropargylic alcohol in 20 h was observed (Table 1, entry 5). When  \\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 } { \\cdot } 3 \\mathrm { H } _ { 2 } 0 was used instead of  \\mathrm { F e } ( \\mathrm { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } 0 , the yield was obviously lower (Table 1, entry 6).",
+    "page": 2,
+    "bbox": [
+      48.0,
+      513.0,
+      478.0,
+      646.0
+    ],
+    "section": "2. Results and discussion",
+    "prev_block_id": "block_4_0023",
+    "next_block_id": "block_4_0025",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0025",
+    "doc_id": "4",
+    "block_type": "table",
+    "text": "Entry | Solvent | Time (h) | Yield of 2a (%, NMR) | Recovery of 1a (%, NMR); 1 | DCE | 4 | 91 | —; 2 | Toluene | 20 | 89 | 4; 3 | Ethyl acetate | 20 | 52 | 26; 4 | THF | 20 | 25 | 73; $5^a$ | DCE | 20 | 76 | 14; $6^b$ | DCE | 20 | 52 | 36",
+    "page": 2,
+    "bbox": [
+      52.0,
+      776.0,
+      478.0,
+      863.0
+    ],
+    "section": "2. Results and discussion",
+    "prev_block_id": "block_4_0024",
+    "next_block_id": "block_4_0026",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "table"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0026",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "a 5 mol % each of the three catalysts were used here.",
+    "page": 2,
+    "bbox": [
+      58.0,
+      865.0,
+      337.0,
+      876.0
+    ],
+    "section": "2. Results and discussion",
+    "prev_block_id": "block_4_0025",
+    "next_block_id": "block_4_0027",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0027",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "b Cu(NO3)2$3H2O was used instead of Fe(NO3)3$9H2O.",
+    "page": 2,
+    "bbox": [
+      58.0,
+      876.0,
+      342.0,
+      887.0
+    ],
+    "section": "2. Results and discussion",
+    "prev_block_id": "block_4_0026",
+    "next_block_id": "block_4_0028",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0028",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "Interestingly, after chromatographic workup procedure allenic ketone 3a was isolated in 87% (Scheme 3).4,5",
+    "page": 2,
+    "bbox": [
+      48.0,
+      923.0,
+      478.0,
+      950.0
+    ],
+    "section": "2. Results and discussion",
+    "prev_block_id": "block_4_0027",
+    "next_block_id": "block_4_0029",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0029",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "We defined 10 mol  \\% \\mathsf { F e } ( \\mathsf { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathsf { H } _ { 2 } 0 , , 10 mol % TEMPO, and 10 mol % NaCl in DCE at room temperature under atmospheric pressure for the aerobic oxidation of the homopropargylic alcohols followed by the chromatographic workup on silica gel as standard procedure for study on the substrate scope of various terminal homopropargylic alcohols. The results are summarized in Scheme 4. When R Ph,  \\begin{array} { r } { p { \\mathrm { - } } C _ { 2 } \\mathrm { H } _ { 5 } C _ { 6 } \\mathrm { H } _ { 4 } , } \\end{array} , p-i PrC6H4, p-ClC6H4, p-BrC6H4, o-MeO, m-MeO, p-MeO, or 2, 4,  6 \\mathrm { - } ( \\mathrm { M e O } ) _ { 3 } , the substrates were efficiently oxidized and isomerized to corresponding allenic ketones (3a, b, dej). It was worth noting that when R¼heteroaryl groups, such as 2-thienyl and 2-furyl, the corresponding allenic ketones could also be obtained with good yields (3k and 3l). When",
+    "page": 2,
+    "bbox": [
+      500.0,
+      209.0,
+      929.0,
+      369.0
+    ],
+    "section": "2. Results and discussion",
+    "prev_block_id": "block_4_0028",
+    "next_block_id": "block_4_0030",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0030",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "Scheme 4. The scope of aerobic oxidation of homopropargylic alcohols.",
+    "page": 2,
+    "bbox": [
+      534.0,
+      934.0,
+      897.0,
+      947.0
+    ],
+    "section": "2. Results and discussion",
+    "prev_block_id": "block_4_0029",
+    "next_block_id": "block_4_0031",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0031",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "R¼naphthyl, c-hexyl, and alkyl, moderate yields of the corresponding allenic ketones could be obtained (3c, m, and n).",
+    "page": 3,
+    "bbox": [
+      65.0,
+      80.0,
+      494.0,
+      105.0
+    ],
+    "section": "2. Results and discussion",
+    "prev_block_id": "block_4_0030",
+    "next_block_id": "block_4_0032",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0032",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "We next investigated on the oxidation of non-terminal singlesubstituted homopropargylic alcohols (Scheme 5). TBDMS protected-homopropargylic alcohols 1o could be oxidized to corresponding homopropargylic ketone 2o in a moderate yield. Interestingly, there was no isomerized product observed after chromatographic workup on silica gel, this might be due to its steric hindrance of the protecting group.",
+    "page": 3,
+    "bbox": [
+      65.0,
+      107.0,
+      495.0,
+      200.0
+    ],
+    "section": "2. Results and discussion",
+    "prev_block_id": "block_4_0031",
+    "next_block_id": "block_4_0033",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0033",
+    "doc_id": "4",
+    "block_type": "title",
+    "text": "3. Conclusions",
+    "page": 3,
+    "bbox": [
+      65.0,
+      310.0,
+      171.0,
+      322.0
+    ],
+    "section": "3. Conclusions",
+    "prev_block_id": "block_4_0032",
+    "next_block_id": "block_4_0034",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0034",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "In summary, we have developed a mild and eco-friendly protocol for the aerobic oxidation of homopropargylic alcohols using  \\mathrm { F e } ( \\mathsf { N O } _ { 3 } ) _ { 3 } $9H2O/TEMPO/NaCl as catalysts to synthesize allenic ketones or homopropargylic ketones with moderate to good yields depending on the nature of substrate (sp-substitution).",
+    "page": 3,
+    "bbox": [
+      65.0,
+      336.0,
+      494.0,
+      404.0
+    ],
+    "section": "3. Conclusions",
+    "prev_block_id": "block_4_0033",
+    "next_block_id": "block_4_0035",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0035",
+    "doc_id": "4",
+    "block_type": "title",
+    "text": "4. Experimental section",
+    "page": 3,
+    "bbox": [
+      65.0,
+      419.0,
+      235.0,
+      433.0
+    ],
+    "section": "4. Experimental section",
+    "prev_block_id": "block_4_0034",
+    "next_block_id": "block_4_0036",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0036",
+    "doc_id": "4",
+    "block_type": "title",
+    "text": "4.1. General information",
+    "page": 3,
+    "bbox": [
+      65.0,
+      446.0,
+      238.0,
+      459.0
+    ],
+    "section": "4.1. General information",
+    "prev_block_id": "block_4_0035",
+    "next_block_id": "block_4_0037",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0037",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "1 H and  ^ { 1 3 } { \\sf C } NMR spectra were recorded with an instrument operated at 300 MHz for 1 H NMR and 75 MHz for  ^ { 1 3 } \\mathrm { C } NMR in CDCl3. Chemical shifts (d) are given in parts per million (ppm). Infrared spectra were recorded on an FTIR spectrometer. Mass spectra were recorded in EI mode. HRMS spectra were recorded in EI mode. The starting materials 1aeo were synthesized according to the literature.9",
+    "page": 3,
+    "bbox": [
+      65.0,
+      471.0,
+      494.0,
+      564.0
+    ],
+    "section": "4.1. General information",
+    "prev_block_id": "block_4_0036",
+    "next_block_id": "block_4_0038",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0038",
+    "doc_id": "4",
+    "block_type": "title",
+    "text": "4.2. Synthesis of 3aen and 2o",
+    "page": 3,
+    "bbox": [
+      65.0,
+      583.0,
+      275.0,
+      596.0
+    ],
+    "section": "4.2. Synthesis of 3aen and 2o",
+    "prev_block_id": "block_4_0037",
+    "next_block_id": "block_4_0039",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0039",
+    "doc_id": "4",
+    "block_type": "title",
+    "text": "4.2.1. 1-Phenylbuta-2,3-dien-1-one (3a).",
+    "page": 3,
+    "bbox": [
+      65.0,
+      609.0,
+      322.0,
+      624.0
+    ],
+    "section": "4.2.1. 1-Phenylbuta-2,3-dien-1-one (3a).",
+    "prev_block_id": "block_4_0038",
+    "next_block_id": "block_4_0040",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0040",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "Typical procedure: To a 10 mL three-necked flask were added Fe(NO3)3$9H2O (40.2 mg, 0.1 mmol), TEMPO (15.8 mg, 0.1 mmol), NaCl (6.0 mg, 0.1 mmol), and DCE (4 mL). 1-Phenylbut-3-yn-1-ol 1a (144.7 mg, 1.0 mmol) was then added to the suspension and the resulting mixture was placed under the atmosphere of oxygen from a balloon and stirred at room temperature until the reaction was complete as monitored by TLC (eluent: petroleum ether/ethyl acetate 10:1). Mesitylene (46 ml) was added for crude NMR analysis. The resulting mixture was purified by column chromatography on silica gel (petroleum ether/diethyl ether 10/1) to afford 1- phenylbuta-2,3-dien-1-one10 3a (124.7 mg, 87%) (eluent: petroleum ether/diethyl ether 20/1) as an oil.",
+    "page": 3,
+    "bbox": [
+      65.0,
+      738.0,
+      494.0,
+      896.0
+    ],
+    "section": "4.2.1. 1-Phenylbuta-2,3-dien-1-one (3a).",
+    "prev_block_id": "block_4_0039",
+    "next_block_id": "block_4_0041",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0041",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "1 H NMR (300 MHz, CDCl3) d 7.93e7.86 (m, 2H, AreH), 7.58e7.52 (m, 1H, AreH), 7.44 (t, J¼7.5 Hz, 2H, AreH), 6.44 (t, J¼6.5 Hz, 1H, HC]C]C), 5.25 (d, J 6.6 Hz, 2H, C]C]CH2); 13C NMR (75.4 MHz, CDCl3) d 217.1, 191.0, 137.4, 132.8, 128.7, 128.3, 93.2, 79.2; IR (neat) 2987, 1960, 1932, 1649, 1596, 1578, 1448, 1416, 1348, 1276, 1214 cm\u00031 ; MS (EI) m/z 144 (Mþ, 9.33), 105 (100).",
+    "page": 3,
+    "bbox": [
+      65.0,
+      897.0,
+      494.0,
+      950.0
+    ],
+    "section": "4.2.1. 1-Phenylbuta-2,3-dien-1-one (3a).",
+    "prev_block_id": "block_4_0040",
+    "next_block_id": "block_4_0042",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0042",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "The following compounds (3ben, 2o) were prepared according to 3a.",
+    "page": 3,
+    "bbox": [
+      517.0,
+      107.0,
+      947.0,
+      132.0
+    ],
+    "section": "4.2.1. 1-Phenylbuta-2,3-dien-1-one (3a).",
+    "prev_block_id": "block_4_0041",
+    "next_block_id": "block_4_0043",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0043",
+    "doc_id": "4",
+    "block_type": "title",
+    "text": "4.2.2. 1-(4-Isopropylphenyl)buta-2,3-dien-1-one (3b).",
+    "page": 3,
+    "bbox": [
+      517.0,
+      145.0,
+      855.0,
+      160.0
+    ],
+    "section": "4.2.2. 1-(4-Isopropylphenyl)buta-2,3-dien-1-one (3b).",
+    "prev_block_id": "block_4_0042",
+    "next_block_id": "block_4_0044",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0044",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "The reaction of 1-(4-isopropylphenyl)but-3-yn-1-ol 1b (187.1 mg, 1.0 mmol), Fe(NO3)3$9H2O (40.6 mg, 0.1 mmol), TEMPO (15.5 mg, 0.1 mmol), and NaCl (5.8 mg, 0.1 mmol) in DCE (4 mL) afforded 1-(4-isopropylphenyl)buta-2,3-dien-1-one 3b (167.7 mg, 91%) (eluent: petroleum ether/diethyl ether¼10/1) as an oil.",
+    "page": 3,
+    "bbox": [
+      515.0,
+      268.0,
+      946.0,
+      334.0
+    ],
+    "section": "4.2.2. 1-(4-Isopropylphenyl)buta-2,3-dien-1-one (3b).",
+    "prev_block_id": "block_4_0043",
+    "next_block_id": "block_4_0045",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0045",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "1 H NMR (300 MHz, CDCl3) d 7.86 (d, J¼8.1 Hz, 2H, AreH), 7.30 (d, J 8.4 Hz, 2H, AreH), 6.45 (t, J 6.6 Hz, 1H, HC]C]C), 5.25 (d, J 6.6 Hz, 2H, C]C]CH2), 3.20e2.89 (m, 1H, CH), 1.27 (d, J 6.6 Hz, 6H,  { \\mathrm { C H } } _ { 3 } ) ; { ^ { 1 3 } { \\mathrm C } } NMR (75.4 MHz, CDCl3) d 216.8, 190.4, 154.4, 135.2, 128.9, 126.5, 93.1, 79.1, 34.2, 23.6; IR (neat) 2962, 1961, 1933, 1650, 1606, 1568, 1463, 1419, 1350, 1277, 1221, 1186, 1094, 1056 cm\u00031 ; MS (EI) m/z 186 (Mþ, 6.61), 147 (100); HRMS calcd for C13H14O (Mþ): 186.1045; found: 186.1046.",
+    "page": 3,
+    "bbox": [
+      515.0,
+      335.0,
+      947.0,
+      440.0
+    ],
+    "section": "4.2.2. 1-(4-Isopropylphenyl)buta-2,3-dien-1-one (3b).",
+    "prev_block_id": "block_4_0044",
+    "next_block_id": "block_4_0046",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0046",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "The reaction of 1-(4-isopropylphenyl)but-3-yn-1-ol 1b (943.8 mg, 5.0 mmol), Fe  \\mathrm { ( N O _ { 3 } ) _ { 3 } } { \\cdot } 9 \\mathrm { H } _ { 2 } 0 (202.7 mg, 0.5 mmol), TEMPO (78.5 mg, 0.5 mmol), and NaCl (28.4 mg, 0.5 mmol) in DCE (5 mL) afforded 1-(4-isopropylphenyl)buta-2,3-dien-1-one 3b (800.8 mg, 86%) (eluent: petroleum ether/diethyl ether¼10/1) as an oil.",
+    "page": 3,
+    "bbox": [
+      515.0,
+      557.0,
+      947.0,
+      635.0
+    ],
+    "section": "4.2.2. 1-(4-Isopropylphenyl)buta-2,3-dien-1-one (3b).",
+    "prev_block_id": "block_4_0045",
+    "next_block_id": "block_4_0047",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0047",
+    "doc_id": "4",
+    "block_type": "title",
+    "text": "4.2.3. 1-(Naphth-1-yl)buta-2,3-dien-1-one (3c).",
+    "page": 3,
+    "bbox": [
+      517.0,
+      649.0,
+      818.0,
+      664.0
+    ],
+    "section": "4.2.3. 1-(Naphth-1-yl)buta-2,3-dien-1-one (3c).",
+    "prev_block_id": "block_4_0046",
+    "next_block_id": "block_4_0048",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0048",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "The reaction of 1-(naphthalen-1-yl)but-3-yn-1-ol 1c (196.6 mg, 1.0 mmol), Fe(NO3)3$9H2O (41.0 mg, 0.1 mmol), TEMPO (15.5 mg, 0.1 mmol), and NaCl (6.0 mg, 0.1 mmol) in DCE (4 mL) afforded 1- (naphthalen-1-yl)buta-2,3-dien-1-one11 3c (105.2 mg, 54%) (eluent: petroleum ether/diethyl ether 10/1) as an oil (31% of the starting material by NMR analysis).",
+    "page": 3,
+    "bbox": [
+      515.0,
+      778.0,
+      946.0,
+      857.0
+    ],
+    "section": "4.2.3. 1-(Naphth-1-yl)buta-2,3-dien-1-one (3c).",
+    "prev_block_id": "block_4_0047",
+    "next_block_id": "block_4_0049",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0049",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "1 H NMR (300 MHz, CDCl3) d 8.35 (d, J 8.4 Hz, 1H, AreH), 7.94 (d, J 8.4 Hz, 1H, AreH), 7.90e7.83 (m, 1H, AreH), 7.72 (dd, J1 7.1 Hz, J2 1.1 Hz, 1H, AreH), 7.60e7.42 (m, 3H, AreH), 6.38 (t, J 6.5 Hz, 1H, HC]C]C), 5.08 (d, J 6.3 Hz, 2H, C]C]CH2); 13C NMR (75.4 MHz, CDCl3) d 217.8, 194.9, 135.6, 133.6, 131.6, 130.2, 128.2, 127.4, 127.3, 126.2, 125.3, 124.0, 97.1, 79.2; IR (neat) 1958, 1932, 1649, 1508, 1282, 1247, 1191, 1132 cm\u00031 ; MS (EI) m/z 194 (Mþ, 28.97), 127 (100).",
+    "page": 3,
+    "bbox": [
+      515.0,
+      857.0,
+      947.0,
+      950.0
+    ],
+    "section": "4.2.3. 1-(Naphth-1-yl)buta-2,3-dien-1-one (3c).",
+    "prev_block_id": "block_4_0048",
+    "next_block_id": "block_4_0050",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0050",
+    "doc_id": "4",
+    "block_type": "title",
+    "text": "4.2.4. 1-(4-Methoxyphenyl)buta-2,3-dien-1-one (3d).",
+    "page": 4,
+    "bbox": [
+      48.0,
+      80.0,
+      386.0,
+      94.0
+    ],
+    "section": "4.2.4. 1-(4-Methoxyphenyl)buta-2,3-dien-1-one (3d).",
+    "prev_block_id": "block_4_0049",
+    "next_block_id": "block_4_0051",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0051",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "The reaction of 1-(4-methoxyphenyl)but-3-yn-1-ol 1d (176.7 mg, 1.0 mmol), Fe(NO3)3$9H2O (40.4 mg, 0.1 mmol), TEMPO (15.7 mg, 0.1 mmol), and NaCl (5.6 mg, 0.1 mmol) in DCE (4 mL) afforded 1-(4-methoxyphenyl)buta-2,3-dien-1-one11 3d (142.1 mg, 81%) (eluent: petroleum ether/diethyl ether¼10/1) as a white solid: mp 54e55 \u0001C (n-hexane/ethyl acetate).",
+    "page": 4,
+    "bbox": [
+      48.0,
+      182.0,
+      478.0,
+      261.0
+    ],
+    "section": "4.2.4. 1-(4-Methoxyphenyl)buta-2,3-dien-1-one (3d).",
+    "prev_block_id": "block_4_0050",
+    "next_block_id": "block_4_0052",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0052",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "1 H NMR (300 MHz, CDCl3) d 7.92 (dt, J1¼9.2 Hz, J2¼2.5 Hz, 2H, AreH), 6.93 (dt, J1 9.4 Hz, J2 2.4 Hz, 2H, AreH), 6.44 (t, J 6.6 Hz, 1H, C]C]CH), 5.24 (d, J¼6.6 Hz, 2H, C]C]CH2), 3.86 (s, 3H, CH3);  ^ { 1 3 } C NMR (75.4 MHz, CDCl3) d 216.5, 189.0, 163.4, 131.0, 130.3, 113.6, 92.8, 79.0, 55.4; IR (neat) 2976, 1957, 1924, 1642, 1591, 1508, 1421, 1351, 1260, 1220, 1170, 1094, 1026 cm\u00031 ; MS (EI) m/z 174 (Mþ, 2.82), 63 (100).",
+    "page": 4,
+    "bbox": [
+      48.0,
+      261.0,
+      478.0,
+      355.0
+    ],
+    "section": "4.2.4. 1-(4-Methoxyphenyl)buta-2,3-dien-1-one (3d).",
+    "prev_block_id": "block_4_0051",
+    "next_block_id": "block_4_0053",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0053",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "The reaction of 1-(4-methoxyphenyl)but-3-yn-1-ol 1d (881.5 mg, 5.0 mmol), Fe(NO3)3$9H2O (202.0 mg, 0.5 mmol), TEMPO (78.9 mg, 0.5 mmol), and NaCl (29.2 mg, 0.5 mmol) in DCE (5 mL) afforded 1-(4-methoxyphenyl)buta-2,3-dien-1-one 3d (768.1 mg, 88%) (eluent: petroleum ether/diethyl ether¼10/1) as a white solid.",
+    "page": 4,
+    "bbox": [
+      48.0,
+      446.0,
+      478.0,
+      525.0
+    ],
+    "section": "4.2.4. 1-(4-Methoxyphenyl)buta-2,3-dien-1-one (3d).",
+    "prev_block_id": "block_4_0052",
+    "next_block_id": "block_4_0054",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0054",
+    "doc_id": "4",
+    "block_type": "title",
+    "text": "4.2.5. 1-(3-Methoxyphenyl)buta-2,3-dien-1-one (3e).",
+    "page": 4,
+    "bbox": [
+      48.0,
+      538.0,
+      383.0,
+      553.0
+    ],
+    "section": "4.2.5. 1-(3-Methoxyphenyl)buta-2,3-dien-1-one (3e).",
+    "prev_block_id": "block_4_0053",
+    "next_block_id": "block_4_0055",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0055",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "The reaction of 1-(3-methoxyphenyl)but-3-yn-1-ol 1e (174.8 mg, 1.0 mmol), Fe(NO3)3$9H2O (40.6 mg, 0.1 mmol), TEMPO (15.4 mg, 0.1 mmol), and NaCl (6.0 mg, 0.1 mmol) in DCE (4 mL) afforded 1-(3-methoxyphenyl)buta-2,3-dien-1-one5b 3e (153.1 mg, 89%) (petroleum ether/diethyl ether 10/1) as an oil.",
+    "page": 4,
+    "bbox": [
+      48.0,
+      638.0,
+      477.0,
+      704.0
+    ],
+    "section": "4.2.5. 1-(3-Methoxyphenyl)buta-2,3-dien-1-one (3e).",
+    "prev_block_id": "block_4_0054",
+    "next_block_id": "block_4_0056",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0056",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "1 H NMR (300 MHz, CDCl3) d 7.47 (d, J 7.8 Hz, 1H, AreH), 7.41 (t, J 2.0 Hz, 1H, AreH), 7.34 (t, J 7.8 Hz, 1H, AreH), 7.09 (dd, J1 8.1 Hz, J2¼2.4 Hz, 1H, AreH), 6.43 (t, J¼6.6 Hz, 1H, HC]C]C), 5.25 (d, J 6.9 Hz, 2H, C]C]CH2), 3.83 (s, 3H, OCH3); 13C NMR (75.4 MHz, CDCl3) d 217.0, 190.6, 159.6, 138.7, 129.3, 121.2, 119.2, 113.0, 93.2, 79.2, 55.3; IR (neat) 1959, 1933, 1654, 1595, 1581, 1486, 1452, 1429, 1286, 1259, 1037 cm\u00031 ; MS (EI) m/z 174 (Mþ, 51.12), 135 (100).",
+    "page": 4,
+    "bbox": [
+      48.0,
+      704.0,
+      478.0,
+      796.0
+    ],
+    "section": "4.2.5. 1-(3-Methoxyphenyl)buta-2,3-dien-1-one (3e).",
+    "prev_block_id": "block_4_0055",
+    "next_block_id": "block_4_0057",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0057",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "The reaction of 1-(3-methoxyphenyl)but-3-yn-1-ol 1e (834.1 mg, 5.0 mmol), Fe(NO3)3$9H2O (201.5 mg, 0.5 mmol), TEMPO (77.6 mg, 0.5 mmol), and NaCl (28.5 mg, 0.5 mmol) in DCE (5 mL) afforded 1-(3-methoxyphenyl)buta-2,3-dien-1-one 3e (703.3 mg, 85%) (eluent: petroleum ether/diethyl ether 10/1) as an oil.",
+    "page": 4,
+    "bbox": [
+      48.0,
+      883.0,
+      478.0,
+      952.0
+    ],
+    "section": "4.2.5. 1-(3-Methoxyphenyl)buta-2,3-dien-1-one (3e).",
+    "prev_block_id": "block_4_0056",
+    "next_block_id": "block_4_0058",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0058",
+    "doc_id": "4",
+    "block_type": "title",
+    "text": "4.2.6. 1-(2-Methoxyphenyl)buta-2,3-dien-1-one (3f).",
+    "page": 4,
+    "bbox": [
+      500.0,
+      80.0,
+      833.0,
+      94.0
+    ],
+    "section": "4.2.6. 1-(2-Methoxyphenyl)buta-2,3-dien-1-one (3f).",
+    "prev_block_id": "block_4_0057",
+    "next_block_id": "block_4_0059",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0059",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "The reaction of 1-(2-methoxyphenyl)but-3-yn-1-ol 1f (174.5 mg, 1.0 mmol), Fe(NO3)3$9H2O (41.0 mg, 0.1 mmol), TEMPO (15.4 mg, 0.1 mmol), and NaCl (6.0 mg, 0.1 mmol) in DCE (4 mL) afforded 1-(2-methoxyphenyl)buta-2,3-dien-1-one 3f (137.3 mg, 80%) (eluent: petroleum ether/diethyl ether 5/1) as an oil.",
+    "page": 4,
+    "bbox": [
+      500.0,
+      172.0,
+      929.0,
+      239.0
+    ],
+    "section": "4.2.6. 1-(2-Methoxyphenyl)buta-2,3-dien-1-one (3f).",
+    "prev_block_id": "block_4_0058",
+    "next_block_id": "block_4_0060",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0060",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "1 H NMR (300 MHz, CDCl3) d 7.50 (dd, J1¼7.7 Hz, J2¼2.0 Hz, 1H, AreH), 7.44e7.37 (m, 1H, AreH), 7.00e6.90 (m, 2H, AreH), 6.44 (t, J¼6.3 Hz, 1H, HC]C]C), 5.14 (d, J¼6.6 Hz, 2H, C]C]CH2), 3.85 (s, 3H, OCH3); 13C NMR (75.4 MHz, CDCl3) d 216.9, 192.6, 157.6, 132.7, 129.9, 128.4, 120.3, 111.3, 96.6, 78.9, 55.5; IR (neat) 1959, 1934, 1656, 1598, 1486, 1465, 1436, 1339, 1283, 1246, 1163, 1022 cm\u00031 ; MS (EI) m/z 174 (Mþ, 6.55), 135 (100); HRMS calcd for C11H10O2 (Mþ): 174.0681; found: 174.0682.",
+    "page": 4,
+    "bbox": [
+      499.0,
+      239.0,
+      929.0,
+      345.0
+    ],
+    "section": "4.2.6. 1-(2-Methoxyphenyl)buta-2,3-dien-1-one (3f).",
+    "prev_block_id": "block_4_0059",
+    "next_block_id": "block_4_0061",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0061",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "The reaction of 1-(2-methoxyphenyl)but-3-yn-1-ol 1f (884.6 mg, 5.0 mmol), Fe(NO3)3$9H2O (202.0 mg, 0.5 mmol), TEMPO (77.9 mg, 0.5 mmol), and NaCl (29.5 mg, 0.5 mmol) in DCE (5 mL) afforded 1-(2-methoxyphenyl)buta-2,3-dien-1-one 3f (722.0 mg, 83%) (eluent: petroleum ether/diethyl ether¼10/1) as an oil.",
+    "page": 4,
+    "bbox": [
+      500.0,
+      423.0,
+      929.0,
+      501.0
+    ],
+    "section": "4.2.6. 1-(2-Methoxyphenyl)buta-2,3-dien-1-one (3f).",
+    "prev_block_id": "block_4_0060",
+    "next_block_id": "block_4_0062",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0062",
+    "doc_id": "4",
+    "block_type": "title",
+    "text": "4.2.7. 1-(2,4,6-Trimethoxyphenyl)buta-2,3-dien-1-one (3g).",
+    "page": 4,
+    "bbox": [
+      500.0,
+      515.0,
+      870.0,
+      530.0
+    ],
+    "section": "4.2.7. 1-(2,4,6-Trimethoxyphenyl)buta-2,3-dien-1-one (3g).",
+    "prev_block_id": "block_4_0061",
+    "next_block_id": "block_4_0063",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0063",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "The reaction of 1-(2,4,6-trimethoxyphenyl)but-3-yn-1-ol 1g (236.0 mg, 1.0 mmol), Fe(NO3)3$9H2O (39.4 mg, 0.1 mmol), TEMPO (15.5 mg, 0.1 mmol), and NaCl (5.8 mg, 0.1 mmol) in DCE (4 mL) afforded 1-(2,4,6-trimethoxyphenyl)buta-2,3-dien-1-one1 3g (200.9 mg, 86%) (eluent: petroleum ether/diethyl ether¼1/1) as a yellow solid: mp 73e74 \u0001C (n-hexane/ethyl acetate).",
+    "page": 4,
+    "bbox": [
+      499.0,
+      621.0,
+      929.0,
+      699.0
+    ],
+    "section": "4.2.7. 1-(2,4,6-Trimethoxyphenyl)buta-2,3-dien-1-one (3g).",
+    "prev_block_id": "block_4_0062",
+    "next_block_id": "block_4_0064",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0064",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "1 H NMR (300 MHz, CDCl3) d 7.19 (s, 2H, AreH), 6.42 (t, J 6.5 Hz, 1H, HC]C]C), 5.26 (d, J 6.3 Hz, 2H, C]C]CH2), 3.911 (s, 3H), 3.909 (s, 3H), 3.90 (s, 3H); 13C NMR (75.4 MHz, CDCl3) d 216.6, 189.5, 152.9, 142.5, 132.5, 106.3, 93.0, 79.0, 60.9, 56.2; IR (neat) 1939, 1648, 1583, 1504, 1451, 1412, 1337, 1313, 1244, 1226, 1185, 1155, 1125 cm\u00031 ; MS (EI) m/z 234 (Mþ, 47.68), 195 (100).",
+    "page": 4,
+    "bbox": [
+      500.0,
+      699.0,
+      929.0,
+      780.0
+    ],
+    "section": "4.2.7. 1-(2,4,6-Trimethoxyphenyl)buta-2,3-dien-1-one (3g).",
+    "prev_block_id": "block_4_0063",
+    "next_block_id": "block_4_0065",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0065",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "The reaction of 1-(2,4,6-trimethoxyphenyl)but-3-yn-1-ol 1g (1.1825 g, 5.0 mmol), Fe(NO ) $9H O (200.4 mg, 0.5 mmol), TEMPO (77.7 mg, 0.5 mmol), and NaCl (29.6 mg, 0.5 mmol) in DCE (5 mL) afforded 1-(2,4,6-trimethoxyphenyl)buta-2,3-dien-1-one 3g (989.9 mg, 84%) (eluent: petroleum ether/diethyl ether 1/1) as a yellow solid.",
+    "page": 4,
+    "bbox": [
+      499.0,
+      870.0,
+      929.0,
+      950.0
+    ],
+    "section": "4.2.7. 1-(2,4,6-Trimethoxyphenyl)buta-2,3-dien-1-one (3g).",
+    "prev_block_id": "block_4_0064",
+    "next_block_id": "block_4_0066",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0066",
+    "doc_id": "4",
+    "block_type": "title",
+    "text": "4.2.8. 1-(4-Bromophenyl)buta-2,3-dien-1-one (3h).",
+    "page": 5,
+    "bbox": [
+      65.0,
+      80.0,
+      389.0,
+      94.0
+    ],
+    "section": "4.2.8. 1-(4-Bromophenyl)buta-2,3-dien-1-one (3h).",
+    "prev_block_id": "block_4_0065",
+    "next_block_id": "block_4_0067",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0067",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "The reaction of 1-(4-bromophenyl)but-3-yn-1-ol 1h (225.3 mg, 1.0 mmol),  \\mathrm { F e } ( \\mathsf { N O } _ { 3 } ) _ { 3 } $9H2O (40.7 mg, 0.1 mmol), TEMPO (15.9 mg, 0.1 mmol), and NaCl (6.0 mg, 0.1 mmol) in DCE (4 mL) afforded 1- (4-bromophenyl)buta-2,3-dien-1-one6 3h (172.8 mg, 77%) (eluent: petroleum ether/diethyl ether 10/1) as an oil.",
+    "page": 5,
+    "bbox": [
+      65.0,
+      213.0,
+      494.0,
+      279.0
+    ],
+    "section": "4.2.8. 1-(4-Bromophenyl)buta-2,3-dien-1-one (3h).",
+    "prev_block_id": "block_4_0066",
+    "next_block_id": "block_4_0068",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0068",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "1 H NMR (300 MHz, CDCl3) d 7.75 (dt,  J _ { 1 } { = } 8 . 9 Hz,  J _ { 2 } { = } 2 . 1 Hz, 2H,  \\mathsf { A r \\mathrm { - H } } ) , , 7.58 (dt, J1 8.9 Hz, J2 2.1 Hz, 2H, AreH), 6.38  ( \\mathrm { t } , J { = } 6 . 6 \\ \\mathrm { H z } , 1H,  \\scriptstyle { \\mathrm { H C = C = C } } , 5.26 (d, J 6.3 Hz, 2H, C]C]CH2);  ^ { 1 3 } { \\sf C } NMR (75.4 MHz, CDCl ) d 217.2, 190.0, 136.1, 131.6, 130.2, 127.8, 93.2, 79.5; IR (neat) 1960, 1931, 1652, 1585, 1566, 1484, 1417, 1395, 1346, 1276, 1211, 1177, 1069, 1009  \\mathrm { c m } ^ { - 1 } ; MS (EI) m/z 224  ( \\mathbf { M } ^ { + } ( ^ { 8 1 } \\mathbf { B } \\mathbf { r } ) , 0 . 7 2 ) , 222  ( \\mathbf { M } ^ { + } ( ^ { 7 9 } \\mathbf { B } \\mathbf { r } ) , 1 . 3 2 ) , 50 (100).",
+    "page": 5,
+    "bbox": [
+      65.0,
+      279.0,
+      495.0,
+      372.0
+    ],
+    "section": "4.2.8. 1-(4-Bromophenyl)buta-2,3-dien-1-one (3h).",
+    "prev_block_id": "block_4_0067",
+    "next_block_id": "block_4_0069",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0069",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "The reaction of 1-(4-bromophenyl)but-3-yn-1-ol 1h (1.1338 g, 5.0 mmol), Fe(NO3)3$9H2O (199.2 mg, 0.5 mmol), TEMPO (78.5 mg, 0.5 mmol), and NaCl (28.9 mg, 0.5 mmol) in DCE (5 mL) afforded 1- (4-bromophenyl)buta-2,3-dien-1-one 3h (797.0 mg, 71%) (eluent: petroleum ether/diethyl ether 10/1) as an oil.",
+    "page": 5,
+    "bbox": [
+      65.0,
+      453.0,
+      495.0,
+      522.0
+    ],
+    "section": "4.2.8. 1-(4-Bromophenyl)buta-2,3-dien-1-one (3h).",
+    "prev_block_id": "block_4_0068",
+    "next_block_id": "block_4_0070",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0070",
+    "doc_id": "4",
+    "block_type": "title",
+    "text": "4.2.9. 1-(4-Ethylphenyl)buta-2,3-dien-1-one (3i).",
+    "page": 5,
+    "bbox": [
+      65.0,
+      533.0,
+      374.0,
+      548.0
+    ],
+    "section": "4.2.9. 1-(4-Ethylphenyl)buta-2,3-dien-1-one (3i).",
+    "prev_block_id": "block_4_0069",
+    "next_block_id": "block_4_0071",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0071",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "The reaction of 1-(4-ethylphenyl)but-3-yn-1-ol 1i (174.0 mg, 1.0 mmol),  \\mathrm { F e } ( \\mathsf { N O } _ { 3 } ) _ { 3 } $9H2O (40.0 mg, 0.1 mmol), TEMPO (15.8 mg, 0.1 mmol), and NaCl (5.8 mg, 0.1 mmol) in DCE (4 mL) afforded 1- (4-ethylphenyl)buta-2,3-dien-1-one 3i (145.8 mg, 85%) (eluent: petroleum ether/diethyl ether 10/1) as an oil.",
+    "page": 5,
+    "bbox": [
+      65.0,
+      630.0,
+      494.0,
+      694.0
+    ],
+    "section": "4.2.9. 1-(4-Ethylphenyl)buta-2,3-dien-1-one (3i).",
+    "prev_block_id": "block_4_0070",
+    "next_block_id": "block_4_0072",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0072",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "1 H NMR (300 MHz, CDCl3) d 7.84 (d, J 6.6 Hz, 2H, AreH), 7.26 (d, J 8.4 Hz, 2H, AreH), 6.44 (t, J 6.5 Hz, 1H,  \\mathrm { H C = } \\mathrm { C = } \\mathrm { C } ) , 5.24 (d, J 6.6 Hz, 2H,  { \\mathsf { C } } { = } { \\mathsf { C } } { = } { \\mathsf { C } } { \\mathsf { H } } _ { 2 } ) , , 2.69 (q, J 7.6 Hz, 2H, CH2), 1.25 (t, J 7.5 Hz, 3H, CH3); 13C NMR (75.4 MHz, CDCl3) d 216.7, 190.3, 149.7, 135.0, 128.8, 127.8, 93.0, 79.0, 28.8, 15.0; IR (neat) 2970, 2878, 2831, 1961, 1933, 1650, 1606, 1578, 1508, 1417, 1347, 1276, 1220, 1181 cm\u00031 ; MS (EI) m/z 172 (Mþ, 2.14), 133 (100); HRMS calcd for  \\mathsf { C } _ { 1 2 } \\mathsf { H } _ { 1 2 } 0 ( \\mathsf { M } ^ { + } ) \\colon : 172.0888; found: 172.0889.",
+    "page": 5,
+    "bbox": [
+      63.0,
+      696.0,
+      495.0,
+      802.0
+    ],
+    "section": "4.2.9. 1-(4-Ethylphenyl)buta-2,3-dien-1-one (3i).",
+    "prev_block_id": "block_4_0071",
+    "next_block_id": "block_4_0073",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0073",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "The reaction of 1-(4-ethylphenyl)but-3-yn-1-ol 1i (869.1 mg, 5.0 mmol),  \\mathrm { F e } ( \\mathrm { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } 0 (203.1 mg, 0.5 mmol), TEMPO (77.0 mg, 0.5 mmol), and NaCl (28.2 mg, 0.5 mmol) in DCE (5 mL) afforded 1- (4-ethylphenyl)buta-2,3-dien-1-one 3i (724.0 mg, 84%) (eluent: petroleum ether/diethyl ether 10/1) as an oil.",
+    "page": 5,
+    "bbox": [
+      65.0,
+      883.0,
+      495.0,
+      952.0
+    ],
+    "section": "4.2.9. 1-(4-Ethylphenyl)buta-2,3-dien-1-one (3i).",
+    "prev_block_id": "block_4_0072",
+    "next_block_id": "block_4_0074",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0074",
+    "doc_id": "4",
+    "block_type": "title",
+    "text": "4.2.10. 1-(4-Chlorophenyl)buta-2,3-dien-1-one (3j).",
+    "page": 5,
+    "bbox": [
+      517.0,
+      80.0,
+      842.0,
+      95.0
+    ],
+    "section": "4.2.10. 1-(4-Chlorophenyl)buta-2,3-dien-1-one (3j).",
+    "prev_block_id": "block_4_0073",
+    "next_block_id": "block_4_0075",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0075",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "The reaction of 1-(4-chlorophenyl)but-3-yn-1-ol 1j (179.8 mg, 1.0 mmol),  \\mathsf { F e } ( \\mathsf { N O } _ { 3 } ) _ { 3 } $9H2O (39.8 mg, 0.1 mmol), TEMPO (15.7 mg, 0.1 mmol), and NaCl (5.6 mg, 0.1 mmol) in DCE (4 mL) afforded 1- (4-chlorophenyl)buta-2,3-dien-1-one 3j (147.0 mg, 83%) (eluent: petroleum ether/diethyl ether 10/1) as an oil.",
+    "page": 5,
+    "bbox": [
+      515.0,
+      200.0,
+      947.0,
+      268.0
+    ],
+    "section": "4.2.10. 1-(4-Chlorophenyl)buta-2,3-dien-1-one (3j).",
+    "prev_block_id": "block_4_0074",
+    "next_block_id": "block_4_0076",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0076",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "The reaction of 1-(4-chlorophenyl)but-3-yn-1-ol 1j (901.9 mg, 5.0 mmol),  \\mathsf { F e } ( \\mathsf { N O } _ { 3 } ) { \\scriptstyle \\sharp } $9H2O (202.0 mg, 0.5 mmol), TEMPO (79.0 mg, 0.5 mmol), and NaCl (29.6 mg, 0.5 mmol) in DCE (5 mL) afforded 1- (4-chlorophenyl)buta-2,3-dien-  \\cdot 1 \\mathrm { - o n e } ^ { 8 \\mathrm { a } } 3j (674.8 mg, 76%) as an oil.",
+    "page": 5,
+    "bbox": [
+      515.0,
+      380.0,
+      947.0,
+      433.0
+    ],
+    "section": "4.2.10. 1-(4-Chlorophenyl)buta-2,3-dien-1-one (3j).",
+    "prev_block_id": "block_4_0075",
+    "next_block_id": "block_4_0077",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0077",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "1 H NMR (300 MHz, CDCl3) d 7.83 (dt, J1 8.9 Hz,  J _ { 2 } { = } 2 . 1 Hz, 2H,  \\mathsf { A r \\mathrm { - H } } ) , 7.41 (dt, J1¼8.7 Hz, J2¼2.3 Hz, 2H, AreH), 6.38 (t, J¼6.5 Hz, 1H,  \\mathrm { H C = } \\mathrm { C = } \\mathrm { C } ) , 5.26 (d, J 6.6 Hz, 2H,  \\mathsf { C } { = } \\dot { \\mathsf { C } } { = } \\mathsf { C } \\mathsf { H } _ { 2 } \\dot { ) } ; \\ \\mathsf { \\bar { 1 } } 3 _ { \\mathsf { C } } NMR (75.4 MHz, CDCl3) d 217.1, 189.8, 139.1, 135.6, 130.1, 128.6, 93.2, 79.4.",
+    "page": 5,
+    "bbox": [
+      517.0,
+      433.0,
+      947.0,
+      488.0
+    ],
+    "section": "4.2.10. 1-(4-Chlorophenyl)buta-2,3-dien-1-one (3j).",
+    "prev_block_id": "block_4_0076",
+    "next_block_id": "block_4_0078",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0078",
+    "doc_id": "4",
+    "block_type": "title",
+    "text": "4.2.11. 1-(2-Thienyl)buta-2,3-dien-1-one (3k).",
+    "page": 5,
+    "bbox": [
+      517.0,
+      500.0,
+      806.0,
+      514.0
+    ],
+    "section": "4.2.11. 1-(2-Thienyl)buta-2,3-dien-1-one (3k).",
+    "prev_block_id": "block_4_0077",
+    "next_block_id": "block_4_0079",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0079",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "The reaction of 1-(2-thienyl)but-3-yn-1-ol 1k (151.6 mg, 1.0 mmol),  \\mathsf { F e } ( \\mathsf { N O } _ { 3 } ) \\ 3 $9H2O (40.7 mg, 0.1 mmol), TEMPO (15.9 mg, 0.1 mmol), and NaCl (5.8 mg, 0.1 mmol) in DCE (4 mL) afforded 1- (2-thienyl)buta-2,3-dien-1-one 3k (136.0 mg, 91%) (eluent: petroleum ether/diethyl ether 10/1) as an oil.",
+    "page": 5,
+    "bbox": [
+      515.0,
+      627.0,
+      947.0,
+      696.0
+    ],
+    "section": "4.2.11. 1-(2-Thienyl)buta-2,3-dien-1-one (3k).",
+    "prev_block_id": "block_4_0078",
+    "next_block_id": "block_4_0080",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0080",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "The reaction of 1-(2-thienyl)but-3-yn-1-ol 1k (759.6 mg, 5.0 mmol),  \\mathrm { F e } ( \\mathsf { N O } _ { 3 } ) _ { 3 } $9H2O (204.9 mg, 0.5 mmol), TEMPO (77.2 mg, 0.5 mmol), and NaCl (28.8 mg, 0.5 mmol) in DCE (5 mL) afforded 1- (2-thienyl)buta-2,3-dien-1-one 3k (664.5 mg, 89%) (eluent: petroleum ether/diethyl ether 10/1) as an oil.",
+    "page": 5,
+    "bbox": [
+      515.0,
+      791.0,
+      946.0,
+      857.0
+    ],
+    "section": "4.2.11. 1-(2-Thienyl)buta-2,3-dien-1-one (3k).",
+    "prev_block_id": "block_4_0079",
+    "next_block_id": "block_4_0081",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0081",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "1 H NMR (300 MHz, CDCl3) d 7.82 (d, J 3.6 Hz, 1H, heteroaryl-H), 7.63 (d, J 4.8 Hz, 1H, heteroaryl-H), 7.11 (t, J 4.4 Hz, 1H, heteroaryl-H), 6.37 (t, J 6.6 Hz, 1H, HC]C]C), 5.33 (d, J 6.6 Hz, 2H, C]C]  { \\mathrm { C H } } _ { 2 } ) ; { ^ { 1 3 } { \\mathrm { C } } } NMR (75.4 MHz, CDCl3) d 215.8, 181.8, 143.5, 133.7, 132.4, 127.8, 93.2, 79.8; IR (neat) 1961, 1933, 1630, 1516, 1412, 1357, 1279, 1236, 1219 cm\u00031 ; MS (EI) m/z 150 (Mþ, 20.34), 111 (100); HRMS calcd for  C _ { 8 } \\mathrm { H } _ { 6 } \\mathrm { O } _ { 4 } S (Mþ): 150.0139; found: 150.0138.",
+    "page": 5,
+    "bbox": [
+      515.0,
+      857.0,
+      947.0,
+      950.0
+    ],
+    "section": "4.2.11. 1-(2-Thienyl)buta-2,3-dien-1-one (3k).",
+    "prev_block_id": "block_4_0080",
+    "next_block_id": "block_4_0082",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0082",
+    "doc_id": "4",
+    "block_type": "title",
+    "text": "4.2.12. 1-(2-Furyl)buta-2,3-dien-1-one (3l).",
+    "page": 6,
+    "bbox": [
+      50.0,
+      80.0,
+      326.0,
+      93.0
+    ],
+    "section": "4.2.12. 1-(2-Furyl)buta-2,3-dien-1-one (3l).",
+    "prev_block_id": "block_4_0081",
+    "next_block_id": "block_4_0083",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0083",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "The reaction of 1-(2-furyl)but-3-yn-1-ol 1l (135.4 mg, 1.0 mmol), Fe(NO3)3$9H2O (40.3 mg, 0.1 mmol), TEMPO (15.9 mg, 0.1 mmol), and NaCl (5.5 mg, 0.1 mmol) in DCE (4 mL) afforded 1- (2-furyl)buta-2,3-dien-1-one 3l (107.4 mg, 81%) (eluent: petroleum ether/diethyl ether 10/1) as an oil.",
+    "page": 6,
+    "bbox": [
+      48.0,
+      235.0,
+      477.0,
+      302.0
+    ],
+    "section": "4.2.12. 1-(2-Furyl)buta-2,3-dien-1-one (3l).",
+    "prev_block_id": "block_4_0082",
+    "next_block_id": "block_4_0084",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0084",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "The reaction of 1-(2-furyl)but-3-yn-1-ol 1l (681.3 mg, 5.0 mmol), Fe(NO3)3$9H2O (204.0 mg, 0.5 mmol), TEMPO (78.7 mg, 0.5 mmol), and NaCl (28.8 mg, 0.5 mmol) in DCE (5 mL) afforded 1- (2-furyl)buta-2,3-dien-1-one11 3l (516.2 mg, 77%) (eluent: petroleum ether/diethyl ether¼10/1) as an oil.",
+    "page": 6,
+    "bbox": [
+      48.0,
+      302.0,
+      477.0,
+      369.0
+    ],
+    "section": "4.2.12. 1-(2-Furyl)buta-2,3-dien-1-one (3l).",
+    "prev_block_id": "block_4_0083",
+    "next_block_id": "block_4_0085",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0085",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "1 H NMR (300 MHz, CDCl3) d 7.60 (dd,  J _ { 1 } { = } 1 . 5 Hz,  J _ { 2 } { = } 0 . 8 Hz, 1H, heteroaryl-H), 7.28 (dd, J1 3.6 Hz, J2 0.6 Hz, 1H, heteroaryl-H), 6.54 (dd, J1¼3.6 Hz,  J _ { 2 } { = } 1 . 8 Hz, 1H, heteroaryl-H), 6.44 (t, J¼6.5 Hz, 1H, HC]C]C), 5.34 (d, J 6.6 Hz, 2H, C]C]CH2); 13C NMR (75.4 MHz, CDCl3) d 216.1, 177.7, 152.3, 146.5, 118.0, 112.3, 92.4, 79.7; IR (neat) 1960, 1933, 1645, 1567, 1465, 1418, 1392, 1164, 1016 cm\u00031 ; MS (EI) m/ z 134 (Mþ, 19.84), 95 (100).",
+    "page": 6,
+    "bbox": [
+      48.0,
+      530.0,
+      478.0,
+      625.0
+    ],
+    "section": "4.2.12. 1-(2-Furyl)buta-2,3-dien-1-one (3l).",
+    "prev_block_id": "block_4_0084",
+    "next_block_id": "block_4_0086",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0086",
+    "doc_id": "4",
+    "block_type": "title",
+    "text": "4.2.13. 1-Cyclohexylbuta-2,3-dien-1-one (3m).",
+    "page": 6,
+    "bbox": [
+      50.0,
+      636.0,
+      344.0,
+      651.0
+    ],
+    "section": "4.2.13. 1-Cyclohexylbuta-2,3-dien-1-one (3m).",
+    "prev_block_id": "block_4_0085",
+    "next_block_id": "block_4_0087",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0087",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "The reaction of 1-cyclohexylbut-3-yn-1-ol 1m (152.9 mg, 1.0 mmol), Fe(NO3)3$9H2O (40.9 mg, 0.1 mmol), TEMPO (15.5 mg, 0.1 mmol), and NaCl (5.4 mg, 0.1 mmol) in DCE (4 mL) afforded 1- cyclohexylbuta-2,3-dien-1-one10 3m (59.3 mg, 39%) as an oil (40% of the starting material by NMR analysis).",
+    "page": 6,
+    "bbox": [
+      48.0,
+      805.0,
+      477.0,
+      870.0
+    ],
+    "section": "4.2.13. 1-Cyclohexylbuta-2,3-dien-1-one (3m).",
+    "prev_block_id": "block_4_0086",
+    "next_block_id": "block_4_0088",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0088",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "1 H NMR (300 MHz, CDCl3) d 5.74 (t, J 6.6 Hz, 1H, HC]C]C), 5.22 (d, J 6.6 Hz, 2H, C]C]CH2), 2.80e2.49 (m, 1H, CH), 1.82e1.60 (m, 5H, CH2), 1.45e1.10 (m, 5H, CH2); 13C NMR (75.4 MHz, CDCl3) d 216.1, 203.8, 95.4, 79.1, 47.0, 29.0, 25.7, 25.5; IR (neat) 2932, 2855, 1961, 1934, 1677, 1450, 1165, 1126 cm\u00031 ; MS (EI) m/z 150 (Mþ, 8.19), 55 (100).",
+    "page": 6,
+    "bbox": [
+      48.0,
+      870.0,
+      478.0,
+      950.0
+    ],
+    "section": "4.2.13. 1-Cyclohexylbuta-2,3-dien-1-one (3m).",
+    "prev_block_id": "block_4_0087",
+    "next_block_id": "block_4_0089",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0089",
+    "doc_id": "4",
+    "block_type": "title",
+    "text": "4.2.14. Trideca-1,2-dien-4-one (3n).",
+    "page": 6,
+    "bbox": [
+      500.0,
+      80.0,
+      729.0,
+      93.0
+    ],
+    "section": "4.2.14. Trideca-1,2-dien-4-one (3n).",
+    "prev_block_id": "block_4_0088",
+    "next_block_id": "block_4_0090",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0090",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "The reaction of tridec-1-yn-4-ol 1n (196.1 mg, 1.0 mmol),  \\mathrm { F e } ( \\mathsf { N O } _ { 3 } ) _ { 3 } $9H2O (41.0 mg, 0.05 mmol), TEMPO (15.6 mg, 0.05 mmol), and NaCl (6.0 mg, 0.05 mmol) in DCE (4 mL) afforded trideca-1,2- dien-4-one8a 3n (98.3 mg, 51%) (eluent: petroleum ether/diethyl ether 10/1) as an oil (44% of the starting material by NMR analysis).",
+    "page": 6,
+    "bbox": [
+      500.0,
+      197.0,
+      929.0,
+      274.0
+    ],
+    "section": "4.2.14. Trideca-1,2-dien-4-one (3n).",
+    "prev_block_id": "block_4_0089",
+    "next_block_id": "block_4_0091",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0091",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "1 H NMR (300 MHz, CDCl3) d 5.76 (t, J¼6.6 Hz, 1H, HC]C]C), 5.22 (d, J¼6.3 Hz, 2H,  { \\mathsf { C } } { = } { \\mathsf { C } } { = } { \\mathsf { C } } { \\mathsf { H } } _ { 2 } ) , 2.59 (t, J¼7.5 Hz, 2H, CH2), 1.62e1.50 (m, 2H, CH2), 1.35e1.08 (m, 12H, CH2), 0.87 (t, J 6.8 Hz, 3H, CH3); 13C NMR (75.4 MHz, CDCl3) d 216.6, 201.0, 96.7, 79.2, 39.2, 31.8, 29.4, 29.3, 29.22, 29.17, 24.6, 22.6, 14.1.",
+    "page": 6,
+    "bbox": [
+      500.0,
+      276.0,
+      929.0,
+      341.0
+    ],
+    "section": "4.2.14. Trideca-1,2-dien-4-one (3n).",
+    "prev_block_id": "block_4_0090",
+    "next_block_id": "block_4_0092",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0092",
+    "doc_id": "4",
+    "block_type": "title",
+    "text": "4.2.15. 4-(tert-Butyldimethylsilyl)-1-(4-chlorophenyl)but-3-yn-1- one (2o).",
+    "page": 6,
+    "bbox": [
+      500.0,
+      355.0,
+      929.0,
+      382.0
+    ],
+    "section": "4.2.15. 4-(tert-Butyldimethylsilyl)-1-(4-chlorophenyl)but-3-yn-1- one (2o).",
+    "prev_block_id": "block_4_0091",
+    "next_block_id": "block_4_0093",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0093",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "The reaction of 4-(tert-butyldimethylsilyl)-1-(4-chlorophenyl) but-3-yn-1-ol 1o (293.1 mg, 1.0 mmol), Fe(NO3)3$9H2O (40.5 mg, 0.1 mmol), TEMPO (15.7 mg, 0.1 mmol), and NaCl (6.0 mg, 0.1 mmol) in DCE (4 mL) afforded 4-(tert-butyldimethylsilyl)-1-(4- chlorophenyl)but-3-yn-1-one 2o (187.9 mg, 65%) (eluent: petroleum ether/diethyl ether 10/1) as an oil.",
+    "page": 6,
+    "bbox": [
+      499.0,
+      504.0,
+      929.0,
+      583.0
+    ],
+    "section": "4.2.15. 4-(tert-Butyldimethylsilyl)-1-(4-chlorophenyl)but-3-yn-1- one (2o).",
+    "prev_block_id": "block_4_0092",
+    "next_block_id": "block_4_0094",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0094",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "1 H NMR (300 MHz, CDCl3) d 7.97 (dt, J1 8.8 Hz,  J _ { 2 } { = } 2 . 1 Hz, 2H, AreH), 7.44 (dt, J1¼8.9 Hz, J2¼2.3 Hz, 2H, AreH), 3.83 (s, 2H, CH2), 0.88 (s, 9H, C(CH3)3), 0.07 (s, 6H, CH3); 13C NMR (75.4 MHz, CDCl3) d 191.8, 139.9, 133.5, 130.2, 128.8, 98.5, 89.2, 32.1, 25.9, 16.5, 4.8; IR (neat) 2178,1694,1590,1489, 1471,1400,1208, 1093,1010 cm\u00031 ; MS (EI) m/z 294  ( \\mathbf { M } ^ { + } ( ^ { 3 7 } \\mathbf { C } \\mathbf { l } ) , 0 . 1 5 ) , 292 (Mþ( 35Cl), 0.44), 111 (100); HRMS calcd for  \\mathsf { C } _ { 1 6 } \\mathrm { H } _ { 2 1 } 0 \\mathsf { S i } ^ { 3 5 } \\mathrm { C l } (Mþ): 292.1050; found: 292.1053.",
+    "page": 6,
+    "bbox": [
+      500.0,
+      583.0,
+      929.0,
+      677.0
+    ],
+    "section": "4.2.15. 4-(tert-Butyldimethylsilyl)-1-(4-chlorophenyl)but-3-yn-1- one (2o).",
+    "prev_block_id": "block_4_0093",
+    "next_block_id": "block_4_0095",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0095",
+    "doc_id": "4",
+    "block_type": "title",
+    "text": "Acknowledgements",
+    "page": 6,
+    "bbox": [
+      500.0,
+      689.0,
+      638.0,
+      704.0
+    ],
+    "section": "Acknowledgements",
+    "prev_block_id": "block_4_0094",
+    "next_block_id": "block_4_0096",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0096",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "We greatly acknowledge the financial support from the National Basic Research Program of China (no. 2009CB825300) and the National Natural Science Foundation of China of China (21232006). We thank Shangze Wu in our group for reproducing the results of compound 3b and 3m presented in this study.",
+    "page": 6,
+    "bbox": [
+      499.0,
+      716.0,
+      929.0,
+      784.0
+    ],
+    "section": "Acknowledgements",
+    "prev_block_id": "block_4_0095",
+    "next_block_id": "block_4_0097",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0097",
+    "doc_id": "4",
+    "block_type": "title",
+    "text": "Supplementary data",
+    "page": 6,
+    "bbox": [
+      500.0,
+      796.0,
+      643.0,
+      810.0
+    ],
+    "section": "Supplementary data",
+    "prev_block_id": "block_4_0096",
+    "next_block_id": "block_4_0098",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0098",
+    "doc_id": "4",
+    "block_type": "paragraph",
+    "text": "Supplementary data related to this article can be found at http:// dx.doi.org/10.1016/j.tet.2013.08.082.",
+    "page": 6,
+    "bbox": [
+      500.0,
+      823.0,
+      929.0,
+      849.0
+    ],
+    "section": "Supplementary data",
+    "prev_block_id": "block_4_0097",
+    "next_block_id": "block_4_0099",
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_4_0099",
+    "doc_id": "4",
+    "block_type": "title",
+    "text": "References and notes",
+    "page": 6,
+    "bbox": [
+      500.0,
+      863.0,
+      650.0,
+      876.0
+    ],
+    "section": "References and notes",
+    "prev_block_id": "block_4_0098",
+    "next_block_id": null,
+    "source_file": "4.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  }
+]

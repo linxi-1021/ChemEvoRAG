@@ -1,0 +1,1212 @@
+[
+  {
+    "block_id": "block_22_0000",
+    "doc_id": "22",
+    "block_type": "title",
+    "text": "RESEARCH ARTICLE",
+    "page": 1,
+    "bbox": [
+      82.0,
+      123.0,
+      315.0,
+      142.0
+    ],
+    "section": "RESEARCH ARTICLE",
+    "prev_block_id": null,
+    "next_block_id": "block_22_0001",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0001",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "View Article Online",
+    "page": 1,
+    "bbox": [
+      754.0,
+      116.0,
+      899.0,
+      130.0
+    ],
+    "section": "RESEARCH ARTICLE",
+    "prev_block_id": "block_22_0000",
+    "next_block_id": "block_22_0002",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0002",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "View Journal | View Issue",
+    "page": 1,
+    "bbox": [
+      756.0,
+      133.0,
+      884.0,
+      143.0
+    ],
+    "section": "RESEARCH ARTICLE",
+    "prev_block_id": "block_22_0001",
+    "next_block_id": "block_22_0003",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0003",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "Check for updates",
+    "page": 1,
+    "bbox": [
+      107.0,
+      182.0,
+      230.0,
+      196.0
+    ],
+    "section": "RESEARCH ARTICLE",
+    "prev_block_id": "block_22_0002",
+    "next_block_id": "block_22_0004",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0004",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "Cite this: , 2024, 11, 5003",
+    "page": 1,
+    "bbox": [
+      65.0,
+      214.0,
+      260.0,
+      237.0
+    ],
+    "section": "RESEARCH ARTICLE",
+    "prev_block_id": "block_22_0003",
+    "next_block_id": "block_22_0005",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0005",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "Received 3rd May 2024,",
+    "page": 1,
+    "bbox": [
+      65.0,
+      311.0,
+      201.0,
+      323.0
+    ],
+    "section": "RESEARCH ARTICLE",
+    "prev_block_id": "block_22_0004",
+    "next_block_id": "block_22_0006",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0006",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "Accepted 6th July 2024",
+    "page": 1,
+    "bbox": [
+      67.0,
+      324.0,
+      203.0,
+      335.0
+    ],
+    "section": "RESEARCH ARTICLE",
+    "prev_block_id": "block_22_0005",
+    "next_block_id": "block_22_0007",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0007",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "DOI: 10.1039/d4qo00791c",
+    "page": 1,
+    "bbox": [
+      67.0,
+      338.0,
+      218.0,
+      351.0
+    ],
+    "section": "RESEARCH ARTICLE",
+    "prev_block_id": "block_22_0006",
+    "next_block_id": "block_22_0008",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0008",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "rsc.li/frontiers-organic",
+    "page": 1,
+    "bbox": [
+      67.0,
+      359.0,
+      186.0,
+      372.0
+    ],
+    "section": "RESEARCH ARTICLE",
+    "prev_block_id": "block_22_0007",
+    "next_block_id": "block_22_0009",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0009",
+    "doc_id": "22",
+    "block_type": "title",
+    "text": "Mechanistic studies on  C u ( N O _ { 3 } ) _ { 2 } TEMPO-catalyzed aerobic oxidation of alcohols to carboxylic acids†",
+    "page": 1,
+    "bbox": [
+      285.0,
+      173.0,
+      922.0,
+      220.0
+    ],
+    "section": "Mechanistic studies on  C u ( N O _ { 3 } ) _ { 2 } TEMPO-catalyzed aerobic oxidation of alcohols to carboxylic acids†",
+    "prev_block_id": "block_22_0008",
+    "next_block_id": "block_22_0010",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0010",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "Yibo Yu, a Zhao Sun,b Yin-Long Guo, *b Xue Zhang, *b Hui Qian *a and Shengming Ma *a,b",
+    "page": 1,
+    "bbox": [
+      284.0,
+      231.0,
+      892.0,
+      265.0
+    ],
+    "section": "Mechanistic studies on  C u ( N O _ { 3 } ) _ { 2 } TEMPO-catalyzed aerobic oxidation of alcohols to carboxylic acids†",
+    "prev_block_id": "block_22_0009",
+    "next_block_id": "block_22_0011",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0011",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "Oxidation of alcohols to carbonyl compounds is one of the most important and fundamental reactions in organic chemistry. Such aerobic reactions that provide aldehydes or ketones mediated by copper and nitroxyl have been well developed during the past several decades. Recently, we successfully realized the aerobic oxidation of primary alcohols to carboxylic acids catalyzed by Cu/TEMPO for the first time. Herein, a mechanism involving a  C u ( N O _ { 3 } ) _ { 2 } - T E M P O adduct as identified by SAESI-MS studies is proposed, which is supported by our experimental studies and density functional theory (DFT) calculations.",
+    "page": 1,
+    "bbox": [
+      282.0,
+      281.0,
+      929.0,
+      372.0
+    ],
+    "section": "Mechanistic studies on  C u ( N O _ { 3 } ) _ { 2 } TEMPO-catalyzed aerobic oxidation of alcohols to carboxylic acids†",
+    "prev_block_id": "block_22_0010",
+    "next_block_id": "block_22_0012",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0012",
+    "doc_id": "22",
+    "block_type": "title",
+    "text": "Introduction",
+    "page": 1,
+    "bbox": [
+      67.0,
+      400.0,
+      205.0,
+      417.0
+    ],
+    "section": "Introduction",
+    "prev_block_id": "block_22_0011",
+    "next_block_id": "block_22_0013",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0013",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "Aerobic alcohol oxidation to aldehydes and ketones catalyzed by copper and nitroxyl has been well investigated,1,2 and numerous efforts have been made to elucidate the mechanism of these reactions, especially mediated by Cu(II), in recent years.3 In 1984, Semmelhack et al. developed the first selective Cu/TEMPO-catalyzed aerobic oxidation of primary alcohols to aldehydes and proposed the engagement of oxoammonium species (Scheme 1A).1a However, Sheldon et al. demonstrated that an oxoammonium based mechanism was inconsistent with experimental data, and postulated a mechanism involving an  \\boldsymbol { \\eta } ^ { 2 } Cu–TEMPO adduct, which was analogous to that observed for galactose oxidase mimics (Scheme 1B).3a,b Furthermore, a six-membered transition state involving an  \\boldsymbol { \\eta } ^ { 1 } Cu–TEMPO adduct was shown to be favorable with 2,2′-bipyridine (bpy) as a ligand and N-methylimidazole (NMI) as a base, wherein Cu(II) and TEMPO served as an one-electron oxidant, respectively (Scheme 1C).3d Recently, we have for the first time reported a Cu/TEMPO-catalyzed aerobic oxidation of alcohols to carboxylic acids under ligand- and base-free conditions.4 Here, we wish to report the results of our recent study on the mechanism of this copper nitrate/TEMPO catalyzed aerobic oxidation of alcohols to carboxylic acids.",
+    "page": 1,
+    "bbox": [
+      63.0,
+      428.0,
+      492.0,
+      768.0
+    ],
+    "section": "Introduction",
+    "prev_block_id": "block_22_0012",
+    "next_block_id": "block_22_0014",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0014",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "a Research Center for Molecular Recognition and Synthesis, Department of Chemistry, Fudan University, 220 Handan Lu, Shanghai 200433, P. R. China.",
+    "page": 1,
+    "bbox": [
+      65.0,
+      806.0,
+      489.0,
+      831.0
+    ],
+    "section": "Introduction",
+    "prev_block_id": "block_22_0013",
+    "next_block_id": "block_22_0015",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0015",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "E-mail: qian_hui@fudan.edu.cn",
+    "page": 1,
+    "bbox": [
+      67.0,
+      833.0,
+      230.0,
+      844.0
+    ],
+    "section": "Introduction",
+    "prev_block_id": "block_22_0014",
+    "next_block_id": "block_22_0016",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0016",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "b State Key Laboratory of Organometallic Chemistry, Shanghai Institute of Organic Chemistry, Chinese Academy of Sciences, 345 Lingling Lu, Shanghai 200032,",
+    "page": 1,
+    "bbox": [
+      67.0,
+      845.0,
+      473.0,
+      870.0
+    ],
+    "section": "Introduction",
+    "prev_block_id": "block_22_0015",
+    "next_block_id": "block_22_0017",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0017",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "P. R. China. E-mail: masm@sioc.ac.cn",
+    "page": 1,
+    "bbox": [
+      67.0,
+      871.0,
+      260.0,
+      883.0
+    ],
+    "section": "Introduction",
+    "prev_block_id": "block_22_0016",
+    "next_block_id": "block_22_0018",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0018",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "† Electronic supplementary information (ESI) available. CCDC 2353933. For ESI and crystallographic data in CIF or other electronic format see DOI: https://doi. org/10.1039/d4qo00791c",
+    "page": 1,
+    "bbox": [
+      65.0,
+      884.0,
+      490.0,
+      922.0
+    ],
+    "section": "Introduction",
+    "prev_block_id": "block_22_0017",
+    "next_block_id": "block_22_0019",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0019",
+    "doc_id": "22",
+    "block_type": "title",
+    "text": "Results and discussion",
+    "page": 1,
+    "bbox": [
+      505.0,
+      400.0,
+      752.0,
+      418.0
+    ],
+    "section": "Results and discussion",
+    "prev_block_id": "block_22_0018",
+    "next_block_id": "block_22_0020",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0020",
+    "doc_id": "22",
+    "block_type": "title",
+    "text": "Control experiments and determination of the reaction orders",
+    "page": 1,
+    "bbox": [
+      502.0,
+      424.0,
+      922.0,
+      439.0
+    ],
+    "section": "Control experiments and determination of the reaction orders",
+    "prev_block_id": "block_22_0019",
+    "next_block_id": "block_22_0021",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0021",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "In order to unveil the role of each catalyst, some control experiments for the aerobic oxidation of alcohol 1a were conducted (Table 1). These results showed that in the absence of Cu  \\left( \\mathrm { N O } _ { 3 } \\right) _ { 2 } { \\cdot } 3 \\mathrm { H } _ { 2 } \\mathrm { O } or TEMPO, the reaction could not occur (entries 2 and  3 ) . When the reaction was carried out in the absence of  \\mathrm { K H S O _ { 4 } } , only 61% NMR yield of aldehyde 2a′ was obtained with 21% recovery of 1a (entry 4). The kinetic studies illustrate that it follows the zero-order reaction law from alcohol to aldehyde while first-order from aldehyde to acid (Fig. 1).",
+    "page": 1,
+    "bbox": [
+      502.0,
+      444.0,
+      929.0,
+      584.0
+    ],
+    "section": "Control experiments and determination of the reaction orders",
+    "prev_block_id": "block_22_0020",
+    "next_block_id": "block_22_0022",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0022",
+    "doc_id": "22",
+    "block_type": "title",
+    "text": "Detection of  \\mathbf { N O } _ { { x } } and verification of the possibility of TEMPO+ as the active catalytic species",
+    "page": 1,
+    "bbox": [
+      502.0,
+      594.0,
+      924.0,
+      625.0
+    ],
+    "section": "Detection of  \\mathbf { N O } _ { { x } } and verification of the possibility of TEMPO+ as the active catalytic species",
+    "prev_block_id": "block_22_0021",
+    "next_block_id": "block_22_0023",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0023",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "In addition, we carried out the reaction under standard conditions via monitoring with a flue gas analyzer (Scheme 2A, eqn (1)). 12 ppm of NO was detected after 1 h and its concentration was increased to  ^ { 1 7 } ppm with the formation of 4.1 ppm of  \\mathbf { N O } _ { 2 } after 4 h with 19% NMR yield of aldehyde 2a′. In comparison, for the reaction in the absence of  \\mathrm { K H S O _ { 4 } } , NO was not observed after 1 h and only 7 ppm of NO was detected after 4 h with 4% NMR yield of aldehyde  \\mathbf { 2 a ^ { \\prime } } (Scheme  { \\displaystyle 2 \\mathbf { A } , } eqn (2)). These results indicated that  \\mathrm { K H S O _ { 4 } } could promote the formation of  \\mathrm { N O } _ { x } to facilitate the oxidation reaction.",
+    "page": 1,
+    "bbox": [
+      502.0,
+      630.0,
+      929.0,
+      783.0
+    ],
+    "section": "Detection of  \\mathbf { N O } _ { { x } } and verification of the possibility of TEMPO+ as the active catalytic species",
+    "prev_block_id": "block_22_0022",
+    "next_block_id": "block_22_0024",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0024",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "Stahl et  a l . ^ { 5 } reported that TEMPO+ would be formed from TEMPO in the presence of  \\mathrm { C u } ^ { 2 + } and  { \\bf N O } _ { 3 } ^ { - } and Anelli and Montanari et  a l . ^ { 6 } reported that alcohols could be oxidized to aldehydes by TEMPO+ with the formation of TEMPOH, so N-oxoammonium salt TEMPO  \\mathrm { N O } _ { 3 } ^ { - } was deliberately prepared following the known procedure7 and used as the catalyst. It was observed that aldehyde  \\mathbf { 2 } \\mathbf { a } ^ { \\prime } was produced in 16% NMR yield with 78% recovery of alcohol 1a and no carboxylic acid 2a was formed (Scheme 2B, eqn (3)). The reaction was greatly accelerated when 10 mol% of  \\mathbf { N O } _ { 2 } was used together with 10 mol% of  \\mathbf { T E M P O } ^ { + } \\mathbf { N O } _ { 3 } ^ { - } ; however, still aldehyde 2a′ was formed as the major product in 69% yield with only 21% yield",
+    "page": 1,
+    "bbox": [
+      502.0,
+      784.0,
+      929.0,
+      922.0
+    ],
+    "section": "Detection of  \\mathbf { N O } _ { { x } } and verification of the possibility of TEMPO+ as the active catalytic species",
+    "prev_block_id": "block_22_0023",
+    "next_block_id": "block_22_0025",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0025",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "| t (h) | concentration of [Na] (M) |\n| ----- | -------------------------- |\n| 5     | 0.24                       |\n| 7     | 0.20                       |\n| 9     | 0.16                       |\n| 11    | 0.12                       |\n| 13    | 0.08                       |",
+    "page": 2,
+    "bbox": [
+      515.0,
+      77.0,
+      712.0,
+      191.0
+    ],
+    "section": "Detection of  \\mathbf { N O } _ { { x } } and verification of the possibility of TEMPO+ as the active catalytic species",
+    "prev_block_id": "block_22_0024",
+    "next_block_id": "block_22_0026",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "chart"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0026",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "| t (h) | ln[2a] |\n|-------|--------|\n| 2     | -1.6   |\n| 3     | -2.0   |\n| 4     | -2.4   |\n| 5     | -2.8   |\n| 6     | -3.2   |\n| 7     | -3.6   |\n| 8     | -4.0   |",
+    "page": 2,
+    "bbox": [
+      714.0,
+      75.0,
+      915.0,
+      193.0
+    ],
+    "section": "Detection of  \\mathbf { N O } _ { { x } } and verification of the possibility of TEMPO+ as the active catalytic species",
+    "prev_block_id": "block_22_0025",
+    "next_block_id": "block_22_0027",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "chart"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0027",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "of carboxylic acid 2a (Scheme 2B, eqn (4)). These results illustrated that TEMPO+ was not the major active catalytic species. In addition, when 10 mol% of TEMPO and 20 mol% of  \\mathbf { N O } _ { 2 } were applied for the aerobic oxidation of aldehyde 2a′, 29% of acid 2a was obtained with 59% recovery of 2a′ (Scheme 2C, eqn (5)). In comparison, aldehyde 2a′ was smoothly oxidized to carboxylic acid 2a in 80% yield under the standard conditions (Scheme 2C, eqn (6)). These results suggested that the oxidation of aldehyde via a copper-free  \\mathrm { N O } _ { x } / \\mathrm { T E M P O } catalytic cycle8 was at least not the major pathway although it could not be ruled out completely.",
+    "page": 2,
+    "bbox": [
+      502.0,
+      260.0,
+      929.0,
+      430.0
+    ],
+    "section": "Detection of  \\mathbf { N O } _ { { x } } and verification of the possibility of TEMPO+ as the active catalytic species",
+    "prev_block_id": "block_22_0026",
+    "next_block_id": "block_22_0028",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0028",
+    "doc_id": "22",
+    "block_type": "title",
+    "text": "18O labelling experiments",
+    "page": 2,
+    "bbox": [
+      504.0,
+      451.0,
+      680.0,
+      468.0
+    ],
+    "section": "18O labelling experiments",
+    "prev_block_id": "block_22_0027",
+    "next_block_id": "block_22_0029",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0029",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "Furthermore, 18O labelling experiments with alcohol 1a as the substrate were conducted (Scheme 3A). When  { \\mathrm { H } } _ { 2 } ^ { \\ 1 8 } \\mathrm { O } and  { \\bf O } _ { 2 } were added to the reaction, 20% of single  ^ { 1 8 } \\mathrm { O } \\cdot -labeled carboxylic acid 2a was observed (Scheme 3A, eqn (1)). However, 42% of single 18O-labeled carboxylic acid and 8% of double  ^ { 1 8 } \\mathrm { O } -labeled carboxylic acid 2a were obtained when  ^ { 1 8 } { \\bf O } _ { 2 } were applied (Scheme 3A, eqn (2)). Then,  ^ { 1 8 } \\mathrm { O } labelling experiments with aldehyde  \\mathbf { 2 a } ^ { \\prime } as the substrate were conducted (Scheme 3B): 33% of single  ^ { 1 8 } \\mathrm { O } \\cdot -labeled carboxylic acid and 6% of double 18O-labeled carboxylic acid were observed when  ^ { 1 8 } { \\bf O } _ { 2 } was used (Scheme 3B, eqn (3)) while 37% of single 18O-labeled carboxylic acid and 7% of double  ^ { 1 8 } \\mathrm { O } \\cdot -labeled carboxylic acid were obtained when  { \\bf O } _ { 2 } and 1.0 equivalent of  { \\mathrm { H } } _ { 2 } ^ { \\ 1 8 } \\mathrm { O } were applied (Scheme 3B, eqn (4)). Considering that  ^ { 1 8 } { \\bf O } _ { 2 } was in excess, the amount of  { \\mathrm { H } } _ { 2 } ^ { \\ 1 8 } \\mathrm { O } was increased to 2.0 equiv., and we found that the yield of the 18O-labeled product was significantly improved (Scheme 3B, eqn (5)). These results indicated that the main source of the second oxygen atom is ambient  _ { \\mathrm { H } _ { 2 } \\mathrm { O } } with the hydrated aldehyde being the possible intermediate. The formation of double 18O-labeled carboxylic acid also demonstrated a reversible pathway between aldehyde and aldehyde hydrate.",
+    "page": 2,
+    "bbox": [
+      502.0,
+      473.0,
+      929.0,
+      690.0
+    ],
+    "section": "18O labelling experiments",
+    "prev_block_id": "block_22_0028",
+    "next_block_id": "block_22_0030",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0030",
+    "doc_id": "22",
+    "block_type": "table",
+    "text": "| n-C15H31CH2OH1a | Cu(NO3)2·3H2O (10 mol%)TEMPO (10 mol%)KHSO4(10 mol%)DCE, O2(balloon), rt, 36 h | n-C15H31CHO + n-C15H31COOH2a&#x27; 2a | &quot;standard conditions&quot; |  | ; Entry | Cu(NO3)2·3H2O | TEMPO | KHSO4 | Recovery of 1a (%) | NMR yield of 2a&#x27; (%) | NMR yield of 2a (%); 1 | + | + | + | 0 | 0 | 100; 2 | - | + | + | ~100 | 0 | 0; 3 | + | - | + | ~100 | 0 | 0; 4 | + | + | - | 21 | 61 | 0 | Table 1 Control experiments for the aerobic oxidation of alcohol 1a a | a The reaction was conducted with 1.0 mmol of 1a in 4 mL of DCE at rt for 36 h with an | \\mathbf { O } _ { 2 } | balloon. The NMR yield and recovery were determined by 1 H NMR analysis using dibromomethane as the internal standard.",
+    "page": 2,
+    "bbox": [
+      65.0,
+      741.0,
+      931.0,
+      890.0
+    ],
+    "section": "18O labelling experiments",
+    "prev_block_id": "block_22_0029",
+    "next_block_id": "block_22_0031",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "table"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0031",
+    "doc_id": "22",
+    "block_type": "table",
+    "text": "n-C15H31CH2OH1a1 mmol | standard conditions→1 hNO: 12 ppmNO2: 0 | standard conditions→4 hNO: 17 ppmNO2: 4.1 ppm | n-C15H31CHO2a&#x27; NMR yield: 19% Recovery: 74%; n-C15H31CH2OH1a1 mmol | standard conditions w/o KHSO4→1 hNO: 0NO2: 0 | standard conditions w/o KHSO4→4 hNO: 7 ppmNO2: 0 | n-C15H31CHO2a&#x27; NMR yield: 4% Recovery: 97% | (A) The effect of KHSO4 | (B) TEMPO*NO as catalyst",
+    "page": 3,
+    "bbox": [
+      97.0,
+      84.0,
+      473.0,
+      209.0
+    ],
+    "section": "18O labelling experiments",
+    "prev_block_id": "block_22_0030",
+    "next_block_id": "block_22_0032",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "table"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0032",
+    "doc_id": "22",
+    "block_type": "table",
+    "text": "n-C15H31CH2OH1a | TEMPO+NO3- (10 mol%)KHSO4(10 mol%)DCE, O2(balloon), 25 °C, 36 h | n-C15H31CHO2a&#x27; NMR yield: 16% recovery of 1a: 78%; n-C15H31CH2OH1a | NO2(10 mol%)TEMPO+NO3- (10 mol%)KHSO4(10 mol%)DCE, O2(balloon), 25 °C, 36 h | n-C15H31CHO + n-C15H31COOH (4)2a&#x27; NMR yield: 69% NMR yield: 21%",
+    "page": 3,
+    "bbox": [
+      80.0,
+      250.0,
+      473.0,
+      355.0
+    ],
+    "section": "18O labelling experiments",
+    "prev_block_id": "block_22_0031",
+    "next_block_id": "block_22_0033",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "table"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0033",
+    "doc_id": "22",
+    "block_type": "table",
+    "text": "n-C15H31CHO2a&#x27; | NO2(20 mol%)TEMPO (10 mol%)KHSO4(10 mol%)DCE, O2(balloon), rt, 12 h | n-C15H31COOH2aNMR yield: 29%recovery of 2a&#x27;: 59%; n-C15H31CHO2a&#x27; | Cu(NO3)2·3H2O (10 mol%)TEMPO (10 mol%)KHSO4(10 mol%)DCE, O2(balloon), rt, 12 h | n-C15H31COOH2aNMR yield: 80% | () Oxidation of aldehyde 2a' to carboxylic acid 2a | Scheme 2 Detection of | \\mathsf { N O } _ { x } | and verification of the possibility of TEMPO+ as the active catalytic species.",
+    "page": 3,
+    "bbox": [
+      97.0,
+      388.0,
+      473.0,
+      500.0
+    ],
+    "section": "18O labelling experiments",
+    "prev_block_id": "block_22_0032",
+    "next_block_id": "block_22_0034",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "table"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0034",
+    "doc_id": "22",
+    "block_type": "title",
+    "text": "Identification of the  \\mathrm { C u } ( \\mathbf { N O } _ { 3 } ) _ { 2 } –TEMPO adduct",
+    "page": 3,
+    "bbox": [
+      65.0,
+      702.0,
+      381.0,
+      717.0
+    ],
+    "section": "Identification of the  \\mathrm { C u } ( \\mathbf { N O } _ { 3 } ) _ { 2 } –TEMPO adduct",
+    "prev_block_id": "block_22_0033",
+    "next_block_id": "block_22_0035",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0035",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "In order to further identify any possible catalytically active species, the reaction of  \\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 } { \\cdot } 3 \\mathrm { H } _ { 2 } \\mathrm { O } and TEMPO under different conditions was tried; however, no crystals were obtained. Fortunately, the reaction of  \\mathbf { C u B r } _ { 2 } with TEMPO afforded complex  { \\bf A } , ^ { 9 } whose structure has been successfully established by X-ray diffraction study (Fig. 2A, eqn (1)). 5% NMR yield of aldehyde  \\mathbf { 2 } \\mathbf { a } ^ { \\prime } was obtained with 90% recovery of alcohol 1a when the reaction was conducted with 10 mol% of complex A and KHSO (Fig. 2A, eqn (2)). Interestingly, when  \\mathbf { A g N O } _ { 3 } (20 mol%) was added to exchange the Br− out of complex A with  { \\mathrm { N O } } _ { 3 } { } ^ { - } , a quantitative yield of carboxylic acid 2a was obtained from alcohol 1a (Fig. 2A, eqn (3)). To exclude the effect of AgBr, we carried out the reaction of complex A and  \\mathbf { A g N O } _ { 3 } (Fig. 2A, eqn (4)). After filtration, the filtrate and precipitate were used as the catalyst, respectively. Carboxylic acid 2a was formed in 96% yield with the filtrate as the catalyst while no reaction occurred with the precipitate (AgBr) as the catalyst (Fig. 2A, eqn (5)). Solvent-assisted electrospray ionization mass spectrometry (SAESI-MS) studies10 were conducted to analyze any possible species from the diluted filtrate. Signals with m/z of 281 and 283 were observed, which are consistent with the m/z of  \\left[ \\mathrm { T E M P O } . \\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) \\right] ^ { + } (Fig. 2B-i, calcd for  \\mathrm { C _ { 9 } H _ { 1 8 } } ^ { 6 3 } \\mathrm { C u N _ { 2 } O _ { 4 } } ^ { + } \\colon 2 8 1 ; \\mathrm { C _ { 9 } H _ { 1 8 } } ^ { 6 5 } \\mathrm { C u N _ { 2 } O _ { 4 } } ^ { + } \\colon 2 8 3 \\Big ) ). For further structural characterization of this intermediate, a SAESI-MS/MS experiment was conducted: the corresponding signal of TEMPO+ was detected (Fig. 2B-ii, calcd for  \\mathrm { C _ { 9 } H _ { 1 8 } N O ^ { + } } \\colon 1 5 6 ) . , formed by losing  \\mathrm { C u } ^ { 2 + } ,  { \\mathrm { N O } } _ { 3 } { } ^ { - } and an electron. These results illustrate the existence of the  \\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 } –TEMPO adduct and support that A-1-type species may be the catalytically active species (Scheme 4).",
+    "page": 3,
+    "bbox": [
+      65.0,
+      722.0,
+      492.0,
+      922.0
+    ],
+    "section": "Identification of the  \\mathrm { C u } ( \\mathbf { N O } _ { 3 } ) _ { 2 } –TEMPO adduct",
+    "prev_block_id": "block_22_0034",
+    "next_block_id": "block_22_0036",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0036",
+    "doc_id": "22",
+    "block_type": "table",
+    "text": "n-C15H31CH2OH1a | Cu(NO3)2·3H2O (10 mol%)TEMPO (10 mol%)KHSO4(10 mol%) | n-C15H31COOH2aIsolated yield: 96%[16O]2:[16O][18O]80%: 20%; H218O(1.0 equiv)DCE (anhydrous)O2(balloon), rt, 58 h; n-C15H31CH2OH1a | Cu(NO3)2·3H2O (10 mol%)TEMPO (10 mol%)KHSO4(10 mol%)DCE (anhydrous)18O2(balloon), rt, 38 h | n-C15H31COOH2aIsolated yield: 87%[16O]2:[16O][18O]:[18O]250%: 42%: 8% | () 8 labelling experiments with alcohol 1a as substrate",
+    "page": 3,
+    "bbox": [
+      526.0,
+      77.0,
+      910.0,
+      233.0
+    ],
+    "section": "Identification of the  \\mathrm { C u } ( \\mathbf { N O } _ { 3 } ) _ { 2 } –TEMPO adduct",
+    "prev_block_id": "block_22_0035",
+    "next_block_id": "block_22_0037",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "table"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0037",
+    "doc_id": "22",
+    "block_type": "table",
+    "text": "n-C15H31CHO2a&#x27; | Cu(NO3)2·3H2O (10 mol%)TEMPO (10 mol%)KHSO4(10 mol%)DCE (anhydrous) $^{18}O_{2}$  (balloon), rt, 24 h | n-C15H31COOH2aIsolated yield: 86%[ $^{16}O$ ]2: [ $^{16}O$ ][ $^{18}O$ ]:[ $^{18}O$ ]261%: 33%: 6% | (3); n-C15H31CHO2a&#x27; | Cu(NO3)2·3H2O (10 mol%)TEMPO (10 mol%)KHSO4(10 mol%)H2 $^{18}O$  (1.0 equiv)DCE (anhydrous)O2(balloon), rt, 24 h | n-C15H31COOH2aIsolated yield: 93%[ $^{16}O$ ]2: [ $^{16}O$ ][ $^{18}O$ ]:[ $^{18}O$ ]256%: 37%: 7% | (4); n-C15H31CHO2a&#x27; | Cu(NO3)2·3H2O (10 mol%)TEMPO (10 mol%)KHSO4(10 mol%)H2 $^{18}O$  (2.0 equiv)DCE (anhydrous)O2(balloon), rt, 24 h | n-C15H31COOH2aIsolated yield: 99%[ $^{16}O$ ]2: [ $^{16}O$ ][ $^{18}O$ ]:[ $^{18}O$ ]236%: 47%: 17% | (5) | labelling experiments with aldehyde 2a' as substrate | Scheme 3 | ^ { 1 8 } \\mathrm { O } | labelling experiments.",
+    "page": 3,
+    "bbox": [
+      534.0,
+      249.0,
+      910.0,
+      477.0
+    ],
+    "section": "Identification of the  \\mathrm { C u } ( \\mathbf { N O } _ { 3 } ) _ { 2 } –TEMPO adduct",
+    "prev_block_id": "block_22_0036",
+    "next_block_id": "block_22_0038",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "table"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0038",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "Based on these mechanistic studies, a possible mechanism has been proposed (Scheme 4): the  \\boldsymbol { \\eta } ^ { 2 } Cu–TEMPO species A-1 could undergo a ligand exchange reaction with the alcohol to form A-2. TEMPOH, aldehyde 2′, and  \\mathrm { { C u } ^ { + } } would be generated via H-abstraction from a six-membered cyclic transition state TS-1. TEMPO would be regenerated via the oxidation of TEMPOH by  \\mathrm { C u } ^ { 2 + 3 e } , which would be recycled by the oxidation of  \\mathrm { { C u } ^ { + } } with  \\mathrm { N O } _ { 2 } . . Subsequently, water would attack the activated aldehyde intermediate A-3 to form the aldehyde hydrate A-4, which was further oxidized to carboxylic acid through the same process as the oxidation of alcohol.",
+    "page": 3,
+    "bbox": [
+      502.0,
+      799.0,
+      929.0,
+      922.0
+    ],
+    "section": "Identification of the  \\mathrm { C u } ( \\mathbf { N O } _ { 3 } ) _ { 2 } –TEMPO adduct",
+    "prev_block_id": "block_22_0037",
+    "next_block_id": "block_22_0039",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0039",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "| m/z | Relative Abundance (C9H18CuN2O4+) | Relative Abundance (C9H18NO+) |\n|-----|----------------------------------------|----------------------------------|\n| 281 | 100                                    | -                                |\n| 282 | -                                      | 20                               |\n| 283 | -                                      | 50                               |\n| 284 | -                                      | 10                               |\n| 285 | -                                      | -                                |\n\n| m/z   | Relative Abundance (C9H18NO+) | Relative Abundance (C9H18CuN2O4+) |\n|-------|-----------------------------------|------------------------------------|\n| 156   | -                                        | 90                               |\n| 281   | -                                        | 90                               |",
+    "page": 4,
+    "bbox": [
+      505.0,
+      82.0,
+      870.0,
+      474.0
+    ],
+    "section": "Identification of the  \\mathrm { C u } ( \\mathbf { N O } _ { 3 } ) _ { 2 } –TEMPO adduct",
+    "prev_block_id": "block_22_0038",
+    "next_block_id": "block_22_0040",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "chart"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0040",
+    "doc_id": "22",
+    "block_type": "title",
+    "text": "DFT calculations",
+    "page": 4,
+    "bbox": [
+      504.0,
+      564.0,
+      621.0,
+      577.0
+    ],
+    "section": "DFT calculations",
+    "prev_block_id": "block_22_0039",
+    "next_block_id": "block_22_0041",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0041",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "Density functional theory (DFT) calculations were performed at the  \\mathbf { M 0 6 } / 6 { \\cdot } 3 1 1 { \\cdot } \\mathbf { + G } ( \\mathrm { d } , \\mathrm { p } ) -SDD/SMD(DCE)//M06/6-31G(d)- LANL2DZ level of theory to further support this proposed mechanism, using ethanol as the model substrate.11 Initial coupling of TEMPO with  \\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 } provides the A-1 type  \\eta ^ { 2 } - TEMPO adduct int0, which has a closed-shell singlet electronic structure. Subsequent isomerization of int0 yields a more stable  \\boldsymbol { \\eta } ^ { 1 } { - } \\mathrm { T E M P O } adduct int1, which coordinates with alcohol to generate intermediate int2. Then displacement of one of the nitrate ions by the alkoxide ligand occurs uphill energetically (+21.3 kcal mol−1 , int4 with respective to int1) to produce the A-2 type Cu-alkoxide species int4, accompanied by the release of nitric acid. Subsequently, a six-membered-ring transition structure TS1 is located for the migration of hydrogen from the alkoxide to the nitrogen atom of TEMPO and the simultaneous reduction to Cu(I), resulting in the formation of aldehyde, TEMPOH and  \\mathrm { C u N O } _ { 3 } . . Notably, the activation barrier for the hydrogen shift is very low (almost no barrier) from int4, while the overall free energy for oxidation of alcohol to aldehyde is 21.3 kcal mol−1 (Fig. 3A).",
+    "page": 4,
+    "bbox": [
+      502.0,
+      584.0,
+      929.0,
+      890.0
+    ],
+    "section": "DFT calculations",
+    "prev_block_id": "block_22_0040",
+    "next_block_id": "block_22_0042",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0042",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "Subsequently, the aldehyde hydrate int7 could be generated from the reaction of aldehyde with water via a four-membered cyclic transition structure TS2′, which features a very high barrier of 47.4 kcal  \\mathrm { m o l } ^ { - 1 } . With the aid of  \\mathrm { H N O } _ { 3 } as the proton shuttle, this process would take place through a six-membered cyclic transition structure TS2 with a much lower activation barrier of 21.2 kcal  \\mathrm { m o l ^ { - 1 } } . Then, aldehyde hydrate int7 would be further oxidized to acetic acid through a similar process with an overall free energy of 16.9 kcal  \\mathrm { m o l ^ { - 1 } } (int10 with respective to int1, Fig. 3B). Based on the mechanistic experiments and DFT calculations, we considered that the active catalytic species is more inclined to be a Cu(III) species (see Scheme S2 in the ESI† for details).",
+    "page": 4,
+    "bbox": [
+      502.0,
+      892.0,
+      929.0,
+      922.0
+    ],
+    "section": "DFT calculations",
+    "prev_block_id": "block_22_0041",
+    "next_block_id": "block_22_0043",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0043",
+    "doc_id": "22",
+    "block_type": "title",
+    "text": "Conclusions",
+    "page": 5,
+    "bbox": [
+      65.0,
+      799.0,
+      205.0,
+      818.0
+    ],
+    "section": "Conclusions",
+    "prev_block_id": "block_22_0042",
+    "next_block_id": "block_22_0044",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0044",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "In summary, we present the mechanistic investigations of Cu (NO ) ·3H O/TEMPO/KHSO -catalyzed aerobic oxidation of primary alcohols to carboxylic acids.  \\mathrm { K H S O _ { 4 } } is proven to promote the generation of  \\mathrm { N O } _ { x } to facilitate the aerobic alcohol oxidation. On the basis of experimental results, we conclude that TEMPO+ is at least not the major active catalytic species. Furthermore, we observed a  \\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 } –TEMPO adduct of A-1 as supported by SAESI-MS studies, which catalyzed this aerobic alcohol oxidation. DFT calculations have been applied to validate that the  \\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 } 2–TEMPO adduct-catalyzed mechanism is favored over TEMPO+ catalysis.",
+    "page": 5,
+    "bbox": [
+      65.0,
+      830.0,
+      490.0,
+      922.0
+    ],
+    "section": "Conclusions",
+    "prev_block_id": "block_22_0043",
+    "next_block_id": "block_22_0045",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0045",
+    "doc_id": "22",
+    "block_type": "title",
+    "text": "Author contributions",
+    "page": 5,
+    "bbox": [
+      502.0,
+      697.0,
+      734.0,
+      715.0
+    ],
+    "section": "Author contributions",
+    "prev_block_id": "block_22_0044",
+    "next_block_id": "block_22_0046",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0046",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "S. Ma, H. Qian and Y. Yu designed the experiments. Y. Yu performed the experiments. Z. Sun and Y.-L. Guo performed the SAESI-MS studies. X. Zhang performed the DFT calculations. Y. Yu, X. Zhang, H. Qian and S. Ma wrote the manuscript.",
+    "page": 5,
+    "bbox": [
+      502.0,
+      727.0,
+      929.0,
+      804.0
+    ],
+    "section": "Author contributions",
+    "prev_block_id": "block_22_0045",
+    "next_block_id": "block_22_0047",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0047",
+    "doc_id": "22",
+    "block_type": "title",
+    "text": "Data availability",
+    "page": 5,
+    "bbox": [
+      504.0,
+      831.0,
+      678.0,
+      851.0
+    ],
+    "section": "Data availability",
+    "prev_block_id": "block_22_0046",
+    "next_block_id": "block_22_0048",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0048",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "The data supporting this article have been included as part of the ESI.† Crystallographic data for complex A have been deposited at the Cambridge Crystallographic Data Center Centre [CCDC 2353933].†",
+    "page": 5,
+    "bbox": [
+      502.0,
+      861.0,
+      929.0,
+      922.0
+    ],
+    "section": "Data availability",
+    "prev_block_id": "block_22_0047",
+    "next_block_id": "block_22_0049",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0049",
+    "doc_id": "22",
+    "block_type": "title",
+    "text": "Conflicts of interest",
+    "page": 6,
+    "bbox": [
+      67.0,
+      61.0,
+      284.0,
+      80.0
+    ],
+    "section": "Conflicts of interest",
+    "prev_block_id": "block_22_0048",
+    "next_block_id": "block_22_0050",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0050",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "There are no conflicts to declare.",
+    "page": 6,
+    "bbox": [
+      65.0,
+      92.0,
+      289.0,
+      105.0
+    ],
+    "section": "Conflicts of interest",
+    "prev_block_id": "block_22_0049",
+    "next_block_id": "block_22_0051",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0051",
+    "doc_id": "22",
+    "block_type": "title",
+    "text": "Acknowledgements",
+    "page": 6,
+    "bbox": [
+      65.0,
+      139.0,
+      285.0,
+      159.0
+    ],
+    "section": "Acknowledgements",
+    "prev_block_id": "block_22_0050",
+    "next_block_id": "block_22_0052",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0052",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "Financial support from the National Key R&D Program of China (Grant No. 2022YFA1503200 for S. Ma), the National Natural Science Foundation of China (Grant No. 21988101 for S. Ma) and the Shanghai Science and Technology Innovation Action Plan (Grant No. 21142200800 for Y.-L. Guo) is greatly appreciated.",
+    "page": 6,
+    "bbox": [
+      65.0,
+      168.0,
+      490.0,
+      247.0
+    ],
+    "section": "Acknowledgements",
+    "prev_block_id": "block_22_0051",
+    "next_block_id": "block_22_0053",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0053",
+    "doc_id": "22",
+    "block_type": "title",
+    "text": "References",
+    "page": 6,
+    "bbox": [
+      67.0,
+      277.0,
+      191.0,
+      296.0
+    ],
+    "section": "References",
+    "prev_block_id": "block_22_0052",
+    "next_block_id": "block_22_0054",
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_22_0054",
+    "doc_id": "22",
+    "block_type": "paragraph",
+    "text": "1 For selected reports on Cu/TEMPO-catalyzed aerobic oxidation of alcohols, see: (a) M. F. Semmelhack, C. R. Schmid, D. A. Cortes and C. S. Chou, Oxidation of alcohols to aldehydes with oxygen and cupric ion, mediated by nitrosonium ion, J. Am. Chem. Soc., 1984, 106, 3374; (b) B. Betzemeier, M. Cavazzini, S. Quici and P. Knochel, Copper-catalyzed aerobic oxidation of alcohols under fluorous biphasic conditions, Tetrahedron Lett., 2000, 41, 4343; (c) P. Gamez, I. W. C. E. Arends, J. Reedijk and R. A. Sheldon, Copper(II)-catalysed aerobic oxidation of primary alcohols to aldehydes, Chem. Commun., 2003, 2414; (d) N. Jiang and A. J. Ragauskas, Copper(II)-catalyzed aerobic oxidation of primary alcohols to aldehydes in ionic liquid [bmpy]PF6, Org. Lett., 2005, 7, 3689; (e) S. Velusamy, A. Srinivasan and T. Punniyamurthy, Copper(II) catalyzed selective oxidation of primary alcohols to aldehydes with atmospheric oxygen, Tetrahedron Lett., 2006, 47, 923; (f ) S. Striegler, Aerobic oxidation of primary alcohols under mild aqueous conditions promoted by a dinuclear copper (II) complex, Tetrahedron, 2006, 62, 9109; (g) P. J. Figiel, M. Leskelä and T. Repo, TEMPO-Copper(II) diimine-catalysed oxidation of benzylic alcohols in aqueous media, Adv. Synth. Catal., 2007, 349, 1173; (h) A. Dhakshinamoorthy, M. Alvaro and H. Garcia, Aerobic oxidation of benzylic alcohols catalyzed by metal−organic frameworks assisted by TEMPO, ACS Catal., 2011, 1, 48; (i) J. M. Hoover and S. S. Stahl, Highly practical copper(I)/TEMPO catalyst system for chemoselective aerobic oxidation of primary alcohols, J. Am. Chem. Soc., 2011, 133, 16901; ( j) X. Liu, Q. Xia, Y. Zhang, C. Chen and W. Chen, Cu-NHC-TEMPO catalyzed aerobic oxidation of primary alcohols to aldehydes, J. Org. Chem., 2013, 78, 8531; (k) G. Zhang, X. Han, Y. Luan, Y. Wang, X. Wen and C. Ding, l-Proline: an efficient N,O-bidentate ligand for copper-catalyzed aerobic oxidation of primary and secondary benzylic alcohols at room temperature, Chem. Commun., 2013, 49, 7908; (l) Y. Sasano, S. Nagasawa, M. Yamazaki, M. Shibuya, J. Park and Y. Iwabuchi, Highly chemoselective aerobic oxidation of amino alcohols into amino carbonyl compounds, Angew. Chem., Int. Ed., 2014, 53, 3236; (m) D. Zhai and",
+    "page": 6,
+    "bbox": [
+      72.0,
+      305.0,
+      492.0,
+      924.0
+    ],
+    "section": "References",
+    "prev_block_id": "block_22_0053",
+    "next_block_id": null,
+    "source_file": "22.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  }
+]

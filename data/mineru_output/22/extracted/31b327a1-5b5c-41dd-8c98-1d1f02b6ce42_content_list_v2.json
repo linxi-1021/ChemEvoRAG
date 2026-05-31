@@ -1,0 +1,3008 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "RESEARCH ARTICLE "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                82,
+                123,
+                315,
+                142
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "View Article Online "
+                    }
+                ]
+            },
+            "bbox": [
+                754,
+                116,
+                899,
+                130
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "View Journal | View Issue "
+                    }
+                ]
+            },
+            "bbox": [
+                756,
+                133,
+                884,
+                143
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/70891b8182173a7e5623885ca5d996467292cebff4edf68405fcda983ab37865.jpg"
+                },
+                "content": "",
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                73,
+                179,
+                100,
+                198
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Check for updates "
+                    }
+                ]
+            },
+            "bbox": [
+                107,
+                182,
+                230,
+                196
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Cite this: , 2024, 11, 5003 "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                214,
+                260,
+                237
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Received 3rd May 2024, "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                311,
+                201,
+                323
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Accepted 6th July 2024 "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                324,
+                203,
+                335
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "DOI: 10.1039/d4qo00791c "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                338,
+                218,
+                351
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "rsc.li/frontiers-organic "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                359,
+                186,
+                372
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Mechanistic studies on "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C u ( N O _ { 3 } ) _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "TEMPO-catalyzed aerobic oxidation of alcohols to carboxylic acids† "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                285,
+                173,
+                922,
+                220
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Yibo Yu, a Zhao Sun,b Yin-Long Guo, *b Xue Zhang, *b Hui Qian *a and Shengming Ma *a,b "
+                    }
+                ]
+            },
+            "bbox": [
+                284,
+                231,
+                892,
+                265
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Oxidation of alcohols to carbonyl compounds is one of the most important and fundamental reactions in organic chemistry. Such aerobic reactions that provide aldehydes or ketones mediated by copper and nitroxyl have been well developed during the past several decades. Recently, we successfully realized the aerobic oxidation of primary alcohols to carboxylic acids catalyzed by Cu/TEMPO for the first time. Herein, a mechanism involving a "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C u ( N O _ { 3 } ) _ { 2 } - T E M P O"
+                    },
+                    {
+                        "type": "text",
+                        "content": "adduct as identified by SAESI-MS studies is proposed, which is supported by our experimental studies and density functional theory (DFT) calculations. "
+                    }
+                ]
+            },
+            "bbox": [
+                282,
+                281,
+                929,
+                372
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Introduction "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                67,
+                400,
+                205,
+                417
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Aerobic alcohol oxidation to aldehydes and ketones catalyzed by copper and nitroxyl has been well investigated,1,2 and numerous efforts have been made to elucidate the mechanism of these reactions, especially mediated by Cu(II), in recent years.3 In 1984, Semmelhack et al. developed the first selective Cu/TEMPO-catalyzed aerobic oxidation of primary alcohols to aldehydes and proposed the engagement of oxoammonium species (Scheme 1A).1a However, Sheldon et al. demonstrated that an oxoammonium based mechanism was inconsistent with experimental data, and postulated a mechanism involving an "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\boldsymbol { \\eta } ^ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Cu–TEMPO adduct, which was analogous to that observed for galactose oxidase mimics (Scheme 1B).3a,b Furthermore, a six-membered transition state involving an "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\boldsymbol { \\eta } ^ { 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Cu–TEMPO adduct was shown to be favorable with 2,2′-bipyridine (bpy) as a ligand and N-methylimidazole (NMI) as a base, wherein Cu(II) and TEMPO served as an one-electron oxidant, respectively (Scheme 1C).3d Recently, we have for the first time reported a Cu/TEMPO-catalyzed aerobic oxidation of alcohols to carboxylic acids under ligand- and base-free conditions.4 Here, we wish to report the results of our recent study on the mechanism of this copper nitrate/TEMPO catalyzed aerobic oxidation of alcohols to carboxylic acids. "
+                    }
+                ]
+            },
+            "bbox": [
+                63,
+                428,
+                492,
+                768
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "a Research Center for Molecular Recognition and Synthesis, Department of Chemistry, Fudan University, 220 Handan Lu, Shanghai 200433, P. R. China. "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                806,
+                489,
+                831
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "E-mail: qian_hui@fudan.edu.cn "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                833,
+                230,
+                844
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "b State Key Laboratory of Organometallic Chemistry, Shanghai Institute of Organic Chemistry, Chinese Academy of Sciences, 345 Lingling Lu, Shanghai 200032, "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                845,
+                473,
+                870
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "P. R. China. E-mail: masm@sioc.ac.cn "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                871,
+                260,
+                883
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "† Electronic supplementary information (ESI) available. CCDC 2353933. For ESI and crystallographic data in CIF or other electronic format see DOI: https://doi. org/10.1039/d4qo00791c "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                884,
+                490,
+                922
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Results and discussion "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                505,
+                400,
+                752,
+                418
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Control experiments and determination of the reaction orders "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                502,
+                424,
+                922,
+                439
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In order to unveil the role of each catalyst, some control experiments for the aerobic oxidation of alcohol 1a were conducted (Table 1). These results showed that in the absence of Cu "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\left( \\mathrm { N O } _ { 3 } \\right) _ { 2 } { \\cdot } 3 \\mathrm { H } _ { 2 } \\mathrm { O }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "or TEMPO, the reaction could not occur (entries 2 and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "3 ) ."
+                    },
+                    {
+                        "type": "text",
+                        "content": "When the reaction was carried out in the absence of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { K H S O _ { 4 } } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "only 61% NMR yield of aldehyde 2a′ was obtained with 21% recovery of 1a (entry 4). The kinetic studies illustrate that it follows the zero-order reaction law from alcohol to aldehyde while first-order from aldehyde to acid (Fig. 1). "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                444,
+                929,
+                584
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Detection of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { N O } _ { { x } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and verification of the possibility of TEMPO+ as the active catalytic species "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                502,
+                594,
+                924,
+                625
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In addition, we carried out the reaction under standard conditions via monitoring with a flue gas analyzer (Scheme 2A, eqn (1)). 12 ppm of NO was detected after 1 h and its concentration was increased to "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^ { 1 7 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "ppm with the formation of 4.1 ppm of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { N O } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "after 4 h with 19% NMR yield of aldehyde 2a′. In comparison, for the reaction in the absence of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { K H S O _ { 4 } } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "NO was not observed after 1 h and only 7 ppm of NO was detected after 4 h with 4% NMR yield of aldehyde "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { 2 a ^ { \\prime } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "(Scheme "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\displaystyle 2 \\mathbf { A } , }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "eqn (2)). These results indicated that "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { K H S O _ { 4 } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "could promote the formation of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { N O } _ { x }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "to facilitate the oxidation reaction. "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                630,
+                929,
+                783
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Stahl et "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a l . ^ { 5 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "reported that TEMPO+ would be formed from TEMPO in the presence of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C u } ^ { 2 + }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\bf N O } _ { 3 } ^ { - }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and Anelli and Montanari et "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a l . ^ { 6 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "reported that alcohols could be oxidized to aldehydes by TEMPO+ with the formation of TEMPOH, so N-oxoammonium salt TEMPO "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { N O } _ { 3 } ^ { - }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "was deliberately prepared following the known procedure7 and used as the catalyst. It was observed that aldehyde "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { 2 } \\mathbf { a } ^ { \\prime }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "was produced in 16% NMR yield with 78% recovery of alcohol 1a and no carboxylic acid 2a was formed (Scheme 2B, eqn (3)). The reaction was greatly accelerated when 10 mol% of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { N O } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "was used together with 10 mol% of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { T E M P O } ^ { + } \\mathbf { N O } _ { 3 } ^ { - } ;"
+                    },
+                    {
+                        "type": "text",
+                        "content": "however, still aldehyde 2a′ was formed as the major product in 69% yield with only 21% yield "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                784,
+                929,
+                922
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": [
+                    {
+                        "type": "text",
+                        "content": "Published on 08 July 2024. Downloaded by Fudan University on 4/11/2025 9:32:48 AM. "
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                222,
+                21,
+                591
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ORGANIC CHEMISTRY "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                41,
+                389,
+                65
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "FRONTIERS "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                75,
+                208,
+                93
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "CCS $1 "
+                    }
+                ]
+            },
+            "bbox": [
+                480,
+                35,
+                552,
+                83
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "CHINESE CHEMICAL  SOCETY "
+                    }
+                ]
+            },
+            "bbox": [
+                557,
+                39,
+                643,
+                75
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "SIOC "
+                    }
+                ]
+            },
+            "bbox": [
+                665,
+                30,
+                737,
+                84
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "C "
+                    }
+                ]
+            },
+            "bbox": [
+                754,
+                39,
+                800,
+                77
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ROYAL SOCIETY OF CHEMISTRY "
+                    }
+                ]
+            },
+            "bbox": [
+                801,
+                46,
+                929,
+                71
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "This journal is © the Partner Organisations 2024 "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                952,
+                344,
+                965
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Org. Chem. Front., 2024, 11, 5003-5009 "
+                    }
+                ]
+            },
+            "bbox": [
+                650,
+                952,
+                880,
+                965
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "5003 "
+                    }
+                ]
+            },
+            "bbox": [
+                890,
+                952,
+                929,
+                962
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/dda89f1cd502fd3ac9b01aa6b4a0ddf63b01089671c37c44bff894744ec9e4e1.jpg"
+                },
+                "content": "Reaction mechanism diagram showing TEMPO and TEMPOH intermediates with catalytic species and products",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(A) via Oxoammonium cations "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "sub_type": "chemical",
+            "bbox": [
+                109,
+                88,
+                463,
+                315
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/aff80d7676a2f85a4066b2d17d2fd4aa28d08e431382b373c8f58076e0630c1d.jpg"
+                },
+                "content": "Chemical reaction mechanism involving Cu(II)L and Cu(I)L with TEMPO ligands, followed by a photochemical reaction pathway showing copper complex formation",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(B) via "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\eta ^ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Cu-TEMPO adduct "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "sub_type": "chemical",
+            "bbox": [
+                92,
+                347,
+                458,
+                451
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/2fcf2bd4b8555cf97e39d508c97c192b8f45f62745b15418add2035fb43364ce.jpg"
+                },
+                "content": "Chemical reaction mechanism involving Cu(II)L and Cu(I)L with TEMPO and TEMPOH intermediates, alongside a chemical structure of a copper complex with ligand exchange.",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(C) via η1 Cu-TEMPO adduct "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Scheme 1 The reported mechanisms for Cu(II)/TEMPO-catalyzed aerobic alcohol oxidation to aldehydes. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "sub_type": "chemical",
+            "bbox": [
+                94,
+                483,
+                457,
+                584
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                65,
+                641,
+                492,
+                689
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/2d6cd31ae4ee6f7939d9c5b6410cff981bb05ea82d5e90f5016c6c3b0e07bd0b.jpg"
+                },
+                "content": "| t (h) | concentration of [Na] (M) |\n| ----- | -------------------------- |\n| 5     | 0.24                       |\n| 7     | 0.20                       |\n| 9     | 0.16                       |\n| 11    | 0.12                       |\n| 13    | 0.08                       |",
+                "chart_caption": [],
+                "chart_footnote": []
+            },
+            "sub_type": "line",
+            "bbox": [
+                515,
+                77,
+                712,
+                191
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/088e3c1e462baa5cf16ad4be827dfacdf64fc7c50850aaf154e057f6657d404e.jpg"
+                },
+                "content": "| t (h) | ln[2a] |\n|-------|--------|\n| 2     | -1.6   |\n| 3     | -2.0   |\n| 4     | -2.4   |\n| 5     | -2.8   |\n| 6     | -3.2   |\n| 7     | -3.6   |\n| 8     | -4.0   |",
+                "chart_caption": [
+                    {
+                        "type": "text",
+                        "content": "(B) "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Fig. 1 (A) Determination of the order for alcohol 1a. (B) Determination of the order for aldehyde 2a’. "
+                    }
+                ],
+                "chart_footnote": []
+            },
+            "sub_type": "line",
+            "bbox": [
+                714,
+                75,
+                915,
+                193
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "of carboxylic acid 2a (Scheme 2B, eqn (4)). These results illustrated that TEMPO+ was not the major active catalytic species. In addition, when 10 mol% of TEMPO and 20 mol% of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { N O } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "were applied for the aerobic oxidation of aldehyde 2a′, 29% of acid 2a was obtained with 59% recovery of 2a′ (Scheme 2C, eqn (5)). In comparison, aldehyde 2a′ was smoothly oxidized to carboxylic acid 2a in 80% yield under the standard conditions (Scheme 2C, eqn (6)). These results suggested that the oxidation of aldehyde via a copper-free "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { N O } _ { x } / \\mathrm { T E M P O }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "catalytic cycle8 was at least not the major pathway although it could not be ruled out completely. "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                260,
+                929,
+                430
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "18O labelling experiments "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                504,
+                451,
+                680,
+                468
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Furthermore, 18O labelling experiments with alcohol 1a as the substrate were conducted (Scheme 3A). When "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathrm { H } } _ { 2 } ^ { \\ 1 8 } \\mathrm { O }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\bf O } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "were added to the reaction, 20% of single "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^ { 1 8 } \\mathrm { O } \\cdot"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-labeled carboxylic acid 2a was observed (Scheme 3A, eqn (1)). However, 42% of single 18O-labeled carboxylic acid and 8% of double "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^ { 1 8 } \\mathrm { O }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-labeled carboxylic acid 2a were obtained when "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^ { 1 8 } { \\bf O } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "were applied (Scheme 3A, eqn (2)). Then, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^ { 1 8 } \\mathrm { O }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "labelling experiments with aldehyde "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { 2 a } ^ { \\prime }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "as the substrate were conducted (Scheme 3B): 33% of single "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^ { 1 8 } \\mathrm { O } \\cdot"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-labeled carboxylic acid and 6% of double 18O-labeled carboxylic acid were observed when "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^ { 1 8 } { \\bf O } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "was used (Scheme 3B, eqn (3)) while 37% of single 18O-labeled carboxylic acid and 7% of double "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^ { 1 8 } \\mathrm { O } \\cdot"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-labeled carboxylic acid were obtained when "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\bf O } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and 1.0 equivalent of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathrm { H } } _ { 2 } ^ { \\ 1 8 } \\mathrm { O }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "were applied (Scheme 3B, eqn (4)). Considering that "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^ { 1 8 } { \\bf O } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "was in excess, the amount of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathrm { H } } _ { 2 } ^ { \\ 1 8 } \\mathrm { O }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "was increased to 2.0 equiv., and we found that the yield of the 18O-labeled product was significantly improved (Scheme 3B, eqn (5)). These results indicated that the main source of the second oxygen atom is ambient "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "_ { \\mathrm { H } _ { 2 } \\mathrm { O } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "with the hydrated aldehyde being the possible intermediate. The formation of double 18O-labeled carboxylic acid also demonstrated a reversible pathway between aldehyde and aldehyde hydrate. "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                473,
+                929,
+                690
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/aac9c74df971eb6989178da03171b424b8cff13566872e1d066707916e2b0727.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 1 Control experiments for the aerobic oxidation of alcohol 1a a "
+                    }
+                ],
+                "table_footnote": [
+                    {
+                        "type": "text",
+                        "content": "a The reaction was conducted with 1.0 mmol of 1a in 4 mL of DCE at rt for 36 h with an "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { O } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "balloon. The NMR yield and recovery were determined by 1 H NMR analysis using dibromomethane as the internal standard. "
+                    }
+                ],
+                "html": "<table><tr><td></td><td>n-C15H31CH2OH1a</td><td>Cu(NO3)2·3H2O (10 mol%)TEMPO (10 mol%)KHSO4(10 mol%)DCE, O2(balloon), rt, 36 h</td><td>n-C15H31CHO + n-C15H31COOH2a&#x27; 2a</td><td>&quot;standard conditions&quot;</td><td></td><td></td></tr><tr><td>Entry</td><td>Cu(NO3)2·3H2O</td><td>TEMPO</td><td>KHSO4</td><td>Recovery of 1a (%)</td><td>NMR yield of 2a&#x27; (%)</td><td>NMR yield of 2a (%)</td></tr><tr><td>1</td><td>+</td><td>+</td><td>+</td><td>0</td><td>0</td><td>100</td></tr><tr><td>2</td><td>-</td><td>+</td><td>+</td><td>~100</td><td>0</td><td>0</td></tr><tr><td>3</td><td>+</td><td>-</td><td>+</td><td>~100</td><td>0</td><td>0</td></tr><tr><td>4</td><td>+</td><td>+</td><td>-</td><td>21</td><td>61</td><td>0</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                65,
+                741,
+                931,
+                890
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "View Article Online "
+                    }
+                ]
+            },
+            "bbox": [
+                831,
+                11,
+                927,
+                21
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Research Article "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                30,
+                194,
+                43
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Organic Chemistry Frontiers "
+                    }
+                ]
+            },
+            "bbox": [
+                712,
+                30,
+                927,
+                44
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": [
+                    {
+                        "type": "text",
+                        "content": "Published on 08 July 2024. Downloaded by Fudan University on 4/11/2025 9:32:48 AM. "
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                222,
+                21,
+                591
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "5004 "
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                952,
+                105,
+                962
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Org. Chem. Front., 2024,11, 5003-5009 "
+                    }
+                ]
+            },
+            "bbox": [
+                117,
+                952,
+                349,
+                965
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "This journal is © the Partner Organisations 2024 "
+                    }
+                ]
+            },
+            "bbox": [
+                653,
+                952,
+                929,
+                965
+            ]
+        }
+    ],
+    [
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/a6971e9944cb08d6864b2c3b878c781c797728d630ecda04b39ba6e9ffc94626.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "(A) The effect of KHSO4 "
+                    },
+                    {
+                        "type": "text",
+                        "content": "(B) TEMPO*NO as catalyst "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>n-C15H31CH2OH1a1 mmol</td><td>standard conditions→1 hNO: 12 ppmNO2: 0</td><td>standard conditions→4 hNO: 17 ppmNO2: 4.1 ppm</td><td>n-C15H31CHO2a&#x27; NMR yield: 19% Recovery: 74%</td></tr><tr><td>n-C15H31CH2OH1a1 mmol</td><td>standard conditions w/o KHSO4→1 hNO: 0NO2: 0</td><td>standard conditions w/o KHSO4→4 hNO: 7 ppmNO2: 0</td><td>n-C15H31CHO2a&#x27; NMR yield: 4% Recovery: 97%</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                97,
+                84,
+                473,
+                209
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/b6e0ccb9db48b7a8fef843251163d8bf748bdcb0751d4255cfef9335a68a1f2e.jpg"
+                },
+                "table_caption": [],
+                "table_footnote": [],
+                "html": "<table><tr><td>n-C15H31CH2OH1a</td><td>TEMPO+NO3- (10 mol%)KHSO4(10 mol%)DCE, O2(balloon), 25 °C, 36 h</td><td>n-C15H31CHO2a&#x27; NMR yield: 16% recovery of 1a: 78%</td></tr><tr><td>n-C15H31CH2OH1a</td><td>NO2(10 mol%)TEMPO+NO3- (10 mol%)KHSO4(10 mol%)DCE, O2(balloon), 25 °C, 36 h</td><td>n-C15H31CHO + n-C15H31COOH (4)2a&#x27; NMR yield: 69% NMR yield: 21%</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                80,
+                250,
+                473,
+                355
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/5f282c16d9af0f2638fd2b4aa8cf1817402d16f2b97b2c4cfe4edf6b6a8a0d21.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "() Oxidation of aldehyde 2a' to carboxylic acid 2a "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Scheme 2 Detection of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathsf { N O } _ { x }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and verification of the possibility of TEMPO+ as the active catalytic species. "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>n-C15H31CHO2a&#x27;</td><td>NO2(20 mol%)TEMPO (10 mol%)KHSO4(10 mol%)DCE, O2(balloon), rt, 12 h</td><td>n-C15H31COOH2aNMR yield: 29%recovery of 2a&#x27;: 59%</td></tr><tr><td>n-C15H31CHO2a&#x27;</td><td>Cu(NO3)2·3H2O (10 mol%)TEMPO (10 mol%)KHSO4(10 mol%)DCE, O2(balloon), rt, 12 h</td><td>n-C15H31COOH2aNMR yield: 80%</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                97,
+                388,
+                473,
+                500
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                65,
+                566,
+                490,
+                689
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Identification of the "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C u } ( \\mathbf { N O } _ { 3 } ) _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "–TEMPO adduct "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                65,
+                702,
+                381,
+                717
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In order to further identify any possible catalytically active species, the reaction of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 } { \\cdot } 3 \\mathrm { H } _ { 2 } \\mathrm { O }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and TEMPO under different conditions was tried; however, no crystals were obtained. Fortunately, the reaction of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { C u B r } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "with TEMPO afforded complex "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\bf A } , ^ { 9 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "whose structure has been successfully established by X-ray diffraction study (Fig. 2A, eqn (1)). 5% NMR yield of aldehyde "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { 2 } \\mathbf { a } ^ { \\prime }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "was obtained with 90% recovery of alcohol 1a when the reaction was conducted with 10 mol% of complex A and KHSO (Fig. 2A, eqn (2)). Interestingly, when "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { A g N O } _ { 3 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "(20 mol%) was added to exchange the Br− out of complex A with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathrm { N O } } _ { 3 } { } ^ { - }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", a quantitative yield of carboxylic acid 2a was obtained from alcohol 1a (Fig. 2A, eqn (3)). To exclude the effect of AgBr, we carried out the reaction of complex A and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { A g N O } _ { 3 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "(Fig. 2A, eqn (4)). After filtration, the filtrate and precipitate were used as the catalyst, respectively. Carboxylic acid 2a was formed in 96% yield with the filtrate as the catalyst while no reaction occurred with the precipitate (AgBr) as the catalyst (Fig. 2A, eqn (5)). Solvent-assisted electrospray ionization mass spectrometry (SAESI-MS) studies10 were conducted to analyze any possible species from the diluted filtrate. Signals with m/z of 281 and 283 were observed, which are consistent with the m/z of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\left[ \\mathrm { T E M P O } . \\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) \\right] ^ { + }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "(Fig. 2B-i, calcd for "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C _ { 9 } H _ { 1 8 } } ^ { 6 3 } \\mathrm { C u N _ { 2 } O _ { 4 } } ^ { + } \\colon 2 8 1 ; \\mathrm { C _ { 9 } H _ { 1 8 } } ^ { 6 5 } \\mathrm { C u N _ { 2 } O _ { 4 } } ^ { + } \\colon 2 8 3 \\Big )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "). For further structural characterization of this intermediate, a SAESI-MS/MS experiment was conducted: the corresponding signal of TEMPO+ was detected (Fig. 2B-ii, calcd for "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C _ { 9 } H _ { 1 8 } N O ^ { + } } \\colon 1 5 6 ) ."
+                    },
+                    {
+                        "type": "text",
+                        "content": ", formed by losing "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C u } ^ { 2 + }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathrm { N O } } _ { 3 } { } ^ { - }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and an electron. These results illustrate the existence of the "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "–TEMPO adduct and support that A-1-type species may be the catalytically active species (Scheme 4). "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                722,
+                492,
+                922
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/6f3452c6b09410f2ffc3842ce5c32e4fbecc27c6830a9e585b83980f4a04273b.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "() 8 labelling experiments with alcohol 1a as substrate "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td rowspan=\"2\">n-C15H31CH2OH1a</td><td>Cu(NO3)2·3H2O (10 mol%)TEMPO (10 mol%)KHSO4(10 mol%)</td><td rowspan=\"2\">n-C15H31COOH2aIsolated yield: 96%[16O]2:[16O][18O]80%: 20%</td></tr><tr><td>H218O(1.0 equiv)DCE (anhydrous)O2(balloon), rt, 58 h</td></tr><tr><td>n-C15H31CH2OH1a</td><td>Cu(NO3)2·3H2O (10 mol%)TEMPO (10 mol%)KHSO4(10 mol%)DCE (anhydrous)18O2(balloon), rt, 38 h</td><td>n-C15H31COOH2aIsolated yield: 87%[16O]2:[16O][18O]:[18O]250%: 42%: 8%</td></tr></table>",
+                "table_type": "complex_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                526,
+                77,
+                910,
+                233
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/ccc1157ca311e99701f3ce71d5b77f685f05134b24dda513cd76b677107407f3.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": " labelling experiments with aldehyde 2a' as substrate "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Scheme 3 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^ { 1 8 } \\mathrm { O }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "labelling experiments. "
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>n-C15H31CHO2a&#x27;</td><td>Cu(NO3)2·3H2O (10 mol%)TEMPO (10 mol%)KHSO4(10 mol%)DCE (anhydrous) $^{18}O_{2}$  (balloon), rt, 24 h</td><td>n-C15H31COOH2aIsolated yield: 86%[ $^{16}O$ ]2: [ $^{16}O$ ][ $^{18}O$ ]:[ $^{18}O$ ]261%: 33%: 6%</td><td>(3)</td></tr><tr><td>n-C15H31CHO2a&#x27;</td><td>Cu(NO3)2·3H2O (10 mol%)TEMPO (10 mol%)KHSO4(10 mol%)H2 $^{18}O$  (1.0 equiv)DCE (anhydrous)O2(balloon), rt, 24 h</td><td>n-C15H31COOH2aIsolated yield: 93%[ $^{16}O$ ]2: [ $^{16}O$ ][ $^{18}O$ ]:[ $^{18}O$ ]256%: 37%: 7%</td><td>(4)</td></tr><tr><td>n-C15H31CHO2a&#x27;</td><td>Cu(NO3)2·3H2O (10 mol%)TEMPO (10 mol%)KHSO4(10 mol%)H2 $^{18}O$  (2.0 equiv)DCE (anhydrous)O2(balloon), rt, 24 h</td><td>n-C15H31COOH2aIsolated yield: 99%[ $^{16}O$ ]2: [ $^{16}O$ ][ $^{18}O$ ]:[ $^{18}O$ ]236%: 47%: 17%</td><td>(5)</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                534,
+                249,
+                910,
+                477
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                502,
+                537,
+                929,
+                799
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Based on these mechanistic studies, a possible mechanism has been proposed (Scheme 4): the "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\boldsymbol { \\eta } ^ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Cu–TEMPO species A-1 could undergo a ligand exchange reaction with the alcohol to form A-2. TEMPOH, aldehyde 2′, and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { { C u } ^ { + } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "would be generated via H-abstraction from a six-membered cyclic transition state TS-1. TEMPO would be regenerated via the oxidation of TEMPOH by "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C u } ^ { 2 + 3 e } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "which would be recycled by the oxidation of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { { C u } ^ { + } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { N O } _ { 2 } ."
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Subsequently, water would attack the activated aldehyde intermediate A-3 to form the aldehyde hydrate A-4, which was further oxidized to carboxylic acid through the same process as the oxidation of alcohol. "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                799,
+                929,
+                922
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": [
+                    {
+                        "type": "text",
+                        "content": "Published on 08 July 2024. Downloaded by Fudan University on 4/11/2025 9:32:48 AM. "
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                222,
+                21,
+                591
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Organic Chemistry Frontiers "
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                30,
+                284,
+                44
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "View Article Online "
+                    }
+                ]
+            },
+            "bbox": [
+                831,
+                11,
+                927,
+                20
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Research Article "
+                    }
+                ]
+            },
+            "bbox": [
+                803,
+                30,
+                927,
+                42
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "This journal is © the Partner Organisations 2024 "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                951,
+                344,
+                965
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Org. Chem. Front., 2024, 11, 5003-5009 "
+                    }
+                ]
+            },
+            "bbox": [
+                650,
+                951,
+                880,
+                965
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "5005 "
+                    }
+                ]
+            },
+            "bbox": [
+                890,
+                951,
+                929,
+                962
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/ac6014dd2e8c5bef6341483b6a8bcbc939cf6077f341eeeeeb98b851150abc4e.jpg"
+                },
+                "content": "Multi-step organic synthesis reaction scheme involving copper complexes and NMR recovery, with catalysts and final yields for compounds 2a and 1a.",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "()Aerobic oxidation of alcohol a with A as catalyst "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "sub_type": "chemical",
+            "bbox": [
+                100,
+                80,
+                492,
+                465
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/a7bc96ba5f87849a603cc338fe94637ff7ef072a4a02ebb50fbe5ec15629e242.jpg"
+                },
+                "content": "| m/z | Relative Abundance (C9H18CuN2O4+) | Relative Abundance (C9H18NO+) |\n|-----|----------------------------------------|----------------------------------|\n| 281 | 100                                    | -                                |\n| 282 | -                                      | 20                               |\n| 283 | -                                      | 50                               |\n| 284 | -                                      | 10                               |\n| 285 | -                                      | -                                |\n\n| m/z   | Relative Abundance (C9H18NO+) | Relative Abundance (C9H18CuN2O4+) |\n|-------|-----------------------------------|------------------------------------|\n| 156   | -                                        | 90                               |\n| 281   | -                                        | 90                               |",
+                "chart_caption": [
+                    {
+                        "type": "text",
+                        "content": "(B) SAESI-MS studies "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Fig. 2 Identification of the "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathsf { C u } ( \\mathsf { N O } _ { 3 } ) _ { 2 } \\mathrm { - } \\mathsf { T E M P O }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "adduct. (A) Aerobic oxidation of alcohol 1a with A as the catalyst. (B) SAESI-MS studies. (i) SAESI-MS spectrum of the diluted filtrate showing the signal of [TEMPO·Cu(NO )]+ at m/z 281. (ii) SAESI-MS/MS spectrum of the complex ion [TEMPO·Cu "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( N O _ { 3 } ) ] ^ { + }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "at m/z 281. "
+                    }
+                ],
+                "chart_footnote": []
+            },
+            "sub_type": "line",
+            "bbox": [
+                505,
+                82,
+                870,
+                474
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/3175e69c226c49d53b53ebef935082d1a9d6788147013b477cd6deb04287315d.jpg"
+                },
+                "content": "Reaction mechanism diagram showing copper-catalyzed transformation of TEMPOH and TS-1 intermediates to products A-1, A-2, A-3, A-4 via intermediates 2', 3', and 4', with a highlighted detection by SAESI-MS.",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Scheme 4 The proposed mechanism. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "sub_type": "chemical",
+            "bbox": [
+                73,
+                563,
+                480,
+                831
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                65,
+                876,
+                490,
+                922
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "DFT calculations "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                504,
+                564,
+                621,
+                577
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Density functional theory (DFT) calculations were performed at the "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { M 0 6 } / 6 { \\cdot } 3 1 1 { \\cdot } \\mathbf { + G } ( \\mathrm { d } , \\mathrm { p } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "-SDD/SMD(DCE)//M06/6-31G(d)- LANL2DZ level of theory to further support this proposed mechanism, using ethanol as the model substrate.11 Initial coupling of TEMPO with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "provides the A-1 type "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\eta ^ { 2 } -"
+                    },
+                    {
+                        "type": "text",
+                        "content": "TEMPO adduct int0, which has a closed-shell singlet electronic structure. Subsequent isomerization of int0 yields a more stable "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\boldsymbol { \\eta } ^ { 1 } { - } \\mathrm { T E M P O }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "adduct int1, which coordinates with alcohol to generate intermediate int2. Then displacement of one of the nitrate ions by the alkoxide ligand occurs uphill energetically (+21.3 kcal mol−1 , int4 with respective to int1) to produce the A-2 type Cu-alkoxide species int4, accompanied by the release of nitric acid. Subsequently, a six-membered-ring transition structure TS1 is located for the migration of hydrogen from the alkoxide to the nitrogen atom of TEMPO and the simultaneous reduction to Cu(I), resulting in the formation of aldehyde, TEMPOH and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C u N O } _ { 3 } ."
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Notably, the activation barrier for the hydrogen shift is very low (almost no barrier) from int4, while the overall free energy for oxidation of alcohol to aldehyde is 21.3 kcal mol−1 (Fig. 3A). "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                584,
+                929,
+                890
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Subsequently, the aldehyde hydrate int7 could be generated from the reaction of aldehyde with water via a four-membered cyclic transition structure TS2′, which features a very high barrier of 47.4 kcal "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { m o l } ^ { - 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". With the aid of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { H N O } _ { 3 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "as the proton shuttle, this process would take place through a six-membered cyclic transition structure TS2 with a much lower activation barrier of 21.2 kcal "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { m o l ^ { - 1 } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Then, aldehyde hydrate int7 would be further oxidized to acetic acid through a similar process with an overall free energy of 16.9 kcal "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { m o l ^ { - 1 } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "(int10 with respective to int1, Fig. 3B). Based on the mechanistic experiments and DFT calculations, we considered that the active catalytic species is more inclined to be a Cu(III) species (see Scheme S2 in the ESI† for details). "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                892,
+                929,
+                922
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "View Article Online "
+                    }
+                ]
+            },
+            "bbox": [
+                831,
+                11,
+                927,
+                21
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Research Article "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                30,
+                194,
+                43
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Organic Chemistry Frontiers "
+                    }
+                ]
+            },
+            "bbox": [
+                714,
+                30,
+                927,
+                44
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": [
+                    {
+                        "type": "text",
+                        "content": "Published on 08 July 2024. Downloaded by Fudan University on 4/11/2025 9:32:48 AM. "
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                222,
+                21,
+                591
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "5006 "
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                952,
+                105,
+                962
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Org. Chem. Front., 2024, 11, 5003-5009 "
+                    }
+                ]
+            },
+            "bbox": [
+                117,
+                952,
+                347,
+                965
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "This journal is © the Partner Organisations 2024 "
+                    }
+                ]
+            },
+            "bbox": [
+                653,
+                952,
+                929,
+                965
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/fdd583652470ba8ad8d455a2a1f4627ed61056caabdd370f799289394be0e9f4.jpg"
+                },
+                "content": "Two chemical reaction pathways (A and B) showing copper-catalyzed transformations with intermediates, intermediates 10–10.9, and final products like TS1, TS2, and HNO3.",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Fig. 3 DFT study of the mechanism shown in Scheme 4. (A) Free energy profiles "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\Delta G _ { \\mathsf { s o l } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "in kcal "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathsf { m o l } ^ { - 1 } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "for the copper-catalyzed oxidation of alcohol to aldehyde. (B) Free energy profiles "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\Delta G _ { \\mathsf { s o l } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "in kcal mol−1 ) for the copper-catalyzed oxidation of aldehyde hydrate to acetic acid. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "sub_type": "chemical",
+            "bbox": [
+                82,
+                61,
+                912,
+                519
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                63,
+                591,
+                490,
+                762
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Conclusions "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                65,
+                799,
+                205,
+                818
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In summary, we present the mechanistic investigations of Cu (NO ) ·3H O/TEMPO/KHSO -catalyzed aerobic oxidation of primary alcohols to carboxylic acids. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { K H S O _ { 4 } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is proven to promote the generation of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { N O } _ { x }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "to facilitate the aerobic alcohol oxidation. On the basis of experimental results, we conclude that TEMPO+ is at least not the major active catalytic species. Furthermore, we observed a "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "–TEMPO adduct of A-1 as supported by SAESI-MS studies, which catalyzed this aerobic alcohol oxidation. DFT calculations have been applied to validate that the "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "2–TEMPO adduct-catalyzed mechanism is favored over TEMPO+ catalysis. "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                830,
+                490,
+                922
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                502,
+                591,
+                929,
+                668
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Author contributions "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                502,
+                697,
+                734,
+                715
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "S. Ma, H. Qian and Y. Yu designed the experiments. Y. Yu performed the experiments. Z. Sun and Y.-L. Guo performed the SAESI-MS studies. X. Zhang performed the DFT calculations. Y. Yu, X. Zhang, H. Qian and S. Ma wrote the manuscript. "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                727,
+                929,
+                804
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Data availability "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                504,
+                831,
+                678,
+                851
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The data supporting this article have been included as part of the ESI.† Crystallographic data for complex A have been deposited at the Cambridge Crystallographic Data Center Centre [CCDC 2353933].† "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                861,
+                929,
+                922
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": [
+                    {
+                        "type": "text",
+                        "content": "Published on 08 July 2024. Downloaded by Fudan University on 4/11/2025 9:32:48 AM. "
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                220,
+                21,
+                591
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Organic Chemistry Frontiers "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                30,
+                284,
+                44
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "View Article Online "
+                    }
+                ]
+            },
+            "bbox": [
+                831,
+                11,
+                926,
+                20
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Research Article "
+                    }
+                ]
+            },
+            "bbox": [
+                803,
+                30,
+                927,
+                42
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "This journal is © the Partner Organisations 2024 "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                951,
+                344,
+                965
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Org. Chem. Front., 2024, 11, 5003-5009 "
+                    }
+                ]
+            },
+            "bbox": [
+                650,
+                951,
+                880,
+                965
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "5007 "
+                    }
+                ]
+            },
+            "bbox": [
+                890,
+                951,
+                929,
+                962
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Conflicts of interest "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                67,
+                61,
+                284,
+                80
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "There are no conflicts to declare. "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                92,
+                289,
+                105
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Acknowledgements "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                65,
+                139,
+                285,
+                159
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Financial support from the National Key R&D Program of China (Grant No. 2022YFA1503200 for S. Ma), the National Natural Science Foundation of China (Grant No. 21988101 for S. Ma) and the Shanghai Science and Technology Innovation Action Plan (Grant No. 21142200800 for Y.-L. Guo) is greatly appreciated. "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                168,
+                490,
+                247
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "References "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                67,
+                277,
+                191,
+                296
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1 For selected reports on Cu/TEMPO-catalyzed aerobic oxidation of alcohols, see: (a) M. F. Semmelhack, C. R. Schmid, D. A. Cortes and C. S. Chou, Oxidation of alcohols to aldehydes with oxygen and cupric ion, mediated by nitrosonium ion, J. Am. Chem. Soc., 1984, 106, 3374; (b) B. Betzemeier, M. Cavazzini, S. Quici and P. Knochel, Copper-catalyzed aerobic oxidation of alcohols under fluorous biphasic conditions, Tetrahedron Lett., 2000, 41, 4343; (c) P. Gamez, I. W. C. E. Arends, J. Reedijk and R. A. Sheldon, Copper(II)-catalysed aerobic oxidation of primary alcohols to aldehydes, Chem. Commun., 2003, 2414; (d) N. Jiang and A. J. Ragauskas, Copper(II)-catalyzed aerobic oxidation of primary alcohols to aldehydes in ionic liquid [bmpy]PF6, Org. Lett., 2005, 7, 3689; (e) S. Velusamy, A. Srinivasan and T. Punniyamurthy, Copper(II) catalyzed selective oxidation of primary alcohols to aldehydes with atmospheric oxygen, Tetrahedron Lett., 2006, 47, 923; (f ) S. Striegler, Aerobic oxidation of primary alcohols under mild aqueous conditions promoted by a dinuclear copper (II) complex, Tetrahedron, 2006, 62, 9109; (g) P. J. Figiel, M. Leskelä and T. Repo, TEMPO-Copper(II) diimine-catalysed oxidation of benzylic alcohols in aqueous media, Adv. Synth. Catal., 2007, 349, 1173; (h) A. Dhakshinamoorthy, M. Alvaro and H. Garcia, Aerobic oxidation of benzylic alcohols catalyzed by metal−organic frameworks assisted by TEMPO, ACS Catal., 2011, 1, 48; (i) J. M. Hoover and S. S. Stahl, Highly practical copper(I)/TEMPO catalyst system for chemoselective aerobic oxidation of primary alcohols, J. Am. Chem. Soc., 2011, 133, 16901; ( j) X. Liu, Q. Xia, Y. Zhang, C. Chen and W. Chen, Cu-NHC-TEMPO catalyzed aerobic oxidation of primary alcohols to aldehydes, J. Org. Chem., 2013, 78, 8531; (k) G. Zhang, X. Han, Y. Luan, Y. Wang, X. Wen and C. Ding, l-Proline: an efficient N,O-bidentate ligand for copper-catalyzed aerobic oxidation of primary and secondary benzylic alcohols at room temperature, Chem. Commun., 2013, 49, 7908; (l) Y. Sasano, S. Nagasawa, M. Yamazaki, M. Shibuya, J. Park and Y. Iwabuchi, Highly chemoselective aerobic oxidation of amino alcohols into amino carbonyl compounds, Angew. Chem., Int. Ed., 2014, 53, 3236; (m) D. Zhai and "
+                    }
+                ]
+            },
+            "bbox": [
+                72,
+                305,
+                492,
+                924
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "S. Ma, Copper catalysis for highly selective aerobic oxidation of alcohols to aldehydes/ketones, Org. Chem. Front., 2019, 6, 3101; (n) X. Liang, X. Wang, R. Liu, Q. Xu, X. Xue and F. Zhang, Chinese Pat, 200810010756.9, 2008. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "2 For selected reviews on Cu/TEMPO-catalyzed aerobic oxidation of alcohols, see: (a) B. L. Ryland and S. S. Stahl, Practical aerobic oxidations of alcohols and amines with homogeneous copper/TEMPO and related catalyst systems, Angew. Chem., Int. Ed., 2014, 53, 8824; (b) Q. Cao, L. M. Dornan, L. Rogan, N. L. Hughes and M. J. Muldoon, Aerobic oxidation catalysis with stable radicals, Chem. Commun., 2014, 50, 4524. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "3 (a) A. Dijksman, I. W. C. E. Arends and R. A. Sheldon, Cu (II)-nitroxyl radicals as catalytic galactose oxidase mimics, Org. Biomol. Chem., 2003, 1, 3232; (b) C. Michel, P. Belanzoni, P. Gamez, J. Reedijk and E. J. Baerends, Activation of the C−H bond by electrophilic attack: theoretical study of the reaction mechanism of the aerobic oxidation of alcohols to aldehydes by the Cu(bipy)2+/2,2,6,6- tetramethylpiperidinyl-1-oxy cocatalyst system, Inorg. Chem., 2009, 48, 11909; (c) J. M. Hoover, B. L. Ryland and S. S. Stahl, Copper/TEMPO-catalyzed aerobic alcohol oxidation: mechanistic assessment of different catalyst systems, ACS Catal., 2013, 3, 2599; (d) B. L. Ryland, S. D. McCann, T. C. Brunold and S. S. Stahl, Mechanism of alcohol oxidation mediated by copper(II) and nitroxyl radicals, J. Am. Chem. Soc., 2014, 136, 12166; (e) M. C. Ryan, L. D. Whitmire, S. D. McCann and S. S. Stahl, Copper/ TEMPO redox redux: analysis of PCET oxidation of TEMPOH by copper(II) and the reaction of TEMPO with copper(I), Inorg. Chem., 2019, 58, 10194. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "4 Y. Yu, D. Zhai, Z. Zhou, S. Jiang, H. Qian and S. Ma, Copper-catalyzed aerobic oxidation of primary alcohols to carboxylic acids, Chem. Commun., 2023, 59, 5281. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "5 J. E. Nutting, K. Mao and S. S. Stahl, Iron(III) nitrate/ TEMPO-catalyzed aerobic alcohol oxidation: distinguishing between serial versus integrated redox cooperativity, J. Am. Chem. Soc., 2021, 143, 10565. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "6 P. L. Anelli, C. Biffi, F. Montanari and S. Quici, Fast and selective oxidation of primary alcohols to aldehydes or to carboxylic acids and of secondary alcohols to ketones mediated by oxoammonium salts under two-phase conditions, J. Org. Chem., 1987, 52, 2559. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "7 M. Shibuya, Y. Osada, Y. Sasano, M. Tomizawa and Y. Iwabuchi, Highly efficient, organocatalytic aerobic alcohol oxidation, J. Am. Chem. Soc., 2011, 133, 6497. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "8 K. C. Miles, M. L. Abrams, C. R. Landis and S. S. Stahl, KetoABNO/NO cocatalytic aerobic oxidation of aldehydes to carboxylic acids and access to α-chiral carboxylic acids via sequential asymmetric hydroformylation/oxidation, Org. Lett., 2016, 18, 3590. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "9 (a) A. Caneschi, A. Grand, J. Laugier, P. Rey and R. Subra, Three-center binding of a nitroxyl free radical to copper(II) bromide, J. Am. Chem. Soc., 1988, 110, 2307; (b) R. C. Walroth, K. C. Miles, J. T. Lukens, S. N. MacMillan, S. S. Stahl and K. M. Lancaster, Electronic structural analysis of copper(II)–TEMPO/ABNO complexes provides evi-"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                512,
+                60,
+                931,
+                924
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": [
+                    {
+                        "type": "text",
+                        "content": "Published on 08 July 2024. Downloaded by Fudan University on 4/11/2025 9:32:48 AM. "
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                222,
+                21,
+                591
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Research Article "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                30,
+                194,
+                43
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "View Article Online "
+                    }
+                ]
+            },
+            "bbox": [
+                831,
+                11,
+                926,
+                20
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Organic Chemistry Frontiers "
+                    }
+                ]
+            },
+            "bbox": [
+                714,
+                30,
+                927,
+                43
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "5008 "
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                951,
+                105,
+                962
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Org. Chem. Front., 2024, 11, 5003-5009 "
+                    }
+                ]
+            },
+            "bbox": [
+                117,
+                953,
+                347,
+                965
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "This journal is © the Partner Organisations 2024 "
+                    }
+                ]
+            },
+            "bbox": [
+                653,
+                952,
+                929,
+                965
+            ]
+        }
+    ],
+    [
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "dence for copper(I)–oxoammonium character, J. Am. Chem. Soc., 2017, 139, 13507. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                61,
+                489,
+                89
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "10 J.-T. Zhang, H.-Y. Wang, W. Zhu, T.-T. Cai and Y.-L. Guo, Solvent-assisted electrospray ionization for direct analysis "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                92,
+                490,
+                121
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "of various compounds (complex) from low/nonpolar solvents and eluents, Anal. Chem., 2014, 86, 8937. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                527,
+                61,
+                929,
+                89
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "11 See the ESI† for DFT studies on two other less favorable pathways. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                92,
+                929,
+                121
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "View Article Online "
+                    }
+                ]
+            },
+            "bbox": [
+                831,
+                11,
+                927,
+                21
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Organic Chemistry Frontiers "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                30,
+                284,
+                44
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Research Article "
+                    }
+                ]
+            },
+            "bbox": [
+                803,
+                30,
+                927,
+                43
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": [
+                    {
+                        "type": "text",
+                        "content": "Published on 08 July 2024. Downloaded by Fudan University on 4/11/2025 9:32:48 AM. "
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                222,
+                23,
+                591
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "This journal is © the Partner Organisations 2024 "
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                952,
+                344,
+                965
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Org. Chem. Front., 2024, 11, 5003-5009 "
+                    }
+                ]
+            },
+            "bbox": [
+                650,
+                952,
+                880,
+                965
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "5009 "
+                    }
+                ]
+            },
+            "bbox": [
+                890,
+                952,
+                929,
+                962
+            ]
+        }
+    ]
+]

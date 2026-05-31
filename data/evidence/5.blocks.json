@@ -1,0 +1,992 @@
+[
+  {
+    "block_id": "block_5_0000",
+    "doc_id": "5",
+    "block_type": "title",
+    "text": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "page": 1,
+    "bbox": [
+      91.0,
+      141.0,
+      904.0,
+      188.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": null,
+    "next_block_id": "block_5_0001",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0001",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "Xingguo Jiang,† Jiasheng Zhang,† and Shengming Ma*,†,‡",
+    "page": 1,
+    "bbox": [
+      91.0,
+      191.0,
+      544.0,
+      213.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0000",
+    "next_block_id": "block_5_0002",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0002",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "† State Key Laboratory of Organometallic Chemistry, Shanghai Institute of Organic Chemistry, Chinese Academy of Sciences, 345 Lingling Lu, Shanghai 200032, P. R. China",
+    "page": 1,
+    "bbox": [
+      91.0,
+      218.0,
+      899.0,
+      249.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0001",
+    "next_block_id": "block_5_0003",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0003",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "‡ Department of Chemistry, Fudan University, 220 Handan Lu, Shanghai 200433, P. R. China",
+    "page": 1,
+    "bbox": [
+      91.0,
+      250.0,
+      676.0,
+      266.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0002",
+    "next_block_id": "block_5_0004",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0004",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "Supporting Information",
+    "page": 1,
+    "bbox": [
+      108.0,
+      273.0,
+      272.0,
+      288.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0003",
+    "next_block_id": "block_5_0005",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0005",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "ABSTRACT: Oxidation from alcohols to carboxylic acids, a class of essential chemicals in daily life, academic laboratories, and industry, is a fundamental reaction, usually using at least a stoichiometric amount of an expensive and toxic oxidant. Here, an efficient and practical sustainable oxidation technology of alcohols to carboxylic acids using pure  \\mathrm { O } _ { 2 } or even  \\breve { \\mathrm { O } _ { 2 } } in air as the oxidant has been developed: utilizing a catalytic amount each of  \\mathrm { F e ( N O _ { 3 } ) _ { 3 } } { \\cdot } 9 \\mathrm { \\hat { H } _ { 2 } O / T E M P O / M C l } , a series of carboxylic acids were obtained from alcohols (also aldehydes) in high yields at room temperature. A 55 g-scale reaction was demonstrated using air. As a synthetic application, the first total synthesis of a naturally occurring allene, i.e., phlomic acid, was accomplished.",
+    "page": 1,
+    "bbox": [
+      104.0,
+      310.0,
+      470.0,
+      500.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0004",
+    "next_block_id": "block_5_0006",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0006",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "A s one of the most abundant metals in earth’s crust, iron iswidely distributed in nature. Of particular interest, the heme iron compounds in hemoglobin play an important role in molecular oxygen transportation and activation in life at ambient temperature.1 Iron is also a part of oxidative enzymes.2 Thus, iron catalysts3 may be a potentially viable catalyst for aerobic oxidation of alcohols to acids. On the other hand, the oxidation from alcohols to carboxylic acids is one of the most fundamental chemical transformations with great potential for daily life, academic research, and industry.4 Traditionally, toxic and expensive oxidants such as  \\mathrm { K M n O } _ { 4 } , ^ { 5 } \\ \\mathrm { C r O } _ { 3 } , ^ { 6 } etc. have to be used, which would cause severe environmental burden due to the formation of waste from at least stiochiometeric amounts of these oxidants, thus, it is highly desirable to develop environmentally friendly new oxidization protocols. Molecular oxygen is a clean, atom economic, and sustainable oxidant. Although aerobic oxidation of alcohols to aldehydes is becoming a mature technology,7 the process toward carboxylic acids remains to be a fundamental challenge since few studies on aerobic oxidization of alcohols to carboxylic acids have been reported with rather limited success or scope even with noble metal catalyst(s).8−16 Here, we wish to report an efficient protocol with a broad scope and selectivity using a readily available iron catalyst and TEMPO under pure oxygen or air conditions.",
+    "page": 1,
+    "bbox": [
+      89.0,
+      528.0,
+      481.0,
+      855.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0005",
+    "next_block_id": "block_5_0007",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0007",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "Based on the above literature data, the challenge to obtain carboxylic acids from alcohols via aerobic oxidation may be in the process of transforming aldehydes to carboxylic acids since most such aerobic oxidations of alcohols stop at the stage of aldehydes.7,17−19 During further study of selective oxidation of",
+    "page": 1,
+    "bbox": [
+      89.0,
+      856.0,
+      481.0,
+      925.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0006",
+    "next_block_id": "block_5_0008",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0008",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "alcohols to aldehydes catalyzed by  \\mathrm { F e } \\left( \\mathrm { N O } _ { 3 } \\right) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } \\mathrm { O } and  \\mathrm { T E M P O } , ^ { 1 9 } we observed that when lauraldehyde 1a was treated with 10 mol % each of F  \\mathsf { e } ( \\mathrm { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } \\mathrm { O } , TEMPO, andKClwith an  \\mathrm { O } _ { 2 } balloon in DCE at rt for 12 h, 94% isolated yield of lauric acid 2a was formed. This recipe could be applied to the oxidation of normal alkyl aliphatic aldehydes (Table 1, entries 1 and 3), cyclohexane-carboxaldehyde 1b (Table 1, entry 2), 3-phenylpropanal 1d (Table 1, entry 4) to the corresponding carboxylic acids 2a−2d in high yields. In addition, the yield remains high when a balloon of air was applied instead of pure  \\mathrm { O } _ { 2 } .",
+    "page": 1,
+    "bbox": [
+      512.0,
+      299.0,
+      904.0,
+      438.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0007",
+    "next_block_id": "block_5_0009",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0009",
+    "doc_id": "5",
+    "block_type": "table",
+    "text": "RCHO1 | Fe(NO3)3·9H2O (10 mol%)TEMPO (10 mol%)KCl (10 mol%)O2or air, DCEr.t., 12 h or 16 h | RCOOH2 | Table 1. Aerobic Oxidation of Aldehydes Using | \\mathbf { O } _ { 2 } | or Air as Oxidanta",
+    "page": 1,
+    "bbox": [
+      617.0,
+      482.0,
+      800.0,
+      533.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0008",
+    "next_block_id": "block_5_0010",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "table"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0010",
+    "doc_id": "5",
+    "block_type": "table",
+    "text": "entry | substrate | product | yield of 2 (%)b; $O_{2}$ | Air; 1 | $n-C_{11}H_{23}CHO (1a)$ | $n-C_{11}H_{23}CO_{2}H (2a)$ | 94 | 88; 2 | CyCHO (1b) | Cy $CO_{2}H$  (2b) | 90 | 83; 3 | $n-C_{7}H_{15}CHO (1c)$ | $n-C_{7}H_{15}CO_{2}H (2c)$ | 96 | 97; 4 | $Ph(CH_{2})_{2}CHO (1d)$ | $Ph(CH_{2})_{2}CO_{2}H (2d)$ | 96 | 98 | a The reaction was carried out on a 1.0 mmol scale of 1 in 4.0 mL of DCE with a bag of | \\mathrm { O } _ { 2 } | or air. b Isolated yield.",
+    "page": 1,
+    "bbox": [
+      515.0,
+      537.0,
+      904.0,
+      625.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0009",
+    "next_block_id": "block_5_0011",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "table"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0011",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "With these observations, we attempted to apply this recipe to the direct oxidation of alcohols into carboxylic acids: Cetyl alcohol 3e was oxidized to palmitic acid 2e within 12 h under standard conditions (Scheme 1). We screened different nitrates and observed that  \\mathrm { C o } \\left( \\mathrm { N O } _ { 3 } \\right) _ { 3 } { \\cdot } 6 \\mathrm { H } _ { 2 } \\mathrm { O } (3e recovery 84%),  \\mathrm { N i } ( \\mathrm { N O } _ { 3 } ) _ { 3 } . · 6H O (3e recovery 83%) and  \\mathrm { Z n } \\mathrm { ( N O _ { 3 } ) } _ { 2 } { \\cdot } 6 \\mathrm { H } _ { 2 } \\mathrm { O } (3e recovery",
+    "page": 1,
+    "bbox": [
+      512.0,
+      674.0,
+      904.0,
+      757.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0010",
+    "next_block_id": "block_5_0012",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0012",
+    "doc_id": "5",
+    "block_type": "table",
+    "text": "n-C16H33OH | Metal Salts (10 mol%)TEMPO (10 mol%) | n-C15H31COOH | + | n-C15H31CHO; 3e | KCl (10 mol%)O2, DCE, r.t. | 2e |  | 1e | Scheme 1. Aerobic Oxidation of 3e with Different Metal Nitrates | Fe(NO3)3 9H2O: 95% of 2e after 12 h; | Cu(NO3)3H2O: 84% of 2e; 16% of 1e after 48 h",
+    "page": 1,
+    "bbox": [
+      515.0,
+      801.0,
+      900.0,
+      850.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0011",
+    "next_block_id": "block_5_0013",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "table"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0013",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "Received: April 17, 2016",
+    "page": 1,
+    "bbox": [
+      513.0,
+      898.0,
+      668.0,
+      911.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0012",
+    "next_block_id": "block_5_0014",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0014",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "Published: June 15, 2016",
+    "page": 1,
+    "bbox": [
+      515.0,
+      911.0,
+      665.0,
+      925.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0013",
+    "next_block_id": "block_5_0015",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0015",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "100%) were not effective at all.  \\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 } { \\cdot } 3 \\mathrm { H } _ { 2 } \\mathrm { O } worked much slower (Scheme 1).",
+    "page": 2,
+    "bbox": [
+      91.0,
+      80.0,
+      480.0,
+      108.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0014",
+    "next_block_id": "block_5_0016",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0016",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "With standard conditions in hand, we explored the generality of the reaction with various alcohols. Apart from aliphatic alcohols (Table 2, entries 1, 2, and 4) and 3-phenylpropanol (Table 2, entry 3), the aerobic oxidation also tolerates synthetically useful functional groups: ester (Table  ^ { 2 , } entries 5−6), heterocycle (Table 2, entries 7−8), halogen (Table 2, entry 9), and ether (Table 2, entry 10) have all been well tolerated. Alcohols with a terminal or nonterminal C−C triple bond could all be oxidized to acids in moderate or high yields (Table 2, entries 11−13). TMSsubstituted propargyl alcohol could be converted into the corresponding acid under both  \\mathrm { O } _ { 2 } and air conditions when extending the time to 36 and 48 h (Table 2, entry 14). 3- Cyclohexene-1-methanol (3p) could be oxidized to 2p smoothly with 20 mol % of TEMPO (Table 2, entry 15). Two examples of arylmethyl alcohols are also presented (Table 2, entries 16 and 17).",
+    "page": 2,
+    "bbox": [
+      91.0,
+      108.0,
+      481.0,
+      326.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0015",
+    "next_block_id": "block_5_0017",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0017",
+    "doc_id": "5",
+    "block_type": "table",
+    "text": "Entry | Alcohol | Product | Yield of $2 (\\%)^b$; $O_2$ | Air; 1 | $n-C_{12}H_{25}OH (3a)$ | $n-C_{11}H_{23}CO_2H (2a)$ | 100 | 95; 2 | $n-C_8H_{17}OH (3c)$ | $n-C_7H_{15}CO_2H (2c)$ | 85 | 89; 3 | $Ph(CH_2)_3OH (3d)$ | $Ph(CH_2)_2CO_2H (2d)$ | 98 | 99; 4 | $n-C_{16}H_{33}OH (3e)$ | $n-C_{15}H_{31}CO_2H (2e)$ | 99 | 98; 5 | $MeO_2C(CH_2)_5OH (3f)$ | $MeO_2C(CH_2)_4CO_2H (2f)$ | 94 | 86; 6 | $AcO(CH_2)_8OH (3g)$ | $AcO(CH_2)_7CO_2H (2g)$ | 93 | 93; 7 | (3h) | (2h) | 70 | 73; 8 | (3i) | (2i) | 85 | 81; 9 | (3k) | B   $_{2}H (2j)$ | 98 | 98; 10 | $n-C_6H_{13}OCH_2CO_2H (2k)$ | 92 | 84; 11 |  | COOH (2l) | 80 | 80; 12 |  | COOH | 60 | 68; 13 |  | $^{\\text{COOH}}(2n)$ | 95 | 90; 14 |  | OH (2o) | $66^c$ | $65^d$; 15 |  | (2p) | $81^{d,e}$ | $70^{d,e}$; 16 |  | -COOH | $55^{d,e,f}$ | -; 17 | P-methoxy, aldehyde | 4-nitrobenzoic acid | $76^d$ | - | Table 2. Aerobic Oxidation of Alcohols Using O or Air as Oxidanta | a Reaction was carried out on a 1.0 mmol scale of 3 in 4.0 mL of DCE with a bag of O (12 h) or air (16 h). b Isolated yield. c Reaction time was 36 h. d Reaction time was 48 h. e 20 mol % TEMPO was used. f 20 mol % of | \\mathrm { F e } \\left( \\mathrm { N O } _ { 3 } \\right) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } \\mathrm { O } | was used.",
+    "page": 2,
+    "bbox": [
+      92.0,
+      372.0,
+      481.0,
+      731.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0016",
+    "next_block_id": "block_5_0018",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "table"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0018",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "We could prepare octanedioic acid under the standard  \\mathrm { O } _ { 2 } or air conditions using 10 mol % KCl within 48 h (Scheme 2, eq 1) or 1,8-octane-dial using 10 mol % NaCl within 12 h, from 1,8- octanediol, respectively, with a high selectivity (Scheme 2, eq 2, and the data in SI).19",
+    "page": 2,
+    "bbox": [
+      91.0,
+      797.0,
+      481.0,
+      864.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0017",
+    "next_block_id": "block_5_0019",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0019",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "To further demonstrate the practicality of the catalytic system, a 40 mmol reaction of cetyl alcohol 3e was conducted using pure  \\mathrm { O } _ { 2 } to give 9.6817g of palmitic acid 2e in 94% isolated yield (Scheme  ^ { 3 , } eq 1 and apparatus (a) in SI). The purification of product only requires simple recrystallization of the crude product after",
+    "page": 2,
+    "bbox": [
+      91.0,
+      865.0,
+      481.0,
+      933.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0018",
+    "next_block_id": "block_5_0020",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0020",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "removing the solvent instead of column chromatography. The reaction on the same scale may also be conducted by using a bag of air (size: 70 L, oxygen bag used in hospital) for 1.5 h first, which was followed by the supplement of a bag of pure O (commercial size: 2 L, may be expanded to 5 L, the white gas bag in apparatus (b) in SI) to provide the consumed oxygen in the air bag efficiently (Scheme 3, eq 2 and apparatus (b) in SI). Such a practice avoids the unsafe high concentration of pure  \\mathrm { O } _ { 2 } over DCE to make the procedure safer. The same reaction using a bag of air only was incomplete affording acid 2e (23% yield by NMR) and aldehyde 1e (77% yield by NMR). Furthermore, by applying a slow flow of air, the reaction was also easily conducted on the scale of 240 mmol scale in 89% isolated yield (Scheme 3, eq 3 and apparatus (c) in SI).20",
+    "page": 2,
+    "bbox": [
+      512.0,
+      220.0,
+      904.0,
+      409.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0019",
+    "next_block_id": "block_5_0021",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0021",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "| Compound | Condition | Yield (g/1000 molar weight) |\n| -------- | --------- | --------------------------- |\n| n-C₁₅H₃₁COOH | 1 | 9.6817 |\n| n-C₁₅H₃₁COOH | 2 | 9.0540 |\n| n-C₁₅H₃₁COOH | 3 | 55.0232 |\nThe chart displays two sets of reaction pathways with labels indicating '3e' and '240 mmol'. The reaction pathway is shown as follows: Fe(NO₃)₃·9H₂O (10 mol%), TEMPO (10 mol%), KCl (10 mol%), O₂, DCE, r.t., 16 h, air + O₂ balloon, DCE, r.t., 21.5 h, TEMPO (10 mol%), KCl (10 mol%), a very slow air flow, DCE, r.t., 24 h.",
+    "page": 2,
+    "bbox": [
+      556.0,
+      440.0,
+      864.0,
+      590.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0020",
+    "next_block_id": "block_5_0022",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "chart"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0022",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "The sesquiterpenediol 3r could also be oxidized to sclareolide 4r in high yield with both pure  \\mathrm { O } _ { 2 } or air (Scheme 4, eq 1).",
+    "page": 2,
+    "bbox": [
+      513.0,
+      602.0,
+      904.0,
+      630.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0021",
+    "next_block_id": "block_5_0023",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0023",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "Substrate 3s bearing a steroid skeleton could also be oxidized to the corresponding acid 2s smoothly in 73% yield with the secondary alcohol in the molecule 3s being oxidized to the ketone group as well (Scheme 4, eq 2).",
+    "page": 2,
+    "bbox": [
+      512.0,
+      797.0,
+      904.0,
+      850.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0022",
+    "next_block_id": "block_5_0024",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0024",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "Furthermore, the reaction was applied to the first total synthesis of phlomic acid, a naturally occurring axially chiral allene, which was isolated from Phlomis in 1997.21 By applying enantioselective allenation of alkynes reaction  \\left( \\mathrm { E A T A } \\right) ^ { 2 2 } developed in our group as the key step for the formation of the chiral allene entity, we reasoned that phlomic acid (R )-5a could be synthesized from terminal alkyne 3l and aldehyde 1a (Scheme 5). Thus, 7-octynoic acid was prepared from 7-octyn-1-ol in 80% yield using 10 mol % each of  \\mathrm { F e ( N O _ { 3 } ) _ { 3 } } { \\cdot } 9 \\mathrm { H _ { 2 } O } / \\mathrm { T E M P O } / \\mathrm { K C l } catalyst in air. After esterification, ester 4l was submitted to the EATA reaction. After screening of different prolinol derivatives, we found that when (S)- dimethylprolinol was used for the first time in the CuBr -catalyzed EATA reaction, product  \\left( R _ { a } \\right) -5b with 95% ee could be prepared in 58% yield, while with (S)-diphenylprolinol, the ee dropped to 90%.  \\left( R _ { a } \\right) -5b was treated with KOH in  \\mathrm { M e O H / H _ { 2 } O } at  { \\bar { 6 0 } } ^ { \\circ } \\mathrm { C } to yield phlomic acid  \\left( \\left( R _ { a } \\right) - 5 \\mathbf { a } \\right) in 92% yield and 96% ee.",
+    "page": 2,
+    "bbox": [
+      512.0,
+      850.0,
+      904.0,
+      933.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0023",
+    "next_block_id": "block_5_0025",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0025",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "In addition, it was observed that the oxidation of benzylic alcohol such as piperitol (3t) or mono THP-protected 1,2- benzenedimethanol (3u) stopped mostly at the stage of aldehyde (Scheme  ^ { 6 , } eqs  _ { 1 - 2 ) } . However, reaction of 1,2-benzenedimethanol  \\left( 3 \\mathbf { v } \\right) gave 62% yield of isobenzofuran-1(3H)-one (4v) (Scheme  6 , \\mathsf { e q } 3 ) . , indicating the possibility of the oxidation to aldehyde, then forming the corresponding hemiacetal, which was further oxidized to lactone.",
+    "page": 3,
+    "bbox": [
+      91.0,
+      391.0,
+      481.0,
+      500.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0024",
+    "next_block_id": "block_5_0026",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0026",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "When the oxidation reaction of lauraldehyde 1a was conducted in the presence of 1 equiv  \\mathrm { \\ o f { H _ { 2 } } ^ { 1 8 } { O } _ { \\it \\cdot } } , lauric acid  2 \\mathsf { a } \\mathsf { - } ^ { 1 8 } \\mathrm { O } was isolated in 99% yield with 40%  ^ { 1 8 } \\mathrm { { O } } incorporation, indicating the involvement of  \\mathrm { H } _ { 2 } \\mathrm { O } in the reaction process. The lower level of  ^ { 1 8 } \\mathrm { O } incorporation was caused by the 0.9 equiv of H O in 10 mol %  \\mathrm { \\ o f { F e } ( N O _ { 3 } ) _ { 3 } { \\cdot } 9 H _ { 2 } O } and the in situ generated water (see Scheme 7 and Scheme 9).",
+    "page": 3,
+    "bbox": [
+      91.0,
+      739.0,
+      481.0,
+      836.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0025",
+    "next_block_id": "block_5_0027",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0027",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "As a further evidence, reddish brown gas  \\left( \\mathrm { N O } _ { 2 } \\right) was observed during the reaction, and NO was detected by GS-MS (see SI for experimental details). We also observed that alcohol 3a was completely consumed within 6 h, generating aldehyde 1a as the initial product. Acid 2a emerged after 2 h (pages  S 3 6 \\mathrm { - } S 3 7 , S \\mathrm { I } ) . As a comparison, the same reaction with 10 mol % of NaCl failed to afford the formation of the carboxylic acid 2a within 4 h (pages  S 3 8 \\mathrm { - } S 3 9 , \\mathrm { S I } ) . Furthermore, the reaction with 5 mol % each of  \\mathrm { F e } ( \\mathrm { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathrm { \\bar { H } } _ { 2 } \\mathrm { O } _ { \\cdot } , TEMPO, and NaCl, the reaction conditions in the previous  \\mathsf { i e p o r t } , ^ { 1 9 } led to the highly selective formation of aldehyde-No acid was formed (pages S40−S41, SI). The counterion effect of inorganic chloride on the oxidation is as follows:  \\mathrm { K ^ { + } \\sim \\mathrm { \\bf ~ R b ^ { + } > \\mathrm { \\bf ~ C s ^ { + } \\sim \\mathrm { \\bf ~ N a ^ { + } > \\mathrm { \\bf ~ M g ^ { 2 + } \\sim \\mathrm { \\bf ~ Z n ^ { 2 + } > \\mathrm { \\bf ~ B u _ { 4 } N ^ { + } } } } } } } } (pages S36−S51, SI), which is in accordance of the basicity order (although not a linear  \\mathbf { o n e } ) ; ^ { 2 3 } when 18-crown-6 or kryptofix 222 (a typical cryptand) was used together with KCl, the reaction became much slower, indicating an obvious effect of the cation (pages S52−S55, SI).",
+    "page": 3,
+    "bbox": [
+      512.0,
+      80.0,
+      904.0,
+      325.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0026",
+    "next_block_id": "block_5_0028",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0028",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "In addition, control experiments showed that the oxidation of aldehyde 1a in oxygen alone failed to afford the acid 2a (Table 3, entry 2); the reaction in the absence of KCl is slower (Table  ^ { 3 , } entry 3); as reported,24 Fe(III) alone may afford peroxy acid 7a, via the reaction of the acyl radical intermediate with oxygen. This peroxy acid may react with the starting aldehyde to afford the acid 2a finally as a mixture (Table  ^ { 3 , } entry  4 ) ; in the absence of TEMPO, the reaction is slower, and the formation of peroxy acid was also observed (Table 3, entry  s ) ; as a comparison under the standard reaction condition, the formation of peroxy acid 7a was not detected (Table 3, entry 1). The reaction could not occur without  \\mathrm { F e } \\left( \\mathrm { N O } _ { 3 } \\right) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } \\mathrm { O } (Table 3, entry 6).",
+    "page": 3,
+    "bbox": [
+      512.0,
+      323.0,
+      905.0,
+      488.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0027",
+    "next_block_id": "block_5_0029",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0029",
+    "doc_id": "5",
+    "block_type": "table",
+    "text": "entry | Fe(NO3)3·9H2O (x mol %) | NMR yield, %; TEMPO (y mol %) | KCl (z mol %) | 1a | 2a | 7a | ; 1 | 10 | 10 | 10 | 0 | 95 | 0; 2 | - | - | - | 98 | 2 | 0; 3 | 10 | 10 | - | 14 | 81 | 0; 4 | 10 | - | - | 0 | 78 | 11; 5 | 10 | - | 10 | 15 | 64 | 12; 6 | - | 10 | 10 | 100 | 0 | 0 | Table 3. Aerobic Oxidation of Aldehyde 1a: The Role of Each Catalytic Component",
+    "page": 3,
+    "bbox": [
+      515.0,
+      531.0,
+      904.0,
+      718.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0028",
+    "next_block_id": "block_5_0030",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "table"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0030",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "However, no reaction was observed for alcohol 3a in the absence of TEMPO (Scheme 8).",
+    "page": 3,
+    "bbox": [
+      513.0,
+      726.0,
+      904.0,
+      754.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0029",
+    "next_block_id": "block_5_0031",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0031",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "Based on these observations, we proposed a rationale for this aerobic oxidation (Scheme 9). Int 1, the coupling product of TEMPO and  \\mathrm { F e } ^ { 3 + 2 \\bar { 5 } } reacted with the alcohol to form Int 2. Int 2 produced the aldehyde,TEMPOH, and  \\mathrm { F e } ^ { 2 + } after β-H elimination and reductive elimination.  \\mathrm { F e } ^ { 2 + } would be reoxidized to  \\mathrm { F e } ^ { 3 + } by  \\mathrm { N O } _ { 2 } in the reaction system, while  \\mathrm { N O } _ { 2 } ^ { 2 6 } was reduced to NO and regenerated by its reaction with  \\mathrm { O } _ { 2 } . TEMPOH was converted back into TEMPO by its reaction with  \\mathrm { F e } ^ { 3 + } . The metalated aldehyde hydrate Int 3 was formed by attack of  _ { \\mathrm { H } _ { 2 } \\mathrm { O } } at the aldehyde mediated by  \\mathrm { F e } ^ { 3 + } . Int 3 would undergo a similar process to produce the carboxylic acid. As noted in our previous report, the reaction in the absence of NaCl is slow, and the chloride may be working as the ligand (L) to iron.19 According to data with different MCl in SI, different M+ may have a different effect on the ligand exchange rate for the formation of Int 2−4. However, further studies are required for the mechanism.",
+    "page": 3,
+    "bbox": [
+      512.0,
+      850.0,
+      904.0,
+      933.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0030",
+    "next_block_id": "block_5_0032",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0032",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "In summary, we developed a practical and efficient environmentally benign catalytic protocol of Fe(NO ) ·9H O/TEMPO/ MCl to accomplish the oxidation of alcohols to carboxylic acids using  \\mathrm { O } _ { 2 } or air as terminal oxidant at room temperature. The reaction may be easily conducted on a 9−55 g-scale with pure  \\mathrm { O } _ { 2 } , air/pure  \\mathrm { O } _ { 2 } or air flow conditions. First total synthesis of natural product phlomic acid was accomplished using this aerobic oxidation protocol and EATA. Further studies especially the mechanism are being actively pursued in this laboratory.",
+    "page": 4,
+    "bbox": [
+      91.0,
+      465.0,
+      481.0,
+      586.0
+    ],
+    "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+    "prev_block_id": "block_5_0031",
+    "next_block_id": "block_5_0033",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0033",
+    "doc_id": "5",
+    "block_type": "title",
+    "text": "ASSOCIATED CONTENT",
+    "page": 4,
+    "bbox": [
+      92.0,
+      596.0,
+      291.0,
+      611.0
+    ],
+    "section": "ASSOCIATED CONTENT",
+    "prev_block_id": "block_5_0032",
+    "next_block_id": "block_5_0034",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0034",
+    "doc_id": "5",
+    "block_type": "title",
+    "text": "*S Supporting Information",
+    "page": 4,
+    "bbox": [
+      92.0,
+      613.0,
+      276.0,
+      627.0
+    ],
+    "section": "*S Supporting Information",
+    "prev_block_id": "block_5_0033",
+    "next_block_id": "block_5_0035",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0035",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "The Supporting Information is available free of charge on the ACS Publications website at DOI: 10.1021/jacs.6b03948.",
+    "page": 4,
+    "bbox": [
+      91.0,
+      627.0,
+      480.0,
+      654.0
+    ],
+    "section": "*S Supporting Information",
+    "prev_block_id": "block_5_0034",
+    "next_block_id": "block_5_0036",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0036",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "Experimental details and data (PDF)",
+    "page": 4,
+    "bbox": [
+      131.0,
+      658.0,
+      356.0,
+      672.0
+    ],
+    "section": "*S Supporting Information",
+    "prev_block_id": "block_5_0035",
+    "next_block_id": "block_5_0037",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0037",
+    "doc_id": "5",
+    "block_type": "title",
+    "text": "AUTHOR INFORMATION",
+    "page": 4,
+    "bbox": [
+      92.0,
+      685.0,
+      296.0,
+      698.0
+    ],
+    "section": "AUTHOR INFORMATION",
+    "prev_block_id": "block_5_0036",
+    "next_block_id": "block_5_0038",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0038",
+    "doc_id": "5",
+    "block_type": "title",
+    "text": "Corresponding Author",
+    "page": 4,
+    "bbox": [
+      92.0,
+      702.0,
+      244.0,
+      716.0
+    ],
+    "section": "Corresponding Author",
+    "prev_block_id": "block_5_0037",
+    "next_block_id": "block_5_0039",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0039",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "*masm@sioc.ac.cn",
+    "page": 4,
+    "bbox": [
+      92.0,
+      717.0,
+      211.0,
+      729.0
+    ],
+    "section": "Corresponding Author",
+    "prev_block_id": "block_5_0038",
+    "next_block_id": "block_5_0040",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0040",
+    "doc_id": "5",
+    "block_type": "title",
+    "text": "Notes",
+    "page": 4,
+    "bbox": [
+      92.0,
+      732.0,
+      136.0,
+      743.0
+    ],
+    "section": "Notes",
+    "prev_block_id": "block_5_0039",
+    "next_block_id": "block_5_0041",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0041",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "The authors declare no competing financial interest.",
+    "page": 4,
+    "bbox": [
+      92.0,
+      745.0,
+      406.0,
+      760.0
+    ],
+    "section": "Notes",
+    "prev_block_id": "block_5_0040",
+    "next_block_id": "block_5_0042",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0042",
+    "doc_id": "5",
+    "block_type": "title",
+    "text": "ACKNOWLEDGMENTS",
+    "page": 4,
+    "bbox": [
+      94.0,
+      768.0,
+      281.0,
+      783.0
+    ],
+    "section": "ACKNOWLEDGMENTS",
+    "prev_block_id": "block_5_0041",
+    "next_block_id": "block_5_0043",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0043",
+    "doc_id": "5",
+    "block_type": "paragraph",
+    "text": "Financial support from National Natural Science Foundation of China (21232006) and National Basic Research Program (2015CB856600) are greatly appreciated. We thank Mr. Lin Weilong for supplying (S)-dimethyl prolinol.",
+    "page": 4,
+    "bbox": [
+      91.0,
+      787.0,
+      481.0,
+      843.0
+    ],
+    "section": "ACKNOWLEDGMENTS",
+    "prev_block_id": "block_5_0042",
+    "next_block_id": "block_5_0044",
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_5_0044",
+    "doc_id": "5",
+    "block_type": "title",
+    "text": "REFERENCES",
+    "page": 4,
+    "bbox": [
+      94.0,
+      852.0,
+      214.0,
+      865.0
+    ],
+    "section": "REFERENCES",
+    "prev_block_id": "block_5_0043",
+    "next_block_id": null,
+    "source_file": "5.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  }
+]

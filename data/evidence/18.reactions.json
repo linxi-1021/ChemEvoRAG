@@ -1,0 +1,59 @@
+[
+  {
+    "reaction_event_id": "rxn_18_0000",
+    "doc_id": "18",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "CC(O)C#C[Si](C)(C)C",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "CC(=O)C#C[Si](C)(C)C",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "18",
+      "source_file": "18.pdf",
+      "page": 3,
+      "bbox": [
+        509.0,
+        185.0,
+        915.0,
+        247.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "425bb83ad856fa9cffccf279fc9e3700771ae2dca7f2c731e190467fde60d2a0"
+    },
+    "errors": []
+  }
+]

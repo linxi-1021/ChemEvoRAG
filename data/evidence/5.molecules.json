@@ -1,0 +1,3451 @@
+[
+  {
+    "molecule_card_id": "mol_5_0000",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "OCCCCCCCCO",
+    "canonical_smiles": "OCCCCCCCCO",
+    "inchi_key": "OEIJHBUUFURJLI-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "039c75b06c86715f696459bc839bc2b934e353e512d2f0cd85c88c0522a3937e",
+        "figure_id": "039c75b06c86715f696459bc839bc2b934e353e512d2f0cd85c88c0522a3937e",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 2,
+          "bbox": [
+            540.0,
+            99.0,
+            880.0,
+            204.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.009504752376188095,
+          0.46431363830063177,
+          0.3051525762881441,
+          0.5779222944805735
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "039c75b06c86715f696459bc839bc2b934e353e512d2f0cd85c88c0522a3937e"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_5_0001",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "O=C(O)CCCCCCC(=O)O",
+    "canonical_smiles": "O=C(O)CCCCCCC(=O)O",
+    "inchi_key": "TYFQFVWCELRYAO-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "039c75b06c86715f696459bc839bc2b934e353e512d2f0cd85c88c0522a3937e",
+        "figure_id": "039c75b06c86715f696459bc839bc2b934e353e512d2f0cd85c88c0522a3937e",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 2,
+          "bbox": [
+            540.0,
+            99.0,
+            880.0,
+            204.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.6543271635817909,
+          0.20745928519815462,
+          0.9949974987493747,
+          0.3198330646804884
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "039c75b06c86715f696459bc839bc2b934e353e512d2f0cd85c88c0522a3937e"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_5_0002",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "O=CCCCCCCC=O",
+    "canonical_smiles": "O=CCCCCCCC=O",
+    "inchi_key": "OADYBSJSJUFUBR-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "039c75b06c86715f696459bc839bc2b934e353e512d2f0cd85c88c0522a3937e",
+        "figure_id": "039c75b06c86715f696459bc839bc2b934e353e512d2f0cd85c88c0522a3937e",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 2,
+          "bbox": [
+            540.0,
+            99.0,
+            880.0,
+            204.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.6588294147073537,
+          0.7273423748911493,
+          0.9324662331165583,
+          0.840951031071091
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "039c75b06c86715f696459bc839bc2b934e353e512d2f0cd85c88c0522a3937e"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_5_0003",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "F.[H][C@]12CC[C@]3([H])[C@]([H])(CC[C@@]4(C)[C@@]3([H])CC[C@]4([H])[C@H](C)CCCO)[C@@]1(C)CC[C@@H](O)C2",
+    "canonical_smiles": "C[C@H](CCCO)[C@H]1CC[C@H]2[C@@H]3CC[C@@H]4C[C@H](O)CC[C@]4(C)[C@H]3CC[C@]12C.F",
+    "inchi_key": "NDBZDTSLLYUOHQ-PDWFKUSUSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "3b43ef0c538407fc4c03b55059055356f440839436065d73555063a87bb0bfd9",
+        "figure_id": "3b43ef0c538407fc4c03b55059055356f440839436065d73555063a87bb0bfd9",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 2,
+          "bbox": [
+            555.0,
+            662.0,
+            865.0,
+            781.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.009004502251125562,
+          0.44255310838602485,
+          0.37318659329664833,
+          0.8951187305364394
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "3b43ef0c538407fc4c03b55059055356f440839436065d73555063a87bb0bfd9"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_5_0004",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CC1(C)CCC[C@@]2(C)C1CC[C@@](C)(O)C2CCO",
+    "canonical_smiles": "CC1(C)CCC[C@@]2(C)C1CC[C@@](C)(O)C2CCO",
+    "inchi_key": "AIALTZSQORJYNJ-FPCDFSMTSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "3b43ef0c538407fc4c03b55059055356f440839436065d73555063a87bb0bfd9",
+        "figure_id": "3b43ef0c538407fc4c03b55059055356f440839436065d73555063a87bb0bfd9",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 2,
+          "bbox": [
+            555.0,
+            662.0,
+            865.0,
+            781.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.053526763381690844,
+          0.025031284410974255,
+          0.2226113056528264,
+          0.3924905395640763
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "3b43ef0c538407fc4c03b55059055356f440839436065d73555063a87bb0bfd9"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_5_0005",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CC1(C)CCC[C@@]2(C)C1CC[C@@]1(C)OC(=O)CC21",
+    "canonical_smiles": "CC1(C)CCC[C@@]2(C)C1CC[C@@]1(C)OC(=O)CC21",
+    "inchi_key": "IMKJGXCIJJXALX-UQZDFYISSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "3b43ef0c538407fc4c03b55059055356f440839436065d73555063a87bb0bfd9",
+        "figure_id": "3b43ef0c538407fc4c03b55059055356f440839436065d73555063a87bb0bfd9",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 2,
+          "bbox": [
+            555.0,
+            662.0,
+            865.0,
+            781.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.5952976488244122,
+          0.052065071574826455,
+          0.7573786893446723,
+          0.403504304704905
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "3b43ef0c538407fc4c03b55059055356f440839436065d73555063a87bb0bfd9"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_5_0006",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[H][C@]12CC[C@]3([H])[C@]([H])(CC[C@@]4(C)[C@@]3([H])CC[C@]4([H])[C@H](C)CCC(=O)O)[C@@]1(C)CCC(=O)C2",
+    "canonical_smiles": "C[C@H](CCC(=O)O)[C@H]1CC[C@H]2[C@@H]3CC[C@@H]4CC(=O)CC[C@]4(C)[C@H]3CC[C@]12C",
+    "inchi_key": "KIQFUORWRVZTHT-OPTMKGCMSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "3b43ef0c538407fc4c03b55059055356f440839436065d73555063a87bb0bfd9",
+        "figure_id": "3b43ef0c538407fc4c03b55059055356f440839436065d73555063a87bb0bfd9",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 2,
+          "bbox": [
+            555.0,
+            662.0,
+            865.0,
+            781.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.6348174087043522,
+          0.5296619781362152,
+          1.0,
+          0.94317879660551
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "3b43ef0c538407fc4c03b55059055356f440839436065d73555063a87bb0bfd9"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_5_0007",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "C#CCO",
+    "canonical_smiles": "C#CCO",
+    "inchi_key": "TVDSBUOJIPERQY-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "e40d3f7c1d972d1f87c75f8efefdb2554bdfd9bc5ded40194b4268496a8cd1ac",
+        "figure_id": "e40d3f7c1d972d1f87c75f8efefdb2554bdfd9bc5ded40194b4268496a8cd1ac",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            131.0,
+            264.0,
+            444.0,
+            377.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.009504752376188095,
+          0.09918091957371092,
+          0.12706353176588295,
+          0.2342357887804662
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "e40d3f7c1d972d1f87c75f8efefdb2554bdfd9bc5ded40194b4268496a8cd1ac"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_5_0008",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*/C([H])=C(\\[H])CC(=O)O",
+    "canonical_smiles": "*/C=C/CC(=O)O",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "e40d3f7c1d972d1f87c75f8efefdb2554bdfd9bc5ded40194b4268496a8cd1ac",
+        "figure_id": "e40d3f7c1d972d1f87c75f8efefdb2554bdfd9bc5ded40194b4268496a8cd1ac",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            131.0,
+            264.0,
+            444.0,
+            377.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.029514757378689346,
+          0.6288492347439543,
+          0.30865432716358177,
+          0.8229906092286651
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "e40d3f7c1d972d1f87c75f8efefdb2554bdfd9bc5ded40194b4268496a8cd1ac"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_5_0009",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "C#CCC(=O)O",
+    "canonical_smiles": "C#CCC(=O)O",
+    "inchi_key": "KKAHGSQLSTUDAV-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "e40d3f7c1d972d1f87c75f8efefdb2554bdfd9bc5ded40194b4268496a8cd1ac",
+        "figure_id": "e40d3f7c1d972d1f87c75f8efefdb2554bdfd9bc5ded40194b4268496a8cd1ac",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            131.0,
+            264.0,
+            444.0,
+            377.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.3906953476738369,
+          0.06858255076905541,
+          0.5352676338169085,
+          0.25850346059105506
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "e40d3f7c1d972d1f87c75f8efefdb2554bdfd9bc5ded40194b4268496a8cd1ac"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_5_0010",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*C(*)(O)[C@@H]1CCCN1",
+    "canonical_smiles": "*C(*)(O)[C@@H]1CCCN1",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "e40d3f7c1d972d1f87c75f8efefdb2554bdfd9bc5ded40194b4268496a8cd1ac",
+        "figure_id": "e40d3f7c1d972d1f87c75f8efefdb2554bdfd9bc5ded40194b4268496a8cd1ac",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            131.0,
+            264.0,
+            444.0,
+            377.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.4842421210605303,
+          0.31020415270926605,
+          0.6148074037018509,
+          0.5022352948626212
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "e40d3f7c1d972d1f87c75f8efefdb2554bdfd9bc5ded40194b4268496a8cd1ac"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_5_0011",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[H]C([H])=C([H])CC(=O)OC",
+    "canonical_smiles": "C=CCC(=O)OC",
+    "inchi_key": "GITITJADGZYSRL-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "e40d3f7c1d972d1f87c75f8efefdb2554bdfd9bc5ded40194b4268496a8cd1ac",
+        "figure_id": "e40d3f7c1d972d1f87c75f8efefdb2554bdfd9bc5ded40194b4268496a8cd1ac",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            131.0,
+            264.0,
+            444.0,
+            377.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.6028014007003502,
+          0.6119673760931099,
+          0.896448224112056,
+          0.8082189829091762
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "e40d3f7c1d972d1f87c75f8efefdb2554bdfd9bc5ded40194b4268496a8cd1ac"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_5_0012",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "C#CCC(=O)OC",
+    "canonical_smiles": "C#CCC(=O)OC",
+    "inchi_key": "JGEGAAGXXWDCOJ-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "e40d3f7c1d972d1f87c75f8efefdb2554bdfd9bc5ded40194b4268496a8cd1ac",
+        "figure_id": "e40d3f7c1d972d1f87c75f8efefdb2554bdfd9bc5ded40194b4268496a8cd1ac",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            131.0,
+            264.0,
+            444.0,
+            377.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7068534267133567,
+          0.06436208610634432,
+          0.8689344672336168,
+          0.267999506082155
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "e40d3f7c1d972d1f87c75f8efefdb2554bdfd9bc5ded40194b4268496a8cd1ac"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_5_0013",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "OCc1ccc2c(c1)OCO2",
+    "canonical_smiles": "OCc1ccc2c(c1)OCO2",
+    "inchi_key": "BHUIUXNAPJIDOG-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4",
+        "figure_id": "d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            148.0,
+            546.0,
+            428.0,
+            668.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.011005502751375688,
+          0.01920200938165418,
+          0.20710355177588793,
+          0.2566086708275604
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_5_0014",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*Cc1ccccc1CO",
+    "canonical_smiles": "*Cc1ccccc1CO",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4",
+        "figure_id": "d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            148.0,
+            546.0,
+            428.0,
+            668.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.021010505252626314,
+          0.3063593314982099,
+          0.22661330665332666,
+          0.4625938623762143
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_5_0015",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "OCc1ccccc1CO",
+    "canonical_smiles": "OCc1ccccc1CO",
+    "inchi_key": "XMUZQOKACOLCSS-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4",
+        "figure_id": "d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            148.0,
+            546.0,
+            428.0,
+            668.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.022011005502751375,
+          0.49488815088172355,
+          0.16258129064532267,
+          0.8134669428955316
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_5_0016",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[H]C(=O)c1ccccc1CO",
+    "canonical_smiles": "O=Cc1ccccc1CO",
+    "inchi_key": "XVHIUKSUZLPFCP-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4",
+        "figure_id": "d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            148.0,
+            546.0,
+            428.0,
+            668.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.22661330665332666,
+          0.7104743471212046,
+          0.3981990995497749,
+          0.9478810085671108
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_5_0017",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "OC1OCc2ccccc21",
+    "canonical_smiles": "OC1OCc2ccccc21",
+    "inchi_key": "GPKWWXXWOOETJV-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4",
+        "figure_id": "d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            148.0,
+            546.0,
+            428.0,
+            668.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.4607303651825913,
+          0.7331676309358868,
+          0.6153076538269134,
+          0.9539907388249098
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_5_0018",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*Cc1ccccc1C=O",
+    "canonical_smiles": "*Cc1ccccc1C=O",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4",
+        "figure_id": "d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            148.0,
+            546.0,
+            428.0,
+            668.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.6783391695847923,
+          0.31072342453949486,
+          0.8859429714857429,
+          0.4809230531496114
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_5_0019",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "O=Cc1ccc2c(c1)OCO2",
+    "canonical_smiles": "O=Cc1ccc2c(c1)OCO2",
+    "inchi_key": "SATCULPHIDQDRE-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4",
+        "figure_id": "d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            148.0,
+            546.0,
+            428.0,
+            668.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.6838419209604802,
+          0.06546139561927561,
+          0.9009504752376188,
+          0.2435163917037053
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_5_0020",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "O=C1OCc2ccccc21",
+    "canonical_smiles": "O=C1OCc2ccccc21",
+    "inchi_key": "WNZQDUSMALZDQF-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4",
+        "figure_id": "d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            148.0,
+            546.0,
+            428.0,
+            668.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7113556778389195,
+          0.5062347927890647,
+          0.8579289644822411,
+          0.7235666262450597
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_5_0021",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*N1C(C)(C)CCCC1(C)C",
+    "canonical_smiles": "*N1C(C)(C)CCCC1(C)C",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2",
+        "figure_id": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 4,
+          "bbox": [
+            126.0,
+            264.0,
+            449.0,
+            438.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.006003001500750375,
+          0.7953966389974648,
+          0.1295647823911956,
+          0.9451516012243409
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_5_0022",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*C([H])(O)O*ON1C(C)(C)CCCC1(C)C",
+    "canonical_smiles": "*C(O)O*ON1C(C)(C)CCCC1(C)C",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2",
+        "figure_id": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 4,
+          "bbox": [
+            126.0,
+            264.0,
+            449.0,
+            438.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.05252626313156578,
+          0.36661710092334304,
+          0.192096048024012,
+          0.5919559355949161
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_5_0023",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*C([H])(O)ON",
+    "canonical_smiles": "*C(O)ON",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2",
+        "figure_id": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 4,
+          "bbox": [
+            126.0,
+            264.0,
+            449.0,
+            438.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.25962981490745374,
+          0.7692601597408874,
+          0.3611805902951476,
+          0.8907594687174095
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_5_0024",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CC1(C)CCCC(C)(C)N1O",
+    "canonical_smiles": "CC1(C)CCCC(C)(C)N1O",
+    "inchi_key": "VUZNLSBZRVZGIK-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2",
+        "figure_id": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 4,
+          "bbox": [
+            126.0,
+            264.0,
+            449.0,
+            438.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.3661830915457729,
+          0.39204718884866163,
+          0.4867433716858429,
+          0.5488660643881262
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_5_0025",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CC1(C)CCCC(C)(C)N1[O]",
+    "canonical_smiles": "CC1(C)CCCC(C)(C)N1[O]",
+    "inchi_key": "QYTDEUPAUMOIOP-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2",
+        "figure_id": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 4,
+          "bbox": [
+            126.0,
+            264.0,
+            449.0,
+            438.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.3691845922961481,
+          0.02119173993776549,
+          0.48874437218609307,
+          0.17024031083338279
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_5_0026",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*C([H])=O",
+    "canonical_smiles": "*C=O",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2",
+        "figure_id": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 4,
+          "bbox": [
+            126.0,
+            264.0,
+            449.0,
+            438.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.49824912456228115,
+          0.5855984136135864,
+          0.5742871435717859,
+          0.6880251566461196
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_5_0027",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*C([H])([H])O*ON1C(C)(C)CCCC1(C)C",
+    "canonical_smiles": "*CO*ON1C(C)(C)CCCC1(C)C",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2",
+        "figure_id": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 4,
+          "bbox": [
+            126.0,
+            264.0,
+            449.0,
+            438.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7403701850925463,
+          0.38992801485488504,
+          0.8769384692346173,
+          0.6279818934891174
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_5_0028",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*N1C(C)(C)CCCC1(C)C",
+    "canonical_smiles": "*N1C(C)(C)CCCC1(C)C",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2",
+        "figure_id": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 4,
+          "bbox": [
+            126.0,
+            264.0,
+            449.0,
+            438.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7418709354677339,
+          0.01765978328147124,
+          0.8649324662331166,
+          0.17024031083338279
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_tbl_5_0000",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [
+      "RCHO"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [
+      "aldehyde",
+      "R-CHO"
+    ],
+    "source_mentions": [
+      {
+        "mention": "RCHO",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            617.0,
+            482.0,
+            800.0,
+            533.0
+          ],
+          "block_id": "block_5_0009",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "obtained from alcohols (also aldehydes) in high yields at room temp",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            104.0,
+            310.0,
+            470.0,
+            500.0
+          ],
+          "block_id": "block_5_0005",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "obic oxidation of alcohols to aldehydes is becoming a mature technol",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            89.0,
+            528.0,
+            481.0,
+            855.0
+          ],
+          "block_id": "block_5_0006",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "n the process of transforming aldehydes to carboxylic acids since mo",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            89.0,
+            856.0,
+            481.0,
+            925.0
+          ],
+          "block_id": "block_5_0007",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "alcohols to aldehydes catalyzed by  \\mathrm { F e",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            512.0,
+            299.0,
+            904.0,
+            438.0
+          ],
+          "block_id": "block_5_0008",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "{d,e,f}$ | -; 17 | P-methoxy, aldehyde | 4-nitrobenzoic acid | $76^d",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 2,
+          "bbox": [
+            92.0,
+            372.0,
+            481.0,
+            731.0
+          ],
+          "block_id": "block_5_0017",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "cid 2e (23% yield by NMR) and aldehyde 1e (77% yield by NMR). Furthe",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 2,
+          "bbox": [
+            512.0,
+            220.0,
+            904.0,
+            409.0
+          ],
+          "block_id": "block_5_0020",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "d from terminal alkyne 3l and aldehyde 1a (Scheme 5). Thus, 7-octyno",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 2,
+          "bbox": [
+            512.0,
+            850.0,
+            904.0,
+            933.0
+          ],
+          "block_id": "block_5_0024",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "topped mostly at the stage of aldehyde (Scheme  ^ { 6 , } eqs  _ { 1",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            91.0,
+            391.0,
+            481.0,
+            500.0
+          ],
+          "block_id": "block_5_0025",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "the oxidation reaction of lauraldehyde 1a was conducted in the prese",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            91.0,
+            739.0,
+            481.0,
+            836.0
+          ],
+          "block_id": "block_5_0026",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "nsumed within 6 h, generating aldehyde 1a as the initial product. Ac",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            512.0,
+            80.0,
+            904.0,
+            325.0
+          ],
+          "block_id": "block_5_0027",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "showed that the oxidation of aldehyde 1a in oxygen alone failed to",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            512.0,
+            323.0,
+            905.0,
+            488.0
+          ],
+          "block_id": "block_5_0028",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "Table 3. Aerobic Oxidation of Aldehyde 1a: The Role of Each Catalyti",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            515.0,
+            531.0,
+            904.0,
+            718.0
+          ],
+          "block_id": "block_5_0029",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "orm Int 2. Int 2 produced the aldehyde,TEMPOH, and  \\mathrm { F e }",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            512.0,
+            850.0,
+            904.0,
+            933.0
+          ],
+          "block_id": "block_5_0031",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_5_0009"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_5_0001",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [
+      "RCOOH"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [
+      "carboxylic acid",
+      "R-COOH"
+    ],
+    "source_mentions": [
+      {
+        "mention": "RCOOH",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            617.0,
+            482.0,
+            800.0,
+            533.0
+          ],
+          "block_id": "block_5_0009",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "obic Oxidation of Alcohols to Carboxylic Acids",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            91.0,
+            141.0,
+            904.0,
+            188.0
+          ],
+          "block_id": "block_5_0000",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "T: Oxidation from alcohols to carboxylic acids, a class of essential chemic",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            104.0,
+            310.0,
+            470.0,
+            500.0
+          ],
+          "block_id": "block_5_0005",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "he oxidation from alcohols to carboxylic acids is one of the most fundament",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            89.0,
+            528.0,
+            481.0,
+            855.0
+          ],
+          "block_id": "block_5_0006",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "data, the challenge to obtain carboxylic acids from alcohols via aerobic ox",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            89.0,
+            856.0,
+            481.0,
+            925.0
+          ],
+          "block_id": "block_5_0007",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "entry 4) to the corresponding carboxylic acids 2a−2d in high yields. In add",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            512.0,
+            299.0,
+            904.0,
+            438.0
+          ],
+          "block_id": "block_5_0008",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "ct oxidation of alcohols into carboxylic acids: Cetyl alcohol 3e was oxidiz",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            512.0,
+            674.0,
+            904.0,
+            757.0
+          ],
+          "block_id": "block_5_0011",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "o afford the formation of the carboxylic acid 2a within 4 h (pages  S 3 8 \\",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            512.0,
+            80.0,
+            904.0,
+            325.0
+          ],
+          "block_id": "block_5_0027",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "imilar process to produce the carboxylic acid. As noted in our previous rep",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            512.0,
+            850.0,
+            904.0,
+            933.0
+          ],
+          "block_id": "block_5_0031",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "the oxidation of alcohols to carboxylic acids using  \\mathrm { O } _ { 2 }",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 4,
+          "bbox": [
+            91.0,
+            465.0,
+            481.0,
+            586.0
+          ],
+          "block_id": "block_5_0032",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_5_0009"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_5_0002",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [
+      "Fe(NO3)3·9H2O"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [
+      "Fe(NO3)3·9H2O"
+    ],
+    "source_mentions": [
+      {
+        "mention": "Fe(NO3)3·9H2O",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            617.0,
+            482.0,
+            800.0,
+            533.0
+          ],
+          "block_id": "block_5_0009",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "entry | Fe(NO3)3·9H2O (x mol %) | NMR yield, %; TEM",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            515.0,
+            531.0,
+            904.0,
+            718.0
+          ],
+          "block_id": "block_5_0029",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_5_0009"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_5_0003",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [
+      "TEMPO"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [
+      "TEMPO"
+    ],
+    "source_mentions": [
+      {
+        "mention": "TEMPO",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            617.0,
+            482.0,
+            800.0,
+            533.0
+          ],
+          "block_id": "block_5_0009",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "y available iron catalyst and TEMPO under pure oxygen or air cond",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            89.0,
+            528.0,
+            481.0,
+            855.0
+          ],
+          "block_id": "block_5_0006",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "{ H } _ { 2 } \\mathrm { O } , TEMPO, andKClwith an  \\mathrm { O }",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            512.0,
+            299.0,
+            904.0,
+            438.0
+          ],
+          "block_id": "block_5_0008",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "6H33OH | Metal Salts (10 mol%)TEMPO (10 mol%) | n-C15H31COOH | +",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            515.0,
+            801.0,
+            900.0,
+            850.0
+          ],
+          "block_id": "block_5_0012",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "2p smoothly with 20 mol % of TEMPO (Table 2, entry 15). Two exam",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 2,
+          "bbox": [
+            91.0,
+            108.0,
+            481.0,
+            326.0
+          ],
+          "block_id": "block_5_0016",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "ion time was 48 h. e 20 mol % TEMPO was used. f 20 mol % of | \\ma",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 2,
+          "bbox": [
+            92.0,
+            372.0,
+            481.0,
+            731.0
+          ],
+          "block_id": "block_5_0017",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "ows: Fe(NO₃)₃·9H₂O (10 mol%), TEMPO (10 mol%), KCl (10 mol%), O₂,",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 2,
+          "bbox": [
+            556.0,
+            440.0,
+            864.0,
+            590.0
+          ],
+          "block_id": "block_5_0021",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "} \\mathrm { O } _ { \\cdot } , TEMPO, and NaCl, the reaction condi",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            512.0,
+            80.0,
+            904.0,
+            325.0
+          ],
+          "block_id": "block_5_0027",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "ntry  4 ) ; in the absence of TEMPO, the reaction is slower, and",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            512.0,
+            323.0,
+            905.0,
+            488.0
+          ],
+          "block_id": "block_5_0028",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "H2O (x mol %) | NMR yield, %; TEMPO (y mol %) | KCl (z mol %) | 1",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            515.0,
+            531.0,
+            904.0,
+            718.0
+          ],
+          "block_id": "block_5_0029",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "alcohol 3a in the absence of TEMPO (Scheme 8).",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            513.0,
+            726.0,
+            904.0,
+            754.0
+          ],
+          "block_id": "block_5_0030",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "nt 1, the coupling product of TEMPO and  \\mathrm { F e } ^ { 3 +",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            512.0,
+            850.0,
+            904.0,
+            933.0
+          ],
+          "block_id": "block_5_0031",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "tic protocol of Fe(NO ) ·9H O/TEMPO/ MCl to accomplish the oxidat",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 4,
+          "bbox": [
+            91.0,
+            465.0,
+            481.0,
+            586.0
+          ],
+          "block_id": "block_5_0032",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_5_0009"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_5_0004",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [
+      "KCl"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [
+      "KCl"
+    ],
+    "source_mentions": [
+      {
+        "mention": "KCl",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            617.0,
+            482.0,
+            800.0,
+            533.0
+          ],
+          "block_id": "block_5_0009",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "2 } \\mathrm { O } , TEMPO, andKClwith an  \\mathrm { O } _ { 2 }",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            512.0,
+            299.0,
+            904.0,
+            438.0
+          ],
+          "block_id": "block_5_0008",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "1COOH | + | n-C15H31CHO; 3e | KCl (10 mol%)O2, DCE, r.t. | 2e |",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            515.0,
+            801.0,
+            900.0,
+            850.0
+          ],
+          "block_id": "block_5_0012",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "air conditions using 10 mol % KCl within 48 h (Scheme 2, eq 1)",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 2,
+          "bbox": [
+            91.0,
+            797.0,
+            481.0,
+            864.0
+          ],
+          "block_id": "block_5_0018",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "O (10 mol%), TEMPO (10 mol%), KCl (10 mol%), O₂, DCE, r.t., 16",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 2,
+          "bbox": [
+            556.0,
+            440.0,
+            864.0,
+            590.0
+          ],
+          "block_id": "block_5_0021",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "ptand) was used together with KCl, the reaction became much slo",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            512.0,
+            80.0,
+            904.0,
+            325.0
+          ],
+          "block_id": "block_5_0027",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "he reaction in the absence of KCl is slower (Table  ^ { 3 , } e",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            512.0,
+            323.0,
+            905.0,
+            488.0
+          ],
+          "block_id": "block_5_0028",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "R yield, %; TEMPO (y mol %) | KCl (z mol %) | 1a | 2a | 7a | ;",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            515.0,
+            531.0,
+            904.0,
+            718.0
+          ],
+          "block_id": "block_5_0029",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_5_0009"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_5_0005",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [
+      "O2"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [
+      "O2"
+    ],
+    "source_mentions": [
+      {
+        "mention": "O2",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            617.0,
+            482.0,
+            800.0,
+            533.0
+          ],
+          "block_id": "block_5_0009",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "-C15H31CHO; 3e | KCl (10 mol%)O2, DCE, r.t. | 2e |  | 1e | Sch",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            515.0,
+            801.0,
+            900.0,
+            850.0
+          ],
+          "block_id": "block_5_0012",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_5_0009"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_5_0006",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [
+      "air"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [
+      "air"
+    ],
+    "source_mentions": [
+      {
+        "mention": "air",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            617.0,
+            482.0,
+            800.0,
+            533.0
+          ],
+          "block_id": "block_5_0009",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "{ \\mathrm { O } _ { 2 } } in air as the oxidant has been devel",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            104.0,
+            310.0,
+            470.0,
+            500.0
+          ],
+          "block_id": "block_5_0005",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "nd TEMPO under pure oxygen or air conditions.",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            89.0,
+            528.0,
+            481.0,
+            855.0
+          ],
+          "block_id": "block_5_0006",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "emains high when a balloon of air was applied instead of pure",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            512.0,
+            299.0,
+            904.0,
+            438.0
+          ],
+          "block_id": "block_5_0008",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "| yield of 2 (%)b; $O_{2}$ | Air; 1 | $n-C_{11}H_{23}CHO (1a)$",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            515.0,
+            537.0,
+            904.0,
+            625.0
+          ],
+          "block_id": "block_5_0010",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "th  \\mathrm { O } _ { 2 } and air conditions when extending the",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 2,
+          "bbox": [
+            91.0,
+            108.0,
+            481.0,
+            326.0
+          ],
+          "block_id": "block_5_0016",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "Yield of $2 (\\%)^b$; $O_2$ | Air; 1 | $n-C_{12}H_{25}OH (3a)$",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 2,
+          "bbox": [
+            92.0,
+            372.0,
+            481.0,
+            731.0
+          ],
+          "block_id": "block_5_0017",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "ard  \\mathrm { O } _ { 2 } or air conditions using 10 mol % KCl",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 2,
+          "bbox": [
+            91.0,
+            797.0,
+            481.0,
+            864.0
+          ],
+          "block_id": "block_5_0018",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "e conducted by using a bag of air (size: 70 L, oxygen bag used",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 2,
+          "bbox": [
+            512.0,
+            220.0,
+            904.0,
+            409.0
+          ],
+          "block_id": "block_5_0020",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "0 mol%), O₂, DCE, r.t., 16 h, air + O₂ balloon, DCE, r.t., 21.5",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 2,
+          "bbox": [
+            556.0,
+            440.0,
+            864.0,
+            590.0
+          ],
+          "block_id": "block_5_0021",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "ure  \\mathrm { O } _ { 2 } or air (Scheme 4, eq 1).",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 2,
+          "bbox": [
+            513.0,
+            602.0,
+            904.0,
+            630.0
+          ],
+          "block_id": "block_5_0022",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "\\mathrm { K C l } catalyst in air. After esterification, ester",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 2,
+          "bbox": [
+            512.0,
+            850.0,
+            904.0,
+            933.0
+          ],
+          "block_id": "block_5_0024",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "ing  \\mathrm { O } _ { 2 } or air as terminal oxidant at room t",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 4,
+          "bbox": [
+            91.0,
+            465.0,
+            481.0,
+            586.0
+          ],
+          "block_id": "block_5_0032",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_5_0009"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_5_0007",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [
+      "DCE"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [
+      "DCE"
+    ],
+    "source_mentions": [
+      {
+        "mention": "DCE",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            617.0,
+            482.0,
+            800.0,
+            533.0
+          ],
+          "block_id": "block_5_0009",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "thrm { O } _ { 2 } balloon in DCE at rt for 12 h, 94% isolated",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            512.0,
+            299.0,
+            904.0,
+            438.0
+          ],
+          "block_id": "block_5_0008",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "mmol scale of 1 in 4.0 mL of DCE with a bag of | \\mathrm { O }",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            515.0,
+            537.0,
+            904.0,
+            625.0
+          ],
+          "block_id": "block_5_0010",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "H31CHO; 3e | KCl (10 mol%)O2, DCE, r.t. | 2e |  | 1e | Scheme 1",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            515.0,
+            801.0,
+            900.0,
+            850.0
+          ],
+          "block_id": "block_5_0012",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "mmol scale of 3 in 4.0 mL of DCE with a bag of O (12 h) or air",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 2,
+          "bbox": [
+            92.0,
+            372.0,
+            481.0,
+            731.0
+          ],
+          "block_id": "block_5_0017",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "e  \\mathrm { O } _ { 2 } over DCE to make the procedure safer.",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 2,
+          "bbox": [
+            512.0,
+            220.0,
+            904.0,
+            409.0
+          ],
+          "block_id": "block_5_0020",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "(10 mol%), KCl (10 mol%), O₂, DCE, r.t., 16 h, air + O₂ balloon",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 2,
+          "bbox": [
+            556.0,
+            440.0,
+            864.0,
+            590.0
+          ],
+          "block_id": "block_5_0021",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_5_0009"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_5_0008",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [
+      "1a"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [
+      {
+        "mention": "1a",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            515.0,
+            531.0,
+            904.0,
+            718.0
+          ],
+          "block_id": "block_5_0029",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "served that when lauraldehyde 1a was treated with 10 mol % eac",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            512.0,
+            299.0,
+            904.0,
+            438.0
+          ],
+          "block_id": "block_5_0008",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "Air; 1 | $n-C_{11}H_{23}CHO (1a)$ | $n-C_{11}H_{23}CO_{2}H (2",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            515.0,
+            537.0,
+            904.0,
+            625.0
+          ],
+          "block_id": "block_5_0010",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "rminal alkyne 3l and aldehyde 1a (Scheme 5). Thus, 7-octynoic",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 2,
+          "bbox": [
+            512.0,
+            850.0,
+            904.0,
+            933.0
+          ],
+          "block_id": "block_5_0024",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "tion reaction of lauraldehyde 1a was conducted in the presence",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            91.0,
+            739.0,
+            481.0,
+            836.0
+          ],
+          "block_id": "block_5_0026",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "thin 6 h, generating aldehyde 1a as the initial product. Acid",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            512.0,
+            80.0,
+            904.0,
+            325.0
+          ],
+          "block_id": "block_5_0027",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "hat the oxidation of aldehyde 1a in oxygen alone failed to aff",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            512.0,
+            323.0,
+            905.0,
+            488.0
+          ],
+          "block_id": "block_5_0028",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_5_0029"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_5_0009",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [
+      "2a"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [
+      {
+        "mention": "2a",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            515.0,
+            531.0,
+            904.0,
+            718.0
+          ],
+          "block_id": "block_5_0029",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "isolated yield of lauric acid 2a was formed. This recipe could",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            512.0,
+            299.0,
+            904.0,
+            438.0
+          ],
+          "block_id": "block_5_0008",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "a)$ | $n-C_{11}H_{23}CO_{2}H (2a)$ | 94 | 88; 2 | CyCHO (1b) |",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 1,
+          "bbox": [
+            515.0,
+            537.0,
+            904.0,
+            625.0
+          ],
+          "block_id": "block_5_0010",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "(3a)$ | $n-C_{11}H_{23}CO_2H (2a)$ | 100 | 95; 2 | $n-C_8H_{17",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 2,
+          "bbox": [
+            92.0,
+            372.0,
+            481.0,
+            731.0
+          ],
+          "block_id": "block_5_0017",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "as the initial product. Acid 2a emerged after 2 h (pages  S 3",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            512.0,
+            80.0,
+            904.0,
+            325.0
+          ],
+          "block_id": "block_5_0027",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "one failed to afford the acid 2a (Table 3, entry 2); the react",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            512.0,
+            323.0,
+            905.0,
+            488.0
+          ],
+          "block_id": "block_5_0028",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_5_0029"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_5_0010",
+    "doc_id": "5",
+    "local_ids": [],
+    "names": [
+      "7a"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [
+      {
+        "mention": "7a",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            515.0,
+            531.0,
+            904.0,
+            718.0
+          ],
+          "block_id": "block_5_0029",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "alone may afford peroxy acid 7a, via the reaction of the acyl",
+        "provenance": {
+          "doc_id": "5",
+          "source_file": "5.pdf",
+          "page": 3,
+          "bbox": [
+            512.0,
+            323.0,
+            905.0,
+            488.0
+          ],
+          "block_id": "block_5_0028",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_5_0029"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  }
+]

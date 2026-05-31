@@ -1,0 +1,5023 @@
+[
+  {
+    "molecule_card_id": "mol_10_0000",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*C([1*])O",
+    "canonical_smiles": "*C([1*])O",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "17a6457ccb3b72f1613ed291bb02ac0e034d730da456bf1cf32e77d4738a948c",
+        "figure_id": "17a6457ccb3b72f1613ed291bb02ac0e034d730da456bf1cf32e77d4738a948c",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 1,
+          "bbox": [
+            516.0,
+            500.0,
+            897.0,
+            564.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.01250625312656328,
+          0.3625067567340717,
+          0.1790895447723862,
+          0.8234721387539408
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "17a6457ccb3b72f1613ed291bb02ac0e034d730da456bf1cf32e77d4738a948c"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0001",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*C([1*])=O",
+    "canonical_smiles": "*C([1*])=O",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "17a6457ccb3b72f1613ed291bb02ac0e034d730da456bf1cf32e77d4738a948c",
+        "figure_id": "17a6457ccb3b72f1613ed291bb02ac0e034d730da456bf1cf32e77d4738a948c",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 1,
+          "bbox": [
+            516.0,
+            500.0,
+            897.0,
+            564.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.5982991495747874,
+          0.34908058055873575,
+          0.768384192096048,
+          0.8167590506662727
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "17a6457ccb3b72f1613ed291bb02ac0e034d730da456bf1cf32e77d4738a948c"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0002",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CC1(C)CCCC(C)(C)N1[O]",
+    "canonical_smiles": "CC1(C)CCCC(C)(C)N1[O]",
+    "inchi_key": "QYTDEUPAUMOIOP-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "17a6457ccb3b72f1613ed291bb02ac0e034d730da456bf1cf32e77d4738a948c",
+        "figure_id": "17a6457ccb3b72f1613ed291bb02ac0e034d730da456bf1cf32e77d4738a948c",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 1,
+          "bbox": [
+            516.0,
+            500.0,
+            897.0,
+            564.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.8364182091045522,
+          0.09398323322735193,
+          1.0,
+          0.7966197864032687
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "17a6457ccb3b72f1613ed291bb02ac0e034d730da456bf1cf32e77d4738a948c"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0003",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*C([1*])O",
+    "canonical_smiles": "*C([1*])O",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "e058f14b6d3cbb75860b92aecc25c612e9c9394605abd83a0c0b3cc8d49801e3",
+        "figure_id": "e058f14b6d3cbb75860b92aecc25c612e9c9394605abd83a0c0b3cc8d49801e3",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 1,
+          "bbox": [
+            520.0,
+            581.0,
+            897.0,
+            649.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.015007503751875938,
+          0.3484742371185593,
+          0.18159079539769885,
+          0.7915957978989495
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "e058f14b6d3cbb75860b92aecc25c612e9c9394605abd83a0c0b3cc8d49801e3"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0004",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*C([1*])=O",
+    "canonical_smiles": "*C([1*])=O",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "e058f14b6d3cbb75860b92aecc25c612e9c9394605abd83a0c0b3cc8d49801e3",
+        "figure_id": "e058f14b6d3cbb75860b92aecc25c612e9c9394605abd83a0c0b3cc8d49801e3",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 1,
+          "bbox": [
+            520.0,
+            581.0,
+            897.0,
+            649.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.6358179089544772,
+          0.3312656328164082,
+          0.8014007003501751,
+          0.7980490245122561
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "e058f14b6d3cbb75860b92aecc25c612e9c9394605abd83a0c0b3cc8d49801e3"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0005",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CC1(C)CC(O)CC(C)(C)N1[O]",
+    "canonical_smiles": "CC1(C)CC(O)CC(C)(C)N1[O]",
+    "inchi_key": "UZFMOKQJFYMBGY-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "e058f14b6d3cbb75860b92aecc25c612e9c9394605abd83a0c0b3cc8d49801e3",
+        "figure_id": "e058f14b6d3cbb75860b92aecc25c612e9c9394605abd83a0c0b3cc8d49801e3",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 1,
+          "bbox": [
+            520.0,
+            581.0,
+            897.0,
+            649.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.8269134567283641,
+          0.0,
+          0.9949974987493747,
+          0.8711855927963982
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "e058f14b6d3cbb75860b92aecc25c612e9c9394605abd83a0c0b3cc8d49801e3"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0006",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*ON1C(C)(C)CC(O)CC1(C)C",
+    "canonical_smiles": "*ON1C(C)(C)CC(O)CC1(C)C",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "1f3d7a9c1f40b6c19d9a2c60a2bb13e9f523c40094d289117df9a0af314adb28",
+        "figure_id": "1f3d7a9c1f40b6c19d9a2c60a2bb13e9f523c40094d289117df9a0af314adb28",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 1,
+          "bbox": [
+            828.0,
+            577.0,
+            900.0,
+            652.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.0,
+          0.0,
+          1.372811534500515,
+          1.0
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "1f3d7a9c1f40b6c19d9a2c60a2bb13e9f523c40094d289117df9a0af314adb28"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0007",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "OC/C=C/c1ccccc1",
+    "canonical_smiles": "OC/C=C/c1ccccc1",
+    "inchi_key": "OOCCDEMITAIZTP-QPJJXVBHSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "eae9964b18a2949f80a67bdfbcc830b6cb94bd2e8abdeab34f6bb5da4eb7534e",
+        "figure_id": "eae9964b18a2949f80a67bdfbcc830b6cb94bd2e8abdeab34f6bb5da4eb7534e",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 5,
+          "bbox": [
+            92.0,
+            136.0,
+            483.0,
+            211.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.004502251125562781,
+          0.2635389551062957,
+          0.28564282141070535,
+          0.7007740397144681
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "eae9964b18a2949f80a67bdfbcc830b6cb94bd2e8abdeab34f6bb5da4eb7534e"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0008",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "O=CC=Cc1ccccc1",
+    "canonical_smiles": "O=CC=Cc1ccccc1",
+    "inchi_key": "KJPRLNWUNMBNBZ-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "eae9964b18a2949f80a67bdfbcc830b6cb94bd2e8abdeab34f6bb5da4eb7534e",
+        "figure_id": "eae9964b18a2949f80a67bdfbcc830b6cb94bd2e8abdeab34f6bb5da4eb7534e",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 5,
+          "bbox": [
+            92.0,
+            136.0,
+            483.0,
+            211.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7488744372186094,
+          0.22161230315756683,
+          1.0,
+          0.6588473877657391
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "eae9964b18a2949f80a67bdfbcc830b6cb94bd2e8abdeab34f6bb5da4eb7534e"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0009",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CCCCCCCCC#CCO",
+    "canonical_smiles": "CCCCCCCCC#CCO",
+    "inchi_key": "BRZOPVQIKCYZBJ-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "c14ff106e68affe8481d0048c5e902f73db1841f7c133c06cd2eae2ea1620e4e",
+        "figure_id": "c14ff106e68affe8481d0048c5e902f73db1841f7c133c06cd2eae2ea1620e4e",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 5,
+          "bbox": [
+            92.0,
+            393.0,
+            481.0,
+            496.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.006003001500750375,
+          0.33124696838657947,
+          0.3441720860430215,
+          0.5279700587821026
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "c14ff106e68affe8481d0048c5e902f73db1841f7c133c06cd2eae2ea1620e4e"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0010",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CCCCCCCCC#CC=O",
+    "canonical_smiles": "CCCCCCCCC#CC=O",
+    "inchi_key": "QQPMNZBMAZZEQH-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "c14ff106e68affe8481d0048c5e902f73db1841f7c133c06cd2eae2ea1620e4e",
+        "figure_id": "c14ff106e68affe8481d0048c5e902f73db1841f7c133c06cd2eae2ea1620e4e",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 5,
+          "bbox": [
+            92.0,
+            393.0,
+            481.0,
+            496.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.6578289144572286,
+          0.008678959870390728,
+          0.9754877438719359,
+          0.19961607701898673
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "c14ff106e68affe8481d0048c5e902f73db1841f7c133c06cd2eae2ea1620e4e"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0011",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CCCCCCCCC#CC(=O)O",
+    "canonical_smiles": "CCCCCCCCC#CC(=O)O",
+    "inchi_key": "FSHGKCLIZVPYIQ-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "c14ff106e68affe8481d0048c5e902f73db1841f7c133c06cd2eae2ea1620e4e",
+        "figure_id": "c14ff106e68affe8481d0048c5e902f73db1841f7c133c06cd2eae2ea1620e4e",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 5,
+          "bbox": [
+            92.0,
+            393.0,
+            481.0,
+            496.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.6633316658329165,
+          0.5959552444334967,
+          0.9969984992496248,
+          0.7941248281407516
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "c14ff106e68affe8481d0048c5e902f73db1841f7c133c06cd2eae2ea1620e4e"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0012",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "O=Cc1ccc([N+](=O)[O-])cc1",
+    "canonical_smiles": "O=Cc1ccc([N+](=O)[O-])cc1",
+    "inchi_key": "BXRFQSNOROATLV-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "de5ac164a179355522427c23655c5f459112668f87fc67418614b9becf822f86",
+        "figure_id": "de5ac164a179355522427c23655c5f459112668f87fc67418614b9becf822f86",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 5,
+          "bbox": [
+            137.0,
+            705.0,
+            433.0,
+            847.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.015007503751875938,
+          0.5743062919019318,
+          0.3811905952976488,
+          0.7609558367700596
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "de5ac164a179355522427c23655c5f459112668f87fc67418614b9becf822f86"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0013",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "O=[N+]([O-])c1ccc(CO)cc1",
+    "canonical_smiles": "O=[N+]([O-])c1ccc(CO)cc1",
+    "inchi_key": "JKTYGPATCNUWKN-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "de5ac164a179355522427c23655c5f459112668f87fc67418614b9becf822f86",
+        "figure_id": "de5ac164a179355522427c23655c5f459112668f87fc67418614b9becf822f86",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 5,
+          "bbox": [
+            137.0,
+            705.0,
+            433.0,
+            847.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.015007503751875938,
+          0.15873187790067284,
+          0.42521260630315155,
+          0.34458377514115907
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "de5ac164a179355522427c23655c5f459112668f87fc67418614b9becf822f86"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0014",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "O=C(O)c1ccc([N+](=O)[O-])cc1",
+    "canonical_smiles": "O=C(O)c1ccc([N+](=O)[O-])cc1",
+    "inchi_key": "OTLNPYWUJOZPPA-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "de5ac164a179355522427c23655c5f459112668f87fc67418614b9becf822f86",
+        "figure_id": "de5ac164a179355522427c23655c5f459112668f87fc67418614b9becf822f86",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 5,
+          "bbox": [
+            137.0,
+            705.0,
+            433.0,
+            847.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.447223611805903,
+          0.5822827681783476,
+          0.8419209604802401,
+          0.7657417225359091
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "de5ac164a179355522427c23655c5f459112668f87fc67418614b9becf822f86"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0015",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "OCc1ccc(I)cc1",
+    "canonical_smiles": "OCc1ccc(I)cc1",
+    "inchi_key": "CNQRHSZYVFYOIE-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "8e99b5f9c321344a256c2e0f0187e0fb18eade36abc087b8ce317b962ff59b63",
+        "figure_id": "8e99b5f9c321344a256c2e0f0187e0fb18eade36abc087b8ce317b962ff59b63",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 5,
+          "bbox": [
+            515.0,
+            202.0,
+            902.0,
+            278.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.009004502251125562,
+          0.2974504745083912,
+          0.27463731865932967,
+          0.6454480884757248
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "8e99b5f9c321344a256c2e0f0187e0fb18eade36abc087b8ce317b962ff59b63"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0016",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "O=Cc1ccc(I)cc1",
+    "canonical_smiles": "O=Cc1ccc(I)cc1",
+    "inchi_key": "NIEBHDXUIJSHSL-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "8e99b5f9c321344a256c2e0f0187e0fb18eade36abc087b8ce317b962ff59b63",
+        "figure_id": "8e99b5f9c321344a256c2e0f0187e0fb18eade36abc087b8ce317b962ff59b63",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 5,
+          "bbox": [
+            515.0,
+            202.0,
+            902.0,
+            278.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7653826913456728,
+          0.32661228573470413,
+          1.0,
+          0.6726657789536167
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "8e99b5f9c321344a256c2e0f0187e0fb18eade36abc087b8ce317b962ff59b63"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0017",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "COc1ccc(CO)cc1",
+    "canonical_smiles": "COc1ccc(CO)cc1",
+    "inchi_key": "MSHFRERJPWKJFX-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "ed13d5bc14ca4aa262e213f32b2c86fb418502b072be191988723c660da0bba6",
+        "figure_id": "ed13d5bc14ca4aa262e213f32b2c86fb418502b072be191988723c660da0bba6",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 5,
+          "bbox": [
+            513.0,
+            556.0,
+            904.0,
+            627.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.0065032516258129065,
+          0.3040592623355703,
+          0.3076538269134567,
+          0.6626394958485532
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "ed13d5bc14ca4aa262e213f32b2c86fb418502b072be191988723c660da0bba6"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0018",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "COc1ccc(C=O)cc1",
+    "canonical_smiles": "COc1ccc(C=O)cc1",
+    "inchi_key": "ZRSNZINYAWTAHE-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "ed13d5bc14ca4aa262e213f32b2c86fb418502b072be191988723c660da0bba6",
+        "figure_id": "ed13d5bc14ca4aa262e213f32b2c86fb418502b072be191988723c660da0bba6",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 5,
+          "bbox": [
+            513.0,
+            556.0,
+            904.0,
+            627.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7338669334667334,
+          0.33970758964387854,
+          1.0,
+          0.696190862726961
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "ed13d5bc14ca4aa262e213f32b2c86fb418502b072be191988723c660da0bba6"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0019",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "COC(=O)c1ccc(CO)cc1",
+    "canonical_smiles": "COC(=O)c1ccc(CO)cc1",
+    "inchi_key": "VBWFYEFYHJRJER-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "554114755c68cec32932690d187e5af21ecbbfa0b4be8aead2816b4cd61fc8c4",
+        "figure_id": "554114755c68cec32932690d187e5af21ecbbfa0b4be8aead2816b4cd61fc8c4",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 5,
+          "bbox": [
+            513.0,
+            806.0,
+            904.0,
+            872.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.0065032516258129065,
+          0.3108885523843003,
+          0.32866433216608304,
+          0.6623277855143789
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "554114755c68cec32932690d187e5af21ecbbfa0b4be8aead2816b4cd61fc8c4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0020",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "OCc1cc(Cl)ccc1[N+](=O)[O-]",
+    "canonical_smiles": "O=[N+]([O-])c1ccc(Cl)cc1CO",
+    "inchi_key": "ULYZTHQGJXPEFT-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "757d22d18acd71e5ddfcf511a66f1ec9dc90ab790b98e90faf445965c92fd63c",
+        "figure_id": "757d22d18acd71e5ddfcf511a66f1ec9dc90ab790b98e90faf445965c92fd63c",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 6,
+          "bbox": [
+            91.0,
+            256.0,
+            483.0,
+            341.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.0065032516258129065,
+          0.10463609464306622,
+          0.2666333166583292,
+          0.7821104701286814
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "757d22d18acd71e5ddfcf511a66f1ec9dc90ab790b98e90faf445965c92fd63c"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0021",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "O=Cc1cc(Cl)ccc1[N+](=O)[O-]",
+    "canonical_smiles": "O=Cc1cc(Cl)ccc1[N+](=O)[O-]",
+    "inchi_key": "SWGPIDCNYAYXMJ-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "757d22d18acd71e5ddfcf511a66f1ec9dc90ab790b98e90faf445965c92fd63c",
+        "figure_id": "757d22d18acd71e5ddfcf511a66f1ec9dc90ab790b98e90faf445965c92fd63c",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 6,
+          "bbox": [
+            91.0,
+            256.0,
+            483.0,
+            341.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7718859429714857,
+          0.06561924579310932,
+          1.0,
+          0.748414100667355
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "757d22d18acd71e5ddfcf511a66f1ec9dc90ab790b98e90faf445965c92fd63c"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0022",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "O=Cc1ccc(C(=O)O)o1",
+    "canonical_smiles": "O=Cc1ccc(C(=O)O)o1",
+    "inchi_key": "SHNRXUWGUKDPMA-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "3d29b6d4040b414f0ef2d65f845de47e30afa22a4304219497c7e26209b52ba4",
+        "figure_id": "3d29b6d4040b414f0ef2d65f845de47e30afa22a4304219497c7e26209b52ba4",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 6,
+          "bbox": [
+            91.0,
+            643.0,
+            483.0,
+            709.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.0065032516258129065,
+          0.1982477725349161,
+          0.3021510755377689,
+          0.6015017643957113
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "3d29b6d4040b414f0ef2d65f845de47e30afa22a4304219497c7e26209b52ba4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0023",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "O=Cc1ccc(C=O)o1",
+    "canonical_smiles": "O=Cc1ccc(C=O)o1",
+    "inchi_key": "PXJJKVNIMAZHCB-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "3d29b6d4040b414f0ef2d65f845de47e30afa22a4304219497c7e26209b52ba4",
+        "figure_id": "3d29b6d4040b414f0ef2d65f845de47e30afa22a4304219497c7e26209b52ba4",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 6,
+          "bbox": [
+            91.0,
+            643.0,
+            483.0,
+            709.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.735367683841921,
+          0.2230287441017806,
+          1.0,
+          0.6240299203655882
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "3d29b6d4040b414f0ef2d65f845de47e30afa22a4304219497c7e26209b52ba4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0024",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "C#CCCCCCCCCCO",
+    "canonical_smiles": "C#CCCCCCCCCCO",
+    "inchi_key": "YUQZOUNRPZBQJK-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "bb485c68ad7d075b39c4fea5ded9b50054c838b9c1a3c7e800287ea84cc5dae4",
+        "figure_id": "bb485c68ad7d075b39c4fea5ded9b50054c838b9c1a3c7e800287ea84cc5dae4",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 6,
+          "bbox": [
+            513.0,
+            96.0,
+            904.0,
+            317.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.009004502251125562,
+          0.08091002022750506,
+          0.5117558779389695,
+          0.1982295495573874
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "bb485c68ad7d075b39c4fea5ded9b50054c838b9c1a3c7e800287ea84cc5dae4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0025",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "C#CCCCCCCCCC(=O)O",
+    "canonical_smiles": "C#CCCCCCCCCC(=O)O",
+    "inchi_key": "OAOUTNMJEFWJPO-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "bb485c68ad7d075b39c4fea5ded9b50054c838b9c1a3c7e800287ea84cc5dae4",
+        "figure_id": "bb485c68ad7d075b39c4fea5ded9b50054c838b9c1a3c7e800287ea84cc5dae4",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 6,
+          "bbox": [
+            513.0,
+            96.0,
+            904.0,
+            317.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.015007503751875938,
+          0.6857124214281053,
+          0.5042521260630315,
+          0.7962894490723623
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "bb485c68ad7d075b39c4fea5ded9b50054c838b9c1a3c7e800287ea84cc5dae4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0026",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "C#CCCCCCCCCC=O",
+    "canonical_smiles": "C#CCCCCCCCCC=O",
+    "inchi_key": "HAWMZSGUUUFMOE-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "bb485c68ad7d075b39c4fea5ded9b50054c838b9c1a3c7e800287ea84cc5dae4",
+        "figure_id": "bb485c68ad7d075b39c4fea5ded9b50054c838b9c1a3c7e800287ea84cc5dae4",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 6,
+          "bbox": [
+            513.0,
+            96.0,
+            904.0,
+            317.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.029514757378689346,
+          0.33240533310133324,
+          0.49674837418709356,
+          0.44298236074559016
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "bb485c68ad7d075b39c4fea5ded9b50054c838b9c1a3c7e800287ea84cc5dae4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0027",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*C([H])=C=C([H])CO",
+    "canonical_smiles": "*C=C=CCO",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "213ab0dac2fbe3d85970eb3fb7323be93aa7ef513abb60cccb4457e199db4d90",
+        "figure_id": "213ab0dac2fbe3d85970eb3fb7323be93aa7ef513abb60cccb4457e199db4d90",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 6,
+          "bbox": [
+            513.0,
+            556.0,
+            905.0,
+            623.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.009004502251125562,
+          0.20824698063317373,
+          0.27163581790895447,
+          0.6601872364753806
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "213ab0dac2fbe3d85970eb3fb7323be93aa7ef513abb60cccb4457e199db4d90"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0028",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[H]C(=C=C([H])C=O)C#CC#CC#CC#CC#CC#CC#CC#CC",
+    "canonical_smiles": "CC#CC#CC#CC#CC#CC#CC#CC#CC=C=CC=O",
+    "inchi_key": "HYKGYTJDDPGHMC-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "213ab0dac2fbe3d85970eb3fb7323be93aa7ef513abb60cccb4457e199db4d90",
+        "figure_id": "213ab0dac2fbe3d85970eb3fb7323be93aa7ef513abb60cccb4457e199db4d90",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 6,
+          "bbox": [
+            513.0,
+            556.0,
+            905.0,
+            623.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7553776888444222,
+          0.23261630815407705,
+          1.0,
+          0.686771957407275
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "213ab0dac2fbe3d85970eb3fb7323be93aa7ef513abb60cccb4457e199db4d90"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0029",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "OCC#Cc1ccccc1",
+    "canonical_smiles": "OCC#Cc1ccccc1",
+    "inchi_key": "NITUNGCLDSFVDL-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "73199de56b1020c114d746ffc375aaab9e7c8b1d5091ca09e70caeef195a140a",
+        "figure_id": "73199de56b1020c114d746ffc375aaab9e7c8b1d5091ca09e70caeef195a140a",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 6,
+          "bbox": [
+            516.0,
+            831.0,
+            900.0,
+            899.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.009504752376188095,
+          0.3079326287347495,
+          0.30815407703851927,
+          0.673204436613211
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "73199de56b1020c114d746ffc375aaab9e7c8b1d5091ca09e70caeef195a140a"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0030",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "O=CC#Cc1ccccc1",
+    "canonical_smiles": "O=CC#Cc1ccccc1",
+    "inchi_key": "IDASOVSVRKONFS-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "73199de56b1020c114d746ffc375aaab9e7c8b1d5091ca09e70caeef195a140a",
+        "figure_id": "73199de56b1020c114d746ffc375aaab9e7c8b1d5091ca09e70caeef195a140a",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 6,
+          "bbox": [
+            516.0,
+            831.0,
+            900.0,
+            899.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7378689344672336,
+          0.32492201514770125,
+          1.0,
+          0.6901938230261628
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "73199de56b1020c114d746ffc375aaab9e7c8b1d5091ca09e70caeef195a140a"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0031",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "COc1ccc(C#CCO)cc1",
+    "canonical_smiles": "COc1ccc(C#CCO)cc1",
+    "inchi_key": "SUSLWESCFPXNRH-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "ed2c56c01c3048cc6d1f18ec610f31ba94d496c24b3c8aa248d2715bbd70d8b6",
+        "figure_id": "ed2c56c01c3048cc6d1f18ec610f31ba94d496c24b3c8aa248d2715bbd70d8b6",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 7,
+          "bbox": [
+            137.0,
+            217.0,
+            433.0,
+            330.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.015007503751875938,
+          0.16293667195588743,
+          0.49074537268634316,
+          0.3801855678970707
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "ed2c56c01c3048cc6d1f18ec610f31ba94d496c24b3c8aa248d2715bbd70d8b6"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0032",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "COc1ccc(C#CC=O)cc1",
+    "canonical_smiles": "COc1ccc(C#CC=O)cc1",
+    "inchi_key": "UUHRJWZMOJWQAF-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "ed2c56c01c3048cc6d1f18ec610f31ba94d496c24b3c8aa248d2715bbd70d8b6",
+        "figure_id": "ed2c56c01c3048cc6d1f18ec610f31ba94d496c24b3c8aa248d2715bbd70d8b6",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 7,
+          "bbox": [
+            137.0,
+            217.0,
+            433.0,
+            330.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.016508254127063533,
+          0.5863708626560641,
+          0.45972986493246626,
+          0.8036197585972473
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "ed2c56c01c3048cc6d1f18ec610f31ba94d496c24b3c8aa248d2715bbd70d8b6"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0033",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "C#CC(O)c1ccccc1",
+    "canonical_smiles": "C#CC(O)c1ccccc1",
+    "inchi_key": "UIGLAZDLBZDVBL-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "2413a2cf02ef85f61ab09713082a97b718c1a1bbd27ca0a971362b3e3daceec4",
+        "figure_id": "2413a2cf02ef85f61ab09713082a97b718c1a1bbd27ca0a971362b3e3daceec4",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 7,
+          "bbox": [
+            139.0,
+            523.0,
+            433.0,
+            588.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.01250625312656328,
+          0.16842699700365646,
+          0.2036018009004502,
+          0.67027070236149
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "2413a2cf02ef85f61ab09713082a97b718c1a1bbd27ca0a971362b3e3daceec4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0034",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "C#CC(=O)c1ccccc1",
+    "canonical_smiles": "C#CC(=O)c1ccccc1",
+    "inchi_key": "JITPLZPWKYUTDM-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "2413a2cf02ef85f61ab09713082a97b718c1a1bbd27ca0a971362b3e3daceec4",
+        "figure_id": "2413a2cf02ef85f61ab09713082a97b718c1a1bbd27ca0a971362b3e3daceec4",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 7,
+          "bbox": [
+            139.0,
+            523.0,
+            433.0,
+            588.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.815407703851926,
+          0.14436599743170556,
+          1.0,
+          0.6393351314832674
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "2413a2cf02ef85f61ab09713082a97b718c1a1bbd27ca0a971362b3e3daceec4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0035",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CCCCC#CC(O)CCCCCCC",
+    "canonical_smiles": "CCCCC#CC(O)CCCCCCC",
+    "inchi_key": "WXCBVKIQCIIBDY-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "00ab1c5f9d45b6b92918262badc51ffd63ead8b72aba6e4e223604f9ee1c1a4e",
+        "figure_id": "00ab1c5f9d45b6b92918262badc51ffd63ead8b72aba6e4e223604f9ee1c1a4e",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 7,
+          "bbox": [
+            123.0,
+            783.0,
+            448.0,
+            930.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.009004502251125562,
+          0.033003176715261186,
+          0.45372686343171587,
+          0.3613424732670904
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "00ab1c5f9d45b6b92918262badc51ffd63ead8b72aba6e4e223604f9ee1c1a4e"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0036",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CCCCC#CC(=O)CCCC",
+    "canonical_smiles": "CCCCC#CC(=O)CCCC",
+    "inchi_key": "YUVPMURKSQFVAJ-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "00ab1c5f9d45b6b92918262badc51ffd63ead8b72aba6e4e223604f9ee1c1a4e",
+        "figure_id": "00ab1c5f9d45b6b92918262badc51ffd63ead8b72aba6e4e223604f9ee1c1a4e",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 7,
+          "bbox": [
+            123.0,
+            783.0,
+            448.0,
+            930.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.01250625312656328,
+          0.5085874155351787,
+          0.45672836418209106,
+          0.8386191826877907
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "00ab1c5f9d45b6b92918262badc51ffd63ead8b72aba6e4e223604f9ee1c1a4e"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0037",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CCCCC#CC(=O)c1ccc(C#N)cc1",
+    "canonical_smiles": "CCCCC#CC(=O)c1ccc(C#N)cc1",
+    "inchi_key": "DKJACZBXHDNCGP-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "6c75c8a99f12bd95045251416f5f73327e01e7e2e1372faa25d92287378d365f",
+        "figure_id": "6c75c8a99f12bd95045251416f5f73327e01e7e2e1372faa25d92287378d365f",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 7,
+          "bbox": [
+            560.0,
+            299.0,
+            856.0,
+            430.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.01250625312656328,
+          0.4973141564297065,
+          0.4957478739369685,
+          0.8475963013932389
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "6c75c8a99f12bd95045251416f5f73327e01e7e2e1372faa25d92287378d365f"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0038",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*.CCCCC#CC(O)c1ccc(C#N)cc1",
+    "canonical_smiles": "*.CCCCC#CC(O)c1ccc(C#N)cc1",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "6c75c8a99f12bd95045251416f5f73327e01e7e2e1372faa25d92287378d365f",
+        "figure_id": "6c75c8a99f12bd95045251416f5f73327e01e7e2e1372faa25d92287378d365f",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 7,
+          "bbox": [
+            560.0,
+            299.0,
+            856.0,
+            430.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.015007503751875938,
+          0.03632555577399595,
+          0.4957478739369685,
+          0.38660770073752837
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "6c75c8a99f12bd95045251416f5f73327e01e7e2e1372faa25d92287378d365f"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0039",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "OC/C=C/c1ccccc1",
+    "canonical_smiles": "OC/C=C/c1ccccc1",
+    "inchi_key": "OOCCDEMITAIZTP-QPJJXVBHSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "f1af6d03cba5e43ef335ff1d5c730c7aacc437f59d69cd19a759155b1ec8c34a",
+        "figure_id": "f1af6d03cba5e43ef335ff1d5c730c7aacc437f59d69cd19a759155b1ec8c34a",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 7,
+          "bbox": [
+            523.0,
+            652.0,
+            894.0,
+            724.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.009504752376188095,
+          0.2776842966938014,
+          0.29364682341170584,
+          0.7059438810314248
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "f1af6d03cba5e43ef335ff1d5c730c7aacc437f59d69cd19a759155b1ec8c34a"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0040",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CC.O=CC=Cc1ccccc1",
+    "canonical_smiles": "CC.O=CC=Cc1ccccc1",
+    "inchi_key": "HEBWMRLUEJCRGH-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "f1af6d03cba5e43ef335ff1d5c730c7aacc437f59d69cd19a759155b1ec8c34a",
+        "figure_id": "f1af6d03cba5e43ef335ff1d5c730c7aacc437f59d69cd19a759155b1ec8c34a",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 7,
+          "bbox": [
+            523.0,
+            652.0,
+            894.0,
+            724.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.753376688344172,
+          0.23466278593842377,
+          1.0,
+          0.6668334167083542
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "f1af6d03cba5e43ef335ff1d5c730c7aacc437f59d69cd19a759155b1ec8c34a"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0041",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "C#CC(O)c1ccccc1",
+    "canonical_smiles": "C#CC(O)c1ccccc1",
+    "inchi_key": "UIGLAZDLBZDVBL-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "b0ae60ce9c73111dda40c951b21ca0c020e8bb7db980aa7db987809aa6d7f263",
+        "figure_id": "b0ae60ce9c73111dda40c951b21ca0c020e8bb7db980aa7db987809aa6d7f263",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 8,
+          "bbox": [
+            139.0,
+            96.0,
+            433.0,
+            155.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.01250625312656328,
+          0.1452130076499568,
+          0.18259129564782392,
+          0.6591906268320405
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "b0ae60ce9c73111dda40c951b21ca0c020e8bb7db980aa7db987809aa6d7f263"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0042",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "C#CC(=O)c1ccccc1",
+    "canonical_smiles": "C#CC(=O)c1ccccc1",
+    "inchi_key": "JITPLZPWKYUTDM-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "b0ae60ce9c73111dda40c951b21ca0c020e8bb7db980aa7db987809aa6d7f263",
+        "figure_id": "b0ae60ce9c73111dda40c951b21ca0c020e8bb7db980aa7db987809aa6d7f263",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 8,
+          "bbox": [
+            139.0,
+            96.0,
+            433.0,
+            155.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.8359179589794897,
+          0.1433023101808784,
+          1.0,
+          0.6477264420175703
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "b0ae60ce9c73111dda40c951b21ca0c020e8bb7db980aa7db987809aa6d7f263"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0043",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CC(O)c1ccccc1",
+    "canonical_smiles": "CC(O)c1ccccc1",
+    "inchi_key": "WAPNOHKVXSQRPX-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "6de3915bad06bd5a7a0f606e2ca493f2b886f563ddd5a1a8056051e0b931adc8",
+        "figure_id": "6de3915bad06bd5a7a0f606e2ca493f2b886f563ddd5a1a8056051e0b931adc8",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 8,
+          "bbox": [
+            124.0,
+            812.0,
+            448.0,
+            870.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.01250625312656328,
+          0.21441588961683414,
+          0.13156578289144572,
+          0.6453918277466708
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "6de3915bad06bd5a7a0f606e2ca493f2b886f563ddd5a1a8056051e0b931adc8"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0044",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CC(=O)c1ccccc1",
+    "canonical_smiles": "CC(=O)c1ccccc1",
+    "inchi_key": "KWOLFJPFCHCOCG-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "6de3915bad06bd5a7a0f606e2ca493f2b886f563ddd5a1a8056051e0b931adc8",
+        "figure_id": "6de3915bad06bd5a7a0f606e2ca493f2b886f563ddd5a1a8056051e0b931adc8",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 8,
+          "bbox": [
+            124.0,
+            812.0,
+            448.0,
+            870.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7933966983491746,
+          0.17367687058963566,
+          0.9144572286143071,
+          0.608941126511809
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "6de3915bad06bd5a7a0f606e2ca493f2b886f563ddd5a1a8056051e0b931adc8"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0045",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CC(O)c1ccccc1",
+    "canonical_smiles": "CC(O)c1ccccc1",
+    "inchi_key": "WAPNOHKVXSQRPX-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "4bb99725223a53a6d8e8a045abcac0e22d7db937be1d6852d2ccb4184efb5c77",
+        "figure_id": "4bb99725223a53a6d8e8a045abcac0e22d7db937be1d6852d2ccb4184efb5c77",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 8,
+          "bbox": [
+            553.0,
+            317.0,
+            864.0,
+            394.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.009504752376188095,
+          0.1839540459885115,
+          0.1695847923961981,
+          0.5978506494626623
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "4bb99725223a53a6d8e8a045abcac0e22d7db937be1d6852d2ccb4184efb5c77"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_10_0046",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CC(=O)c1ccccc1",
+    "canonical_smiles": "CC(=O)c1ccccc1",
+    "inchi_key": "KWOLFJPFCHCOCG-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "4bb99725223a53a6d8e8a045abcac0e22d7db937be1d6852d2ccb4184efb5c77",
+        "figure_id": "4bb99725223a53a6d8e8a045abcac0e22d7db937be1d6852d2ccb4184efb5c77",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 8,
+          "bbox": [
+            553.0,
+            317.0,
+            864.0,
+            394.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7328664332166083,
+          0.22687665671916415,
+          0.8959479739869936,
+          0.6453721113430277
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "4bb99725223a53a6d8e8a045abcac0e22d7db937be1d6852d2ccb4184efb5c77"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_tbl_10_0000",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [
+      "1a"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [
+      "n-C11H23CH2OH"
+    ],
+    "source_mentions": [
+      {
+        "mention": "1a",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            94.0,
+            726.0,
+            480.0,
+            896.0
+          ],
+          "block_id": "block_10_0018",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "r research using 1-dodecanol (1a) as the initial substrate for",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 1,
+          "bbox": [
+            512.0,
+            677.0,
+            905.0,
+            882.0
+          ],
+          "block_id": "block_10_0012",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "| n-C11H23CH2OH 1a | Fe(NO3)3·9H2O (x mol%) 4",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            94.0,
+            99.0,
+            904.0,
+            308.0
+          ],
+          "block_id": "block_10_0015",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "34% NMR recovery of substrate 1a was observed in the reaction",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            96.0,
+            349.0,
+            481.0,
+            584.0
+          ],
+          "block_id": "block_10_0016",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "∼30% NMR recovery of alcohol 1a after 24 h (Table  ^ { 2 , }",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            89.0,
+            584.0,
+            481.0,
+            683.0
+          ],
+          "block_id": "block_10_0017",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "NMR recovery of alcohol 1a (Table 2, entry 7). Thus, DCE",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            512.0,
+            349.0,
+            904.0,
+            376.0
+          ],
+          "block_id": "block_10_0019",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "1 | $n-C_{11}H_{23}CH_2OH$  (1a) | 5 | 10 | 10 | 19 | 89 (2a)",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 3,
+          "bbox": [
+            96.0,
+            112.0,
+            480.0,
+            381.0
+          ],
+          "block_id": "block_10_0023",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "a 100 mmol scale reaction of 1a applying a slow flow of air w",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 3,
+          "bbox": [
+            512.0,
+            429.0,
+            904.0,
+            471.0
+          ],
+          "block_id": "block_10_0026",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "ol), NaCl (5.9 mg, 0.1 mmol), 1a (188.0 mg, 99% purity, 1.0 mm",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 4,
+          "bbox": [
+            91.0,
+            850.0,
+            481.0,
+            933.0
+          ],
+          "block_id": "block_10_0034",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "{ a } } , ^ { 2 0 } and 2.5% 1a were observed by NMR analysis",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 4,
+          "bbox": [
+            512.0,
+            80.0,
+            904.0,
+            287.0
+          ],
+          "block_id": "block_10_0035",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "ly. After 10 min of stirring, 1a (18.8203 g, 99% purity, 100.0",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 8,
+          "bbox": [
+            89.0,
+            495.0,
+            481.0,
+            783.0
+          ],
+          "block_id": "block_10_0071",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_10_0018"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_10_0001",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [
+      "2a"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [
+      "n-C11H23CHO"
+    ],
+    "source_mentions": [
+      {
+        "mention": "2a",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            94.0,
+            726.0,
+            480.0,
+            896.0
+          ],
+          "block_id": "block_10_0018",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "activity of the iron catalyst12a and that the cation of the in",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 1,
+          "bbox": [
+            91.0,
+            883.0,
+            483.0,
+            926.0
+          ],
+          "block_id": "block_10_0008",
+          "figure_id": null,
+          "table_id": null,
+          "section": "RESULTS AND DISCUSSION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "as the oxidant gave aldehyde 2a in 63% NMR yield as well as 2",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 1,
+          "bbox": [
+            512.0,
+            677.0,
+            905.0,
+            882.0
+          ],
+          "block_id": "block_10_0012",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "| n-C11H23CHO + n-C11H23COOH 2a 3a; Entry | x | y | z | t (h)",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            94.0,
+            99.0,
+            904.0,
+            308.0
+          ],
+          "block_id": "block_10_0015",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "NMR yield of aldehyde 2a with 34% NMR recovery of subs",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            96.0,
+            349.0,
+            481.0,
+            584.0
+          ],
+          "block_id": "block_10_0016",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "18−31% NMR yields of aldehyde 2a (Table 2, entries 1− 4). The",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            89.0,
+            584.0,
+            481.0,
+            683.0
+          ],
+          "block_id": "block_10_0017",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "(1a) | 5 | 10 | 10 | 19 | 89 (2a) | 3 | 2.5; 2 | $n-C_{15}H_{3",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 3,
+          "bbox": [
+            96.0,
+            112.0,
+            480.0,
+            381.0
+          ],
+          "block_id": "block_10_0023",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "cal Procedure I: n-Dodecanal (2a) (jxg-5-192).",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 4,
+          "bbox": [
+            107.0,
+            775.0,
+            457.0,
+            789.0
+          ],
+          "block_id": "block_10_0033",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "164.6 mg, 89%) as an oil (88% 2a, 3%  { 3 \\mathbf { a } } , ^",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 4,
+          "bbox": [
+            512.0,
+            80.0,
+            904.0,
+            287.0
+          ],
+          "block_id": "block_10_0035",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "te = 100/1 (3.2 L)) to afford 2a (16.3054 g, 88%) as an oil (8",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 8,
+          "bbox": [
+            89.0,
+            495.0,
+            481.0,
+            783.0
+          ],
+          "block_id": "block_10_0071",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_10_0018"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_10_0002",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [
+      "Fe(NO3)3·9H2O"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [
+      {
+        "mention": "Fe(NO3)3·9H2O",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            94.0,
+            726.0,
+            480.0,
+            896.0
+          ],
+          "block_id": "block_10_0018",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "| n-C11H23CH2OH 1a | Fe(NO3)3·9H2O (x mol%) 4-OH-TEMPO (y mol%)",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            94.0,
+            99.0,
+            904.0,
+            308.0
+          ],
+          "block_id": "block_10_0015",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_10_0018"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_10_0003",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [
+      "4-OH-TEMPO"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [
+      {
+        "mention": "4-OH-TEMPO",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            94.0,
+            726.0,
+            480.0,
+            896.0
+          ],
+          "block_id": "block_10_0018",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "} _ { 3 } ) _ { 3 } . · 9H2O, 4-OH-TEMPO, and NaCl has been developed.",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 1,
+          "bbox": [
+            104.0,
+            337.0,
+            891.0,
+            405.0
+          ],
+          "block_id": "block_10_0003",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron-Catalyzed Aerobic Oxidation of Alcohols: Lower Cost and Improved Selectivity",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "ic oxidation, iron catalysis, 4-OH-TEMPO, aldehydes, ketones",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 1,
+          "bbox": [
+            105.0,
+            408.0,
+            608.0,
+            422.0
+          ],
+          "block_id": "block_10_0004",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron-Catalyzed Aerobic Oxidation of Alcohols: Lower Cost and Improved Selectivity",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "industrial-scale production. 4-OH-TEMPO is a much cheaper N-oxyl even",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 1,
+          "bbox": [
+            89.0,
+            470.0,
+            483.0,
+            850.0
+          ],
+          "block_id": "block_10_0006",
+          "figure_id": null,
+          "table_id": null,
+          "section": "INTRODUCTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "ntry 2). When the loadings of 4-OH-TEMPO and NaCl were increased to 10",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 1,
+          "bbox": [
+            512.0,
+            677.0,
+            905.0,
+            882.0
+          ],
+          "block_id": "block_10_0012",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "H 1a | Fe(NO3)3·9H2O (x mol%) 4-OH-TEMPO (y mol%) NaCl (z mol%) DCE, O",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            94.0,
+            99.0,
+            904.0,
+            308.0
+          ],
+          "block_id": "block_10_0015",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "H } _ { 2 } \\mathrm { O } , , 4-OH-TEMPO, and NaCl to shorten the reac",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            96.0,
+            349.0,
+            481.0,
+            584.0
+          ],
+          "block_id": "block_10_0016",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "ketones using Fe(NO ) ·9H O, 4-OH-TEMPO, and NaCl as the catalyst sys",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 3,
+          "bbox": [
+            512.0,
+            810.0,
+            904.0,
+            933.0
+          ],
+          "block_id": "block_10_0030",
+          "figure_id": null,
+          "table_id": null,
+          "section": "CONCLUSIONS",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "from Energy Chemical or J&K. 4-OH-TEMPO was purchased from Adamas. Na",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 4,
+          "bbox": [
+            91.0,
+            531.0,
+            481.0,
+            775.0
+          ],
+          "block_id": "block_10_0032",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "0 . 3 \\right. mg, 0.05 mmol), 4-OH-TEMPO (17.2 mg, 0.1 mmol), NaCl (5.",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 4,
+          "bbox": [
+            91.0,
+            850.0,
+            481.0,
+            933.0
+          ],
+          "block_id": "block_10_0034",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "m { O } (20.4 mg, 0.05 mmol), 4-OH-TEMPO (17.3 mg, 0.1 mmol), NaCl (5.",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 4,
+          "bbox": [
+            512.0,
+            422.0,
+            904.0,
+            643.0
+          ],
+          "block_id": "block_10_0037",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "m { O } (20.3 mg, 0.05 mmol), 4-OH-TEMPO (17.4 mg, 0.1 mmol), NaCl (5.",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 4,
+          "bbox": [
+            512.0,
+            794.0,
+            904.0,
+            932.0
+          ],
+          "block_id": "block_10_0039",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "m { O } (20.2 mg, 0.05 mmol), 4-OH-TEMPO (8.7 mg, 0.05 mmol), NaCl (3.",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 5,
+          "bbox": [
+            91.0,
+            500.0,
+            481.0,
+            690.0
+          ],
+          "block_id": "block_10_0044",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "f { O } (20.4 mg, 0.05 mmol), 4-OH-TEMPO (8.7 mg, 0.05 mmol), NaCl (2.",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 5,
+          "bbox": [
+            91.0,
+            850.0,
+            481.0,
+            933.0
+          ],
+          "block_id": "block_10_0046",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "m { O } (20.3 mg, 0.05 mmol), 4-OH-TEMPO (8.7 mg, 0.05 mmol), NaCl (2.",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 5,
+          "bbox": [
+            512.0,
+            283.0,
+            904.0,
+            542.0
+          ],
+          "block_id": "block_10_0048",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "· 9H O (20.1 mg, 0.05 mmol), 4-OH-TEMPO (8.7 mg, 0.05 mmol), NaCl (2.",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 5,
+          "bbox": [
+            512.0,
+            630.0,
+            905.0,
+            792.0
+          ],
+          "block_id": "block_10_0050",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "m { O } (20.4 mg, 0.05 mmol), 4-OH-TEMPO (8.7 mg, 0.05 mmol), NaCl (2.",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 5,
+          "bbox": [
+            512.0,
+            877.0,
+            904.0,
+            933.0
+          ],
+          "block_id": "block_10_0052",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "m { O } (20.4 mg, 0.05 mmol), 4-OH-TEMPO (8.6 mg, 0.05 mmol), NaCl (2.",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 6,
+          "bbox": [
+            89.0,
+            347.0,
+            483.0,
+            627.0
+          ],
+          "block_id": "block_10_0053",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "m { O } (20.3 mg, 0.05 mmol), 4-OH-TEMPO (8.7 mg, 0.05 mmol), NaCl (3.",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 6,
+          "bbox": [
+            89.0,
+            713.0,
+            483.0,
+            933.0
+          ],
+          "block_id": "block_10_0054",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "rm { O } (40.5 mg, 0.1 mmol), 4-OH-TEMPO (17.4 mg, 0.1 mmol), NaCl (5.",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 6,
+          "bbox": [
+            512.0,
+            323.0,
+            905.0,
+            542.0
+          ],
+          "block_id": "block_10_0055",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "m { O } (20.4 mg, 0.05 mmol), 4-OH-TEMPO (17.2 mg, 0.1 2mmol), NaCl (5",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 6,
+          "bbox": [
+            512.0,
+            625.0,
+            905.0,
+            815.0
+          ],
+          "block_id": "block_10_0056",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "· 9H O (20.1 mg, 0.05 mmol), 4-OH-TEMPO (8.6 mg, 0.05 mmol), NaCl (2.",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 6,
+          "bbox": [
+            512.0,
+            904.0,
+            904.0,
+            933.0
+          ],
+          "block_id": "block_10_0057",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "} . 9H O (40.4 mg, 0.1 mmol), 4-OH-TEMPO (17.2 mg, 0.1 2mmol), NaCl (5",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 7,
+          "bbox": [
+            89.0,
+            333.0,
+            481.0,
+            509.0
+          ],
+          "block_id": "block_10_0059",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "· 9H O (20.4 mg, 0.05 mmol), 4-OH-TEMPO (8.5 mg, 0.05 mmol), NaCl (2.",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 7,
+          "bbox": [
+            89.0,
+            591.0,
+            481.0,
+            766.0
+          ],
+          "block_id": "block_10_0061",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "m { O } (20.2 mg, 0.05 mmol), 4-OH-TEMPO (8.6 mg, 0.05 mmol), NaCl (2.",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 7,
+          "bbox": [
+            512.0,
+            80.0,
+            904.0,
+            284.0
+          ],
+          "block_id": "block_10_0063",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "m { O } (20.3 mg, 0.05 mmol), 4-OH-TEMPO (8.6 mg, 0.05 mmol), NaCl (3.",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 7,
+          "bbox": [
+            512.0,
+            433.0,
+            904.0,
+            623.0
+          ],
+          "block_id": "block_10_0065",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "m { O } (20.4 mg, 0.05 mmol), 4-OH-TEMPO (17.2 mg, 0.1 mmol), NaCl (5.",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 7,
+          "bbox": [
+            512.0,
+            727.0,
+            904.0,
+            932.0
+          ],
+          "block_id": "block_10_0067",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "m { O } (20.2 mg, 0.05 mmol), 4-OH-TEMPO (8.8 mg, 0.05 mmol), NaCl (2.",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 8,
+          "bbox": [
+            89.0,
+            158.0,
+            481.0,
+            323.0
+          ],
+          "block_id": "block_10_0069",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "m { O } (2.0210 g, 5.0 mmol), 4-OH-TEMPO (1.7212 g, 10.0 mmol), NaCl (",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 8,
+          "bbox": [
+            89.0,
+            495.0,
+            481.0,
+            783.0
+          ],
+          "block_id": "block_10_0071",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "{ O } (10.1407 g, 25.1 mmol), 4-OH-TEMPO (4.3114 g, 25.0 mmol), NaCl (",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 8,
+          "bbox": [
+            91.0,
+            876.0,
+            481.0,
+            932.0
+          ],
+          "block_id": "block_10_0073",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "{ O } (10.1058 g, 25.0 mmol), 4-OH-TEMPO (4.2969 g, 24.9 mmol), NaCl (",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 8,
+          "bbox": [
+            512.0,
+            400.0,
+            904.0,
+            596.0
+          ],
+          "block_id": "block_10_0075",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_10_0018"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_10_0004",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [
+      "NaCl"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [
+      {
+        "mention": "NaCl",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            94.0,
+            726.0,
+            480.0,
+            896.0
+          ],
+          "block_id": "block_10_0018",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "3 } . · 9H2O, 4-OH-TEMPO, and NaCl has been developed. Compared",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 1,
+          "bbox": [
+            104.0,
+            337.0,
+            891.0,
+            405.0
+          ],
+          "block_id": "block_10_0003",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Iron-Catalyzed Aerobic Oxidation of Alcohols: Lower Cost and Improved Selectivity",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "} } _ { 2 } \\mathrm { O } and NaCl are both very cheap chemicals",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 1,
+          "bbox": [
+            89.0,
+            470.0,
+            483.0,
+            850.0
+          ],
+          "block_id": "block_10_0006",
+          "figure_id": null,
+          "table_id": null,
+          "section": "INTRODUCTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "4 { \\cdot } O H } -TEMPO, and NaCl as the catalysts, the reactio",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 1,
+          "bbox": [
+            512.0,
+            677.0,
+            905.0,
+            882.0
+          ],
+          "block_id": "block_10_0012",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "(x mol%) 4-OH-TEMPO (y mol%) NaCl (z mol%) DCE, O2 bag, 25 °C,",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            94.0,
+            99.0,
+            904.0,
+            308.0
+          ],
+          "block_id": "block_10_0015",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "on for 24 h in the absence of NaCl, indicating a significant eff",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            96.0,
+            349.0,
+            481.0,
+            584.0
+          ],
+          "block_id": "block_10_0016",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "} \\mathrm { - } - TEMPO, and NaCl were required with a much sho",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            512.0,
+            376.0,
+            904.0,
+            634.0
+          ],
+          "block_id": "block_10_0020",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "e(NO ) ·9H O, 4-OH-TEMPO, and NaCl as the catalyst system showed",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 3,
+          "bbox": [
+            512.0,
+            810.0,
+            904.0,
+            933.0
+          ],
+          "block_id": "block_10_0030",
+          "figure_id": null,
+          "table_id": null,
+          "section": "CONCLUSIONS",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "PO was purchased from Adamas. NaCl was purchased from Sinopharm.",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 4,
+          "bbox": [
+            91.0,
+            531.0,
+            481.0,
+            775.0
+          ],
+          "block_id": "block_10_0032",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "OH-TEMPO (17.2 mg, 0.1 mmol), NaCl (5.9 mg, 0.1 mmol), 1a (188.0",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 4,
+          "bbox": [
+            91.0,
+            850.0,
+            481.0,
+            933.0
+          ],
+          "block_id": "block_10_0034",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "OH-TEMPO (17.3 mg, 0.1 mmol), NaCl (5.8 mg, 0.1 mmol), and 1b (2",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 4,
+          "bbox": [
+            512.0,
+            422.0,
+            904.0,
+            643.0
+          ],
+          "block_id": "block_10_0037",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "OH-TEMPO (17.4 mg, 0.1 mmol), NaCl (5.8 mg, 0.1 mmol), and  \\mat",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 4,
+          "bbox": [
+            512.0,
+            794.0,
+            904.0,
+            932.0
+          ],
+          "block_id": "block_10_0039",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "OH-TEMPO (17.3 mg, 0.1 mmol), NaCl (5.9 mg, 0.1 mmol), and 1d (1",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 5,
+          "bbox": [
+            91.0,
+            213.0,
+            481.0,
+            378.0
+          ],
+          "block_id": "block_10_0042",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "OH-TEMPO (8.7 mg, 0.05 mmol), NaCl (3.0 mg, 0.05 mmol), and  \\ma",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 5,
+          "bbox": [
+            91.0,
+            500.0,
+            481.0,
+            690.0
+          ],
+          "block_id": "block_10_0044",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "OH-TEMPO (8.7 mg, 0.05 mmol), NaCl (2.9 mg, 0.05 mmol), and 1f (",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 5,
+          "bbox": [
+            91.0,
+            850.0,
+            481.0,
+            933.0
+          ],
+          "block_id": "block_10_0046",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "OH-TEMPO (8.7 mg, 0.05 mmol), NaCl (2.9 mg, 0.05 mmol),  \\mathbf",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 5,
+          "bbox": [
+            512.0,
+            283.0,
+            904.0,
+            542.0
+          ],
+          "block_id": "block_10_0048",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "OH-TEMPO (8.7 mg, 0.05 mmol), NaCl (2.9 mg, 0.05 mmol), and 1h (",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 5,
+          "bbox": [
+            512.0,
+            630.0,
+            905.0,
+            792.0
+          ],
+          "block_id": "block_10_0050",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "OH-TEMPO (8.7 mg, 0.05 mmol), NaCl (2.9 mg, 0.05 mmol), and 1i (",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 5,
+          "bbox": [
+            512.0,
+            877.0,
+            904.0,
+            933.0
+          ],
+          "block_id": "block_10_0052",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "OH-TEMPO (8.6 mg, 0.05 mmol), NaCl (2.9 mg, 0.05 mmol), and 1j (",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 6,
+          "bbox": [
+            89.0,
+            347.0,
+            483.0,
+            627.0
+          ],
+          "block_id": "block_10_0053",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "OH-TEMPO (8.7 mg, 0.05 mmol), NaCl (3.0 mg, 0.05 mmol), and 1k (",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 6,
+          "bbox": [
+            89.0,
+            713.0,
+            483.0,
+            933.0
+          ],
+          "block_id": "block_10_0054",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "OH-TEMPO (17.4 mg, 0.1 mmol), NaCl (5.8 mg, 0.1 mmol), and  1 1",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 6,
+          "bbox": [
+            512.0,
+            323.0,
+            905.0,
+            542.0
+          ],
+          "block_id": "block_10_0055",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "H-TEMPO (17.2 mg, 0.1 2mmol), NaCl (5.9 mg, 0.1 mmol), and  \\mat",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 6,
+          "bbox": [
+            512.0,
+            625.0,
+            905.0,
+            815.0
+          ],
+          "block_id": "block_10_0056",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "OH-TEMPO (8.6 mg, 0.05 mmol), NaCl (2.9 mg, 0.05 mmol), and 1n (",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 6,
+          "bbox": [
+            512.0,
+            904.0,
+            904.0,
+            933.0
+          ],
+          "block_id": "block_10_0057",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "H-TEMPO (17.2 mg, 0.1 2mmol), NaCl (5.9 mg, 0.1 mmol), and  { \\m",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 7,
+          "bbox": [
+            89.0,
+            333.0,
+            481.0,
+            509.0
+          ],
+          "block_id": "block_10_0059",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "OH-TEMPO (8.5 mg, 0.05 mmol), NaCl (2.9 mg, 0.05 mmol), and 1p (",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 7,
+          "bbox": [
+            89.0,
+            591.0,
+            481.0,
+            766.0
+          ],
+          "block_id": "block_10_0061",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "OH-TEMPO (8.6 mg, 0.05 mmol), NaCl (2.9 mg, 0.05 mmol), and  { \\",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 7,
+          "bbox": [
+            512.0,
+            80.0,
+            904.0,
+            284.0
+          ],
+          "block_id": "block_10_0063",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "OH-TEMPO (8.6 mg, 0.05 mmol), NaCl (3.0 mg, 0.05 mmol), and  \\ma",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 7,
+          "bbox": [
+            512.0,
+            433.0,
+            904.0,
+            623.0
+          ],
+          "block_id": "block_10_0065",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "OH-TEMPO (17.2 mg, 0.1 mmol), NaCl (5.7 mg, 0.1 mmol), E-1d (134",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 7,
+          "bbox": [
+            512.0,
+            727.0,
+            904.0,
+            932.0
+          ],
+          "block_id": "block_10_0067",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "OH-TEMPO (8.8 mg, 0.05 mmol), NaCl (2.7 mg, 0.05 mmol), 1p (132.",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 8,
+          "bbox": [
+            89.0,
+            158.0,
+            481.0,
+            323.0
+          ],
+          "block_id": "block_10_0069",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "-TEMPO (1.7212 g, 10.0 mmol), NaCl (0.5846 g, 10.0 mmol), and DC",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 8,
+          "bbox": [
+            89.0,
+            495.0,
+            481.0,
+            783.0
+          ],
+          "block_id": "block_10_0071",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "-TEMPO (4.3114 g, 25.0 mmol), NaCl (1.4754 g, 25.2 mmol), 1s (61",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 8,
+          "bbox": [
+            91.0,
+            876.0,
+            481.0,
+            932.0
+          ],
+          "block_id": "block_10_0073",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "-TEMPO (4.2969 g, 24.9 mmol), NaCl (1.5068 g, 25.8 mmol), and 1s",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 8,
+          "bbox": [
+            512.0,
+            400.0,
+            904.0,
+            596.0
+          ],
+          "block_id": "block_10_0075",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_10_0018"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_10_0005",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [
+      "CH3CN"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [
+      {
+        "mention": "CH3CN",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            94.0,
+            726.0,
+            480.0,
+            896.0
+          ],
+          "block_id": "block_10_0018",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_10_0018"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_10_0006",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [
+      "THF"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [
+      {
+        "mention": "THF",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            94.0,
+            726.0,
+            480.0,
+            896.0
+          ],
+          "block_id": "block_10_0018",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "H } _ { 3 } \\mathrm { C N } , THF, EtOAc, and dioxane for 24 h",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            89.0,
+            584.0,
+            481.0,
+            683.0
+          ],
+          "block_id": "block_10_0017",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "ohol 1e (Table 3, entry  { \\mathfrak { s } } ) , , arylsubstitu",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            512.0,
+            795.0,
+            904.0,
+            933.0
+          ],
+          "block_id": "block_10_0022",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": ".0 mL) for 4 h afforded  4 \\mathfrak { p } ^ { 1 2 \\mathrm { b",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 7,
+          "bbox": [
+            89.0,
+            591.0,
+            481.0,
+            766.0
+          ],
+          "block_id": "block_10_0061",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "(400 MHz, CDCl ) δ 9.76  ( \\mathfrak { t } , J = 1 . 6 \\mathrm",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 8,
+          "bbox": [
+            89.0,
+            495.0,
+            481.0,
+            783.0
+          ],
+          "block_id": "block_10_0071",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "cing the preparation of  { \\mathfrak { 2 c } } , 2h, and 4r.",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 8,
+          "bbox": [
+            512.0,
+            875.0,
+            904.0,
+            932.0
+          ],
+          "block_id": "block_10_0088",
+          "figure_id": null,
+          "table_id": null,
+          "section": "ACKNOWLEDGMENTS",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_10_0018"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_10_0007",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [
+      "EtOAc"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [
+      {
+        "mention": "EtOAc",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            94.0,
+            726.0,
+            480.0,
+            896.0
+          ],
+          "block_id": "block_10_0018",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "{ 3 } \\mathrm { C N } , THF, EtOAc, and dioxane for 24 h gave on",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            89.0,
+            584.0,
+            481.0,
+            683.0
+          ],
+          "block_id": "block_10_0017",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_10_0018"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_10_0008",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [
+      "dioxane"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [
+      {
+        "mention": "dioxane",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            94.0,
+            726.0,
+            480.0,
+            896.0
+          ],
+          "block_id": "block_10_0018",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "hrm { C N } , THF, EtOAc, and dioxane for 24 h gave only 18−31% NMR",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            89.0,
+            584.0,
+            481.0,
+            683.0
+          ],
+          "block_id": "block_10_0017",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_10_0018"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_10_0009",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [
+      "DCM"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [
+      {
+        "mention": "DCM",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            94.0,
+            726.0,
+            480.0,
+            896.0
+          ],
+          "block_id": "block_10_0018",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "chlorinated solvents such as DCM and  \\mathrm { C H C l } _ {",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            89.0,
+            584.0,
+            481.0,
+            683.0
+          ],
+          "block_id": "block_10_0017",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "d the residue was washed with DCM (10 mL × 3) and added to the",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 8,
+          "bbox": [
+            91.0,
+            876.0,
+            481.0,
+            932.0
+          ],
+          "block_id": "block_10_0073",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_10_0018"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_10_0010",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [
+      "CHCl3"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [
+      {
+        "mention": "CHCl3",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            94.0,
+            726.0,
+            480.0,
+            896.0
+          ],
+          "block_id": "block_10_0018",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_10_0018"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_10_0011",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [
+      "toluene"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [
+      {
+        "mention": "toluene",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            94.0,
+            726.0,
+            480.0,
+            896.0
+          ],
+          "block_id": "block_10_0018",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "{ 2 , } entries 5 and 6). In toluene, the reaction gave a 77% NMR",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            89.0,
+            584.0,
+            481.0,
+            683.0
+          ],
+          "block_id": "block_10_0017",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "ration limit: 5 ppm), whereas toluene is much safer (concentration",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            512.0,
+            376.0,
+            904.0,
+            634.0
+          ],
+          "block_id": "block_10_0020",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "1p could be oxidized to 4p in toluene using air as the terminal oxi",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            512.0,
+            795.0,
+            904.0,
+            933.0
+          ],
+          "block_id": "block_10_0022",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "lated yields. c NMR yields. d Toluene was used instead of DCE.",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 3,
+          "bbox": [
+            96.0,
+            112.0,
+            480.0,
+            381.0
+          ],
+          "block_id": "block_10_0023",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "of air. b Isolated yields. c Toluene was used instead of DCE.",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 3,
+          "bbox": [
+            512.0,
+            99.0,
+            904.0,
+            294.0
+          ],
+          "block_id": "block_10_0025",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "5 mol scale reaction of 1s in toluene with a slow flow of air, and",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 3,
+          "bbox": [
+            512.0,
+            540.0,
+            905.0,
+            592.0
+          ],
+          "block_id": "block_10_0027",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "obic Oxidation of Alcohols in Toluene. Phenyl-2-propenal (E-2d) (lj",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 7,
+          "bbox": [
+            513.0,
+            623.0,
+            904.0,
+            652.0
+          ],
+          "block_id": "block_10_0066",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "-1d (134.5 mg, 1.0 mmol), and toluene (4.0 mL) sequentially under a",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 7,
+          "bbox": [
+            512.0,
+            727.0,
+            904.0,
+            932.0
+          ],
+          "block_id": "block_10_0067",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "1p (132.1 mg, 1.0 mmol), and toluene (4.0 mL) sequentially. The Sc",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 8,
+          "bbox": [
+            89.0,
+            158.0,
+            481.0,
+            323.0
+          ],
+          "block_id": "block_10_0069",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "1s (61.0180 g, 0.5 mol), and toluene (100 mL) sequentially. A slow",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 8,
+          "bbox": [
+            91.0,
+            876.0,
+            481.0,
+            932.0
+          ],
+          "block_id": "block_10_0073",
+          "figure_id": null,
+          "table_id": null,
+          "section": "EXPERIMENTAL SECTION",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_10_0018"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_10_0012",
+    "doc_id": "10",
+    "local_ids": [],
+    "names": [
+      "O2"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [
+      {
+        "mention": "O2",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            94.0,
+            726.0,
+            480.0,
+            896.0
+          ],
+          "block_id": "block_10_0018",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "O (y mol%) NaCl (z mol%) DCE, O2 bag, 25 °C, t (h) | n-C11H23C",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 2,
+          "bbox": [
+            94.0,
+            99.0,
+            904.0,
+            308.0
+          ],
+          "block_id": "block_10_0015",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "| 13 | 92 (2e) | 2 | -; 6 | (O2N-CH2OH) (1f) | 5 | 5 | 5 | 5",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 3,
+          "bbox": [
+            96.0,
+            112.0,
+            480.0,
+            381.0
+          ],
+          "block_id": "block_10_0023",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "5 | 5 | 5 | 6 | 95 (2i); 4 | NO2 (1j) | 5 | 5 | 5 | 6 | 99 (2j",
+        "provenance": {
+          "doc_id": "10",
+          "source_file": "10.pdf",
+          "page": 3,
+          "bbox": [
+            92.0,
+            473.0,
+            484.0,
+            849.0
+          ],
+          "block_id": "block_10_0024",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_10_0018"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  }
+]

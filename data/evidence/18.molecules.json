@@ -1,0 +1,98 @@
+[
+  {
+    "molecule_card_id": "mol_18_0000",
+    "doc_id": "18",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CC(O)C#C[Si](C)(C)C",
+    "canonical_smiles": "CC(O)C#C[Si](C)(C)C",
+    "inchi_key": "HJJSDJHRTMFJLP-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "425bb83ad856fa9cffccf279fc9e3700771ae2dca7f2c731e190467fde60d2a0",
+        "figure_id": "425bb83ad856fa9cffccf279fc9e3700771ae2dca7f2c731e190467fde60d2a0",
+        "provenance": {
+          "doc_id": "18",
+          "source_file": "18.pdf",
+          "page": 3,
+          "bbox": [
+            509.0,
+            185.0,
+            915.0,
+            247.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.009504752376188095,
+          0.1672892195226533,
+          0.2736368184092046,
+          0.6830976463841677
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "425bb83ad856fa9cffccf279fc9e3700771ae2dca7f2c731e190467fde60d2a0"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_18_0001",
+    "doc_id": "18",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CC(=O)C#C[Si](C)(C)C",
+    "canonical_smiles": "CC(=O)C#C[Si](C)(C)C",
+    "inchi_key": "NQEZDDPEJMKMOS-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "425bb83ad856fa9cffccf279fc9e3700771ae2dca7f2c731e190467fde60d2a0",
+        "figure_id": "425bb83ad856fa9cffccf279fc9e3700771ae2dca7f2c731e190467fde60d2a0",
+        "provenance": {
+          "doc_id": "18",
+          "source_file": "18.pdf",
+          "page": 3,
+          "bbox": [
+            509.0,
+            185.0,
+            915.0,
+            247.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7538769384692346,
+          0.16264229675813516,
+          1.0,
+          0.6784507236196495
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "425bb83ad856fa9cffccf279fc9e3700771ae2dca7f2c731e190467fde60d2a0"
+    },
+    "errors": []
+  }
+]

@@ -1,0 +1,236 @@
+# Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids
+
+Xingguo Jiang,† Jiasheng Zhang,† and Shengming Ma\*,†,‡
+
+† State Key Laboratory of Organometallic Chemistry, Shanghai Institute of Organic Chemistry, Chinese Academy of Sciences, 345 Lingling Lu, Shanghai 200032, P. R. China
+
+‡ Department of Chemistry, Fudan University, 220 Handan Lu, Shanghai 200433, P. R. China
+
+Supporting Information
+
+ABSTRACT: Oxidation from alcohols to carboxylic acids, a class of essential chemicals in daily life, academic laboratories, and industry, is a fundamental reaction, usually using at least a stoichiometric amount of an expensive and toxic oxidant. Here, an efficient and practical sustainable oxidation technology of alcohols to carboxylic acids using pure $\mathrm { O } _ { 2 }$ or even $\breve { \mathrm { O } _ { 2 } }$ in air as the oxidant has been developed: utilizing a catalytic amount each of $\mathrm { F e ( N O _ { 3 } ) _ { 3 } } { \cdot } 9 \mathrm { \hat { H } _ { 2 } O / T E M P O / M C l } ,$ a series of carboxylic acids were obtained from alcohols (also aldehydes) in high yields at room temperature. A 55 g-scale reaction was demonstrated using air. As a synthetic application, the first total synthesis of a naturally occurring allene, i.e., phlomic acid, was accomplished.
+
+A s one of the most abundant metals in earth’s crust, iron iswidely distributed in nature. Of particular interest, the heme iron compounds in hemoglobin play an important role in molecular oxygen transportation and activation in life at ambient temperature.1 Iron is also a part of oxidative enzymes.2 Thus, iron catalysts3 may be a potentially viable catalyst for aerobic oxidation of alcohols to acids. On the other hand, the oxidation from alcohols to carboxylic acids is one of the most fundamental chemical transformations with great potential for daily life, academic research, and industry.4 Traditionally, toxic and expensive oxidants such as $\mathrm { K M n O } _ { 4 } , ^ { 5 } \ \mathrm { C r O } _ { 3 } , ^ { 6 }$ etc. have to be used, which would cause severe environmental burden due to the formation of waste from at least stiochiometeric amounts of these oxidants, thus, it is highly desirable to develop environmentally friendly new oxidization protocols. Molecular oxygen is a clean, atom economic, and sustainable oxidant. Although aerobic oxidation of alcohols to aldehydes is becoming a mature technology,7 the process toward carboxylic acids remains to be a fundamental challenge since few studies on aerobic oxidization of alcohols to carboxylic acids have been reported with rather limited success or scope even with noble metal catalyst(s).8−16 Here, we wish to report an efficient protocol with a broad scope and selectivity using a readily available iron catalyst and TEMPO under pure oxygen or air conditions.
+
+Based on the above literature data, the challenge to obtain carboxylic acids from alcohols via aerobic oxidation may be in the process of transforming aldehydes to carboxylic acids since most such aerobic oxidations of alcohols stop at the stage of aldehydes.7,17−19 During further study of selective oxidation of
+
+alcohols to aldehydes catalyzed by $\mathrm { F e } \left( \mathrm { N O } _ { 3 } \right) _ { 3 } { \cdot } 9 \mathrm { H } _ { 2 } \mathrm { O }$ and $\mathrm { T E M P O } , ^ { 1 9 }$ we observed that when lauraldehyde 1a was treated with 10 mol % each of F $\mathsf { e } ( \mathrm { N O } _ { 3 } ) _ { 3 } { \cdot } 9 \mathrm { H } _ { 2 } \mathrm { O } ,$ TEMPO, andKClwith an $\mathrm { O } _ { 2 }$ balloon in DCE at rt for 12 h, 94% isolated yield of lauric acid 2a was formed. This recipe could be applied to the oxidation of normal alkyl aliphatic aldehydes (Table 1, entries 1 and 3), cyclohexane-carboxaldehyde 1b (Table 1, entry 2), 3-phenylpropanal 1d (Table 1, entry 4) to the corresponding carboxylic acids 2a−2d in high yields. In addition, the yield remains high when a balloon of air was applied instead of pure $\mathrm { O } _ { 2 } .$
+
+Table 1. Aerobic Oxidation of Aldehydes Using $\mathbf { O } _ { 2 }$ or Air as Oxidanta 
+
+<table><tr><td>RCHO1</td><td>Fe(NO3)3·9H2O (10 mol%)TEMPO (10 mol%)KCl (10 mol%)O2or air, DCEr.t., 12 h or 16 h</td><td>RCOOH2</td></tr></table>
+
+<table><tr><td rowspan="2">entry</td><td rowspan="2">substrate</td><td rowspan="2">product</td><td colspan="2">yield of 2 (%)b</td></tr><tr><td> $O_{2}$ </td><td>Air</td></tr><tr><td>1</td><td> $n-C_{11}H_{23}CHO (1a)$ </td><td> $n-C_{11}H_{23}CO_{2}H (2a)$ </td><td>94</td><td>88</td></tr><tr><td>2</td><td>CyCHO (1b)</td><td>Cy $CO_{2}H$  (2b)</td><td>90</td><td>83</td></tr><tr><td>3</td><td> $n-C_{7}H_{15}CHO (1c)$ </td><td> $n-C_{7}H_{15}CO_{2}H (2c)$ </td><td>96</td><td>97</td></tr><tr><td>4</td><td> $Ph(CH_{2})_{2}CHO (1d)$ </td><td> $Ph(CH_{2})_{2}CO_{2}H (2d)$ </td><td>96</td><td>98</td></tr></table>
+
+a The reaction was carried out on a 1.0 mmol scale of 1 in 4.0 mL of DCE with a bag of $\mathrm { O } _ { 2 }$ or air. b Isolated yield.
+
+With these observations, we attempted to apply this recipe to the direct oxidation of alcohols into carboxylic acids: Cetyl alcohol 3e was oxidized to palmitic acid 2e within 12 h under standard conditions (Scheme 1). We screened different nitrates and observed that $\mathrm { C o } \left( \mathrm { N O } _ { 3 } \right) _ { 3 } { \cdot } 6 \mathrm { H } _ { 2 } \mathrm { O }$ (3e recovery 84%), $\mathrm { N i } ( \mathrm { N O } _ { 3 } ) _ { 3 } .$ · 6H O (3e recovery 83%) and $\mathrm { Z n } \mathrm { ( N O _ { 3 } ) } _ { 2 } { \cdot } 6 \mathrm { H } _ { 2 } \mathrm { O }$ (3e recovery
+
+Scheme 1. Aerobic Oxidation of 3e with Different Metal Nitrates 
+
+<table><tr><td>n-C16H33OH</td><td>Metal Salts (10 mol%)TEMPO (10 mol%)</td><td>n-C15H31COOH</td><td>+</td><td>n-C15H31CHO</td></tr><tr><td>3e</td><td>KCl (10 mol%)O2, DCE, r.t.</td><td>2e</td><td></td><td>1e</td></tr></table>
+
+Fe(NO3)3 9H2O: 95% of 2e after 12 h;   
+Cu(NO3)3H2O: 84% of 2e; 16% of 1e after 48 h
+
+Received: April 17, 2016
+
+Published: June 15, 2016
+
+100%) were not effective at all. $\mathrm { C u } ( \mathrm { N O } _ { 3 } ) _ { 2 } { \cdot } 3 \mathrm { H } _ { 2 } \mathrm { O }$ worked much slower (Scheme 1).
+
+With standard conditions in hand, we explored the generality of the reaction with various alcohols. Apart from aliphatic alcohols (Table 2, entries 1, 2, and 4) and 3-phenylpropanol (Table 2, entry 3), the aerobic oxidation also tolerates synthetically useful functional groups: ester (Table $^ { 2 , }$ entries 5−6), heterocycle (Table 2, entries 7−8), halogen (Table 2, entry 9), and ether (Table 2, entry 10) have all been well tolerated. Alcohols with a terminal or nonterminal C−C triple bond could all be oxidized to acids in moderate or high yields (Table 2, entries 11−13). TMSsubstituted propargyl alcohol could be converted into the corresponding acid under both $\mathrm { O } _ { 2 }$ and air conditions when extending the time to 36 and 48 h (Table 2, entry 14). 3- Cyclohexene-1-methanol (3p) could be oxidized to 2p smoothly with 20 mol % of TEMPO (Table 2, entry 15). Two examples of arylmethyl alcohols are also presented (Table 2, entries 16 and 17).
+
+Table 2. Aerobic Oxidation of Alcohols Using O or Air as Oxidanta 
+
+<table><tr><td rowspan="2">Entry</td><td rowspan="2">Alcohol</td><td rowspan="2">Product</td><td colspan="2">Yield of $2 (\%)^b$ </td></tr><tr><td> $O_2$ </td><td>Air</td></tr><tr><td>1</td><td> $n-C_{12}H_{25}OH (3a)$ </td><td> $n-C_{11}H_{23}CO_2H (2a)$ </td><td>100</td><td>95</td></tr><tr><td>2</td><td> $n-C_8H_{17}OH (3c)$ </td><td> $n-C_7H_{15}CO_2H (2c)$ </td><td>85</td><td>89</td></tr><tr><td>3</td><td> $Ph(CH_2)_3OH (3d)$ </td><td> $Ph(CH_2)_2CO_2H (2d)$ </td><td>98</td><td>99</td></tr><tr><td>4</td><td> $n-C_{16}H_{33}OH (3e)$ </td><td> $n-C_{15}H_{31}CO_2H (2e)$ </td><td>99</td><td>98</td></tr><tr><td>5</td><td> $MeO_2C(CH_2)_5OH (3f)$ </td><td> $MeO_2C(CH_2)_4CO_2H (2f)$ </td><td>94</td><td>86</td></tr><tr><td>6</td><td> $AcO(CH_2)_8OH (3g)$ </td><td> $AcO(CH_2)_7CO_2H (2g)$ </td><td>93</td><td>93</td></tr><tr><td>7</td><td><img src="images/710e2e7392fdadd951fa15fbe6b07fb37971bebdfc5e583a77427708924e276a.jpg"/> (3h)</td><td><img src="images/774b1fb4c7f2a1662f286849943be812369011dbbb290cb85ac91ced0fff87b8.jpg"/> (2h)</td><td>70</td><td>73</td></tr><tr><td>8</td><td><img src="images/bee110af84adf0792bc73e00dc4e9ebf76d99c4d992d54c9cdbf94c894f1c903.jpg"/> (3i)</td><td><img src="images/ed73d088bc90b425cee3dd021bed71512c1a1c59f10b2cc19e5d43a27d145647.jpg"/> (2i)</td><td>85</td><td>81</td></tr><tr><td>9</td><td rowspan="2"><img src="images/ccf38ef4cb4cc8b2a71e1a471906eeac440d6e84b8c0d4f9606ee0e0097264b4.jpg"/> (3k)</td><td>B <img src="images/bf0a9dd52797d79319f080d0039b8c6166ec61c7eb33933e4be4f288a70be98a.jpg"/>  $_{2}H (2j)$ </td><td>98</td><td>98</td></tr><tr><td>10</td><td> $n-C_6H_{13}OCH_2CO_2H (2k)$ </td><td>92</td><td>84</td></tr><tr><td>11</td><td><img src="images/9f02d25b35d05c9f3488e3277ad7310b5a60c7dab161472251876a8393edebd6.jpg"/></td><td><img src="images/ba43c7edbf02f84d9419a9938d56688a6dc745fbb50e28391cb72a82f054d635.jpg"/> COOH (2l)</td><td>80</td><td>80</td></tr><tr><td>12</td><td><img src="images/f95204fc9107c2bfc5de424f73cdb8c3ca50d86fe2ab4bfbf4aa08c6e1654dac.jpg"/></td><td><img src="images/7027ee36eb7742acde3cc60dca32cca2676ed70b6922f70294dada5732e58a69.jpg"/> COOH</td><td>60</td><td>68</td></tr><tr><td>13</td><td><img src="images/2c2c7896654332528c9583fa0833e685bd173a6eab8e38504e0cde148fca11fe.jpg"/></td><td><img src="images/1b0c4a8390c1d1ed2af326a80eed1581abdd0167dbf40cac5a6906e3f88e8f1b.jpg"/>  $^{\text{COOH}}(2n)$ </td><td>95</td><td>90</td></tr><tr><td>14</td><td><img src="images/10bab405a36b6abcf6b659274e0154c0dd9e1141f6395153fe85f419a41b7a48.jpg"/></td><td><img src="images/4cc2f7e0f959b0c67942e4f552e1c90dd3c69be0ccf9e1a3300150c84cd35096.jpg"/> OH (2o)</td><td> $66^c$ </td><td> $65^d$ </td></tr><tr><td>15</td><td><img src="images/461f87c59f1b42cfbc5c90abfb2f6e3dacfe010d26c19c5c4e6d2ed5d50a5111.jpg"/></td><td><img src="images/59c9ba95e2f741342d894f0bef9ec7cf11ad1d6fef7fa77a0a757fba70515754.jpg"/> (2p)</td><td> $81^{d,e}$ </td><td> $70^{d,e}$ </td></tr><tr><td>16</td><td><img src="images/1143108c7002a1d65afb9284f36145acb876c8b7b08ab15ff1fa78dc919c63c0.jpg"/></td><td><img src="images/0f3b990faa17cf4ec5bcac32ea8e92d5bea6b3d5a93e441308d1a10316549ee9.jpg"/> -COOH</td><td> $55^{d,e,f}$ </td><td>-</td></tr><tr><td>17</td><td>P-methoxy, aldehyde</td><td>4-nitrobenzoic acid</td><td> $76^d$ </td><td>-</td></tr></table>
+
+a Reaction was carried out on a 1.0 mmol scale of 3 in 4.0 mL of DCE with a bag of O (12 h) or air (16 h). b Isolated yield. c Reaction time was 36 h. d Reaction time was 48 h. e 20 mol % TEMPO was used. f 20 mol % of $\mathrm { F e } \left( \mathrm { N O } _ { 3 } \right) _ { 3 } { \cdot } 9 \mathrm { H } _ { 2 } \mathrm { O }$ was used.
+
+We could prepare octanedioic acid under the standard $\mathrm { O } _ { 2 }$ or air conditions using 10 mol % KCl within 48 h (Scheme 2, eq 1) or 1,8-octane-dial using 10 mol % NaCl within 12 h, from 1,8- octanediol, respectively, with a high selectivity (Scheme 2, eq 2, and the data in SI).19
+
+To further demonstrate the practicality of the catalytic system, a 40 mmol reaction of cetyl alcohol 3e was conducted using pure $\mathrm { O } _ { 2 }$ to give 9.6817g of palmitic acid 2e in 94% isolated yield (Scheme $^ { 3 , }$ eq 1 and apparatus (a) in SI). The purification of product only requires simple recrystallization of the crude product after
+
+Scheme 2. Selective Oxidation of 1,8-Octanediol   
+![](images/039c75b06c86715f696459bc839bc2b934e353e512d2f0cd85c88c0522a3937e.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction scheme showing two pathways (1 and 2) for synthesizing compounds 2q and 1q from compound 3q, with yields and conditions labeled.
+</details>
+
+removing the solvent instead of column chromatography. The reaction on the same scale may also be conducted by using a bag of air (size: 70 L, oxygen bag used in hospital) for 1.5 h first, which was followed by the supplement of a bag of pure O (commercial size: 2 L, may be expanded to 5 L, the white gas bag in apparatus (b) in SI) to provide the consumed oxygen in the air bag efficiently (Scheme 3, eq 2 and apparatus (b) in SI). Such a practice avoids the unsafe high concentration of pure $\mathrm { O } _ { 2 }$ over DCE to make the procedure safer. The same reaction using a bag of air only was incomplete affording acid 2e (23% yield by NMR) and aldehyde 1e (77% yield by NMR). Furthermore, by applying a slow flow of air, the reaction was also easily conducted on the scale of 240 mmol scale in 89% isolated yield (Scheme 3, eq 3 and apparatus (c) in SI).20
+
+Scheme 3. Large-Scale Reactions with $\mathbf { O } _ { 2 }$ or Air   
+![](images/f30189245cffe2d74ff067700563eff4a90808969a44ab486e2062dafc37511d.jpg)
+
+<details>
+<summary>other</summary>
+
+| Compound | Condition | Yield (g/1000 molar weight) |
+| -------- | --------- | --------------------------- |
+| n-C₁₅H₃₁COOH | 1 | 9.6817 |
+| n-C₁₅H₃₁COOH | 2 | 9.0540 |
+| n-C₁₅H₃₁COOH | 3 | 55.0232 |
+The chart displays two sets of reaction pathways with labels indicating '3e' and '240 mmol'. The reaction pathway is shown as follows: Fe(NO₃)₃·9H₂O (10 mol%), TEMPO (10 mol%), KCl (10 mol%), O₂, DCE, r.t., 16 h, air + O₂ balloon, DCE, r.t., 21.5 h, TEMPO (10 mol%), KCl (10 mol%), a very slow air flow, DCE, r.t., 24 h.
+</details>
+
+The sesquiterpenediol 3r could also be oxidized to sclareolide 4r in high yield with both pure $\mathrm { O } _ { 2 }$ or air (Scheme 4, eq 1).
+
+Scheme 4. Aerobic Oxidation of Alcohols 3r and 3s   
+![](images/3b43ef0c538407fc4c03b55059055356f440839436065d73555063a87bb0bfd9.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction scheme showing oxidation of compounds 3r and 3s to products 4r and 2s under specified conditions
+</details>
+
+Substrate 3s bearing a steroid skeleton could also be oxidized to the corresponding acid 2s smoothly in 73% yield with the secondary alcohol in the molecule 3s being oxidized to the ketone group as well (Scheme 4, eq 2).
+
+Furthermore, the reaction was applied to the first total synthesis of phlomic acid, a naturally occurring axially chiral allene, which was isolated from Phlomis in 1997.21 By applying enantioselective allenation of alkynes reaction $\left( \mathrm { E A T A } \right) ^ { 2 2 }$ developed in our group as the key step for the formation of the chiral allene entity, we reasoned that phlomic acid (R )-5a could be synthesized from terminal alkyne 3l and aldehyde 1a (Scheme 5). Thus, 7-octynoic acid was prepared from 7-octyn-1-ol in 80% yield using 10 mol % each of $\mathrm { F e ( N O _ { 3 } ) _ { 3 } } { \cdot } 9 \mathrm { H _ { 2 } O } / \mathrm { T E M P O } / \mathrm { K C l }$ catalyst in air. After esterification, ester 4l was submitted to the EATA reaction. After screening of different prolinol derivatives, we found that when (S)- dimethylprolinol was used for the first time in the CuBr -catalyzed EATA reaction, product $\left( R _ { a } \right)$ -5b with 95% ee could be prepared in 58% yield, while with (S)-diphenylprolinol, the ee dropped to 90%. $\left( R _ { a } \right)$ -5b was treated with KOH in $\mathrm { M e O H / H _ { 2 } O }$ at ${ \bar { 6 0 } } ^ { \circ } \mathrm { C }$ to yield phlomic acid $\left( \left( R _ { a } \right) - 5 \mathbf { a } \right)$ in 92% yield and 96% ee.
+
+Scheme 5. Total Synthesis of Phlomic Acid Using Aerobic Oxidation and EATA   
+![](images/e40d3f7c1d972d1f87c75f8efefdb2554bdfd9bc5ded40194b4268496a8cd1ac.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Organic synthesis reaction scheme showing transformation of compound 3l to 4l via intermediates and reagents
+</details>
+
+In addition, it was observed that the oxidation of benzylic alcohol such as piperitol (3t) or mono THP-protected 1,2- benzenedimethanol (3u) stopped mostly at the stage of aldehyde (Scheme $^ { 6 , }$ eqs $_ { 1 - 2 ) }$ . However, reaction of 1,2-benzenedimethanol $\left( 3 \mathbf { v } \right)$ gave 62% yield of isobenzofuran-1(3H)-one (4v) (Scheme $6 , \mathsf { e q } 3 ) .$ , indicating the possibility of the oxidation to aldehyde, then forming the corresponding hemiacetal, which was further oxidized to lactone.
+
+Scheme 6. Aerobic Oxidation of Benzylic Alcohol and $^ { 1 , 2 \mathrm { - } }$ - Benzenedimethanola   
+![](images/d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Organic synthesis reaction scheme showing oxidation and rearrangement of compounds 3t, 3u, 3v to products 1t, 1u, 4v with yields and diastereomeric ratios
+</details>
+
+a Conditions: $\mathrm { F e } \left( \mathrm { N O } _ { 3 } \right) _ { 3 } { \cdot } 9 \mathrm { H } _ { 2 } \mathrm { O }$ (10 mol %), TEMPO (10 mol %), KCl (10 mol %)
+
+When the oxidation reaction of lauraldehyde 1a was conducted in the presence of 1 equiv $\mathrm { \ o f { H _ { 2 } } ^ { 1 8 } { O } _ { \it \cdot } }$ , lauric acid $2 \mathsf { a } \mathsf { - } ^ { 1 8 } \mathrm { O }$ was isolated in 99% yield with 40% $^ { 1 8 } \mathrm { { O } }$ incorporation, indicating the involvement of $\mathrm { H } _ { 2 } \mathrm { O }$ in the reaction process. The lower level of $^ { 1 8 } \mathrm { O }$ incorporation was caused by the 0.9 equiv of H O in 10 mol % $\mathrm { \ o f { F e } ( N O _ { 3 } ) _ { 3 } { \cdot } 9 H _ { 2 } O }$ and the in situ generated water (see Scheme 7 and Scheme 9).
+
+Scheme 7. Isotopic $^ { 1 8 } \mathrm { { O } }$ Distribution Experiment with 1a   
+![](images/07c5cbf5b766a0df0b88f59b4ae8de942309466d0a481d811bc73428c6a4ef08.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction scheme showing conversion of n-C11H23CHO to n-C11H23C18OOH using Fe(NO3)3·9H2O and TEMPO under KCl conditions
+</details>
+
+As a further evidence, reddish brown gas $\left( \mathrm { N O } _ { 2 } \right)$ was observed during the reaction, and NO was detected by GS-MS (see SI for experimental details). We also observed that alcohol 3a was completely consumed within 6 h, generating aldehyde 1a as the initial product. Acid 2a emerged after 2 h (pages $S 3 6 \mathrm { - } S 3 7 , S \mathrm { I } )$ . As a comparison, the same reaction with 10 mol % of NaCl failed to afford the formation of the carboxylic acid 2a within 4 h (pages $S 3 8 \mathrm { - } S 3 9 , \mathrm { S I } )$ . Furthermore, the reaction with 5 mol % each of $\mathrm { F e } ( \mathrm { N O } _ { 3 } ) _ { 3 } { \cdot } 9 \mathrm { \bar { H } } _ { 2 } \mathrm { O } _ { \cdot }$ , TEMPO, and NaCl, the reaction conditions in the previous $\mathsf { i e p o r t } , ^ { 1 9 }$ led to the highly selective formation of aldehyde-No acid was formed (pages S40−S41, SI). The counterion effect of inorganic chloride on the oxidation is as follows: $\mathrm { K ^ { + } \sim \mathrm { \bf ~ R b ^ { + } > \mathrm { \bf ~ C s ^ { + } \sim \mathrm { \bf ~ N a ^ { + } > \mathrm { \bf ~ M g ^ { 2 + } \sim \mathrm { \bf ~ Z n ^ { 2 + } > \mathrm { \bf ~ B u _ { 4 } N ^ { + } } } } } } } }$ (pages S36−S51, SI), which is in accordance of the basicity order (although not a linear $\mathbf { o n e } ) ; ^ { 2 3 }$ when 18-crown-6 or kryptofix 222 (a typical cryptand) was used together with KCl, the reaction became much slower, indicating an obvious effect of the cation (pages S52−S55, SI).
+
+In addition, control experiments showed that the oxidation of aldehyde 1a in oxygen alone failed to afford the acid 2a (Table 3, entry 2); the reaction in the absence of KCl is slower (Table $^ { 3 , }$ entry 3); as reported,24 Fe(III) alone may afford peroxy acid 7a, via the reaction of the acyl radical intermediate with oxygen. This peroxy acid may react with the starting aldehyde to afford the acid 2a finally as a mixture (Table $^ { 3 , }$ entry $4 ) ;$ in the absence of TEMPO, the reaction is slower, and the formation of peroxy acid was also observed (Table 3, entry $s ) ;$ as a comparison under the standard reaction condition, the formation of peroxy acid 7a was not detected (Table 3, entry 1). The reaction could not occur without $\mathrm { F e } \left( \mathrm { N O } _ { 3 } \right) _ { 3 } { \cdot } 9 \mathrm { H } _ { 2 } \mathrm { O }$ (Table 3, entry 6).
+
+Table 3. Aerobic Oxidation of Aldehyde 1a: The Role of Each Catalytic Component 
+
+<table><tr><td rowspan="2">entry</td><td colspan="3">Fe(NO3)3·9H2O (x mol %)</td><td colspan="3">NMR yield, %</td></tr><tr><td>TEMPO (y mol %)</td><td>KCl (z mol %)</td><td>1a</td><td>2a</td><td>7a</td><td></td></tr><tr><td>1</td><td>10</td><td>10</td><td>10</td><td>0</td><td>95</td><td>0</td></tr><tr><td>2</td><td>-</td><td>-</td><td>-</td><td>98</td><td>2</td><td>0</td></tr><tr><td>3</td><td>10</td><td>10</td><td>-</td><td>14</td><td>81</td><td>0</td></tr><tr><td>4</td><td>10</td><td>-</td><td>-</td><td>0</td><td>78</td><td>11</td></tr><tr><td>5</td><td>10</td><td>-</td><td>10</td><td>15</td><td>64</td><td>12</td></tr><tr><td>6</td><td>-</td><td>10</td><td>10</td><td>100</td><td>0</td><td>0</td></tr></table>
+
+However, no reaction was observed for alcohol 3a in the absence of TEMPO (Scheme 8).
+
+Scheme 8. Aerobic Oxidation of 3a   
+![](images/52e3d41b96c324eecd2d141a70b3d3bc7958782f2dccd2550775892f904f08f3.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing oxidation of 3a to 3a using Fe(NO3)3·9H2O under KCl conditions, with recovery of 3a yielding 100%
+</details>
+
+Based on these observations, we proposed a rationale for this aerobic oxidation (Scheme 9). Int 1, the coupling product of TEMPO and $\mathrm { F e } ^ { 3 + 2 \bar { 5 } }$ reacted with the alcohol to form Int 2. Int 2 produced the aldehyde,TEMPOH, and $\mathrm { F e } ^ { 2 + }$ after β-H elimination and reductive elimination. $\mathrm { F e } ^ { 2 + }$ would be reoxidized to $\mathrm { F e } ^ { 3 + }$ by $\mathrm { N O } _ { 2 }$ in the reaction system, while $\mathrm { N O } _ { 2 } ^ { 2 6 }$ was reduced to NO and regenerated by its reaction with $\mathrm { O } _ { 2 } .$ TEMPOH was converted back into TEMPO by its reaction with $\mathrm { F e } ^ { 3 + }$ . The metalated aldehyde hydrate Int 3 was formed by attack of $_ { \mathrm { H } _ { 2 } \mathrm { O } }$ at the aldehyde mediated by $\mathrm { F e } ^ { 3 + }$ . Int 3 would undergo a similar process to produce the carboxylic acid. As noted in our previous report, the reaction in the absence of NaCl is slow, and the chloride may be working as the ligand (L) to iron.19 According to data with different MCl in SI, different M+ may have a different effect on the ligand exchange rate for the formation of Int 2−4. However, further studies are required for the mechanism.
+
+Scheme 9. A Proposed Mechanism: The Possible Role of the Cation   
+![](images/71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Reaction mechanism diagram showing ligand exchange and reduction pathways for Int 1, Int 2, and Int 3 with reagents like LFe²⁺, H⁺, M⁺, and O₂
+</details>
+
+In summary, we developed a practical and efficient environmentally benign catalytic protocol of Fe(NO ) ·9H O/TEMPO/ MCl to accomplish the oxidation of alcohols to carboxylic acids using $\mathrm { O } _ { 2 }$ or air as terminal oxidant at room temperature. The reaction may be easily conducted on a 9−55 g-scale with pure $\mathrm { O } _ { 2 } ,$ air/pure $\mathrm { O } _ { 2 }$ or air flow conditions. First total synthesis of natural product phlomic acid was accomplished using this aerobic oxidation protocol and EATA. Further studies especially the mechanism are being actively pursued in this laboratory.
+
+# ASSOCIATED CONTENT
+
+# \*S Supporting Information
+
+The Supporting Information is available free of charge on the ACS Publications website at DOI: 10.1021/jacs.6b03948.
+
+Experimental details and data (PDF)
+
+# AUTHOR INFORMATION
+
+# Corresponding Author
+
+\*masm@sioc.ac.cn
+
+# Notes
+
+The authors declare no competing financial interest.
+
+# ACKNOWLEDGMENTS
+
+Financial support from National Natural Science Foundation of China (21232006) and National Basic Research Program (2015CB856600) are greatly appreciated. We thank Mr. Lin Weilong for supplying (S)-dimethyl prolinol.
+
+# REFERENCES
+
+(1) Metzler, D. E. Biochemistry: The Chemical Reactions of Living Cells; Academic Press: New York, 2001; Vol. 1.   
+(2) (a) Nozaki, M. Oxygenases and Dioxygenases. Biochemistry, Topics in Current Chemistry; Springer: Berlin, 1979; Vol. 78, p147. (b) Blomberg, M. R. A. Biochemistry 2016, 55, 489. (c) Thrower, J. S.; Blalock, R., III;
+
+Klinman, J. P. Biochemistry 2001, 40, 9717. (d) Zhang, Z. H.; Barlow, J. N.; Baldwin, J. E.; Schofield, C. J. Biochemistry 1997, 36, 15999.
+
+(3) (a) Bolm, C.; Legros, J.; Paih, J. L.; Zani, L. Chem. Rev. 2004, 104, 6217. (b) Gopalaiah, K. Chem. Rev. 2013, 113, 3248. (c) Bauer, I.; Knölker, H. J. Chem. Rev. 2015, 115, 3170.
+
+(4) Caron, S.; Dugger, R. W.; Ruggeri, S. G.; Ragan, J. A.; Ripin, D. H. B. Chem. Rev. 2006, 106, 2943.
+
+(5) Mahmood, A.; Robinson, G. E.; Powell, L. Org. Process Res. Dev. 1999, 3, 363.
+
+(6) Thottathil, J. K.; Moniot, J. L.; Mueller, R. H.; Wong, M. K. Y.; Kissick, T. P. J. Org. Chem. 1986, 51, 3140.
+
+(7) (a) Ryland, B. L.; Stahl, S. S. Angew. Chem., Int. Ed. 2014, 53, 8824. (b) Cao, Q.; Dornan, L. M.; Rogan, L.; Hughes, N. L.; Muldoon, M. J. Chem. Commun. 2014, 50, 4524. (c) Piera, J.; Backvall, J. E. ̈ Angew. Chem., Int. Ed. 2008, 47, 3506. (d) de Nooy, A. E. J.; Besemer, A. C.; van Bekkum, H. Synthesis 1996, 1996, 1153 and references therein. (e) Sheldon, R. A.; Arends, I. W. C. E. Adv. Synth. Catal. 2004, 346, 1051.
+
+(8) (a) Dalmer, O.; Heyns, K. U.S. Pat. 1940, 2 (190), 377. (b) Heyns, K. Lieb. Ann. Chem. 1947, 558, 177.
+
+(9) Han, L.; Xing, P.; Jiang, B. Org. Lett. 2014, 16, 3428.
+
+(10) Zope, B. N.; Hibbitts, D. D.; Neurock, M.; Davis, R. J. Science 2010, 330, 74.
+
+(11) Buffin, B. P.; Clarkson, J. P.; Belitz, N. L.; Kundu, A. J. Mol. Catal. A: Chem. 2005, 225, 111.
+
+(12) Zhang, Z. H.; Zhen, J. D.; Liu, B.; Lv, K. L.; Deng, K. J. Green Chem. 2015, 17, 1308.
+
+(13) Kerdi, F.; Rass, H. A.; Pinel, C.; Besson, M.; Peru, G.; Leger, B.; Rio, S.; Monflier, E.; Ponchel, A. Appl. Catal., A 2015, 506, 206.
+
+(14) Itoh, A.; Hashimoto, S.; Kuwabara, K.; Kodama, T.; Masaki, Y. Green Chem. 2005, 7, 830.
+
+(15) Iwahama, T.; Yoshino, Y.; Keitoku, T.; Sakaguchi, S.; Ishii, Y. J. Org. Chem. 2000, 65, 6502.
+
+(16) Yamada, Y. M. A.; Arakawa, T.; Hocke, H.; Uozumi, Y. Angew. Chem., Int. Ed. 2007, 46, 704.
+
+(17) Liu, M. X.; Wang, H. N.; Zeng, H. Y.; Li, C. J. Sci. Adv. 2015, 1, e1500020.
+
+(18) (a) Martín, S. E.; Suarez, D. F.́ Tetrahedron Lett. 2002, 43, 4475. (b) Firouzabadi, H.; Iranpoor, N.; Amani, K. Synthesis 2003, 2003, 408.
+
+(c) Namboodiri, V. V.; Polshettiwar, V.; Varma, R. S. Tetrahedron Lett. 2007, 48, 8839. (d) Wang, N.; Liu, R.; Chen, J.; Liang, X. Chem. Commun. 2005, 5322.
+
+(19) Ma, S.; Liu, J. X.; Li, S. H.; Chen, B.; Cheng, J. J.; Kuang, J. Q.; Liu, Y.; Wan, B. Q.; Wang, Y. L.; Ye, J. T.; Yu, Q.; Yuan, W. M.; Yu, S. C. Adv. Synth. Catal. 2011, 353, 1005.
+
+(20) Caution: Oxygen in use in combination with organic solvents; remove all ignition sources including sources of sparks, static, or flames since oxygen increases intensity of any fire. Inhalation of pure oxygen should be avoided as well. The flash point of DCE is $1 3 ^ { \circ } \dot { \mathrm { C } } .$ . Lower and upper explosive limit of DCE in air is 6.2% and 16.0%. For more information, see: Cheremisinoff, N. P. Handbook of Hazardous Chemical Properties; Butterworth-Heinemann: Woburn, MA, 1999. Yaws, C. L. Yaws’ Handbook of Thermodynamic and Physical Properties of Chemical Compounds; Knovel: New York, 2003.
+
+(21) Aitzetmüller, K.; Tsevegsüren, N.; Vosmann, K. Fett/Lipid. 1997, 99, 74.
+
+(22) (a) Huang, X.; Cao, T.; Han, Y. L.; Jiang, X. G.; Lin, W. L.; Zhang, J. S.; Ma, S. Chem. Commun. 2015, 51, 6956. (b) Tang, X. J.; Huang, X.; Cao, T.; Han, Y. L.; Jiang, X. G.; Lin, W. L.; Tang, Y.; Zhang, J. S.; Yu, Q.; Fu, C.; Ma, S. Org. Chem. Front. 2015, 2, 688.
+
+(23) Cartledge, G. H. J. Am. Chem. Soc. 1928, 50, 2863.
+
+(24) (a) Wieland, H.; Richter, D. Justus Liebigs Annalen der Chemie 1931, 486, 226. (b) Giannandrea, R.; Mastrorilli, P.; Nobile, C. F.; Suranna, G. P. J. Mol. Catal. 1994, 94, 27. (c) Lederer, P.; Lunak, S.; Macova, E.; Veprek-Siska, J. Collect. Czech. Chem. Commun. 1982, 47, 392. (d) Yamada, T.; Rhode, $\mathrm { O . } ;$ Takai, T.; Mukaiyama, T. Chem. Lett. 1991, 5.
+
+(25) Scepaniak, J. J.; Wright, A. M.; Lewis, R. A.; Wu, G.; Hayton, T. W. J. Am. Chem. Soc. 2012, 134, 19350.
+
+(26) Epstein, I. R.; Kustin, K.; Warshaw, L. J. J. Am. Chem. Soc. 1980, 102, 3751.

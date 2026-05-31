@@ -1,0 +1,61 @@
+.pdfViewer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.pageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  background: var(--color-card);
+  border-bottom: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.pageInfo {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.scrollContainer {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  background: var(--color-bg);
+}
+
+.pageWrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.canvasWrapper {
+  position: relative;
+  box-shadow: var(--shadow-md);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.pdfIframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-text-muted);
+  font-size: 14px;
+}

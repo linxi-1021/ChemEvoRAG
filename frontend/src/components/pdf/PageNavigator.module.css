@@ -1,0 +1,79 @@
+.navigator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 8px 16px;
+  background: var(--color-card);
+  border-bottom: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.pageControls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  transition: all 0.15s;
+  border: 1px solid var(--color-border);
+  background: var(--color-card);
+}
+
+.btn:hover:not(:disabled) {
+  background: var(--color-bg);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.pageInfo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.pageInput {
+  width: 40px;
+  text-align: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 4px;
+  font-size: 13px;
+  outline: none;
+}
+
+.pageInput:focus {
+  border-color: var(--color-primary);
+}
+
+.pageTotal {
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.zoomControls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.zoomLabel {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  min-width: 40px;
+  text-align: center;
+}

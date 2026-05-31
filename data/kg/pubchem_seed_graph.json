@@ -1,0 +1,338 @@
+{
+  "graph_id": "pubchem_seed",
+  "source": "PubChem PUG REST",
+  "node_count": 25,
+  "edge_count": 20,
+  "nodes": [
+    {
+      "id": "pubchem:7582",
+      "type": "molecule",
+      "properties": {
+        "molecule_card_id": "pubchem_7582",
+        "names": [
+          "dicyclohexylamine",
+          "N-cyclohexylcyclohexanamine"
+        ],
+        "aliases": [
+          "DCHA",
+          "di(cyclohexyl)amine",
+          "dicyclohexylamine",
+          "N-cyclohexylcyclohexanamine"
+        ],
+        "canonical_smiles": "C1CCC(NC2CCCCC2)CC1",
+        "inchi_key": "XBPCUCUWBYBCDP-UHFFFAOYSA-N",
+        "iupac_name": "N-cyclohexylcyclohexanamine"
+      }
+    },
+    {
+      "id": "alias:DCHA",
+      "type": "alias",
+      "properties": {
+        "name": "DCHA"
+      }
+    },
+    {
+      "id": "alias:di(cyclohexyl)amine",
+      "type": "alias",
+      "properties": {
+        "name": "di(cyclohexyl)amine"
+      }
+    },
+    {
+      "id": "alias:dicyclohexylamine",
+      "type": "alias",
+      "properties": {
+        "name": "dicyclohexylamine"
+      }
+    },
+    {
+      "id": "alias:N-cyclohexylcyclohexanamine",
+      "type": "alias",
+      "properties": {
+        "name": "N-cyclohexylcyclohexanamine"
+      }
+    },
+    {
+      "id": "identifier:CID:7582",
+      "type": "identifier",
+      "properties": {
+        "value": "CID:7582"
+      }
+    },
+    {
+      "id": "identifier:DCHA",
+      "type": "identifier",
+      "properties": {
+        "value": "DCHA"
+      }
+    },
+    {
+      "id": "identifier:di(cyclohexyl)amine",
+      "type": "identifier",
+      "properties": {
+        "value": "di(cyclohexyl)amine"
+      }
+    },
+    {
+      "id": "pubchem:702",
+      "type": "molecule",
+      "properties": {
+        "molecule_card_id": "pubchem_702",
+        "names": [
+          "ethanol"
+        ],
+        "aliases": [
+          "EtOH",
+          "ethanol"
+        ],
+        "canonical_smiles": "CCO",
+        "inchi_key": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N",
+        "iupac_name": "ethanol"
+      }
+    },
+    {
+      "id": "alias:EtOH",
+      "type": "alias",
+      "properties": {
+        "name": "EtOH"
+      }
+    },
+    {
+      "id": "alias:ethanol",
+      "type": "alias",
+      "properties": {
+        "name": "ethanol"
+      }
+    },
+    {
+      "id": "identifier:CID:702",
+      "type": "identifier",
+      "properties": {
+        "value": "CID:702"
+      }
+    },
+    {
+      "id": "identifier:EtOH",
+      "type": "identifier",
+      "properties": {
+        "value": "EtOH"
+      }
+    },
+    {
+      "id": "pubchem:240",
+      "type": "molecule",
+      "properties": {
+        "molecule_card_id": "pubchem_240",
+        "names": [
+          "benzaldehyde"
+        ],
+        "aliases": [
+          "benzaldehyde"
+        ],
+        "canonical_smiles": "O=Cc1ccccc1",
+        "inchi_key": "HUMNYLRZRPPJDN-UHFFFAOYSA-N",
+        "iupac_name": "benzaldehyde"
+      }
+    },
+    {
+      "id": "alias:benzaldehyde",
+      "type": "alias",
+      "properties": {
+        "name": "benzaldehyde"
+      }
+    },
+    {
+      "id": "identifier:CID:240",
+      "type": "identifier",
+      "properties": {
+        "value": "CID:240"
+      }
+    },
+    {
+      "id": "pubchem:6115",
+      "type": "molecule",
+      "properties": {
+        "molecule_card_id": "pubchem_6115",
+        "names": [
+          "aniline"
+        ],
+        "aliases": [
+          "aniline"
+        ],
+        "canonical_smiles": "Nc1ccccc1",
+        "inchi_key": "PAYRUJLWNCNPSJ-UHFFFAOYSA-N",
+        "iupac_name": "aniline"
+      }
+    },
+    {
+      "id": "alias:aniline",
+      "type": "alias",
+      "properties": {
+        "name": "aniline"
+      }
+    },
+    {
+      "id": "identifier:CID:6115",
+      "type": "identifier",
+      "properties": {
+        "value": "CID:6115"
+      }
+    },
+    {
+      "id": "pubchem:2244",
+      "type": "molecule",
+      "properties": {
+        "molecule_card_id": "pubchem_2244",
+        "names": [
+          "aspirin",
+          "2-acetyloxybenzoic acid"
+        ],
+        "aliases": [
+          "acetylsalicylic acid",
+          "aspirin",
+          "2-acetyloxybenzoic acid"
+        ],
+        "canonical_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+        "inchi_key": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N",
+        "iupac_name": "2-acetyloxybenzoic acid"
+      }
+    },
+    {
+      "id": "alias:acetylsalicylic acid",
+      "type": "alias",
+      "properties": {
+        "name": "acetylsalicylic acid"
+      }
+    },
+    {
+      "id": "alias:aspirin",
+      "type": "alias",
+      "properties": {
+        "name": "aspirin"
+      }
+    },
+    {
+      "id": "alias:2-acetyloxybenzoic acid",
+      "type": "alias",
+      "properties": {
+        "name": "2-acetyloxybenzoic acid"
+      }
+    },
+    {
+      "id": "identifier:CID:2244",
+      "type": "identifier",
+      "properties": {
+        "value": "CID:2244"
+      }
+    },
+    {
+      "id": "identifier:acetylsalicylic acid",
+      "type": "identifier",
+      "properties": {
+        "value": "acetylsalicylic acid"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "alias:DCHA",
+      "target": "pubchem:7582",
+      "type": "alias_of"
+    },
+    {
+      "source": "alias:di(cyclohexyl)amine",
+      "target": "pubchem:7582",
+      "type": "alias_of"
+    },
+    {
+      "source": "alias:dicyclohexylamine",
+      "target": "pubchem:7582",
+      "type": "alias_of"
+    },
+    {
+      "source": "alias:N-cyclohexylcyclohexanamine",
+      "target": "pubchem:7582",
+      "type": "alias_of"
+    },
+    {
+      "source": "identifier:CID:7582",
+      "target": "pubchem:7582",
+      "type": "identifies"
+    },
+    {
+      "source": "identifier:DCHA",
+      "target": "pubchem:7582",
+      "type": "identifies"
+    },
+    {
+      "source": "identifier:di(cyclohexyl)amine",
+      "target": "pubchem:7582",
+      "type": "identifies"
+    },
+    {
+      "source": "alias:EtOH",
+      "target": "pubchem:702",
+      "type": "alias_of"
+    },
+    {
+      "source": "alias:ethanol",
+      "target": "pubchem:702",
+      "type": "alias_of"
+    },
+    {
+      "source": "identifier:CID:702",
+      "target": "pubchem:702",
+      "type": "identifies"
+    },
+    {
+      "source": "identifier:EtOH",
+      "target": "pubchem:702",
+      "type": "identifies"
+    },
+    {
+      "source": "alias:benzaldehyde",
+      "target": "pubchem:240",
+      "type": "alias_of"
+    },
+    {
+      "source": "identifier:CID:240",
+      "target": "pubchem:240",
+      "type": "identifies"
+    },
+    {
+      "source": "alias:aniline",
+      "target": "pubchem:6115",
+      "type": "alias_of"
+    },
+    {
+      "source": "identifier:CID:6115",
+      "target": "pubchem:6115",
+      "type": "identifies"
+    },
+    {
+      "source": "alias:acetylsalicylic acid",
+      "target": "pubchem:2244",
+      "type": "alias_of"
+    },
+    {
+      "source": "alias:aspirin",
+      "target": "pubchem:2244",
+      "type": "alias_of"
+    },
+    {
+      "source": "alias:2-acetyloxybenzoic acid",
+      "target": "pubchem:2244",
+      "type": "alias_of"
+    },
+    {
+      "source": "identifier:CID:2244",
+      "target": "pubchem:2244",
+      "type": "identifies"
+    },
+    {
+      "source": "identifier:acetylsalicylic acid",
+      "target": "pubchem:2244",
+      "type": "identifies"
+    }
+  ]
+}

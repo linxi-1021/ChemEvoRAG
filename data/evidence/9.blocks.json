@@ -1,0 +1,1058 @@
+[
+  {
+    "block_id": "block_9_0000",
+    "doc_id": "9",
+    "block_type": "title",
+    "text": "One Pot Synthesis of g-Benzopyranones via Iron-Catalyzed Aerobic Oxidation and Subsequent 4-Dimethylaminopyridine Catalyzed 6-endo Cyclization",
+    "page": 1,
+    "bbox": [
+      78.0,
+      104.0,
+      855.0,
+      174.0
+    ],
+    "section": "One Pot Synthesis of g-Benzopyranones via Iron-Catalyzed Aerobic Oxidation and Subsequent 4-Dimethylaminopyridine Cataly",
+    "prev_block_id": null,
+    "next_block_id": "block_9_0001",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0001",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "Di Zhai,a Lingzhu Chen,b Minqiang Jia,a,* and Shengming Maa, b, c,*",
+    "page": 1,
+    "bbox": [
+      77.0,
+      193.0,
+      764.0,
+      212.0
+    ],
+    "section": "One Pot Synthesis of g-Benzopyranones via Iron-Catalyzed Aerobic Oxidation and Subsequent 4-Dimethylaminopyridine Cataly",
+    "prev_block_id": "block_9_0000",
+    "next_block_id": "block_9_0002",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0002",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "Received: July 30, 2017; Revised: October 17, 2017; Published online: November 17, 2017",
+    "page": 1,
+    "bbox": [
+      78.0,
+      336.0,
+      742.0,
+      351.0
+    ],
+    "section": "One Pot Synthesis of g-Benzopyranones via Iron-Catalyzed Aerobic Oxidation and Subsequent 4-Dimethylaminopyridine Cataly",
+    "prev_block_id": "block_9_0001",
+    "next_block_id": "block_9_0003",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0003",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "Supporting information for this article is available on the WWW under https://doi.org/10.1002/adsc.201700993",
+    "page": 1,
+    "bbox": [
+      77.0,
+      366.0,
+      894.0,
+      382.0
+    ],
+    "section": "One Pot Synthesis of g-Benzopyranones via Iron-Catalyzed Aerobic Oxidation and Subsequent 4-Dimethylaminopyridine Cataly",
+    "prev_block_id": "block_9_0002",
+    "next_block_id": "block_9_0004",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0004",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "Abstract: One-pot synthesis of g-benzopyranones was realized in decent yields and excellent regioselectivities via iron-catalyzed aerobic oxidation and 4-dimethylaminopyridine-catalyzed cyclization of related propargylic alcohols. Derivatizations to aromatic substituted g-benzopyranones and synthesis of naturally occurring 3’,4’-dimethoxyflavone have also been realized.",
+    "page": 1,
+    "bbox": [
+      87.0,
+      404.0,
+      478.0,
+      516.0
+    ],
+    "section": "One Pot Synthesis of g-Benzopyranones via Iron-Catalyzed Aerobic Oxidation and Subsequent 4-Dimethylaminopyridine Cataly",
+    "prev_block_id": "block_9_0003",
+    "next_block_id": "block_9_0005",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0005",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "Keywords: one pot; iron catalysis; aerobic oxidation; flavones; natural products",
+    "page": 1,
+    "bbox": [
+      87.0,
+      530.0,
+      478.0,
+      558.0
+    ],
+    "section": "One Pot Synthesis of g-Benzopyranones via Iron-Catalyzed Aerobic Oxidation and Subsequent 4-Dimethylaminopyridine Cataly",
+    "prev_block_id": "block_9_0004",
+    "next_block_id": "block_9_0006",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0006",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "As a major class of natural products commonly found in plants, g-benzopyranones have received a lot of attention due to their biological activities such as antitumor and anti-inflammatory activities.[1] In addition, the structure of conjugate enone fragment and fused phenyl have a great synthetic potential in organic synthesis.[2] Thus, much attention has been focused on the methods for flavone synthesis. The reported literatures mainly consist of five types of strategies (Scheme 1): a) cyclization and dehydration of bcarbonyl compounds.[3] b) Michael addition of chalcones and subsequent oxidation.[4] c) Michael addition of alkynones.[5] d) Metal-catalyzed cyclization reaction.[6] e) Palladium-catalyzed oxidative coupling reaction.[7] Unfortunately, they all suffer from too many steps, stoichiometric amount of oxidant, highly toxic carbon monoxide, expensive palladium catalyst or high temperature. The direct protocol using propargylic alcohols as starting material remains quite undeveloped.[8] Recently, our group developed an iron-catalyzed oxidation of different alcohols at room temperature in high yields and excellent selectivities.[9] By using this method, the oxidation of propargylic alcohols can be realized in excellent yields and selectivities. We hypothesized that by adding an extra catalyst into the oxidation system, g-benzopyranones can be generated from propargylic alcohols in a onepot process. Herein, we report our results on this topic.",
+    "page": 1,
+    "bbox": [
+      77.0,
+      594.0,
+      489.0,
+      875.0
+    ],
+    "section": "One Pot Synthesis of g-Benzopyranones via Iron-Catalyzed Aerobic Oxidation and Subsequent 4-Dimethylaminopyridine Cataly",
+    "prev_block_id": "block_9_0005",
+    "next_block_id": "block_9_0007",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0007",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "To start our study, 2-(1-hydroxy-3-phenylprop-2- yn-1-yl)phenol (1 a) was selected as the model starting material. First, different additives were screened after the iron-catalyzed aerobic oxidation reaction.[9] When  { \\bf K } _ { 2 } { \\bf C O } _ { 3 } and NaOH were used, both 2-phenyl-4Hchromen-4-one (3a) and 2-benzylidenebenzofuran-3(2H)-one (4 a) were formed in moderate yields (Table 1, entries 1 and 2).[10] Other additive such as PCy3 (Table 1, entry 3) resulted in a poor selectivity and low conversion. TfOH and t-BuOLi gave 86% yield and 79% yield of alkynone 2 a, respectively (Table 1, entries 4 and 5). Running this reaction by adding DMAP[11] gave the best result in 85% yield of 3 a with an excellent selectivity and no starting material was recovered (Table 1, entry 5).",
+    "page": 1,
+    "bbox": [
+      504.0,
+      525.0,
+      917.0,
+      734.0
+    ],
+    "section": "One Pot Synthesis of g-Benzopyranones via Iron-Catalyzed Aerobic Oxidation and Subsequent 4-Dimethylaminopyridine Cataly",
+    "prev_block_id": "block_9_0006",
+    "next_block_id": "block_9_0008",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0008",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "Encouraged by these results, different solvents were examined. DMF, dioxane, and THF gave 43~ 73% recovery of 1 a (Table 2, entries 1–3). When DCM was used as the solvent, 8% yield of gbenzopyranone 3 a was detected without recovery of 1 a (Table 2, entry 4). When DCE was used, 58% yield of 3 a was obtained (Table 2, entry 5). Finally, MeCN turned out to be the best solvent, providing gbenzopyranone 3 a in 85% NMR yield and 82% isolated yield (Table 2, entry 6).",
+    "page": 1,
+    "bbox": [
+      504.0,
+      734.0,
+      917.0,
+      875.0
+    ],
+    "section": "One Pot Synthesis of g-Benzopyranones via Iron-Catalyzed Aerobic Oxidation and Subsequent 4-Dimethylaminopyridine Cataly",
+    "prev_block_id": "block_9_0007",
+    "next_block_id": "block_9_0009",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0009",
+    "doc_id": "9",
+    "block_type": "table",
+    "text": "Entry | Additive | Equiv. | $t_1/t_2(h)$ | Yield (%) [b]; 2a | 3a | 4a; 1 | $K_2CO_3$ | 2.0 | 3.0/4.0 | 0 | 40 | 52; 2 | NaOH | 2.0 | 3.0/2.5 | 0 | 15 | 61; 3 | $PCy_3$ | 0.2 | 3.0/2.5 | 29 | 12 | 19; 4 | TfOH | 0.2 | 2.3/2.5 | 86 | 0 | 0; 5 | t-BuOLi | 0.2 | 3.2/14 | 79 | 0 | 0; 6 | DMAP | 0.2 | 3.3/2.5 | 0 | 85 | 0 | [a] The reaction was conducted using 1 a (1.0 mmol), Fe(NO ) ·9H O (0.05 mmol), NaCl (0.05 mmol), TEMPO (0.05 mmol), and additive in MeCN (5 mL) with an oxygen balloon at 258C. | [b] Determined by 1 H NMR analysis with dibromomethane as the internal standard.",
+    "page": 2,
+    "bbox": [
+      78.0,
+      563.0,
+      489.0,
+      684.0
+    ],
+    "section": "One Pot Synthesis of g-Benzopyranones via Iron-Catalyzed Aerobic Oxidation and Subsequent 4-Dimethylaminopyridine Cataly",
+    "prev_block_id": "block_9_0008",
+    "next_block_id": "block_9_0010",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "table"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0010",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "Subsequently, different loadings of DMAP were studied in this one-pot synthesis. With 0.1 equiv. of DMAP, only 19% yield of 3 a was detected together with 67% yield of aerobic oxidation product 2- alkynone 2 a (Table 3, entry 1). When the loading of DMAP was increased to 0.15 equiv, the yield of 3 a",
+    "page": 2,
+    "bbox": [
+      77.0,
+      790.0,
+      490.0,
+      875.0
+    ],
+    "section": "One Pot Synthesis of g-Benzopyranones via Iron-Catalyzed Aerobic Oxidation and Subsequent 4-Dimethylaminopyridine Cataly",
+    "prev_block_id": "block_9_0009",
+    "next_block_id": "block_9_0011",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0011",
+    "doc_id": "9",
+    "block_type": "table",
+    "text": "Entry | Solvent | $t_1/t_2$ (h) | Yield of 3a(%) [b] | Recovery of 1a(%) [b]; 1 | DMF | 2.8/1.7 | 0 | 73; 2 | dioxane | 2.7/2.4 | 0 | 43; 3 | THF | 2.5/2.0 | 0 | 49; 4 | DCM | 3.0/2.5 | 8 | 0; 5 | DCE | 3.0/2.5 | 58 | 0; 6 | MeCN | 3.3/2.5 | 85 (82)[c] | 0 | [a] The reaction was conducted using 1 a (1.0 mmol), Fe(NO3)3·9H2O (0.05 mmol), NaCl (0.05 mmol), TEMPO (0.05 mmol) in solvent (5 mL) with an oxygen balloon at 25 8C. After the disappearance of 1 a by TLC, DMAP (0.2 mmol) was added into the resulting mixture. | [b] Determined by 1 H NMR analysis with dibromomethane as the internal standard. | [c] The number in parenthesis represents isolated yield. DMAP: 4-dimethylaminopyridine.",
+    "page": 2,
+    "bbox": [
+      507.0,
+      533.0,
+      917.0,
+      653.0
+    ],
+    "section": "One Pot Synthesis of g-Benzopyranones via Iron-Catalyzed Aerobic Oxidation and Subsequent 4-Dimethylaminopyridine Cataly",
+    "prev_block_id": "block_9_0010",
+    "next_block_id": "block_9_0012",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "table"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0012",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "was improved to 72% with no 2 a detected (Table 3, entry 2). The best catalyst of DMAP was proved to be 0.2 equiv. with 85% NMR yield of 3 a and no 2 a was detected (Table 3, entry 4). Further increasing the [a] The reaction was conducted using 1 a (1.0 mmol), F  \\mathrm { e } ( \\mathrm { N O } _ { 3 } ) _ { 3 } { \\bullet } 9 \\mathrm { H } _ { 2 } \\mathrm { O } (0.05 mmol), NaCl (0.05 mmol), TEMPO (0.05 mmol) in MeCN (5 mL) with an oxygen balloon at 25 8C. After the disappearance of 1 a by TLC, DMAP (0.2 mmol) was added into the resulting mixture.",
+    "page": 2,
+    "bbox": [
+      505.0,
+      804.0,
+      917.0,
+      862.0
+    ],
+    "section": "One Pot Synthesis of g-Benzopyranones via Iron-Catalyzed Aerobic Oxidation and Subsequent 4-Dimethylaminopyridine Cataly",
+    "prev_block_id": "block_9_0011",
+    "next_block_id": "block_9_0013",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0013",
+    "doc_id": "9",
+    "block_type": "table",
+    "text": "Entry | x | $t_1/t_2$  (h) | Yield (%) [b]; 2a | 3a; 1 | 10 | 3.25/2.5 | 67 | 19; 2 | 15 | 3.0/2.5 | 0 | 72; 3 | 20 | 3.3/2.5 | 0 | 85 (81)[c]; 4 | 30 | 2.6/1.5 | 0 | 83 | Table 3. The effect of the DMAP loading.[a]",
+    "page": 3,
+    "bbox": [
+      78.0,
+      99.0,
+      485.0,
+      244.0
+    ],
+    "section": "One Pot Synthesis of g-Benzopyranones via Iron-Catalyzed Aerobic Oxidation and Subsequent 4-Dimethylaminopyridine Cataly",
+    "prev_block_id": "block_9_0012",
+    "next_block_id": "block_9_0014",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "table"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0014",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "[b] Determined by 1 H NMR analysis with dibromomethane as the internal standard.",
+    "page": 3,
+    "bbox": [
+      78.0,
+      313.0,
+      482.0,
+      338.0
+    ],
+    "section": "One Pot Synthesis of g-Benzopyranones via Iron-Catalyzed Aerobic Oxidation and Subsequent 4-Dimethylaminopyridine Cataly",
+    "prev_block_id": "block_9_0013",
+    "next_block_id": "block_9_0015",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0015",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "[c] The number in parenthesis represents isolated yield.",
+    "page": 3,
+    "bbox": [
+      78.0,
+      338.0,
+      448.0,
+      351.0
+    ],
+    "section": "One Pot Synthesis of g-Benzopyranones via Iron-Catalyzed Aerobic Oxidation and Subsequent 4-Dimethylaminopyridine Cataly",
+    "prev_block_id": "block_9_0014",
+    "next_block_id": "block_9_0016",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0016",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "loading of DMAP failed to improve the yield of 3 a (Table 3, entry 5).",
+    "page": 3,
+    "bbox": [
+      77.0,
+      385.0,
+      489.0,
+      414.0
+    ],
+    "section": "One Pot Synthesis of g-Benzopyranones via Iron-Catalyzed Aerobic Oxidation and Subsequent 4-Dimethylaminopyridine Cataly",
+    "prev_block_id": "block_9_0015",
+    "next_block_id": "block_9_0017",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0017",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "With the optimal conditions in hand (Table 3, entry 3), the reaction scope was further investigated. When  \\dot { \\mathbf { R } } ^ { 1 } is H, different aryl groups can be introduced into the  \\mathbf { R } ^ { 2 } position including electron withdrawing and electron donating group substituted phenyl groups, providing the desired g-benzopyranones in decent yields (Table 4, entries 1–4, 3 a–3 d). Replacing  \\mathbf { R } ^ { 2 } with H and n-Bu resulted in lower yields (Table 4, entries 5 and 6, 3 e and 3 f). To understand the reason of low yields for the substrates 1 e and 1 f, ironcatalyzed oxidation and 6-endo cyclization were conducted separately. Firstly, the oxidation of 1 e provided the desired product 2 e in 83% NMR yield. The second step of 6-endo cyclization gave only 33% NMR yield of 3 e. Thus, we reasoned that the low yield of 3 e was mainly due to the low yield of 6-endo cyclization step. For the reaction of 1 f, iron-catalyzed oxidation provided 89% NMR yield of 2 f, the second step of 6-endo cyclizaion provided 86% NMR yield of 3 f with acetonitrile as solvent.[11] However, the 6-endo cyclization under the catalysis of DMAP together with the catalysts for the first step gave 3 f in only 53% NMR yield. Based on these results, we proposed that the low yield of 3 f was also caused by the low yield of 6-endo cyclization under the combined conditions (Scheme 2).",
+    "page": 3,
+    "bbox": [
+      77.0,
+      414.0,
+      489.0,
+      776.0
+    ],
+    "section": "One Pot Synthesis of g-Benzopyranones via Iron-Catalyzed Aerobic Oxidation and Subsequent 4-Dimethylaminopyridine Cataly",
+    "prev_block_id": "block_9_0016",
+    "next_block_id": "block_9_0018",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0018",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "\\mathbf { R } ^ { 1 } may also be 5-chloro with  \\mathbf { R } ^ { 2 } being phenyl, cyclopropyl, 2-thienyl, 3-thienyl, providing the desired product in 52–86% isolated yields (Table 4, entries 7– 10, 3 g–3 j). It is worth noting that methyl, bromo, nitro, and 3,5-dichloro on R1 position were all tolerated in this reaction providing the corresponding products in good to excellent yields (Table 4, entries",
+    "page": 3,
+    "bbox": [
+      77.0,
+      776.0,
+      489.0,
+      875.0
+    ],
+    "section": "One Pot Synthesis of g-Benzopyranones via Iron-Catalyzed Aerobic Oxidation and Subsequent 4-Dimethylaminopyridine Cataly",
+    "prev_block_id": "block_9_0017",
+    "next_block_id": "block_9_0019",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0019",
+    "doc_id": "9",
+    "block_type": "table",
+    "text": "Entry | R1/R2 | t1/t2(h) | Yield of 3 (%); 1 | H/Ph (1a) | 3.3/2.5 | 82 (3a); 2 | H/p-MeC6H4(1b) | 3.0/3.0 | 81 (3b); 3[b] | H/p-MeOC6H4(1c) | 3.75/5.5 | 81 (3c); 4 | H/p-ClC6H4(1d) | 3.3/11.6 | 68 (3d); 5 | H/H (1e) | 4.0/3.0 | 20 (3e); 6 | H/n-Bu (1f) | 3.0/3.0 | 44 (3f); 7 | 5-Cl/Ph (1g) | 3.5/3.0 | 78 (3g); 8 | 5-Cl/Cyclopropyl (1h) | 3.5/3.5 | 86 (3h); 9 | 5-Cl/2-thienyl (1i) | 3.5/3.5 | 52 (3i); 10 | 5-Cl/3-thienyl (1j) | 3.5/4.0 | 78 (3j); 11 | 5-Me/Ph (1k) | 3.5/3.0 | 67 (3k); 12 | 5-Br/Ph (1l) | 3.75/13 | 78 (3l); 13 | 5-NO2/Ph (1m) | 3.75/13 | 85 (3m); 14 | 3-Cl, 5-Cl/Ph (1n) | 12/7.0 | 63 (3n); 15 | 5-MeO/Ph (1o) | 13/4.0 | 13 (3o) | Table 4. The substrate scope.[a]",
+    "page": 3,
+    "bbox": [
+      507.0,
+      99.0,
+      917.0,
+      380.0
+    ],
+    "section": "One Pot Synthesis of g-Benzopyranones via Iron-Catalyzed Aerobic Oxidation and Subsequent 4-Dimethylaminopyridine Cataly",
+    "prev_block_id": "block_9_0018",
+    "next_block_id": "block_9_0020",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "table"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0020",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "[a] The reaction was conducted using 1 a (1.0 mmol), Fe(NO ) ·9H O (0.05 mmol), NaCl (0.05 mmol), TEMPO (0.05 mmol) in MeCN (5 mL) with an oxygen balloon at 25 8C. After the disappearance of 1 a by TLC, DMAP (0.2 mmol) was added into the resulting mixture.",
+    "page": 3,
+    "bbox": [
+      507.0,
+      382.0,
+      914.0,
+      447.0
+    ],
+    "section": "One Pot Synthesis of g-Benzopyranones via Iron-Catalyzed Aerobic Oxidation and Subsequent 4-Dimethylaminopyridine Cataly",
+    "prev_block_id": "block_9_0019",
+    "next_block_id": "block_9_0021",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0021",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "[b] The reaction was conducted using 1 c (0.5 mmol).",
+    "page": 3,
+    "bbox": [
+      507.0,
+      447.0,
+      857.0,
+      460.0
+    ],
+    "section": "One Pot Synthesis of g-Benzopyranones via Iron-Catalyzed Aerobic Oxidation and Subsequent 4-Dimethylaminopyridine Cataly",
+    "prev_block_id": "block_9_0020",
+    "next_block_id": "block_9_0022",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0022",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "11–14, 3 k–3 n). However, when  \\mathbf { R } ^ { 1 } is 5-methoxyl group, the reaction provided the desired product 3 o in only 13% isolated yield (Table 4, entry 15, 3 o).",
+    "page": 3,
+    "bbox": [
+      505.0,
+      497.0,
+      917.0,
+      539.0
+    ],
+    "section": "One Pot Synthesis of g-Benzopyranones via Iron-Catalyzed Aerobic Oxidation and Subsequent 4-Dimethylaminopyridine Cataly",
+    "prev_block_id": "block_9_0021",
+    "next_block_id": "block_9_0023",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0023",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "Since g-benzopyranones with multi-methoxy substituents are core structure of natural products and play an important role in pharmaceutical science, we also tested 4-methoxy and 4,5-dimethoxy substituted propargylic alcohols (1 p and 1 q). Since 1 p and 1 q are easily decomposed during the chromatographic purification, we used the crude products directly for the reaction. However, the one-pot process of oxidation and cyclization for 1 p provided only 10% yield of 3 p, and one-pot synthesis of 3 q failed, yielding a complex mixture-product 3 q was not observed from the crude NMR spectra. The poor results were due to the oxidation steps (24% NMR yield for 2 p and 5% NMR yield for 2 q). When 2 q was isolated and submitted for the cyclization process, the reaction proceeded smoothly to provide the final product 3 q in 76% yield (Scheme 3).",
+    "page": 3,
+    "bbox": [
+      504.0,
+      539.0,
+      917.0,
+      776.0
+    ],
+    "section": "One Pot Synthesis of g-Benzopyranones via Iron-Catalyzed Aerobic Oxidation and Subsequent 4-Dimethylaminopyridine Cataly",
+    "prev_block_id": "block_9_0022",
+    "next_block_id": "block_9_0024",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0024",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "To demonstrate the practicality and efficiency of this methodology, gram scale synthesis of g-benzopyranones were carried out. When 1l and 1 n were chosen to be the substrates, 1.53 g of 3 l (85% yield) and 1.07 g of 3 n (61% yield) were successfully prepared (Scheme 4).",
+    "page": 3,
+    "bbox": [
+      505.0,
+      776.0,
+      917.0,
+      860.0
+    ],
+    "section": "One Pot Synthesis of g-Benzopyranones via Iron-Catalyzed Aerobic Oxidation and Subsequent 4-Dimethylaminopyridine Cataly",
+    "prev_block_id": "block_9_0023",
+    "next_block_id": "block_9_0025",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0025",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "Naturally occurring 3’,4’- dimethoxyflavone 3 r was chosen as the target and synthesized in four steps from commercially available starting materials (Scheme 4).[12] The first two steps including Sonogashira coupling and subsequent Retro-Favorski reaction gave 6 r in 55% yield. Then, the reaction of salicylic aldehyde with 6 r-based lithium acetylide gave the desired propargylic alcohol 1 r in 85% yield. Finally, the naturally occurring 3’,4’-dimethoxyflavone 3 r was obtained in 78% yield (Scheme 5).",
+    "page": 4,
+    "bbox": [
+      77.0,
+      552.0,
+      489.0,
+      692.0
+    ],
+    "section": "One Pot Synthesis of g-Benzopyranones via Iron-Catalyzed Aerobic Oxidation and Subsequent 4-Dimethylaminopyridine Cataly",
+    "prev_block_id": "block_9_0024",
+    "next_block_id": "block_9_0026",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0026",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "The Suzuki coupling reaction of 3 n with phenylboronic acid gave the desired g-benzopyranone 7 n by using LB-Phos[13] as the ligand in 71% isolated yield via simple recrystallization (Scheme 6).",
+    "page": 4,
+    "bbox": [
+      77.0,
+      693.0,
+      489.0,
+      749.0
+    ],
+    "section": "One Pot Synthesis of g-Benzopyranones via Iron-Catalyzed Aerobic Oxidation and Subsequent 4-Dimethylaminopyridine Cataly",
+    "prev_block_id": "block_9_0025",
+    "next_block_id": "block_9_0027",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0027",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "In conclusion, a green methodology consisting of iron-catalyzed aerobic oxidation and DMAP-catalyzed 6-endo cyclization to differently substituted gbenzopyranones in moderate to excellent yields was developed. This eco-friendly one-pot synthesis protocol may be easily executed on gram scale and has been applied to the synthesis of naturally occurring 3’,4’-dimethoxyflavone 3r. Due to the importance of these products, this method will be of high interest to people who work in fine chemical and pharmaceutical synthesis.",
+    "page": 4,
+    "bbox": [
+      77.0,
+      749.0,
+      490.0,
+      875.0
+    ],
+    "section": "One Pot Synthesis of g-Benzopyranones via Iron-Catalyzed Aerobic Oxidation and Subsequent 4-Dimethylaminopyridine Cataly",
+    "prev_block_id": "block_9_0026",
+    "next_block_id": "block_9_0028",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0028",
+    "doc_id": "9",
+    "block_type": "title",
+    "text": "Experimental Section",
+    "page": 4,
+    "bbox": [
+      507.0,
+      127.0,
+      717.0,
+      143.0
+    ],
+    "section": "Experimental Section",
+    "prev_block_id": "block_9_0027",
+    "next_block_id": "block_9_0029",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0029",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "General Information. NMR spectra were taken with an Agilent-400 spectrometer (400 MHz for 1 H NMR, 100 MHz for 13C NMR). 1 H NMR spectra were recorded using TMS as an internal standard (d 0 ppm), or using solvent residual signal of acetone-d6 as an internal standard (d 2.05 ppm), or using solvent residual signal of CD CN as an internal standard (d 1.95 ppm) and coupling constants were reported in Hz. 13C NMR spectra were recorded using  \\mathrm { C D C l } _ { 3 } ^ { \\overline { { } } } as an internal standard (d 77.0 ppm), or using acetone-d6 as an internal standard (d 29.84 ppm), or using CD3CN as an internal standard (d 118.2 ppm). All reactions were carried out in flame-dried Schlenk tubes. Fe(NO3)3·9H2O (98%) and Pd(OAc)2 (47.5% Pd) was purchased from J&K Chemicals; NaCl (>99.5%), CuI (>99.5%) and DMAP (>99%) was purchased from Sinopharm Chemical Reagent Co., Ltd; TEMPO (98%) was purchased from Shanghai Darui Fine Chemical Co., Ltd.; Pd(PPh3)2Cl2 (98%) was purchased from Energy Chemical; Dioxane, toluene and THF were dried over sodium wire. MeCN was dried over CaH and distilled. All the temperatures are referred to the oil baths, acetone/ dry ice bath or ice/water bath used. Recovery of substrates was determined by 1 H NMR analysis using dibromomethane as the internal standard.",
+    "page": 4,
+    "bbox": [
+      505.0,
+      149.0,
+      919.0,
+      447.0
+    ],
+    "section": "Experimental Section",
+    "prev_block_id": "block_9_0028",
+    "next_block_id": "block_9_0030",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0030",
+    "doc_id": "9",
+    "block_type": "title",
+    "text": "Experimental Details and Analytical Data",
+    "page": 4,
+    "bbox": [
+      507.0,
+      467.0,
+      826.0,
+      482.0
+    ],
+    "section": "Experimental Details and Analytical Data",
+    "prev_block_id": "block_9_0029",
+    "next_block_id": "block_9_0031",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0031",
+    "doc_id": "9",
+    "block_type": "title",
+    "text": "1. Synthesis of Propargylic Alcohols[8]",
+    "page": 4,
+    "bbox": [
+      507.0,
+      488.0,
+      764.0,
+      502.0
+    ],
+    "section": "1. Synthesis of Propargylic Alcohols[8]",
+    "prev_block_id": "block_9_0030",
+    "next_block_id": "block_9_0032",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0032",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "(1) Preparation of 3-cyclopropyl-1-(2-hydroxy-5-chlorophenyl)-2-propynol (1 h)",
+    "page": 4,
+    "bbox": [
+      505.0,
+      508.0,
+      917.0,
+      535.0
+    ],
+    "section": "1. Synthesis of Propargylic Alcohols[8]",
+    "prev_block_id": "block_9_0031",
+    "next_block_id": "block_9_0033",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0033",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "Typical Procedure A: To a flame-dried Schlenk tube were added cyclopropyl acetylene (1.18 g, 17.6 mmol) and THF (40 mL) under Ar. The resulting mixture was cooled to -78 8C. n-BuLi (2.4 M in hexanes, 7 mL, 16.8 mmol) was slowly added at -788C within 15 min. The mixture was put into an ice-water bath and stirred at 0 8C for 83 min. Then, the mixture was put into a dry ice-acetone bath at -788C. After 10 min, the solution of 5-chloro-2-hydroxybenzaldehyde (1.20 g, 8 mmol) in dry THF (20 mL) was slowly added within 10 min. After being stirred at -78 8C for 6.5 h, the resulting mixture was placed in an ice/water bath and quenched with a saturated aqueous ammonium chloride solution (40 mL). The organic layer was separated and the aqueous solution was extracted with ethyl ether (3 3 30 mL). The combined organic layer was dried over anhydrous  { \\mathrm { N a } } _ { 2 } { \\mathrm { S O } } _ { 4 } . . After filtration and concentration under reduced pressure, the crude product was purified by column chromatography on silica gel to afford 1h (1.0735 g, 63%) as a white solid [DCM (100 mL) to DCM/ethyl ether=15/1 afforded impure 3 h, which was further purified with chromatography (eluent: petroleum ether/ethyl acetate=3/1)]: m.p. 74.0–",
+    "page": 4,
+    "bbox": [
+      505.0,
+      598.0,
+      919.0,
+      871.0
+    ],
+    "section": "1. Synthesis of Propargylic Alcohols[8]",
+    "prev_block_id": "block_9_0032",
+    "next_block_id": "block_9_0034",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0034",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "Scheme 3. Reactions of multi-methoxy substituted substrates 1 p and 1 q.",
+    "page": 5,
+    "bbox": [
+      78.0,
+      640.0,
+      563.0,
+      656.0
+    ],
+    "section": "1. Synthesis of Propargylic Alcohols[8]",
+    "prev_block_id": "block_9_0033",
+    "next_block_id": "block_9_0035",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0035",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "74.98C (petroleum ether/dichloromethane); 1 H NMR (400 MHz, CDCl ): d = 7.36 (s, 1 H, ArOH), 7.31 (d, J = 2.4 Hz, 1H, ArH), 7.18 (dd, J = 8.4 Hz, J = 2.4 Hz, 1H, ArH), 6.83 (d, J = 8.8 Hz, 1H, ArH), 5.59 (d, J = 4.0 Hz, 1H, OCH), 2.68 (d, J = 5.2 Hz, 1H, OH), 1.40–1.30 (m, 1H, CH from cyclopropane), 0.90–0.72 (m, 4H, CH -CH ); 13C NMR (100 MHz, CDCl ): d=153.9, 129.7, 127.4, 126.2, 124.8, 118.4, 93.3, 72.3, 63.8, 8.5, -0.5; MS (70 eV, EI) m/z (%): 224 (M+ ( 37Cl), 2.55), 222 (M+( 35Cl), 8.51), 176 (100); IR (neat): n = 3394, 2232, 1602, 1494, 1424, 1358, 1326, 1271, 1113 cm-1 ; Anal. Calcd for  \\mathrm { C } _ { 1 2 } \\mathrm { H } _ { 1 1 } \\mathrm { C l O } _ { 2 } \\mathrm { ; } C 64.73, H 4.98; Found: C 64.84, H 4.98.",
+    "page": 5,
+    "bbox": [
+      78.0,
+      678.0,
+      490.0,
+      833.0
+    ],
+    "section": "1. Synthesis of Propargylic Alcohols[8]",
+    "prev_block_id": "block_9_0034",
+    "next_block_id": "block_9_0036",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0036",
+    "doc_id": "9",
+    "block_type": "title",
+    "text": "2. Synthesis of g-Benzopyranones",
+    "page": 5,
+    "bbox": [
+      505.0,
+      678.0,
+      763.0,
+      694.0
+    ],
+    "section": "2. Synthesis of g-Benzopyranones",
+    "prev_block_id": "block_9_0035",
+    "next_block_id": "block_9_0037",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0037",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "(1) Preparation of 2-(4-methylphenyl)-4H-chromen-4-one (3 b)",
+    "page": 5,
+    "bbox": [
+      505.0,
+      699.0,
+      917.0,
+      726.0
+    ],
+    "section": "2. Synthesis of g-Benzopyranones",
+    "prev_block_id": "block_9_0036",
+    "next_block_id": "block_9_0038",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0038",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "Typical Procedure B: To a flame-dried Schlenk tube were added  \\mathrm { F e ( N O _ { 3 } ) _ { 3 } { \\cdot } ^ { 9 } H _ { 2 } O } (20.1 mg, 0.05 mmol) and NaCl (3.1 mg, 0.05 mmol) under argon. The Schlenk tube was then degassed to remove the argon inside completely, and refilled with O2 by a balloon of O2 for three times. Then, a solution of TEMPO (8.2 mg, 0.05 mmol) in dry MeCN (3 mL) and a",
+    "page": 5,
+    "bbox": [
+      505.0,
+      791.0,
+      917.0,
+      871.0
+    ],
+    "section": "2. Synthesis of g-Benzopyranones",
+    "prev_block_id": "block_9_0037",
+    "next_block_id": "block_9_0039",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0039",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "Reagents and conditions: i) 2-methylbut-3-yn-2-ol (3.6 equiv.), Pd(PPh3)2Cl2 (5 mol%), CuI (10 mol%), TEA, 90 8C, 24 h; ii) KOH (3 equiv.), toluene,  { \\bf \\bar { 1 } 1 0 ^ { \\circ } C , } , 22 h; iii) salicylic aldehyde (0.45 equiv.), n-BuLi (0.95 equiv.), THF,  - 7 8 ^ { \\circ } \\mathrm { C } , 4 h; iv) Fe(NO3)3·9H2O (5 mol%), NaCl (5 mol%), TEMPO (5 mol%), MeCN, oxygen balloon,  2 5 ^ { \\circ } \\mathrm { C } , 4.7 h; i) then DMAP (20 mol%), 258C, 6 h.",
+    "page": 6,
+    "bbox": [
+      77.0,
+      472.0,
+      489.0,
+      564.0
+    ],
+    "section": "2. Synthesis of g-Benzopyranones",
+    "prev_block_id": "block_9_0038",
+    "next_block_id": "block_9_0040",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0040",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "solution of 1 b (239.4 mg, 1.0 mmol) in dry MeCN (2 mL) were added sequentially. Then the mixture was stirred at 25 8C with a balloon of  \\mathrm { O } _ { 2 } for 3.0 h. After the disappearance of 1 b by TLC, O balloon was removed and DMAP (24.1 mg, 0.2 mmol) was added into the reaction mixture. Then the mixture was stirred at  2 5 ^ { \\circ } \\mathrm { C } for 3.0 h as monitored by TLC. After concentration under reduced pressure, the residue was diluted with DCM. To the solution was added 1 M HCl (10 mL) and the resulting mixture was washed with 20 mL of water. The organic layer was separated and the aqueous solution was extracted with DCM (3 3 30 mL). The combined organic layer was dried over anhydrous  { \\mathrm { N a } } _ { 2 } { \\mathrm { S O } } _ { 4 } ,",
+    "page": 6,
+    "bbox": [
+      77.0,
+      709.0,
+      489.0,
+      866.0
+    ],
+    "section": "2. Synthesis of g-Benzopyranones",
+    "prev_block_id": "block_9_0039",
+    "next_block_id": "block_9_0041",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0041",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "filtered and concentrated under reduced pressure. Then, the mixture was transferred with DCM, filtered through a short column on silica gel (3 cm) (eluent: ethyl ether) until no product can be observed by TLC, and concentrated under reduced pressure [the yield of 3 b was determined by 1 H NMR analysis of the crude products using dibromomethane as the internal standard (82%)]. The residue was purified by column chromatography on silica gel to afford  \\mathbf { 3 6 } ^ { \\mathrm { { \\check { 8 } } } \\mathrm { { ] } } } (193.5 mg, 81%) as a pale yellow solid [eluent: petroleum ether/ethyl acetate=8/1]: m.p. 112.5–113.48C (petroleum ether/DCM)  \\mathrm { ( L i t ^ { [ 6 \\mathrm { f } ] } } m.p.: 111 8C); 1 H NMR (400 MHz, CDCl ): d = 8.21 (dd, J = 7.6 Hz, J = 1.2 Hz, 1H, ArH), 7.78 (d, J =8.4 Hz, 2H, ArH), 7.70–7.62 (m, 1H, Ar-H), 7.53 (d, J = 8.4 Hz, 1H, ArH), 7.38 (t, J = 7.6 Hz, 1H, ArH), 7.28 (d,  J { = } 7 . 6 \\mathrm { H z } , 2H, ArH), 6.76 (s, 1H, =CH), 2.40 (s, 3 H, CH3); 13C NMR (100 MHz, CDCl3): d=178.3, 163.4, 156.1, 142.1, 133.5, 129.6, 128.8, 126.1, 125.5, 125.0, 123.8, 117.9, 106.8, 21.4; MS (70 eV, EI) m/z (%): 236 (M +, 100); IR (neat): n = 1634, 1604, 1567, 1510, 1464, 1414, 1370, 1124 cm-1 .",
+    "page": 6,
+    "bbox": [
+      505.0,
+      334.0,
+      919.0,
+      580.0
+    ],
+    "section": "2. Synthesis of g-Benzopyranones",
+    "prev_block_id": "block_9_0040",
+    "next_block_id": "block_9_0042",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0042",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "Typical Procedure C: To a flame-dried Schlenk tube were added Fe(NO3)3· 9H2O (20.2 mg, 0.05 mmol) and NaCl (2.7 mg, 0.05 mmol) under argon. The Schlenk tube was then degassed to remove the argon inside completely, and refilled with O by a balloon of O for three times. Then, a solution of TEMPO (8.1 mg, 0.05 mmol) in dry MeCN (2 mL) and a solution of 1 j (264.7 mg, 1.0 mmol) in dry MeCN (3 mL) were added sequentially. Then the resulting mixture was stirred at  2 5 ^ { \\circ } \\mathrm { C } with a balloon of  \\mathrm { { O } } _ { 2 } for 3.5 h. After the disappearance of 1 j by TLC,  \\mathrm { O } _ { 2 } balloon was removed and DMAP (24.4 mg, 0.2 mmol) was added into the reaction mixture. Then the mixture was stirred at  2 5 ^ { \\circ } \\mathrm { C } for 4 h as monitored by TLC. After concentration under reduced pressure, the residue was diluted with DCM. To the solution was added 1 M HCl (10 mL) and the resulting mixture was washed with 20 mL of water. The organic layer was separated and the aqueous solution was extracted with DCM (3 3 30 mL). The combined organic layer was dried over anhydrous  \\mathrm { N a } _ { 2 } \\mathrm { S O } _ { 4 } , filtered and concentrated to remove most of DCM. Then, the resulting mixture was filtered through a short column on silica gel (3 cm) (eluent: ethyl ether) until no product may be collected as indicated by TLC, and concentrated under reduced pressure [the yield of 3 j was determined by 1 H NMR analysis of the crude products using dibromomethane as the internal standard (83%)]. The residue was purified by column chromatography on silica gel to afford  \\mathsf { \\mathbf { 3 } } \\mathbf { j } ^ { [ 1 4 ] } (207.2 mg, 78%) as a white solid [eluent: petroleum ether/ethyl acetate=15/1 (400 mL) to petroleum ether/dichloromethane/ethyl acetate=15/2/1]: m.p. 155.5–156.48C (petroleum ether/ethyl ether)  \\mathrm { ( L i t ^ { [ i \\bar { 4 } ] } } m.p.: 160 8C); 1 H NMR (400 MHz, CDCl ): d = 8.14 (d, J = 2.4 Hz, 1H, ArH), 8.00 (t, J = 2.2 Hz, 1H, ArH), 7.60 (dd,  J _ { 1 } { = } 8 . 8 Hz,  J _ { 2 } = 2 . 4 4 Hz, 1H, ArH), 7.51–7.41 (m, 3H, ArH), 6.64 (s, 1 H, =CH); 13C NMR (100 MHz, CDCl ): d = 177.1, 159.7, 154.3, 133.83, 133.77, 131.1, 127.5, 127.1, 125.1, 125.0, 124.9, 119.6, 107.0; MS (70 eV, EI) m/z (%): 264 (M+( 37Cl), 37.29), 262  ( \\mathbf { M } ^ { + } ( ^ { 3 5 } \\mathbf { C l } ) , 100); IR (neat): v =1649, 1616, 1603, 1567, 1434, 1410, 1380, 1332, 1258, 1042 cm-1",
+    "page": 6,
+    "bbox": [
+      505.0,
+      681.0,
+      917.0,
+      863.0
+    ],
+    "section": "2. Synthesis of g-Benzopyranones",
+    "prev_block_id": "block_9_0041",
+    "next_block_id": "block_9_0043",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0043",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "(3) Preparation of 2-(4-methoxyphenyl)-4H-chromen-4-one (3 c)",
+    "page": 7,
+    "bbox": [
+      78.0,
+      395.0,
+      489.0,
+      423.0
+    ],
+    "section": "2. Synthesis of g-Benzopyranones",
+    "prev_block_id": "block_9_0042",
+    "next_block_id": "block_9_0044",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0044",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "Typical Procedure D: To a flame-dried Schlenk tube were added  \\mathrm { F e ( N O _ { 3 } ) _ { 3 } { \\cdot } ^ { 9 } H _ { 2 } O } (10.4 mg, 0.025 mmol) and NaCl (1.5 mg, 0.025 mmol) under argon. The Schlenk tube was then degassed to remove the argon inside completely, and refilled with  \\mathrm { O } _ { 2 } by a balloon of  \\mathrm { O } _ { 2 } for three times. Then, a solution of TEMPO (3.9 mg, 0.025 mmol) in dry MeCN (1.5 mL) and a solution of 1 c (127.5 mg, 0.5 mmol) in dry MeCN (1 mL) were added sequentially. Then the mixture was stirred at  2 5 ^ { \\circ } \\mathrm { C } with a balloon of  \\mathrm { { O } } _ { 2 } for 3.75 h. After the disappearance of 1 c by TLC, the O2 balloon was removed and DMAP (12.3 mg, 0.1 mmol) was added into the reaction mixture. Then the mixture was stirred at  2 5 ^ { \\circ } \\mathrm { C } for 5.5 h as monitored by TLC. After concentration under reduced pressure, the residue was transferred with DCM, filtered through a short column on silica gel (3 cm) (eluent: ethyl ether) until no product can be observed by TLC, and concentrated under reduced pressure [the yield of 3 c was determined by 1 H NMR analysis of the crude products using dibromomethane as the internal standard (78%)]. The residue was purified by column chromatography on silica gel to afford  \\mathbf { 3 \\mathbf { c } } ^ { [ 8 ] } (102.5 mg, 81%) as a pale yellow solid (eluent: petroleum ether/ethyl acetate=10/1 (210 mL) to petroleum ether/ethyl acetate=5/1): m.p. 155.0–156.18C (petroleum ether/DCM)  \\mathrm { ( L i t ^ { [ 7 e ] } } m.p.: 154–1568C); 1 H NMR (400 MHz, CDCl ):  \\delta = 8 . 2 3 (dd, J = 8.2 Hz, J = 1.4 Hz, 1H, ArH), 7.89 (d, J =9.2 Hz, 2H, ArH), 7.73–7.65 (m, 1H, ArH), 7.56 (d, J=8.0 Hz, 1 Hz, ArH), 7.45–7.37 (m, 1H, ArH), 7.03 (d, J= 9.2 Hz, 2H, ArH), 6.76 (s, 1H, =CH), 3.90 (s, 3H, OCH ); 13C NMR (100 MHz, CDCl ): d =178.4, 163.4, 162.4, 156.1, 133.5, 128.0, 125.6, 125.0, 123.9, 123.8, 117.9, 114.4, 106.1, 55.5; MS (70 eV, EI) m/z (%): 252 (M+, 100); IR (neat): n = 1644, 1604, 1570, 1512, 1464, 1426, 1376, 1314, 1264, 1251, 1192, 1122, 1023 cm-1 .",
+    "page": 7,
+    "bbox": [
+      77.0,
+      486.0,
+      490.0,
+      873.0
+    ],
+    "section": "2. Synthesis of g-Benzopyranones",
+    "prev_block_id": "block_9_0043",
+    "next_block_id": "block_9_0045",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0045",
+    "doc_id": "9",
+    "block_type": "title",
+    "text": "Acknowledgements",
+    "page": 7,
+    "bbox": [
+      507.0,
+      147.0,
+      697.0,
+      165.0
+    ],
+    "section": "Acknowledgements",
+    "prev_block_id": "block_9_0044",
+    "next_block_id": "block_9_0046",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0046",
+    "doc_id": "9",
+    "block_type": "paragraph",
+    "text": "Financial support from National Basic Research Program of China (2015CB856600) is greatly appreciated. We thank Shihua Song of our group for reproducing the results of entry 4, entry 5 and entry 14 in Table 4 represented in this study.",
+    "page": 7,
+    "bbox": [
+      505.0,
+      170.0,
+      919.0,
+      235.0
+    ],
+    "section": "Acknowledgements",
+    "prev_block_id": "block_9_0045",
+    "next_block_id": "block_9_0047",
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_9_0047",
+    "doc_id": "9",
+    "block_type": "title",
+    "text": "References",
+    "page": 7,
+    "bbox": [
+      507.0,
+      253.0,
+      618.0,
+      269.0
+    ],
+    "section": "References",
+    "prev_block_id": "block_9_0046",
+    "next_block_id": null,
+    "source_file": "9.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  }
+]

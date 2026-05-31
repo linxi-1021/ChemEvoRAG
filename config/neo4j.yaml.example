@@ -1,0 +1,22 @@
+neo4j:
+  uri: "bolt://localhost:7687"
+  username: "neo4j"
+  password: "CHANGE_ME"
+  database: "neo4j"
+
+  # Fill these with your graph schema.
+  molecule_label: "Molecule"
+  id_field: "elementkg_id"
+  canonical_name_field: "canonical_name"
+  name_fields:
+    - "canonical_name"
+    - "name"
+    - "iupac_name"
+  alias_fields:
+    - "aliases"
+  smiles_field: "smiles"
+  inchikey_field: "inchi_key"
+
+  # Optional limit used by query methods.
+  result_limit: 10
+

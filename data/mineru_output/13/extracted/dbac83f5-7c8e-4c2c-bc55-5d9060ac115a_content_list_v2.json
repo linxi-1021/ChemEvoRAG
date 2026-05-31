@@ -1,0 +1,2386 @@
+[
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/2a67d78ebea8bf2ebb20121858b632b68690fac1a9535bd5508f567d7e181f7e.jpg"
+                },
+                "content": "",
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                73,
+                177,
+                100,
+                195
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Check for updates "
+                    }
+                ]
+            },
+            "bbox": [
+                105,
+                179,
+                228,
+                192
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Cite this: Chem. Commun., 2023, "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                213,
+                257,
+                224
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "59, 5281 "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                225,
+                119,
+                237
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Received 28th February 2023, "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                247,
+                236,
+                258
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Accepted 22nd March 2023 "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                259,
+                226,
+                270
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "DOI: 10.1039/d3cc00963g "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                282,
+                218,
+                293
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "rsc.li/chemcomm "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                305,
+                169,
+                315
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Copper-catalyzed aerobic oxidation of primary alcohols to carboxylic acids† "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                284,
+                170,
+                882,
+                216
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Yibo Yu, a Di Zhai,a Zhengnan Zhou,a Sheng Jiang,a Hui Qian *a and Shengming Ma *ab "
+                    }
+                ]
+            },
+            "bbox": [
+                282,
+                228,
+                840,
+                261
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Here, the first copper-catalyzed aerobic oxidation of primary alcohols to carboxylic acids with TEMPO and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "K H S O _ { 4 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "as the co-catalysts has been developed. The reaction exhibits excellent substrate scope and functional group compatibility under mild conditions. Even the very sensitive chiral alcohols, chiral amino alcohols, and alcohol-containing steroid skeletons may be oxidized to afford the corresponding carboxylic acids or lactones without racemization. "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                338,
+                490,
+                442
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Carboxylic acids are prevalent in natural products, agrochemicals and drug molecules, such as ibuprofen, flurbiprofen, naproxen "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "e t c . ^ { 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Furthermore, carboxylic acids are widely featured in the synthesis of other chemicals of academic and/or industrial interest.2 One of the most common protocols for synthesizing carboxylic acids is the oxidation of primary alcohols.3–5 However, at least stoichiometric amounts of toxic and expensive oxidants are required in the traditional approaches, which is not cost-effective and environmentally friendly due to the high cost of such oxidants and the corresponding derived hazardous wastes.4,6,7 In this regard, the development of catalytic strategies using the environmentally benign and inexpensive molecular oxygen as the oxidant has been prominent.5,8–10 Some such methods with metal catalysts have been reported.11,12 However, the substrate scope is still very limited: the challenging substrates are the chiral alcohols including drug molecules, (S)-2-methylbutanol,13 and chiral amino alcohols14 due to very sensitive nature of the corresponding chiral acids with an a-chirality under the employed reaction parameters (Scheme 1a). Thus, we turned our attention to copper catalysis. The oxidation of primary alcohols to carboxylic acids with very high loadings of terminal oxidants, "
+                    }
+                ]
+            },
+            "bbox": [
+                63,
+                459,
+                492,
+                797
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "such as, TBHP (5–14 equiv)) or "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { H } _ { 2 } \\mathbf { O } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "(5–20 equiv), has been reported (Scheme 1b).15 So far, there are no reports on the copper-catalyzed aerobic oxidation of primary alcohols to carboxylic acids.16,17 Herein, we present the first copper-catalyzed aerobic oxidation of primary alcohols to carboxylic acids under very mild conditions with a remarkable functional group compatibility under the assistance of a catalytic amount each of TEMPO and KHSO (Scheme 1c). "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                337,
+                929,
+                458
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "We commenced our investigations with the evaluation of different catalysts to enable the direct aerobic oxidation of alcohols to carboxylic acids by using cetyl alcohol (1a) as the model substrate (Table 1). Aldehyde 2a0 was formed in a 61% yield with 21% of recovery of 1a when the reaction was "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                459,
+                929,
+                535
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/0ad6df4c2d0ac89c2308e9b5c3c8a8ffd54b2fae8f985b9fc1dafe7a70cc6da2.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(a) The earth-abundant metals-catalyzed aerobic oxidation of primary alcohols to carboxylic acids "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                593,
+                591,
+                840,
+                623
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/e3459864538e1f0ec18ebe9a0eee089227090c9a21a2914275e483ed592adaac.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "challenging substrates: "
+                    },
+                    {
+                        "type": "text",
+                        "content": "drug molecules "
+                    },
+                    {
+                        "type": "text",
+                        "content": "R1 = i-Bu, R{2}=}H buprofen "
+                    },
+                    {
+                        "type": "text",
+                        "content": "R1= Ph, R{2}= F Flurbiprofen "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                527,
+                641,
+                630,
+                686
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/85d2cd297573f56a4cbf84bb7562979d02a9df0d62b698b8b8ff982906f6c8b0.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "useful building block "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                734,
+                652,
+                815,
+                679
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/16a0f1577f3b5abc9e817c3db47f7888f5a96748a156f8a4d3f0829594e0c9ee.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "chiral amino acids "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                833,
+                650,
+                899,
+                680
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/26f5c5044e3c40c6da12cbcb61da3adacebeede38ef1840d6b11626a5812c8df.jpg"
+                },
+                "content": "Chemical reaction equation showing oxidation of aldehyde to ketone using copper catalyst and t-BuOOH or H2O2 reagents",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(b) Copper-catalyzed oxidation of primary alcohols to carboxylic acids with highloadings of oxidants "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "sub_type": "chemical",
+            "bbox": [
+                594,
+                734,
+                863,
+                777
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/74f19b16cd09e0290e392dfaaa5df7587714d017ecf3dc75fe210a504413bd31.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(c) Copper-catalyzed aerobic oxidation of alcohols to carboxylic acids (this work) "
+                    }
+                ],
+                "image_footnote": [
+                    {
+                        "type": "text",
+                        "content": "readily available catalysts "
+                    },
+                    {
+                        "type": "text",
+                        "content": "broad substrate scope "
+                    },
+                    {
+                        "type": "text",
+                        "content": "very mild conditions "
+                    },
+                    {
+                        "type": "text",
+                        "content": "chiral acid syntheses "
+                    }
+                ]
+            },
+            "bbox": [
+                600,
+                799,
+                833,
+                842
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Scheme 1 (a) The known earth-abundant metal-catalyzed aerobic oxidation of primary alcohols to carboxylic acids; (b) and (c) coppercatalyzed oxidation of primary alcohols to carboxylic acids. "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                880,
+                929,
+                919
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": [
+                    {
+                        "type": "text",
+                        "content": "Published on 27 March 2023. Downloaded by Fudan University on 4/11/2025 9:31:10 AM. "
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                216,
+                21,
+                594
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ChemComm "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                65,
+                285,
+                89
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "C "
+                    }
+                ]
+            },
+            "bbox": [
+                685,
+                26,
+                747,
+                80
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ROYAL SOCIETY "
+                    }
+                ]
+            },
+            "bbox": [
+                749,
+                37,
+                929,
+                53
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "OF CHEMISTRY "
+                    }
+                ]
+            },
+            "bbox": [
+                751,
+                55,
+                929,
+                71
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "COMMUNICATION "
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                119,
+                319,
+                139
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "View Article Online "
+                    }
+                ]
+            },
+            "bbox": [
+                756,
+                116,
+                900,
+                130
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "View Journal | View Issue "
+                    }
+                ]
+            },
+            "bbox": [
+                757,
+                133,
+                884,
+                143
+            ]
+        },
+        {
+            "type": "page_footnote",
+            "content": {
+                "page_footnote_content": [
+                    {
+                        "type": "text",
+                        "content": "a Research Center for Molecular Recognition and Synthesis, Department of Chemistry, Fudan University, 220 Handan Lu, Shanghai 200433, P. R. China. E-mail: qian_hui@fudan.edu.cn "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                816,
+                480,
+                854
+            ]
+        },
+        {
+            "type": "page_footnote",
+            "content": {
+                "page_footnote_content": [
+                    {
+                        "type": "text",
+                        "content": "b State Key Laboratory of Organometallic Chemistry, Shanghai Institute of Organic Chemistry, Chinese Academy of Sciences, 345 Lingling Lu, Shanghai 200032, P. R. China. E-mail: masm@sioc.ac.cn "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                854,
+                480,
+                892
+            ]
+        },
+        {
+            "type": "page_footnote",
+            "content": {
+                "page_footnote_content": [
+                    {
+                        "type": "text",
+                        "content": "† Electronic supplementary information (ESI) available. See DOI: https://doi.org/ 10.1039/d3cc00963g "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                893,
+                490,
+                919
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "This journal is © The Royal Society of Chemistry 2023 "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                956,
+                401,
+                969
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Chem. Commun., 2023, 59, 5281–5284 "
+                    }
+                ]
+            },
+            "bbox": [
+                636,
+                956,
+                875,
+                969
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "5281 "
+                    }
+                ]
+            },
+            "bbox": [
+                895,
+                957,
+                927,
+                967
+            ]
+        }
+    ],
+    [
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/c136f713d9901d86e4c7fb434de21dc665f19fddb736dd2d8282462688446e91.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 1 Screening of an extra catalyst for the aerobic oxidation of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\pmb { 1 } \\hat { \\mathbf { a } } ^ { a }"
+                    }
+                ],
+                "table_footnote": [
+                    {
+                        "type": "text",
+                        "content": "a The reaction was conducted with 1.0 mmol of 1a, 10 mol% each of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 } { \\cdot } 3 \\mathrm { H } _ { 2 } \\mathrm { O } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", TEMPO, and additive in 4 mL of DCE at rt for 36 h with an O2 balloon. The NMR yield and recovery were determined by "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^ 1 \\mathrm { H }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "NMR analysis using dibromomethane as the internal standard. b Without "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C u ( \\bar { N } O _ { 3 } ) } _ { 2 } { \\cdot } 3 \\mathrm { H } _ { 2 } \\mathrm { ( } \\mathrm { ) } ."
+                    },
+                    {
+                        "type": "text",
+                        "content": "c The reaction was conducted for 72 h with an air balloon. "
+                    }
+                ],
+                "html": "<table><tr><td colspan=\"2\"> $n-C_{15}H_{31}CH_2OH$ </td><td>Cu(NO3)2·3H2O (10 mol%)TEMPO (10 mol%)additive (10 mol%)DCE, O2(balloon), rt, 36 h</td><td> $n-C_{15}H_{31}CHO$  +  $2a'$ </td><td> $n-C_{15}H_{31}COOH$ 2a</td></tr><tr><td>Entry</td><td>Additive</td><td>Recovery of 1a(%)</td><td>NMR yield of 2a&#x27; (%)</td><td>NMR yield of 2a(%)</td></tr><tr><td>1</td><td>None</td><td>21</td><td>61</td><td>0</td></tr><tr><td>2</td><td>KHCO3</td><td>95</td><td>5</td><td>0</td></tr><tr><td>3</td><td>K2CO3</td><td>93</td><td>5</td><td>0</td></tr><tr><td>4</td><td>K3PO4</td><td>94</td><td>6</td><td>0</td></tr><tr><td>5</td><td>K2HPO4</td><td>95</td><td>6</td><td>0</td></tr><tr><td>6</td><td>KCl</td><td>0</td><td>18</td><td>76</td></tr><tr><td>7</td><td>KBr</td><td>0</td><td>61</td><td>30</td></tr><tr><td>8</td><td>KI</td><td>67</td><td>31</td><td>0</td></tr><tr><td>9</td><td>K2SO4</td><td>48</td><td>35</td><td>0</td></tr><tr><td>10</td><td>KH2PO4</td><td>0</td><td>12</td><td>87</td></tr><tr><td>11</td><td>NaH2PO4</td><td>0</td><td>0</td><td>98</td></tr><tr><td>12</td><td>NaHSO4·H2O</td><td>0</td><td>0</td><td>99</td></tr><tr><td>13</td><td>KHSO4</td><td>0</td><td>0</td><td>100</td></tr><tr><td>14</td><td>AlCl3</td><td>0</td><td>6</td><td>90</td></tr><tr><td>15</td><td>ZnCl2</td><td>0</td><td>4</td><td>92</td></tr><tr><td> $16^b$ </td><td>KHSO4</td><td>100</td><td>0</td><td>0</td></tr><tr><td> $17^c$ </td><td>KHSO4</td><td>0</td><td>10</td><td>88</td></tr></table>",
+                "table_type": "complex_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                67,
+                77,
+                492,
+                379
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "conducted with 10 mol% of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 } { \\cdot } 3 \\mathrm { H } _ { 2 } \\mathrm { O }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and TEMPO (entry "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1 ) . ^ { 1 7 c } \\mathrm { K H C O _ { 3 } } , \\mathrm { K _ { 2 } C O _ { 3 } } , \\mathrm { K _ { 3 } P O _ { 4 } } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { K } _ { 2 } \\mathrm { H P O } _ { 4 } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", were first tested with considerable recovery of starting alcohol 1a (entries "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2 { - } 5 )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Potassium halides have also been screened, and among them, KCl is better than KBr and KI albeit all with poor results (entries 6–8). Further screening led to the observation that the addition of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { K H S O _ { 4 } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "yielded carboxylic acid 2a in a quantitative yield (entry 13). A range of Lewis acids and solvents were also tested (Tables S1 and S2, ESI†), more than 90% of the corresponding acid 2a was formed in the presence of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { A l C l } _ { 3 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "or "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { Z } \\mathrm { n C l } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "(entries 14 and 15). Control experiment indicated that no reaction occurred in the absence of copper (entry 16) and a much lower efficiency was observed when the reaction was conducted in an air atmosphere (entry 17). "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                474,
+                490,
+                689
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "With these optimal reaction conditions in hand, the substrate scope was evaluated (Scheme 2). In addition to nonfunctionalized aliphatic acids 2a–c, the reaction may tolerate various functional groups, such as halogens, esters, ethers, and aryl and heteroaryl groups, affording the corresponding carboxylic acids 2d–m in up to 99% yields. Besides, the sterically more hindered 2-phenylpropan-1-ol, 2-methylbutan-1-ol, cyclohexyl methanol, and even 1-adamantanemethanol could be converted to the corresponding acids 2n–q. Notably, chiral acids (S)-2m and (S)-2n could be formed efficiently without erosion of enantiomeric excess as compared with the starting chiral alcohols. "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                690,
+                490,
+                872
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "To demonstrate the practicality of this protocol, some gramscale reactions were executed. When 10 mmol of cetyl alcohol 1a was submitted to the standard conditions at 50 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ } ^ { \\circ } \\mathbf { C } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "2.3 g (90% yield) of 2a could be afforded via simple recrystallization. (S)-2-methylbutanoic acid is an important chiral building block and very expensive "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\left( \\Psi \\ : 1 3 9 3 \\ : \\mathrm { g } ^ { - 1 } \\right."
+                    },
+                    {
+                        "type": "text",
+                        "content": "from Aldrich). Jones oxidation of (S)-2-methylbutanol, which utilized the highly toxic chromium compounds, is one of the traditional approaches to afford the chiral acid.13 Benefiting from the green and mild protocol developed here, a 50 mmol scale reaction of (S)-2-methylbutanol (S)-1o readily available from Aldrich (f 869/100 mL) could smoothly provide 3.6 g (72% yield) of (S)-2o via a simple distillation (eqn (1)). Also, the same reaction could be performed with a yield of 81% by using an air bag for 12 h first, which was followed by the supplementary supply of oxygen from a pure O2 bag (eqn (2)). "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                874,
+                490,
+                920
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/252fb4f8fef87d7c976d622a092908dbba8f8bff3a58b5849112ed2ca5d37667.jpg"
+                },
+                "content": "| Compound | Yield (%) | Condition | Yield (g) |\n| :--- | :--- | :--- | :--- |\n| RCH₂OH | 1 | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| Cu(NO₃)₂·3H₂O | 10 mol% | MeO₂C-COOH | 60 h, 85 (6)b% |\n| TEMPO | 10 mol% | MeO-COOH | 96 h, 87 (4)b% |\n| KHSO₄ | 10 mol% | I-C₆H₅COOH | 96 h, 74 (16)b% |\n| DCE, O₂ balloon | 10 mol% | MeO-COOH | 96 h, 66 (32)b% |\n| A: [c] = 0.25, rt | 10 mol% | MeO-COOH | 96 h, 56 (43)b% |\n| B: [c] = 0.5, 50 °C | 10 mol% | MeO-COOH | 96 h, 66 (32)b% |\n| RCOOH | 2 | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| 2 aliphatic acids | 2 | MeO-COOH | 96 h, 56 (43)b% |\n| 4 aromatic acids | 2 | MeO-COOH | 96 h, 56 (43)b% |\n| Scope of aliphatic alcohols | n-C₁₅H₃₁COOH | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| n-C₁₀H₂₁COOH | n-C₁₀H₂₁COOH | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| n-C₇H₁₅COOH | n-C₇H₁₅COOH | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| CF₃(CH₂)₂COOH | CF₃(CH₂)₂COOH | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| Br(CH₂)₈COOH | Br(CH₂)₈COOH | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| I(CH₂)₈COOH | I(CH₂)₈COOH | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| TsO(CH₂)₇COOH | TsO(CH₂)₇COOH | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| MeO₂C(CH₂)₄COOH | MeO₂C(CH₂)₄COOH | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| n-C₆H₁₃OCH₂COOH | n-C₆H₁₃COOH | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| n-C₆H₁₃OCH₂COOH | n-C₆H₁₃COOH | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| n-C₆H₁₃OCH₂COOH (2i) | n-C₆H₁₃OCH₂COOH (2j) | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| n-C₆H₁₃OCH₂COOH (2l) | n-C₆H₁₃OCH₂COOH (2k) | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| n-C₆H₁₃OCH₂COOH (2m) | n-C₆H₁₃OCH₂COOH (2n) | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| n-C₆H₁₃OCH₂COOH (2q) | n-C₆H₁₃OCH₂COOH (2m) | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\nScope of chiral alphatic alcohols: \n[Structure: benzyl alcohol]\n- [Condition: MeO-COOH] \n- Conditions: Air bag\n- [c] = 0.5, O₂ bag\n- Conditions: Air bag\n- [c] = 0.5, O₂ bag\n- [c] = 0.5, O₂ bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Scyclohexane: [c] = 0.5, O₂ bag\n- Scyclohexane: [c] = 0.5, O₂ bag\n- Scyclohexane: [c] = 0.5, O₂ bag\n- Scyclohexane: [c] = 0.5, O₂ bag\n- Scyclohexane: [c] = 0.5, O₂ bag\n- Scyclohexane: [c] = 0.5, O2 bag\n- Scyclohexane: [c] = 0.5, O₂ bag\n- Scyclohexane: [c] = 0.5, O₂ bag\n- Scyclohexane: [c] = 0.5, O₂ bag\n- Scyclohexane: [c] = 0.5, O₂ bag\n- Scyclohexane: [c] = 0.5, O² bag\n- Scyclohexane: [c] = 0.5, O² bag\n- Scyclohexane: [c] = 0.5, O² bag\n- Scyclohexane: [c] = 0.5, O² bag\n- Scyclohexane: [c] = 0.5, O² bag\n- Scyclohexane: [c] = 0.5, O⁡ bag\n- Scyclohexane: [c] = 0.5, O² bag\n- Scyclohexane: [c] = 0.5, O² bag\n- Scyclohexane: [c] = 0.5, O⁴ bag\n- Scyclohexane: [c] = 0.5, O⁴ bag\n- Scyclohexane: [c] = 0.5, O⁴ bag\n- Scyclohexane: [c] = 0.5, O⁴ bag\n- Scyclohexane: [c] = 0.5, O⁴ bag\n- Scyclohexane: [c] = 0.",
+                "chart_caption": [
+                    {
+                        "type": "text",
+                        "content": "Scheme 2 Substrate scope of aliphatic alcohols and benzylic alcohols. Conditions A: The reaction was conducted with a 1.0 mmol scale of alcohol in 4 mL of DCE at rt with an "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "O _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "balloon. Conditions B: The reaction was conducted with a 1.0 mmol scale of alcohol in 2 mL of DCE at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5 0 ~ ^ { \\circ } \\mathsf { C }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "with an "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "O _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "balloon. a The reaction was conducted with 10 mmol scale of alcohol in 20 mL of DCE at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5 0 ~ ^ { \\circ } \\mathsf { C }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "with an "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "O _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "balloon. b NMR yields of the aldehydes in parentheses were determined by 1 H NMR analysis using dibromomethane as the internal standard. c NMR yields were determined by 1 H NMR analysis using dibromomethane as the internal standard. "
+                    }
+                ],
+                "chart_footnote": []
+            },
+            "sub_type": "other",
+            "bbox": [
+                524,
+                60,
+                912,
+                704
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                502,
+                858,
+                929,
+                920
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": [
+                    {
+                        "type": "text",
+                        "content": "Published on 27 March 2023. Downloaded by Fudan University on 4/11/2025 9:31:10 AM. "
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                216,
+                21,
+                594
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Communication "
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                30,
+                189,
+                43
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "View Article Online "
+                    }
+                ]
+            },
+            "bbox": [
+                831,
+                11,
+                927,
+                21
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ChemComm "
+                    }
+                ]
+            },
+            "bbox": [
+                833,
+                30,
+                927,
+                43
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "5282 "
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                957,
+                105,
+                967
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Chem. Commun., 2023, 59, 5281–5284 "
+                    }
+                ]
+            },
+            "bbox": [
+                126,
+                957,
+                363,
+                969
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "This journal is © The Royal Society of Chemistry 2023 "
+                    }
+                ]
+            },
+            "bbox": [
+                596,
+                956,
+                929,
+                969
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                63,
+                60,
+                492,
+                198
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Next, benzylic alcohols were tested. The reaction is amenable to electron-withdrawing groups substituted at the para-position on the phenyl ring. Various functional groups, including nitro (4a), trifluoromethyl (4b), ester (4c), and halogen (4d) are well tolerated. We also found that the reactivity of substrates bearing the iodo group at the o-, m-, and p-positions increased as the steric hindrance decreased (4d–f). However, a mixture of the aldehydes and acids was obtained when the phenyl rings were substituted with electron-donating groups, such as methyl (4g) or methoxy (4h) groups. "
+                    }
+                ]
+            },
+            "bbox": [
+                63,
+                198,
+                492,
+                351
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "We also explored the scope of synthetically attractive alkynylic alcohols (Scheme 3). The alcohols bearing a terminal C\u0004C bond unit via different lengths of carbon chains could be oxidized to the corresponding acids in good to excellent yields (6a–c). TMS-substituted propargyl alcohol could also be converted to the corresponding acid 6d with a slightly higher loading of TEMPO. The methyl- or propargyl-substituted hept-6-yl-1-ol afforded the corresponding acids 6e–g via varying the catalyst loading. "
+                    }
+                ]
+            },
+            "bbox": [
+                63,
+                351,
+                490,
+                489
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Oxidation of alcohols with a chiral center at the a-position is very challenging due to the possible racemization of the corresponding rather sensitive carboxylic acid products: (1) amino alcohols are very attractive substrates for aerobic oxidation.14 The current protocol has been applied successfully to provide the corresponding amino acids 8a–g smoothly in excellent yields (Scheme 4). (2) Furthermore, this methodology could be applied for the synthesis of racemic drug molecules, such as naproxen 10a, flurbiprofen 10b, ibuprofen 10c, felbinac 10d, loxoprofen 10e, and indomethacin 10f, from the corresponding "
+                    }
+                ]
+            },
+            "bbox": [
+                63,
+                490,
+                492,
+                644
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/1cb9767906fc4490b2618bbf69e0092a7768bb5b47a67248a811ac6bd835677b.jpg"
+                },
+                "content": "",
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                80,
+                668,
+                477,
+                820
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/8c55c68fa3776a07212e94f932b4cf73f52dcaa7ac93ec0e1541c145c7f4cb3a.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Scheme 3 Substrate scope of alkynylic alcohols. The reaction was conducted with 1.0 mmol scale of alcohol in 4 mL of DCE at rt with an "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "O _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "balloon. a 10 mol% "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathsf { C u } ( \\mathsf { N O } _ { 3 } ) _ { 2 } . 3 \\mathsf { H } _ { 2 } \\mathsf { O } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "12 mol% TEMPO and 10 mol% KHSO4 were used. b The reaction was conducted with 0.5 mmol scale of alcohol in 2 mL of DCE at rt with an "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "O _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "balloon. c 20 mol% Cu(NO ) -3H O, 25 mol% TEMPO and 20 mol% "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\sf K H S O _ { 4 } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "were used. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^ d 2 0"
+                    },
+                    {
+                        "type": "text",
+                        "content": "mol% "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathsf { C u } ( \\mathsf { N O } _ { 3 } ) _ { 2 } . 3 \\mathsf { H } _ { 2 } \\mathsf { O } ."
+                    },
+                    {
+                        "type": "text",
+                        "content": ", 30 mol% TEMPO and 20 mol% "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathsf { K H S O } } _ { 4 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "were used. "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Syntheses of amino acids "
+                    },
+                    {
+                        "type": "text",
+                        "content": "(R)-8a 24 h, 92% >99%e "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                534,
+                125,
+                600,
+                148
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/1495f6768298251487a9abcba3da99ac24556c5d9355dfb64a4d61f2bcae4f89.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(R)-8b 24 h, 96% >99% ee "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                633,
+                125,
+                702,
+                148
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/713ecdff09335664cec41050955fb6cd71defe25592c964197da070eba5defcd.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(R)-8c 17 h, 97% >99% ee "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                724,
+                125,
+                791,
+                148
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/39f91319e860a093d195a02e79a85b3b533a7ed93e354ea4a34500db3c1d00ec.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(R)-8d 22 h, 90% >99% ee "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                823,
+                125,
+                892,
+                148
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/c654872b0160f706387628dc53210c310ca42ff2f4ca582d8754985329d3208a.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(S)-8a 24 h, 88% >99% ee "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                534,
+                177,
+                600,
+                201
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/f621f8b2c5cfc2a59e8a23f4c4b8cc87386082a9579c29fcf7b1e1170940f585.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(S)-8b 24 h, 92% >99% ee "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                633,
+                177,
+                702,
+                201
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/978f4140a18c2722be10b50a911ffaf7bc2289d68717beca42ce0a43335518a6.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(S)-8c 17 h, 93% >99% ee "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                724,
+                177,
+                791,
+                201
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/abee0c0b65cf544fa6735fe0e9da9656426729df5c07c48dcada4264f1e25d0e.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(S)-8d 22 h, 93% >99% ee "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                823,
+                177,
+                892,
+                201
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/54750851da5101099076d5f48dd50cf79f02bc6a18fa242c197a4ac3a717fca1.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "8e 16 h, 87% "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                537,
+                232,
+                596,
+                256
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/c2e2d633f4a58c93c6ec133f569e7d0174106aee8561230136a70368867c9add.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(S)-8e 12 h, 84% >99% ee "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                636,
+                231,
+                697,
+                255
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/e23bbf797082ba312b054967b2192b6672aafe787743ee4fac61fbe7c69a2a03.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(R)-8f 25 h, 91% >99% ee "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                727,
+                225,
+                789,
+                258
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/2015a2b97bebc2d4f829f341f650636028ee857d41947b3de3ba42cc6b4f2dd7.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "8g 36 h, 87a% "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                808,
+                231,
+                907,
+                255
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/3919021c67e43f6c523af98fe2d09c66a6211f88e0e840493bfe9fbf51046b7e.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Syntheses of drug molecules "
+                    },
+                    {
+                        "type": "text",
+                        "content": "10a (±)-naproxen 41h, 98% "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                529,
+                295,
+                650,
+                332
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/8f7bb907822b5af0c8ac476dafaedd2fe8d90443a155b0fe293dd88d4930a80c.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "10b (±)-flurbiprofen 40 , 98% "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                665,
+                295,
+                756,
+                332
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/e2b6c90f3cc9db2a6b1276736fefc5c4f293e3157f9550ce81831c62328ce778.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "10c (±)-ibuprofen 40h, 98% "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                791,
+                295,
+                885,
+                332
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/bdfdbe37fa66c82a7da992529996ae5753b048b20b6d087f527016f52981ef7c.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(S)-10a (S)-naproxer 47 h, 94%, 99% ee "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                529,
+                360,
+                650,
+                397
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/f96c795236950933bcd35eb5ce35550c0ee979692dabacce52bf9d209bf2077b.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(R)-10b (R)-flurbiprofen 38 h, 98%, 99% ee "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                665,
+                360,
+                756,
+                397
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/c1e1809a0989d870267bded31886f4a7651683af89f3d47ec4240f29e241a237.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "(S)-10c (S)-ibuprofen42 h, 97%, 98% ee"
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                791,
+                360,
+                885,
+                397
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/b7c3e2049446eed7234606021c61347ec799756e08a7b0081f631585015a2438.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "10d felbinac 47 h, 87% "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                544,
+                444,
+                635,
+                472
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/815de998ca5b2bada1253a00554f272e467d3aba5979b06ef9956a10ba6e9a5a.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "10e Loxoprofen 84 h, 96% "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                658,
+                436,
+                761,
+                472
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/cc2abde3995a238a063f1d37800c000b47d05329a4985256c8a5abbcfc607177.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "10f Indometacin 90 h, 65 (4%)b% "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                771,
+                419,
+                904,
+                471
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/ad2149e155156d4a8a61d0cacbe33d49a4037d086cda070b1e5b857022978387.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Syntheses of structurally complex molecules "
+                    },
+                    {
+                        "type": "text",
+                        "content": "11a "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                563,
+                510,
+                640,
+                569
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/a6344969deb59c02d73e1a6ea34aad9d367705291771cf74937b5cb66c067ead.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Cond. A 24 h "
+                    },
+                    {
+                        "type": "text",
+                        "content": "12 98%, dr > 20:1 "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                695,
+                512,
+                771,
+                569
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/a403bda6edeaf8fb51be7ee8a1c9e25ee80ddc454796ce980c43f68e82518dbc.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "11c "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                800,
+                519,
+                910,
+                554
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/ca79a270fd2ee4ae6ac94ed474d22c347ce2848deea4657427ca0d345c0695f0.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "11b "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                522,
+                578,
+                623,
+                646
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/a2bbcbce78cfcd13f9f847b92a89a2f67b696feae4a8bb8c30d679332069e748.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "1371%, dr > 20:1 "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                635,
+                580,
+                773,
+                645
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/51e043fa0c53d80d8f1faa1cd79d0c34bc94c74102773f1caddf279bfd6a32ba.jpg"
+                },
+                "content": "",
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                826,
+                572,
+                887,
+                591
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/d0d5954cbebe9269dc80837a30a7eefefc727ac929d3aa560d4f15f5736b13cd.jpg"
+                },
+                "content": "",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "14 76%, dr > 20:1 "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Scheme 4 Syntheses of amino acids, drug molecules, and structurally complex molecules. The reaction was conducted with a 1.0 mmol scale of alcohol in 4 mL of DCE at rt with an "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "O _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "balloon. a The reaction was conducted with 0.5 mmol scale of alcohol in 2 mL of DCE at rt with an O2 balloon. bNMR yield of the aldehyde in parentheses was determined by 1 H NMR analysis using dibromomethane as the internal standard. For conditions A and conditions B, see footnotes of Scheme 2. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                813,
+                593,
+                910,
+                623
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "alcohols in good to excellent yields. In addition, the corresponding optically active drug molecules, such as (S)-naproxen, (R)-flurbiprofen, and (S)-ibuprofen were also prepared without racemization. Interestingly, sclareolide 12 could be efficiently synthesized via the sequential oxidation and lactonization of the tertiary alcohol unit in the molecule. Alcohol 11b containing a steroid skeleton could be oxidized to 13 in 71% yield with the secondary alcohol being converted to the ketone as well. Of note, chiral substrate 11c with a ketal structure unit could also undergo a highly efficient sequential aerobic oxidation, deacetalization, and lactonization to produce lactone 14 with a free hydroxyl group under the standard conditions. "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                781,
+                931,
+                919
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": [
+                    {
+                        "type": "text",
+                        "content": "Published on 27 March 2023. Downloaded by Fudan University on 4/11/2025 9:31:10 AM. "
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                216,
+                21,
+                594
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ChemComm "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                30,
+                164,
+                43
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "View Article Online "
+                    }
+                ]
+            },
+            "bbox": [
+                831,
+                11,
+                927,
+                20
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Communication "
+                    }
+                ]
+            },
+            "bbox": [
+                806,
+                30,
+                927,
+                43
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "This journal is © The Royal Society of Chemistry 2023 "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                956,
+                401,
+                969
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Chem. Commun., 2023, 59, 5281–5284 "
+                    }
+                ]
+            },
+            "bbox": [
+                633,
+                956,
+                872,
+                969
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "5283 "
+                    }
+                ]
+            },
+            "bbox": [
+                890,
+                956,
+                927,
+                967
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                63,
+                61,
+                490,
+                105
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In conclusion, we have developed the first copper nitratecatalyzed aerobic oxidation of alcohols to carboxylic acids with the help of TEMPO and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { K H S O _ { 4 } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The reaction is applicable to a very wide range of alcohols, such as aliphatic alcohols, benzylic alcohols, alkynylic alcohols, amino alcohols, drug precursors, and structurally complex molecules, providing the corresponding carboxylic acids in good to excellent yields. Benefiting from the mild conditions, optically active acids could be prepared from chiral amino alcohols, chiral drug precursors, and structurally complex chiral molecules efficiently without racemization. Furthermore, the oxidation reaction could be readily conducted on a practical scale (50 mmol) for the synthesis of not readily available (S)-2-methylbutanoic acid with a similar efficiency. Further studies including the roles of Cu and KHSO are being actively pursued in our laboratory. "
+                    }
+                ]
+            },
+            "bbox": [
+                63,
+                107,
+                492,
+                336
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Financial support from National Natural Science Foundation of China (Grant No. 21988101 for S. M.) and National Key R&D Program of China (2022YFA1503200 for S. M.) is greatly appreciated. We thank Mr Junlin Li in this group for reproducing the results of 2m, 6d, and 10b presented in this study. "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                337,
+                490,
+                413
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Conflicts of interest "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                65,
+                431,
+                287,
+                449
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "There are no conflicts to declare. "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                460,
+                292,
+                474
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Notes and references "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                65,
+                483,
+                304,
+                501
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "1 (a) S. Patai, The chemistry of acid derivatives, wiley, New York, 1992; (b) H. Maag, Prodrugs of carboxylic acids, Springer, USA, 2007. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "2 (a) L. J. Gooßen, N. Rodrı´guez and K. Gooßen, Angew. Chem., Int. Ed., 2008, 47, 3100; (b) N. Rodrı´guez and L. J. Goossen, Chem. Soc. Rev., 2011, 40, 5030; (c) C. Min and D. Seidel, Chem. Soc. Rev., 2017, 46, 5889. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "3 M. A. Ogliaruso and J. F. Wolfe, The Chemistry of Functional Groups, John Wiley & Sons, New York, 1991, pp. 40–49. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "4 G. Tojo and M. I. Ferna´ndez, Oxidation of Primary Alcohols to Carboxylic Acids: A Guide to Current Common Practice, Springer, New York, 2007. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "5 I. W. C. E. Arends and R. A. Sheldon, Modern Oxidation Methods, Wiley-VCH, Weinheim, Germany, 2nd Ed., 2010. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "6 (a) M. Uyanik and K. Ishihara, Chem. Commun., 2009, 2086; (b) A. E. Wendlandt and S. S. Stahl, Angew. Chem., Int. Ed., 2015, 54, 14638; (c) S. Shereena, F. Muhammad, S. Aamer, G. Sarfaraz Ali, R. E.-S. Hesham, R. Samina, A. Nadir, L. Fayaz Ali, C. Pervaiz Ali, F. Tanzeela Abdul, A. Zaman and S. Zulfiqar Ali, Curr. Org. Synth., 2018, 15, 109. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "7 W.-Y. Tan, Y. Lu, J.-F. Zhao, W. Chen and H. Zhang, Org. Lett., 2021, 23, 6648. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "8 For reviews on aerobic oxidation of alcohols, see: (a) T. Mallat and A. Baiker, Chem. Rev., 2004, 104, 3037; (b) B.-Z. Zhan and A. Thompson, Tetrahedron, 2004, 60, 2917; (c) M. J. Schultz and M. S. Sigman, Tetrahedron, 2006, 62, 8227; (d) T. Matsumoto, M. Ueno, N. Wang and S. Kobayashi, Chem. Asian J., 2008, 3, 196; (e) C. Parmeggiani and F. Cardona, Green Chem., 2012, 14, 547. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                510,
+                492,
+                824
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "9 For selected reports on aerobic oxidation of primary alcohols to carboxylic acids with stoichiometric amount of base as promoter, see: (a) S. Ohta, T. Tachi and M. Okamoto, Synthesis, 1983, 291; (b) J. Wang, C. Liu, J. Yuan and A. Lei, New J. Chem., 2013, 37, 1700; (c) D.-F. Yu, P. Xing and B. Jiang, Tetrahedron, 2015, 71, 4269; (d) C. Liu, Z. Fang, Z. Yang, Q. Li, S. Guo and K. Guo, RSC Adv., 2015, 5, 79699; (e) R. Naik, P. Joshi and R. K. Deshpande, Catal. Commun., 2004, 5, 195; ( f ) K.-J. Liu, S. Jiang, L.-H. Lu, L.-L. Tang, S.-S. Tang, H.-S. Tang, Z. Tang, W.-M. He and X. Xu, Green Chem., 2018, 20, 3038. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "10 For the reports on aerobic photooxidation of primary alcohols to carbolic acids, see: (a) K. Kuwabara and A. Itoh, Synthesis, 2006, 1949; (b) X. Zhu, C. Liu, Y. Liu, H. Yang and H. Fu, Chem. Commun., 2020, 56, 12443. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "11 For selected reviews on aerobic oxidation of alcohols with noble metal catalysts, see: (a) T. Mallat and A. Baiker, Catal. Today, 1994, 19, 247; (b) T. Naota, H. Takaya and S.-I. Murahashi, Chem. Rev., 1998, 98, 2599; (c) C. D. Pina, E. Falletta and M. Rossi, Chem. Soc. Rev., 2012, 41, 350; (d) D. Wang, A. B. Weinstein, P. B. White and S. S. Stahl, Chem. Rev., 2018, 118, 2636. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "12 For selected reports on aerobic oxidation of alcohols to acids with non-noble metal catalysts, see: (a) G. Urgoitia, R. SanMartin, M. T. Herrero and E. Domı´nguez, Chem. Commun., 2015, 51, 4799; (b) P. J. Figiel, J. M. Sobczak and J. J. Zio´łkowski, Chem. Commun., 2004, 244; (c) T. Iwahama, S. Sakaguchi, Y. Nishiyama and Y. Ishii, Tetrahedron Lett., 1995, 36, 6923; (d) B. Saha, D. Gupta, M. M. Abu-Omar, A. Modak and A. Bhaumik, J. Catal., 2013, 299, 316; (e) X. Jiang, J. Zhang and S. Ma, J. Am. Chem. Soc., 2016, 138, 8344; ( f ) K. Lagerblom, P. Wrigstedt, J. Keskiva¨li, A. Parviainen and T. Repo, ChemPlusChem, 2016, 81, 1160; (g) X. Jiang and S. Ma, Synthesis, 2018, 1629. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "13 T. Tashiro and K. Mori, Eur. J. Org. Chem., 1999, 2167. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "14 For selected reports on oxidation of amino alcohols to amino acids, see: (a) A. Avenoza, C. Cativiela, F. Corzana, J. M. Peregrina and M. M. Zurbano, J. Org. Chem., 1999, 64, 8220; (b) M. Zhao, J. Li, E. Mano, Z. Song, D. M. Tschaen, E. J. J. Grabowski and P. J. Reider, J. Org. Chem., 1999, 64, 2564; (c) L. De Luca, G. Giacomelli, S. Masala and A. Porcheddu, J. Org. Chem., 2003, 68, 4999. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "15 For selected reports on Cu-catalyzed anaerobic oxidation of primary alcohols to carboxylic acids, using tert-butyl hydroperoxide (TBHP) as oxidant, see: (a) S. Mannam and G. Sekar, Tetrahedron Lett., 2008, 49, 2457; (b) R. Das and D. Chakraborty, Appl. Organometal. Chem., 2011, 25, 437. For selected reports on Cu-catalyzed non-aerobic oxidation of primary alcohols to carboxylic acids, using hydrogen peroxide as oxidant, see: (c) S. Velusamy and T. Punniyamurthy, Eur. J. Org. Chem., 2003, 3913; (d) P. Karthikeyan, S. A. Aswar, P. N. Muskawar, P. R. Bhagat and S. S. Kumar, Catal. Commun., 2012, 26, 189; (e) A. Maurya and C. Haldar, J. Coord. Chem., 2021, 74, 885. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "16 For selected reviews on copper catalyzed aerobic oxidation of alcohols, see: (a) I. E. MarkO´, P. R. Giles, M. Tsukazaki, I. ChellE´-Regnaut, A. Gautier, R. Dumeunier, F. Philippart, K. Doda, J.-L. Mutonkole, S. M. Brown and C. J. Urch, Adv. Inorg. Chem., 2004, 56, 211; (b) R. A. Sheldon and I. W. C. E. Arends, Adv. Synth. Catal., 2004, 346, 1051; (c) J. Piera and J.-E. Ba¨ckvall, Angew. Chem., Int. Ed., 2008, 47, 3506; (d) B. L. Ryland and S. S. Stahl, Angew. Chem., Int. Ed., 2014, 53, 8824; (e) Q. Cao, L. M. Dornan, L. Rogan, N. L. Hughes and M. J. Muldoon, Chem. Commun., 2014, 50, 4524; ( f ) S. E. Allen, R. R. Walvoord, R. Padilla-Salinas and M. C. Kozlowski, Chem. Rev., 2013, 113, 6234. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "17 For selected reports on copper catalyzed aerobic oxidation of alcohols with carboxylic acids as the minor by-products, see: (a) H. Korpi, P. Lahtinen, V. Sippola, O. Krause, M. Leskela¨ and T. Repo, Appl. Catal. A, 2004, 268, 199; (b) A. Dhakshinamoorthy, M. Alvaro and H. Garcia, ACS Catal., 2011, 1, 48; (c) D. Zhai and S. Ma, Org. Chem. Front., 2019, 6, 3101. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                505,
+                60,
+                931,
+                824
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": [
+                    {
+                        "type": "text",
+                        "content": "Published on 27 March 2023. Downloaded by Fudan University on 4/11/2025 9:31:10 AM. "
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                216,
+                21,
+                594
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Communication "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                30,
+                189,
+                43
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "View Article Online "
+                    }
+                ]
+            },
+            "bbox": [
+                831,
+                11,
+                926,
+                20
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ChemComm "
+                    }
+                ]
+            },
+            "bbox": [
+                833,
+                30,
+                927,
+                42
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "5284 "
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                957,
+                105,
+                967
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Chem. Commun., 2023, 59, 5281–5284 "
+                    }
+                ]
+            },
+            "bbox": [
+                126,
+                957,
+                364,
+                969
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "This journal is © The Royal Society of Chemistry 2023 "
+                    }
+                ]
+            },
+            "bbox": [
+                596,
+                956,
+                929,
+                969
+            ]
+        }
+    ]
+]

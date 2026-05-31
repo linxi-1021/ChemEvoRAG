@@ -1,0 +1,816 @@
+[
+  {
+    "block_id": "block_14_0000",
+    "doc_id": "14",
+    "block_type": "title",
+    "text": "Fe(III)-Catalyzed Aerobic Oxidation of  ^ { 1 , 4 , \\mathsf { D i o l s } ^ { \\dagger } }",
+    "page": 1,
+    "bbox": [
+      73.0,
+      112.0,
+      687.0,
+      137.0
+    ],
+    "section": "Fe(III)-Catalyzed Aerobic Oxidation of  ^ { 1 , 4 , \\mathsf { D i o l s } ^ { \\dagger } }",
+    "prev_block_id": null,
+    "next_block_id": "block_14_0001",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0001",
+    "doc_id": "14",
+    "block_type": "paragraph",
+    "text": "Junlin Li, Jinxian Liu, Chunling Fu, and Shengming Ma*",
+    "page": 1,
+    "bbox": [
+      73.0,
+      152.0,
+      480.0,
+      168.0
+    ],
+    "section": "Fe(III)-Catalyzed Aerobic Oxidation of  ^ { 1 , 4 , \\mathsf { D i o l s } ^ { \\dagger } }",
+    "prev_block_id": "block_14_0000",
+    "next_block_id": "block_14_0002",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0002",
+    "doc_id": "14",
+    "block_type": "paragraph",
+    "text": "Laboratory of Molecular Recognition and Synthesis, Department of Chemistry, Zhejiang University, Hangzhou, Zhejiang 310027, China",
+    "page": 1,
+    "bbox": [
+      73.0,
+      181.0,
+      895.0,
+      193.0
+    ],
+    "section": "Fe(III)-Catalyzed Aerobic Oxidation of  ^ { 1 , 4 , \\mathsf { D i o l s } ^ { \\dagger } }",
+    "prev_block_id": "block_14_0001",
+    "next_block_id": "block_14_0003",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0003",
+    "doc_id": "14",
+    "block_type": "title",
+    "text": "Keywords",
+    "page": 1,
+    "bbox": [
+      89.0,
+      234.0,
+      189.0,
+      250.0
+    ],
+    "section": "Keywords",
+    "prev_block_id": "block_14_0002",
+    "next_block_id": "block_14_0004",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0004",
+    "doc_id": "14",
+    "block_type": "paragraph",
+    "text": "Aerobic oxidation | 1,4-Diol | γ-Lactone | Catalysis | Iron | TEMPO | KCl | Chemoselectivity | Chirality | Selective oxidation",
+    "page": 1,
+    "bbox": [
+      87.0,
+      261.0,
+      845.0,
+      275.0
+    ],
+    "section": "Keywords",
+    "prev_block_id": "block_14_0003",
+    "next_block_id": "block_14_0005",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0005",
+    "doc_id": "14",
+    "block_type": "title",
+    "text": "Comprehensive Summary",
+    "page": 1,
+    "bbox": [
+      87.0,
+      290.0,
+      344.0,
+      307.0
+    ],
+    "section": "Comprehensive Summary",
+    "prev_block_id": "block_14_0004",
+    "next_block_id": "block_14_0006",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0006",
+    "doc_id": "14",
+    "block_type": "paragraph",
+    "text": "Synthesis of γ-lactones from 1,4-diols",
+    "page": 1,
+    "bbox": [
+      129.0,
+      330.0,
+      369.0,
+      343.0
+    ],
+    "section": "Comprehensive Summary",
+    "prev_block_id": "block_14_0005",
+    "next_block_id": "block_14_0007",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0007",
+    "doc_id": "14",
+    "block_type": "paragraph",
+    "text": "oxygen as oxidant",
+    "page": 1,
+    "bbox": [
+      173.0,
+      432.0,
+      292.0,
+      443.0
+    ],
+    "section": "Comprehensive Summary",
+    "prev_block_id": "block_14_0006",
+    "next_block_id": "block_14_0008",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0008",
+    "doc_id": "14",
+    "block_type": "paragraph",
+    "text": "mild reaction conditions",
+    "page": 1,
+    "bbox": [
+      173.0,
+      444.0,
+      326.0,
+      454.0
+    ],
+    "section": "Comprehensive Summary",
+    "prev_block_id": "block_14_0007",
+    "next_block_id": "block_14_0009",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0009",
+    "doc_id": "14",
+    "block_type": "paragraph",
+    "text": "good chemo- and regioselectivity",
+    "page": 1,
+    "bbox": [
+      173.0,
+      455.0,
+      384.0,
+      467.0
+    ],
+    "section": "Comprehensive Summary",
+    "prev_block_id": "block_14_0008",
+    "next_block_id": "block_14_0010",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0010",
+    "doc_id": "14",
+    "block_type": "paragraph",
+    "text": "economical and environmentally friendly",
+    "page": 1,
+    "bbox": [
+      173.0,
+      467.0,
+      430.0,
+      478.0
+    ],
+    "section": "Comprehensive Summary",
+    "prev_block_id": "block_14_0009",
+    "next_block_id": "block_14_0011",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0011",
+    "doc_id": "14",
+    "block_type": "paragraph",
+    "text": "of ntic ally otiv",
+    "page": 1,
+    "bbox": [
+      129.0,
+      539.0,
+      374.0,
+      552.0
+    ],
+    "section": "Comprehensive Summary",
+    "prev_block_id": "block_14_0010",
+    "next_block_id": "block_14_0012",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0012",
+    "doc_id": "14",
+    "block_type": "paragraph",
+    "text": "Synthesis of NBP",
+    "page": 1,
+    "bbox": [
+      131.0,
+      638.0,
+      245.0,
+      651.0
+    ],
+    "section": "Comprehensive Summary",
+    "prev_block_id": "block_14_0011",
+    "next_block_id": "block_14_0013",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0013",
+    "doc_id": "14",
+    "block_type": "paragraph",
+    "text": "Aerobic oxidation has been catching more and more attention because of its atom economy and environmental friendliness. Oxidation of diols is a challenge due to various oxidative products. Thus, highly selective aerobic oxidation affording specific products is of current interest. In this work, a combination of  \\mathsf { F e } ( \\mathsf { N O } _ { 3 } ) _ { 3 } { \\cdot } \\mathsf { 9 H } _ { 2 } \\mathsf { O } / \\mathsf { T E M P O } / \\mathsf { K C l } catalysis has been identified as an efficient recipe for the aerobic oxidation of 1,4-diols affording γ-butyrolactones under mild conditions. The reaction exhibits decent chemo- and regioselectivity of symmetrical and unsymmetrical 1,4-diols. The optically active γ-lactones may also be prepared from optically active 1,4-diols without erosion of the ee via this method. Furthermore, this approach was successfully applied to synthesize NBP, a commercial drug.",
+    "page": 1,
+    "bbox": [
+      85.0,
+      743.0,
+      910.0,
+      833.0
+    ],
+    "section": "Comprehensive Summary",
+    "prev_block_id": "block_14_0012",
+    "next_block_id": "block_14_0014",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0014",
+    "doc_id": "14",
+    "block_type": "title",
+    "text": "Background and Originality Content",
+    "page": 2,
+    "bbox": [
+      73.0,
+      71.0,
+      341.0,
+      86.0
+    ],
+    "section": "Background and Originality Content",
+    "prev_block_id": "block_14_0013",
+    "next_block_id": "block_14_0015",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0015",
+    "doc_id": "14",
+    "block_type": "paragraph",
+    "text": "Catalytic aerobic oxidation of alcohols has been attracting more and more attention due to the importance of the corresponding products and environmentally friendly nature.[1] Recently, we reported that the Fe(NO3)3·9H2O/TEMPO/MCl-catalyzed aerobic oxidation of alcohols afforded aldehydes/ketones or acids at room temperature with a very high selectivity (Scheme 1).[2] Aerobic oxidation of diols could afford various products due to the involvement of two hydroxyl groups, in which lactones are important ones.[3] In recent years, noble metal catalysts, such as [Pd], [Au], and [Ru], earth abundant metal [Cu(MeCN)4]OTf/Nitroxyl, and enzymes were also used to realize aerobic oxidative lactonization of  1 , 4 \\mathrm { - d i o l s . } ^ { [ 3 - 5 ] } Here we wish to report our recent observation of aerobic oxidation of 1,4-diols affording γ-butyrolactones using this catalysis.[3]",
+    "page": 2,
+    "bbox": [
+      72.0,
+      97.0,
+      487.0,
+      272.0
+    ],
+    "section": "Background and Originality Content",
+    "prev_block_id": "block_14_0014",
+    "next_block_id": "block_14_0016",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0016",
+    "doc_id": "14",
+    "block_type": "title",
+    "text": "Results and Discussion",
+    "page": 2,
+    "bbox": [
+      73.0,
+      374.0,
+      243.0,
+      387.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_14_0015",
+    "next_block_id": "block_14_0017",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0017",
+    "doc_id": "14",
+    "block_type": "paragraph",
+    "text": "Firstly, in order to avoid the issue of regioselectivity, the simple symmetric butan-1,4-diol 1a was chosen to investigate the optimal reaction conditions. Because there are two primary hydroxy groups in butan-1,4-diol (1a), the predicted possible products are 4-hydroxybutanal 5a, butanedial 6a, 3-formylpropanoic acid 7a, and lactone 2a. We initially tried the reaction with 10 mol% each of Fe(NO3)3·9H2O, TEMPO, and KCl in DCE with a balloon of oxygen and γ-butyrolactone 2a was formed exclusively with 59% NMR yield, without observing 5a, 6a or 7a (Table 1, entry 1). Study on the solvent effect led to the observation that the highest NMR yield of 87% for lactone 2a was realized upon using toluene as solvent (Table 1, entry 7). The role of  \\mathsf { F e } ( \\mathsf { N O } _ { 3 } ) _ { 3 } { \\cdot } \\mathsf { 9 H } _ { 2 } \\mathsf { O } and TEM-PO was found to be vital, since no product 2a was formed without both catalysts (Table 1, entries 9 and 10). If the amount of Fe(NO3)3·9H2O or TEMPO was reduced to 5 mol% each, lactone 2a was formed in a similar NMR yield as compared to that in entry 7, albeit with a much longer time of 95 h (Table 1, entries 11 and 12). When the reaction was conducted in the absence of KCl, the NMR yield of 2a was 80% (Table 1, entry 8). The reaction using 4-OH-TEMPO afforded 2a with a much lower yield of 38% (Table 1, entry 13). While the reaction was conducted under air, only 3% yield of 2a was obtained (Table 1, entry 14). The reaction with other Fe(III) salts, such as  \\mathsf { F e C l } _ { 3 } { \\cdot } 6 \\mathsf { H } _ { 2 } 0 , gave no product 2a (Table 1, entry 15). As a result, we defined 10 mol% each of  \\mathsf { F e } ( \\mathsf { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathsf { H } _ { 2 } 0 _ { \\cdot } , TEMPO, and KCl in toluene with  \\scriptstyle { 0 _ { 2 } , } at  2 5 ~ ^ { \\circ } \\mathsf { C } as the optimized conditions.",
+    "page": 2,
+    "bbox": [
+      72.0,
+      399.0,
+      487.0,
+      711.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_14_0016",
+    "next_block_id": "block_14_0018",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0018",
+    "doc_id": "14",
+    "block_type": "paragraph",
+    "text": "With standard conditions in hand, we explored the generality of the reaction with various 1,4-diols. Non-symmetrical 1,4-diols containing one each of 1o-OH and 2o-OH were firstly investigated. The oxidation of such diols may lead to several possible products, lactones 2, 4-hydroxybutyl ketone 5, keto-aldehyde 6 or ketocarboxylic acid 7. To our delight, γ-lactones 2b—2f were afforded highly selectively with decent yields under the standard conditions (Scheme 2). In addition, 10 mmol scale reaction of 1a (0.9014 g) was conducted to afford 2a with 69% yield. To show the role of KCl, parallel reactions of 1c with or without KCl were conducted, indicating that the reaction with KCl afforded 2c in a higher yield. Then the scope was extended to diols containing one each of 1o-OH and 3o-OH. Diols with two alkyl substituents 1g—1j were oxidized to afford γ-lactones 2g—2j with yields ranging from 54% to 86% (Scheme 2). The incorporation of one or two phenyl group(s) improved the yields of the products 2k (one phenyl group) and 2l—2p (two phenyl groups).",
+    "page": 2,
+    "bbox": [
+      72.0,
+      711.0,
+      487.0,
+      923.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_14_0017",
+    "next_block_id": "block_14_0019",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0019",
+    "doc_id": "14",
+    "block_type": "table",
+    "text": "Entry | x | y | Solvent | NMR yield of 2a/%; 1 | 10 | 10 | DCE | 59; 2 | 10 | 10 | DCM | 35; 3 | 10 | 10 | $CH_3CN$ | 65; 4 | 10 | 10 | THF | 17; 5 | 10 | 10 | $Et_2O$ | 11; 6 | 10 | 10 | Cyclohexane | 2; 7 | 10 | 10 | Toluene | 87 (81b); 8c | 10 | 10 | Toluene | 80; 9d | 10 | 0 | Toluene | 0; 10d | 0 | 10 | Toluene | 0; 11e | 5 | 10 | Toluene | 88; 12e | 10 | 5 | Toluene | 88; 13f | 10 | 10 | Toluene | 38; 14g | 10 | 10 | Toluene | 3; 15h,i | 10 | 10 | Toluene | 0 | a Reaction conditions: 1a (1 mmol), unless otherwise noted. b Isolated yield. c Without KCl. d 100% of recovery. e Reaction for 95 h. f 4-OH-TEMPO used instead of TEMPO. g Air used instead of | \\mathsf { O } _ { 2 } . | . h FeCl3·6H2O used instead of Fe(NO3)3·9H2O. i 24% of recovery.",
+    "page": 2,
+    "bbox": [
+      505.0,
+      137.0,
+      917.0,
+      407.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_14_0018",
+    "next_block_id": "block_14_0020",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "table"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0020",
+    "doc_id": "14",
+    "block_type": "paragraph",
+    "text": "| Compound | Yield (%) | Reaction Time (h) | Chemical Shift (°C) |\n| :--- | :--- | :--- | :--- |\n| 2a | 81 | 87 | 24 h |\n| 2b | 72 | 47 | 47 h |\n| 2c | 73 | 79 | 72 h |\n| 2d | 82 | 48 | 48 h |\n| 2e | 72 | 46 | 46 h |\n| 2f | 70 | 48 | 48 h |\n| 2g | 70 | 24 | 24 h |\n| 2h | 86 | 71 | 71 h |\n| 2i | 78 | 45 | 45 h |\n| 2j | 71 | 30 | 30 h |\n| 2k | 83 | 26 | 18 h |\n| 2l | 99 | 21 | 21 h |\n| 2m | 97 | 28 | 15.5 h |\n| 2n | 99 | 18 | 18 h |\n| 2o | 99 | 17 | 17 h |\n| 2p | 97 | 24 | 24 h |\nThe chart displays the chemical structures of various organic compounds with their corresponding reaction times in hours.",
+    "page": 2,
+    "bbox": [
+      534.0,
+      545.0,
+      880.0,
+      777.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_14_0019",
+    "next_block_id": "block_14_0021",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "chart"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0021",
+    "doc_id": "14",
+    "block_type": "paragraph",
+    "text": "γ-Butyrolactone is a very common unit in natural products and drugs.[6] For example, n-butylphthalide (NBP) is a marketed antiplatelet drug for ischemia-cerebral apoplexy.[7,8b] Canonne’s group used 3-hydroxyisobenzofuran-1(3H)-one and n-butyl magnesium bromide to afford NBP.[8a] Satyanarayana’s group synthesized NBP through palladium-catalyzed acylation of ethyl 2-iodobenzoate and reduction and in situ intramolecular nucleophilic attack with  \\mathsf { C e C l _ { 3 } / N a B H _ { 4 } } . \\mathsf { [ 8 b ] } Utpal Das’ group reported the method to obtain NBP with α-angelica lactone catalyzed oxidation of n-butyl phthalan.[8c] Our strategy on synthesis of NBP started with 2-bromobenzyl alcohol, which was converted to diol 1q via lithiation with n-BuLi and 1,2-addition with valeraldehyde.[9] By applying the standard conditions, NBP 2q was delivered with 70% isolated yield (Scheme 3).",
+    "page": 2,
+    "bbox": [
+      502.0,
+      848.0,
+      917.0,
+      923.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_14_0020",
+    "next_block_id": "block_14_0022",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0022",
+    "doc_id": "14",
+    "block_type": "paragraph",
+    "text": "Furthermore, we explored the oxidation of chiral diols for the synthesis of optically active γ-butyrolactones (Scheme 4). Monosilylation of butan-1,4-diol 1a afforded 3a,[10] which was oxidized to the corresponding aldehyde 4a following the Fe(NO3)3·9H2O/ TEMPO/NaCl-protocol.[2a] The reaction of aldehyde 4a with ethynylmagnesium bromide afforded racemic propargylic alcohol 3r.[11] By applying Novozym 435-catalyzed kinetic resolution,[12] (R)-3r was recovered with >99% ee. Optically active diol (S)-1b was prepared from hydrogenation and deprotection of (R)-3r. Lactone (S)-2b was synthesized in 69% yield by applying the current optimized reaction conditions with 99% ee with essentially no racemization as compared to the ee of (R)-3r (>99% ee) [Scheme 4, (1)]. Furthermore, (R)-3r was converted to the phenyl-substituted optically active propargylic alcohol (R)-3s via Sonogashira coupling reaction.[13] Hydrogenation and deprotection of (R)-3s afforded (S)-1f (98% ee), which afforded (S)-2f with 87% yield and 99% ee under the optimized reaction conditions [Scheme 4, (2)]. Finally, (S)-2c (66% yield, 99% ee) was prepared by following the same",
+    "page": 3,
+    "bbox": [
+      78.0,
+      271.0,
+      492.0,
+      501.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_14_0021",
+    "next_block_id": "block_14_0023",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0023",
+    "doc_id": "14",
+    "block_type": "paragraph",
+    "text": "protocol [Scheme 4, (3)]. Thus, this presented protocol is a general approach for the syntheses of optically active γ-lactones.",
+    "page": 3,
+    "bbox": [
+      507.0,
+      68.0,
+      922.0,
+      95.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_14_0022",
+    "next_block_id": "block_14_0024",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0024",
+    "doc_id": "14",
+    "block_type": "paragraph",
+    "text": "1,4-Diols with pyridyl (1u) or imidazolyl (1v) failed to afford the corresponding lactone products (Scheme 5).",
+    "page": 3,
+    "bbox": [
+      507.0,
+      95.0,
+      922.0,
+      120.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_14_0023",
+    "next_block_id": "block_14_0025",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0025",
+    "doc_id": "14",
+    "block_type": "title",
+    "text": "Conclusions",
+    "page": 3,
+    "bbox": [
+      510.0,
+      278.0,
+      601.0,
+      291.0
+    ],
+    "section": "Conclusions",
+    "prev_block_id": "block_14_0024",
+    "next_block_id": "block_14_0026",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0026",
+    "doc_id": "14",
+    "block_type": "paragraph",
+    "text": "In summary, we have developed an efficient method of applying Fe(NO3)3·9H2O/TEMPO/KCl as the catalytic recipe for the aerobic oxidation of 1,4-diols to γ-lactones with  \\mathsf { O } _ { 2 } at room temperature or  2 5 ~ ^ { \\circ } \\mathsf { C } affording γ-butyrolactones with a decent activity and an excellent selectivity. The reaction with optically active 1,4-diol afforded optically active lactones without racemization. The reaction has been applied to the efficient synthesis of the commercial drug NBP. Further studies in this area are being actively pursued in this laboratory.",
+    "page": 3,
+    "bbox": [
+      507.0,
+      302.0,
+      922.0,
+      416.0
+    ],
+    "section": "Conclusions",
+    "prev_block_id": "block_14_0025",
+    "next_block_id": "block_14_0027",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0027",
+    "doc_id": "14",
+    "block_type": "title",
+    "text": "Supporting Information",
+    "page": 3,
+    "bbox": [
+      509.0,
+      432.0,
+      687.0,
+      445.0
+    ],
+    "section": "Supporting Information",
+    "prev_block_id": "block_14_0026",
+    "next_block_id": "block_14_0028",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0028",
+    "doc_id": "14",
+    "block_type": "paragraph",
+    "text": "The supporting information for this article is available on the WWW under https://doi.org/10.1002/cjoc.202200768.",
+    "page": 3,
+    "bbox": [
+      507.0,
+      456.0,
+      922.0,
+      482.0
+    ],
+    "section": "Supporting Information",
+    "prev_block_id": "block_14_0027",
+    "next_block_id": "block_14_0029",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0029",
+    "doc_id": "14",
+    "block_type": "title",
+    "text": "Acknowledgement",
+    "page": 3,
+    "bbox": [
+      509.0,
+      498.0,
+      653.0,
+      512.0
+    ],
+    "section": "Acknowledgement",
+    "prev_block_id": "block_14_0028",
+    "next_block_id": "block_14_0030",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0030",
+    "doc_id": "14",
+    "block_type": "paragraph",
+    "text": "Financial support from the National Natural Science Foundation of China (21988101) is greatly appreciated. We thank Mr. Zuizhi Lin in this group for reproducing the preparation of 2g, 2n and (S)-2c. Shengming Ma is a Qiu Shi Adjunct Professor at Zhejiang University.",
+    "page": 3,
+    "bbox": [
+      507.0,
+      521.0,
+      922.0,
+      586.0
+    ],
+    "section": "Acknowledgement",
+    "prev_block_id": "block_14_0029",
+    "next_block_id": "block_14_0031",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0031",
+    "doc_id": "14",
+    "block_type": "title",
+    "text": "References",
+    "page": 3,
+    "bbox": [
+      510.0,
+      602.0,
+      594.0,
+      615.0
+    ],
+    "section": "References",
+    "prev_block_id": "block_14_0030",
+    "next_block_id": "block_14_0032",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0032",
+    "doc_id": "14",
+    "block_type": "paragraph",
+    "text": "Manuscript received: November 24, 2022",
+    "page": 4,
+    "bbox": [
+      504.0,
+      407.0,
+      737.0,
+      419.0
+    ],
+    "section": "References",
+    "prev_block_id": "block_14_0031",
+    "next_block_id": "block_14_0033",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0033",
+    "doc_id": "14",
+    "block_type": "paragraph",
+    "text": "Manuscript revised: April 5, 2023",
+    "page": 4,
+    "bbox": [
+      505.0,
+      420.0,
+      690.0,
+      431.0
+    ],
+    "section": "References",
+    "prev_block_id": "block_14_0032",
+    "next_block_id": "block_14_0034",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0034",
+    "doc_id": "14",
+    "block_type": "paragraph",
+    "text": "Manuscript accepted: April 6 , 2023",
+    "page": 4,
+    "bbox": [
+      505.0,
+      432.0,
+      704.0,
+      444.0
+    ],
+    "section": "References",
+    "prev_block_id": "block_14_0033",
+    "next_block_id": "block_14_0035",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0035",
+    "doc_id": "14",
+    "block_type": "paragraph",
+    "text": "Accepted manuscript online: April 10, 2023",
+    "page": 4,
+    "bbox": [
+      505.0,
+      445.0,
+      744.0,
+      456.0
+    ],
+    "section": "References",
+    "prev_block_id": "block_14_0034",
+    "next_block_id": "block_14_0036",
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_14_0036",
+    "doc_id": "14",
+    "block_type": "paragraph",
+    "text": "Version of record online: May 10, 2023",
+    "page": 4,
+    "bbox": [
+      505.0,
+      457.0,
+      722.0,
+      469.0
+    ],
+    "section": "References",
+    "prev_block_id": "block_14_0035",
+    "next_block_id": null,
+    "source_file": "14.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  }
+]

@@ -1,0 +1,4995 @@
+[
+  {
+    "molecule_card_id": "mol_17_0000",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*COC(=O)c1ccc(OC)cc1",
+    "canonical_smiles": "*COC(=O)c1ccc(OC)cc1",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "0ef489058569c840f3ca5c7d5cfd9ff79efe6eea95f602c418cfe2e34d07898e",
+        "figure_id": "0ef489058569c840f3ca5c7d5cfd9ff79efe6eea95f602c418cfe2e34d07898e",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 1,
+          "bbox": [
+            514.0,
+            373.0,
+            922.0,
+            423.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.01250625312656328,
+          0.025980522728896914,
+          0.35767883941970985,
+          0.9295253687449785
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "0ef489058569c840f3ca5c7d5cfd9ff79efe6eea95f602c418cfe2e34d07898e"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0001",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[1*]COCc1ccc(OC)cc1",
+    "canonical_smiles": "[1*]COCc1ccc(OC)cc1",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "0ef489058569c840f3ca5c7d5cfd9ff79efe6eea95f602c418cfe2e34d07898e",
+        "figure_id": "0ef489058569c840f3ca5c7d5cfd9ff79efe6eea95f602c418cfe2e34d07898e",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 1,
+          "bbox": [
+            514.0,
+            373.0,
+            922.0,
+            423.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.44922461230615307,
+          0.034640696971862554,
+          0.7663831915957979,
+          0.8169431035864252
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "0ef489058569c840f3ca5c7d5cfd9ff79efe6eea95f602c418cfe2e34d07898e"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0002",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[1*]C([H])=O",
+    "canonical_smiles": "[1*]C=O",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "0ef489058569c840f3ca5c7d5cfd9ff79efe6eea95f602c418cfe2e34d07898e",
+        "figure_id": "0ef489058569c840f3ca5c7d5cfd9ff79efe6eea95f602c418cfe2e34d07898e",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 1,
+          "bbox": [
+            514.0,
+            373.0,
+            922.0,
+            423.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.8784392196098049,
+          0.23671142930772743,
+          1.0,
+          0.8400369015676669
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "0ef489058569c840f3ca5c7d5cfd9ff79efe6eea95f602c418cfe2e34d07898e"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0003",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*COCc1ccc(OC)cc1.[CH-].[CH-]",
+    "canonical_smiles": "*COCc1ccc(OC)cc1.[CH-].[CH-]",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "87a69c8e14b2e65a89a0e6821f72f9be2d3a75ef5037551bae5cfa455d93e94f",
+        "figure_id": "87a69c8e14b2e65a89a0e6821f72f9be2d3a75ef5037551bae5cfa455d93e94f",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 1,
+          "bbox": [
+            534.0,
+            461.0,
+            899.0,
+            514.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.009504752376188095,
+          0.18709714569514974,
+          0.376688344172086,
+          0.7723753963312592
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "87a69c8e14b2e65a89a0e6821f72f9be2d3a75ef5037551bae5cfa455d93e94f"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0004",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[1*]C(=O)O",
+    "canonical_smiles": "[1*]C(=O)O",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "87a69c8e14b2e65a89a0e6821f72f9be2d3a75ef5037551bae5cfa455d93e94f",
+        "figure_id": "87a69c8e14b2e65a89a0e6821f72f9be2d3a75ef5037551bae5cfa455d93e94f",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 1,
+          "bbox": [
+            534.0,
+            461.0,
+            899.0,
+            514.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.8199099549774888,
+          0.13432615588369726,
+          0.9724862431215607,
+          0.6596373726431563
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "87a69c8e14b2e65a89a0e6821f72f9be2d3a75ef5037551bae5cfa455d93e94f"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0005",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*C(=O)OCc1ccc(OC)cc1",
+    "canonical_smiles": "*C(=O)OCc1ccc(OC)cc1",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "2a4e0ff0fb566cfbfd794e040fd4e629ad375d9f421d4cd559f943ec8c1b51e9",
+        "figure_id": "2a4e0ff0fb566cfbfd794e040fd4e629ad375d9f421d4cd559f943ec8c1b51e9",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 2,
+          "bbox": [
+            504.0,
+            712.0,
+            870.0,
+            757.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.01250625312656328,
+          0.02553830106542633,
+          0.40820410205102553,
+          0.876815003246304
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "2a4e0ff0fb566cfbfd794e040fd4e629ad375d9f421d4cd559f943ec8c1b51e9"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0006",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*COC(=O)c1ccc(OC)cc1",
+    "canonical_smiles": "*COC(=O)c1ccc(OC)cc1",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "5b18ea3780e132679aa518b21fe9b9eb29e6d270dc1e9576c22540beb9809a48",
+        "figure_id": "5b18ea3780e132679aa518b21fe9b9eb29e6d270dc1e9576c22540beb9809a48",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 2,
+          "bbox": [
+            505.0,
+            764.0,
+            868.0,
+            810.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.009504752376188095,
+          0.033066119836777895,
+          0.40520260130065033,
+          0.8734966656882159
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "5b18ea3780e132679aa518b21fe9b9eb29e6d270dc1e9576c22540beb9809a48"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0007",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*COC(=O)c1ccc(OC)cc1",
+    "canonical_smiles": "*COC(=O)c1ccc(OC)cc1",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "6fff71acf82311df0cd076e35353239e5002f6b666b4cc110eb4db653ee9ee0a",
+        "figure_id": "6fff71acf82311df0cd076e35353239e5002f6b666b4cc110eb4db653ee9ee0a",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 2,
+          "bbox": [
+            505.0,
+            834.0,
+            870.0,
+            882.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.009504752376188095,
+          0.0483991995997999,
+          0.4047023511755878,
+          0.8926963481740872
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "6fff71acf82311df0cd076e35353239e5002f6b666b4cc110eb4db653ee9ee0a"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0008",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "C#CCCCCC(=O)O",
+    "canonical_smiles": "C#CCCCCC(=O)O",
+    "inchi_key": "OFCPMJGTZUVUSM-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "figure_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            73.0,
+            76.0,
+            490.0,
+            456.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.011619556147870644,
+          0.2706353176588294,
+          0.23110006116320506,
+          0.33516758379189593
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0009",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "O=C(O)Cc1ccc(-c2ccccc2)cc1",
+    "canonical_smiles": "O=C(O)Cc1ccc(-c2ccccc2)cc1",
+    "inchi_key": "QRZAKQDHEVVFRX-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "figure_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            73.0,
+            76.0,
+            490.0,
+            456.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.011619556147870644,
+          0.5732866433216608,
+          0.21883497411823044,
+          0.6463231615807904
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0010",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CC(C)Cc1ccc(C(C)C(=O)O)cc1",
+    "canonical_smiles": "CC(C)Cc1ccc(C(C)C(=O)O)cc1",
+    "inchi_key": "HEFNNWSXXWATRW-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "figure_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            73.0,
+            76.0,
+            490.0,
+            456.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.011619556147870644,
+          0.727863931965983,
+          0.22980899936899718,
+          0.8179089544772387
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0011",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "COc1ccc(COCCCOCc2ccc(OC)cc2)cc1",
+    "canonical_smiles": "COc1ccc(COCCCOCc2ccc(OC)cc2)cc1",
+    "inchi_key": "RVHBEEAMJLZMRV-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "figure_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            73.0,
+            76.0,
+            490.0,
+            456.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.01226508704497457,
+          0.9309654827413707,
+          0.22980899936899718,
+          0.9719859929964982
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0012",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "Cc1ccc(S(=O)(=O)N[C@H](Cc2ccccc2)C(=O)O)cc1",
+    "canonical_smiles": "Cc1ccc(S(=O)(=O)N[C@H](Cc2ccccc2)C(=O)O)cc1",
+    "inchi_key": "CGRCVIZBNRUWLY-OAHLLOKOSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "figure_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            73.0,
+            76.0,
+            490.0,
+            456.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.04260503920885903,
+          0.4147073536768384,
+          0.19430480002828132,
+          0.4942471235617809
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0013",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*C(=O)O",
+    "canonical_smiles": "*C(=O)O",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "figure_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            73.0,
+            76.0,
+            490.0,
+            456.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.06326202791618461,
+          0.11255627813906953,
+          0.15815506979046157,
+          0.17108554277138568
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0014",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*COCc1ccc(OC)cc1",
+    "canonical_smiles": "*COCc1ccc(OC)cc1",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "figure_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            73.0,
+            76.0,
+            490.0,
+            456.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.2375553701342443,
+          0.03451725862931466,
+          0.3608517714810939,
+          0.062031015507753876
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0015",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CC(C)Cc1ccc([C@H](C)C(=O)O)cc1",
+    "canonical_smiles": "CC(C)Cc1ccc([C@H](C)C(=O)O)cc1",
+    "inchi_key": "HEFNNWSXXWATRW-JTQLQIEISA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "figure_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            73.0,
+            76.0,
+            490.0,
+            456.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.2562757661502581,
+          0.727863931965983,
+          0.4738196784742807,
+          0.8179089544772387
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0016",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "Cc1ccc(S(=O)(=O)N[C@@H](Cc2ccccc2)C(=O)O)cc1",
+    "canonical_smiles": "Cc1ccc(S(=O)(=O)N[C@@H](Cc2ccccc2)C(=O)O)cc1",
+    "inchi_key": "CGRCVIZBNRUWLY-HNNXBMFYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "figure_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            73.0,
+            76.0,
+            490.0,
+            456.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.2788693475488955,
+          0.4147073536768384,
+          0.4325057010596295,
+          0.4942471235617809
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0017",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CC#CCCCCC(=O)O",
+    "canonical_smiles": "CC#CCCCCC(=O)O",
+    "inchi_key": "ZRKZAXDHUVSRTO-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "figure_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            73.0,
+            76.0,
+            490.0,
+            456.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.28855231100545436,
+          0.263631815907954,
+          0.5512833861267517,
+          0.3426713356678339
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0018",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "COc1ccc2cc(C(C)C(=O)O)ccc2c1",
+    "canonical_smiles": "COc1ccc2cc(C(C)C(=O)O)ccc2c1",
+    "inchi_key": "CMWTZPSULFXXJA-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "figure_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            73.0,
+            76.0,
+            490.0,
+            456.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.33115735021431336,
+          0.5642821410705353,
+          0.6080901050718971,
+          0.6558279139569785
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0019",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "O=C(O)CC(=O)O",
+    "canonical_smiles": "O=C(O)CC(=O)O",
+    "inchi_key": "OFOBLEOULBTSOW-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "figure_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            73.0,
+            76.0,
+            490.0,
+            456.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.4344422937509413,
+          0.9139569784892446,
+          0.591951832644299,
+          0.9754877438719359
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0020",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[H][C@@]12CC[C@](C)(O)[C@H](CCOCc3ccc(OC)cc3)[C@@]1(C)CCCC2(C)C",
+    "canonical_smiles": "COc1ccc(COCC[C@@H]2[C@@]3(C)CCCC(C)(C)[C@@H]3CC[C@]2(C)O)cc1",
+    "inchi_key": "TXLYVNMDPRWQID-DVKRWUGUSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "figure_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            73.0,
+            76.0,
+            490.0,
+            456.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.49899538346133376,
+          0.7238619309654828,
+          0.6978188997693426,
+          0.864432216108054
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0021",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "O=C(O)C12CC3CC(CC(C3)C1)C2",
+    "canonical_smiles": "O=C(O)C12CC3CC(CC(C3)C1)C2",
+    "inchi_key": "JIMXXGFJRDUSRO-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "figure_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            73.0,
+            76.0,
+            490.0,
+            456.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.5332085210078418,
+          0.11105552776388194,
+          0.6952367761809268,
+          0.19009504752376188
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0022",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CC(C)(C)OC(=O)N[C@H](Cc1ccccc1)C(=O)O",
+    "canonical_smiles": "CC(C)(C)OC(=O)N[C@H](Cc1ccccc1)C(=O)O",
+    "inchi_key": "ZYJPUMXJBDHSIF-LLVKDONJSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "figure_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            73.0,
+            76.0,
+            490.0,
+            456.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.5422459535672968,
+          0.4132066033016508,
+          0.6958823070780309,
+          0.4912456228114057
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0023",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CC(C(=O)O)c1ccccc1",
+    "canonical_smiles": "CC(C(=O)O)c1ccccc1",
+    "inchi_key": "YPGCWEMNNLXISK-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "figure_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            73.0,
+            76.0,
+            490.0,
+            456.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.6093811668661049,
+          0.25812906453226614,
+          0.7378418153897859,
+          0.3381690845422711
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0024",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*C(=O)O",
+    "canonical_smiles": "*C(=O)O",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "figure_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            73.0,
+            76.0,
+            490.0,
+            456.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.6726431947822895,
+          0.015007503751875938,
+          0.7636630512739429,
+          0.06903451725862932
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0025",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "COc1ccc2cc([C@H](C)C(=O)O)ccc2c1",
+    "canonical_smiles": "COc1ccc2cc([C@H](C)C(=O)O)ccc2c1",
+    "inchi_key": "CMWTZPSULFXXJA-VIFPVBQESA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "figure_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            73.0,
+            76.0,
+            490.0,
+            456.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7165392957853565,
+          0.5642821410705353,
+          0.9895988652603165,
+          0.6548274137068534
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0026",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "O=C(O)CCCBr",
+    "canonical_smiles": "O=C(O)CCCBr",
+    "inchi_key": "GRHQDJDRGZFIPO-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "figure_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            73.0,
+            76.0,
+            490.0,
+            456.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7597898658913194,
+          0.11955977988994497,
+          0.9373108625948986,
+          0.18159079539769885
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0027",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "COc1ccc(COCCCO)cc1",
+    "canonical_smiles": "COc1ccc(COCCCO)cc1",
+    "inchi_key": "BGEHPNIXVMWYJD-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "figure_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            73.0,
+            76.0,
+            490.0,
+            456.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.8023949051001783,
+          0.9309654827413707,
+          0.9895988652603165,
+          0.9719859929964982
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0028",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CC(C)(C)OC(=O)N[C@@H](Cc1ccccc1)C(=O)O",
+    "canonical_smiles": "CC(C)(C)OC(=O)N[C@@H](Cc1ccccc1)C(=O)O",
+    "inchi_key": "ZYJPUMXJBDHSIF-NSHDSACASA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "figure_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            73.0,
+            76.0,
+            490.0,
+            456.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.8120778685567372,
+          0.4132066033016508,
+          0.9644231602732636,
+          0.4912456228114057
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0029",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[H][C@@]12CC[C@@]3(C)OC(=O)C[C@@H]3[C@@]1(C)CCCC2(C)C",
+    "canonical_smiles": "CC1(C)CCC[C@]2(C)[C@H]3CC(=O)O[C@]3(C)CC[C@@H]12",
+    "inchi_key": "IMKJGXCIJJXALX-SHUKQUCYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "figure_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            73.0,
+            76.0,
+            490.0,
+            456.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.8172421157335686,
+          0.7318659329664833,
+          0.9908899270545244,
+          0.8639319659829915
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0030",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CC(C(=O)O)c1ccccc1",
+    "canonical_smiles": "CC(C(=O)O)c1ccccc1",
+    "inchi_key": "YPGCWEMNNLXISK-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "figure_id": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            73.0,
+            76.0,
+            490.0,
+            456.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.8282161409843354,
+          0.25812906453226614,
+          0.9553857277138085,
+          0.3381690845422711
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "3291c96b381ec7fbc8347e978d531362e60723aa2b6ebaba79477253451ce0d1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0031",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "N#Cc1ccc(C(=O)O)cc1",
+    "canonical_smiles": "N#Cc1ccc(C(=O)O)cc1",
+    "inchi_key": "ADCUEPOHPCPMCE-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "8fe652f3acca45eceb868b81c3fe2612ba23854b2dd3f0cfe612ba34086464b6",
+        "figure_id": "8fe652f3acca45eceb868b81c3fe2612ba23854b2dd3f0cfe612ba34086464b6",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            510.0,
+            76.0,
+            919.0,
+            335.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.06803401700850426,
+          0.4991501598752593,
+          0.31615807903951976,
+          0.674632637956405
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "8fe652f3acca45eceb868b81c3fe2612ba23854b2dd3f0cfe612ba34086464b6"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0032",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "O=C(O)c1ccccc1",
+    "canonical_smiles": "O=C(O)c1ccccc1",
+    "inchi_key": "WPYMKLBDIGXBTP-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "8fe652f3acca45eceb868b81c3fe2612ba23854b2dd3f0cfe612ba34086464b6",
+        "figure_id": "8fe652f3acca45eceb868b81c3fe2612ba23854b2dd3f0cfe612ba34086464b6",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            510.0,
+            76.0,
+            919.0,
+            335.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.096048024012006,
+          0.22060654387344047,
+          0.2786393196598299,
+          0.37937640499447717
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "8fe652f3acca45eceb868b81c3fe2612ba23854b2dd3f0cfe612ba34086464b6"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0033",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*COCc1ccc(OC)cc1",
+    "canonical_smiles": "*COCc1ccc(OC)cc1",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "8fe652f3acca45eceb868b81c3fe2612ba23854b2dd3f0cfe612ba34086464b6",
+        "figure_id": "8fe652f3acca45eceb868b81c3fe2612ba23854b2dd3f0cfe612ba34086464b6",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            510.0,
+            76.0,
+            919.0,
+            335.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.10955477738869435,
+          0.06350794444841468,
+          0.27013506753376687,
+          0.11197453363273115
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "8fe652f3acca45eceb868b81c3fe2612ba23854b2dd3f0cfe612ba34086464b6"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0034",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*c1ccc(COCCCCCC(=O)O)cc1",
+    "canonical_smiles": "*c1ccc(COCCCCCC(=O)O)cc1",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "8fe652f3acca45eceb868b81c3fe2612ba23854b2dd3f0cfe612ba34086464b6",
+        "figure_id": "8fe652f3acca45eceb868b81c3fe2612ba23854b2dd3f0cfe612ba34086464b6",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            510.0,
+            76.0,
+            919.0,
+            335.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.27763881940970486,
+          0.7626524206129799,
+          0.7473736868434218,
+          0.8891112222778055
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "8fe652f3acca45eceb868b81c3fe2612ba23854b2dd3f0cfe612ba34086464b6"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0035",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "COC(OC)c1ccc(C(=O)O)cc1",
+    "canonical_smiles": "COC(OC)c1ccc(C(=O)O)cc1",
+    "inchi_key": "ONEJCELGMOSPNT-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "8fe652f3acca45eceb868b81c3fe2612ba23854b2dd3f0cfe612ba34086464b6",
+        "figure_id": "8fe652f3acca45eceb868b81c3fe2612ba23854b2dd3f0cfe612ba34086464b6",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            510.0,
+            76.0,
+            919.0,
+            335.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.35567783891945975,
+          0.2139214970893968,
+          0.6558279139569785,
+          0.3899610624025463
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "8fe652f3acca45eceb868b81c3fe2612ba23854b2dd3f0cfe612ba34086464b6"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0036",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "O=C(O)c1ccc([N+](=O)[O-])cc1",
+    "canonical_smiles": "O=C(O)c1ccc([N+](=O)[O-])cc1",
+    "inchi_key": "OTLNPYWUJOZPPA-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "8fe652f3acca45eceb868b81c3fe2612ba23854b2dd3f0cfe612ba34086464b6",
+        "figure_id": "8fe652f3acca45eceb868b81c3fe2612ba23854b2dd3f0cfe612ba34086464b6",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            510.0,
+            76.0,
+            919.0,
+            335.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.3746873436718359,
+          0.4991501598752593,
+          0.6358179089544772,
+          0.677975161348427
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "8fe652f3acca45eceb868b81c3fe2612ba23854b2dd3f0cfe612ba34086464b6"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0037",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "O=C(O)c1ccc(C(F)(F)F)cc1",
+    "canonical_smiles": "O=C(O)c1ccc(C(F)(F)F)cc1",
+    "inchi_key": "SWKPKONEIZGROQ-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "8fe652f3acca45eceb868b81c3fe2612ba23854b2dd3f0cfe612ba34086464b6",
+        "figure_id": "8fe652f3acca45eceb868b81c3fe2612ba23854b2dd3f0cfe612ba34086464b6",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            510.0,
+            76.0,
+            919.0,
+            335.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7053526763381691,
+          0.21726402048141866,
+          0.9589794897448725,
+          0.3916323240985572
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "8fe652f3acca45eceb868b81c3fe2612ba23854b2dd3f0cfe612ba34086464b6"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0038",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "O=C(O)c1cccc([N+](=O)[O-])c1",
+    "canonical_smiles": "O=C(O)c1cccc([N+](=O)[O-])c1",
+    "inchi_key": "AFPHTEQTJZKQAQ-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "8fe652f3acca45eceb868b81c3fe2612ba23854b2dd3f0cfe612ba34086464b6",
+        "figure_id": "8fe652f3acca45eceb868b81c3fe2612ba23854b2dd3f0cfe612ba34086464b6",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            510.0,
+            76.0,
+            919.0,
+            335.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.704352176088044,
+          0.5097348172833284,
+          0.9649824912456229,
+          0.6707330273323796
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "8fe652f3acca45eceb868b81c3fe2612ba23854b2dd3f0cfe612ba34086464b6"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0039",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*C(=O)O",
+    "canonical_smiles": "*C(=O)O",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "8fe652f3acca45eceb868b81c3fe2612ba23854b2dd3f0cfe612ba34086464b6",
+        "figure_id": "8fe652f3acca45eceb868b81c3fe2612ba23854b2dd3f0cfe612ba34086464b6",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            510.0,
+            76.0,
+            919.0,
+            335.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7243621810905453,
+          0.02339766374415278,
+          0.8459229614807404,
+          0.13091549952085482
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "8fe652f3acca45eceb868b81c3fe2612ba23854b2dd3f0cfe612ba34086464b6"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0040",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CCCCCCCCC#CC#C[C@H](O)CCCCC(=O)O",
+    "canonical_smiles": "CCCCCCCCC#CC#C[C@H](O)CCCCC(=O)O",
+    "inchi_key": "APWVQFPFWVNZPF-KRWDZBQOSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf",
+        "figure_id": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            72.0,
+            707.0,
+            922.0,
+            868.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.009004502251125562,
+          0.04682818937558667,
+          0.192096048024012,
+          0.2828422638285435
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0041",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CCCCCCCCC#CBr",
+    "canonical_smiles": "CCCCCCCCC#CBr",
+    "inchi_key": "YGJUVYZGQPPERH-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf",
+        "figure_id": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            72.0,
+            707.0,
+            922.0,
+            868.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.09954977488744372,
+          0.5919083137074156,
+          0.1870935467733867,
+          0.6555946512582135
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0042",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "OCCCCCCO",
+    "canonical_smiles": "OCCCCCCO",
+    "inchi_key": "XXMIOPMDWAUFGU-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf",
+        "figure_id": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            72.0,
+            707.0,
+            922.0,
+            868.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.23161580790395198,
+          0.11988016480150188,
+          0.34517258629314657,
+          0.1929321402274171
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0043",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "C#CC(CCCCC(=O)O)OC(C)=O",
+    "canonical_smiles": "C#CC(CCCCC(=O)O)OC(C)=O",
+    "inchi_key": "ABKJSDQUAGPJEU-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf",
+        "figure_id": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            72.0,
+            707.0,
+            922.0,
+            868.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.2766383191595798,
+          0.6462290133830961,
+          0.39269634817408705,
+          0.8335417708854428
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0044",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "COc1ccc(COCCCCCCCO)cc1",
+    "canonical_smiles": "COc1ccc(COCCCCCCCO)cc1",
+    "inchi_key": "BQJXUCDZVDINGV-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf",
+        "figure_id": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            72.0,
+            707.0,
+            922.0,
+            868.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.44072036018009003,
+          0.11988016480150188,
+          0.5672836418209104,
+          0.19667839537746404
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0045",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "C#C[C@@H](CCCCCOCc1ccc(OC)cc1)OC(C)=O",
+    "canonical_smiles": "C#C[C@@H](CCCCCOCc1ccc(OC)cc1)OC(C)=O",
+    "inchi_key": "BZGJEHHJABXJPC-KRWDZBQOSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf",
+        "figure_id": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            72.0,
+            707.0,
+            922.0,
+            868.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.560280140070035,
+          0.6743259270084481,
+          0.6908454227113556,
+          0.8260492605853489
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0046",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CCCCCCCCOCc1ccc(OC)cc1",
+    "canonical_smiles": "CCCCCCCCOCc1ccc(OC)cc1",
+    "inchi_key": "UYQBQYJDWQIJEP-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf",
+        "figure_id": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            72.0,
+            707.0,
+            922.0,
+            868.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.6668334167083542,
+          0.11426078207643148,
+          0.7858929464732366,
+          0.19667839537746404
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0047",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "C#C[Mg]Br",
+    "canonical_smiles": "C#C[Mg]Br",
+    "inchi_key": "HUGJUYPSXULVQQ-UHFFFAOYSA-M",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf",
+        "figure_id": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            72.0,
+            707.0,
+            922.0,
+            868.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.8059029514757379,
+          0.061813209975774414,
+          0.8569284642321161,
+          0.14610395085183042
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0048",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "C#C[C@H](O)CCCCCOCc1ccc(OC)cc1",
+    "canonical_smiles": "C#C[C@H](O)CCCCCOCc1ccc(OC)cc1",
+    "inchi_key": "DXXOTPTWRWPBNV-HNNXBMFYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf",
+        "figure_id": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            72.0,
+            707.0,
+            922.0,
+            868.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.8544272136068034,
+          0.6799453097335185,
+          0.9864932466233116,
+          0.8335417708854428
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0049",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "C#CC(O)CCCCCOCc1ccc(OC)cc1",
+    "canonical_smiles": "C#CC(O)CCCCCOCc1ccc(OC)cc1",
+    "inchi_key": "DXXOTPTWRWPBNV-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf",
+        "figure_id": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 3,
+          "bbox": [
+            72.0,
+            707.0,
+            922.0,
+            868.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.8724362181090545,
+          0.08991012360112641,
+          1.0,
+          0.24725283990309765
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "e0d631bad340c407b2e868959d9957c431d8db4004246b1b23e63f1a72f9e1bf"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0050",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4",
+        "figure_id": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 4,
+          "bbox": [
+            75.0,
+            77.0,
+            489.0,
+            379.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.006203101550775388,
+          0.673336668334167,
+          0.2217608804402201,
+          0.7888944472236118
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "mineru_image_hash": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_17_0051",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*.*.*COC*",
+    "canonical_smiles": "*.*.*COC*",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4",
+        "figure_id": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 4,
+          "bbox": [
+            75.0,
+            77.0,
+            489.0,
+            379.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.08684342171085543,
+          0.4012006003001501,
+          0.30550275137568783,
+          0.4797398699349675
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0052",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*COC(*)([H])[H]",
+    "canonical_smiles": "*COC*",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4",
+        "figure_id": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 4,
+          "bbox": [
+            75.0,
+            77.0,
+            489.0,
+            379.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.1106219776554944,
+          0.135567783891946,
+          0.32669668167417043,
+          0.20560280140070036
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0053",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*C=O",
+    "canonical_smiles": "*C=O",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4",
+        "figure_id": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 4,
+          "bbox": [
+            75.0,
+            77.0,
+            489.0,
+            379.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.22331165582791393,
+          0.9474737368684342,
+          0.3101550775387694,
+          0.9819909954977488
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0054",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*C1=ON=[O-]C(*)O1",
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4",
+        "figure_id": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 4,
+          "bbox": [
+            75.0,
+            77.0,
+            489.0,
+            379.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.2589794897448724,
+          0.6863431715857929,
+          0.476088044022011,
+          0.776888444222111
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "mineru_image_hash": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4"
+    },
+    "errors": [
+      "RDKit could not parse SMILES: *C1=ON=[O-]C(*)O1"
+    ]
+  },
+  {
+    "molecule_card_id": "mol_17_0055",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*CON=O",
+    "canonical_smiles": "*CON=O",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4",
+        "figure_id": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 4,
+          "bbox": [
+            75.0,
+            77.0,
+            489.0,
+            379.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.3975154243788561,
+          0.8939469734867433,
+          0.5851592462898115,
+          0.9339669834917459
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0056",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[O]N[O]",
+    "canonical_smiles": "[O]N[O]",
+    "inchi_key": "BLNWTAHYTCHDJH-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4",
+        "figure_id": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 4,
+          "bbox": [
+            75.0,
+            77.0,
+            489.0,
+            379.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.43163248290812073,
+          0.1890945472736368,
+          0.5298482574620644,
+          0.24712356178089045
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0057",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*",
+    "canonical_smiles": "*",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4",
+        "figure_id": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 4,
+          "bbox": [
+            75.0,
+            77.0,
+            489.0,
+            379.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.4393863598465899,
+          0.40070035017508754,
+          0.5065866266466567,
+          0.43571785892946474
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0058",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*CON=O",
+    "canonical_smiles": "*CON=O",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4",
+        "figure_id": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 4,
+          "bbox": [
+            75.0,
+            77.0,
+            489.0,
+            379.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.6973319993329998,
+          0.7083541770885443,
+          0.8844588961147241,
+          0.7558779389694847
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0059",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*",
+    "canonical_smiles": "*",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4",
+        "figure_id": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 4,
+          "bbox": [
+            75.0,
+            77.0,
+            489.0,
+            379.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7205936301484076,
+          0.8979489744872436,
+          0.7867600466900116,
+          0.9289644822411206
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0060",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*C(O)O",
+    "canonical_smiles": "*C(O)O",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4",
+        "figure_id": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 4,
+          "bbox": [
+            75.0,
+            77.0,
+            489.0,
+            379.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.833283308320827,
+          0.2661330665332666,
+          1.0007670501917625,
+          0.34367183591795897
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0061",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "**C(=O)O",
+    "canonical_smiles": "**C(=O)O",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4",
+        "figure_id": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 4,
+          "bbox": [
+            75.0,
+            77.0,
+            489.0,
+            379.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.8348340837085209,
+          0.09204602301150576,
+          1.0007670501917625,
+          0.1695847923961981
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0062",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*C=O",
+    "canonical_smiles": "*C=O",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4",
+        "figure_id": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 4,
+          "bbox": [
+            75.0,
+            77.0,
+            489.0,
+            379.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.8400033350008337,
+          0.47423711855927964,
+          0.9919793229948307,
+          0.5167583791895948
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "734be741aa718b5ce347994350b4a2f4725d3f2e05035071f72ec096a6a5acf4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0063",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*COC(c1ccc(OC)cc1)C1CC1",
+    "canonical_smiles": "*COC(c1ccc(OC)cc1)C1CC1",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "47b030d496d5feaba1efdc96e320dbb465994ec788a7ce6566f40f3b7d5ffad4",
+        "figure_id": "47b030d496d5feaba1efdc96e320dbb465994ec788a7ce6566f40f3b7d5ffad4",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 4,
+          "bbox": [
+            72.0,
+            497.0,
+            455.0,
+            549.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.009004502251125562,
+          0.033470403155245576,
+          0.34817408704352176,
+          0.8290361396914674
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "47b030d496d5feaba1efdc96e320dbb465994ec788a7ce6566f40f3b7d5ffad4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0064",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "COc1ccc(C(=O)C2CC2)cc1",
+    "canonical_smiles": "COc1ccc(C(=O)C2CC2)cc1",
+    "inchi_key": "YKZSVEVTRUSPOQ-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "47b030d496d5feaba1efdc96e320dbb465994ec788a7ce6566f40f3b7d5ffad4",
+        "figure_id": "47b030d496d5feaba1efdc96e320dbb465994ec788a7ce6566f40f3b7d5ffad4",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 4,
+          "bbox": [
+            72.0,
+            497.0,
+            455.0,
+            549.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7903951975987994,
+          0.033470403155245576,
+          0.9964982491245623,
+          0.8187375541052381
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "47b030d496d5feaba1efdc96e320dbb465994ec788a7ce6566f40f3b7d5ffad4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0065",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CCCCCCC(OCc1ccc(OC)cc1)C1CC1",
+    "canonical_smiles": "CCCCCCC(OCc1ccc(OC)cc1)C1CC1",
+    "inchi_key": "GLSMMIBNKPUEPE-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "0ccb97a3d1f7d4744c0715a35b8511015cf82429d9c1ce05f832804f8d9e8561",
+        "figure_id": "0ccb97a3d1f7d4744c0715a35b8511015cf82429d9c1ce05f832804f8d9e8561",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 4,
+          "bbox": [
+            72.0,
+            573.0,
+            455.0,
+            625.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.01250625312656328,
+          0.04598851149712787,
+          0.3411705852926463,
+          0.8482325453914697
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "0ccb97a3d1f7d4744c0715a35b8511015cf82429d9c1ce05f832804f8d9e8561"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0066",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "CCCCCCC(=O)C1CC1",
+    "canonical_smiles": "CCCCCCC(=O)C1CC1",
+    "inchi_key": "GUEVCKBBQNQMDB-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "0ccb97a3d1f7d4744c0715a35b8511015cf82429d9c1ce05f832804f8d9e8561",
+        "figure_id": "0ccb97a3d1f7d4744c0715a35b8511015cf82429d9c1ce05f832804f8d9e8561",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 4,
+          "bbox": [
+            72.0,
+            573.0,
+            455.0,
+            625.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.5867933966983492,
+          0.19417371521009547,
+          0.7393696848424212,
+          0.751145687786422
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "0ccb97a3d1f7d4744c0715a35b8511015cf82429d9c1ce05f832804f8d9e8561"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0067",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[H]C(=O)c1ccc(OC)cc1",
+    "canonical_smiles": "COc1ccc(C=O)cc1",
+    "inchi_key": "ZRSNZINYAWTAHE-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "0ccb97a3d1f7d4744c0715a35b8511015cf82429d9c1ce05f832804f8d9e8561",
+        "figure_id": "0ccb97a3d1f7d4744c0715a35b8511015cf82429d9c1ce05f832804f8d9e8561",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 4,
+          "bbox": [
+            72.0,
+            573.0,
+            455.0,
+            625.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7893946973486743,
+          0.09453194029965173,
+          0.9919959979989995,
+          0.75881043970261
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "0ccb97a3d1f7d4744c0715a35b8511015cf82429d9c1ce05f832804f8d9e8561"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0068",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "COc1ccc(COCc2ccc(OC)cc2)cc1",
+    "canonical_smiles": "COc1ccc(COCc2ccc(OC)cc2)cc1",
+    "inchi_key": "SDTORDSXCYSNTD-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "f027a6ab8e84e33eb8076f06f24cfae28d1e2e6c51b5d32d408d6ca64c97e1e4",
+        "figure_id": "f027a6ab8e84e33eb8076f06f24cfae28d1e2e6c51b5d32d408d6ca64c97e1e4",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 5,
+          "bbox": [
+            72.0,
+            711.0,
+            489.0,
+            757.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.009504752376188095,
+          0.22122435625395637,
+          0.34967483741870936,
+          0.7426817674239964
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "f027a6ab8e84e33eb8076f06f24cfae28d1e2e6c51b5d32d408d6ca64c97e1e4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0069",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "COc1ccc(C(=O)O)cc1",
+    "canonical_smiles": "COc1ccc(C(=O)O)cc1",
+    "inchi_key": "ZEYHEAKUIGZSGI-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "f027a6ab8e84e33eb8076f06f24cfae28d1e2e6c51b5d32d408d6ca64c97e1e4",
+        "figure_id": "f027a6ab8e84e33eb8076f06f24cfae28d1e2e6c51b5d32d408d6ca64c97e1e4",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 5,
+          "bbox": [
+            72.0,
+            711.0,
+            489.0,
+            757.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.5437718859429714,
+          0.05372591509024655,
+          0.7388694347173587,
+          0.7774455948353324
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "f027a6ab8e84e33eb8076f06f24cfae28d1e2e6c51b5d32d408d6ca64c97e1e4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0070",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[H]C(=O)c1ccc(OC)cc1",
+    "canonical_smiles": "COc1ccc(C=O)cc1",
+    "inchi_key": "ZRSNZINYAWTAHE-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "f027a6ab8e84e33eb8076f06f24cfae28d1e2e6c51b5d32d408d6ca64c97e1e4",
+        "figure_id": "f027a6ab8e84e33eb8076f06f24cfae28d1e2e6c51b5d32d408d6ca64c97e1e4",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 5,
+          "bbox": [
+            72.0,
+            711.0,
+            489.0,
+            757.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7748874437218609,
+          0.05372591509024655,
+          0.9549774887443722,
+          0.7742852468888474
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "f027a6ab8e84e33eb8076f06f24cfae28d1e2e6c51b5d32d408d6ca64c97e1e4"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0071",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[H]C(=O)c1ccc(OC)cc1",
+    "canonical_smiles": "COc1ccc(C=O)cc1",
+    "inchi_key": "ZRSNZINYAWTAHE-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "c70cd44b88c02240ebd57730a539e19ab818deb65a9cbaa260f7fde11c4da1f1",
+        "figure_id": "c70cd44b88c02240ebd57730a539e19ab818deb65a9cbaa260f7fde11c4da1f1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 6,
+          "bbox": [
+            70.0,
+            114.0,
+            442.0,
+            350.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.015007503751875938,
+          0.7517838852815251,
+          0.21160580290145073,
+          0.8944784632116225
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "c70cd44b88c02240ebd57730a539e19ab818deb65a9cbaa260f7fde11c4da1f1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0072",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*C(=O)O",
+    "canonical_smiles": "*C(=O)O",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "c70cd44b88c02240ebd57730a539e19ab818deb65a9cbaa260f7fde11c4da1f1",
+        "figure_id": "c70cd44b88c02240ebd57730a539e19ab818deb65a9cbaa260f7fde11c4da1f1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 6,
+          "bbox": [
+            70.0,
+            114.0,
+            442.0,
+            350.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.015007503751875938,
+          0.46472903395911114,
+          0.1905952976488244,
+          0.5546765889189391
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "c70cd44b88c02240ebd57730a539e19ab818deb65a9cbaa260f7fde11c4da1f1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0073",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*C*",
+    "canonical_smiles": "*C*",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "c70cd44b88c02240ebd57730a539e19ab818deb65a9cbaa260f7fde11c4da1f1",
+        "figure_id": "c70cd44b88c02240ebd57730a539e19ab818deb65a9cbaa260f7fde11c4da1f1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 6,
+          "bbox": [
+            70.0,
+            114.0,
+            442.0,
+            350.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.017008504252126064,
+          0.0705144412339392,
+          0.2351175587793897,
+          0.11881960963829125
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "c70cd44b88c02240ebd57730a539e19ab818deb65a9cbaa260f7fde11c4da1f1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0074",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*C[18O]Cc1ccc(OC)cc1",
+    "canonical_smiles": "*C[18O]Cc1ccc(OC)cc1",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "c70cd44b88c02240ebd57730a539e19ab818deb65a9cbaa260f7fde11c4da1f1",
+        "figure_id": "c70cd44b88c02240ebd57730a539e19ab818deb65a9cbaa260f7fde11c4da1f1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 6,
+          "bbox": [
+            70.0,
+            114.0,
+            442.0,
+            350.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.23561780890445222,
+          0.2015491509285034,
+          0.4842421210605303,
+          0.2642903466720871
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "c70cd44b88c02240ebd57730a539e19ab818deb65a9cbaa260f7fde11c4da1f1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0075",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[H]C(=O)c1ccc(OC)cc1",
+    "canonical_smiles": "COc1ccc(C=O)cc1",
+    "inchi_key": "ZRSNZINYAWTAHE-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "c70cd44b88c02240ebd57730a539e19ab818deb65a9cbaa260f7fde11c4da1f1",
+        "figure_id": "c70cd44b88c02240ebd57730a539e19ab818deb65a9cbaa260f7fde11c4da1f1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 6,
+          "bbox": [
+            70.0,
+            114.0,
+            442.0,
+            350.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.5202601300650325,
+          0.7506734216400457,
+          0.7138569284642321,
+          0.8939232313908828
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "c70cd44b88c02240ebd57730a539e19ab818deb65a9cbaa260f7fde11c4da1f1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0076",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*C(=O)O",
+    "canonical_smiles": "*C(=O)O",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "c70cd44b88c02240ebd57730a539e19ab818deb65a9cbaa260f7fde11c4da1f1",
+        "figure_id": "c70cd44b88c02240ebd57730a539e19ab818deb65a9cbaa260f7fde11c4da1f1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 6,
+          "bbox": [
+            70.0,
+            114.0,
+            442.0,
+            350.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.5592796398199099,
+          0.461397643034673,
+          0.7323661830915458,
+          0.5546765889189391
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "c70cd44b88c02240ebd57730a539e19ab818deb65a9cbaa260f7fde11c4da1f1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0077",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*C(=O)O",
+    "canonical_smiles": "*C(=O)O",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "c70cd44b88c02240ebd57730a539e19ab818deb65a9cbaa260f7fde11c4da1f1",
+        "figure_id": "c70cd44b88c02240ebd57730a539e19ab818deb65a9cbaa260f7fde11c4da1f1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 6,
+          "bbox": [
+            70.0,
+            114.0,
+            442.0,
+            350.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.5812906453226613,
+          0.03609006834807912,
+          0.7478739369684843,
+          0.12603762330790708
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "c70cd44b88c02240ebd57730a539e19ab818deb65a9cbaa260f7fde11c4da1f1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0078",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "COc1ccc(C(=O)O)cc1",
+    "canonical_smiles": "COc1ccc(C(=O)O)cc1",
+    "inchi_key": "ZEYHEAKUIGZSGI-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "c70cd44b88c02240ebd57730a539e19ab818deb65a9cbaa260f7fde11c4da1f1",
+        "figure_id": "c70cd44b88c02240ebd57730a539e19ab818deb65a9cbaa260f7fde11c4da1f1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 6,
+          "bbox": [
+            70.0,
+            114.0,
+            442.0,
+            350.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7633816908454227,
+          0.7523391171022646,
+          0.9754877438719359,
+          0.8939232313908828
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "c70cd44b88c02240ebd57730a539e19ab818deb65a9cbaa260f7fde11c4da1f1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0079",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "[H]C(=O)c1ccc(OC)cc1",
+    "canonical_smiles": "COc1ccc(C=O)cc1",
+    "inchi_key": "ZRSNZINYAWTAHE-UHFFFAOYSA-N",
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "c70cd44b88c02240ebd57730a539e19ab818deb65a9cbaa260f7fde11c4da1f1",
+        "figure_id": "c70cd44b88c02240ebd57730a539e19ab818deb65a9cbaa260f7fde11c4da1f1",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 6,
+          "bbox": [
+            70.0,
+            114.0,
+            442.0,
+            350.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7873936968484242,
+          0.005552318207396788,
+          0.9774887443721861,
+          0.13936318700565936
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "c70cd44b88c02240ebd57730a539e19ab818deb65a9cbaa260f7fde11c4da1f1"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0080",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*C(=O)O",
+    "canonical_smiles": "*C(=O)O",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "a8a08c33bbfa5ab495e06c8172b53044a4807f688dde83c5af03663bea500e2c",
+        "figure_id": "a8a08c33bbfa5ab495e06c8172b53044a4807f688dde83c5af03663bea500e2c",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 6,
+          "bbox": [
+            73.0,
+            562.0,
+            489.0,
+            868.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.009890581512458025,
+          0.8904452226113057,
+          0.10307027049824678,
+          0.9624812406203102
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "a8a08c33bbfa5ab495e06c8172b53044a4807f688dde83c5af03663bea500e2c"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0081",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*COC(*)O",
+    "canonical_smiles": "*COC(*)O",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "a8a08c33bbfa5ab495e06c8172b53044a4807f688dde83c5af03663bea500e2c",
+        "figure_id": "a8a08c33bbfa5ab495e06c8172b53044a4807f688dde83c5af03663bea500e2c",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 6,
+          "bbox": [
+            73.0,
+            562.0,
+            489.0,
+            868.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.07391908288258102,
+          0.6508254127063532,
+          0.3024435715125322,
+          0.7328664332166083
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "a8a08c33bbfa5ab495e06c8172b53044a4807f688dde83c5af03663bea500e2c"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0082",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*C=OC*",
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "a8a08c33bbfa5ab495e06c8172b53044a4807f688dde83c5af03663bea500e2c",
+        "figure_id": "a8a08c33bbfa5ab495e06c8172b53044a4807f688dde83c5af03663bea500e2c",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 6,
+          "bbox": [
+            73.0,
+            562.0,
+            489.0,
+            868.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.09682358743774698,
+          0.3891945972986493,
+          0.3248275191459899,
+          0.4432216108054027
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "mineru_image_hash": "a8a08c33bbfa5ab495e06c8172b53044a4807f688dde83c5af03663bea500e2c"
+    },
+    "errors": [
+      "RDKit could not parse SMILES: *C=OC*"
+    ]
+  },
+  {
+    "molecule_card_id": "mol_17_0083",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*COC(*)([H])[H]",
+    "canonical_smiles": "*COC*",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "a8a08c33bbfa5ab495e06c8172b53044a4807f688dde83c5af03663bea500e2c",
+        "figure_id": "a8a08c33bbfa5ab495e06c8172b53044a4807f688dde83c5af03663bea500e2c",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 6,
+          "bbox": [
+            73.0,
+            562.0,
+            489.0,
+            868.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.13222145811391256,
+          0.09654827413706854,
+          0.3591842759787388,
+          0.16758379189594796
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "a8a08c33bbfa5ab495e06c8172b53044a4807f688dde83c5af03663bea500e2c"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0084",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*C=O",
+    "canonical_smiles": "*C=O",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "a8a08c33bbfa5ab495e06c8172b53044a4807f688dde83c5af03663bea500e2c",
+        "figure_id": "a8a08c33bbfa5ab495e06c8172b53044a4807f688dde83c5af03663bea500e2c",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 6,
+          "bbox": [
+            73.0,
+            562.0,
+            489.0,
+            868.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.18792104873670248,
+          0.927463731865933,
+          0.27953906695736624,
+          0.9639819909954978
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "a8a08c33bbfa5ab495e06c8172b53044a4807f688dde83c5af03663bea500e2c"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0085",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "a8a08c33bbfa5ab495e06c8172b53044a4807f688dde83c5af03663bea500e2c",
+        "figure_id": "a8a08c33bbfa5ab495e06c8172b53044a4807f688dde83c5af03663bea500e2c",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 6,
+          "bbox": [
+            73.0,
+            562.0,
+            489.0,
+            868.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.41852776505348693,
+          0.888944472236118,
+          0.5939554476691898,
+          0.9279639819909955
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "mineru_image_hash": "a8a08c33bbfa5ab495e06c8172b53044a4807f688dde83c5af03663bea500e2c"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_17_0086",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "**C(=O)O",
+    "canonical_smiles": "**C(=O)O",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "a8a08c33bbfa5ab495e06c8172b53044a4807f688dde83c5af03663bea500e2c",
+        "figure_id": "a8a08c33bbfa5ab495e06c8172b53044a4807f688dde83c5af03663bea500e2c",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 6,
+          "bbox": [
+            73.0,
+            562.0,
+            489.0,
+            868.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7511636380251016,
+          0.272136068034017,
+          0.9260707637190961,
+          0.3501750875437719
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "a8a08c33bbfa5ab495e06c8172b53044a4807f688dde83c5af03663bea500e2c"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0087",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*C=O",
+    "canonical_smiles": "*C=O",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "a8a08c33bbfa5ab495e06c8172b53044a4807f688dde83c5af03663bea500e2c",
+        "figure_id": "a8a08c33bbfa5ab495e06c8172b53044a4807f688dde83c5af03663bea500e2c",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 6,
+          "bbox": [
+            73.0,
+            562.0,
+            489.0,
+            868.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.7527253087902265,
+          0.7458729364682342,
+          0.9114951699112632,
+          0.7868934467233617
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "a8a08c33bbfa5ab495e06c8172b53044a4807f688dde83c5af03663bea500e2c"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_17_0088",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [],
+    "raw_smiles": "*C(O)O",
+    "canonical_smiles": "*C(O)O",
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [],
+    "source_images": [
+      {
+        "image_id": "a8a08c33bbfa5ab495e06c8172b53044a4807f688dde83c5af03663bea500e2c",
+        "figure_id": "a8a08c33bbfa5ab495e06c8172b53044a4807f688dde83c5af03663bea500e2c",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 6,
+          "bbox": [
+            73.0,
+            562.0,
+            489.0,
+            868.0
+          ],
+          "block_id": null,
+          "figure_id": null,
+          "table_id": null,
+          "section": null,
+          "text_span": null
+        },
+        "bbox": [
+          0.8089454563347248,
+          0.5052526263131566,
+          0.9859348097155525,
+          0.5867933966983492
+        ],
+        "confidence": 0.6703333333333333
+      }
+    ],
+    "linked_elementkg_id": null,
+    "confidence": 0.6703333333333333,
+    "normalization_status": "success",
+    "raw_payload": {
+      "mineru_image_hash": "a8a08c33bbfa5ab495e06c8172b53044a4807f688dde83c5af03663bea500e2c"
+    },
+    "errors": []
+  },
+  {
+    "molecule_card_id": "mol_tbl_17_0000",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [
+      "OH"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [
+      {
+        "mention": "OH",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 1,
+          "bbox": [
+            566.0,
+            306.0,
+            873.0,
+            344.0
+          ],
+          "block_id": "block_17_0010",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and Discussion",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "protecting strategies for alcohol protection attributing to i",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 1,
+          "bbox": [
+            70.0,
+            317.0,
+            492.0,
+            561.0
+          ],
+          "block_id": "block_17_0005",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Introduction",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "chose the PMB ether of C12 alcohol 1a as the model substrate.",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 1,
+          "bbox": [
+            70.0,
+            617.0,
+            492.0,
+            689.0
+          ],
+          "block_id": "block_17_0007",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and Discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "8 and 9). The reaction with 4-OH-TEMPO replacing TEMPO is much",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 1,
+          "bbox": [
+            505.0,
+            617.0,
+            926.0,
+            788.0
+          ],
+          "block_id": "block_17_0011",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and Discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": ";  |  | Y mol% TEMPO n-C11H3COOH 2a Z mol% KCI | X mol1% Fe(NO",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 2,
+          "bbox": [
+            75.0,
+            77.0,
+            921.0,
+            336.0
+          ],
+          "block_id": "block_17_0013",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and Discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "Next, the corresponding alcohol 1 a’ was submitted to the s",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 4,
+          "bbox": [
+            504.0,
+            288.0,
+            926.0,
+            546.0
+          ],
+          "block_id": "block_17_0025",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and Discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "competitive experiment of alcohol 1 a’ (0.50 mmol) and PMB et",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 5,
+          "bbox": [
+            70.0,
+            774.0,
+            492.0,
+            889.0
+          ],
+          "block_id": "block_17_0027",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and Discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "de 4 a on the oxidation of alcohol to carboxylic acid is still",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 6,
+          "bbox": [
+            505.0,
+            74.0,
+            924.0,
+            131.0
+          ],
+          "block_id": "block_17_0033",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and Discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "ethers of optically active alcohols. Moreover, total synthesis",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 7,
+          "bbox": [
+            70.0,
+            104.0,
+            492.0,
+            290.0
+          ],
+          "block_id": "block_17_0037",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Conclusions",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "CDCl ): δ 11.87 (brs, 1 H, COOH), 2.34 (t, J = 7.4 Hz, 2 H, C",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 7,
+          "bbox": [
+            70.0,
+            386.0,
+            492.0,
+            702.0
+          ],
+          "block_id": "block_17_0039",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Experimental Section",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_17_0010"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_17_0001",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [
+      "PMB ether"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [
+      {
+        "mention": "PMB ether",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 1,
+          "bbox": [
+            566.0,
+            306.0,
+            873.0,
+            344.0
+          ],
+          "block_id": "block_17_0010",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and Discussion",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "Aerobic Oxidation of PMB Ethers to Carboxylic Acids",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 1,
+          "bbox": [
+            73.0,
+            98.0,
+            820.0,
+            123.0
+          ],
+          "block_id": "block_17_0001",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Aerobic Oxidation of PMB Ethers to Carboxylic Acids",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "nd, direct transformations of PMB ethers without deprotection step to",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 1,
+          "bbox": [
+            70.0,
+            317.0,
+            492.0,
+            561.0
+          ],
+          "block_id": "block_17_0005",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Introduction",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "We chose the PMB ether of C12 alcohol 1a as the mode",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 1,
+          "bbox": [
+            70.0,
+            617.0,
+            492.0,
+            689.0
+          ],
+          "block_id": "block_17_0007",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and Discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "tection of different benzylic PMB ethers has been realized. The react",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 1,
+          "bbox": [
+            505.0,
+            180.0,
+            926.0,
+            267.0
+          ],
+          "block_id": "block_17_0008",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and Discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "rocess. As shown in Scheme 2, PMB ethers with various length of alkyl",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 1,
+          "bbox": [
+            505.0,
+            788.0,
+            926.0,
+            889.0
+          ],
+          "block_id": "block_17_0012",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and Discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "ferently substituted benzylic PMB ethers. As shown in Scheme 3, the e",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 2,
+          "bbox": [
+            70.0,
+            617.0,
+            492.0,
+            875.0
+          ],
+          "block_id": "block_17_0014",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and Discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "atalyzed aerobic oxidation of PMB ether matched the data of the curre",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 4,
+          "bbox": [
+            505.0,
+            146.0,
+            924.0,
+            288.0
+          ],
+          "block_id": "block_17_0024",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and Discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "en monitored the reactions of PMB ether and alcohol (Figure 2a and b)",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 4,
+          "bbox": [
+            504.0,
+            288.0,
+            926.0,
+            546.0
+          ],
+          "block_id": "block_17_0025",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and Discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "e reaction of p-methoxybenzyl PMB ether 1 A afforded 4-methoxybenzoic",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 5,
+          "bbox": [
+            70.0,
+            602.0,
+            492.0,
+            702.0
+          ],
+          "block_id": "block_17_0026",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and Discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "alcohol 1 a’ (0.50 mmol) and PMB ether 1a (0.50 mmol) with 0.05 mmol",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 5,
+          "bbox": [
+            70.0,
+            774.0,
+            492.0,
+            889.0
+          ],
+          "block_id": "block_17_0027",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and Discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "ive aerobic transformation of PMB ethers affording the corresponding",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 7,
+          "bbox": [
+            70.0,
+            104.0,
+            492.0,
+            290.0
+          ],
+          "block_id": "block_17_0037",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Conclusions",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      },
+      {
+        "mention": "ional group interconversion · PMB ethers · Aerobic oxidation · Iron c",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 7,
+          "bbox": [
+            505.0,
+            279.0,
+            926.0,
+            309.0
+          ],
+          "block_id": "block_17_0049",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Data Availability Statement",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_17_0010"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_17_0002",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [
+      "R²OH"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [
+      {
+        "mention": "R²OH",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 1,
+          "bbox": [
+            566.0,
+            306.0,
+            873.0,
+            344.0
+          ],
+          "block_id": "block_17_0010",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and Discussion",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_17_0010"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_17_0003",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [
+      "esters"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [
+      {
+        "mention": "esters",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 1,
+          "bbox": [
+            566.0,
+            306.0,
+            873.0,
+            344.0
+          ],
+          "block_id": "block_17_0010",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and Discussion",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "mechanism, the corresponding esters 13[8] and 14[9] were synthesi",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 2,
+          "bbox": [
+            505.0,
+            631.0,
+            924.0,
+            702.0
+          ],
+          "block_id": "block_17_0016",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and Discussion",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_17_0010"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  },
+  {
+    "molecule_card_id": "mol_tbl_17_0004",
+    "doc_id": "17",
+    "local_ids": [],
+    "names": [
+      "aldehydes"
+    ],
+    "raw_smiles": null,
+    "canonical_smiles": null,
+    "inchi_key": null,
+    "iupac_name": null,
+    "aliases": [],
+    "source_mentions": [
+      {
+        "mention": "aldehydes",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 1,
+          "bbox": [
+            566.0,
+            306.0,
+            873.0,
+            344.0
+          ],
+          "block_id": "block_17_0010",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Results and Discussion",
+          "text_span": null
+        },
+        "role": "table_extraction",
+        "confidence": 0.7
+      },
+      {
+        "mention": "ersions of such PMB ethers to aldehydes in a deprotective manner[2] a",
+        "provenance": {
+          "doc_id": "17",
+          "source_file": "17.pdf",
+          "page": 1,
+          "bbox": [
+            70.0,
+            317.0,
+            492.0,
+            561.0
+          ],
+          "block_id": "block_17_0005",
+          "figure_id": null,
+          "table_id": null,
+          "section": "Introduction",
+          "text_span": null
+        },
+        "role": "mentioned",
+        "confidence": 0.8
+      }
+    ],
+    "source_images": [],
+    "linked_elementkg_id": null,
+    "confidence": 0.7,
+    "normalization_status": "failed",
+    "raw_payload": {
+      "table_block_id": "block_17_0010"
+    },
+    "errors": [
+      "No SMILES available for RDKit normalization."
+    ]
+  }
+]

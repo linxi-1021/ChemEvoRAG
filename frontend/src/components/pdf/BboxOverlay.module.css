@@ -1,0 +1,85 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.rect {
+  fill: rgba(22, 119, 255, 0.06);
+  stroke: transparent;
+  stroke-width: 0;
+  cursor: pointer;
+  pointer-events: all;
+  transition: fill 0.15s, stroke 0.15s, stroke-width 0.15s;
+  rx: 2;
+  ry: 2;
+}
+
+.rect:hover {
+  fill: rgba(22, 119, 255, 0.15);
+  stroke: rgba(22, 119, 255, 0.4);
+  stroke-width: 1;
+}
+
+/* Block layer — blue, border only by default */
+.block {
+  fill: transparent;
+  stroke: rgba(22, 119, 255, 0.4);
+  stroke-width: 1;
+}
+
+.block:hover {
+  fill: rgba(22, 119, 255, 0.08);
+  stroke: rgba(22, 119, 255, 0.6);
+  stroke-width: 1.5;
+}
+
+/* Molecule layer — green, border only */
+.molecule {
+  fill: transparent;
+  stroke: rgba(82, 196, 26, 0.5);
+  stroke-width: 1;
+  stroke-dasharray: 4 2;
+}
+
+.molecule:hover {
+  fill: rgba(82, 196, 26, 0.08);
+  stroke: rgba(82, 196, 26, 0.8);
+  stroke-width: 1.5;
+}
+
+/* Reaction layer — orange, border only */
+.reaction {
+  fill: transparent;
+  stroke: rgba(250, 173, 20, 0.5);
+  stroke-width: 1;
+  stroke-dasharray: 6 3;
+}
+
+.reaction:hover {
+  fill: rgba(250, 173, 20, 0.08);
+  stroke: rgba(250, 173, 20, 0.8);
+  stroke-width: 1.5;
+}
+
+/* Highlighted state — filled with color */
+.highlighted {
+  fill: rgba(22, 119, 255, 0.2) !important;
+  stroke: var(--color-primary) !important;
+  stroke-width: 2 !important;
+  stroke-dasharray: none !important;
+}
+
+.molecule.highlighted {
+  fill: rgba(82, 196, 26, 0.2) !important;
+  stroke: #52c41a !important;
+  stroke-width: 2 !important;
+}
+
+.reaction.highlighted {
+  fill: rgba(250, 173, 20, 0.2) !important;
+  stroke: #faad14 !important;
+  stroke-width: 2 !important;
+}

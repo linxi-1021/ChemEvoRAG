@@ -1,0 +1,618 @@
+[
+  {
+    "block_id": "block_13_0000",
+    "doc_id": "13",
+    "block_type": "paragraph",
+    "text": "Check for updates",
+    "page": 1,
+    "bbox": [
+      105.0,
+      179.0,
+      228.0,
+      192.0
+    ],
+    "section": null,
+    "prev_block_id": null,
+    "next_block_id": "block_13_0001",
+    "source_file": "13.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_13_0001",
+    "doc_id": "13",
+    "block_type": "paragraph",
+    "text": "Cite this: Chem. Commun., 2023,",
+    "page": 1,
+    "bbox": [
+      65.0,
+      213.0,
+      257.0,
+      224.0
+    ],
+    "section": null,
+    "prev_block_id": "block_13_0000",
+    "next_block_id": "block_13_0002",
+    "source_file": "13.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_13_0002",
+    "doc_id": "13",
+    "block_type": "paragraph",
+    "text": "59, 5281",
+    "page": 1,
+    "bbox": [
+      67.0,
+      225.0,
+      119.0,
+      237.0
+    ],
+    "section": null,
+    "prev_block_id": "block_13_0001",
+    "next_block_id": "block_13_0003",
+    "source_file": "13.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_13_0003",
+    "doc_id": "13",
+    "block_type": "paragraph",
+    "text": "Received 28th February 2023,",
+    "page": 1,
+    "bbox": [
+      65.0,
+      247.0,
+      236.0,
+      258.0
+    ],
+    "section": null,
+    "prev_block_id": "block_13_0002",
+    "next_block_id": "block_13_0004",
+    "source_file": "13.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_13_0004",
+    "doc_id": "13",
+    "block_type": "paragraph",
+    "text": "Accepted 22nd March 2023",
+    "page": 1,
+    "bbox": [
+      67.0,
+      259.0,
+      226.0,
+      270.0
+    ],
+    "section": null,
+    "prev_block_id": "block_13_0003",
+    "next_block_id": "block_13_0005",
+    "source_file": "13.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_13_0005",
+    "doc_id": "13",
+    "block_type": "paragraph",
+    "text": "DOI: 10.1039/d3cc00963g",
+    "page": 1,
+    "bbox": [
+      67.0,
+      282.0,
+      218.0,
+      293.0
+    ],
+    "section": null,
+    "prev_block_id": "block_13_0004",
+    "next_block_id": "block_13_0006",
+    "source_file": "13.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_13_0006",
+    "doc_id": "13",
+    "block_type": "paragraph",
+    "text": "rsc.li/chemcomm",
+    "page": 1,
+    "bbox": [
+      67.0,
+      305.0,
+      169.0,
+      315.0
+    ],
+    "section": null,
+    "prev_block_id": "block_13_0005",
+    "next_block_id": "block_13_0007",
+    "source_file": "13.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_13_0007",
+    "doc_id": "13",
+    "block_type": "title",
+    "text": "Copper-catalyzed aerobic oxidation of primary alcohols to carboxylic acids†",
+    "page": 1,
+    "bbox": [
+      284.0,
+      170.0,
+      882.0,
+      216.0
+    ],
+    "section": "Copper-catalyzed aerobic oxidation of primary alcohols to carboxylic acids†",
+    "prev_block_id": "block_13_0006",
+    "next_block_id": "block_13_0008",
+    "source_file": "13.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_13_0008",
+    "doc_id": "13",
+    "block_type": "paragraph",
+    "text": "Yibo Yu, a Di Zhai,a Zhengnan Zhou,a Sheng Jiang,a Hui Qian *a and Shengming Ma *ab",
+    "page": 1,
+    "bbox": [
+      282.0,
+      228.0,
+      840.0,
+      261.0
+    ],
+    "section": "Copper-catalyzed aerobic oxidation of primary alcohols to carboxylic acids†",
+    "prev_block_id": "block_13_0007",
+    "next_block_id": "block_13_0009",
+    "source_file": "13.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_13_0009",
+    "doc_id": "13",
+    "block_type": "paragraph",
+    "text": "Here, the first copper-catalyzed aerobic oxidation of primary alcohols to carboxylic acids with TEMPO and  K H S O _ { 4 } as the co-catalysts has been developed. The reaction exhibits excellent substrate scope and functional group compatibility under mild conditions. Even the very sensitive chiral alcohols, chiral amino alcohols, and alcohol-containing steroid skeletons may be oxidized to afford the corresponding carboxylic acids or lactones without racemization.",
+    "page": 1,
+    "bbox": [
+      65.0,
+      338.0,
+      490.0,
+      442.0
+    ],
+    "section": "Copper-catalyzed aerobic oxidation of primary alcohols to carboxylic acids†",
+    "prev_block_id": "block_13_0008",
+    "next_block_id": "block_13_0010",
+    "source_file": "13.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_13_0010",
+    "doc_id": "13",
+    "block_type": "paragraph",
+    "text": "Carboxylic acids are prevalent in natural products, agrochemicals and drug molecules, such as ibuprofen, flurbiprofen, naproxen  e t c . ^ { 1 } Furthermore, carboxylic acids are widely featured in the synthesis of other chemicals of academic and/or industrial interest.2 One of the most common protocols for synthesizing carboxylic acids is the oxidation of primary alcohols.3–5 However, at least stoichiometric amounts of toxic and expensive oxidants are required in the traditional approaches, which is not cost-effective and environmentally friendly due to the high cost of such oxidants and the corresponding derived hazardous wastes.4,6,7 In this regard, the development of catalytic strategies using the environmentally benign and inexpensive molecular oxygen as the oxidant has been prominent.5,8–10 Some such methods with metal catalysts have been reported.11,12 However, the substrate scope is still very limited: the challenging substrates are the chiral alcohols including drug molecules, (S)-2-methylbutanol,13 and chiral amino alcohols14 due to very sensitive nature of the corresponding chiral acids with an a-chirality under the employed reaction parameters (Scheme 1a). Thus, we turned our attention to copper catalysis. The oxidation of primary alcohols to carboxylic acids with very high loadings of terminal oxidants,",
+    "page": 1,
+    "bbox": [
+      63.0,
+      459.0,
+      492.0,
+      797.0
+    ],
+    "section": "Copper-catalyzed aerobic oxidation of primary alcohols to carboxylic acids†",
+    "prev_block_id": "block_13_0009",
+    "next_block_id": "block_13_0011",
+    "source_file": "13.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_13_0011",
+    "doc_id": "13",
+    "block_type": "paragraph",
+    "text": "such as, TBHP (5–14 equiv)) or  \\mathbf { H } _ { 2 } \\mathbf { O } _ { 2 } (5–20 equiv), has been reported (Scheme 1b).15 So far, there are no reports on the copper-catalyzed aerobic oxidation of primary alcohols to carboxylic acids.16,17 Herein, we present the first copper-catalyzed aerobic oxidation of primary alcohols to carboxylic acids under very mild conditions with a remarkable functional group compatibility under the assistance of a catalytic amount each of TEMPO and KHSO (Scheme 1c).",
+    "page": 1,
+    "bbox": [
+      502.0,
+      337.0,
+      929.0,
+      458.0
+    ],
+    "section": "Copper-catalyzed aerobic oxidation of primary alcohols to carboxylic acids†",
+    "prev_block_id": "block_13_0010",
+    "next_block_id": "block_13_0012",
+    "source_file": "13.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_13_0012",
+    "doc_id": "13",
+    "block_type": "paragraph",
+    "text": "We commenced our investigations with the evaluation of different catalysts to enable the direct aerobic oxidation of alcohols to carboxylic acids by using cetyl alcohol (1a) as the model substrate (Table 1). Aldehyde 2a0 was formed in a 61% yield with 21% of recovery of 1a when the reaction was",
+    "page": 1,
+    "bbox": [
+      502.0,
+      459.0,
+      929.0,
+      535.0
+    ],
+    "section": "Copper-catalyzed aerobic oxidation of primary alcohols to carboxylic acids†",
+    "prev_block_id": "block_13_0011",
+    "next_block_id": "block_13_0013",
+    "source_file": "13.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_13_0013",
+    "doc_id": "13",
+    "block_type": "paragraph",
+    "text": "Scheme 1 (a) The known earth-abundant metal-catalyzed aerobic oxidation of primary alcohols to carboxylic acids; (b) and (c) coppercatalyzed oxidation of primary alcohols to carboxylic acids.",
+    "page": 1,
+    "bbox": [
+      502.0,
+      880.0,
+      929.0,
+      919.0
+    ],
+    "section": "Copper-catalyzed aerobic oxidation of primary alcohols to carboxylic acids†",
+    "prev_block_id": "block_13_0012",
+    "next_block_id": "block_13_0014",
+    "source_file": "13.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_13_0014",
+    "doc_id": "13",
+    "block_type": "table",
+    "text": "$n-C_{15}H_{31}CH_2OH$ | Cu(NO3)2·3H2O (10 mol%)TEMPO (10 mol%)additive (10 mol%)DCE, O2(balloon), rt, 36 h | $n-C_{15}H_{31}CHO$  +  $2a'$ | $n-C_{15}H_{31}COOH$ 2a; Entry | Additive | Recovery of 1a(%) | NMR yield of 2a&#x27; (%) | NMR yield of 2a(%); 1 | None | 21 | 61 | 0; 2 | KHCO3 | 95 | 5 | 0; 3 | K2CO3 | 93 | 5 | 0; 4 | K3PO4 | 94 | 6 | 0; 5 | K2HPO4 | 95 | 6 | 0; 6 | KCl | 0 | 18 | 76; 7 | KBr | 0 | 61 | 30; 8 | KI | 67 | 31 | 0; 9 | K2SO4 | 48 | 35 | 0; 10 | KH2PO4 | 0 | 12 | 87; 11 | NaH2PO4 | 0 | 0 | 98; 12 | NaHSO4·H2O | 0 | 0 | 99; 13 | KHSO4 | 0 | 0 | 100; 14 | AlCl3 | 0 | 6 | 90; 15 | ZnCl2 | 0 | 4 | 92; $16^b$ | KHSO4 | 100 | 0 | 0; $17^c$ | KHSO4 | 0 | 10 | 88 | Table 1 Screening of an extra catalyst for the aerobic oxidation of | \\pmb { 1 } \\hat { \\mathbf { a } } ^ { a } | a The reaction was conducted with 1.0 mmol of 1a, 10 mol% each of | \\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 } { \\cdot } 3 \\mathrm { H } _ { 2 } \\mathrm { O } , | , TEMPO, and additive in 4 mL of DCE at rt for 36 h with an O2 balloon. The NMR yield and recovery were determined by | ^ 1 \\mathrm { H } | NMR analysis using dibromomethane as the internal standard. b Without | \\mathrm { C u ( \\bar { N } O _ { 3 } ) } _ { 2 } { \\cdot } 3 \\mathrm { H } _ { 2 } \\mathrm { ( } \\mathrm { ) } . | c The reaction was conducted for 72 h with an air balloon.",
+    "page": 2,
+    "bbox": [
+      67.0,
+      77.0,
+      492.0,
+      379.0
+    ],
+    "section": "Copper-catalyzed aerobic oxidation of primary alcohols to carboxylic acids†",
+    "prev_block_id": "block_13_0013",
+    "next_block_id": "block_13_0015",
+    "source_file": "13.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "table"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_13_0015",
+    "doc_id": "13",
+    "block_type": "paragraph",
+    "text": "conducted with 10 mol% of  \\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 } { \\cdot } 3 \\mathrm { H } _ { 2 } \\mathrm { O } and TEMPO (entry  1 ) . ^ { 1 7 c } \\mathrm { K H C O _ { 3 } } , \\mathrm { K _ { 2 } C O _ { 3 } } , \\mathrm { K _ { 3 } P O _ { 4 } } , and  \\mathrm { K } _ { 2 } \\mathrm { H P O } _ { 4 } , , were first tested with considerable recovery of starting alcohol 1a (entries  2 { - } 5 ) . Potassium halides have also been screened, and among them, KCl is better than KBr and KI albeit all with poor results (entries 6–8). Further screening led to the observation that the addition of  \\mathrm { K H S O _ { 4 } } yielded carboxylic acid 2a in a quantitative yield (entry 13). A range of Lewis acids and solvents were also tested (Tables S1 and S2, ESI†), more than 90% of the corresponding acid 2a was formed in the presence of  \\mathbf { A l C l } _ { 3 } or  \\mathbf { Z } \\mathrm { n C l } _ { 2 } (entries 14 and 15). Control experiment indicated that no reaction occurred in the absence of copper (entry 16) and a much lower efficiency was observed when the reaction was conducted in an air atmosphere (entry 17).",
+    "page": 2,
+    "bbox": [
+      65.0,
+      474.0,
+      490.0,
+      689.0
+    ],
+    "section": "Copper-catalyzed aerobic oxidation of primary alcohols to carboxylic acids†",
+    "prev_block_id": "block_13_0014",
+    "next_block_id": "block_13_0016",
+    "source_file": "13.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_13_0016",
+    "doc_id": "13",
+    "block_type": "paragraph",
+    "text": "With these optimal reaction conditions in hand, the substrate scope was evaluated (Scheme 2). In addition to nonfunctionalized aliphatic acids 2a–c, the reaction may tolerate various functional groups, such as halogens, esters, ethers, and aryl and heteroaryl groups, affording the corresponding carboxylic acids 2d–m in up to 99% yields. Besides, the sterically more hindered 2-phenylpropan-1-ol, 2-methylbutan-1-ol, cyclohexyl methanol, and even 1-adamantanemethanol could be converted to the corresponding acids 2n–q. Notably, chiral acids (S)-2m and (S)-2n could be formed efficiently without erosion of enantiomeric excess as compared with the starting chiral alcohols.",
+    "page": 2,
+    "bbox": [
+      65.0,
+      690.0,
+      490.0,
+      872.0
+    ],
+    "section": "Copper-catalyzed aerobic oxidation of primary alcohols to carboxylic acids†",
+    "prev_block_id": "block_13_0015",
+    "next_block_id": "block_13_0017",
+    "source_file": "13.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_13_0017",
+    "doc_id": "13",
+    "block_type": "paragraph",
+    "text": "To demonstrate the practicality of this protocol, some gramscale reactions were executed. When 10 mmol of cetyl alcohol 1a was submitted to the standard conditions at 50  { } ^ { \\circ } \\mathbf { C } , 2.3 g (90% yield) of 2a could be afforded via simple recrystallization. (S)-2-methylbutanoic acid is an important chiral building block and very expensive  \\left( \\Psi \\ : 1 3 9 3 \\ : \\mathrm { g } ^ { - 1 } \\right. from Aldrich). Jones oxidation of (S)-2-methylbutanol, which utilized the highly toxic chromium compounds, is one of the traditional approaches to afford the chiral acid.13 Benefiting from the green and mild protocol developed here, a 50 mmol scale reaction of (S)-2-methylbutanol (S)-1o readily available from Aldrich (f 869/100 mL) could smoothly provide 3.6 g (72% yield) of (S)-2o via a simple distillation (eqn (1)). Also, the same reaction could be performed with a yield of 81% by using an air bag for 12 h first, which was followed by the supplementary supply of oxygen from a pure O2 bag (eqn (2)).",
+    "page": 2,
+    "bbox": [
+      65.0,
+      874.0,
+      490.0,
+      920.0
+    ],
+    "section": "Copper-catalyzed aerobic oxidation of primary alcohols to carboxylic acids†",
+    "prev_block_id": "block_13_0016",
+    "next_block_id": "block_13_0018",
+    "source_file": "13.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_13_0018",
+    "doc_id": "13",
+    "block_type": "paragraph",
+    "text": "| Compound | Yield (%) | Condition | Yield (g) |\n| :--- | :--- | :--- | :--- |\n| RCH₂OH | 1 | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| Cu(NO₃)₂·3H₂O | 10 mol% | MeO₂C-COOH | 60 h, 85 (6)b% |\n| TEMPO | 10 mol% | MeO-COOH | 96 h, 87 (4)b% |\n| KHSO₄ | 10 mol% | I-C₆H₅COOH | 96 h, 74 (16)b% |\n| DCE, O₂ balloon | 10 mol% | MeO-COOH | 96 h, 66 (32)b% |\n| A: [c] = 0.25, rt | 10 mol% | MeO-COOH | 96 h, 56 (43)b% |\n| B: [c] = 0.5, 50 °C | 10 mol% | MeO-COOH | 96 h, 66 (32)b% |\n| RCOOH | 2 | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| 2 aliphatic acids | 2 | MeO-COOH | 96 h, 56 (43)b% |\n| 4 aromatic acids | 2 | MeO-COOH | 96 h, 56 (43)b% |\n| Scope of aliphatic alcohols | n-C₁₅H₃₁COOH | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| n-C₁₀H₂₁COOH | n-C₁₀H₂₁COOH | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| n-C₇H₁₅COOH | n-C₇H₁₅COOH | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| CF₃(CH₂)₂COOH | CF₃(CH₂)₂COOH | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| Br(CH₂)₈COOH | Br(CH₂)₈COOH | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| I(CH₂)₈COOH | I(CH₂)₈COOH | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| TsO(CH₂)₇COOH | TsO(CH₂)₇COOH | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| MeO₂C(CH₂)₄COOH | MeO₂C(CH₂)₄COOH | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| n-C₆H₁₃OCH₂COOH | n-C₆H₁₃COOH | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| n-C₆H₁₃OCH₂COOH | n-C₆H₁₃COOH | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| n-C₆H₁₃OCH₂COOH (2i) | n-C₆H₁₃OCH₂COOH (2j) | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| n-C₆H₁₃OCH₂COOH (2l) | n-C₆H₁₃OCH₂COOH (2k) | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| n-C₆H₁₃OCH₂COOH (2m) | n-C₆H₁₃OCH₂COOH (2n) | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\n| n-C₆H₁₃OCH₂COOH (2q) | n-C₆H₁₃OCH₂COOH (2m) | [c] = 0.5, O₂ bag, 36 h | 36 h, 87% |\nScope of chiral alphatic alcohols: \n[Structure: benzyl alcohol]\n- [Condition: MeO-COOH] \n- Conditions: Air bag\n- [c] = 0.5, O₂ bag\n- Conditions: Air bag\n- [c] = 0.5, O₂ bag\n- [c] = 0.5, O₂ bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Conditions: Air bag\n- Scyclohexane: [c] = 0.5, O₂ bag\n- Scyclohexane: [c] = 0.5, O₂ bag\n- Scyclohexane: [c] = 0.5, O₂ bag\n- Scyclohexane: [c] = 0.5, O₂ bag\n- Scyclohexane: [c] = 0.5, O₂ bag\n- Scyclohexane: [c] = 0.5, O2 bag\n- Scyclohexane: [c] = 0.5, O₂ bag\n- Scyclohexane: [c] = 0.5, O₂ bag\n- Scyclohexane: [c] = 0.5, O₂ bag\n- Scyclohexane: [c] = 0.5, O₂ bag\n- Scyclohexane: [c] = 0.5, O² bag\n- Scyclohexane: [c] = 0.5, O² bag\n- Scyclohexane: [c] = 0.5, O² bag\n- Scyclohexane: [c] = 0.5, O² bag\n- Scyclohexane: [c] = 0.5, O² bag\n- Scyclohexane: [c] = 0.5, O⁡ bag\n- Scyclohexane: [c] = 0.5, O² bag\n- Scyclohexane: [c] = 0.5, O² bag\n- Scyclohexane: [c] = 0.5, O⁴ bag\n- Scyclohexane: [c] = 0.5, O⁴ bag\n- Scyclohexane: [c] = 0.5, O⁴ bag\n- Scyclohexane: [c] = 0.5, O⁴ bag\n- Scyclohexane: [c] = 0.5, O⁴ bag\n- Scyclohexane: [c] = 0.",
+    "page": 2,
+    "bbox": [
+      524.0,
+      60.0,
+      912.0,
+      704.0
+    ],
+    "section": "Copper-catalyzed aerobic oxidation of primary alcohols to carboxylic acids†",
+    "prev_block_id": "block_13_0017",
+    "next_block_id": "block_13_0019",
+    "source_file": "13.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "chart"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_13_0019",
+    "doc_id": "13",
+    "block_type": "paragraph",
+    "text": "Next, benzylic alcohols were tested. The reaction is amenable to electron-withdrawing groups substituted at the para-position on the phenyl ring. Various functional groups, including nitro (4a), trifluoromethyl (4b), ester (4c), and halogen (4d) are well tolerated. We also found that the reactivity of substrates bearing the iodo group at the o-, m-, and p-positions increased as the steric hindrance decreased (4d–f). However, a mixture of the aldehydes and acids was obtained when the phenyl rings were substituted with electron-donating groups, such as methyl (4g) or methoxy (4h) groups.",
+    "page": 3,
+    "bbox": [
+      63.0,
+      198.0,
+      492.0,
+      351.0
+    ],
+    "section": "Copper-catalyzed aerobic oxidation of primary alcohols to carboxylic acids†",
+    "prev_block_id": "block_13_0018",
+    "next_block_id": "block_13_0020",
+    "source_file": "13.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_13_0020",
+    "doc_id": "13",
+    "block_type": "paragraph",
+    "text": "We also explored the scope of synthetically attractive alkynylic alcohols (Scheme 3). The alcohols bearing a terminal C\u0004C bond unit via different lengths of carbon chains could be oxidized to the corresponding acids in good to excellent yields (6a–c). TMS-substituted propargyl alcohol could also be converted to the corresponding acid 6d with a slightly higher loading of TEMPO. The methyl- or propargyl-substituted hept-6-yl-1-ol afforded the corresponding acids 6e–g via varying the catalyst loading.",
+    "page": 3,
+    "bbox": [
+      63.0,
+      351.0,
+      490.0,
+      489.0
+    ],
+    "section": "Copper-catalyzed aerobic oxidation of primary alcohols to carboxylic acids†",
+    "prev_block_id": "block_13_0019",
+    "next_block_id": "block_13_0021",
+    "source_file": "13.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_13_0021",
+    "doc_id": "13",
+    "block_type": "paragraph",
+    "text": "Oxidation of alcohols with a chiral center at the a-position is very challenging due to the possible racemization of the corresponding rather sensitive carboxylic acid products: (1) amino alcohols are very attractive substrates for aerobic oxidation.14 The current protocol has been applied successfully to provide the corresponding amino acids 8a–g smoothly in excellent yields (Scheme 4). (2) Furthermore, this methodology could be applied for the synthesis of racemic drug molecules, such as naproxen 10a, flurbiprofen 10b, ibuprofen 10c, felbinac 10d, loxoprofen 10e, and indomethacin 10f, from the corresponding",
+    "page": 3,
+    "bbox": [
+      63.0,
+      490.0,
+      492.0,
+      644.0
+    ],
+    "section": "Copper-catalyzed aerobic oxidation of primary alcohols to carboxylic acids†",
+    "prev_block_id": "block_13_0020",
+    "next_block_id": "block_13_0022",
+    "source_file": "13.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_13_0022",
+    "doc_id": "13",
+    "block_type": "paragraph",
+    "text": "alcohols in good to excellent yields. In addition, the corresponding optically active drug molecules, such as (S)-naproxen, (R)-flurbiprofen, and (S)-ibuprofen were also prepared without racemization. Interestingly, sclareolide 12 could be efficiently synthesized via the sequential oxidation and lactonization of the tertiary alcohol unit in the molecule. Alcohol 11b containing a steroid skeleton could be oxidized to 13 in 71% yield with the secondary alcohol being converted to the ketone as well. Of note, chiral substrate 11c with a ketal structure unit could also undergo a highly efficient sequential aerobic oxidation, deacetalization, and lactonization to produce lactone 14 with a free hydroxyl group under the standard conditions.",
+    "page": 3,
+    "bbox": [
+      502.0,
+      781.0,
+      931.0,
+      919.0
+    ],
+    "section": "Copper-catalyzed aerobic oxidation of primary alcohols to carboxylic acids†",
+    "prev_block_id": "block_13_0021",
+    "next_block_id": "block_13_0023",
+    "source_file": "13.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_13_0023",
+    "doc_id": "13",
+    "block_type": "paragraph",
+    "text": "In conclusion, we have developed the first copper nitratecatalyzed aerobic oxidation of alcohols to carboxylic acids with the help of TEMPO and  \\mathrm { K H S O _ { 4 } } . The reaction is applicable to a very wide range of alcohols, such as aliphatic alcohols, benzylic alcohols, alkynylic alcohols, amino alcohols, drug precursors, and structurally complex molecules, providing the corresponding carboxylic acids in good to excellent yields. Benefiting from the mild conditions, optically active acids could be prepared from chiral amino alcohols, chiral drug precursors, and structurally complex chiral molecules efficiently without racemization. Furthermore, the oxidation reaction could be readily conducted on a practical scale (50 mmol) for the synthesis of not readily available (S)-2-methylbutanoic acid with a similar efficiency. Further studies including the roles of Cu and KHSO are being actively pursued in our laboratory.",
+    "page": 4,
+    "bbox": [
+      63.0,
+      107.0,
+      492.0,
+      336.0
+    ],
+    "section": "Copper-catalyzed aerobic oxidation of primary alcohols to carboxylic acids†",
+    "prev_block_id": "block_13_0022",
+    "next_block_id": "block_13_0024",
+    "source_file": "13.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_13_0024",
+    "doc_id": "13",
+    "block_type": "paragraph",
+    "text": "Financial support from National Natural Science Foundation of China (Grant No. 21988101 for S. M.) and National Key R&D Program of China (2022YFA1503200 for S. M.) is greatly appreciated. We thank Mr Junlin Li in this group for reproducing the results of 2m, 6d, and 10b presented in this study.",
+    "page": 4,
+    "bbox": [
+      65.0,
+      337.0,
+      490.0,
+      413.0
+    ],
+    "section": "Copper-catalyzed aerobic oxidation of primary alcohols to carboxylic acids†",
+    "prev_block_id": "block_13_0023",
+    "next_block_id": "block_13_0025",
+    "source_file": "13.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_13_0025",
+    "doc_id": "13",
+    "block_type": "title",
+    "text": "Conflicts of interest",
+    "page": 4,
+    "bbox": [
+      65.0,
+      431.0,
+      287.0,
+      449.0
+    ],
+    "section": "Conflicts of interest",
+    "prev_block_id": "block_13_0024",
+    "next_block_id": "block_13_0026",
+    "source_file": "13.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_13_0026",
+    "doc_id": "13",
+    "block_type": "paragraph",
+    "text": "There are no conflicts to declare.",
+    "page": 4,
+    "bbox": [
+      65.0,
+      460.0,
+      292.0,
+      474.0
+    ],
+    "section": "Conflicts of interest",
+    "prev_block_id": "block_13_0025",
+    "next_block_id": "block_13_0027",
+    "source_file": "13.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_13_0027",
+    "doc_id": "13",
+    "block_type": "title",
+    "text": "Notes and references",
+    "page": 4,
+    "bbox": [
+      65.0,
+      483.0,
+      304.0,
+      501.0
+    ],
+    "section": "Notes and references",
+    "prev_block_id": "block_13_0026",
+    "next_block_id": null,
+    "source_file": "13.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  }
+]

@@ -1,0 +1,2771 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "RESEARCH ARTICLE "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                84,
+                123,
+                315,
+                141
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "View Article Online "
+                    }
+                ]
+            },
+            "bbox": [
+                756,
+                116,
+                899,
+                130
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "View Journal | View Issue "
+                    }
+                ]
+            },
+            "bbox": [
+                757,
+                133,
+                884,
+                143
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/19aefc505fb4454fec0e50fab9167b77b7fc27ec5ba340643fad29d2c54c8887.jpg"
+                },
+                "content": "",
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                73,
+                179,
+                100,
+                198
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Check for updates "
+                    }
+                ]
+            },
+            "bbox": [
+                107,
+                183,
+                228,
+                196
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Cite this: , 2019, 6, 3101 "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                214,
+                273,
+                237
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Received 7th June 2019, "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                342,
+                205,
+                354
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Accepted 8th July 2019 "
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                355,
+                201,
+                365
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "DOI: 10.1039/c9qo00740g "
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                370,
+                220,
+                383
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "rsc.li/frontiers-organic "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                390,
+                186,
+                403
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Copper catalysis for highly selective aerobic oxidation of alcohols to aldehydes/ketones† "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                285,
+                173,
+                843,
+                220
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Di Zhaia and Shengming Ma *a,b "
+                    }
+                ]
+            },
+            "bbox": [
+                285,
+                232,
+                549,
+                249
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Oxidation of alcohols to aldehydes/ketones is a transformation of fundamental importance. Usually stoichiometric amounts of oxidants are required for these types of reactions. Although aerobic oxidations have been studied, there exist challenges: complicated additives, toxic or expensive catalyst(s), a large amount of base or molecular sieves, limited substrate scope, isomerization of CvC bonds, . Herein, a general and practical room temperature aerobic oxidation of different types of alcohols including allenols, alkenols, propargylic alcohols, benzylic alcohols, and aliphatic alcohols in MeCN (acetonitrile) or DCE (1,2-dichloroethane) using readily available and cheap "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathsf { C u } ( \\mathsf { N O } _ { 3 } ) _ { 2 } { \\cdot } 3 \\mathsf { H } _ { 2 } \\mathsf { O }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and TEMPO (2,2,6,6-tetramethyl-1-piperidinyloxy) or 4-HO-TEMPO as the catalysts forming aldehydes or ketones with an excellent selectivity has been developed. Some thirty to forty mmol scale reactions have been demonstrated. "
+                    }
+                ]
+            },
+            "bbox": [
+                282,
+                265,
+                929,
+                403
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Introduction "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                67,
+                430,
+                206,
+                448
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Aldehydes and ketones are very common and useful chemicals for organic chemistry, cosmetics, medicinal chemistry, and materials science. They are usually synthesized via oxidation of alcohols both in academic laboratories and industries. Traditional protocols for the oxidation of alcohols require at least a stoichiometric amount of certain expensive oxidants such as MnO2, CrO3, PCC, PDC, IBX, etc., which would yield an equal amount of waste, resulting in a serious problem for isolation of the products and a big burden to the environment.1 Therefore, much attention has been focused on the eco-friendly aerobic oxidation of alcohols.1,2 "
+                    }
+                ]
+            },
+            "bbox": [
+                63,
+                460,
+                490,
+                627
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In 1981, Gilbride and his coworkers3a found that there is a high level of copper in the recovered product of the protein from the serum of a horseshoe crab. Later, Linzen and his coworkers3b found in the hemocyanins of arthropods and mollusks two copper atoms bound directly to side chains at the site of oxygen binding while a single iron was contained in the heme of hemoglobin. Thus, copper is the metal of choice in nature to carry oxygen. In fact, Semmelhack, Stahl, Iwabuchi, Markó, and their coworkers4–6 have made very important contributions in the area of using copper as the "
+                    }
+                ]
+            },
+            "bbox": [
+                63,
+                629,
+                490,
+                784
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "catalyst for aerobic oxidation of alcohols. In addition, a catalytic amount each of Cu(MeCN) PF , DBED, and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { D M A P } ^ { \\mathrm { 7 } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "or CuCl combined with highly toxic "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { O s O _ { 4 } } ^ { 8 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "may also catalyze this reaction, however, a large amount of 4 Å molecular sieves was required, which makes the reaction non-practical in large-scale productions (Scheme 1). Complicated additives, toxic or expensive catalyst(s), high temperature, a large amount of base or molecular sieves, limited substrate scope (for further examples, see also: Tables 3 and 4), serious isomerization of Z CvC bonds,5c etc. call for the development of new catalytic recipes. Thus, cost-effective highly selective aerobic oxidation of alcohols with a wide scope and academic/industrial potential at room temperature is of high current interest. The common approach is usually the development of ligands or more expensive copper catalysts with more complicated amine N-oxyls.4,5 We tried the copper anion effect and observed that these above-mentioned challenges may be addressed by applying copper nitrate and TEMPO as catalysts, oxidizing a very wide scope of alcohols to aldehydes or ketones with an excellent selectivity (Scheme 1). "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                428,
+                929,
+                736
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Results and discussion "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                504,
+                770,
+                752,
+                788
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "At the beginning of our study, we selected 1-phenyl-2-heptyn-1- ol 1a as the model starting material to optimize the reaction conditions of the copper-catalyzed aerobic oxidation reaction. First, different solvents were screened; when NMP, cyclohexane and MeNO were used as solvents (Table 1, entries 1, 2 and 4), 56–84% of 1a was recovered. Ethers such as dioxane, THF, and Et2O only gave 42–85% yield of 2a (Table 1, entries 3, 5, and 6). DCM and toluene were also examined with 91% and 92% yield "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                799,
+                929,
+                922
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": [
+                    {
+                        "type": "text",
+                        "content": "Published on 10 July 2019. Downloaded by Fudan University on 4/11/2025 9:21:50 AM. "
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                222,
+                21,
+                591
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ORGANIC "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                41,
+                406,
+                66
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "FRONTIERS "
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                75,
+                216,
+                93
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "CCS "
+                    }
+                ]
+            },
+            "bbox": [
+                557,
+                23,
+                662,
+                82
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": []
+            },
+            "bbox": [
+                559,
+                83,
+                662,
+                92
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "SIOC "
+                    }
+                ]
+            },
+            "bbox": [
+                685,
+                24,
+                774,
+                92
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ROYAL SOCIETY OFCHEMISTRY "
+                    }
+                ]
+            },
+            "bbox": [
+                800,
+                24,
+                927,
+                91
+            ]
+        },
+        {
+            "type": "page_footnote",
+            "content": {
+                "page_footnote_content": [
+                    {
+                        "type": "text",
+                        "content": "a Research Center for Molecular Recognition and Synthesis, Department of Chemistry, Fudan University, 220 Handan Lu, Shanghai 200433, P. R. China. "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                818,
+                489,
+                844
+            ]
+        },
+        {
+            "type": "page_footnote",
+            "content": {
+                "page_footnote_content": [
+                    {
+                        "type": "text",
+                        "content": "E-mail: dxdzwl@sina.com "
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                845,
+                201,
+                857
+            ]
+        },
+        {
+            "type": "page_footnote",
+            "content": {
+                "page_footnote_content": [
+                    {
+                        "type": "text",
+                        "content": "b State Key Laboratory of Organometallic Chemistry, Shanghai Institute of Organic Chemistry, Chinese Academy of Sciences, 345 Lingling Lu, Shanghai 200032, P. R. China. E-mail: masm@sioc.ac.cn "
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                858,
+                473,
+                894
+            ]
+        },
+        {
+            "type": "page_footnote",
+            "content": {
+                "page_footnote_content": [
+                    {
+                        "type": "text",
+                        "content": "† Electronic supplementary information (ESI) available. See DOI: 10.1039/ c9qo00740g "
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                897,
+                490,
+                922
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "This journal is © the Partner Organisations 2019 "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                952,
+                317,
+                965
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Org. Chem. Front., 2019, 6, 3101-3106 "
+                    }
+                ]
+            },
+            "bbox": [
+                682,
+                952,
+                885,
+                965
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "3101 "
+                    }
+                ]
+            },
+            "bbox": [
+                897,
+                952,
+                927,
+                962
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Typical known approach 1-improved with more expensive Cu catalyst, ligand, and amine N-oxyl: "
+                    }
+                ]
+            },
+            "bbox": [
+                94,
+                61,
+                418,
+                80
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/ecdac7cdd7f4dfb001ca1f79f1b558e29740a14b5d8b5eafc09daa4bc5d8d953.jpg"
+                },
+                "content": "Chemical reaction scheme showing conversion of a substituted alcohol to an enone using CuCl and TEMPO, with molecular structures labeled below.",
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "sub_type": "chemical",
+            "bbox": [
+                94,
+                84,
+                418,
+                165
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Typical known approach 2-modified with stoichiometric base, more expensive Cu catalyst, ligand, toxic OsO4, or MS: "
+                    }
+                ]
+            },
+            "bbox": [
+                94,
+                172,
+                406,
+                193
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/b97981056e50fcb7e7cbb38e4e1ccd315165a7876da2b1dbcf4d8eba8a7db368.jpg"
+                },
+                "table_caption": [],
+                "table_footnote": [],
+                "html": "<table><tr><td>cat. CuCl, cat. Phen</td><td></td></tr><tr><td>cat. DBADH $_{2}$ , 2 equiv. K $_{2}$ CO $_{3}$ </td><td>cat. Cu(MeCN) $_{4}$ PF $_{6}$ ,cat. DBED, cat. DMAP, 4Å MS</td></tr><tr><td>toluene, O $_{2}$  or air</td><td>CH $_{2}$ Cl $_{2}$ , O $_{2}$  (1 atm), rt[7]</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                95,
+                197,
+                433,
+                236
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/05c78b1be2e8d9a31f8d6e9f5fe9388a7ff925b93e6a7f523a1d95e4a8de5ff4.jpg"
+                },
+                "table_caption": [],
+                "table_footnote": [],
+                "html": "<table><tr><td>cat. CuCl, cat.  $OsO_{4}$ </td></tr><tr><td>cat. pyridine, Powered 4Å MS</td></tr><tr><td>toluene,  $O_{2}$  (1 atm), 100 °C[8]</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                95,
+                249,
+                231,
+                278
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This work-the anion effect: "
+                    }
+                ]
+            },
+            "bbox": [
+                95,
+                291,
+                221,
+                302
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/eec9f047c5bc657760250aff7c2865804310184c6606a664655286d605ea43f4.jpg"
+                },
+                "content": "Chemical reaction scheme showing conversion of aldehyde to ketone using Cu(NO3)2·3H2O and (4-HO)TEMPO under MeCN or DCE conditions",
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "sub_type": "chemical",
+            "bbox": [
+                97,
+                305,
+                465,
+                353
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "Aliphatic alcohols "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "Benzylic alcohols "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "•Allenols "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "Allylic alcohols (high stereoselectivity) "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "Alkynols (terminal and non-terminal) "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "Primary and secondary alcohols "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "Readily available catalysts "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "Room temperature "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "Good to excellent yields "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "Large scale synthesis "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "No serious Z to E isomerization "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                100,
+                360,
+                465,
+                414
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/fbc2836fa7d1c36dbc9fa2cc0ba78f11093815fcae1921629b0e9cd5e7791a5c.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Scheme 1 Copper-catalyzed aerobic oxidation of alcohols to aldehydes/ketones. "
+                    },
+                    {
+                        "type": "text",
+                        "content": "Table 1 The effect of solvent in the aerobic oxidation of 1a a "
+                    }
+                ],
+                "table_footnote": [
+                    {
+                        "type": "text",
+                        "content": "a The reaction was conducted using alcohol (0.4 mmol), Cu(NO3)2·3H2O (0.04 mmol), TEMPO (0.04 mmol), and solvent (1.6 mL) with an oxygen balloon at 25 °C. b Determined by 1 H NMR analysis with dibromomethane as the internal standard. "
+                    }
+                ],
+                "html": "<table><tr><td rowspan=\"2\"></td><td colspan=\"3\">Cu(NO3)2·3H2O (10 mol%)TEMPO (10 mol%)solvent (1.6 mL), O2 balloon25 °C, 8 h</td><td></td></tr><tr><td>Entry</td><td>Solvent</td><td>Yield of 2ab(%)</td><td>Recovery of 1ab(%)</td></tr><tr><td>1</td><td>NMP</td><td>11</td><td>84</td><td></td></tr><tr><td>2</td><td>Cyclohexane</td><td>12</td><td>76</td><td></td></tr><tr><td>3</td><td>Dioxane</td><td>42</td><td>50</td><td></td></tr><tr><td>4</td><td>MeNO2</td><td>37</td><td>56</td><td></td></tr><tr><td>5</td><td>THF</td><td>49</td><td>46</td><td></td></tr><tr><td>6</td><td>Et2O</td><td>85</td><td>12</td><td></td></tr><tr><td>7</td><td>DCM</td><td>91</td><td>5</td><td></td></tr><tr><td>8</td><td>Toluene</td><td>92</td><td>8</td><td></td></tr><tr><td>9</td><td>DCE</td><td>99</td><td>0</td><td></td></tr><tr><td>10</td><td>MeCN</td><td>99</td><td>0</td><td></td></tr></table>",
+                "table_type": "complex_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                67,
+                503,
+                492,
+                720
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "of 2a, respectively (Table 1, entries 7 and 8). Finally, DCE and MeCN turned out to be the best solvents, both providing 2a in 99% yield with no recovery of 1a (Table 1, entries 9 and 10). "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                813,
+                490,
+                860
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Based on the results in Table 1, MeCN was selected as the best solvent to investigate the effect of different copper salts. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C u } ( \\mathrm { M e C N } ) _ { 4 } \\mathrm { P F } _ { 6 } ^ { 5 b }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "did not work well (Table "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^ { 2 , }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "entry 1). Other common copper salts such as "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C u C l } , { ^ { 4 f } } \\mathrm { C u B r } _ { 2 } , { ^ { 5 a } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "CuI and "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                860,
+                490,
+                922
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/7c7536f878a0dd23706bb9fe45a40ce947dedd90adcaea128a68a89b0e429cca.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 2 The effect of copper saltsa "
+                    }
+                ],
+                "table_footnote": [
+                    {
+                        "type": "text",
+                        "content": "a The reaction was conducted using alcohol (0.4 mmol), copper salt (0.04 mmol), TEMPO (0.04 mmol), and MeCN (1.6 mL) with an oxygen balloon at 25 °C. b Determined by 1 H NMR analysis with dibromomethane as the internal standard. "
+                    }
+                ],
+                "html": "<table><tr><td rowspan=\"2\"></td><td colspan=\"3\">Cu salt (10 mol%)TEMPO (10 mol%)MeCN (1.6 mL),  $O_2$  balloon25 °C, 4 h</td></tr><tr><td>Entry</td><td>Cu salt</td><td>Yield of $2a^b$ (%)</td></tr><tr><td>1</td><td>Cu(MeCN) $_4$ PF $_6$ </td><td>6</td><td>90</td></tr><tr><td>2</td><td>CuCl</td><td>9</td><td>91</td></tr><tr><td>3</td><td>CuBr $_2$ </td><td>12</td><td>84</td></tr><tr><td>4</td><td>CuI</td><td>19</td><td>78</td></tr><tr><td>5</td><td>Cu(OAc) $_2$ </td><td>43</td><td>57</td></tr><tr><td>6</td><td>Cu(NO $_3$ ) $_2$ ·3H $_2$ O</td><td>96</td><td>0</td></tr><tr><td>7</td><td>Without Cu(NO $_3$ ) $_2$ ·H $_2$ O</td><td>1</td><td>94</td></tr><tr><td>8</td><td>Without TEMPO</td><td>3</td><td>94</td></tr></table>",
+                "table_type": "complex_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                502,
+                80,
+                929,
+                283
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C u ( O A c ) } _ { 2 } ^ { 4 d }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "only gave 9%–43% yields of 2a (Table 2, entries 2–5). Control experiments disclosed the importance of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 } { \\cdot } 3 \\mathrm { H } _ { 2 } \\mathrm { O }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "). and TEMPO for this transformation (Table 2, entries 7 and 8). "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                368,
+                929,
+                414
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Control experiments show that terminal propargylic alcohol, 1-(4-methylphenyl)-2-propyn-1-ol 1b, could not be transformed into the corresponding ketone 2b by the most popular copper catalytic systems,4f,5a,b most probably due to the basic nature of the reaction conditions (Table 3, entries 1–3). The current method could afford 1-(4-methylphenyl)-2-propyn-1-one 2b in 94% NMR yield (Table "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^ { 3 , }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "entry 6). Since terminal alkynones are a type of very useful compounds in organic synthesis, we demonstrated the scope carefully. Besides 4-methylphenyl, other electron-withdrawing and electron-donating group substituted phenyl groups, thienyl and even "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n { \\mathrm { - C } } _ { 9 } \\mathrm { H } _ { 1 9 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "substituted terminal propargylic alcohols provided the desired alkynones 2b–2h in good to excellent yields (Table 4, entries 1–7). "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                415,
+                929,
+                629
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "We also demonstrated the scope of the oxidation reaction of non-terminal propargylic alcohols to the corresponding aldehydes or ketones. When "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { R } ^ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is Ph, different groups including n-Bu, cyclopropyl, Ph and TMS may be introduced as the "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbb { R } ^ { 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "group with excellent yields (Table "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^ { 5 , }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "entries 1–4, 2a and 2i–2k). "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { R } ^ { 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "may also be n-Bu with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { R } ^ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "being different electron-withdrawing and electron-donating group substituted phenyl groups, 2-furyl and n-Bu, providing the desired ketones 2l–2t in good to excellent yields (Table 5, entries 5–13). When "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbb { R } ^ { 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is aryl and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { R } ^ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is replaced by cyclohexyl, naphthyl and proton, the desired ketones or aldehydes can also be provided in good to excellent yields (Table "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^ { 5 , }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "entries 14–17, 2u–2x). The tolerance of synthetically useful functional groups is highlighted in red, demonstrating the potential of this methodology (Tables 4 and 5). "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                630,
+                929,
+                845
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "We are also pleased to observe that this protocol may be used in the oxidation of allylic alcohols. Besides good to excellent yields of these reactions, the isomerization of the CvC bond is very limited for both primary alcohols and secondary alcohols (Scheme 2, eqn (1)–(5), 4a–4e).5c "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                845,
+                929,
+                922
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "View Article Online "
+                    }
+                ]
+            },
+            "bbox": [
+                831,
+                11,
+                927,
+                21
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Research Article "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                30,
+                174,
+                42
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Organic Chemistry Frontiers "
+                    }
+                ]
+            },
+            "bbox": [
+                749,
+                30,
+                929,
+                44
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": [
+                    {
+                        "type": "text",
+                        "content": "Published on 10 July 2019. Downloaded by Fudan University on 4/11/2025 9:21:50 AM. "
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                222,
+                21,
+                591
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "3102 "
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                951,
+                99,
+                962
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Org. Chem. Front., 2019, 6, 31013106 "
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                952,
+                315,
+                965
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "This journal is © the Partner Organisations 2019 "
+                    }
+                ]
+            },
+            "bbox": [
+                678,
+                952,
+                929,
+                965
+            ]
+        }
+    ],
+    [
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/f3b2c6fc0a1ec23da046587b0c91d077ad4bf3b0aab5b9c424c0b57239c0f0b8.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 3 Control experiment of aerobic oxidation of terminal propargylic alcohol 1b "
+                    }
+                ],
+                "table_footnote": [
+                    {
+                        "type": "text",
+                        "content": "a Determined by "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^ 1 \\mathrm { H }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "NMR analysis with dibromomethane as the internal standard. b The reaction system was open to air. c The reaction was conducted with an oxygen balloon. d The number in parenthesis represents the isolated yield of 2b. "
+                    }
+                ],
+                "html": "<table><tr><td colspan=\"9\"><img src=\"images/1bfbf384a20ba8c2067d5e08a7a8c010c63f6777b12afb9b648cc4c5230d39f9.jpg\"/></td></tr><tr><td rowspan=\"2\">Entry</td><td colspan=\"4\">Experimental conditions</td><td rowspan=\"2\">t (h)</td><td rowspan=\"2\">Solvent</td><td rowspan=\"2\">Yield of 2ba(%)</td><td rowspan=\"2\">Recovery of 1ba(%)</td></tr><tr><td>[Cu] (a)</td><td>b</td><td>c</td><td>Base (d)</td></tr><tr><td>1b</td><td>Cu(MeCN)4PF6(5)</td><td>5</td><td>5</td><td>NMI (10)</td><td>24</td><td>MeCN</td><td>0</td><td>23</td></tr><tr><td>2b</td><td>CuBr2(5)</td><td>5</td><td>5</td><td>t-BuOK (5)</td><td>24</td><td>MeCN/H2O (2:1)</td><td>0</td><td>33</td></tr><tr><td>3b</td><td>CuCl (5)</td><td>—</td><td>5</td><td>DMAP (10)</td><td>24</td><td>H2O</td><td>0</td><td>83</td></tr><tr><td>4b</td><td>Cu(NO3)2·3H2O (10)</td><td>—</td><td>10</td><td>—</td><td>22</td><td>MeCN</td><td>81</td><td>0</td></tr><tr><td>5c</td><td>Cu(NO3)2·3H2O (10)</td><td>—</td><td>10</td><td>—</td><td>6</td><td>DCE</td><td>46</td><td>48</td></tr><tr><td>6c</td><td>Cu(NO3)2·3H2O (10)</td><td>—</td><td>10</td><td>—</td><td>6</td><td>MeCN</td><td>94 (91d)</td><td>0</td></tr></table>",
+                "table_type": "complex_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                67,
+                80,
+                929,
+                288
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/b3089d007d9b31cdb5b527d1c9990fa3640996319058a71d950f7b890403df0b.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 4 Room temperature aerobic oxidation of terminal 2-alkynols to the corresponding ketonesa "
+                    }
+                ],
+                "table_footnote": [
+                    {
+                        "type": "text",
+                        "content": "a The reaction was conducted using alcohol (1.0 mmol), "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 } { \\cdot } 3 \\mathrm { H } _ { 2 } \\mathrm { O }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "(0.1 mmol), TEMPO (0.1 mmol) and MeCN (4 mL) with an oxygen balloon at 25 °C. b DCE was used as a solvent. "
+                    }
+                ],
+                "html": "<table><tr><td></td><td>1</td><td>Cu(NO3)2·3H2O (10 mol%)TEMPO (10 mol%)MeCN (4 mL)O2balloon25 °C, t (h)</td><td>2</td></tr><tr><td>Entry</td><td>R (1)</td><td>t (h)</td><td>Isolated yield of 2a (%)</td></tr><tr><td>1</td><td>4-MeC6H4(1b)</td><td>6</td><td>91 (2b)</td></tr><tr><td>2</td><td>2-MeOC6H4(1c)</td><td>12.5</td><td>84 (2c)</td></tr><tr><td>3</td><td>3-MeOC6H4(1d)</td><td>13</td><td>89 (2d)</td></tr><tr><td>4</td><td>4-MeOC6H4(1e)</td><td>6</td><td>90 (2e)</td></tr><tr><td>5</td><td>4-MeO2CC6H4(1f)</td><td>12.5</td><td>90 (2f)</td></tr><tr><td>6</td><td>2-Thienyl (1g)</td><td>6</td><td>87 (2g)</td></tr><tr><td>7</td><td>n-C9H19(1h)</td><td>8</td><td>89b(2h)</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                67,
+                379,
+                492,
+                555
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Benzylic alcohols, aliphatic alcohols, and allenols could also be converted into the corresponding aldehydes and ketones by only replacing MeCN with DCE (Scheme 3, eqn (1)– (7), 6a, 6b, 6c, 8a, 8b, 10a, and 10b). "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                630,
+                490,
+                691
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "To further demonstrate the potential and efficiency of this catalytic system, we conducted some reactions on scales practical in an academic laboratory. The reaction may be conducted smoothly on a 30 mmol scale with 2.5 mol% catalyst loading, giving alkynones 2a in 98% isolated yield (Scheme "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^ { 4 , }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "eqn (1)). Three types of solutions have been provided: using a bag of air (size: 48 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { L } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "oxygen bags used in hospitals) for 1.5 h first with the subsequent supply of the consumed oxygen with a bag of pure "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { O } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "(commercial size: 2 L, may be expanded to 5 L) may efficiently avoid the unsafe high concentration of pure "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { O } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "over MeCN, which is critical for industrial scale production9 (Scheme 4, eqn (2)). The oxidation of 1-(2-thienyl)-2-propyn-1- ol 1g was also conducted on a 40 mmol scale by applying a slow flow of air (30 mL min−1 ),10 giving 79% isolated yield of 2g (Scheme 4, eqn (3)). "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                691,
+                492,
+                924
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/9a47c785abdbb1fc00b732e8e638536862bbbdc2ffe287f04008a02088fc7020.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "Table 5 Room temperature aerobic oxidation of non-terminal 2-alkynols to aldehydes or ketonesa "
+                    }
+                ],
+                "table_footnote": [
+                    {
+                        "type": "text",
+                        "content": "a The reaction was conducted using alcohol (1.0 mmol), Cu(NO3)2·3H2O (0.1 mmol), TEMPO (0.1 mmol) and MeCN (4 mL) or DCE (4 mL) with an oxygen balloon at 25 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathrm { { \\dot { \\circ } } _ { C } } } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and the reaction time is shown in the ESI.† b Not conducted. c 49% yield of 2p and 38% yield of (Z)-2-benzylidenebenzofuran-3(2H)-one were detected, which were determined by 1 H NMR analysis with dibromomethane as the internal standard. "
+                    }
+                ],
+                "html": "<table><tr><td rowspan=\"2\">Entry</td><td rowspan=\"2\"> $R^1/R^2$ </td><td colspan=\"2\">Isolated yield of 2 (%)</td></tr><tr><td>MeCN</td><td>DCE</td></tr><tr><td>1</td><td>n-Bu/Ph (1a)</td><td>96 (2a)</td><td>100 (2a)</td></tr><tr><td>2</td><td>Cyclopropyl/Ph (1i)</td><td>98 (2i)</td><td>96 (2i)</td></tr><tr><td>3</td><td>Ph/Ph (1j)</td><td>98 (2j)</td><td> $_b$ </td></tr><tr><td>4</td><td>TMS/Ph (1k)</td><td>97 (2k)</td><td>95 (2k)</td></tr><tr><td>5</td><td>n-Bu/3-ClC6H4(1l)</td><td>97 (2l)</td><td>98 (2l)</td></tr><tr><td>6</td><td>n-Bu/2-BrC6H4(1m)</td><td>97 (2m)</td><td>98 (2m)</td></tr><tr><td>7</td><td>n-Bu/4-MeOC6H4(1n)</td><td>100(2n)</td><td>97 (2n)</td></tr><tr><td>8</td><td>n-Bu/4-MeO2CC6H4(1o)</td><td>99 (2o)</td><td> $_b$ </td></tr><tr><td>9</td><td>Ph/2-HOC6H4(1p)</td><td>— (2p) $^c$ </td><td>81 (2p)</td></tr><tr><td>10</td><td>n-Bu/3-NCC6H4(1q)</td><td>92 (2q)</td><td> $_b$ </td></tr><tr><td>11</td><td>n-Bu/4-O2NC6H4(1r)</td><td>97 (2r)</td><td> $_b$ </td></tr><tr><td>12</td><td>n-Bu/2-furyl (1s)</td><td>92 (2s)</td><td>95 (2s)</td></tr><tr><td>13</td><td>n-Bu/n-Bu (1t)</td><td>96 (2t)</td><td>95 (2t)</td></tr><tr><td>14</td><td>Ph/n-Bu (1u)</td><td>93 (2u)</td><td>96 (2u)</td></tr><tr><td>15</td><td>Ph/cyclohexyl (1v)</td><td>95 (2v)</td><td>100 (2v)</td></tr><tr><td>16</td><td>Ph/naphthyl (1w)</td><td>95 (2w)</td><td>95 (2w)</td></tr><tr><td>17</td><td>4-BrC6H4/H (1x)</td><td>76 (2x)</td><td>65 (2x)</td></tr></table>",
+                "table_type": "complex_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                502,
+                379,
+                929,
+                700
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In consideration of the fact that 4-OH-TEMPO is much cheaper than "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { T E M P O } , ^ { 1 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "we also conducted the aerobic oxidation of some alcohols by using 4-OH-TEMPO (Scheme 5). "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                815,
+                927,
+                861
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Compared to "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { F e } \\big ( \\mathrm { N O } _ { 3 } \\big ) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } \\mathrm { O } , \\phantom { \\frac { 1 2 } { 3 } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "the aerobic oxidation reaction of alkynol "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { 1 } \\mathbf { g }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "catalyzed by "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 } { \\cdot } 3 \\mathrm { H } _ { 2 } \\mathrm { O }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is faster (Scheme 6). Furthermore, we observed that the addition of sodium chloride, which was applied as a co-catalyst to speed "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                861,
+                929,
+                922
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": [
+                    {
+                        "type": "text",
+                        "content": "Published on 10 July 2019. Downloaded by Fudan University on 4/11/2025 9:21:50 AM. "
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                222,
+                21,
+                591
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Organic Chemistry Frontiers "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                30,
+                248,
+                43
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "View Article Online "
+                    }
+                ]
+            },
+            "bbox": [
+                831,
+                11,
+                927,
+                21
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Research Article "
+                    }
+                ]
+            },
+            "bbox": [
+                825,
+                30,
+                929,
+                42
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "This journal is © the Partner Organisations 2019 "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                951,
+                317,
+                965
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Org. Chem. Front., 2019, 6, 3101-3106 "
+                    }
+                ]
+            },
+            "bbox": [
+                680,
+                951,
+                885,
+                965
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "3103 "
+                    }
+                ]
+            },
+            "bbox": [
+                897,
+                951,
+                929,
+                962
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/f1cd01185f0d3ceea388da4f43110482b40f58500253cd7dcee7c6d2ceefdb72.jpg"
+                },
+                "content": "Five organic synthesis pathways showing copper-catalyzed coupling reactions with yields and diastereomeric excesses",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Scheme 2 Room temperature aerobic oxidation of allylic alcohols to aldehydes or ketones. The reaction was conducted using alcohol (1.0 mmol), "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathsf { C u } ( \\mathsf { N O } _ { 3 } ) _ { 2 } { \\cdot } 3 \\mathsf { H } _ { 2 } \\mathsf { O }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "(0.1 mmol), TEMPO (0.1 mmol) and DCE with an oxygen balloon at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ } ^ { 2 5 } \\ ^ { \\circ } \\mathsf { C }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "sub_type": "chemical",
+            "bbox": [
+                115,
+                61,
+                442,
+                347
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/343be218303e111a544da5777c53a83a933c1e75ca4b607dd96dc0412a6a1302.jpg"
+                },
+                "content": "Multi-step organic synthesis pathway for benzyl alcohol derivatives, showing intermediates 5a–9b and final products 6a–10b with yields and conditions.",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Scheme 3 Room temperature aerobic oxidation of benzylic, aliphatic, and allenyl alcohols to aldehydes or ketones. The reaction was conducted using alcohol (1.0 mmol), "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathsf { C u } ( \\mathsf { N O } _ { 3 } ) _ { 2 } { \\cdot } 3 \\mathsf { H } _ { 2 } \\mathsf { O }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "(0.1 mmol), TEMPO (0.1 mmol) and DCE (4 mL) with an oxygen balloon at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2 5 ^ { \\circ } \\mathsf C . ^ { \\circ }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "The number in the parentheses represents the yield of acid detected by NMR analysis. b The number in the parentheses represents the recovery of alcohol detected by NMR analysis. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "sub_type": "chemical",
+            "bbox": [
+                137,
+                432,
+                428,
+                822
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/0ef472e71104893ddd2ecca091fb7759e0542da1c5dc5b193bca31adb97317dd.jpg"
+                },
+                "content": "Chemical reaction scheme showing synthesis of compounds 2a, 2a, and 2g from n-Bu-catalyzed hydroxylation using Cu(NO3)2·3H2O and O2 balloon catalysts",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Scheme 4 Large-scale reactions with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathsf { O } _ { 2 } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "air "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "/ { \\mathsf { O } } _ { 2 } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "or air. "
+                    }
+                ],
+                "image_footnote": []
+            },
+            "sub_type": "chemical",
+            "bbox": [
+                557,
+                61,
+                875,
+                247
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/4da6142e775c122548261e1779735514fb870af6b0b68706f4e967d221b7b086.jpg"
+                },
+                "content": "Chemical reaction scheme showing synthesis of compounds 2f, 4d, 6a, and 8a from precursors 1f, 3d, 5a, and 7a under specified conditions.",
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Scheme 5 The reaction with 4-OH-TEMPO instead of TEMPO. The reaction was conducted using alcohol (1.0 mmol), "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathsf { C u } ( \\mathsf { N O } _ { 3 } ) _ { 2 } { \\cdot } 3 \\mathsf { H } _ { 2 } \\mathsf { O }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "(0.1 mmol), TEMPO (0.1 mmol) or 4-OH-TEMPO and MeCN (4 mL) or DCE with an oxygen balloon at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ } ^ { 2 5 } { } ^ { \\circ } \\mathsf { C } ."
+                    }
+                ],
+                "image_footnote": []
+            },
+            "sub_type": "chemical",
+            "bbox": [
+                563,
+                297,
+                877,
+                534
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/3a16e302fc1dacc8f7472ec91f377d0450312e7ed513cb9986ffa27aa1a962f9.jpg"
+                },
+                "content": "| t (h) | alcohol in copper system | alcohol in iron system | ketone in copper system | ketone in iron system |\n|-------|--------------------------|------------------------|-------------------------|-----------------------|\n| 0.5   | 68                       | 49                     | 30                      | 34                    |\n| 1.0   | 48                       | 45                     | 45                      | 40                    |\n| 2.0   | 18                       | 18                     | 78                      | 58                    |\n| 3.0   | 0                        | 10                     | 92                      | 78                    |",
+                "chart_caption": [
+                    {
+                        "type": "text",
+                        "content": "Scheme 6 Reaction profile of alkynol 1g in the Cu or Fe system. The reaction was conducted using alcohol (4.0 mmol), metal catalyst (0.4 mmol), TEMPO (0.4 mmol) and MeCN (16 mL) with an oxygen balloon at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2 5 ^ { \\circ } \\mathsf { C }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ],
+                "chart_footnote": []
+            },
+            "sub_type": "line",
+            "bbox": [
+                584,
+                631,
+                850,
+                874
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "View Article Online "
+                    }
+                ]
+            },
+            "bbox": [
+                831,
+                11,
+                927,
+                21
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Research Article "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                30,
+                174,
+                42
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Organic Chemistry Frontiers "
+                    }
+                ]
+            },
+            "bbox": [
+                749,
+                30,
+                929,
+                43
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": [
+                    {
+                        "type": "text",
+                        "content": "Published on 10 July 2019. Downloaded by Fudan University on 4/11/2025 9:21:50 AM. "
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                222,
+                21,
+                591
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "3104 "
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                952,
+                100,
+                962
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Org. Chem. Front, 2019, 6, 3101-3106 "
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                952,
+                317,
+                965
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "This journal is © the Partner Organisations 2019 "
+                    }
+                ]
+            },
+            "bbox": [
+                678,
+                952,
+                929,
+                966
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "up the reaction catalyzed by "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { F e } ( \\mathrm { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } \\mathrm { O } , ^ { 1 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "slowed down this copper-catalyzed oxidation system (Scheme 7). "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                60,
+                489,
+                91
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/9b3f2cef313b48d2ac635be9d532dace5de5e1355803fb5b06e51e0969c8d73f.jpg"
+                },
+                "content": "| t (h) | alcohol without NaCl | alcohol with NaCl | aldehyde without NaCl | aldehyde with NaCl |\n|-------|----------------------|------------------|------------------------|--------------------|\n| 0.5   | 68                   | 78               | 30                     | 24                 |\n| 1.0   | 50                   | 50               | 45                     | 35                 |\n| 2.0   | 20                   | 35               | 80                     | 68                 |\n| 3.0   | 0                    | 25               | 92                     | 75                 |",
+                "chart_caption": [
+                    {
+                        "type": "text",
+                        "content": "Scheme 7 The effect of chloride. The reaction was conducted using alcohol (4.0 mmol), "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathsf { C u } ( \\mathsf { N O } _ { 3 } ) _ { 2 } . 3 \\mathsf { H } _ { 2 } \\mathsf { O }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "(0.4 mmol), TEMPO (0.4 mmol) and MeCN (16 mL) with an oxygen balloon at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ } ^ { 2 5 } { } ^ { \\circ } \\mathsf { C }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ],
+                "chart_footnote": []
+            },
+            "sub_type": "line",
+            "bbox": [
+                132,
+                116,
+                428,
+                387
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Interestingly, for primary aliphatic alcohol "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^ { 7 } \\mathbf { a } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", the reaction with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { F e } ( \\mathrm { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } \\mathrm { O }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is much faster with a problem of overoxidation,9,10 while the reaction catalyzed by "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 } { \\cdot } 3 \\mathrm { H } _ { 2 } \\mathrm { O }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "demonstrated a very high selectivity for stopping at the stage of aldehydes (Scheme 8), indicating that the reaction from aliphatic aldehyde to the corresponding carboxylic acid with Cu is much slower. "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                460,
+                490,
+                568
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/0f69fbd98b9a5842affb631790adb4e87d905a6a240a67dce8c38ca5fbddc051.jpg"
+                },
+                "content": "| t (h) | alcohol in copper system | alcohol in iron system | aldehyde in copper system | aldehyde in iron system | acid in copper system | acid in iron system |\n|-------|--------------------------|------------------------|----------------------------|-------------------------|-----------------------|---------------------|\n| 2     | 85                       | 82                     | 13                         | 15                      | 0                     | 0                   |\n| 4     | 80                       | 60                     | 18                         | 32                      | 0                     | 0                   |\n| 6     | 75                       | 50                     | 20                         | 40                      | 0                     | 0                   |\n| 8     | 55                       | 25                     | 35                         | 62                      | 0                     | 0                   |\n| 10    | 45                       | 15                     | 45                         | 60                      | 0                     | 0                   |\n| 12    | 35                       | 5                      | 50                         | 60                      | 0                     | 35                  |\n| 14    | 20                       | 0                      | 65                         | 20                      | 0                     | 75                  |\n| 16    | 15                       | 0                      | 70                         | 0                       | 0                     | 80                  |",
+                "chart_caption": [
+                    {
+                        "type": "text",
+                        "content": "Scheme 8 Reaction profile of aliphatic alcohol 7a in the Cu- or Fecatalyzed system. The reaction was conducted using alcohol (10.0 mmol), metal catalyst (1.0 mmol), TEMPO (1.0 mmol) and DCE (40 mL) with an oxygen balloon at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ } ^ { 2 5 } \\ ^ { \\circ } \\mathsf { C }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". "
+                    }
+                ],
+                "chart_footnote": []
+            },
+            "sub_type": "line",
+            "bbox": [
+                129,
+                604,
+                428,
+                860
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Conclusions "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                504,
+                61,
+                643,
+                80
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In conclusion, we have developed an eco-friendly and practical efficient aerobic oxidation of different alcohols to aldehydes/ ketones using "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 } { \\cdot } 3 \\mathrm { H } _ { 2 } \\mathrm { O }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and TEMPO as catalysts. This protocol tolerates most common alcohols in organic synthesis such as propargylic alcohols, allylic alcohols, allenols, benzylic alcohols and normal alkanols, providing the corresponding aldehydes/ketones in good to excellent yields with an excellent selectivity. The oxidation reaction may be easily executed on a practical scale in an academic laboratory and no over-oxidation has been observed. Further studies of this copper catalytic system including the application in industrial scale productions are being actively pursued by our group. "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                91,
+                929,
+                277
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Experimental "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                504,
+                308,
+                650,
+                328
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Large-scale reactions with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { O } _ { 2 } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "air "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "/ \\mathbf { O } _ { 2 } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "or air "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                502,
+                333,
+                794,
+                347
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Synthesis of 2a with an "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { O } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "balloon. A 250 mL flask was degassed to remove the air inside completely and refilled with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { O } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "by a balloon of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { O } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "three times. Then "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 } { \\cdot } 3 \\mathrm { H } _ { 2 } \\mathrm { O }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "(182.3 mg, 0.75 mmol), TEMPO (120.3 mg, 0.75 mmol), and 1a (5.6549 g, 30 mmol) in MeCN (30 mL) were added sequentially. The resulting mixture was stirred at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2 5 ~ ^ { \\circ } \\mathrm { C }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "for 16 h as monitored by TLC (petroleum ether/ethyl acetate = 5/1), filtered through a short column of silica gel [eluent: ethyl ether (120 mL)], concentrated under reduced pressure, and purified by column chromatography on silica gel [eluent: petroleum ether/ethyl ether = 30/1] to afford 2a (5.4919 g, 98%) as an oil. "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                353,
+                929,
+                536
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Synthesis of 2a with a bag of air with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { O } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "supplemented by a bag of pure "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { O } _ { 2 } ."
+                    },
+                    {
+                        "type": "text",
+                        "content": ". To a 250 mL three-neck flask were added "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 } { \\cdot } 3 \\mathrm { H } _ { 2 } \\mathrm { O }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "(968.2 mg, 4.0 mmol), TEMPO (636.7 mg, 4.0 mmol), and 1a (7.5332 g, 40.0 mmol) in MeCN (80 mL) sequentially. Then a 42 L bag filled with air was connected to the flask. After stirring at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2 5 ~ ^ { \\circ } \\mathrm { C }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "for 1.5 h, a 2 L bag of pure "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { O } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "was connected to the flask to supplement "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { O } _ { 2 } ."
+                    },
+                    {
+                        "type": "text",
+                        "content": "The resulting mixture was stirred at 25 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^ \\circ \\mathrm { C }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "for 4.5 h as monitored by TLC (petroleum ether/ethyl acetate = 5/1), filtered through a short column of silica gel [eluent: ethyl ether (150 mL)], concentrated under reduced pressure, and purified by column chromatography on silica gel [eluent: petroleum ether/ethyl ether = 30/1] to afford 2a (7.4587 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^ { \\mathrm { g } , }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "100%) as an oil. "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                537,
+                929,
+                736
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Synthesis of 2g with a slow flow of air. To a 250 mL threeneck flask were added "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 } { \\cdot } 3 \\mathrm { H } _ { 2 } \\mathrm { O }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "(967.8 mg, 4.0 mmol), TEMPO (639.4 mg, 4.0 mmol), and 1g (5.5340 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^ { \\mathrm { g } , }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "40.0 mmol) in MeCN (120 mL) sequentially. A slow flow of air from the air cylinder (high purity, 30 mL min−1 ) was then connected to the flask. The reaction was stirred at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2 5 ~ ^ { \\circ } \\mathrm { C }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "for 46 h as monitored by TLC (petroleum ether/ethyl acetate = 5/1), filtered through a short column of silica gel [eluent: ethyl ether (150 mL)], concentrated under reduced pressure and purified by column chromatography on silica gel [eluent: petroleum ether/ethyl ether = 30/1] to afford 2g (4.3224 g, 79%) as a white solid. "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                738,
+                929,
+                921
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": [
+                    {
+                        "type": "text",
+                        "content": "Published on 10 July 2019. Downloaded by Fudan University on 4/11/2025 9:21:50 AM. "
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                222,
+                21,
+                590
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Organic Chemistry Frontiers "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                30,
+                248,
+                43
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "View Article Online "
+                    }
+                ]
+            },
+            "bbox": [
+                831,
+                11,
+                926,
+                20
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Research Article "
+                    }
+                ]
+            },
+            "bbox": [
+                825,
+                30,
+                927,
+                42
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "This journal is © the Partner Organisations 2019 "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                951,
+                317,
+                965
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Org. Chem. Front., 2019, 6, 3101-3106 "
+                    }
+                ]
+            },
+            "bbox": [
+                680,
+                951,
+                885,
+                965
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "3105 "
+                    }
+                ]
+            },
+            "bbox": [
+                897,
+                951,
+                929,
+                962
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Conflicts of interest "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                67,
+                61,
+                284,
+                80
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "There are no conflicts to declare. "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                92,
+                289,
+                105
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Acknowledgements "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                65,
+                139,
+                285,
+                159
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Financial support from the National Natural Science Foundation of China (Grant No. 21690063 for S. Ma) and the National Basic Research Program of China (2015CB856600) is greatly appreciated. We thank Zhen Yang of our group for reproducing the results of entry 2 in Table 4, entry 15 in Table 5, and eqn (4) in Scheme 2 represented in this study. "
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                168,
+                490,
+                261
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Notes and references "
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                67,
+                293,
+                302,
+                311
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "1 S. Caron, R. W. Dugger, S. G. Ruggeri, J. A. Ragan and D. H. B. Ripin, Chem. Rev., 2006, 106, 2943. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "2 (a) K. P. Peterson and R. C. Larock, J. Org. Chem., 1998, 63, 3185; (b) A. Dijksman, I. W. C. E. Arends and R. A. Sheldon, Chem. Commun., 1999, 1591; (c) J. Piera and J. E. Bäckvall, Angew. Chem., Int. Ed., 2008, 47, 3506; (d) C. Parmeggiani and F. Cardona, Green Chem., 2012, 14, 547; (e) S. Gowrisankar, H. Neumann, D. Gördes, K. Thurow, H. Jiao and M. Beller, Chem. – Eur. J., 2013, 19, 15979; (f) N. Gunasekaran, Adv. Synth. Catal., 2015, 357, 1990; (g) R. A. Sheldon, Catal. Today, 2015, 247, 4; (h) Liquid Phase Aerobic Oxidation Catalysis: Industrial Applications and Academic Perspectives: Industrial Applications and Academic Perspectives, ed. S. S. Stahl and P. L. Alsters, Wiley-VCH, Weinheim, Germany, 2016; (i) D. Wang, A. B. Weinstein, P. B. White and S. S. Stahl, Chem. Rev., 2018, 118, 2636; ( j) K. Lagerblom, J. Keskiväli, A. Parviainen, J. Mannisto and T. Repo, ChemCatChem, 2018, 10, 2908; (k) A. Y. Olenin, P. G. Mingalev and G. V. Lisichkin, Pet. Chem., 2018, 58, 577. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "3 (a) K. J. Gilbride and T. G. Pistole, Dev. Comp. Immunol., 1981, 5, 347; (b) B. Linzen, N. M. Soeter, A. F. Riggs, H. J. Schneider, W. Schartau, M. D. Moore, E. Yokota, P. Q. Behrens, H. Nakashima, T. Takagi, T. Nemoto, J. M. Vereijken, H. J. Bak, J. J. Beintema, A. Volbeda, W. P. J. Gaykema and W. G. J. Hol, Science, 1985, 229, 519. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                323,
+                492,
+                708
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "4 (a) M. F. Semmelhack, C. R. Schmid, D. A. Cortes and C. S. Chou, J. Am. Chem. Soc., 1984, 106, 3374; (b) I. A. Ansari and R. Gree, Org. Lett., 2002, 4, 1507; (c) S. Velusamy, A. Srinivasan and T. Punniyamurthy, Tetrahedron Lett., 2006, 47, 923; (d) M. Guan, C. Wang, J. Zhang and Y. Zhao, RSC Adv., 2014, 4, 48777; (e) J.-A. Jiang, J.-L. Du, Z.-G. Wang, Z.-N. Zhang, X. Xu, G.-L. Zheng and Y.-F. Ji, Tetrahedron Lett., 2014, 55, 1677; (f) G. Zhang, C. Yang, E. Liu, L. Li, J. A. Golen and A. L. Rheingold, RSC Adv., 2014, 4, 61907. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "5 (a) P. Gamez, I. W. C. E. Arends, J. Reedijk and R. A. Sheldon, Chem. Commun., 2003, 2414; (b) J. M. Hoover and S. S. Stahl, J. Am. Chem. Soc., 2011, 133, 16901; (c) D. Könning, W. Hiller and M. Christmann, Org. Lett., 2012, 14, 5258; (d) J. E. Steves and S. S. Stahl, J. Am. Chem. Soc., 2013, 135, 15742; (e) Y. Sasano, S. Nagasawa, M. Yamazaki, M. Shibuya, J. Park and Y. Iwabuchi, Angew. Chem., Int. Ed., 2014, 53, 3236; (f ) J. E. Steves and S. S. Stahl, J. Org. Chem., 2015, 80, 11184; (g) Y. Sasano, N. Kogure, S. Nagasawa, K. Kasabata and Y. Iwabuchi, Org. Lett., 2018, 20, 6104; (h) L. Wang, Z. Bie, S. Shang, G. Li, J. Niu and S. Gao, ChemistrySelect, 2018, 3, 3386. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "6 (a) I. E. Markó, P. R. Giles, M. Tsukazaki, S. M. Brown and C. J. Urch, Science, 1996, 274, 2044; (b) S. Gao, Y. Liu and S. Ma, Beilstein J. Org. Chem., 2011, 7, 396; (c) Y. Liu and S. Ma, Chin. J. Chem., 2012, 30, 29; (d) T. Nishii, T. Ouchi, A. Matsuda, Y. Matsubara, Y. Haraguchi, T. Kawano, H. Kaku, M. Horikawa and T. Tsunoda, Tetrahedron Lett., 2012, 53, 5880. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "7 B. Xu, J. P. Lumb and B. A. Arndtsen, Angew. Chem., Int. Ed., 2015, 54, 4208. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "8 K. S. Coleman, M. Coppe, C. Thomas and J. A. Osborn, Tetrahedron Lett., 1999, 40, 3723. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "9 X. Jiang, J. Zhang and S. Ma, J. Am. Chem. Soc., 2016, 138, 8344. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "10 X. Jiang, Y. Zhai, J. Chen, Y. Han, Z. Yang and S. Ma, Chin. J. Chem., 2018, 36, 15. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "11 R. Ciriminna and M. Pagliaro, Org. Process Res. Dev., 2010, 14, 245. "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "12 S. Ma, J. Liu, S. Li, B. Chen, J. Cheng, J. Kuang, Y. Liu, B. Wan, Y. Wang, J. Ye, Q. Yu, W. Yuan and S. Yu, Adv. Synth. Catal., 2011, 353, 1005. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                507,
+                57,
+                932,
+                708
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": [
+                    {
+                        "type": "text",
+                        "content": "Published on 10 July 2019. Downloaded by Fudan University on 4/11/2025 9:21:50 AM. "
+                    }
+                ]
+            },
+            "bbox": [
+                3,
+                222,
+                21,
+                591
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "View Article Online "
+                    }
+                ]
+            },
+            "bbox": [
+                831,
+                11,
+                926,
+                20
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Research Article "
+                    }
+                ]
+            },
+            "bbox": [
+                67,
+                30,
+                173,
+                42
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Organic Chemistry Frontiers "
+                    }
+                ]
+            },
+            "bbox": [
+                749,
+                30,
+                927,
+                43
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "3106 "
+                    }
+                ]
+            },
+            "bbox": [
+                68,
+                951,
+                99,
+                962
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Org. Chem. Front., 2019, 6, 3101-3106 "
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                951,
+                317,
+                965
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "This journal is © the Partner Organisations 2019 "
+                    }
+                ]
+            },
+            "bbox": [
+                680,
+                951,
+                929,
+                965
+            ]
+        }
+    ]
+]

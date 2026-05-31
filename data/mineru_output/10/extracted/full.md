@@ -1,0 +1,478 @@
+# Iron-Catalyzed Aerobic Oxidation of Alcohols: Lower Cost and Improved Selectivity
+
+Xingguo Jiang,†,§ Jinxian Liu,‡ and Shengming Ma\*,†,‡
+
+† State Key Laboratory of Organometallic Chemistry, Shanghai Institute of Organic Chemistry, Chinese Academy of Sciences, 345 Lingling Lu, Shanghai 200032, P. R. China   
+‡ Center of Chemistry for Frontier Technologies, Department of Chemistry, Zhejiang University, 38 Zheda Road, Hangzhou 310027, P. R. China   
+§ University of Chinese Academy of Sciences, Beijing 100049, P. R. China
+
+Supporting Information
+
+ABSTRACT: An aerobic oxidation reaction of alcohols toward aldehydes or ketones using catalytic amounts of $\mathrm { F e } ( \mathrm { N O } _ { 3 } ) _ { 3 } .$ · 9H2O, 4-OH-TEMPO, and NaCl has been developed. Compared with the former catalytic system with TEMPO developed in this group, the new protocol using 4-OH-TEMPO, which is much cheaper on an industrial scale, accomplished the transformation with a higher selectivity, especially for aliphatic alcohols toward aldehydes. $\alpha , \beta \mathrm { . }$ -Unsaturated alkynals or alkynones can be efficiently synthesized from propargyl alcohols, which has been much less studied in the literature.
+
+KEYWORDS: aerobic oxidation, iron catalysis, 4-OH-TEMPO, aldehydes, ketones
+
+# INTRODUCTION
+
+Aldehydes and ketones are important chemicals that are widely used in daily life, industry, and academic research.1 Oxidation of alcohols is a direct and significant way to produce aldehydes and ketones.2 Traditionally, stoichiometric amounts of oxidants containing heavy metals $\left( \mathrm { M n } , \mathrm { ^ { 3 } C r , ^ { 4 } \ e t c . } \right)$ Cr, or expensive hypervalent iodines5 such as Dess−Martin reagent or IBX reagent have been used in industry and the laboratory. Besides the high cost, these methods usually produce large amounts of toxic byproducts during the production process, causing severe environmental burdens, which makes it necessary to develop green oxidation methods using molecular oxygen, a clean, cheap, and sustainable substance, as the oxidant.6 Early reports focused on catalysis by noble metals such as $\mathrm { P d } , ^ { 7 } \mathrm { R u } , ^ { 8 } \mathrm { A } \mathbf { \bar { u } } , ^ { 9 } \mathrm { A g } , ^ { 1 0 }$ etc. The high cost, limited substrate scope, and harsh conditions are main problems to be solved. In recent years, aerobic oxidation of alcohols using earth-abundant catalysts such as $\mathrm { F e } , ^ { 1 1 - 1 3 } \mathrm { C u } , ^ { 1 4 }$ and ${ \mathrm { C o } } ^ { 1 5 }$ has received extensive attention. In $2 0 1 1 ,$ our group developed a highly efficient $\mathrm { F e ( N O _ { 3 } ) _ { 3 } { \cdot } 9 H _ { 2 } O / T E M P O / \check { N } a C \ \hat { l } - }$ catalyzed aerobic oxidation reaction of alcohols to aldehydes or ketones under mild conditions with broad substrate scope $( { \mathrm { S c h e m e ~ 1 } } ) . ^ { 1 2 } { \mathrm { ~ F e } } ( { \mathrm { N O } } _ { 3 } ) _ { 3 } { \cdot } 9 { \mathrm { H } } _ { 2 } \mathrm { O }$ and NaCl are both very cheap chemicals, while TEMPO, though much cheaper than many other N-oxyls such as ABNO and AZADO, is still relatively expensive for industrial-scale production. 4-OH-TEMPO is a much cheaper N-oxyl even than TEMPO.16 In this work, we used 4-OH-TEMPO instead of TEMPO as the cocatalyst based on our previous catalytic system for a more cost-effective reaction (Scheme 1).
+
+# RESULTS AND DISCUSSION
+
+It should be noticed that the chloride anion is used as the ligand to increase the activity of the iron catalyst12a and that the cation of the inorganic chloride plays an important role in steps of
+
+# Scheme 1. Iron-Catalyzed Aerobic Oxidations of Alcohols to Aldehydes or Ketones
+
+Previous work of this group:
+
+![](images/17a6457ccb3b72f1613ed291bb02ac0e034d730da456bf1cf32e77d4738a948c.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction scheme showing oxidation of aldehyde to ketone using Fe(NO3)3·9H2O and TEMPO in NaCl at room temperature, followed by dication and subsequent elimination of TEMPO.
+</details>
+
+This work:
+
+![](images/e058f14b6d3cbb75860b92aecc25c612e9c9394605abd83a0c0b3cc8d49801e3.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction scheme showing oxidation of aldehyde to ketone using Fe(NO3)3·9H2O and 4-OH-TEMPO reagents
+</details>
+
+![](images/1f3d7a9c1f40b6c19d9a2c60a2bb13e9f523c40094d289117df9a0af314adb28.jpg)
+
+ligand exchange.17a We started our research using 1-dodecanol (1a) as the initial substrate for the aerobic oxidation reaction. With 5 mol % loadings o $\mathrm { \cdot F e ( N O _ { 3 } ) _ { 3 } { \cdot } 9 H _ { 2 } O , 4 { \cdot } O H }$ -TEMPO, and NaCl as the catalysts, the reaction in DCE at $2 5 ~ ^ { \circ } \mathrm { C }$ for 20.5 h using molecular oxygen as the oxidant gave aldehyde 2a in 63% NMR yield as well as 27% NMR recovery of alcohol 1a (Table 1, entry 1). When the reaction time was extended to 28.5 h, the NMR yield of aldehyde 2a was improved to 71%, with 14% NMR recovery of alcohol 1a (Table 1, entry 2). When the loadings of 4-OH-TEMPO and NaCl were increased to 10 mol %, an 85% NMR yield of aldehyde 2a was formed along with an 11% NMR yield of acid 3a after 20 h (Table 1, entry 3). We then shortened the reaction time to 19 h, and the NMR yield of aldehyde 2a was 88% with only 3% NMR yield of acid 3a and 2.5% NMR recovery of alcohol 1a (Table 1, entry 4). A 57%
+
+Received: November 15, 2018
+
+Published: March 13, 2019
+
+Table 1. Optimization of the Aerobic Oxidation Reaction of ${ \bf 1 } \mathsf { a } ^ { a }$ 
+
+<table><tr><td></td><td colspan="2">n-C11H23CH2OH 1a</td><td colspan="2">Fe(NO3)3·9H2O (x mol%) 4-OH-TEMPO (y mol%) NaCl (z mol%) DCE, O2 bag, 25 °C, t (h)</td><td colspan="3">n-C11H23CHO + n-C11H23COOH 2a 3a</td></tr><tr><td rowspan="2">Entry</td><td rowspan="2">x</td><td rowspan="2">y</td><td rowspan="2">z</td><td rowspan="2">t (h)</td><td colspan="2">Yield (%)b</td><td rowspan="2">Recovery of 1a (%)b</td></tr><tr><td>2a</td><td>3a</td></tr><tr><td>1</td><td>5</td><td>5</td><td>5</td><td>20.5</td><td>63</td><td>trace</td><td>27</td></tr><tr><td>2</td><td>5</td><td>5</td><td>5</td><td>28.5</td><td>71</td><td>1</td><td>14</td></tr><tr><td>3</td><td>5</td><td>10</td><td>10</td><td>20</td><td>85</td><td>11</td><td>-</td></tr><tr><td>4</td><td>5</td><td>10</td><td>10</td><td>19</td><td>88</td><td>3</td><td>2.5</td></tr><tr><td>5</td><td>5</td><td>10</td><td>0</td><td>24</td><td>57</td><td>-</td><td>34</td></tr><tr><td>6</td><td>10</td><td>10</td><td>10</td><td>9</td><td>85</td><td>10</td><td>1.5</td></tr><tr><td>7c</td><td>10</td><td>10</td><td>10</td><td>12</td><td>78</td><td>21</td><td>-</td></tr><tr><td>8c,d</td><td>10</td><td>10</td><td>10</td><td>12</td><td>-</td><td>100</td><td>-</td></tr></table>
+
+a The reactions were carried out on a 1.0 mmol scale of 1a in 4.0 mL of DCE with a bag of $\mathrm { O } _ { 2 } , \mathrm { \Lambda } ^ { b } \mathrm { N M R }$ yields. c KCl was used instead of NaCl. d TEMPO was used instead of 4-OH-TEMPO.
+
+NMR yield of aldehyde 2a with 34% NMR recovery of substrate 1a was observed in the reaction for 24 h in the absence of NaCl, indicating a significant effect of NaCl for accelerating the reaction (Table 1, entry 5). We attempted to use 10 mol % loadings of $\mathrm { F e } ( \mathrm { N O } _ { 3 } ) _ { 3 } { \cdot } 9 \mathrm { H } _ { 2 } \mathrm { O } ,$ , 4-OH-TEMPO, and NaCl to shorten the reaction time. However, a 10% NMR yield of acid 3a was already observed in 9 h along with an 85% NMR yield of aldehyde 2a and 1.5% NMR recovery of substrate 1a (Table 1, entry 6). We even tried to accomplish the aerobic oxidation of alcohol 1a toward carboxylic acid 3a with 10 mol % loadings of $\mathrm { F e } ( \mathrm { N O } _ { 3 } ) _ { 3 } { \cdot } 9 \mathrm { H } _ { 2 } \mathrm { O } _ { 3 }$ , 4-OH-TEMPO, and $\mathrm { K C l } , ^ { 1 7 }$ but aldehyde 2a remained as the main product in 78% NMR yield, and a 21% NMR yield of acid 3a was formed (Table 1, entry 7). In our previous $\mathrm { r e p o r t } , ^ { 1 7 }$ the transformation of alcohol 1a to acid 3a was completed in 12 h (Table 1, entry 8), indicating that the reaction using 4-OH-TEMPO has a higher selectivity for the formation of aldehydes.
+
+Then we conducted a screening of other solvents. The reactions in $\mathrm { C H } _ { 3 } \mathrm { C N } ,$ THF, EtOAc, and dioxane for 24 h gave only 18−31% NMR yields of aldehyde 2a (Table 2, entries 1− 4). The reaction proceeded smoothly in other chlorinated solvents such as DCM and $\mathrm { C H C l } _ { 3 } ,$ with ∼30% NMR recovery of alcohol 1a after 24 h (Table $^ { 2 , }$ entries 5 and 6). In toluene, the reaction gave a 77% NMR yield of aldehyde 2a along with 14%
+
+Table 2. Screening of Solvents for the Aerobic Oxidation Reaction of ${ \bf 1 } \mathsf { a } ^ { \pmb { a } }$ 
+
+<table><tr><td colspan="2"> $n-C_{11}H_{23}CH_2OH$  1a</td><td>Fe(NO3)3·9H2O (5 mol%)4-OH-TEMPO (10 mol%)NaCl (10 mol%)solvent, O2 bag, 25 °C, 24 h</td><td> $n-C_{11}H_{23}CHO$  2a</td></tr><tr><td>Entry</td><td>Solvent</td><td>Yield of 2a (%)b</td><td>Recovery of 1a (%)b</td></tr><tr><td>1</td><td>CH3CN</td><td>31</td><td>61</td></tr><tr><td>2</td><td>THF</td><td>18</td><td>76</td></tr><tr><td>3</td><td>EtOAc</td><td>22</td><td>70</td></tr><tr><td>4</td><td>dioxane</td><td>24</td><td>70</td></tr><tr><td>5</td><td>DCM</td><td>65</td><td>28</td></tr><tr><td>6</td><td>CHCl3</td><td>65</td><td>31</td></tr><tr><td>7</td><td>toluene</td><td>77</td><td>14</td></tr></table>
+
+a The reactions were carried out on a 1.0 mmol scale of 1a in 4.0 mL of solvent with a bag of $\mathrm { O } _ { 2 } . \mathrm { \Lambda } ^ { b } \mathrm { N M R }$ yields.
+
+NMR recovery of alcohol 1a (Table 2, entry 7). Thus, DCE is the optimal solvent.
+
+With the standard conditions in hand, we investigated the oxidation reaction of different alcohols using molecular oxygen as the oxidant. Aliphatic alcohols could be oxidized to aldehydes with high selectivity (Table 3, entries 1 and 2). Aliphatic alcohol 1c with an ester group was transformed into aldehyde 2c smoothly (Table $^ { 3 , }$ entry 3). Allylic alcohol E-1d and propargyl alcohol 1e could also be oxidized to the corresponding aldehydes with high selectivity (Table 3, entries 4 and 5). For benzylic alcohols, which are usually more reactive in such reactions, only 5 mol % loadings of $\mathrm { F e } \left( \mathrm { N O } _ { 3 } \right) _ { 3 } { \cdot } 9 \mathrm { H } _ { 2 } \mathrm { O } , 4 { \cdot } \mathrm { O H } \mathrm { - }$ - TEMPO, and NaCl were required with a much shorter reaction time. For example, 4-nitrobenzyl alcohol (1f) was converted into 4-nitrobenzaldehyde (2f) in 91% yield in 5 h. According to the guidelines for residual solvents in the pharmaceutical industry (ICH Q3C), 1,2-dichloroethane is listed as a hazardous solvent to be avoided (concentration limit: 5 ppm), whereas toluene is much safer (concentration limit: 890 ppm). Thus, we also carried out the oxidation of E-1d using toluene as the solvent, which afforded E-2d in 92% yield (Table $^ { 3 , }$ entry 7).
+
+The reaction could also be conducted under air conditions. Benzylic alcohols 1g−k with different substituents could be oxidized into aldehydes in high yields with high selectivity in 5− 9 h (Table 4, entries 1−4). A variety of synthetically useful functional groups such as iodo, chloro, methoxy, ester, and nitro groups were well-tolerated in the reaction. Interestingly, for biomass-based substrate 5-hydroxymethylfurfural (1k, HMF), 18 the reaction produced 2,5-diformylfuran (2k, DFF) exclusively in 90% yield. The reaction could also be applied to the selective oxidation of terminal alkynol 1l and allenol 1m to the corresponding aldehydes when the catalyst loadings were increased.
+
+The oxidation of propargyl alcohols to aldehydes and ketones using molecular oxygen as the oxidant has been less studied in the literature. We investigated different primary and secondary propargyl alcohols. For primary propargyl alcohols, apart from alkyl-substituted propargyl alcohol 1e (Table 3, entry ${ \mathfrak { s } } ) ,$ , arylsubstituted propargyl alcohols could also be oxidized to aldehydes with a high selectivity (Table 5, entries 1 and 2). For substrate 1o with an electron-donating OMe group on the phenyl ring, aldehyde 2o was obtained in 77% yield using 10 mol % loadings of the catalysts (Table $^ { 5 , }$ entry 2). Aryl- and alkyl-substituted secondary propargyl alcohols 1p−r could be oxidized to ketones in high yields (Table 5, entries 3−5). The cyano group was well-tolerated in the reaction (Table 5, entry 5). To our delight, 1p could be oxidized to 4p in toluene using air as the terminal oxidant in a comparable yield in 8 h (Table $^ { 5 , }$ entry 6).
+
+Table 3. Scope of the Aerobic Oxidation Reaction of Alcohols under $\mathbf { O } _ { 2 }$ Conditionsa 
+
+<table><tr><td rowspan="2">Entry</td><td rowspan="2">Substrate</td><td rowspan="2">x</td><td rowspan="2">y</td><td rowspan="2">z</td><td rowspan="2">t (h)</td><td colspan="2">Yield</td><td rowspan="2">Recovery of 1 (%)c</td></tr><tr><td>2 (%)b</td><td>3 (%)c</td></tr><tr><td>1</td><td> $n-C_{11}H_{23}CH_2OH$  (1a)</td><td>5</td><td>10</td><td>10</td><td>19</td><td>89 (2a)</td><td>3</td><td>2.5</td></tr><tr><td>2</td><td> $n-C_{15}H_{31}CH_2OH$  (1b)</td><td>5</td><td>10</td><td>10</td><td>16</td><td>87 (2b)</td><td>trace</td><td>3</td></tr><tr><td>3</td><td> $MeOOC-CH_2CH_2OH$  (1c)</td><td>5</td><td>10</td><td>10</td><td>16</td><td>63 (2c)</td><td>3.5</td><td>-</td></tr><tr><td>4</td><td>(E-1d)</td><td>5</td><td>10</td><td>10</td><td>19</td><td>87 (E-2d)</td><td>-</td><td>-</td></tr><tr><td>5</td><td>(OH)(1e)</td><td>5</td><td>5</td><td>5</td><td>13</td><td>92 (2e)</td><td>2</td><td>-</td></tr><tr><td>6</td><td>(O2N-CH2OH) (1f)</td><td>5</td><td>5</td><td>5</td><td>5</td><td>91 (2f)</td><td>1.5</td><td></td></tr><tr><td>7d</td><td>E-1d</td><td>5</td><td>10</td><td>10</td><td>24</td><td>92 (E-2d)</td><td>-</td><td>-</td></tr></table>
+
+a The reactions were carried out on a 1.0 mmol scale of 1 in 4.0 mL of DCE with a bag of $\mathrm { O } _ { 2 } .$ b Isolated yields. c NMR yields. d Toluene was used instead of DCE.
+
+Table 4. Scope of the Aerobic Oxidation Reaction of Alcohols under Air Conditionsa 
+
+<table><tr><td>Entry</td><td>Substrate</td><td>x</td><td>y</td><td>z</td><td>t (h)</td><td>Yield of 2 (%)b</td></tr><tr><td>1</td><td><img src="images/2fb425104e6ffadeec4b54ec97fae2e0123d0a3c3d326f984ccb77ddefebc4ae.jpg"/> (1g)</td><td>5</td><td>5</td><td>5</td><td>5</td><td>99 (2g)</td></tr><tr><td>2</td><td><img src="images/e6cbf142b23fe72549da42f71af14cabac9b5f81f250e81517d70e02f620d5b7.jpg"/> (1h)</td><td>5</td><td>5</td><td>5</td><td>9</td><td>98 (2h)</td></tr><tr><td>3</td><td><img src="images/7f3327e809b62ea9834e7ee84ab1e208f9663ada0bc8f188eece6c7b16ed0399.jpg"/> (1i)</td><td>5</td><td>5</td><td>5</td><td>6</td><td>95 (2i)</td></tr><tr><td>4</td><td><img src="images/8ecfc8e491d17ef9a7c0874266bc14541193f3e107637230541be57e3ea67533.jpg"/> NO2 (1j)</td><td>5</td><td>5</td><td>5</td><td>6</td><td>99 (2j)</td></tr><tr><td>5</td><td><img src="images/2b48fb0a3081ef204dabf906fb2f951ea56d3f25a92a56e923f92285f6b45691.jpg"/></td><td>5</td><td>5</td><td>5</td><td>9</td><td>90 (2k)</td></tr><tr><td>6c</td><td><img src="images/f1766a94b7279fbee6a3c671f61c87a1ec7919c19381a8229529f73b7ef4ecf7.jpg"/> (1l)</td><td>10</td><td>10</td><td>10</td><td>11.5</td><td>79 (2l)</td></tr><tr><td>7</td><td><img src="images/c910c49fa79dbc6d6c2f7a7cc5ae0dec5bcddf4447c2125be204318a83063405.jpg"/></td><td>5</td><td>10</td><td>10</td><td>12</td><td>77 (2m)</td></tr></table>
+
+a The reactions were carried out on a 1.0 mmol scale of 1 in 4.0 mL of DCE with a bag of air. b Isolated yields. c 6% NMR yield of 10- undecynoic acid and 2% NMR recovery of the substrate.
+
+Table 5. Scope of Propargyl Alcohols under Air Conditionsa 
+
+<table><tr><td>Entry</td><td>R1, R2 (1)</td><td>x</td><td>y</td><td>z</td><td>t (h)</td><td>Yield of 2 or 4 (%)b</td></tr><tr><td>1</td><td>Ph, H (1n)</td><td>5</td><td>5</td><td>5</td><td>7</td><td>81 (2n)</td></tr><tr><td>2</td><td>4-MeOC6H4, H (1o)</td><td>10</td><td>10</td><td>10</td><td>9.5</td><td>77 (2o)</td></tr><tr><td>3</td><td>H, Ph (1p)</td><td>5</td><td>5</td><td>5</td><td>4</td><td>89 (4p)</td></tr><tr><td>4</td><td>n-C4H9, n-C7H15 (1q)</td><td>5</td><td>5</td><td>5</td><td>7</td><td>92 (4q)</td></tr><tr><td>5</td><td>n-C4H9, 4-NCC6H4 (1r)</td><td>5</td><td>5</td><td>5</td><td>7</td><td>91 (4r)</td></tr><tr><td>6c</td><td>H, Ph (1p)</td><td>5</td><td>5</td><td>5</td><td>8</td><td>85 (4p)</td></tr></table>
+
+a The reactions were carried out on a 1.0 mmol scale of 1 in 4.0 mL of DCE with a bag of air. b Isolated yields. c Toluene was used instead of DCE.
+
+In order to show the practicality in an academic synthetic laboratory, a 100 mmol scale reaction of 1a applying a slow flow of air was demonstrated (eq 1 and Figure 1).
+
+$$
+\begin{array}{c} \text {Fe(NO_{3})_{3} 9H_{2} O (5 mol\%)} \\ \text {4 - OH - TEMPO (10 mol\%)} \\ \text {NaCl (10 mol\%)} \\ \text {DCE, air flow (30 mL / min)} \\ \text {100 mmol} \\ \text {25 °C, 15.5 h} \end{array} \xrightarrow {\text {n - C_{11} H_{23} CHO + n - C_{11} H_{23} COOH}} \begin{array}{c} \text {(1)} \\ \text {2a} \\ \text {3a} \\ \text {88.5\% by NMR 1.5\% by NMR} \\ \text {88\% by isolation} \end{array}
+$$
+
+In addition, we conducted a 0.5 mol scale reaction of 1s in toluene with a slow flow of air, and the corresponding product 4s was conveniently isolated by simple distillation in 84% yield (eq 2).
+
+$$
+\begin{array}{c} \mathrm {Fe(NO_ {3}) _ {3} \cdot 9H_ {2} O (5 mol\%)} \\ \mathrm{4-OH-TEMPO(5mol\%)} \\ \mathrm{NaCl(5mol\%)} \\ \mathrm{toluene,airflow(30mL/min),25°C,42h} \\ \mathrm{PhC=CH} \\ \text {1s} \\ 0. 5 \mathrm{mol} \end{array} \xrightarrow [ \text {toluene,airflow(30mL / min),25°C,42h} ]{\text {84\% by distillation}} \tag {2}
+$$
+
+Further study showed that the liquid 1s could also be oxidized to 4s with 85% isolated yield in 4 h under the atmosphere of oxygen without any solvent (eq 3).
+
+$$
+\begin{array}{c} \mathrm {Fe(NO_ {3}) _ {3} \cdot 9H_ {2} O (5 mol\%)} \\ \mathrm {4 - OH - TEMPO (5 mol\%)} \\ \mathrm{NaCl (5 mol\%)} \\ \mathrm {O_ {2} , r.t., 4 h} \\ \mathrm{Ph} \xrightarrow {\text { Ph } \text { O }} \mathrm{4s} \\ 0. 5 \mathrm{mol} \end{array} \tag {3}
+$$
+
+# CONCLUSIONS
+
+An iron-catalyzed aerobic oxidation reaction of alcohols to aldehydes and ketones using Fe(NO ) ·9H O, 4-OH-TEMPO, and NaCl as the catalyst system showed improved selectivity for the formation of aldehydes compared with the catalyst system using the more expensive TEMPO. The reaction may be conducted under either $\mathrm { O } _ { 2 }$ or air conditions at room temperature with broad substrate scope, and reactions on up to 0.5 mol scale were demonstrated. Further studies in this area are being actively pursued in this laboratory.
+
+![](images/606f08e637790801b4b169585cef5b9bb5af5e7c68fe294a042aa60d914641b6.jpg)
+
+<details>
+<summary>text_image</summary>
+
+RT 85-2B型磁力搅拌器
+电源指示
+调速
+电源开关
+上海永洗仪器有限公司
+</details>
+
+Figure 1. The apparatus and reaction for the aerobic reaction of 1a on a 100 mmol scale with a slow flow of air (30 mL/min).
+
+# EXPERIMENTAL SECTION
+
+General Information. $\mathrm { F e } \left( \mathrm { N O } _ { 3 } \right) _ { 3 } { \cdot } 9 \mathrm { H } _ { 2 } \mathrm { O }$ was purchased from Energy Chemical or J&K. 4-OH-TEMPO was purchased from Adamas. NaCl was purchased from Sinopharm. DCE was used directly without further treatment. Other reagents were used as received without further treatment. Substrates ${ \mathbf { 1 } } { \mathbf { c } } , ^ { 2 2 }$ 1e,26 1 $\mathbf { 1 e } , ^ { 2 6 } \mathbf { 1 } \mathbf { l } , ^ { 3 6 } \mathbf { 1 m } , ^ { 3 9 } \mathbf { 1 0 } , ^ { 4 0 } \mathbf { 1 } \mathbf { q } , ^ { 4 2 }$ 1q, and $\mathbf { 1 r } ^ { 4 4 }$ were synthesized according to the literature methods. Petroleum ether $\left( 6 0 - 9 0 ^ { \circ } \mathrm { C } \right)$ was used for chromatography. Gas bags for reactions with $\mathrm { O } _ { 2 }$ or air were obtained from Wattcas. Melting points were recorded using a Stuart SMP30 melting point apparatus. IR spectra were obtained using a Bruker Tensor 27 spectrometer. 1 H and $^ { 1 3 } \mathrm { C }$ NMR spectra were obtained using an Agilent (400 MHz), Varian Mercury (400 MHz), or Bruker (400 MHz) spectrometer. Mass spectra were recorded using an Agilent 5973N instrument. Caution: Oxygen is used in combination with organic solvents; all ignition sources should be removed, including sources of sparks, static, or flames, since oxygen increases the intensity of any fire. Inhalation of pure oxygen should be avoided as well.
+
+Typical Procedure I: n-Dodecanal (2a) (jxg-5-192).
+
+$$
+\begin{array}{c} \text {Fe(NO_{3})_{3} 9H_{2} O (5 mol\%)} \\ \text {4 - OH - TEMPO (10 mol\%)} \\ \text {NaCl (10 mol\%)} \\ \text {DCE, O_{2} bag, 25 ^{\circ}C, 19 h} \end{array} \xrightarrow [ \text {DCE, O_{2} bag, 25 ^{\circ}C, 19 h} ]{\text {n - C_{11} H_{23} CHO}} \begin{array}{c} n - \mathrm{C_{11} H_{23} CHO} \\ \text {2a} \\ 88 \% \text {NMR yield} \\ 89 \% \text {yield} \end{array} + \begin{array}{c} n - \mathrm{C_{11} H_{23} COOH} \\ \text {3a} \\ 3 \% \text {NMR yield} \end{array}
+$$
+
+To a Schlenk tube were added $\mathrm { F e } \left( \mathrm { N O } _ { 3 } \right) _ { 3 } { \cdot } 9 \mathrm { H } _ { 2 } \mathrm { O } \left( 2 0 . 3 \right.$ mg, 0.05 mmol), 4-OH-TEMPO (17.2 mg, 0.1 mmol), NaCl (5.9 mg, 0.1 mmol), 1a (188.0 mg, 99% purity, 1.0 mmol), and DCE (4.0 mL) sequentially under an atmosphere of oxygen from a gas bag (2 L (commercial size); could be expanded to 5 L). The Schlenk tube was then stirred at $2 5 ^ { \circ } \mathrm { C }$ until completion of the reaction as
+
+monitored by TLC (petroleum ether/ethyl acetate = 5/1) (19 h). The crude reaction mixture was filtered through a short column of silica gel (height, 2 cm; Φ, 3 cm), eluting with diethyl ether (3 × 25 mL). After evaporation, the residue was purified by chromatography on silica gel (eluent: petroleum ether/ethyl acetate = 100/1) to afford $2 \mathbf { a } ^ { 1 9 }$ (164.6 mg, 89%) as an oil (88% 2a, 3% ${ 3 \mathbf { a } } , ^ { 2 0 }$ and 2.5% 1a were observed by NMR analysis of the crude product using $\mathrm { C H } _ { 2 } \mathrm { B r } _ { 2 }$ as an internal standard). 1 H NMR (400 MHz, CDCl ) δ 9.77 (t, J = 1.8 Hz, 1H, CHO), 2.42 (td, J = 7.3 Hz, J = 2.1 Hz, 2H, CH ), 1.63 (quint, $J = 7 . 2 ~ \mathrm { H z } ,$ , 2H, CH ), 1.38−1.20 (m, 16H, 8 × CH ), 0.88 (t, J = 6.8 Hz, 3H, $\mathrm { C H } _ { 3 } ) ; { ^ { 1 3 } \mathrm { C } }$ NMR (100 MHz, CDCl ) δ 202.9, 43.9, 31.9, 29.6, 29.5, 29.4, 29.33, 29.29, 29.1, 22.6, 22.0, 14.1; IR (neat, cm−1 ) 2922, 2853, 2713, 1726, 1464, 1411, 1389; MS (EI, 70 eV) m/z (%) 184 (M+ , 0.19), 57 (100).
+
+n-Hexadecanal (2b) (jxg-6-4).
+
+$$
+\begin{array}{c} \text {Fe(NO_{3})_{3} \cdot 9H_{2} O (5 mol\%)} \\ \text {4 - OH - TEMPO (10 mol\%)} \\ \text {NaCl (10 mol\%)} \\ \text {DCE, O_{2} bag, 25 ^{\circ}C, 16 h} \\ n - C _ {1 5} H _ {3 1} C H _ {2} O H \\ 1 b \\ n - C _ {1 5} H _ {3 1} C H O \\ 2 b \\ 8 9 \% N M R y i e l d \\ 8 7 \% y i e l d \end{array} + \begin{array}{c} 1 b \\ 3 \% N M R r e c o v e r y \end{array}
+$$
+
+Following Typical Procedure $\mathrm { I } ,$ the reaction of $\mathrm { F e } \left( \mathrm { N O } _ { 3 } \right) _ { 3 } { \cdot } 9 \mathrm { H } _ { 2 } \mathrm { O }$ (20.4 mg, 0.05 mmol), 4-OH-TEMPO (17.3 mg, 0.1 mmol), NaCl (5.8 mg, 0.1 mmol), and 1b (247.2 mg, 98% purity, 1.0 mmol) in DCE (4.0 mL) for 16 h afforded $2  { \mathbf { b } } ^ { 2  { \mathrm { T } } }$ (209.9 mg, 87%) as a solid (eluent: petroleum ether/ethyl acetate = 100/1 (500 mL)) (89% 2b and 3% 1b were observed by NMR analysis of the crude product using $\mathrm { C H } _ { 2 } \mathrm { B r } _ { 2 }$ as an internal standard). Mp 35.1− $3 6 . 4 \ ^ { \circ } \mathrm { { C } }$ (ethyl acetate/petroleum ether; $\mathrm { l i t . } ^ { 2 1 } 3 5 { - } 3 6 ^ { \circ } \mathrm { C } ) ;$ ; 1 H NMR (400 MHz, CDCl ) δ 9.76 (t, J = 1.8 Hz, 1H, CHO), 2.42 $\left( \mathrm { t d } , J _ { 1 } = 7 . 2 \mathrm { H z } , J _ { 2 } = 2 . 0 \mathrm { H z } , 2 \mathrm { H } , \mathrm { C H } _ { 2 } \right)$ , 1.63 (quint, J = 7.2 Hz, 2H, CH ), 1.37−1.19 (m, 24H, 12 × CH ), 0.88 (t, J = 6.8 Hz, 3H, CH3); 13C NMR (100 MHz, CDCl3) δ 202.9, 43.9, 31.9, 29.67, 29.65, 29.64, 29.63, 29.61, 29.55, 29.4, 29.3, 29.1, 22.7, 22.0, 14.1; IR (neat, cm−1 ) 2913, 2848, 2750, 1704, 1470, 1410, 1392, 1372, 1067; MS (EI, 70 eV) m/z (%) 240 (1.32), 82 (100).
+
+Methyl 6-Oxohexanoate (2c) (jxg-6-2).
+
+$$
+\begin{array}{c} \text {Fe(NO_{3})_{3} \cdot 9H_{2} O (5 mol\%)} \\ \text {4 - OH - TEMPO (10 mol\%)} \\ \text {NaCl (10 mol\%)} \\ \text {DCE, O_{2} bag, 25 ^{\circ}C, 16 h} \\ \text {MeOOC-CH(CH_{2}OH)} \\ \text {MeOOC-CHO} \\ \text {MeOOC-CH(COOH)} \\ \text {74\% NMR yield} \\ \text {63\%} \\ \text {3.5\% NMR yield} \end{array}
+$$
+
+Following Typical Procedure I, the reaction of $\mathrm { F e } \left( \mathrm { N O } _ { 3 } \right) _ { 3 } { \cdot } 9 \mathrm { H } _ { 2 } \mathrm { O }$ (20.3 mg, 0.05 mmol), 4-OH-TEMPO (17.4 mg, 0.1 mmol), NaCl (5.8 mg, 0.1 mmol), and $\mathbf { 1 } \mathbf { c } ^ { 2 2 }$ (146.0 mg, 1.0 mmol) in DCE (4.0 mL) for 16 h afforded $2 \mathbf { c } ^ { 2 3 }$ (91.1 mg, 63%) as an oil (eluent: petroleum ether/ethyl acetate = 15/1 (800 mL)) (74% 2c and $3 . 5 \% 3 \mathbf { c } ^ { 2 4 }$ were observed by NMR analysis of the crude product using $\mathrm { C H } _ { 2 } \mathrm { B r } _ { 2 }$ as an internal standard). 1 H NMR (400 MHz, CDCl ) δ 9.78 (t, J = 1.6 Hz, 1H, CHO), 3.68 (s, 3H, CH ), 2.52−2.44 (m, 2H, CH ), 2.39−2.32 (m, 2H, CH ), 1.72−1.62 (m, 4H, 2 × CH ); 13C NMR (100 MHz, CDCl ) δ
+
+202.0, 173.6, 51.5, 43.4, 35.6, 24.2, 21.4; IR $\mathrm { ( n e a t , c m ^ { - 1 } ) }$ 2952,2725, 1721, 1437, 1365, 1197, 1155, 1093, 1008; MS (EI, 70 eV)$m / z \left( \% \right)$ 144 (M+ , 0.57), 114 (100).
+
+(E)-3-Phenyl-2-propenal (E-2d) (jxg-6-1).
+
+![](images/eae9964b18a2949f80a67bdfbcc830b6cb94bd2e8abdeab34f6bb5da4eb7534e.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction scheme converting compound E-1d to E-2d using Fe(NO3)3·9H2O and NaCl under specified conditions
+</details>
+
+Following Typical Procedure I, the reaction of $\mathrm { F e } \left( \mathrm { N O } _ { 3 } \right) _ { 3 } { \cdot } 9 \mathrm { H } _ { 2 } \mathrm { O }$ (20.4 mg, 0.05 mmol), 4-OH-TEMPO (17.3 mg, 0.1 mmol), NaCl (5.9 mg, 0.1 mmol), and 1d (135.0 mg, 99% purity, 1.0 mmol) in DCE (4.0 mL) for 19 h afforded $\breve { E } ^ { - 2 \mathbf { d } ^ { 2 . 5 } }$ (114.8 mg, 87%) as an oil (eluent: petroleum ether/ethyl $\mathrm { * t h e r } = 2 0 / 1$ (600 mL)). 1 H NMR (400 MHz, CDCl3) δ 9.70 (d, J = 7.6 Hz, 1H, CHO), 7.60−7.53 (m, 2H, Ar−H), 7.51−7.40 (m, 4H, 3 × Ar− H and CH), 6.72 (dd, J = 16.2 Hz, $J _ { 2 } = 7 . 8$ Hz, ${ 1 } \mathrm { H } , { = } \mathrm { C H } ) ;$ ; $^ { 1 3 } \mathrm { C }$ NMR (100 MHz, CDCl3) δ 193.7, 152.8, 133.9, 131.2, 129.0, 128.5, 128.4; IR (neat, $\mathrm { c m } ^ { - 1 } )$ 2812, 2741, 1668, 1623, 1574, 1493, 1449, 1393, 1328, 1294, 1249, 1119, 1072, 1006; MS (EI, 70 eV) m/z (%) 132 (M+ , 59.43), 131 (100).
+
+2-Undecynal (2e) (jxg-6-3).
+
+![](images/c14ff106e68affe8481d0048c5e902f73db1841f7c133c06cd2eae2ea1620e4e.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Organic synthesis reaction scheme showing conversion of compound 1e to products 2e and 3e under specified conditions
+</details>
+
+Following Typical Procedure I, the reaction of $\mathrm { F e } \left( \mathrm { N O } _ { 3 } \right) _ { 3 } { \cdot } 9 \mathrm { H } _ { 2 } \mathrm { O }$ (20.2 mg, 0.05 mmol), 4-OH-TEMPO (8.7 mg, 0.05 mmol), NaCl (3.0 mg, 0.05 mmol), and $\mathbf { 1 e } ^ { 2 6 }$ (167.6 mg, 1.0 mmol) in DCE (4.0 mL) for 13 h afforded $2 \mathbf { e } ^ { 2 7 }$ (152.9 mg, 92%) as an oil (eluent: petroleum ether/ethyl acetate = 100/1 (400 mL)) (96% 2e and 2% $3 \mathbf { e } ^ { 2 8 }$ were observed by NMR analysis of the crude product using $\mathrm { C H } _ { 2 } \mathrm { B r } _ { 2 }$ as an internal standard). 1 H NMR (400 MHz, CDCl ) δ 9.18 (s, 1H, CHO), 2.41 (t, J = 7.0 Hz, 2H, $\mathrm { C H } _ { 2 } ) _ { 2 }$ 1.60 (quint, $J = 7 . 4$ Hz, 2H, CH ), 1.46−1.35 (m, 2H, CH ), 1.35−1.20 (m, 8H, 4 × CH ), 0.89 (t, J = 6.8 Hz, 3H, $\mathrm { C H } _ { 3 } ) ; { ^ { 1 3 } \mathrm { C } }$ NMR (100 MHz, CDCl3) δ 177.2, 99.3, 81.6, 31.7, 29.0, 28.9, 28.8, 27.5, 22.6, 19.1, 14.0; IR (neat, cm−1 ) 2925, 2855, 2280, 2199, 1669, 1464, 1424, 1387, 1326, 1136; MS (EI, 70 eV) $m / z \left( \% \right)$ 166 (M+ , 0.45), 55 (100).
+
+4-Nitrobenzaldehyde (2f) (jxg-5-147).
+
+![](images/de5ac164a179355522427c23655c5f459112668f87fc67418614b9becf822f86.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction scheme showing synthesis of compounds 1f and 2f from nitro-substituted benzene derivatives using Fe(NO3)3·9H2O and NaCl in DCE/25°C for 5 hours
+</details>
+
+Following Typical Procedure I, the reaction of $\mathsf { \cdot F e } ( \mathsf { N O } _ { 3 } ) _ { 3 } { \cdot } 9 \mathsf { H } _ { 2 } \mathsf { O }$ (20.4 mg, 0.05 mmol), 4-OH-TEMPO (8.7 mg, 0.05 mmol), NaCl (2.9 mg, 0.05 mmol), and 1f (154.7 mg, 99% purity, 1.0 mmol) in DCE (4.0 mL) for 5 h afforded 2f29 (151.4 mg, 91%) as a solid (eluent: petroleum ether/ethyl ether = 5/1 (400 mL)) (98% 2f and $1 . 5 \% 3 \mathbf { f } ^ { 3 0 }$ were observed by NMR analysis of the crude product using $\mathrm { C H } _ { 2 } \mathrm { B r } _ { 2 }$ as an internal standard). Mp $1 0 5 . 4 \mathrm { - } \mathrm { 1 } 0 6 . 6 ^ { \circ } \mathrm { C }$ (ethyl acetate/petroleum ether; $\operatorname { l i t } . ^ { 2 9 }$ 104−106 $^ { \circ } \mathrm { C } ) ;$ ; 1 H NMR (400 MHz, CDCl ) δ 10.18 (s, 1H, CHO), 8.41 $\left( \mathrm { d } , J = 8 . 4 \mathrm { H z } , 2 \mathrm { H } , \mathrm { A r - H } \right)$ , 8.10 $\left( \mathrm { d } , J = 8 . 0 \right.$ Hz, 2H, $\mathrm { A r { - } H } ) ; { } ^ { 1 3 } \mathrm { C }$ NMR (100 MHz, CDCl ) δ 190.3, 151.1, 140.0, 130.4, 124.2; IR $\mathrm { ( n e a t , \ c m ^ { - 1 } ) }$ 3106, 2850, 1703, 1604, 1532, 1343, 1324, 1286, 1194, 1103, 1006; MS (EI, 70 eV) $m / z \left( \% \right)$ 151 (M+ , 100).
+
+Typical Procedure II: 4-Iodobenzaldehyde (2g) (jxg-6- 8).
+
+![](images/8e99b5f9c321344a256c2e0f0187e0fb18eade36abc087b8ce317b962ff59b63.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction scheme converting compound 1g to 2g using Fe(NO3)3·9H2O and NaCl under specified conditions
+</details>
+
+To a Schlenk tube were added $\mathrm { F e } \left( \mathrm { N O } _ { 3 } \right) _ { 3 } { \cdot } 9 \mathrm { H } _ { 2 } \mathrm { O }$ (20.3 mg, 0.05 mmol), 4-OH-TEMPO (8.7 mg, 0.05 mmol), NaCl (2.9 mg, 0.05 mmol), $\mathbf { 1 } \mathbf { g }$ (238.6 mg, 98% purity, 1.0 mmol), and DCE (4.0 mL) sequentially. The Schlenk tube was then connected with a gas bag (2 L (commercial size); could be expanded to 5 L) of air stirred at 25 $^ \circ \mathrm { C }$ until completion of the reaction as monitored by TLC (petroleum ether/ethyl acetate = 5/1) (5 h). The crude reaction mixture was filtered through a short column of silica gel (height, 2 cm; Φ, 3 cm), eluting with diethyl ether (3 × 25 mL). After evaporation, the residue was purified by chromatography on silica gel (eluent: petroleum ether/ethyl acetate = 20/1 (400 mL)) to afford $2 \mathbf { g } ^ { 3 1 ^ { \underline { { \cdot } } } } \left( 2 3 0 . 3 ~ \mathrm { m g } , 9 9 \% \right)$ as a solid. Mp $7 7 . 0 { - } 7 8 . 3 ~ ^ { \circ } \mathrm { C }$ (ethyl acetate/petroleum ether; lit.31 $7 7 - 7 8 { } ^ { \circ } \bar { \mathrm { C } } ) .$ ; 1 H NMR (400 MHz, CDCl ) δ 9.96 (s, 1H, CHO), 7.92 (d, J = 8.4 Hz, 2H, Ar−H), 7.60 (d, J = 8.0 Hz, 2H, Ar−H); $^ { 1 3 } \mathrm { C }$ NMR (100 MHz, CDCl ) δ 191.4, 138.4, 135.5, 130.8, 102.8; IR $\mathrm { ( n e a t , ~ c m ^ { - 1 } ) }$ 2825, 2733, 1683, 1656, 1579, 1561, 1473, 1403, 1377, 1274, 1202, 1160, 1048, 1003; MS (EI, 70 eV) $m / z \left( \% \right)$ 232 (100).
+
+4-Methoxybenzaldehyde (2h) (jxg-6-9).
+
+![](images/ed13d5bc14ca4aa262e213f32b2c86fb418502b072be191988723c660da0bba6.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction scheme showing conversion of compound 1h to 2h using Fe(NO3)3·9H2O and NaCl under specified conditions
+</details>
+
+Following Typical Procedure II, the reaction of $\mathrm { F e } ( \mathrm { N O } _ { 3 } ) _ { 3 } .$ · 9H O (20.1 mg, 0.05 mmol), 4-OH-TEMPO (8.7 mg, 0.05 mmol), NaCl (2.9 mg, 0.05 mmol), and 1h (141.6 mg, 98% purity, 1.0 mmol) in DCE (4 mL) for 9 h afforded $2 \mathbf { h } ^ { 3 2 } \overline { { \left( 1 3 3 . 6 \right. } }$ mg, 98%) as an oil (eluent: petroleum ether/ethyl ether = 15/1 (650 mL)). 1 H NMR (400 MHz, CDCl ) δ 9.88 (s, 1H, CHO), 7.84 (d, J = 8.8 Hz, 2H, Ar−H), 7.01 (d, J = 8.8 Hz, 2H, Ar−H), 3.89 $( s , \mathrm { 3 H } , \mathrm { C H } _ { 3 } ) ; \mathrm { ^ { 1 3 } C }$ NMR (100 MHz, CDCl ) δ 190.8, 164.5, 131.9, 129.8, 114.2, 55.5; IR (neat, $\mathrm { c m } ^ { - 1 } )$ 2840, 2737, 1680, 1595, 1575, 1509, 1460, 1426, 1393, 1314, 1254, 1214, 1182, 1156, 1108, 1021; MS (EI, 70 eV) $m / z \ ( \% )$ 136 (M+ , 72.67), 135 (100).
+
+Methyl 4-Formylbenzoate (2i) (jxg-6-22).
+
+![](images/554114755c68cec32932690d187e5af21ecbbfa0b4be8aead2816b4cd61fc8c4.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction scheme converting compound 1i to 2i using Fe(NO3)3·9H2O and NaCl under specified conditions
+</details>
+
+Following Typical Procedure $\mathrm { I I } ,$ the reaction of $\mathrm { F e } ( \mathrm { N O } _ { 3 } ) _ { 3 } .$ · $9 \mathrm { H } _ { 2 } \mathrm { O }$ (20.4 mg, 0.05 mmol), 4-OH-TEMPO (8.7 mg, 0.05 mmol), NaCl (2.9 mg, 0.05 mmol), and 1i (169.2 mg, 98% purity, 1.0 mmol) in DCE (4.0 mL) for 6 h afforded 2i33 (156.2 mg, 95%) as a solid (eluent: petroleum ether/ethyl acetate = 20/ 1). Mp $6 1 . 7 { - } 6 2 . 9 ~ ^ { \circ } \mathrm { C }$ (ethyl acetate/petroleum ether; $\mathrm { l i t . } ^ { 3 3 } 6 1 -$ $6 3 ~ ^ { \circ } \mathrm { C } )$ ; 1 H NMR (400 MHz, CDCl ) δ 10.11 (s, 1H, CHO), 8.20 (d, J = 8.0 Hz, 2H, Ar−H), 7.96 (d, J = 8.4 Hz, 2H, Ar−H), 3.97 (s, 3H, CH ); 13C NMR (100 MHz, CDCl ) δ 191.6, 165.9, 139.0, 135.0, 130.1, 129.4, 52.5; IR (neat, cm−1 ) 2962, 2887, 1722, 1682, 1575, 1502, 1434, 1391, 1280, 1199, 1106, 1012; MS (EI, 70 eV) m/z (%) 164 (M+ , 59.96), 133 (100).
+
+5-Chloro-2-nitrobenzaldehyde (2j) (jxg-6-23).   
+![](images/757d22d18acd71e5ddfcf511a66f1ec9dc90ab790b98e90faf445965c92fd63c.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction scheme converting compound 1j to 2j using Fe(NO3)3·9H2O and NaCl under specified conditions
+</details>
+
+Following Typical Procedure II, the reaction of $\mathrm { F e } ( \mathrm { N O } _ { 3 } ) _ { 3 } .$ · $9 \mathrm { H } _ { 2 } \mathrm { O }$ (20.4 mg, 0.05 mmol), 4-OH-TEMPO (8.6 mg, 0.05 mmol), NaCl (2.9 mg, 0.05 mmol), and 1j (191.2 mg, 98% purity, 1.0 mmol) in DCE (4.0 mL) for 6 h afforded $2 \mathbf { j } ^ { 3 4 }$ (183.1 mg, 99%) as a solid (eluent: petroleum ether/ethyl acetate = 20/ 1). Mp $7 5 . 6 { - } 7 6 . 7 \ ^ { \circ } \mathrm { C }$ (ethyl acetate/petroleum ether; lit.34 74 $^ \circ \mathrm { C }$ (ethyl acetate/n-hexane)); 1 H NMR (400 MHz, CDCl ) δ 10.42 (s, 1H, CHO), 8.13 (d, J = 8.8 Hz, 1H, Ar−H), 7.90 (d, J = 2.4 Hz, 1H, Ar−H), 7.73 (dd, J = 8.4 Hz, J = 2.4 Hz, 1H, Ar− H); 13C NMR (100 MHz, CDCl ) δ 186.8, 147.4, 141.2, 133.4, 132.7, 129.6, 126.1; IR (neat, cm−1 ) 3095, 1693, 1563, 1528, 1505, 1462, 1385, 1342, 1305, 1256, 1179, 1151, 1103, 1071; MS (EI, 70 eV) m/z (%) 187 $\big ( \big [ \mathrm { M } \big ( \mathrm { \Sigma } ^ { 3 7 } \mathrm { C l } \big ) \big ] \big )$ + , 0.32), 185 $( [ \mathbf { M } ( ^ { 3 5 } \mathrm { C l } ) ] ^ { + } , 0 . 7 1 )$ , 155 (100).
+
+Furan-2,5-dicarbaldehyde (2k) (jxg-6-25).   
+![](images/3d29b6d4040b414f0ef2d65f845de47e30afa22a4304219497c7e26209b52ba4.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction scheme converting compound 1k to 2k using Fe(NO3)3·9H2O and NaCl under specified conditions
+</details>
+
+Following Typical Procedure $\mathrm { I I } ,$ the reaction of $\mathrm { F e } ( \mathrm { N O } _ { 3 } ) _ { 3 }$ · $9 \mathrm { H } _ { 2 } \mathrm { O }$ (20.3 mg, 0.05 mmol), 4-OH-TEMPO (8.7 mg, 0.05 mmol), NaCl (3.0 mg, 0.05 mmol), and 1k (129.5 mg, 98% purity, 1.0 mmol) in DCE (4.0 mL) for 9 h afforded 2k35 (112.2 mg, 90%) as a solid (eluent: petroleum ether/ethyl acetate = 5/1 (800 mL)). Mp 110.0−111.4 °C (ethyl acetate/petroleum ether; lit.35 $1 0 8 \mathrm { - } 1 1 0 ^ { \circ } \mathrm { C } )$ ; 1 H NMR (400 MHz, CDCl ) δ 9.87 (s, 2H, 2 × CHO), 7.37 (s, 2H, two protons of furanyl); 13C NMR (100 MHz, CDCl ) δ 179.2, 154.1, 119.4; IR (neat, cm−1 ) 3126, 3104, 1662, 1561, 1510, 1409, 1264, 1236, 1170, 1043, 1021, 1003; MS (EI, 70 eV) m/z (%) 124 (M+ , 100).
+
+10-Undecynal (2l) (jxg-6-21).   
+![](images/bb485c68ad7d075b39c4fea5ded9b50054c838b9c1a3c7e800287ea84cc5dae4.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction scheme showing synthesis of compound 1l from aldehydes and alcohols under specified reagents and conditions
+</details>
+
+Following Typical Procedure II, the reaction of $\mathrm { F e } ( \mathrm { N O } _ { 3 } ) _ { 3 } .$ · $9 \mathrm { H } _ { 2 } \mathrm { O }$ (40.5 mg, 0.1 mmol), 4-OH-TEMPO (17.4 mg, 0.1 mmol), NaCl (5.8 mg, 0.1 mmol), and $1 1 ^ { 3 6 }$ (168.3 mg, 1.0 mmol) in DCE (4.0 mL) for 11.5 h afforded $2 \dot { \bf l } ^ { 3 7 }$ (131.8 mg, 79%) as an oil (eluent: petroleum ether/ethyl ether = 25/1 (500 mL)) (83% 2l, 6% $3 1 , ^ { ^ { 3 8 } }$ and 2% 1l were observed by NMR analysis of the crude product using CH Br as an internal standard). 1 H NMR (400 MHz, CDCl ) δ 9.77 (t, J = 1.8 Hz, 1H, CHO), 2.43 (td, J1 = 7.3 Hz, J2 = 1.6 Hz, 2H, CH2), 2.18 (td, $J _ { 1 } = 7 . 0$ Hz, $J _ { 2 } = 2 . 7$ Hz, 2H, CH2), 1.95 $\left( \mathrm { t } , J = 2 . 4 \right.$ Hz, 1H,  CH), 1.63 (quint, J = 7.2 Hz, 2H, CH2), 1.52 (quint, J = 7.3 Hz, 2H, CH ), 1.45−1.25 (m, 8H, 4 × CH ); 13C NMR (100 MHz, $\mathrm { C D C l } _ { 3 } )$ δ 202.8, 84.6, 68.1, 43.8, 29.1, 29.0, 28.8, 28.5, 28.3, 21.9, 18.3; IR $\left( \mathrm { n e a t , c m } ^ { - 1 } \right)$ 3291, 2929, 2856, 2720, 2117, 1723, 1462, 1410, 1391, 1353; MS (EI, 70 eV) m/z (%) 166 (M+ , 0.15), 81 (100).
+
+Pentadeca-2,3-dienal (2m) (jxg-6−26).   
+![](images/213ab0dac2fbe3d85970eb3fb7323be93aa7ef513abb60cccb4457e199db4d90.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction scheme showing conversion of compound 1m to 2m using Fe(NO3)3·9H2O and 4-OH-TEMPO under NaCl conditions
+</details>
+
+Following Typical Procedure II, the reaction of $\mathrm { F e } ( \mathrm { N O } _ { 3 } ) _ { 3 } .$ · $9 \mathrm { H } _ { 2 } \mathrm { O }$ (20.4 mg, 0.05 mmol), 4-OH-TEMPO (17.2 mg, 0.1 2mmol), NaCl (5.9 mg, 0.1 mmol), and $\mathbf { 1 m } ^ { 3 9 }$ (225.1 mg, 1.0 mmol) in DCE (4.0 mL) for 12 h afforded 2m (172.8 mg, 77%) as an oil (eluent: petroleum ether/ethyl ether = 50/1). 1 H NMR (400 MHz, CDCl ) δ 9.49 (d, J = 7.6 Hz, 1H, CHO), 5.85−5.73 (m, 2H, HCCCH), 2.19 (qd, J1 = 7.1 Hz, $J _ { 2 } = 3 . 0$ Hz, 2H, CH ), 1.48 (quint, J = 7.2 Hz, 2H, CH ), 1.40−1.20 (m, 16H, 8 × CH ), 0.88 (t, J = 6.8 Hz, 3H, CH ); 13C NMR (100 MHz, CDCl ) δ 219.1, 192.3, 98.6, 96.3, 31.9, 29.57, 29.55, 29.5, 29.29, 29.25, 28.9, 28.8, 27.4, 22.6, 14.1; IR (neat, $\mathsf { c m } ^ { - 1 } )$ 2922, 2853, 1943, 1689, 1463, 1357, 1108, 1084; MS (EI, 70 eV) m/z (%) 222 (M+ , 3.75), 81 (100); HRMS calcd for $\mathrm { C _ { 1 5 } H _ { 2 6 } O \left( M ^ { + } \right) }$ ) 222.1984, found 222.1982.
+
+3-Phenylpropynal (2n) (jxg-6-16).   
+![](images/73199de56b1020c114d746ffc375aaab9e7c8b1d5091ca09e70caeef195a140a.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction scheme converting compound 1n to 2n using Fe(NO3)3·9H2O and NaCl under specified conditions
+</details>
+
+Following Typical Procedure II, the reaction of $\mathrm { F e } ( \mathrm { N O } _ { 3 } ) _ { 3 }$ · 9H O (20.1 mg, 0.05 mmol), 4-OH-TEMPO (8.6 mg, 0.05 mmol), NaCl (2.9 mg, 0.05 mmol), and 1n (132.3 mg, 1.0 mmol) in DCE (4.0 mL) for 7 h afforded $2 \mathbf { n } ^ { 1 2 \mathrm { a } }$ (106.0 mg, 81%) as an oil (eluent: petroleum ether/ethyl ether $= 2 0 / 1$ (400 mL)). 1 H NMR (400 MHz, CDCl ) δ 9.42 (s, 1H, CHO), $7 . 6 3 \mathrm { - } 7 . 5 7$ (m, 2H, Ar−H), 7.52−7.45 (m, 1H, Ar−H), 7.44− 7.37 (m, 2H, $\mathrm { \bf A r { - } H } ) _ { \mathrm { - } }$ ; $^ { 1 3 } \mathrm { C }$ NMR (100 MHz, CDCl ) δ 176.8, 133.2, 131.2, 128.7, 119.3, 95.1, 88.3; IR (neat, cm−1 ) 2853, 2239, 2185, 1653, 1488, 1443, 1387, 1259, 1160, 1069, 1027, 1002; MS (EI, 70 eV) m/z (%) 130 (100).
+
+3-(4-Methoxyphenyl)propynal (2o) (jxg-6-19).
+
+![](images/ed2c56c01c3048cc6d1f18ec610f31ba94d496c24b3c8aa248d2715bbd70d8b6.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction scheme showing conversion of compound 1o to 2o using Fe(NO3)3·9H2O and NaCl under specified conditions
+</details>
+
+Following Typical Procedure II, the reaction of $\mathrm { F e } ( \mathrm { N O } _ { 3 } ) _ { 3 } .$ 9H O (40.4 mg, 0.1 mmol), 4-OH-TEMPO (17.2 mg, 0.1 2mmol), NaCl (5.9 mg, 0.1 mmol), and ${ \mathbf { 1 0 } } ^ { 4 0 }$ (162.1 mg, 1.0 mmol) in DCE (4.0 mL) for 9.5 h afforded $2 { \bf o } ^ { 4 1 }$ (123.6 mg, 77%) as a solid (eluent: petroleum ether/ethyl ether = 20/1 (500 mL)). Mp $4 7 . 1 - 4 7 . { \overset { - } { 9 } } \ ^ { \circ } \mathrm { C }$ (ethyl acetate/petroleum ether; $\mathrm { l i t . } ^ { 4 1 } 4 7 { - } 4 8 ^ { \circ } \bar { \mathrm { C } } ) ;$ 1 H NMR (400 MHz, CDCl3) δ 9.39 (s, 1H, CHO), 7.56 (d, J = 8.8 Hz, 2H, Ar−H), 6.91 (d, J = 8.8 Hz, 2H, $\mathrm { A r { - } H } )$ , 3.85 (s, 3H, CH ); $^ { 1 3 } \mathrm { C }$ NMR (100 MHz, $\mathrm { C D C l } _ { 3 } )$ δ 176.7, 162.0, 135.4, 114.4, 111.0, 96.5, 88.7, 55.4; IR (neat, $\mathsf { c m } ^ { - 1 } )$ 2933, 2839, 2249, 2177, 1641, 1596, 1566, 1506, 1463, 1416, 1387, 1302, 1253, 1174, 1112, 1020; MS (EI, 70 eV) m/z (%) 160 (M+ , 100).
+
+1-Phenylprop-2-yn-1-one (4p) (jxg-6-10).
+
+![](images/2413a2cf02ef85f61ab09713082a97b718c1a1bbd27ca0a971362b3e3daceec4.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction scheme showing oxidation of aldehyde 1p to ketone 4p using Fe(NO3)3·9H2O and NaCl under specified conditions
+</details>
+
+Following Typical Procedure II, the reaction of $\mathrm { F e } ( \mathrm { N O } _ { 3 } ) _ { 3 }$ · 9H O (20.4 mg, 0.05 mmol), 4-OH-TEMPO (8.5 mg, 0.05 mmol), NaCl (2.9 mg, 0.05 mmol), and 1p (135.5 mg, 97% purity, 1.0 mmol) in DCE (4.0 mL) for 4 h afforded $4 \mathfrak { p } ^ { 1 2 \mathrm { b } }$ (115.5 mg, 89%) as a solid (eluent: petroleum ether/ethyl ether = 20/1 (400 mL)). $\mathrm { M p } 5 0 . 1 \mathrm { - } 5 1 . 1 { \overset { \circ } { \circ } } \mathrm { C }$ (ethyl acetate/petroleum ether; lit.12b 50−51 °C); 1 H NMR (400 MHz, CDCl ) δ 8.20− 8.13 (m, 2H, Ar−H), 7.64 (t, J = 7.4 Hz, 1H, Ar−H), 7.50 (t, J = 7.6 Hz, 2H, Ar−H), 3.47 (s, 1H, CH); $^ { 1 3 } \mathrm { C }$ NMR (100 MHz, $\mathrm { C D C l } _ { 3 } )$ δ 177.4, 136.0, 134.5, 129.6, 128.6, 80.8, 80.1; IR (neat, $\mathsf { c m } ^ { - 1 } )$ 3230, 2090, 1639, 1594, 1576, 1451, 1415, 1313, 1259, 1172, 1030, 1003; MS (EI, 70 eV) m/z (%) 130 (M+ , 53.22), 102 (100).
+
+Tetradec-5-yn-7-one (4q) (jxg-6-34).
+
+![](images/00ab1c5f9d45b6b92918262badc51ffd63ead8b72aba6e4e223604f9ee1c1a4e.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction scheme showing conversion of compound 1q to 4q using Fe(NO3)3·9H2O and 4-OH-TEMPO under NaCl conditions
+</details>
+
+Following Typical Procedure II, the reaction of $\mathrm { F e } ( \mathrm { N O } _ { 3 } ) _ { 3 }$ · $9 \mathrm { H } _ { 2 } \mathrm { O }$ (20.2 mg, 0.05 mmol), 4-OH-TEMPO (8.6 mg, 0.05 mmol), NaCl (2.9 mg, 0.05 mmol), and ${ \mathbf { 1 q } } ^ { 4 2 }$ (210.6 mg, 1.0 mmol) in DCE (4.0 mL) for 7 h afforded ${ 4 \mathbf { q } } ^ { 4 3 }$ (192.4 mg, 92%) as an oil (eluent: petroleum ether/ethyl ether = 40/1 (500 mL)). 1 H NMR (400 MHz, CDCl3) δ 2.52 (t, J = 7.6 Hz, 2H, CH ), 2.37 (t, J = 7.0 Hz, 2H, CH ), 1.66 (quint, J = 7.1 Hz, 2H), 1.62−1.53 (m, 2H, CH ), 1.49−1.38 (m, 2H, CH ), 1.37−1.20 (m, 8H, 4 × CH2), 0.93 (t, J = 7.4 Hz, 3H, CH3), 0.88 (t, J = 6.8 Hz, 3H, CH3); $^ { 1 3 } \mathrm { C }$ NMR (100 MHz, CDCl3) δ 188.5, 94.1, 80.8, 45.5, 31.6, 29.7, 28.93, 28.87, 24.1, 22.5, 21.9, 18.6, 14.0, 13.4; IR (neat, cm−1 ) 2957, 2928, 2858, 2212, 1672, 1463, 1407, 1378, 1356, 1325, 1299, 1247, 1226, 1162, 1106, 1053, 1000; MS (EI, 70 eV) m/z (%) 208 (M+ , 0.32), 109 (100).
+
+1-(4-Cyanophenyl)hept-2-yn-1-one (4r) (jxg-6-35).
+
+![](images/6c75c8a99f12bd95045251416f5f73327e01e7e2e1372faa25d92287378d365f.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction scheme showing conversion of compound 1r and 4r under specified conditions to yield 91% product
+</details>
+
+Following Typical Procedure II, the reaction of $\mathrm { F e } ( \mathrm { N O } _ { 3 } ) _ { 3 } .$ $9 \mathrm { H } _ { 2 } \mathrm { O }$ (20.3 mg, 0.05 mmol), 4-OH-TEMPO (8.6 mg, 0.05 mmol), NaCl (3.0 mg, 0.05 mmol), and $\mathbf { 1 r } ^ { 4 4 }$ (213.0 mg, 1.0 mmol) in DCE (4.0 mL) for 7 h afforded $4 \mathbf { r } ^ { 4 5 }$ (192.5 mg, 91%) as an oil (eluent: petroleum ether/ethyl ether = 20/1 (500 mL) to 15/1 (300 mL)). 1 H NMR (400 MHz, CDCl ) δ 8.23 (d, J = 8.8 Hz, 2H, Ar−H), 7.80 (d, J = 8.4 Hz, 2H, Ar−H), 2.55 (t, J = 7.0 Hz, 2H, CH ), 1.73−1.64 (m, 2H, CH ), 1.57−1.45 (m, 2H, $\mathrm { C H } _ { 2 } )$ , 0.98 $\left( \mathbf { t } , J = 7 . 2 \right.$ Hz, 3H, CH ); $^ { 1 3 } \mathrm { C }$ NMR (100 MHz, CDCl ) δ 176.3, 139.5, 132.3, 129.7, 117.8, 116.8, 99.0, 79.2, 29.6, 22.0, 18.9, 13.4; IR (neat, $\mathrm { c m } ^ { - 1 } )$ 2959, 2933, 2871, 2231, 2198, 1647, 1605, 1566, 1463, 1404, 1309, 1293, 1257, 1175, 1110, 1017; MS (EI, 70 eV) m/z (%) 211 (M+ , 5.56), 169 (100).
+
+Aerobic Oxidation of Alcohols in Toluene. Phenyl-2-propenal (E-2d) (ljx-2-56).
+
+![](images/f1af6d03cba5e43ef335ff1d5c730c7aacc437f59d69cd19a759155b1ec8c34a.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction scheme converting E-1d to E-2d using Fe(NO3)3·9H2O and 4-OH-TEMPO under toluene catalysis
+</details>
+
+To a Schlenk tube were added $\mathrm { F e } \left( \mathrm { N O } _ { 3 } \right) _ { 3 } { \cdot } 9 \mathrm { H } _ { 2 } \mathrm { O }$ (20.4 mg, 0.05 mmol), 4-OH-TEMPO (17.2 mg, 0.1 mmol), NaCl (5.7 mg, 0.1 mmol), E-1d (134.5 mg, 1.0 mmol), and toluene (4.0 mL) sequentially under an atmosphere of oxygen from a 2 L (commercial size) gas bag. The Schlenk tube was then stirred at 25 $^ \circ \mathrm { C }$ until completion of the reaction as monitored by TLC (petroleum ether/ethyl acetate = 3/1) (24 h). The crude reaction mixture was filtered through a short column of silica gel (height, 2 cm; $\Phi , 3 \mathrm { c m } )$ , eluting with diethyl ether (3 × 25 mL). After evaporation, the residue was purified by chromatography on silica gel (eluent: petroleum ether/ethyl acetate = 10/1) to afford E $- 2 \mathbf { d } ^ { 1 9 }$ (122.5 mg, 92%) as an oil (95% E-2d was observed by NMR analysis of the crude product using $\mathrm { C H } _ { 2 } \mathrm { B r } _ { 2 }$ as an internal standard).
+
+2. 1-Phenylprop-2-yn-1-one (4p) (ljx-2-46).
+
+![](images/b0ae60ce9c73111dda40c951b21ca0c020e8bb7db980aa7db987809aa6d7f263.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction scheme showing oxidation of aldehyde 1p to ketone 4p using Fe(NO3)3·9H2O and 4-OH-TEMPO under toluene conditions
+</details>
+
+To a Schlenk tube were added $\mathrm { F e } \left( \mathrm { N O } _ { 3 } \right) _ { 3 } { \cdot } 9 \mathrm { H } _ { 2 } \mathrm { O }$ (20.2 mg, 0.05 mmol), 4-OH-TEMPO (8.8 mg, 0.05 mmol), NaCl (2.7 mg, 0.05 mmol), 1p (132.1 mg, 1.0 mmol), and toluene (4.0 mL) sequentially. The Schlenk tube was then connected with a 2 L (commercial size) gas bag of air stirred at $2 5 ^ { \circ } \mathrm { C }$ until completion of the reaction as monitored by TLC (petroleum ether/ethyl acetate = 5/1) (8 h). The crude reaction mixture was filtered through a short column of silica gel (height, 2 cm; Φ, 3 cm), eluting with diethyl ether $( 3 \times 2 5 ~ \mathrm { m L } )$ . After evaporation, the residue was purified by chromatography on silica gel (eluent: petroleum ether/ethyl acetate = 20/1 (200 mL)) to afford $4  { \mathbf { p } } ^ { 3 1 }$ (110.5 mg, 85%) as a solid.
+
+Reaction on a 100 mmol Scale with a Slow Flow of Air (jxg-6-121).
+
+$$
+\begin{array}{c} \text {Fe(NO_{3})_{3}\cdot9H_{2}O (5 mol\%)} \\ 4 - \text {OH - TEMPO (10 mol\%)} \\ \text {NaCl (10 mol\%)} \\ \text {n - C_{11} H_{23} CH_{2} OH} \\ \text {DCE, air flow (30 mL / min)} \\ 2 5 ^ {\circ} \mathrm{C}, 1 5. 5 \mathrm{h} \\ 1 0 0 \mathrm{mmol} \end{array}
+$$
+
+$$
+\begin{array}{c c} n - \mathrm{C} _ {1 1} \mathrm{H} _ {2 3} \mathrm{CHO} + & n - \mathrm{C} _ {1 1} \mathrm{H} _ {2 3} \mathrm{COOH} \\ \textbf {2 a} & \textbf {3 a} \\ 8 8. 5 \% \text {by NMR} & 1. 5 \% \text {by NMR} \\ 8 8 \% \text {by isolation} & \end{array}
+$$
+
+To a 1 L three-neck flask were added $\mathrm { F e } \left( \mathrm { N O } _ { 3 } \right) _ { 3 } { \cdot } 9 \mathrm { H } _ { 2 } \mathrm { O }$ (2.0210 g, 5.0 mmol), 4-OH-TEMPO (1.7212 g, 10.0 mmol), NaCl (0.5846 g, 10.0 mmol), and DCE (200 mL) sequentially. After 10 min of stirring, 1a (18.8203 g, 99% purity, 100.0 mmol) and DCE (100 mL) were added. A slow flow of air directly from an air cylinder (99.99%, 30 mL/min) was then connected to the flask (Figure 1). The resulting mixture was stirred at $2 5 ~ ^ { \circ } \mathrm { C }$ until completion of the reaction as monitored by TLC (petroleum ether/ethyl acetate = 5/1) (15.5 h). The crude reaction mixture was filtered through a short column of silica gel (height, 3 cm; Φ, 7.5 cm), eluting with ethyl ether (300 mL). After evaporation, the residue was purified by chromatography on silica gel (eluent: petroleum ether/ethyl acetate = 100/1 (3.2 L)) to afford 2a (16.3054 g, 88%) as an oil (88.5% 2a and 1.5% 3a were observed by NMR analysis of the crude product using $\mathrm { C H } _ { 2 } \mathrm { B r } _ { 2 }$ as an internal standard). 1 H NMR (400 MHz, CDCl ) δ 9.76 $( \mathfrak { t } , J =$ $1 . 6 \mathrm { H z } ,$ 1H, CHO), 2.42 (td, J = 7.3 Hz, J = 1.7 Hz, 2H, CH ), 1.63 (quint, J = 7.3 Hz, 2H, CH ), 1.38−1.16 (m, 16H, 8 × CH ), 0.88 (t, J = 7.0 Hz, 3H, CH ); 13C NMR (100 MHz, CDCl ) δ 202.9, 43.9, 31.9, 29.6, 29.4, 29.32, 29.29, 29.1, 22.6, 22.1, 14.1.
+
+Reaction on a 0.5 mol Scale with a Slow Flow of Air (ljx-2-115).
+
+![](images/6de3915bad06bd5a7a0f606e2ca493f2b886f563ddd5a1a8056051e0b931adc8.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction scheme showing synthesis of compound 4s from 1s and 0.5 mol under specified conditions
+</details>
+
+To a 500 mL three-neck flask were added $\mathrm { F e } \left( \mathrm { N O } _ { 3 } \right) _ { 3 } { \cdot } 9 \mathrm { H } _ { 2 } \mathrm { O }$ (10.1407 g, 25.1 mmol), 4-OH-TEMPO (4.3114 g, 25.0 mmol), NaCl (1.4754 g, 25.2 mmol), 1s (61.0180 g, 0.5 mol), and toluene (100 mL) sequentially. A slow flow of air directly from an air cylinder (30 mL/min) was then connected to the flask, and the temperature increased to $3 5 ~ ^ { \circ } \mathrm { C }$ . The resulting mixture was stirred at $2 5 ~ ^ { \circ } \mathrm { C }$ until completion of the reaction as monitored by TLC (petroleum ether/ethyl acetate = 5/1) (42 h). The liquid layer was transferred to a 500 mL flask for distillation, and the residue was washed with DCM (10 mL × 3) and added to the distillation flask, after which the resulting mixture was distilled at reduced pressure to afford ${ 4 \mathbf { s } } ^ { 1 2 \mathrm { a } }$ in 84% yield (50.2509 g) as a yellow oil. 1 H NMR (300 MHz, CDCl ) δ 7.96 (d, J = 7.2 Hz, 2H, Ar−H), 7.57 (t, J = 7.2 Hz, 1H, Ar−H), 7.47 (t, J = 7.2 Hz, 2H, Ar−H), 2.61 (s, 3H, CH ); 13C NMR (75 MHz, CDCl ) δ 198.1, 137.1, 133.1, 128.5, 128.3, 26.6; IR (neat, $\mathsf { c m } ^ { - 1 } )$ 3062, 1682, 1599, 1582, 1449, 1429, 1359, 1266, 1180, 1079, 1025; MS (EI, 70 eV) m/z (%) 120 (M+ , 34.07), 105 (100).
+
+Reaction of 1s on a 0.5 mol Scale with Pure Oxygen without Solvent (ljx-2-163).
+
+![](images/4bb99725223a53a6d8e8a045abcac0e22d7db937be1d6852d2ccb4184efb5c77.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction scheme showing oxidation of compound 1s to 4s using Fe(NO3)3·9H2O and NaCl under O2 conditions
+</details>
+
+To a 500 mL three-neck flask were added $\mathrm { F e } \left( \mathrm { N O } _ { 3 } \right) _ { 3 } { \cdot } 9 \mathrm { H } _ { 2 } \mathrm { O }$ (10.1058 g, 25.0 mmol), 4-OH-TEMPO (4.2969 g, 24.9 mmol), NaCl (1.5068 g, 25.8 mmol), and 1s (61.1377 g, 0.5 mol) sequentially, the atmosphere was replaced by pure oxygen twice from a gas bag (commercial size: 2 L). The resulting mixture was stirred at room temperature under the atmosphere of pure oxygen until completion of the reaction as monitored by NMR analysis (Caution: the reaction temperature would rise up to 62 $^ \circ \mathrm { C }$ and an ice water bath was used until the temperature dropped down to $2 5 \ ^ { \circ } \mathrm { C } ,$ repeat this manipulation when necessary). The resulting mixture was transferred to a 250 mL flask for distillation in reduced pressure to afford 4s in 85% yield (51.1496 g, yellow oil, bp $7 0 { - } 7 2 \ ^ { \circ } \mathrm { C } / 7 . 0$ Torr (lit. 73 °C/7.0 $\mathrm { T o r r } ^ { 4 6 } ) \rangle _ { \ / }$ ).
+
+# ASSOCIATED CONTENT
+
+# \*S Supporting Information
+
+The Supporting Information is available free of charge on the ACS Publications website at DOI: 10.1021/acs.oprd.8b00374.
+
+1 H and $^ { 1 3 } \mathrm { C }$ NMR spectra for all of the products (PDF)
+
+# AUTHOR INFORMATION
+
+# Corresponding Author
+
+\*E-mail: masm@sioc.ac.cn.
+
+# ORCID
+
+Shengming Ma: 0000-0002-2866-2431
+
+# Notes
+
+The authors declare no competing financial interest.
+
+# ACKNOWLEDGMENTS
+
+Financial support from the National Basic Research Program of China (2015CB856600) is greatly appreciated. We thank Mr. Yulong Song in this group for reproducing the preparation of ${ \mathfrak { 2 c } } ,$ 2h, and 4r.
+
+# REFERENCES
+
+(1) Caron, S.; Dugger, R. W.; Ruggeri, S. G.; Ragan, J. A.; Ripin, D. H. B. Large-Scale Oxidations in the Pharmaceutical Industry. Chem. Rev. 2006, 106, 2943.   
+(2) Tojo, G.; Fernandez, M.́ Oxidation of Alcohols to Aldehydes and Ketones: A Guide to Current Common Practice; Springer: New York, 2006.   
+(3) Fatiadi, A. J. Active Manganese Dioxide Oxidation in Organic Chemistry - Part I. Synthesis 1976, 1976, 65.   
+(4) Gonzalez-Nu ́ ń ̃ez, M. E.; Mello, R.; Olmos, A.; Acerete, R.; Asensio, G. Oxidation of Alcohols to Carbonyl Compounds with CrO · SiO in Supercritical Carbon Dioxide. J. Org. Chem. 2006, 71, 1039.   
+(5) Chakor, N. S.; Musso, L.; Dallavalle, S. First Total Synthesis of Cyrmenin B . J. Org. Chem. 2009, 74, 844.   
+(6) For some reviews of aerobic oxidations of alcohols, see: (a) Piera, J.; Bäckvall, J.-E. Catalytic Oxidation of Organic Substrates by Molecular Oxygen and Hydrogen Peroxide by Multistep Electron Transfer-A Biomimetic Approach. Angew. Chem., Int. Ed. 2008, 47, 3506. (b) Ryland, B. L.; Stahl, S. S. Practical Aerobic Oxidations of Alcohols and Amines with Homogeneous Copper/TEMPO and Related Catalyst Systems. Angew. Chem., Int. Ed. 2014, 53, 8824. (c) Cao, Q.; Dornan, L. M.; Rogan, L.; Hughes, N. L.; Muldoon, M. J. Aerobic Oxidation Catalysis with Stable Radicals. Chem. Commun. 2014, 50, 4524. (d) Sheldon, R. A.; Arends, I. W. C. E. Organocatalytic Oxidations Mediated by Nitroxyl Radicals. Adv. Synth. Catal. 2004, 346, 1051.   
+(7) (a) Lloyd, W. G. Homogeneous Oxidations of Alcohols with Palladium(II) Salts. J. Org. Chem. 1967, 32, 2816. (b) Blackburn, T. F.; Schwartz, J. Homogeneous Catalytic Oxidation of Secondary Alcohols to Ketones by Molecular Oxygen under Mild Conditions. J. Chem. Soc., Chem. Commun. 1977, 157. (c) Peterson, K. P.; Larock, R. C. Palladium-Catalyzed Oxidation of Primary and Secondary Allylic and Benzylic Alcohols. J. Org. Chem. 1998, 63, 3185. (d) Wang, L.-Y.; Li, J.; Lv, Y.; Zhang, H.-Y.; Gao, S. Aerobic Alcohol Oxidation Using a PdCl / N,N-dimethylacetamide Catalyst System under Mild Conditions. J. Organomet. Chem. 2011, 696, 3257. (e) Nishimura, T.; Onoue, T.; Ohe, K.; Uemura, S. Palladium(II)-Catalyzed Oxidation of Alcohols to Aldehydes and Ketones by Molecular Oxygen. J. Org. Chem. 1999, 64, 6750. (f) Schultz, M. J.; Park, C. C.; Sigman, M. S. A Convenient Palladium-Catalyzed Aerobic Oxidation of Alcohols at Room Temperature. Chem. Commun. 2002, 3034. (g) Jensen, D. R.; Schultz, M. J.; Mueller, J. A.; Sigman, M. S. A Well-Defined Complex for Palladium-Catalyzed Aerobic Oxidation of Alcohols: Design, Synthesis, and Mechanistic Considerations. Angew. Chem., Int. Ed. 2003, 42, 3810. (h) Gowrisankar, S.; Neumann, H.; Gördes, D.; Thurow, K.; Jiao, H.; Beller, M. A Convenient and Selective Palladium-Catalyzed Aerobic Oxidation of Alcohols. Chem. - Eur. J. 2013, 19, 15979. (i) Veisi, H.; Hemmati, S.; Qomi, M. Aerobic Oxidation of Benzyl Alcohols through Biosynthesized Palladium Nanoparticles Mediated by Oak Fruit Bark Extract as an Efficient Heterogeneous Nanocatalyst. Tetrahedron Lett. 2017, 58, 4191. (j) Verma, S.; Nasir Baig, R. B.; Nadagouda, M. N.; Varma, R. S. Aerobic Oxidation of Alcohols in Visible Light on Pd-Grafted Ti Cluster. Tetrahedron 2017, 73, 5577.   
+(8) (a) Wang, G.-Z.; Andreasson, U.; Backvall, J.-E. Aerobic Oxidation̈ of Secondary Alcohols via Ruthenium-catalysed Hydrogen Transfer Involving a New Triple Catalytic System. J. Chem. Soc., Chem. Commun. 1994, 1037. (b) Hanyu, A.; Takezawa, E.; Sakaguchi, S.; Ishii, Y. Selective Aerobic Oxidation of Primary Alcohols Catalyzed by a $\mathrm { R u } ( \mathrm { P P h } _ { 3 } ) _ { 3 } \mathrm { C l } _ { 2 } /$ Hydroquinone System. Tetrahedron Lett. 1998, 39, 5557. (c) Guo, H.; Liu, W.-D.; Yin, G. Aerobic Oxidation of Alcohols to Aldehydes and Ketones using Ruthenium(III)/Et N Catalyst. Appl. Organomet. Chem. 2011, 25, 836. (d) Yu, K.; Ye, D.; Shu, L.; Zhang, S.; Hu, Q.; Liu, L. RuCl -DCHA Catalyst System: A Selective Aerobic Oxidation of Primary Benzylic Alcohols Under Mild Conditions. Synth. Commun. 2012, 42, 2318. (e) Liu, G.; Liu, J.; Li, W.; Liu, C.; Wang, F.; He, J.; Guild, C.; Jin, J.; Kriz, D.; Miao, R.; Suib, S. L. Aerobic Oxidation of Alcohols over Ru-Mn-Ce and Ru-Co-Ce Catalysts: The Effect of Calcination Temperature. Appl. Catal., A 2017, 535, 77.
+
+(9) Guan, B.; Xing, D.; Cai, G.; Wan, X.; Yu, N.; Fang, Z.; Yang, L.; Shi, Z. Highly Selective Aerobic Oxidation of Alcohol Catalyzed by a Gold(I) Complex with an Anionic Ligand. J. Am. Chem. Soc. 2005, 127, 18004.   
+(10) Han, L.; Xing, P.; Jiang, B. Selective Aerobic Oxidation of Alcohols to Aldehydes, Carboxylic Acids, and Imines Catalyzed by a Ag-NHC Complex. Org. Lett. 2014, 16, 3428.   
+(11) (a) Martín, S. E.; Suarez, D. F. Catalytic Aerobic Oxidation of ́ Alcohols by Fe(NO ) -FeBr . Tetrahedron Lett. 2002, 43, 4475. (b) Wang, N.; Liu, R.; Chen, J.; Liang, X. NaNO -Activated, Iron-TEMPO Catalyst System for Aerobic Alcohol Oxidation under Mild Conditions. Chem. Commun. 2005, 5322. (c) Yin, W.; Chu, C.; Lu, Q.; Tao, J.; Liang, X.; Liu, R. Iron Chloride/4-Acetamido-TEMPO/ Sodium Nitrite-Catalyzed Aerobic Oxidation of Primary Alcohols to the Aldehydes. Adv. Synth. Catal. 2010, 352, 113. (d) Wang, X.; Liang, X. Aerobic Oxidation of Alcohols to Carbonyl Compounds Catalyzed by Fe(NO ) /4-OH-TEMPO under Mild Conditions. Chin. J. Catal. 2008, 29, 935.   
+(12) (a) Ma, S.; Liu, J.; Li, S.; Chen, B.; Cheng, J.; Kuang, J.; Liu, Y.; Wan, B.; Wang, Y.; Ye, J.; Yu, Q.; Yuan, W.; Yu, S. Development of a General and Practical Iron Nitrate/TEMPO-Catalyzed Aerobic Oxidation of Alcohols to Aldehydes/Ketones: Catalysis with Table Salt. Adv. Synth. Catal. 2011, 353, 1005. (b) Liu, J.; Xie, X.; Ma, S. Aerobic Oxidation of Propargylic Alcohols to α,β-Unsaturated Alkynals or Alkynones Catalyzed by Fe(NO ) ·9H O, TEMPO and Sodium Chloride in Toluene. Synthesis 2012, 44, 1569. (c) Liu, J.; Ma, S. Aerobic Oxidation of Propargyl Alcohol: A Convenient Method for the Synthesis of Propiolaldehyde. Synthesis 2013, 45, 1624. (d) Liu, J.; Ma, S. Room Temperature Fe(NO ) ·9H O/TEMPO/NaCl-Catalyzed Aerobic Oxidation of Homopropargylic Alcohols. Tetrahedron 2013, 69, 10161. (e) Liu, J.; Ma, S. Iron-Catalyzed Aerobic Oxidation of Allylic Alcohols: The Issue of C−C Bond Isomerization. Org. Lett. 2013, 15, 5150. (f) Liu, J.; Ma, S. Aerobic Oxidation of Indole Carbinols Using Fe(NO ) ·9H O/TEMPO/NaCl as Catalysts. Org. Biomol. Chem. 2013, 11, 4186.   
+(13) (a) Tamura, N.; Aoyama, T.; Takido, T.; Kodomari, M. Novel [4-Hydroxy-TEMPO + NaCl]/SiO as a Reusable Catalyst for Aerobic Oxidation of Alcohols to Carbonyls. Synlett 2012, 23, 1397. (b) Wang, L.; Li, J.; Lv, Y.; Zhao, G.; Gao, S. Selective Aerobic Oxidation of Alcohols Catalyzed by Iron Chloride Hexahydrate/TEMPO in the Presence of Silica Gel. Appl. Organomet. Chem. 2012, 26, 37. (c) Wang, L.; Li, J.; Zhao, X.; Lv, Y.; Zhang, H.; Gao, S. An Efficient and Scalable Room Temperature Aerobic Alcohol Oxidation Catalyzed by Iron Chloride Hexahydrate/Mesoporous Silica Supported TEMPO. Tetrahedron 2013, 69, 6041. (d) Wang, L.; Shang, S.; Li, G.; Ren, L.; Lv, Y.; Gao, S. Iron/ABNO-Catalyzed Aerobic Oxidation of Alcohols to Aldehydes and Ketones under Ambient Atmosphere. J. Org. Chem. 2016, 81, 2189. (e) Zhang, G.; Li, S.; Lei, J.; Zhang, G.; Xie, X.; Ding, C.; Liu, R. An Efficient Biomimetic Aerobic Oxidation of Alcohols Catalyzed by Iron Combined with Amino Acids. Synlett 2016, 27, 956. (f) Shi, X.-J.; Qian, J.; Tan, F.-F.; Yu, C.-M. Mild Aerobic Oxidation of Alcohols Catalysed by Fe (SO ) /4-OH-TEMPO/NaNO . J. Chem. Res. 2013, 37, 398. (g) Li, R.; Zhao, J.; Yang, F.; Zhang, Y.; Ramella, D.; Peng, Y.; Luan, Y. An Fe3O4@P4VP@FeCl3 Core−Shell Heterogeneous Catalyst for Aerobic Oxidation of Alcohols and Benzylic Oxidation Reaction. RSC Adv. 2017, 7, 51142. (h) Zhao, H.; Sun, W.; Miao, C.; Zhao, Q. Aerobic Oxidation of Secondary Alcohols using NHPI and Iron Salt as Catalysts at Room Temperature. J. Mol. Catal. A: Chem. 2014, 393, 62. (i) Hu, Y.; Chen, L.; Li, B. Fe(NO ) /2,3- Dichloro-5,6-dicyano-1,4-benzoquinone (DDQ): An Efficient Catalyst System for Selective Oxidation of Alcohols under Aerobic Conditions. Catal. Commun. 2018, 103, 42.   
+(14) (a) Semmelhack, M. F.; Schmid, C. R.; Cortes, D. A.; Chou, C. S.́ Oxidation of Alcohols to Aldehydes with Oxygen and Cupric Ion, Mediated by Nitrosonium Ion. J. Am. Chem. Soc. 1984, 106, 3374. (b) Gamez, P.; Arends, I. W. C. E.; Reedijk, J.; Sheldon, R. A. Copper(II)-Catalysed Aerobic Oxidation of Primary Alcohols to Aldehydes. Chem. Commun. 2003, 2414. (c) Lu, Z.; Ladrak, T.; Roubeau, O.; van der Toorn, J.; Teat, S. J.; Massera, C.; Gamez, P.;
+
+Reedijk, J. Selective, Catalytic Aerobic Oxidation of Alcohols using CuBr and Bifunctional Triazine-based Ligands Containing Both a Bipyridine and a TEMPO Group. Dalton Trans. 2009, 3559. (d) Hu, Z.; Kerton, F. M. Room Temperature Aerobic Oxidation of Alcohols Using CuBr with TEMPO and a Tetradentate Polymer Based Pyridyl-Imine Ligand. Appl. Catal., A 2012, 413−414, 332. (e) Wang, L.; Bie, Z.; Shang, S.; Lv, Y.; Li, G.; Niu, J.; Gao, S. Bioinspired Aerobic Oxidation of Alcohols with a Bifunctional Ligand Based on Bipyridine and TEMPO. RSC Adv. 2016, 6, 35008. (f) Hoover, J. M.; Stahl, S. S. Highly Practical Copper(I)/TEMPO Catalyst System for Chemoselective Aerobic Oxidation of Primary Alcohols. J. Am. Chem. Soc. 2011, 133, 16901. (g) Steves, J. E.; Stahl, S. S. Copper(I)/ABNO-Catalyzed Aerobic Alcohol Oxidation: Alleviating Steric and Electronic Constraints of Cu/TEMPO Catalyst Systems. J. Am. Chem. Soc. 2013, 135, 15742. (h) Sasano, Y.; Nagasawa, S.; Yamazaki, M.; Shibuya, M.; Park, J.; Iwabuchi, Y. Highly Chemoselective Aerobic Oxidation of Amino Alcohols into Amino Carbonyl Compounds. Angew. Chem., Int. Ed. 2014, 53, 3236. (i) Marko, I. E.; Giles, P. R.; Tsukazaki, M.; Brown, ́ S. M.; Urch, C. J. Copper-Catalyzed Oxidation of Alcohols to Aldehydes and Ketones: An Efficient, Aerobic Alternative. Science 1996, 274, 2044. (j) Xu, B.; Lumb, J. P.; Arndtsen, B. A. A TEMPO-Free Copper-Catalyzed Aerobic Oxidation of Alcohols. Angew. Chem., Int. Ed. 2015, 54, 4208. (k) Tan, D.-W.; Xie, J.-B.; Li, Q.; Li, H.-X.; Li, J.- C.; Li, H.-Y.; Lang, J.-P. Syntheses and structures of copper complexes of 3-(6-(1H-pyrazol-1-yl)pyridin-2-yl)pyrazol-1-ide and their excellent performance in the syntheses of nitriles and aldehydes. Dalton Trans. 2014, 43, 14061. (l) Guo, B.; Xue, J.-Y.; Li, H.-X.; Tan, D.-W.; Lang, J.- P. Design of recyclable TEMPO derivatives bearing an ionic liquid moiety and N,N-bidentate group for highly efficient Cu(I)-catalyzed conversion of alcohols into aldehydes and imines. RSC Adv. 2016, 6, 51687.   
+(15) (a) Tovrog, B. S.; Diamond, S. E.; Mares, F.; Szalkiewicz, A. Activation of Cobalt-Nitro Complexes by Lewis Acids: Catalytic Oxidation of Alcohols by Molecular Oxygen. J. Am. Chem. Soc. 1981, 103, 3522. (b) Zhou, W.; Chen, D.; Cui, A.; Qian, J.; He, M.; Chen, Q. Aerobic Oxidation of Alcohols to Carbonyl Compounds Catalyzed by N-Hydroxyphthalimide (NHPI) Combined with CoTPP-Zn Al-LDH. J. Chem. Sci. 2017, 129, 295.   
+(16) (a) Ciriminna, R.; Pagliaro, M. Industrial Oxidations with Organocatalyst TEMPO and Its Derivatives. Org. Process Res. Dev. 2010, 14, 245. (b) Ciriminna, R.; Ghahremani, M.; Karimi, B.; Pagliaro, M. Electrochemical Alcohol Oxidation Mediated by TEMPO-like Nitroxyl Radicals. ChemistryOpen 2017, 6, 5. In the current Chinese market, TEMPO costs 490 yuan/kg and 4-OH-TEMPO costs 60 yuan/ kg.   
+(17) (a) Jiang, X.; Zhang, J.; Ma, S. Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids. J. Am. Chem. Soc. 2016, 138, 8344. (b) Jiang, X.; Ma, S. Studies on Iron-Catalyzed Aerobic Oxidation of Benzylic Alcohols to Carboxylic Acids. Synthesis 2018, 50, 1629. (c) Jiang, X.; Zhai, Y.; Chen, J.; Han, Y.; Yang, Z.; Ma, S. Iron-Catalyzed Aerobic Oxidation of Aldehydes: Single Component Catalyst and Mechanistic Studies. Chin. J. Chem. 2018, 36, 15.   
+(18) Rosatella, A. A.; Simeonov, S. P.; Frade, R. F. M.; Afonso, C. A. M. 5-Hydroxy-Methylfurfural (HMF) as a Building Block Platform: Biological Properties, Synthesis and Synthetic Applications. Green Chem. 2011, 13, 754.   
+(19) Shibata, M.; Nagata, R.; Saito, S.; Naka, H. Dehydrogenation of Primary Aliphatic Alcohols by Au/TiO Photocatalysts. Chem. Lett. 2017, 46, 580.   
+(20) Shimada, Y.; Hattori, K.; Tada, N.; Miura, T.; Itoh, A. Facile Aerobic Photooxidation of Alcohols Using 2-Chloroanthraquinone under Visible Light Irradiation. Synthesis 2013, 45, 2684.   
+(21) Kornblum, N.; Erickson, A. S.; Kelly, W. J.; Henggeler, B. Conversion of Nitro Paraffins into Aldehydes and Ketones. J. Org. Chem. 1982, 47, 4534.   
+(22) Choi, S. E.; Pflum, M. K. H. The Structural Requirements of Histone Deacetylase Inhibitors: Suberoylanilide Hydroxamic Acid
+
+Analogs Modified at the C6 Position. Bioorg. Med. Chem. Lett. 2012, 22, 7084.   
+(23) Tsuji, H.; Yamamoto, H. Hydroxy-Directed Amidation of Carboxylic Acid Esters Using a Tantalum Alkoxide Catalyst. J. Am. Chem. Soc. 2016, 138, 14218.   
+(24) von Wantoch Rekowski, M.; Kumar, V.; Zhou, Z.; Moschner, J.; Marazioti, A.; Bantzi, M.; Spyroulias, G. A.; van den Akker, F.; Giannis, A.; Papapetropoulos, A. Insights into Soluble Guanylyl Cyclase Activation Derived from Improved Heme-Mimetics. J. Med. Chem. 2013, 56, 8948.   
+(25) Lu, Y.; Nguyen, P. L.; Levaray, N.; Lebel, H. Palladium-Catalyzed ́ Saegusa−Ito Oxidation: Synthesis of α,β-Unsaturated Carbonyl Compounds from Trimethylsilyl Enol Ethers. J. Org. Chem. 2013, 78, 776.   
+(26) Cabezas, J. A.; Oehlschlager, A. C. Stereospecific Synthesis of (E, Z)- and (Z, Z)-Hexadeca-10,12-dienal. Sex Pheromone Components of Diaphania hyalinata. Synthesis 1999, 1999, 107.   
+(27) Lin, L.; Zhao, Q.; Li, A.-N.; Ren, F.; Yang, F.; Wang, R. Enantioselective Synthesis of Anomala Osakana Pheromone and Janus Integer Pheromone: a Flexible Approach to Chiral γ-butyrolactones. Org. Biomol. Chem. 2009, 7, 3663.   
+(28) Zhang, X.; Zhang, W.-Z.; Ren, X.; Zhang, L.-L.; Lu, X.-B. Ligand-Free Ag(I)-Catalyzed Carboxylation of Terminal Alkynes with CO2. Org. Lett. 2011, 13, 2402.   
+(29) Sun, G.; Lv, X.; Zhang, Y.; Lei, M.; Hu, L. Palladium-Catalyzed Formylation of Aryl Iodides with HCOOH as CO Source. Org. Lett. 2017, 19, 4235.   
+(30) Shaikh, T. M.; Hong, F.-E. Efficient Method For the Oxidation of Aldehydes and Diols with tert-butylhydroperoxide Under Transition Metal-Free Conditions. Tetrahedron 2013, 69, 8929.   
+(31) Yang, H.; Li, Y.; Jiang, M.; Wang, J.; Fu, H. General Copper-Catalyzed Transformations of Functional Groups from Arylboronic Acids in Water. Chem. - Eur. J. 2011, 17, 5652.   
+(32) Lin, R.; Chen, F.; Jiao, N. Metal-Free, NHPI Catalyzed Oxidative Cleavage of C−C Double Bond Using Molecular Oxygen as Oxidant. Org. Lett. 2012, 14, 4158.   
+(33) Imai, S.; Togo, H. Synthetic Utility of Iodic acid in the Oxidation of Benzylic Alcohols to Aromatic Aldehydes and Ketones. Tetrahedron 2016, 72, 6948.   
+(34) Makosza, M.; Owczarczyk, Z. Dihalomethylation of Nitroarenes ̧ via Vicarious Nucleophilic Substitution of Hydrogen with Trihalomethyl Carbanions. J. Org. Chem. 1989, 54, 5094.   
+(35) Johnston, R. G.; Kidd, D. Antimicrobials. Part I. 5-Nitrofuran Analogues. J. Chem. Soc. 1964, 4730.   
+(36) Kuang, J.; Xie, X.; Ma, S. A. General Approach to Terminal Allenols. Synthesis 2013, 45, 592.   
+(37) Pelletier, G.; Bechara, W. S.; Charette, A. B. Controlled and Chemoselective Reduction of Secondary Amides. J. Am. Chem. Soc. 2010, 132, 12817.   
+(38) Beyazkilic, Z.; Lligadas, G.; Ronda, J. C.; Galia, M.; Ca ̀ diz, V. ́ Synthesis and Functionalization of Vinylsulfide and Ketone-Containing Aliphatic Copolyesters from Fatty Acids. Polymer 2015, 79, 290.   
+(39) Kuang, J.; Luo, H.; Ma, S. Copper(I) Iodide-Catalyzed One-Step Preparation of Functionalized Allenes from Terminal Alkynes: Amine Effect. Adv. Synth. Catal. 2012, 354, 933.   
+(40) Wang, C.; Abegg, D.; Hoch, D. G.; Adibekian, A. Chemoproteomics-Enabled Discovery of a Potent and Selective Inhibitor of the DNA Repair Protein MGMT. Angew. Chem., Int. Ed. 2016, 55, 2911.   
+(41) Su, Q.; Yan, H.; Gao, S.-C.; Xie, D.-X.; Cai, Q.-Y.; Shao, G.; Peng, Z.-H.; An, D.-L. Efficient One-Pot Preparation of Methylthio Arylbutadiynes by Double Elimination Protocol. Synth. Commun. 2013, 43, 2648.   
+(42) Du, Y.; Turlington, M.; Zhou, X.; Pu, L. Highly Enantioselective Addition of Linear Alkyl Alkynes to Linear Aldehydes. Tetrahedron Lett. 2010, 51, 5024.   
+(43) Hoshi, M.; Masuda, Y.; Arase, A. The Synthesis of Internal Conjugated (E)-Enynyldialkylboranes and Their Applications to the Syntheses of Conjugated Alkynones, Conjugated (E)-Enynes, and
+
+Conjugated Enynes Bearing an Unsaturated Group on the Double Bond. Bull. Chem. Soc. Jpn. 1985, 58, 1683.   
+(44) Vidhani, D. V.; Krafft, M. E.; Alabugin, I. V. Rh(I)-Catalyzed Transformation of Propargyl Vinyl Ethers into (E,Z)-Dienals: Stereoelectronic Role of trans Effect in a Metal-Mediated Pericyclic Process and a Shift from Homogeneous to Heterogeneous Catalysis During a One-Pot Reaction. J. Org. Chem. 2014, 79, 352.   
+(45) Hirao, T.; Misu, D.; Agawa, T. Versatile Synthesis α,β-Acetylenic Ketones by Oxidative Nucleophilic Addition of Vanadium Acetylides. Tetrahedron Lett. 1986, 27, 933.   
+(46) Zieger, H.; Brendan, L. The Nitration of Pivalophenone with Nitronium Tetrafluoroborate in Sulfolane. Tetrahedron 1990, 46, 2707.

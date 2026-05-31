@@ -1,0 +1,285 @@
+# Iron-Catalyzed Aerobic Oxidation of Aldehydes: Single Component Catalyst and Mechanistic Studies
+
+Xingguo Jiang,a,b‡ Yizhan Zhai,a,b‡ Junyu Chen,a,b Yulin Han,a,b Zheng Yang,a,b and Shengming $M \mathbf { \hat { q } } ^ { * , a , c }$
+
+ABSTRACT An aerobic oxidation of aldehydes towards carboxylic acids in MeCN using 1 atm of pure oxygen or oxygen in air as the oxidant and a catalytic amount of single component catalyst, Fe(NO3)3·9H2O, has been developed. Carboxylic acids with different synthetically useful functional groups were obtained at room temperature. Two mechanistic pathways have been proposed based on isotopic labeling, NMR monitoring, and control experiments. The practicality of this reaction has been demonstrated by conducting several 50 mmol-scale reactions using pure oxygen or an air-flow $0 ^ { \mathsf { f } } \sim 3 0 ~ \mathrm { m L / m i n }$ . KEYWORDS iron catalysis, aerobic oxidation, aldehyde, carboxylic acid, single component catalyst, mechanistic studies
+
+# Introduction
+
+As one of the most important and fundamental chemicals in industry and laboratory, carboxylic acids could be obtained by oxidation reaction of corresponding alcohols or aldehydes.[1] It is well known that some aldehydes may be oxidized to acids very slowly when exposed to $\mathsf { a i r } . ^ { [ 2 ] }$ However, the process of autoxidation was too slow to meet the requirement of industrial manufacture or preparation in academic laboratory. Traditionally, strong and stoichiometric oxidants, such as $\mathsf { K M n O } _ { 4 } , \mathsf { \Lambda } ^ { [ 3 ] } \mathsf { C r O } _ { 3 } , \mathsf { \Lambda } ^ { [ 4 ] }$ and hypervalent iodine compounds,[5] have to be used to convert aldehydes to carboxylic acids. However, the cost and waste are problematic. As molecular oxygen is a clean and atom economic oxidant, aerobic oxidations of aldehydes to carboxylic acids have been pursued by chemists around the world. Non-metal catalysts were also reported (Scheme 1, eqn $( 1 ) ! ^ { [ 6 ] }$ excessive amount of a base was combined with a catalytic amount of NHC to catalyze aerobic oxidation of aldehydes.[6a-6c] I n 2016, a three-component catalyst– ketoABNO, ${ \mathsf { N a N O } } _ { 2 } ,$ and HNO3–was applied to catalyze the aerobic oxidation of aldehydes.[6d] Noble metal photocatalysts or other photosensitive reagents have been used for this transformation with visible light and molecular $\mathsf { o x y g e n } ^ { [ 7 ] }$ (Scheme 1, eqn (2)). Another protocol is utilizing noble metal catalysts, such as Ag, Ru, Au, Pt, Re complexes,[8] usually using stoichiometric additives with heating (Scheme 1, eqn (3)). Earth abundant metal catalysts such as Cu, Fe, Co, Ni complexes[9] have also been reported to catalyse this reaction (Scheme 1, eqn (4)): In 2016, Li’s group[9a] reported a catalytic protocol using 5 mol% of [Cu(acac) ]/SIMes with 1 equiv. of NaOH to achieve the aerobic oxidation of aliphatic aldehydes and aromatic aldehydes; the aerobic oxidation of $\alpha , \beta$ -unsaturated aldehydes was reported by Sato in $2 0 1 6 ^ { [ 9 6 ] }$ using two-component catalyst–1 mol% of $\mathsf { F e } ( \mathsf { N O } _ { 3 } ) _ { 3 } { \cdot } \mathsf { 9 H } _ { 2 } \mathsf { O }$ and 20 mol% of CF COONa–in EtOAc; in 2016, we utilized three-component catalyst– $\mathsf { F e } ( \mathsf { N O } _ { 3 } ) _ { 3 } { \cdot } 9 \mathsf { H } _ { 2 } \mathsf { O } ,$ TEMPO, and KCl–for the aerobic oxidation of aldehydes to carboxylic acids.[10] Recently, Han and $\mathsf { W e i } ^ { \mathsf { [ 9 c ] } }$ reported two-component–the $\mathsf { F e / M o }$ -based heterogeneous catalyst and 10 mol% of ${ \mathsf { N a } } _ { 2 } { \mathsf { C O } } _ { 3 } .$ –to catalyze the oxidation reaction at ${ 5 0 } ^ { \circ } { \mathsf C } .$ . Thus, development of efficient catalytic simple aerobic oxidation of aldehydes utilizing a cheap catalyst such as an iron catalyst[11] and an atmospheric pressure of oxygen or air at room temperature is still of high interest. In this report, we wish to report our recent observation that $\mathsf { F e } ( \mathsf { N O } _ { 3 } ) _ { 3 } { \cdot } 9 \mathsf { H } _ { 2 } 0$ may act as the single- component catalyst to accomplish aerobic oxidation reaction of aldehydes to carboxylic acids even at room temperature (Scheme 1, eqn (5)).
+
+Scheme 1 The catalytic aerobic oxidations of aldehydes to carboxylic acids
+
+Known protocols: 
+
+<table><tr><td>RCHO</td><td>non-metal catalystadditive,  $O_{2}$ , rt</td><td>RCOOH (1)</td></tr><tr><td>RCHO</td><td>Ir or Ru-based photocatalystLED,  $O_{2}$ , rt</td><td>RCOOH (2)</td></tr><tr><td>RCHO</td><td>noble metal catalyst(Ag, Ru, Au, Pt, Re, etc.)additive,  $O_{2}$ , 50 - 140 °C</td><td>RCOOH (3)</td></tr><tr><td>RCHO</td><td>earth abundant metal catalyst(Cu, Fe, Co, Ni)additive,  $O_{2}$ , rt or 50 °C</td><td>RCOOH (4)</td></tr></table>
+
+This work:
+
+<table><tr><td>RCHO</td><td> $\xrightarrow[\text{pure O}_2\text{ or air flow, MeCN, rt}]{\text{Fe(NO}_3\text{)}_3 \cdot 9\text{H}_2\text{O (5 mol\%)}}$ </td><td>RCOOH (5)</td></tr></table>
+
+# Results and Discussion
+
+In the control experiment of oxidation of dodecanal $\pmb { 1 } \mathbf { a } , ^ { [ 1 0 ] }$ we observed that with 10 mol% each of $\mathsf { F e } ( \mathsf { N O } _ { 3 } ) _ { 3 } { \cdot } \mathsf { 9 H } _ { 2 } \mathsf { O }$ and TEMPO in DCE at room temperature, 81% NMR yield of carboxylic acid 2a was formed together with 14% NMR recovery of aldehyde 1a (Table 1, entry 2). However, upon using 5 mol% of $\mathsf { F e } ( \mathsf { N O } _ { 3 } ) _ { 3 } { \cdot } 9 \mathsf { H } _ { 2 } 0$ alone, 1a was converted into 64% NMR yield of carboxylic acid 2a together with 32% NMR yield of carboxylic peracid $\mathsf { \mathsf { 3 a } } ^ { [ \mathrm { i } \mathrm { 0 } ] }$ (Table 1, entry 3). By just adding 1 mol% of TEMPO, the formation of carboxylic peracid 3a was suppressed with 26% NMR yield of 2a and 74% NMR recovery of 1a indicating that a radical process may be involved during the reaction (Table 1, entry 4). The selectivity of 2a/3a was much better in anhydrous DCE or DCM (Table 1, entries 5 and 6). Surprisingly, in anhydrous MeCN, 94% NMR yield of 2a was obtained exclusively (Table 1, entry 7), which led to the discovery of the single-component iron catalyst for the aerobic oxidation of aldehydes for the first time.
+
+We then evaluated the effect of metal nitrates on the aerobic oxidation reaction of aldehyde 1a. ${ \mathsf { K N O } } _ { 3 }$ and $\mathsf { M n } ( \mathsf { N O } _ { 3 } ) _ { 2 } { \cdot } 6 \mathsf { H } _ { 2 } \mathsf { O }$ gave 85% and 98% NMR recovery of 1a, respectively (Table 2, entries 1 and 2). $\mathsf { C e } ( \mathsf { N O } _ { 3 } ) _ { 2 } { \cdot } 6 \mathsf { H } _ { 2 } \mathsf { O }$ gave 30% NMR yield of 2a and 60% NMR recovery of 1a (Table 2, entry 3). With $\mathsf { C u } ( \mathsf { N O } _ { 3 } ) _ { 2 } { \cdot } 3 \mathsf { H } _ { 2 } \mathsf { O } ,$ 78% NMR yield of 2a, 18% NMR yield of peracid 3a, and 4% NMR recovery of 1a were observed (Table 2, entry 4). When $\mathsf { C o } ( \mathsf { N O } _ { 3 } ) _ { 2 } { \cdot } 6 \mathsf { H } _ { 2 } \mathsf { O }$ and ${ \mathsf { N i } } ( { \mathsf { N O } } _ { 3 } ) _ { 2 } { \cdot } 6 { \mathsf { H } } _ { 2 } 0$ were used, aldehyde 1a could be fully converted with generation of 10% and 16% NMR yields of peracid 3a in addition to the carboxylic acid 2a (Table 2, entries 5 and 6). $\mathsf { F e C l } _ { 3 } { \cdot } 6 { \mathsf { H } } _ { 2 } 0$ gave 52% NMR yield of 2a, 15% NMR yield of 3a, and 3% NMR recovery of 1a (Table 2, entry 7). With ${ \mathsf { F e } } _ { 2 } ( { \mathsf { S O } } _ { 4 } ) _ { 3 } ,$ only 15% NMR yield of 2a was generated with 7% NMR yield of 3a and 55% NMR recovery of aldehyde 1a (Table 2, entry 8). Thus, we defined 5 mol% of $\mathsf { F e } ( \mathsf { N O } _ { 3 } ) _ { 3 } { \cdot } 9 \mathsf { H } _ { 2 } 0$ in anhydrous MeCN using a bag of molecular oxygen at $2 5 ^ { \circ } C$ as the standard conditions for further studies (Table 1, entry 7).
+
+Table 1 Optimization of the aerobic oxidation reaction of aldehyde 1aa 
+
+<table><tr><td rowspan="2" colspan="2"> $n-C_{11}H_{23}CHO$  1a</td><td rowspan="2" colspan="2"> $\xrightarrow{Fe(NO_3)_3\cdot9H_2O (5 mol\%)} TEMPO, O_2, solvent$  25 °C, 12 h</td><td colspan="3"> $n-C_{11}H_{23}COOH + n-C_{11}H_{23}CO_3H$ </td></tr><tr><td colspan="2">2a</td><td>3a</td></tr><tr><td>Entry</td><td>TEMPO (mol%)</td><td>KCl (mol%)</td><td>Solventb</td><td>Yield of 2ac/%</td><td>Yield of 3ac/%</td><td>Recovery of 1ac/%</td></tr><tr><td> $1^d$ </td><td>10</td><td>10</td><td>DCE</td><td>95</td><td>—</td><td>—</td></tr><tr><td> $2^d$ </td><td>10</td><td>0</td><td>DCE</td><td>81</td><td>—</td><td>14</td></tr><tr><td>3</td><td>0</td><td>0</td><td>DCE</td><td>64</td><td>32</td><td>—</td></tr><tr><td>4</td><td>1</td><td>0</td><td>DCE</td><td>26</td><td>—</td><td>74</td></tr><tr><td>5</td><td>0</td><td>0</td><td>DCEe</td><td>72</td><td>28</td><td>—</td></tr><tr><td>6</td><td>0</td><td>0</td><td>DCM</td><td>84</td><td>~7</td><td>—</td></tr><tr><td>7</td><td>0</td><td>0</td><td>MeCNe</td><td>94</td><td>—</td><td>—</td></tr></table>
+
+a The reaction was carried out on a 1.0 mmol scale of 1a in 4.0 mL of solvent at $2 5 \ ^ { \circ } \mathsf { C }$ with a bag of O . b The solvents were directly used from commercial suppliers, if not specifically mentioned. c NMR yield. d 10 mol% $\mathsf { o f } \mathsf { F e } ( \mathsf { N O } _ { 3 } ) _ { 3 } { \cdot } \mathsf { 9 H } _ { 2 } \mathsf { O }$ was added. e Anhydrous solvent was added.
+
+Table 2 Effect of metal salts on the aerobic oxidation reaction of aldehyde 1aa 
+
+<table><tr><td>n-C11H23CHO 1a</td><td>Metal salt (5 mol%) O2, anhydrous MeCN 25 °C, 12 h</td><td>n-C11H23COOH + 2a</td><td>n-C11H23CO3H 3a</td><td></td></tr><tr><td>Entry</td><td>Metal salt</td><td>Yield of 2ab/%</td><td>Yield of 3ab/%</td><td>Recovery of 1ab/%</td></tr><tr><td>1</td><td>KNO3</td><td>14</td><td>—</td><td>85</td></tr><tr><td>2</td><td>Mn(NO3)2·6H2O</td><td>—</td><td>—</td><td>98</td></tr><tr><td>3</td><td>Ce(NO3)2·6H2O</td><td>30</td><td>—</td><td>60</td></tr><tr><td>4</td><td>Cu(NO3)2·3H2O</td><td>78</td><td>18</td><td>4</td></tr><tr><td>5</td><td>Co(NO3)2·6H2O</td><td>81</td><td>10</td><td>—</td></tr><tr><td>6</td><td>Ni(NO3)2·6H2O</td><td>83</td><td>16</td><td>—</td></tr><tr><td>7</td><td>FeCl3·6H2O</td><td>52</td><td>15</td><td>3</td></tr><tr><td>8</td><td>Fe2(SO4)3</td><td>15</td><td>7</td><td>55</td></tr></table>
+
+a The reaction was carried out on a 1.0 mmol scale of 1 in 4.0 mL of anhydrous MeCN at $2 5 ^ { \circ } \mathsf { C }$ with a bag of O . b NMR yield.
+
+With optimized conditions in hand, we investigated the substrate scope of the aerobic oxidation. Apart from linear aliphatic aldehydes (Table 3, entries 1 and 2), cyclohexyl formaldehyde 1c and 3-phenylpropanal 1d could be oxidized smoothly to corresponding acids (Table 3, entries 3 and 4). A variety of synthetic useful functional groups such as ester, trifluoromethyl, bromo, cyano, and carbonyl groups were well tolerated in this reaction (Table 3, entries 5—11). Synthetically attractive alkynes are much less studied in the literature.[10,13] Here, terminal alkynal 1l, TMS substituted alkynal 1m, and methyl substituted alkynal 1n were also oxidized efficiently to acids in decent yields (Table 3, entries 12—14).
+
+The reaction may be easily conducted on 50 mmol scale by using a pure oxygen bag or a slow air flow (30 mL/min) (Scheme 2).
+
+Table 3 The substrate scope of aerobic oxidation of aldehydesa 
+
+<table><tr><td>RCHO1</td><td>Fe(NO3)3·9H2O (5 mol%)O2, anhydrous MeCN25 °C, t (h)</td><td>RCOOH2</td><td></td><td></td></tr><tr><td>Entry</td><td>Substrate</td><td>Product 2</td><td>t/h</td><td>Yieldb/%</td></tr><tr><td>1</td><td>n-C11H23CHO (1a)</td><td>n-C11H23COOH (2a)</td><td>12</td><td>82</td></tr><tr><td>2</td><td>n-C15H31CHO (1b)</td><td>n-C15H31COOH (2b)</td><td>36</td><td>76c</td></tr><tr><td>3</td><td>CyCHO (1c)</td><td>CyCOOH (2c)</td><td>24</td><td>52</td></tr><tr><td>4</td><td>Ph(CH2)2CHO (1d)</td><td>Ph(CH2)2COOH (2d)</td><td>48</td><td>63</td></tr><tr><td>5</td><td>AcO(CH2)7CHO (1e)</td><td>AcO(CH2)7COOH(2e)</td><td>12</td><td>60</td></tr><tr><td>6</td><td>MeO2C(CH2)4CHO (1f)</td><td>MeO2C(CH2)4COOH (2f)</td><td>12</td><td>65</td></tr><tr><td>7</td><td><img src="images/6e4cb15814fdfccbaae9c9514400a487c24af9146e2bf105ea03e791f19421a7.jpg"/>(1g)</td><td><img src="images/88e34ce0cf566099dcd7632fc59b30127d819487ae0e806c07b638dfad42511d.jpg"/>(2g)</td><td>24</td><td>80</td></tr><tr><td>8</td><td><img src="images/283b3649d81f149376777ad558b5f3e9550cedb362ead59806e1bec2bfd77c24.jpg"/>(1h)</td><td><img src="images/e9d6d28192eb453dc62c0b6a9830fa16841baf17e9bb2b47cb986e880eb493c7.jpg"/>(2h)</td><td>12</td><td>79</td></tr><tr><td>9</td><td><img src="images/f26f8c1b2ede82ffad838015f5d2b3078b660b73da22b5ccf0d77d5a8565d53e.jpg"/>(1i)</td><td><img src="images/bd8110aaee940ad7f359e44ca333d914fccf8504ddcaee3caa0721f240fc4f41.jpg"/>(2i)</td><td>18</td><td>64</td></tr><tr><td>10</td><td><img src="images/65c4a996e4fb45c8dfe17987d347b9083ca3b011404692a5f236d3933aa3f989.jpg"/>(1j)</td><td><img src="images/dff95d080d07c84d0aedd5285aee057f034255f3bbea7f764f1174bac81f9f30.jpg"/>(2j)</td><td>48</td><td>72d</td></tr><tr><td>11</td><td><img src="images/a0d62bc02bdb655d2cc69d02ce056f5de0982f5a50ca698423e2b777c51b56ef.jpg"/>(1k)</td><td><img src="images/cc0dc277051ee176fbdc774e2a3a6db9c47dddc55bc961bee52a03131f6de38c.jpg"/>(2k)</td><td>48</td><td>68e</td></tr><tr><td>12</td><td><img src="images/6082a3e372f73f40b85df71c2d24c97365dcb39f523f0281cd21ff869085a994.jpg"/>(1l)</td><td><img src="images/ec1cc838d3fd1ecffac6aa1311a663ccd5ad9c1bf92320f64cad0cde06e3d00b.jpg"/>(2l)</td><td>24</td><td>67</td></tr><tr><td>13</td><td><img src="images/a71514d475e1bc0f5ca48e30cdedba85c75167a08c9299e72fe9301011cc3f37.jpg"/>(1m)</td><td><img src="images/17471e801fe3544253d97ed493a4d29d7861e3f0e35a3b5648a6646368828a11.jpg"/>(2m)</td><td>24</td><td>63</td></tr><tr><td>14</td><td><img src="images/f31509c19650345dc98637730fdba8afb803002e9d37b036dc4c1c715d667724.jpg"/>(1n)</td><td><img src="images/24b87aca2299f4d5dafdd56500f7ec465ee7dd1e0242529a10ccbc9ce81f006a.jpg"/>(2n)</td><td>48</td><td>75</td></tr></table>
+
+a The reaction was carried out on a 1.0 mmol scale of 1 in 4.0 mL of anhydrous MeCN at 25 oC with a bag of O2. b Isolated yield. c 3% NMR recovery of the aldehyde. d 12% recovery of the aldehyde. e 16% NMR recovery of the aldehyde.
+
+In order to unveil the mechanism, the aerobic oxidation reaction of aldehyde 1a was monitored. We observed that aldehyde 1a was consumed within the first 4 h, with the generation of acid 2a and peracid 3a. Then the amount of peracid 3a decreased. Within 12 h, all peracid 3a disappeared with 96% NMR yield of carboxylic acid 2a as the final product (Scheme 3).
+
+Some control experiments were then conducted (Scheme 4): At first, 1.0 equiv. of peracid 3a and 1.0 equiv. of aldehyde 1a were mixed in anhydrous MeCN in O2 condition. After 12 h, 35% NMR yield of acid 2a was generated with 48% NMR recovery of 1a and 83% NMR recovery of 3a (eqn (6)); when the same mixture was stirred under Ar atmosphere for 12 h, 65% NMR yield of acid 2a was obtained with 34% NMR recovery of 1a and 35% NMR recovery of 3a (eqn (7)); when peracid 3a alone was stirred with
+
+Scheme 2 Large-scale reactions with O2 or slow air flow   
+![](images/d02221be42fef10130c7fec14fa549b34242edc321df5d01094c08e6d34a2915.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Multi-step organic synthesis reaction scheme showing oxidation and reduction steps with reagents, yields, and NMR recovery percentages
+</details>
+
+Scheme 3 Reaction profiles of aerobic oxidation reaction of aldehyde 1a   
+![](images/8d8fd1748170dbd3b72242ea356be7111693a4fcfedfa3012c9d762320b7a657.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical reaction equation showing oxidation of 1a to 2a and 3a using Fe(NO3)3·9H2O under aqueous conditions
+</details>
+
+![](images/2727fa2b47ca4bb622c0cd02cb613938f97bef1aa654eef27c948ffa1bf90c3d.jpg)
+
+<details>
+<summary>line</summary>
+
+| Time/h | NMR yield/% |
+| ------ | ----------- |
+| 0      | 100         |
+| 1      | 15          |
+| 3      | 5           |
+| 4      | 0           |
+| 9      | 0           |
+| 10     | 0           |
+| 11     | 0           |
+| 12     | 0           |
+</details>
+
+![](images/096ba2fd033f2e8181b2cf5753246d029b701d57026cf6f02a17deac08768c70.jpg)
+
+<details>
+<summary>line</summary>
+
+| Time/h | NMR yield/% |
+| ------ | ----------- |
+| 0      | 0           |
+| 1      | 40          |
+| 2      | 40          |
+| 3      | 38          |
+| 4      | 30          |
+| 5      | 25          |
+| 6      | 20          |
+| 7      | 15          |
+| 8      | 10          |
+| 9      | 0           |
+| 10     | 0           |
+| 11     | 0           |
+| 12     | 0           |
+</details>
+
+![](images/17c1635830143309e64fb9af2dc0dee835232e753cead7257e584598e7863620.jpg)
+
+<details>
+<summary>line</summary>
+
+| Time/h | NMR yield/% |
+| ------ | ----------- |
+| 0      | 0           |
+| 1      | 45          |
+| 2      | 55          |
+| 3      | 60          |
+| 4      | 65          |
+| 5      | 70          |
+| 6      | 75          |
+| 7      | 80          |
+| 8      | 85          |
+| 9      | 90          |
+| 10     | 95          |
+| 11     | 98          |
+| 12     | 98          |
+</details>
+
+$\mathsf { F e } ( \mathsf { N O } _ { 3 } ) _ { 3 } { \cdot } \mathsf { 9 H } _ { 2 } \mathsf { O }$ under ${ \sf O } _ { 2 }$ or $\mathsf { A r } ,$ almost quantitative yield of carboxylic acid 2a was afforded (eqn (8) and (9)); even when peracid 3a was stirred without catalyst for 21 h, only 24% NMR yield of acid 2a and 71% NMR recovery were observed (eqn (10)).[12] These control experiments indicated that carboxylic peracid 3a and aldehyde 1a could react smoothly to form carboxylic acid 2a both under both $\mathsf { O } _ { 2 }$ and Ar atmosphere. In additon, carboxylic peracid 3a could be efficiently tranformed into carboxylic acid 2a in MeCN catalyzed by $\mathsf { F e } ( \mathsf { N O } _ { 3 } ) _ { 3 } { \cdot } 9 \mathsf { H } _ { 2 } 0$ .
+
+Scheme 4 Control experiments of 3a and 1a   
+![](images/024f3eb2f702c78b08766ccbec26a5487fdde5cf68b507b3581765f4999ffcd7.jpg)
+
+<details>
+<summary>other</summary>
+
+| Product | Condition | Yield (%) |
+|---------|-----------|-----------|
+| n-C₁₁H₂₃CO₃H | + 1.0 equiv. | 3a |
+| n-C₁₁H₂₃CHO | + 1.0 equiv. | 1a |
+| n-C₁₁H₂₃CO₃H | + 1.0 equiv. | 3a |
+| n-C₁₁H₂₃CHO | + 1.0 equiv. | 1a |
+| n-C₁₁H₂₃CO₃H | + 1.0 equiv. | 3a |
+| Fe(NO₃)₃·9H₂O (5 mol%) | Anhydrous MeCN | 3a |
+| Fe(NO₃)₃·9H₂O (5 mol%) | Anhydrous MeCN | 3a |
+| n-C₁₁H₂₃COOH | Anhydrous MeCN | 3a |
+| n-C₁₁H₂₃COOH | + 3a (71% NMR) | 3a |
+| n-C₁₁H₂₃COOH | + 3a (71% NMR) | 3a |
+| n-C₁₁H₂₃COOH | + 3a (71% NMR) | 3a |
+| n-C₁₁H₂₃COOH | + 3a (71% NMR) | 3a |
+| n-C₁₁H₂₃COOCH | Anhydrous MeCN | 3a |
+| n-C₁₁H₂₃COOH | Anhydrous MeCN | 3a |
+| n-C₁₁H₂₃COOH | Anhydrous MeCN | 3a |
+| n-C₁₁H₂₃COOH | Anhydrous MeCN | 3a |
+| n-C₁₁H₂₃COOH | Anhydrous MeCN | 3a |
+| n-C₁₁H₂₃COOH | Anhydrous MeCN (Ar, 25 °C, 12 h) | 3a |
+| n-C₁₁H₂₃COOH | Anhydrous MeCN (O₂, 25 °C, 12 h) | 3a |
+| n-C₁₁H₂₃COOH | Anhydrous MeCN (O₂, 25 °C, 12 h) | 3a |
+| n-C₁₁H₂₃COOH | Anhydrous MeCN (O₂, 25 °C, 12 h) | 3a |
+| n-C₁₁H₃COOH | Anhydrous MeCN | 3a |
+| n-C₁₁H₃COOH | Anhydrous MeCN (Ar, 25 °C, 12 h) | 3a |
+| n-C₁₁H₃COOH | Anhydrous MeCN (O₂, 25 °C, 12 h) | 3a |
+| n-C₁₁H₃COOH | Anhydrous MeCN (Ar, 25 °C, 12 h) | 3a |
+| n-C₁₁H₃COOH | Anhydrous MeCN (O₂, 25 °C, 12 h) | 3a |
+| n-C₁₁H₄COOH | Anhydrous MeCN | 3a |
+| n-C₁₁H₄COOH | Anhydrous MeCN (Ar, 25 °C, 12 h) | 3a |
+| n-C₁₁H₄COOH | Anhydrous MeCN (O₂, 25 °C, 12 h) | 3a |
+| n-C₁₁H₄COOH | Anhydrous MeCN (Ar, 25 °C, 12 h) | 3a |
+| n-C₁₁H₄COOH | Anhydrous MeCN (O₂, 25 °C, 12 h) | 3a |
+| n-C₁₁H₄COOH | Anhydrous MeCN (Ar, 5 mol%) | 3a |
+| n-C₁₁H₄COOH | Anhydrous MeCN (O₂, 5 mol%) | 3a |
+| n-C₁₁H₄COOH | Anhydrous MeCN (Ar, 5 mol%) | 3a |
+| n-C₁₁H₄COOH | Anhydrous MeCN (Ar, 5 mol%) | 3a |
+| n-C₁₁H₄COOH | Anhydrous MeCN (Ar, 5 mol%) | 3a |
+| n-C₁₁H₄COOH | Anhydrous MeCN (Ar, 5 mol%) | 3a |
+| n-cyclohexylated methyl ester (48%) [NMR] | + 3a (83%) [NMR] | (6) |
+| n-cyclohexylated methyl ester (48%) [NMR] | + 3a (83%) [NMR] | (6) |
+| n-cyclohexylated methyl ester (48%) [NMR] | + 3a (83%) [NMR] | (6) |
+| n-cyclohexylated methyl ester (48%) [NMR] | + 3a(95%) [NMR] | (6) |
+| n-cyclohexylated methyl ester (48%) [NMR] | + 95% [NMR] | (6) |
+| n-cyclohexylated methyl ester (48%) [NMR] | +95% [NMR] | (6) |
+| n-cyclohexylated methyl ester (48%) [NMR] | +95% [NMR] | (6) |
+| n-cyclohexylated methyl ester (48%) [NMR] | +95% [NMR] | (6) |
+| n-cyclohexylated methyl ester (48%) [NMR] | +71% [NMR] [NMR] | (10) |
+| n-cyclohexylated methyl ester (48%) [NMR] | +71% [NMR] [NMR] | (10) |
+| n-cyclohexylated methyl ester (48%) [NMR] | +71% [NMR] [NMR] | (10) |
+| n-cyclohexylated methyl ester (48%) [NMR] | +24% [NMR] [NMR] | (6) |
+| n-cyclohexylated methyl ester (48%) [NMR] | +24% [NMR] [NMR] | (6) |
+| n-cyclohexylated methyl ester (48%) [NMR] | +24% [NMR] [NMR] | (6) |
+| n-cyclohexylated methyl ester (48%) [NMR] | +24%(99%) [NMR] | (6) |
+| n-cyclohexylated methyl ester (48%) [NMR] | +24%(99%) [NMR] | (6) |
+| n-cyclohexylated methyl ester (48%) [NMR] | +24%(99%) [NMR] | (6) |
+| n-cyclohexylated methyl ester (48%) [NMR ] - Anhydrous MeCN O₂, O₂, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar<fcel>Anhydrous MeCN O₂, O₂, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar<fcel>(6)<nl>
+<fcel>n-cyclohexylated methyl ester (48%) [NMR] - Anhydrous MeCN O₂, O₂, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar<fcel>Anhydrous MeCN O₂, O₂, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar<fcel>(6)<nl>
+<fcel>n-cyclohexylated methyl ester (48%) [NMR] - Anhydrous MeCN O₂, O₂, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar, Ar<fcel>Anhydrous MeCN O₂, O₂, Ar, Ar, Ar, Ar, Ar, Ar, Ar<fcel>(6)<nl>
+<fcel>n-cyclohexylated methyl ester (48%) [NMR] - Anhydrous MeCN O₂, O₂, Ar, Ar<fcel>Anhydrous MeCN O₂, O₂, Ar<fcel>(6)<nl>
+<fcel>n-cyclohexylated methyl ester (48%) [NMR] - Anhydrous MeCN O₂<fcel>Anhydrous MeCN O₂<fcel>(6)<nl>
+<fcel>n-cyclohexylated methyl ester (48%) [NMR] - Anhydrous MeCN O₂<fcel>Anhydrous MeCN O₂<fcel>(6)<nl>
+<fcel>n-cyclohexylated methyl ester (48%) [NMR] - Anhydrous MeCN O₂<fcel>Anhydrous MeCN O₂<fcel>(6)<nl>
+<fcel>n-cyclohexylate methyl ester (48%) [NMR] - Anhydrous MeCN O₂<fcel>Anhydrous MeCN O₂<fcel>(6)<nl>
+<fcel>n-cyclohexylate methyl ester (48%) [NMR] - Anhydrous MeCN O₂<fcel>Anhydrous MeCN O₂<fcel>(6)<nl>
+<fcel>n-cyclohexylate methyl ester (48%) [NMR] - Anhydroxyethylated methyl ester (48%) [NMR] - Anhydroxyethylated methyl ester (48%) [NMR] - Anhydroxyethylated methyl ester (48%) [NMR] - Anhydroxyethylated methyl ester (48%) [NMR] - Anhydroxyethylated methyl ester (48%) [NMR] - Anhydroxyethylated methyl ester (48%) [NMR] - Anhydroxylated methyl ester (48%) [NMR] - Anhydroxylated methyl ester (48%) [NMR] - Anhydroxylated methyl ester (48%) [NMR] - Anhydroxylated methyl ester (48%) [NMR] - Anhydroxylated methyl ester (48%) [NMR] - Anhydroxylated methyl ester (48%) [NMR] - An hydroxylated methyl ester (48%) [NMR] - An hydroxylated methyl ester (48%) [NMR] - An hydroxylated methyl ester (48%) [NMR] - An hydroxylated methyl ester (48%) [NMR] - An hydroxylated methyl ester (48%) [NMR] - An hydroxylated methyl ester (48%) [NMR]<ecel><ecel><nl>
+</details>
+
+Furthermore, isotopic $^ { 1 8 } 0$ distribution experiment was conducted by adding 1.0 equiv. of ${ \mathsf { H } } _ { 2 } ^ { \ 1 8 } { \mathsf { O } }$ to the reaction under the standard conditions, and 89% yield of acid ${ \sf z a ^ { . 1 8 } 0 }$ with 37% $^ { 1 8 } 0$ incorporation was isolated (eqn (11)). It illustrated that ${ \sf H } _ { 2 } { \sf O }$ also participated in the reaction process.[10] I n addition, the formation of NO and ${ \mathsf { N O } } _ { 2 }$ was not detected, indicating a different mechanism as compared to that reported in ref. 10.
+
+$$
+\begin{array}{c} n - \mathrm{C} _ {1 1} \mathrm{H} _ {2 3} \mathrm{CHO} \\ 1 \mathrm{a} \\ 1. 0 \mathrm{mmol} \end{array} \xrightarrow [ \begin{array}{c} \mathrm{O} _ {2} , \text {anhydrous MeCN} \\ 2 5 ^ {\circ} \mathrm{C} , 1 2 \mathrm{h} \end{array} ]{\substack {\mathrm{Fe} (\mathrm{NO} _ {3}) _ {3} \cdot 9 \mathrm{H} _ {2} \mathrm{O} (5 \mathrm{mol} \%) \\ \mathrm{H} _ {2} ^ {18} \mathrm{O} (1 . 0 \text {equiv.})}} \begin{array}{c} n - \mathrm{C} _ {1 1} \mathrm{H} _ {2 3} \mathrm{CO} ^ {18} \mathrm{OH} \\ 2 \mathrm{a} ^ {- 18} \mathrm{O} \\ 8 9 \% , 3 7 \% ^ {18} \mathrm{O} \end{array} \tag{11}
+$$
+
+Thus, two plausible pathways are proposed (Scheme 5): Aldehyde 1 is attacked by ${ \mathsf { \bar { H } } } _ { 2 } ^ { 1 8 } { \mathsf { O } }$ to form aldehyde monohydrate I. After ligand exchange and β-H elimination, carboxylic acid 2 or $\pmb { 2 } ^ { \prime }$ is obtained. The resulting $[ { \mathsf { F e } } ^ { \mathsf { I I I } } .$ -H] is in equilibrium with H+ and $\mathsf { F e } ^ { \mathsf { I I } }$ which would be oxidized to $\mathsf { F e } ^ { \mathsf { I I I } }$ by ${ \sf O } _ { 2 }$ to finish the catalytic cycle. The second one involves a radical process: acyl radical III, which is formed by oxidation of aldehyde with $\mathsf { F e } ^ { \mathsf { I I } }$ , reacts with ${ \sf O } _ { 2 }$ to afford peracid radical IV. Peracid 3 is generated when IV was reduced by $\mathsf { F e } ^ { \mathsf { I I } }$ in the presence of H+. Carboxylic acid 2 is formed via the reaction between aldehyde 1 and peracid 3 or $\mathsf { F e } ^ { \mathsf { I I I } }$ -catalyzed highly selective conversion of peracid 3 to carboxylic acid 2.
+
+Scheme 5 Plausible mechanistic pathways   
+![](images/9b8d0f49e8d94a5f94f7c3b4676d00ec2e8a7d9ab90edb5b7ae8e4e9c94d12bb.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Reaction pathways showing ligand exchange and iron-oxide formation in two pathways (1 and 2)
+</details>
+
+# Conclusions
+
+In summary, an efficient catalytic room temperature aerobic oxidation has been developed. With 5 mol% of $\mathsf { F e } ( \mathsf { N O } _ { 3 } ) _ { 3 } { \cdot } \mathsf { 9 H } _ { 2 } \mathsf { O }$ as the single catalyst and 1 atm of pure ${ \sf O } _ { 2 }$ or oxygen in air as the oxidant, different types of aldehydes with various useful functional groups could be oxidized to acid smoothly. The reaction could be conducted easily on 50 mmol scale with $\mathsf { O } _ { 2 }$ or a slow air flow. Based on careful mechanistic study, it is believed that the reaction proceeds via two plausible pathways. Further studies including mechanism details are being conducted actively in this laboratory.
+
+# Experimental
+
+General information. Fe(NO ) ·9H O was purchased from Energy Chemical. Liquid aldehydes were distilled before use. MeCN was refluxed over CaH and distilled right before use. Petroleum ether $( 6 0 - 9 0 ~ ^ { \circ } \mathsf { C } )$ was used for chromatography. Other reagents were used as received without further treatment. Substrates 1b, 1e, 1f, 1l, 1m, and 1n were synthesized via iron-catalyzed aerobic oxidation of corresponding alcohols.[13]
+
+Caution: Oxygen in use in combination with organic solvents; remove all ignition sources including sources of sparks, static, or flames since oxygen increases intensity of any fire. Inhalation of pure oxygen should be avoided as well.
+
+Synthesis of dodecanoic acid (2a) (Table 3, entry 1): to a Schlenk tube were added Fe(NO3)3·9H2O (20.1 mg, 0.05 mmol), 1a (184.1 mg, 1.0 mmol), and MeCN (4 mL) sequentially under the atmosphere of oxygen from a gas bag (commercial size: 2 L, could be expended to 5 L). The Schlenk tube was then stirred at $2 5 ^ { \circ } C$ until completion of the reaction as monitored by TLC (petroleum ether/ethyl acetate＝5/1) (12 h). The crude reaction mixture was filtrated through a short column of silica gel (height: 2 cm, Φ: 3 cm) eluted with diethyl ether (25×3 mL). After evaporation, the residue was purified by chromatography on silica gel to afford 2a (164.4 mg, 82%) (eluent: petroleum ether/ethyl acetate＝5/1) as a solid: m.p. $4 3 . { \dot { 1 } } - 4 4 . 0 { \dot { ~ \circ } } _ { \mathsf { C } }$ (petroleum ether/ethyl acetate) (reported: $\cdot ^ { [ 1 4 ] } \dot { 4 } 3 - 4 4 ^ { \circ } mathsf { C } \rangle ;$ 1H NMR (400 MHz, CDCl3) δ: 11.79 (brs, 1H, COOH), 2.35 (t, J＝7.6 Hz, 2H, CH2), 1.69—1.56 (m, 2H, CH2), 1.40—1.18 (m, 16H, 8×CH ), 0.88 (t, J＝6.2 Hz, 3H, CH ); 13C NMR (100 MHz, CDCl ) δ: 180.7, 34.1, 31.9, 29.6, 29.4, 29.3, 29.2, 29.0, 24.6, 22.7, 14.1; IR (neat) ν: 3400—2300, 1695, 1468, 1429, 1410, 1301, 1277, 1248, 1219, 1193 cm1; MS (EI, 70 eV) m/z (%): 200 (M+, 99.62), 73 (100).
+
+The large scale (50 mmol) reaction for synthesis of dodecanoic acid (2a) (Scheme 2): To a 1000 mL three-neck flask were added $\mathsf { F e } ( \mathsf { N O } _ { 3 } ) _ { 3 } { \cdot } 9 \mathsf { H } _ { 2 } 0$ (1.0104 g, 2.5 mmol), 1a (9.2169 g, 50.0 mmol), and MeCN (150.0 mL) sequentially (Figure 1). The resulting mixture was stirred at $2 5 ~ ^ { \circ } C$ with a slow flow of air from an air cylinder (99.99%, 30 mL/min) passing over the surface of the resulting mixture until completion of the reaction as monitored by TLC (petroleum ether/ethyl acetate＝5/1) (48 h). The crude reaction mixture was filtrated through a short column of silica gel (height: 4.5 cm, Φ: 5 cm) eluted with ethyl ether (4×150 mL). After evaporation, the residue was purified by chromatography on silica gel to afford 2a (8.3333 g, 83%) (eluent: petroleum ether/ethyl acetate＝500/1 (2 L) to 200/1 (3 L) to 100/1 (1 L) to 2/1 (2.3 L)) as an oil: 1H NMR (400 MHz, CDCl3) δ: 11.27 (brs, 1H, COOH), 2.35 (t, J＝7.6 Hz, 2H, CH2), 1.63 (quint, J＝7.4 Hz, 2H, CH ), 1.39—1.20 (m, 16H, 8×CH ), 0.88 (t, J＝6.8 Hz, 3H, CH ); $^ { 1 3 } { \mathsf { C } }$ NMR (100 MHz, CDCl3) δ: 180.5, 34.1, 31.9, 29.6, 29.4, 29.3, 29.2, 29.0, 24.7, 22.7, 14.1.
+
+![](images/9bc0425bf6e0f1a4a51bd64d60dcfeed8b4aa56e5de2fd7a9545728191807c76.jpg)
+
+<details>
+<summary>natural_image</summary>
+
+Laboratory distillation setup with glass flask containing red liquid, connected tubing and a stand (no visible text or labels)
+</details>
+
+Figure 1 Apparatus for the aerobic reaction with a slow air flow (30 mL/min).
+
+# Supporting Information
+
+The supporting information for this article is available on the WWW under https://doi.org/10.1002/cjoc.201700576.
+
+# Acknowledgement
+
+Financial support from National Basic Research Program of China (2015CB856600) is greatly appreciated. We thank Dr. Minqiang Jia and Dr. Tao Cao in this group for reproducing the results of 2f and 2h in Table 3 and 2c in Scheme 2.
+
+# References
+
+[1] Tojo, G.; Fernández, M. Oxidation of Primary Alcohols to Carboxylic Acids, Springer, New York, 2007.   
+[2] Chudasama, V.; Akhbar, A. R.; Bahou, K. A.; Fitzmaurice, R. J.; Caddick, S. Org. Biomol. Chem. 2013, 11, 7301.   
+[3] Juršić, B. Can. J. Chem. 1989, 67, 1381.   
+[4] (a) Evans, G. B.; Cameron, S. A.; Culbert, S. R.; Grant, P. K. Tetrahedron Lett. 2014, 55, 6227; (b) del Fueyo, M. C.; Dansey, M. V.; Paolo, L. S.; Pecci, A.; Veleiro, A. S.; Burton, G. Steroids 2016, 112, 109; (c) Mori, K.; Akasaka, K. Tetrahedron, 2015, 71, 4102.   
+[5] Hunsen, M. Synthesis 2005, 15, 2487.   
+[6] (a) Yoshida, M.; Katagiri, Y.; Zhu, W.-B.; Shishido, K. Org. Biomol. Chem. 2009, 7, 4062; (b) Möhlmann, L.; Ludwig, S.; Blechert, S. Beilstein J. Org. Chem. 2013, 9, 602; (c) Chiang, P.-C.; Bode, J. W. Org. Lett. 2011, 13, 2422; (d) Miles, K. C.; Abrams, M. L.; Landis, C. R.; Stahl, S. S. Org. Lett. 2016, 18, 3590; (e) Vanoye, L.; Aloui, A.; Pablos, M.; Philippe, R.; Percheron, A.; Favre-Réguillon, A.; de Bellefon, C. Org. Lett. 2013, 15, 5978; (f) Shapiro, N.; Vigalok, A. Angew. Chem. Int. Ed. 2008, 47, 2849.   
+[7] (a) Iqbal, N.; Choi, S.; You, Y.; Cho, E. J. Tetrahedron Lett. 2013, 54, 6222; (b) Hajimohammadi, M.; Safari, N.; Mofakham, H.; Shaabani, A. Tetrahedron Lett. 2010, 51, 4061.   
+[8] (a) Liu, M.; Wang, H.; Zeng, H.; Li, C.-J. Sci. Adv. 2015, 1, e1500020; (b) Vocanson, F.; Guo, Y. P.; Namy, J. L.; Kagan, H. B. Synth. Commun. 1998, 28, 2577; (c) Biella, S.; Prati, L.; Rossi, M. J. Mol. Catal. A 2003, 197, 207; (d) Skarżyńska, A.; Siczek, M.; Sobczak, J. M. Eur. J. Inorg. Chem. 2012, 3331.   
+[9] (a) Liu, M.; Li, C.-J. Angew. Chem. Int. Ed. 2016, 55, 10806; (b) Tanaka, S.; Kon, Y.; Uesaka, Y.; Morioka, R.; Tamura, M.; Sato, K. Chem. Lett. 2016, 45, 188; (c) Yu, H.; Ru, S.; Dai, G.; Zhai, Y.; Lin, H.; Han, S.; Wei, Y. Angew. Chem. Int. Ed. 2017, 56, 3867; (d) Zhou, X. T.; Ji, H. B.; Yuan, Q. L.; Xu, J. C.; Pei, L. X.; Wang, L. F. Chin. Chem. Lett. 2007, 18, 926; (e) Bhatia, B.; Punniyamurthy, T.; Iqbal, J. J. Org. Chem. 1993, 58, 5518; (f) Punniyamurthy, T.; Kalra, S. J. S.; Iqbal, J. Tetrahedron Lett. 1994, 35, 2959; (g) Mastrorilli, P.; Nobile, C. F. Tetrahedron Lett. 1994, 35, 4193; (h) Giannandrea, R.; Mastrorilli, P.; Nobile, C. F.; Suranna, G. P. J. Mol. Catal. 1994, 94, 27; (i) Huo, H.; Wu, L.; Ma, J.; Yang, H.; Zhang, L.; Yang, Y.; Li, S.; Li, R. ChemCatChem 2016, 8, 779; (j) Yamada, T.; Rhode, O.; Takai, T.; Mukaiyama, T. Chem. Lett. 1991, 5; (k) Wieland,
+
+H.; Richter, D. Justus Liebigs Annalen der Chemie 1931, 486, 226; (l) Lederer, P.; Luňák, S.; Mácová, E.; Vepřek-Šiška, J. Collect. Czech. Chem. Commun. 1982, 47, 392; (m) Hwang, B. J. Ind. Eng. Chem. Res. 1994, 33, 1897; (n) Lagerblom, K.; Wrigstedt, P.; Keskiväli, J.; Parviainen, A.; Repo, T. ChemPlusChem 2016, 81, 1160; (o) Villano, R.; Acocella, M. R.; Scettri, A. Tetrahedron Lett. 2014, 55, 2442; (p) Yang, F.; Qiu, T.; Chi, C.; Liang, S.; Deng, L.; Wang, X.; Wang, C.; Fu, J.; Wang, Y.; Li, Y. Chem. Eng. J. 2017, 330, 880.   
+[10] Jiang, X.; Zhang, J.; Ma, S. J. Am. Chem. Soc. 2016, 138, 8344.   
+[11] For reviews on iron-catalyzed reactions, see: (a) Bolm, C.; Legros, J.; Paih, J. L.; Zani, L. Chem. Rev. 2004, 104, 6217; (b) Bauer, I.; Knölker, H. J. Chem. Rev. 2015, 115, 3170; (c) Gopalaiah, K. Chem. Rev. 2013, 113, 3248; (d) Sun, C.-L.; Li, B.-J.; Shi, Z.-J. Chem. Rev. 2011, 111, 1293; (e) Shang, R.; Ilies, L.; Nakamura, E. Chem. Rev. 2017, 117, 9086.   
+[12] For decomposition of peracids, see: (a) Parker, W. E.; Ricciuti, C.; Ogg, C. L.; Swern, D. J. Am. Chem. Soc. 1955, 77, 4037; (b) Parker, W. E.; Witnauer, L. P.; Swern, D. J. Am. Chem. Soc. 1958, 80, 323; (c) Dutka, V. S.; Zagorskaya, V. V.; Dutka, Y. V. Kinet. Catal. 2010, 51, 364.   
+[13] (a) Ma, S.; Liu, J.; Li, S.; Chen, B.; Cheng, J.; Kuang, J.; Liu, Y.; Wan, B.;
+
+Wang, Y.; Ye, J.; Yu, Q.; Yuan, W.; Yu, S. Adv. Synth. Catal. 2011, 353, 1005; (b) Ma, S.; Liu, J.; Li, S.; Chen, B.; Cheng, J.; Kuang, J.; Liu, Y.; Wan, B.; Wang, Y.; Ye, J.; Yu, Q.; Yuan, W.; Yu, S. CN 102336619, 2012; (c) Ma, S.; Liu, J.; Li, S.; Chen, B.; Cheng, J.; Kuang, J.; Liu, Y.; Wan, B.; Wang, Y.; Ye, J.; Yu, Q.; Yuan, W.; Yu, S. US 8748669, 2014; (d) Ma, S.; Liu, J.; Li, S.; Chen, B.; Cheng, J.; Kuang, J.; Liu, Y.; Wan, B.; Wang, Y.; Ye, J.; Yu, Q.; Yuan, W.; Yu, S. JP 5496366, 2014; (e) Ma, S.; Liu, J.; Li, S.; Chen, B.; Cheng, J.; Kuang, J.; Liu, Y.; Wan, B.; Wang, Y.; Ye, J.; Yu, Q.; Yuan, W.; Yu, S. EP 2599765, 2016. [14] Shimada, Y.; Hattori, K.; Tada, N.; Miura, T.; Itoh, A. Synthesis 2013, 45, 2684.
+
+Manuscript received: September 17, 2017
+
+Manuscript revised: October 24, 2017
+
+Manuscript accepted: October 26, 2017
+
+Accepted manuscript online: October 30, 2017
+
+Version of record online: November 17, 2017

@@ -1,0 +1,5 @@
+feat: integrate dense retrieval channel into RetrievalRouter
+
+paper_local_question intent now routes to lexical + dense + provenance.
+dense_search is optional — if Qdrant index hasn't been built, router
+falls back to lexical-only. All 6 existing retrieval tests still pass.

@@ -1,0 +1,904 @@
+[
+  {
+    "block_id": "block_20_0000",
+    "doc_id": "20",
+    "block_type": "title",
+    "text": "RESEARCH ARTICLE",
+    "page": 1,
+    "bbox": [
+      82.0,
+      121.0,
+      315.0,
+      142.0
+    ],
+    "section": "RESEARCH ARTICLE",
+    "prev_block_id": null,
+    "next_block_id": "block_20_0001",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0001",
+    "doc_id": "20",
+    "block_type": "paragraph",
+    "text": "View Article Online",
+    "page": 1,
+    "bbox": [
+      754.0,
+      116.0,
+      899.0,
+      130.0
+    ],
+    "section": "RESEARCH ARTICLE",
+    "prev_block_id": "block_20_0000",
+    "next_block_id": "block_20_0002",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0002",
+    "doc_id": "20",
+    "block_type": "paragraph",
+    "text": "View Journal",
+    "page": 1,
+    "bbox": [
+      757.0,
+      133.0,
+      823.0,
+      143.0
+    ],
+    "section": "RESEARCH ARTICLE",
+    "prev_block_id": "block_20_0001",
+    "next_block_id": "block_20_0003",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0003",
+    "doc_id": "20",
+    "block_type": "paragraph",
+    "text": "Check for updates",
+    "page": 1,
+    "bbox": [
+      107.0,
+      182.0,
+      230.0,
+      196.0
+    ],
+    "section": "RESEARCH ARTICLE",
+    "prev_block_id": "block_20_0002",
+    "next_block_id": "block_20_0004",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0004",
+    "doc_id": "20",
+    "block_type": "paragraph",
+    "text": "Cite this: DOI: 10.1039/d5qo00330j",
+    "page": 1,
+    "bbox": [
+      65.0,
+      213.0,
+      270.0,
+      227.0
+    ],
+    "section": "RESEARCH ARTICLE",
+    "prev_block_id": "block_20_0003",
+    "next_block_id": "block_20_0005",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0005",
+    "doc_id": "20",
+    "block_type": "title",
+    "text": "Copper-catalyzed aerobic oxidation of aldehydes to carboxylic acids†",
+    "page": 1,
+    "bbox": [
+      285.0,
+      173.0,
+      907.0,
+      220.0
+    ],
+    "section": "Copper-catalyzed aerobic oxidation of aldehydes to carboxylic acids†",
+    "prev_block_id": "block_20_0004",
+    "next_block_id": "block_20_0006",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0006",
+    "doc_id": "20",
+    "block_type": "paragraph",
+    "text": "Yankai Huang,a Sheng Jiang,a Zhengnan Zhou,b Yibo Yu, *a Hui Qian *a and Shengming Ma *a,b",
+    "page": 1,
+    "bbox": [
+      284.0,
+      231.0,
+      894.0,
+      265.0
+    ],
+    "section": "Copper-catalyzed aerobic oxidation of aldehydes to carboxylic acids†",
+    "prev_block_id": "block_20_0005",
+    "next_block_id": "block_20_0007",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0007",
+    "doc_id": "20",
+    "block_type": "paragraph",
+    "text": "Received 17th February 2025,",
+    "page": 1,
+    "bbox": [
+      65.0,
+      295.0,
+      231.0,
+      306.0
+    ],
+    "section": "Copper-catalyzed aerobic oxidation of aldehydes to carboxylic acids†",
+    "prev_block_id": "block_20_0006",
+    "next_block_id": "block_20_0008",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0008",
+    "doc_id": "20",
+    "block_type": "paragraph",
+    "text": "Accepted 15th April 2025",
+    "page": 1,
+    "bbox": [
+      68.0,
+      308.0,
+      210.0,
+      319.0
+    ],
+    "section": "Copper-catalyzed aerobic oxidation of aldehydes to carboxylic acids†",
+    "prev_block_id": "block_20_0007",
+    "next_block_id": "block_20_0009",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0009",
+    "doc_id": "20",
+    "block_type": "paragraph",
+    "text": "DOI: 10.1039/d5qo00330j",
+    "page": 1,
+    "bbox": [
+      68.0,
+      324.0,
+      216.0,
+      337.0
+    ],
+    "section": "Copper-catalyzed aerobic oxidation of aldehydes to carboxylic acids†",
+    "prev_block_id": "block_20_0008",
+    "next_block_id": "block_20_0010",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0010",
+    "doc_id": "20",
+    "block_type": "paragraph",
+    "text": "rsc.li/frontiers-organic",
+    "page": 1,
+    "bbox": [
+      67.0,
+      344.0,
+      186.0,
+      356.0
+    ],
+    "section": "Copper-catalyzed aerobic oxidation of aldehydes to carboxylic acids†",
+    "prev_block_id": "block_20_0009",
+    "next_block_id": "block_20_0011",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0011",
+    "doc_id": "20",
+    "block_type": "paragraph",
+    "text": "An efficient, practical aerobic oxidation of aldehydes to carboxylic acids using  O _ { 2 } or air as the oxidant has been developed. The reaction was carried out with a catalytic amount each of  \\mathsf { C u } ( \\mathsf { N O } _ { 3 } ) _ { 2 } { \\cdot } 3 \\mathsf { H } _ { 2 } \\mathsf { O } and TEMPO at room temperature, tolerating many useful functional groups such as alkynyl, amino, aryl, etc. Complex molecules and compounds containing multiple aldehyde groups are applicable to this reaction with excellent selectivity. Gram-scale reactions have been easily conducted.",
+    "page": 1,
+    "bbox": [
+      284.0,
+      281.0,
+      929.0,
+      356.0
+    ],
+    "section": "Copper-catalyzed aerobic oxidation of aldehydes to carboxylic acids†",
+    "prev_block_id": "block_20_0010",
+    "next_block_id": "block_20_0012",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0012",
+    "doc_id": "20",
+    "block_type": "title",
+    "text": "Introduction",
+    "page": 1,
+    "bbox": [
+      67.0,
+      383.0,
+      205.0,
+      401.0
+    ],
+    "section": "Introduction",
+    "prev_block_id": "block_20_0011",
+    "next_block_id": "block_20_0013",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0013",
+    "doc_id": "20",
+    "block_type": "paragraph",
+    "text": "Carboxylic acids are a class of compounds that are extremely common in nature and widely used in laboratory,1 daily life,2 and industry.3 The oxidation of the corresponding aldehydes is one of the most straightforward strategies for the production of carboxylic acids.4 Traditionally, stoichiometric oxidants, such as metallic oxidants,5 peroxides,6 and hypervalent iodine compounds,7 are required. However, there exists an issue of generating equal amounts of waste from the applied oxidants. In contrast, molecular oxygen is a clean and atom-economic oxidant and water is usually the only by-product. Therefore, using environmentally friendly and inexpensive molecular oxygen as an oxidant has a significant advantage.8 Such aerobic oxidations have been achieved with noble metal catalysts, usually requiring higher reaction temperatures or stoichiometric amounts of additives.9 As a comparison, Earthabundant metal catalysts, such as Fe, Co, and Ni, can also catalyze this process.10 Copper, as an Earth-abundant metal, has been widely used in catalytic aerobic oxidation reactions; however, most oxidation reactions of alcohols stopped at the stage of the corresponding aldehydes,11,12 and there are relatively few reports on the oxidation of aldehydes to carboxylic acids.13 In 2008, Sekar’s group reported a CuCl-catalyzed oxidation of aldehydes to carboxylic acids at room temperature; however, the reaction requires one equivalent of explosive",
+    "page": 1,
+    "bbox": [
+      63.0,
+      413.0,
+      492.0,
+      785.0
+    ],
+    "section": "Introduction",
+    "prev_block_id": "block_20_0012",
+    "next_block_id": "block_20_0014",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0014",
+    "doc_id": "20",
+    "block_type": "paragraph",
+    "text": "chemical, TBHP, as the oxidant (Scheme  1 \\mathrm { a } ) . ^ { 6 d } In 2016, Li’s group reported the Cu/NHC-catalyzed aerobic oxidation of aldehydes with one equivalent of NaOH, and the reaction needs to be carried out at 50  ^ { \\circ } \\mathrm { C } . ^ { ^ { 1 3 a } } Recently, Wu’s group reported a (CAAC)CuCl-catalyzed aerobic oxidation of aldehydes at  { 2 5 ~ ^ { \\circ } \\mathrm { C } } , , in which the substrates are mainly aromatic aldehydes (Scheme 1b).13b Herein, we wish to report a practical  \\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 } { \\cdot } 3 \\mathrm { H } _ { 2 } \\mathrm { O } and TEMPO catalyzed aerobic oxidation of aldehydes to carboxylic acids at room temperature (Scheme 1c).",
+    "page": 1,
+    "bbox": [
+      502.0,
+      382.0,
+      931.0,
+      537.0
+    ],
+    "section": "Introduction",
+    "prev_block_id": "block_20_0013",
+    "next_block_id": "block_20_0015",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0015",
+    "doc_id": "20",
+    "block_type": "title",
+    "text": "Results and discussion",
+    "page": 1,
+    "bbox": [
+      504.0,
+      566.0,
+      752.0,
+      584.0
+    ],
+    "section": "Results and discussion",
+    "prev_block_id": "block_20_0014",
+    "next_block_id": "block_20_0016",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0016",
+    "doc_id": "20",
+    "block_type": "paragraph",
+    "text": "We conducted initial studies with the evaluation of different copper catalysts to enable the aerobic oxidation of aldehydes",
+    "page": 1,
+    "bbox": [
+      502.0,
+      596.0,
+      929.0,
+      627.0
+    ],
+    "section": "Results and discussion",
+    "prev_block_id": "block_20_0015",
+    "next_block_id": "block_20_0017",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0017",
+    "doc_id": "20",
+    "block_type": "paragraph",
+    "text": "(Copper catalyzed oxidation of aldehydes to acids with TBHP as the oxidant",
+    "page": 1,
+    "bbox": [
+      521.0,
+      659.0,
+      880.0,
+      671.0
+    ],
+    "section": "Results and discussion",
+    "prev_block_id": "block_20_0016",
+    "next_block_id": "block_20_0018",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0018",
+    "doc_id": "20",
+    "block_type": "paragraph",
+    "text": "Copper catalyzed aerobic oxidation of aldehydes to acids with the preprepared catalyst",
+    "page": 1,
+    "bbox": [
+      521.0,
+      704.0,
+      915.0,
+      715.0
+    ],
+    "section": "Results and discussion",
+    "prev_block_id": "block_20_0017",
+    "next_block_id": "block_20_0019",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0019",
+    "doc_id": "20",
+    "block_type": "paragraph",
+    "text": "This work: Copper catalyzed aerobic oxidation with a commercially available catalyst to carboxylic acids using n-hexadecanal (1a) as the model substrate (Table 1). The oxidation of n-hexadecanal proceeded smoothly when using 10 mol% each of  \\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 } { \\cdot } 3 \\mathrm { H } _ { 2 } \\mathrm { O } and TEMPO as the catalysts (Table 1, entry 1). When switching to other copper catalysts, such as  \\mathrm { C u C l } _ { 2 } , \\ \\mathrm { C u ( O A c ) } _ { 2 } , CuBr, and CuOAc, the oxidative reaction did not occur (Table 1, entries 2–5). The reaction with  \\mathrm { L i N O } _ { 3 } , \\mathrm { N a N O } _ { 3 } , or  { \\bf K N O } _ { 3 } in the absence of any Cu salt failed to afford 2a; thus, Cu must have played a critical role in the oxidation process (Table 1, entries 6–8). Combining  \\mathrm { L i N O } _ { 3 } with other Cu(II) salts, such as  \\mathrm { C u C l } _ { 2 } and  \\mathrm { C u } ( \\mathrm { O A c } ) _ { 2 } , did not yield the corresponding product (Table 1, entries 9 and 10). The reaction also failed with the more costeffective 4-OH-TEMPO (Table 1, entry 11). No desired product was observed in toluene or MeCN (Table 1, entries 12 and 13). Finally, control experiments showed that the oxidative reaction proceeded very slowly without TEMPO (Table 1, entry 14), while it failed to proceed in the absence of  \\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 } { \\cdot } 3 \\mathrm { H } _ { 2 } \\mathrm { O } (Table 1, entry 15).",
+    "page": 1,
+    "bbox": [
+      521.0,
+      804.0,
+      915.0,
+      815.0
+    ],
+    "section": "Results and discussion",
+    "prev_block_id": "block_20_0018",
+    "next_block_id": "block_20_0020",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0020",
+    "doc_id": "20",
+    "block_type": "paragraph",
+    "text": "With the optimized reaction conditions in hand, the substrate scope was then investigated (Scheme 2). Linear aliphatic aldehydes and cyclohexanecarbaldehyde could all be oxidized smoothly to the corresponding acids 2a–2c. The oxidation reaction of 1a with an air balloon gave product 2a albeit with a slightly lower yield. The reaction may be easily conducted on a 50 mmol scale by using a pure oxygen bag with 1b as the substrate. When 1b was reacted under an air atmosphere, similar results could be obtained by extending the reaction time. The reactions of aliphatic aldehydes containing different functional groups, such as halogen, ester, ether, and aryl groups,",
+    "page": 2,
+    "bbox": [
+      63.0,
+      338.0,
+      492.0,
+      508.0
+    ],
+    "section": "Results and discussion",
+    "prev_block_id": "block_20_0019",
+    "next_block_id": "block_20_0021",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0021",
+    "doc_id": "20",
+    "block_type": "table",
+    "text": "| $^nC_{15}H_{31}CHO$ 1a, 0.5 mmol | $Cu(NO_3)_2 \\cdot 3H_2O$  (10 mol%)TEMPO (10 mol%)DCE,  $O_2$  balloon, rt, 18 h&quot;standard conditions&quot; | $^nC_{15}H_{31}COOH$ 2a | ; Entry | Variation from the &quot;standard conditions&quot; | Recovery (%) | Yield (%); 1 | None | 0 | 86; 2 | $CuCl_2$  instead of  $Cu(NO_3)_2 \\cdot 3H_2O$ | 91 | 0; 3 | $Cu(OAc)_2$  instead of  $Cu(NO_3)_2 \\cdot 3H_2O$ | 89 | 0; 4 | CuBr instead of  $Cu(NO_3)_2 \\cdot 3H_2O$ | 88 | 0; 5 | CuOAc instead of  $Cu(NO_3)_2 \\cdot 3H_2O$ | 85 | 0; 6 | $LiNO_3$  instead of  $Cu(NO_3)_2 \\cdot 3H_2O$ | 91 | 0; 7 | $NaNO_3$  instead of  $Cu(NO_3)_2 \\cdot 3H_2O$ | 86 | 0; 8 | $KNO_3$  instead of  $Cu(NO_3)_2 \\cdot 3H_2O$ | 93 | 0; 9 | $CuCl_2$  and  $LiNO_3$  instead of  $Cu(NO_3)_2 \\cdot 3H_2O$ | 88 | 0; 10 | $Cu(OAc)_2$  and  $LiNO_3$  instead of  $Cu(NO_3)_2 \\cdot 3H_2O$ | 88 | 0; 11 | 4-OH-TEMPO instead of TEMPO | 84 | 0; 12 | Toluene instead of DCE | 88 | 0; 13 | MeCN instead of DCE | 88 | 0; 14 | Without TEMPO | 31 | 38; 15 | Without  $Cu(NO_3)_2 \\cdot 3H_2O$ | 83 | 0 | Table 1 Optimization of the reaction conditionsa | a The reaction was conducted with aldehyde 1a (0.5 mmol), copper salts and/or nitrate salts (0.05 mmol), TEMPO (0.05 mmol), and solvent (2.0 mL) with an | \\mathbf { O } _ { 2 } | balloon at rt. The NMR yield and recovery were determined by 1 H NMR analysis with dibromomethane as the internal standard.",
+    "page": 2,
+    "bbox": [
+      67.0,
+      567.0,
+      492.0,
+      857.0
+    ],
+    "section": "Results and discussion",
+    "prev_block_id": "block_20_0020",
+    "next_block_id": "block_20_0022",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "table"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0022",
+    "doc_id": "20",
+    "block_type": "paragraph",
+    "text": "also afforded the corresponding carboxylic acids 2d–2h. No benzylic C–H bond oxidation products were observed under the standard conditions (2e and 2h). The reaction also tolerated conjugated or unconjugated C–C triple bonds (1j and 1i) or the ketone functionality (1k and 1o) affording carboxylic acids 2i–2k and 2o. The aerobic oxidation of 3-(benzyloxy)propanal 1l afforded 51% of carboxylic acid 2l and 15% of benzaldehyde with 22% recovery of 1l. Such a benzylic C–O bond oxidative cleavage product was also formed in our previous report.14 The aerobic oxidation of 2-(benzyloxy)acetaldehyde 1m afforded 73% of 2m and also 5% of benzaldehyde. The aldehyde with silyl ether motif 1n could also be converted to the corresponding acid 2n in 76% yield; the corresponding deprotection product and the deprotective oxidation product were not obtained.15 Amino-carbonyl group-substituted aldehydes 1p and 1q also worked smoothly yielding the corresponding carboxylic acids 2p and 2q. However, for the substrate containing thioether unit 1r, the reaction was messy without affording the desired acid 2r. Aromatic aldehydes 1s–",
+    "page": 2,
+    "bbox": [
+      502.0,
+      630.0,
+      931.0,
+      924.0
+    ],
+    "section": "Results and discussion",
+    "prev_block_id": "block_20_0021",
+    "next_block_id": "block_20_0023",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0023",
+    "doc_id": "20",
+    "block_type": "paragraph",
+    "text": "1v substituted with electron-withdrawing groups were more easily oxidized to afford the corresponding acids 2s–2v in good to high yields. However, aldehydes 1w–1y substituted with electron-donating groups afforded 5% of acid 2w with 58% recovery, 27% of acid 2x with 65% recovery, and 9% of acid 2y with 72% recovery, respectively. The reactivity of electron-deficient aromatic aldehydes was much higher (2s–2v vs. 2w–2y). The reactions of 2-furaldehyde 1z and  \\mathbf { \\alpha } _ { \\mathbf { \\alpha } _ { } \\mathbf { \\beta } _ { } } -unsaturated enal 1A also failed to afford the corresponding acids.",
+    "page": 3,
+    "bbox": [
+      63.0,
+      61.0,
+      490.0,
+      198.0
+    ],
+    "section": "Results and discussion",
+    "prev_block_id": "block_20_0022",
+    "next_block_id": "block_20_0024",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0024",
+    "doc_id": "20",
+    "block_type": "paragraph",
+    "text": "This reaction also works with complex molecules: compound 1B containing a steroid skeleton could be oxidized to 2B in 75% yield with the secondary alcohol being converted to the ketone as well; compound 1C containing an estrone skeleton could be oxidized to the corresponding carboxylic acid 2C in 73% yield (Scheme 3a). No epimerization of the stereocenters occurred owing to the mild reaction conditions, as deter-",
+    "page": 3,
+    "bbox": [
+      63.0,
+      198.0,
+      490.0,
+      306.0
+    ],
+    "section": "Results and discussion",
+    "prev_block_id": "block_20_0023",
+    "next_block_id": "block_20_0025",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0025",
+    "doc_id": "20",
+    "block_type": "table",
+    "text": "nC15H31CH2OH\n3, 1 mmol | Cu(NO3)2·3H2O (10 mol%)\nTEMPO (10 mol%) | nC15H31COOH\n2a, NMR yield: 89%; KHSO4(10 mol%); DCE, O2, rt, 30 h; nC15H31CH2OH\n3, 1 mmol | Cu(NO3)2·3H2O (10 mol%)\nTEMPO (10 mol%)\nDCE, O2, rt, 30 h | nC15H31CHO\n1a, NMR yield: 67% | (a) Copper-catalyzed aerobic oxidation of primary alcohols to carboxylic acids",
+    "page": 3,
+    "bbox": [
+      546.0,
+      77.0,
+      904.0,
+      175.0
+    ],
+    "section": "Results and discussion",
+    "prev_block_id": "block_20_0024",
+    "next_block_id": "block_20_0026",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "table"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0026",
+    "doc_id": "20",
+    "block_type": "table",
+    "text": "nC15H31CHO | Cu(NO3)2·3H2O (10 mol%) \nTEMPO (10 mol%) | nC15H31COOH; KHSO4(10 mol%); 1a, 0.5 mmol | DCE, O2, rt, 24 h | 2a, NMR yield: 85%; nC15H31CHO | Cu(NO3)2·3H2O (10 mol%) \nTEMPO (10 mol%) | nC15H31COOH; DCE, O2, rt, 24 h | 2a, NMR yield: 85%; 1a, 0.5 mmol |  | | (b) Copper catalyzed aerobic oxidation of aldehydes to carboxylic acids | Scheme 4 The effects of | K H S O _ { 4 } | on Cu/TEMPO catalyzed aerobic oxidation.",
+    "page": 3,
+    "bbox": [
+      546.0,
+      196.0,
+      904.0,
+      305.0
+    ],
+    "section": "Results and discussion",
+    "prev_block_id": "block_20_0025",
+    "next_block_id": "block_20_0027",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "table"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0027",
+    "doc_id": "20",
+    "block_type": "paragraph",
+    "text": "mined by  ^ 1 \\mathrm { H } and  ^ { 1 3 } \\mathrm { C } NMR analysis. Octanedial 1D may be oxidized to suberic acid 2D. Interestingly, for the reactions of para-phthalaldehyde 1E and meta-phthalaldehyde  ^ { 1 \\mathrm { F } , } only one aldehyde group was oxidized to afford aromatic carboxylic acids 2E and 2F with another aldehyde functionality remaining. The observed phenomenon could be rationalized by the low solubility of 2E and 2F, leading to precipitation during the reaction. With the substrate containing both aromatic aldehyde and aliphatic aldehyde, the aliphatic aldehyde unit was preferentially oxidized to afford product 2G (Scheme 3b). The result was consistent with the oxidation of o-methylbenzaldehyde 1y (Scheme  _ { 2 ) ; } the reactivity of ortho-alkyl substituted benzaldehyde was low due to the steric and electronic effects. Intermolecular competition experiments showed that aliphatic aldehydes were preferentially oxidized over aromatic aldehydes (Scheme 3c). When aliphatic aldehyde 1a and aromatic aldehydes 1w or 1z were introduced to the same reaction vessel, only aliphatic aldehyde 1a was oxidized; for the reaction of 1a in the presence of α,β-unsaturated enal 1A, only 1a was oxidized as well.",
+    "page": 3,
+    "bbox": [
+      502.0,
+      370.0,
+      929.0,
+      677.0
+    ],
+    "section": "Results and discussion",
+    "prev_block_id": "block_20_0026",
+    "next_block_id": "block_20_0028",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0028",
+    "doc_id": "20",
+    "block_type": "paragraph",
+    "text": "In the copper-catalyzed primary alcohol oxidation to acids, the addition of  \\mathrm { K H S O _ { 4 } } significantly accelerated the reaction.16 In the absence of  \\mathrm { K H S O _ { 4 } } , only the generation of aldehyde was observed (Scheme  \\mathsf { 4 a ) . } . However, in this copper-catalyzed aldehyde oxidation to acids, after 12 hours, regardless of the presence or absence of  \\mathrm { K H S O _ { 4 } } , aldehyde 1a was completely converted to carboxylic acid 2a (Scheme 4b). Based on these results, we reasoned that the mechanism is most probably different from that of alcohol. Thus, the mechanism is not clear yet, and further studies are in progress.",
+    "page": 3,
+    "bbox": [
+      502.0,
+      680.0,
+      929.0,
+      834.0
+    ],
+    "section": "Results and discussion",
+    "prev_block_id": "block_20_0027",
+    "next_block_id": "block_20_0029",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0029",
+    "doc_id": "20",
+    "block_type": "title",
+    "text": "Conclusions",
+    "page": 3,
+    "bbox": [
+      504.0,
+      862.0,
+      642.0,
+      880.0
+    ],
+    "section": "Conclusions",
+    "prev_block_id": "block_20_0028",
+    "next_block_id": "block_20_0030",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0030",
+    "doc_id": "20",
+    "block_type": "paragraph",
+    "text": "In summary, we have developed an efficient synthesis of carboxylic acids via aerobic oxidation of aldehydes using",
+    "page": 3,
+    "bbox": [
+      502.0,
+      892.0,
+      929.0,
+      922.0
+    ],
+    "section": "Conclusions",
+    "prev_block_id": "block_20_0029",
+    "next_block_id": "block_20_0031",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0031",
+    "doc_id": "20",
+    "block_type": "paragraph",
+    "text": "10 mol% each of  \\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 } { \\cdot } 3 \\mathrm { H } _ { 2 } \\mathrm { O } and TEMPO as catalysts and ambient 1 atm of pure  { \\bf O } _ { 2 } or oxygen in air as the oxidant. The transformation proceeded under very mild reaction conditions, which enabled the tolerance of many functionalities. This method exhibits excellent selectivity for different aldehyde functionalities. Further studies are being pursued in our laboratory.",
+    "page": 4,
+    "bbox": [
+      63.0,
+      61.0,
+      492.0,
+      168.0
+    ],
+    "section": "Conclusions",
+    "prev_block_id": "block_20_0030",
+    "next_block_id": "block_20_0032",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0032",
+    "doc_id": "20",
+    "block_type": "title",
+    "text": "Author contributions",
+    "page": 4,
+    "bbox": [
+      65.0,
+      197.0,
+      297.0,
+      216.0
+    ],
+    "section": "Author contributions",
+    "prev_block_id": "block_20_0031",
+    "next_block_id": "block_20_0033",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0033",
+    "doc_id": "20",
+    "block_type": "paragraph",
+    "text": "S. M., H. Q. and Y. Y. conceived and directed the project and designed the experiments. Y. H. conducted most of the experiments. S. J. conducted the experiments for the paper revisions according to the review reports. Z. Z. participated in the optimization of the reaction conditions. Y. H, H. Q. and S. M. checked the experimental data and wrote the manuscript.",
+    "page": 4,
+    "bbox": [
+      63.0,
+      225.0,
+      492.0,
+      335.0
+    ],
+    "section": "Author contributions",
+    "prev_block_id": "block_20_0032",
+    "next_block_id": "block_20_0034",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0034",
+    "doc_id": "20",
+    "block_type": "title",
+    "text": "Data availability",
+    "page": 4,
+    "bbox": [
+      65.0,
+      363.0,
+      240.0,
+      383.0
+    ],
+    "section": "Data availability",
+    "prev_block_id": "block_20_0033",
+    "next_block_id": "block_20_0035",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0035",
+    "doc_id": "20",
+    "block_type": "paragraph",
+    "text": "The data supporting this article have been included as part of the ESI.†",
+    "page": 4,
+    "bbox": [
+      65.0,
+      392.0,
+      492.0,
+      423.0
+    ],
+    "section": "Data availability",
+    "prev_block_id": "block_20_0034",
+    "next_block_id": "block_20_0036",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0036",
+    "doc_id": "20",
+    "block_type": "title",
+    "text": "Conflicts of interest",
+    "page": 4,
+    "bbox": [
+      65.0,
+      451.0,
+      284.0,
+      471.0
+    ],
+    "section": "Conflicts of interest",
+    "prev_block_id": "block_20_0035",
+    "next_block_id": "block_20_0037",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0037",
+    "doc_id": "20",
+    "block_type": "paragraph",
+    "text": "There are no conflicts to declare.",
+    "page": 4,
+    "bbox": [
+      65.0,
+      483.0,
+      289.0,
+      496.0
+    ],
+    "section": "Conflicts of interest",
+    "prev_block_id": "block_20_0036",
+    "next_block_id": "block_20_0038",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0038",
+    "doc_id": "20",
+    "block_type": "title",
+    "text": "Acknowledgements",
+    "page": 4,
+    "bbox": [
+      65.0,
+      526.0,
+      285.0,
+      546.0
+    ],
+    "section": "Acknowledgements",
+    "prev_block_id": "block_20_0037",
+    "next_block_id": "block_20_0039",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0039",
+    "doc_id": "20",
+    "block_type": "paragraph",
+    "text": "Financial support from the National Key R&D Program of China (Grant No. 2022YFA1503200) is greatly appreciated. We thank Mr Zuizhi Lin in this group for reproducing the results of 2g, 2q, and 2F presented in Schemes 2 and 3.",
+    "page": 4,
+    "bbox": [
+      63.0,
+      555.0,
+      492.0,
+      618.0
+    ],
+    "section": "Acknowledgements",
+    "prev_block_id": "block_20_0038",
+    "next_block_id": "block_20_0040",
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_20_0040",
+    "doc_id": "20",
+    "block_type": "title",
+    "text": "References",
+    "page": 4,
+    "bbox": [
+      67.0,
+      646.0,
+      191.0,
+      664.0
+    ],
+    "section": "References",
+    "prev_block_id": "block_20_0039",
+    "next_block_id": null,
+    "source_file": "20.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  }
+]

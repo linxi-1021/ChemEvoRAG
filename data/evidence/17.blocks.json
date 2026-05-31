@@ -1,0 +1,1102 @@
+[
+  {
+    "block_id": "block_17_0000",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "www.chemeurj.org",
+    "page": 1,
+    "bbox": [
+      789.0,
+      66.0,
+      924.0,
+      80.0
+    ],
+    "section": null,
+    "prev_block_id": null,
+    "next_block_id": "block_17_0001",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0001",
+    "doc_id": "17",
+    "block_type": "title",
+    "text": "Aerobic Oxidation of PMB Ethers to Carboxylic Acids",
+    "page": 1,
+    "bbox": [
+      73.0,
+      98.0,
+      820.0,
+      123.0
+    ],
+    "section": "Aerobic Oxidation of PMB Ethers to Carboxylic Acids",
+    "prev_block_id": "block_17_0000",
+    "next_block_id": "block_17_0002",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0002",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "Qian Zhang,[a] Jiabin Zhang,[b] Hui Qian,*[a] and Shengming Ma*[a, b, c]",
+    "page": 1,
+    "bbox": [
+      72.0,
+      131.0,
+      695.0,
+      151.0
+    ],
+    "section": "Aerobic Oxidation of PMB Ethers to Carboxylic Acids",
+    "prev_block_id": "block_17_0001",
+    "next_block_id": "block_17_0003",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0003",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "The first aerobic protocol of direct transformation of pmethoxybenzyl (PMB) ethers to carboxylic acids efficiently with Fe(NO3)3 · 9H2O and TEMPO as catalysts at room temperature has been developed. The reaction accommodates C\u0000 Br bond, terminal/non-terminal C\u0000 C triple bond, amide, cyano, nitro, ester, and trifluoromethyl groups. Even highly selective oxida-",
+    "page": 1,
+    "bbox": [
+      72.0,
+      180.0,
+      492.0,
+      268.0
+    ],
+    "section": "Aerobic Oxidation of PMB Ethers to Carboxylic Acids",
+    "prev_block_id": "block_17_0002",
+    "next_block_id": "block_17_0004",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0004",
+    "doc_id": "17",
+    "block_type": "title",
+    "text": "Introduction",
+    "page": 1,
+    "bbox": [
+      73.0,
+      287.0,
+      186.0,
+      302.0
+    ],
+    "section": "Introduction",
+    "prev_block_id": "block_17_0003",
+    "next_block_id": "block_17_0005",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0005",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "Applying protecting groups is a common strategy in multi-step syntheses. p-Methoxybenzyl (PMB) ether is one of the most frequently applied protecting strategies for alcohol protection attributing to its high chemical stability in the sequential protection and targeted transformation as well as the easiness of deprotection under mild conditions (Scheme 1a).[1] On the other hand, direct transformations of PMB ethers without deprotection step to other targeted synthetically versatile functionalities are of high interest for the sake of step-economy. Known reports are on the direct conversions of such PMB ethers to aldehydes in a deprotective manner[2] and to the synthetically less attractive p-methoxy-1-benzoates by the p-methoxybenzylic oxygenation[3] under aerobic conditions (Scheme 1b), however, their direct conversion to carboxylic acids[4] has never been achieved. Herein, we report a very mild Fe(NO ) · 9H O/ TEMPO-cocatalyzed direct deprotective aerobic oxidation of PMB ethers to carboxylic acids efficiently (Scheme 1c).",
+    "page": 1,
+    "bbox": [
+      70.0,
+      317.0,
+      492.0,
+      561.0
+    ],
+    "section": "Introduction",
+    "prev_block_id": "block_17_0004",
+    "next_block_id": "block_17_0006",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0006",
+    "doc_id": "17",
+    "block_type": "title",
+    "text": "Results and Discussion",
+    "page": 1,
+    "bbox": [
+      72.0,
+      587.0,
+      275.0,
+      602.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0005",
+    "next_block_id": "block_17_0007",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0007",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "We chose the PMB ether of C12 alcohol 1a as the model substrate. After trial and error, 1 a was successfully converted to the C12 carboxylic acid 2 a in 94 % NMR yield and interestingly the PMB part was formed as the aldehyde, 4-methoxybenzaldehyde 4a, in 93% NMR yield with 10 mol% each of Fe-",
+    "page": 1,
+    "bbox": [
+      70.0,
+      617.0,
+      492.0,
+      689.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0006",
+    "next_block_id": "block_17_0008",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0008",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "tive deprotection of different benzylic PMB ethers has been realized. The reaction has been successfully applied to the total synthesis of natural product, (R)-6-hydroxy-7,9-octadecadiynoic acid, demonstrating the practicality of the method. Based on experimental studies, a possible mechanism involving oxygenstabilized benzylic cation has been proposed.",
+    "page": 1,
+    "bbox": [
+      505.0,
+      180.0,
+      926.0,
+      267.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0007",
+    "next_block_id": "block_17_0009",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0009",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "(a) Traditional approach",
+    "page": 1,
+    "bbox": [
+      510.0,
+      286.0,
+      648.0,
+      299.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0008",
+    "next_block_id": "block_17_0010",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0010",
+    "doc_id": "17",
+    "block_type": "table",
+    "text": "OH | 1. Protection as PMB ether | R²OH; 2. Transformation | ; 3. Deprotection | | (b) Catalytic aerobic oxidations of PMB ethers to esters and aldehydes",
+    "page": 1,
+    "bbox": [
+      566.0,
+      306.0,
+      873.0,
+      344.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0009",
+    "next_block_id": "block_17_0011",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "table"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0011",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "(NO3)3 · 9H2O, TEMPO, and KCl in DCE at room temperature (Table 1, entry 1). Using DCM as the solvent gave a similar result (91 % NMR yield of 2a, Table 1, entry 2). The reaction in MeCN afforded a mixture of C12 carboxylic acid 2 a and the corresponding C12 aldehyde 3 a[2] (Table 1, entry 3). Reducing the loading of Fe(NO ) ·9H O or TEMPO led to a lower yield of 2 a (Table 1, entries 4 and 5). Control experiment showed that the reaction worked more efficiently without KCl within a shortened time of 8 h (Table 1, entry 7). In the absence of Fe(NO ) · 9H O or TEMPO, no reaction occurred (Table 1, entries 8 and 9). The reaction with 4-OH-TEMPO replacing TEMPO is much slower (Table 1, entry 10).",
+    "page": 1,
+    "bbox": [
+      505.0,
+      617.0,
+      926.0,
+      788.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0010",
+    "next_block_id": "block_17_0012",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0012",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "Subsequently, we examined the scope of the Fe-(NO ) · 9H O/TEMPO-cocatalyzed aerobic oxidative process. As shown in Scheme 2, PMB ethers with various length of alkyl chains for the R group gave the corresponding carboxylic acids 2 a–c in generally decent yields. Two mmol scale reaction of 1 a could successfully afford the corresponding acid 2 a in a high yield of 95 %. The reaction could also be performed by using an air balloon for 23 h with a yield of 89%. The substrate with a highly sterically hindering group such as adamantyl also worked (2 d). Synthetically versatile functional groups, such as bromo, terminal/non-terminal C\u0000 C triple bond, and phenyl group, were also applicable (2 e–h). Importantly, the substrates derived from pharmaceuticals and natural products including felbilnac (2 k), naproxen (2 l), ibuprofen (2 m) and sclareolide (2 n), also proceeded well. Furthermore, the optically active substrates worked without any racemization [(S)-2 h, (S)- or (R)-2 i, (S)- or (R)-2 j, (S)-2 l, (S)-2 m]. Optically active tricyclic lactone sclareolide 2 n was also formed in 80 % yield from PMB ether 1 n bearing a free tertiary hydroxy group. Last but not least, monoand bis- PMB ethers of 1,8-octanediol, 1p and 1o, both afforded diacid 2 o.",
+    "page": 1,
+    "bbox": [
+      505.0,
+      788.0,
+      926.0,
+      889.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0011",
+    "next_block_id": "block_17_0013",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0013",
+    "doc_id": "17",
+    "block_type": "table",
+    "text": "Taleptization thereaction cditi;  |  | Y mol% TEMPO n-C11H3COOH 2a Z mol% KCI | X mol1% Fe(NO3)3·9H20 | CHO |  | ; Entry |  | n-C11H23OPMB 1a | O balloon, Solvent, rt, t | n-C11H23CHO 3a MeO I | 4a | ; X/Y/Z | Solvent | t (h) | Recovery of 1 a (%) | NMR yield (%) | ;  |  |  |  | 2a 3a | 4alb; 1 | 10/10/10 | DCE | 18 | 0 | 94 0 | 93 (5); 2 | 10/10/10 | DCM | 18 | 0 | 91 0 | 90 (2); 3 | 10/10/10 | MeCN | 18 | o | 29 56 | 99; 4 | 5/10/10 | DCE | 18 | o | 80 9 | 99; 5 | 10/5/10 | DCE | 18 | o | 90 5 | 99; 6 | 10/10/5 | DCE | 12 | o | 97 0 | 93 (5); 7 | 10/10/0 | DCE | 8 | 0 | 95 0 | 93 (3); 8 | 10/0/0 | DCE | 8 | 100 | 0 0 | 0; 9 | 0/10/0 | DCE | 8 | 100 | 0 0 | 0; 10(c | 10/10/0 | DCE | 8 | 17 | 6 62 | 82 | [a] Reaction conditions: 1 a (0.5 mmol), Fe(NO ) · 9H O (X mol %), TEMPO (Y mol %), and KCl (Z mol %) in solvent (1.0 mL) with an oxygen balloon at rt. The recovery and NMR yield were determined by 1 H NMR analysis of the crude product. [b] NMR yield of 4-methoxybenzoic acid 5 a is shown in the parenthesis. [c] 4-OH-TEMPO was used instead of TEMPO.",
+    "page": 2,
+    "bbox": [
+      75.0,
+      77.0,
+      921.0,
+      336.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0012",
+    "next_block_id": "block_17_0014",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "table"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0014",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "We further scrutinized the substrate scope of the rather challenging differently substituted benzylic PMB ethers. As shown in Scheme 3, the electron-withdrawing and potentially useful groups such as cyano, nitro, trifluoromethyl, or ester groups are all compatible affording the non-methoxy-substituted benzoic acids 2 r–u highly selectively in good yields using 15 mol% each of Fe(NO ) ·9H O and TEMPO. When there is a meta-nitro group, extending the reaction time to 72 h was required affording the m-nitrobenzoic acid 2 v. Notably, by using 20 mol% each of Fe(NO ) · 9H O and TEMPO, benzylic PMB ether 1 q itself could also react smoothly to give benzoic acid 2 q in 79 % yield within 48 h, accompanied by just 6 % benzaldehyde 3 q. Moreover, under standard conditions, for 1,6- diol substrates with one hydroxy proteced as PMB ether and the other protected as p-CN (1 w) or p-CF (1 x) benzylic ether, the PMB ether was highly selectively removed affording 2 w and 2 x with the p-CN (1w) or p-CF (1x) benzylic ether untouched due to the much lower reactivity of electronwithdrawing benzylic ethers under the current aerobic conditions.",
+    "page": 2,
+    "bbox": [
+      70.0,
+      617.0,
+      492.0,
+      875.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0013",
+    "next_block_id": "block_17_0015",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0015",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "In order to demonstrate the practicality of this method, the natural product (R)-12[5] was synthesized in 8 steps from the commercially available 1,6-hexanediol (Scheme 4): Aldehyde 8 was obtained from 1,6-hexanediol 6 via protection and oxidation in 74 % and 76 % yields, respectively. By applying sequential alkynylation, two consecutive Novozym 435-catalyzed kinetic resolutions,[6] and acetylation, propargylic acetate (R)-10 was obtained in >99 % ee. The current aerobic oxidation of (R)-10 successfully afforded (R)-11 in 97% NMR yield under the standard conditions, which was submitted to next step without further purification. Finally, the copper-catalyzed coupling of (R)-11 with alkynyl bromide yielded (R)-12 in 88% yield with 95 % ee.[7]",
+    "page": 2,
+    "bbox": [
+      504.0,
+      445.0,
+      924.0,
+      631.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0014",
+    "next_block_id": "block_17_0016",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0016",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "To gain insight into the mechanism, the corresponding esters 13[8] and 14[9] were synthesized deliberately and submitted to the standard conditions. Interestingly no reaction was observed, excluding the intermediacy of these two esters (Equations (1) and (2)).",
+    "page": 2,
+    "bbox": [
+      505.0,
+      631.0,
+      924.0,
+      702.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0015",
+    "next_block_id": "block_17_0017",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0017",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "(1)",
+    "page": 2,
+    "bbox": [
+      902.0,
+      756.0,
+      922.0,
+      769.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0016",
+    "next_block_id": "block_17_0018",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0018",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "(2)",
+    "page": 2,
+    "bbox": [
+      902.0,
+      853.0,
+      922.0,
+      866.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0017",
+    "next_block_id": "block_17_0019",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0019",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "Based on these results and the literature,[10–12] a possible mechanism is proposed as shown in Scheme 5: *NO and *NO have been reported to be readily generated via the interaction of Fe(NO3)3 · 9H2O with TEMPO.[13] *NO2 would abstract the benzylic hydrogen atom producing benzylic radical Int 1.[10]",
+    "page": 3,
+    "bbox": [
+      70.0,
+      601.0,
+      492.0,
+      675.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0018",
+    "next_block_id": "block_17_0020",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0020",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "Next, Int 1 may couple with *NO affording nitro ester Int 2 or Int 2’, which would undergo rearrangement to afford 4- methoxybenzaldehyde 4 a and nitrite 1a’’. [10,11] With the help of *NO , the transformation of nitrite 1a’’ to nitrite radical Int 3 leads to aldehyde 3 a by the elimination of *NO radical from the Int 3.[12] Upon further oxidization, carboxylic acid product 2 a would be delivered.",
+    "page": 3,
+    "bbox": [
+      505.0,
+      502.0,
+      924.0,
+      602.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0019",
+    "next_block_id": "block_17_0021",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0021",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "In order to see whether mechanism A is rational, substrates 1 y and 1 z each with a cyclopropyl unit were synthesized and submitted to the standard conditions. No ring opening products were observed (Equations (3) and (4)). Moreover, nitrite 1a’’ was recovered in 30 % yield with only 8% yield of 2 a and 31% of aldehyde 4a under the standard conditions (Equation (5)), excluding the intermediacy of both benzylic radical Int 1 and the nitrite 1a’’. These results rule out mechanism A.",
+    "page": 3,
+    "bbox": [
+      504.0,
+      602.0,
+      924.0,
+      675.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0020",
+    "next_block_id": "block_17_0022",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0022",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "(3)",
+    "page": 4,
+    "bbox": [
+      470.0,
+      517.0,
+      487.0,
+      530.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0021",
+    "next_block_id": "block_17_0023",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0023",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "(4)",
+    "page": 4,
+    "bbox": [
+      470.0,
+      595.0,
+      487.0,
+      607.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0022",
+    "next_block_id": "block_17_0024",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0024",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "Subsequently, Fe(NO ) · 9H O/TEMPO-catalyzed and NO /TEM-PO-catalyzed aerobic oxidation of 1 a were monitored (Figure 1). We found that 15 mol% of NO and 10 mol% of TEMPOcatalyzed aerobic oxidation of PMB ether matched the data of the current standard conditions of 10 mol% of Fe(NO ) ·9H O and 10 mol % of TEMPO catalytic recipe (for more details, see SI). Surprisingly, only 6 % of 4-methoxybenzaldehyde 4 a was oxidized to 4-methoxybenzoic acid 5 a as observed during the monitoring of the whole reaction process. These results illustrated *NO radical may be involved in this reaction.",
+    "page": 4,
+    "bbox": [
+      505.0,
+      146.0,
+      924.0,
+      288.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0023",
+    "next_block_id": "block_17_0025",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0025",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "Next, the corresponding alcohol 1 a’ was submitted to the standard conditions.[4n] Surprisingly, the reaction was very slow yielding only 55% NMR yield of acid 2a with 40% NMR yield of aldehyde 3 a even after 11.5 hours. Given that 4-methoxybenzaldehyde 4 a was detected as the product in the current transformation, we reasoned that aldehyde 4 a may accelerate the process of oxidation of alcohol. Indeed, when using 4- methoxybenzaldehyde 4 a (40 mol %) as additive under the standard conditions, the alcohol 1 a’ was transformed to acid within 11.5 hours (Equation (6)). We then monitored the reactions of PMB ether and alcohol (Figure 2a and b) and found that indeed the reaction rate of PMB ether 1 a is much faster than that of alcohol 1a’ under the standard conditions. This phenomenon has been further confirmed by monitoring of alcohol 1 a’ in the presence of 4-methoxybenzaldehyde 4 a (Figure 2c). In addition, it is also surprising that only 5 % of pmethoxybenzaldehyde 4 a was oxidized to the corresponding 4- methoxybenzoic acid 5 a (Figure 2c).",
+    "page": 4,
+    "bbox": [
+      504.0,
+      288.0,
+      926.0,
+      546.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0024",
+    "next_block_id": "block_17_0026",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0026",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "This was further confirmed by the fact that under the standard conditions, the reaction of p-methoxybenzyl PMB ether 1 A afforded 4-methoxybenzoic acid 5 a only 7% NMR yield with 93 % NMR yield of 4-methoxybenzaldehyde 4a, which is matched with the results in monitoring that only 6% of 4- methoxybenzoic acid 5 a was detected (Equation (7) vs. Figure 1).",
+    "page": 5,
+    "bbox": [
+      70.0,
+      602.0,
+      492.0,
+      702.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0025",
+    "next_block_id": "block_17_0027",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0027",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "We also set up the competitive experiment of alcohol 1 a’ (0.50 mmol) and PMB ether 1a (0.50 mmol) with 0.05 mmol each of Fe(NO ) · 9H O and TEMPO as catalysts (Equation (8)): 0.24 mmol of aldehyde 3a, 0.10 mmol of nitrite 1a’’, and 0.04 mmol of 4-methoxybenzaldehyde 4 a were afforded after 8 h. The amounts of recovered alcohol 1 a’ and PMB ether 1 a were 0.15 mmol and 0.46 mmol, respectively. These results demonstrated that the alcohol 1a’ was much more reactive when the alcohol and the PMB ether both existed, which was consistent with the observion in the monitoring experiment (Figure 1a) that the concentration of alcohol was low during the reaction.",
+    "page": 5,
+    "bbox": [
+      70.0,
+      774.0,
+      492.0,
+      889.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0026",
+    "next_block_id": "block_17_0028",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0028",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "In addition, isotopic 18O labeled substrate 1 a-18O was submitted to the standard conditions, the content of isotopic 18O in the acid 2 a is much higher than 4-methoxybenzaldehyde 4 a (Equation (9)). Oxygen atom exchange experiments of 2 a or 4 a with H 18O were also conducted: Oxygen in the acid 2 a remained almost unchanged (Equation (10)), however, the oxygen in 4-methoxybenzaldehyde 4 a exchanged with H 18O affording 33% 18O labeled 4-methoxybenzaldehyde under the standard conditions (Equation (11)). Thus, it is concluded that the isotopic 18O in the acid 2 a came from 1 a-18O (Equation (9)).",
+    "page": 5,
+    "bbox": [
+      504.0,
+      745.0,
+      926.0,
+      889.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0027",
+    "next_block_id": "block_17_0029",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0029",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "All of these results indicated the cleavage of C\u0000 O bond connected to PMB group (Equation (9)).",
+    "page": 6,
+    "bbox": [
+      72.0,
+      74.0,
+      490.0,
+      103.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0028",
+    "next_block_id": "block_17_0030",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0030",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "(9)",
+    "page": 6,
+    "bbox": [
+      468.0,
+      145.0,
+      487.0,
+      159.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0029",
+    "next_block_id": "block_17_0031",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0031",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "(10)",
+    "page": 6,
+    "bbox": [
+      462.0,
+      234.0,
+      487.0,
+      248.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0030",
+    "next_block_id": "block_17_0032",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0032",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "(11)",
+    "page": 6,
+    "bbox": [
+      462.0,
+      315.0,
+      489.0,
+      329.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0031",
+    "next_block_id": "block_17_0033",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0033",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "acid product 2 a. [4n] However, the oxidation of 4-methoxybenzaldehyde 4 a to 4-methoxybenzoic acid 5a was slow. The role of 4-methoxybenzaldehyde 4 a on the oxidation of alcohol to carboxylic acid is still unclear.",
+    "page": 6,
+    "bbox": [
+      505.0,
+      74.0,
+      924.0,
+      131.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0032",
+    "next_block_id": "block_17_0034",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0034",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "In order to further verify the intermediacy of oxonium ion Int 4, we investigated the effect of para-substituent group in the phenyl ring of 1 (Table 2). The reactivity of 1 dropped along with the electron-withdrawing ability of this R group: 4- methoxybenzyl ether 1 a was fully consumed in only 8 h (Table 2, entry 1) while the 4-cyanobenzyl substrate 1 a–C was totally inert under the standard conditions (Table 2, entry 4). The results fitted the Hammett plot[17] of log(k /k ) versus σ, as shown in Scheme 7. The Hammett slope of ρ=\u0000 2.28422 suggests the formation of this positively charge species,[15] further supporting the formation of Int 4.",
+    "page": 6,
+    "bbox": [
+      504.0,
+      131.0,
+      924.0,
+      290.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0033",
+    "next_block_id": "block_17_0035",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0035",
+    "doc_id": "17",
+    "block_type": "table",
+    "text": "1a, 0.5 mmol | 2a, 85% 4a, 95% NMR yield 5a, 2% NMR yield; Entry | R | Recovery of 1 a (%) | NMR yield (%);  |  |  | 2a | 3a | 4(b];  | OMe (1 a) | 0 | 95 | o | 93 (3); 2 | Me (1 a-A) | 11 | 73 | 16 | 88; 3 | H (1 a-B) | 39 | 45 | 9 | 55; 4 | CN (1 a-C) | 97 | o | 0 | o | [a] Reaction conditions: 1 (0.5 mmol), Fe(NO ) · 9H O (10 mol%), and TEMPO (10 mol %) in DCE (1.0 mL) with an oxygen balloon at rt for 8 h. The recovery and NMR yield were determined by 1 H NMR analysis of the crude product. [b] NMR yield of corrosponding benzoic acid of 5 is shown in the parenthesis.",
+    "page": 6,
+    "bbox": [
+      510.0,
+      424.0,
+      917.0,
+      535.0
+    ],
+    "section": "Results and Discussion",
+    "prev_block_id": "block_17_0034",
+    "next_block_id": "block_17_0036",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "table"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0036",
+    "doc_id": "17",
+    "block_type": "title",
+    "text": "Conclusions",
+    "page": 7,
+    "bbox": [
+      73.0,
+      73.0,
+      183.0,
+      89.0
+    ],
+    "section": "Conclusions",
+    "prev_block_id": "block_17_0035",
+    "next_block_id": "block_17_0037",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0037",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "In summary, we have developed an efficient and highly selective aerobic transformation of PMB ethers affording the corresponding carboxylic acids under the catalysis of Fe-(NO ) · 9H O/TEMPO with pure oxygen or air as the green oxidant. The reaction proceeds under very mild reaction conditions and allows transformation of a variety of PMB ethers accomodating many functionalities. No racemization occurred for PMB ethers of optically active alcohols. Moreover, total synthesis of natural product (R)-6-hydroxy-7,9-octadecadiynoic acid (R)-12 has been realized with this reaction as the key step. Experimental studies indicated a unique mechanism involving oxygen-stabilized benzylic cation. Further studies are being actively pursued in our laboratory.",
+    "page": 7,
+    "bbox": [
+      70.0,
+      104.0,
+      492.0,
+      290.0
+    ],
+    "section": "Conclusions",
+    "prev_block_id": "block_17_0036",
+    "next_block_id": "block_17_0038",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0038",
+    "doc_id": "17",
+    "block_type": "title",
+    "text": "Experimental Section",
+    "page": 7,
+    "bbox": [
+      73.0,
+      316.0,
+      262.0,
+      331.0
+    ],
+    "section": "Experimental Section",
+    "prev_block_id": "block_17_0037",
+    "next_block_id": "block_17_0039",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0039",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "Fe(NO ) ·9H O (20.9 mg, 0.05 mmol), TEMPO (8.2 mg, 0.05 mmol), and 1a (153.8 mg, 0.5 mmol) were added to 25 mL flask sequentially. The flask was degassed to remove the air inside completely and refilled with O2 by an O2 balloon for three times. After adding DCE (1.0 mL), the resulting mixture was stirred at room temperature for 8 h until completion of the reaction as monitored by TLC (petroleum ether/ethyl acetate = 5/1). The resulting mixture was diluted with DCM and filtrated through a short column of silica gel eluted with DCM (120 mL). After evaporation, 95% NMR yield of 4a and 2 % NMR yield of 5a were determined by 1 H NMR analysis of the crude product with CH Br (35.0 μL) as the internal standard. After evaporation, an aqueous solution of Na CO (pH=11~12, 10 mL) was added to the crude product 2 a. The aqueous layer was extracted with ethyl acetate (20 mL×3). Then an aqueous solution of HCl (3.0 M) was added to the aqueous layer for adjusting pH of the solution to 1~2. The aqueous layer was diluted with ethyl acetate and extracted with ethyl acetate (20 mL×3). The organic layer was separated, washed with brine, dried over anhydrous Na SO , filtrated, concentrated, and evaporated to remove the solvent to afford 2 a[4n] (85.0 mg, 85 %) as solid: m.p. 43.1–43.9 °C (petroleum ether/ethyl acetate) (reported:[4n] m.p. 43–44 °C (petroleum ether/ethyl acetate)); 1 H NMR (400 MHz, CDCl ): δ 11.87 (brs, 1 H, COOH), 2.34 (t, J = 7.4 Hz, 2 H, CH ), 1.63 (quint, J = 7.3 Hz, 2 H, CH ), 1.42–1.17 (m, 16 H, 8×CH ), 0.88 (t, J=6.8 Hz, 3 H, CH ); 13C NMR (100 MHz, CDCl ): δ 180.7, 34.1, 31.9, 29.6, 29.4, 29.3, 29.2, 29.1, 24.6, 22.7, 14.0.",
+    "page": 7,
+    "bbox": [
+      70.0,
+      386.0,
+      492.0,
+      702.0
+    ],
+    "section": "Experimental Section",
+    "prev_block_id": "block_17_0038",
+    "next_block_id": "block_17_0040",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0040",
+    "doc_id": "17",
+    "block_type": "title",
+    "text": "Supporting Information",
+    "page": 7,
+    "bbox": [
+      72.0,
+      730.0,
+      284.0,
+      746.0
+    ],
+    "section": "Supporting Information",
+    "prev_block_id": "block_17_0039",
+    "next_block_id": "block_17_0041",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0041",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "The authors have cited additional references within the Supporting Information.[18–57]",
+    "page": 7,
+    "bbox": [
+      72.0,
+      759.0,
+      490.0,
+      788.0
+    ],
+    "section": "Supporting Information",
+    "prev_block_id": "block_17_0040",
+    "next_block_id": "block_17_0042",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0042",
+    "doc_id": "17",
+    "block_type": "title",
+    "text": "Acknowledgements",
+    "page": 7,
+    "bbox": [
+      72.0,
+      815.0,
+      242.0,
+      831.0
+    ],
+    "section": "Acknowledgements",
+    "prev_block_id": "block_17_0041",
+    "next_block_id": "block_17_0043",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0043",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "Financial supports from the National Key R&D Program of China (2022 YFA1503200) and National Natural Science Foundation of China (grant no. 21988101) are greatly appreciated. We thank",
+    "page": 7,
+    "bbox": [
+      72.0,
+      845.0,
+      492.0,
+      889.0
+    ],
+    "section": "Acknowledgements",
+    "prev_block_id": "block_17_0042",
+    "next_block_id": "block_17_0044",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0044",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "Mr En Zheng in this group for reproducing the results of (R)-2 j’, (S)-2 l’ and 2 t’ presented in Scheme 2 and Scheme 3.",
+    "page": 7,
+    "bbox": [
+      505.0,
+      74.0,
+      924.0,
+      103.0
+    ],
+    "section": "Acknowledgements",
+    "prev_block_id": "block_17_0043",
+    "next_block_id": "block_17_0045",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0045",
+    "doc_id": "17",
+    "block_type": "title",
+    "text": "Conflict of Interests",
+    "page": 7,
+    "bbox": [
+      507.0,
+      130.0,
+      675.0,
+      146.0
+    ],
+    "section": "Conflict of Interests",
+    "prev_block_id": "block_17_0044",
+    "next_block_id": "block_17_0046",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0046",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "The authors declare no conflict of interest.",
+    "page": 7,
+    "bbox": [
+      507.0,
+      160.0,
+      783.0,
+      174.0
+    ],
+    "section": "Conflict of Interests",
+    "prev_block_id": "block_17_0045",
+    "next_block_id": "block_17_0047",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0047",
+    "doc_id": "17",
+    "block_type": "title",
+    "text": "Data Availability Statement",
+    "page": 7,
+    "bbox": [
+      507.0,
+      202.0,
+      744.0,
+      217.0
+    ],
+    "section": "Data Availability Statement",
+    "prev_block_id": "block_17_0046",
+    "next_block_id": "block_17_0048",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "title"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0048",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "The data that support the findings of this study are available in the supplementary material of this article.",
+    "page": 7,
+    "bbox": [
+      505.0,
+      231.0,
+      924.0,
+      261.0
+    ],
+    "section": "Data Availability Statement",
+    "prev_block_id": "block_17_0047",
+    "next_block_id": "block_17_0049",
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  },
+  {
+    "block_id": "block_17_0049",
+    "doc_id": "17",
+    "block_type": "paragraph",
+    "text": "Keywords: Functional group interconversion · PMB ethers · Aerobic oxidation · Iron catalysis · Carboxylic acids",
+    "page": 7,
+    "bbox": [
+      505.0,
+      279.0,
+      926.0,
+      309.0
+    ],
+    "section": "Data Availability Statement",
+    "prev_block_id": "block_17_0048",
+    "next_block_id": null,
+    "source_file": "17.pdf",
+    "confidence": 0.85,
+    "raw_payload": {
+      "mineru_type": "paragraph"
+    },
+    "errors": []
+  }
+]

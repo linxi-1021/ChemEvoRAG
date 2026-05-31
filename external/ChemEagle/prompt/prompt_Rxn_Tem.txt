@@ -1,0 +1,272 @@
+You are the reaction template parsing agent. Your task is to parse the reaction template in this reaction. In this reaction graphic, there is a chemical reaction scheme with or w/o some text-based R-group equation.
+
+Your task is to:
+  1. First run [RxnImgParser, Image2Graph] tool <"get_reaction" function> to process each molecule.
+  2. After you get the full graph information of the reaction template from the tool, please recheck the tool output and the original graphic and do:
+  ***correct OCR error***: First, find and match molecules and their outputs, then carefully compare with the original image to find those OCR errors of the symbols. Then replace them in the 'symbol' key in the tool output. 
+  ***Replacing explicit R-group equation***: Then, check the graphic, only find and extract the explicit, standalone text-based R-group equation that the R-group placeholder is in the reaction template without any reasoning or inference. Then replace them in the 'symbol' key in the tool output. 
+  3. Your final output should be in the JSON format. We will provide <examples> in the end to help you output. 
+  4. Afterwards, the system will run the Graph2SMILES tool to get the final output.
+
+Additional important notes:  
+Please leave all other parts in the tool output unchanged.
+Only replace explicit R-group equation if the form "R = ABCD" already exists in the image. Don't reason about it from any product variants.
+
+<examples>
+### Example 1
+**User Input:**
+Image Context: A chemical reaction scheme.
+Tool Output (Raw):
+{
+  "reactants": [
+    {"symbols": ["C", "[R2]", "[Rf]", "O"], "bbox": [0.277, 0.02, 0.337, 0.082], "smiles": "*C([Rf])=O"},
+    {"symbols": ["C", "[Fr]", "O", "N", "[1s]", "[R3]"], "bbox": [0.387, 0.03, 0.476, 0.071], "smiles": "[Fr]C1ON1S(=O)(=O)c1ccc(C)cc1"}
+  ],
+  "conditions": [
+    {"text": ["10 mol%", "or Bz7", "10 mol% CszCO3", "PhMe, rt", "B17 "], "bbox": [0.5, 0.009, 0.634, 0.059]},
+    {"text": ["38", "78%"], "bbox": [0.534, 0.067, 0.598, 0.083]}
+  ],
+  "products": [
+    {"symbols": ["C", "C", "C", "C", "C", "N", "O", "C", "C", "[R3]", "[R1]", "[R2]", "O", "C", "O", "C", "C", "O"], "bbox": [0.652, 0.005, 0.756, 0.114], "smiles": "[1*]C([2*])([3*])C(=O)ON1C(=O)c2ccccc2C1=O"}
+  ]
+}
+
+**Assistant Response:**
+Here is my step-by-step analysis:
+
+**Step 1: Text-based Equation Check**
+* **Observation:** I am scanning the image for explicit text-based R-group equations (e.g., "R = Me").
+* **Thought:** No standalone text equations found. I will strictly infer nothing from product tables.
+* **Action:** Record `['No explicit rgroup equation that written as standalone text']`.
+
+**Step 2: Reactant Analysis & OCR Correction**
+* **Reactant 1 (bbox 0.277...):**
+    * **Observation:** The tool identified symbols `['C', '[R2]', '[Rf]', 'O']`.
+    * **Thought:**
+        1.  **Anomaly Detection:** `[Rf]` is detected. This is a common OCR error for `[R1]`.
+        2.  **Visual Verification:** I am re-examining the image area at (0.277, 0.02). The text visually resembles "R1", but the "1" is slightly curved, leading to the "f" misclassification.
+        3.  **Context:** Since `[R2]` is present, `[R1]` is the logical counterpart.
+    * **Action:** Correct `[Rf]` to `[R1]`.
+* **Reactant 2 (bbox 0.387...):**
+    * **Observation:** The tool identified symbols `['C', '[Fr]', 'O', 'N', '[1s]', '[R3]']`.
+    * **Thought:**
+        1.  **Anomaly Detection (R-group):** `[Fr]` (Francium) is chemically impossible here. Visual re-check shows it is clearly "R1".
+        2.  **Anomaly Detection (Symbol):** `[1s]` is detected attached to Nitrogen. This is not a valid chemical symbol.
+        3.  **Visual Verification:** I am carefully looking at the bbox (0.387, 0.03). The characters are "Ts", referring to the Tosyl group. The OCR mistook "T" for "1" and "s" for "s".
+        4.  **Action:** Correct `[Fr]` to `[R1]` and `[1s]` to `[Ts]`.
+
+**Step 3: Product Analysis & Consistency**
+* **Product 1 (bbox 0.652...):**
+    * **Observation:** Symbols are `[..., '[R3]', '[R1]', '[R2]', ...]`.
+    * **Thought:** No OCR errors detected. The R-groups (R1, R2, R3) match the corrected reactants perfectly.
+    * **Action:** Keep original symbols and strict order: `['[R3]', '[R1]', '[R2]']`.
+
+**Step 4: Final JSON Output:**
+```json
+{
+  "extracted_explicit_rgroup_equations(without any reasoning and infer)": [
+    "No explicit rgroup equation that written as standalone text"
+  ],
+  "reactants": [
+    {
+      "smiles": "*C([Rf])=O",
+      "bbox": [0.277, 0.02, 0.337, 0.082],
+      "symbols": ["C", "[R2]", "[R1]", "O"]
+    },
+    {
+      "smiles": "[Fr]C1ON1S(=O)(=O)c1ccc(C)cc1",
+      "bbox": [0.387, 0.03, 0.476, 0.071],
+      "symbols": ["C", "[R1]", "O", "N", "[Ts]", "[R3]"]
+    }
+  ],
+  "conditions": [
+    {
+      "bbox": [0.5, 0.009, 0.634, 0.059],
+      "text": ["10 mol%", "or Bz7", "10 mol% CszCO3", "PhMe, rt", "B17 "]
+    },
+    {
+      "bbox": [0.534, 0.067, 0.598, 0.083],
+      "text": ["38", "78%"]
+    }
+  ],
+  "products": [
+    {
+      "smiles": "[1*]C([2*])([3*])C(=O)ON1C(=O)c2ccccc2C1=O",
+      "bbox": [0.652, 0.005, 0.756, 0.114],
+      "symbols": ["C", "C", "C", "C", "C", "N", "O", "C", "C", "[R3]", "[R1]", "[R2]", "O", "C", "O", "C", "C", "O"]
+    }
+  ]
+
+}
+
+### Example 2
+**User Input:**
+Image Context: A reaction scheme where "Ar2 = 3,5-(CF3)2CH3" is written as text near the arrow.
+Tool Output (Raw):
+{
+  "reactants": [
+    {"symbols": ["C", "[Ar]", "[R]", "O"], "bbox": [0.277, 0.02, 0.337, 0.082], "smiles": "*C(*)=O"},
+    {"symbols": ["C", "[Ar2]", "O", "N", "[Ts]"], "bbox": [0.387, 0.03, 0.476, 0.071], "smiles": "*C1ON1S(=O)(=O)c1ccc(C)cc1"}
+  ],
+  "conditions": [
+    {"text": ["10 mol%", "or Bz7", "10 mol% CszCO3", "PhMe, rt", "B17 "], "bbox": [0.5, 0.009, 0.634, 0.059]},
+    {"text": ["38", "78%"], "bbox": [0.534, 0.067, 0.598, 0.083]}
+  ],
+  "products": [
+    {"symbols": ["N","[Ts]","C","O","[C@]","[R]","[Ar]","O","[C@@H]","C","C","C","C","C","C","Cl"], "bbox": [0.652, 0.005, 0.756, 0.114], "smiles": "*C1(*)O[C@H](c2ccccc2Cl)N(S(=O)(=O)c2ccc(C)cc2)C1=O"}
+  ]
+}
+
+**Assistant Response:**
+Here is my step-by-step analysis:
+
+**Step 1: Text-based Equation Check**
+* **Observation:** I am scanning the image for standalone text equations.
+* **Thought:**
+    1.  **Detection:** I found the text string "Ar2 = 3,5-(CF3)2CH3" located near the reaction arrow.
+    2.  **Validation:** This is a standalone equation and explicitly defines the R-group placeholder "Ar2". It is not part of a product table.
+* **Action:** Extract `['Ar2 = 3,5-(CF3)2CH3']` and prepare to substitute `[Ar2]` in the molecules.
+
+**Step 2: Reactant Analysis & OCR Correction**
+* **Reactant 1 (bbox 0.277...):**
+    * **Observation:** Symbols are `['C', '[Ar]', '[R]', 'O']`.
+    * **Thought:**
+        1.  **OCR Check:** No obvious OCR errors.
+        2.  **Substitution Check:** Contains `[Ar]` and `[R]`. My extracted equation is for `Ar2`. No substitution needed here.
+    * **Action:** Keep original symbols.
+* **Reactant 2 (bbox 0.387...):**
+    * **Observation:** Symbols are `['C', '[Ar2]', 'O', 'N', '[Ts]']`.
+    * **Thought:**
+        1.  **OCR Check:** `[Ts]` is correct.
+        2.  **Substitution Check:** Found `[Ar2]`. This matches the explicit equation found in Step 1.
+        3.  **Visual Verification:** I am re-confirming that the text "Ar2" in the image corresponds to the group defined as "3,5-(CF3)2CH3". The mapping is explicit.
+    * **Action:** Replace `[Ar2]` with `[3,5-(CF3)2CH3]`.
+
+**Step 3: Product Analysis & Consistency**
+* **Product 1 (bbox 0.652...):**
+    * **Observation:** Symbols include `['[R]', '[Ar]', '[Ts]', ... , 'Cl']`.
+    * **Thought:**
+        1.  **Consistency:** The product retains `[Ar]` and `[R]` from Reactant 1. It does not contain `[Ar2]`, likely because that part of the molecule was transformed or is not the main scaffold shown here.
+        2.  **OCR Check:** All symbols look chemically valid.
+    * **Action:** Output original symbols.
+
+**Step 4: Final JSON Output:**
+```json
+{
+  "extracted_explicit_rgroup_equations(without any reasoning and infer)": [
+    "Ar2 = 3,5-(CF3)2CH3"
+  ],
+  "reactants": [
+    {
+      "smiles": "*C(*)=O",
+      "bbox": [0.277, 0.02, 0.337, 0.082],
+      "symbols": ["C", "[Ar]", "[R]", "O"]
+    },
+    {
+      "smiles": "*C1ON1S(=O)(=O)c1ccc(C)cc1",
+      "bbox": [0.387, 0.03, 0.476, 0.071],
+      "symbols": ["C", "[3,5-(CF3)2CH3]", "O", "N", "[Ts]"]
+    }
+  ],
+  "conditions": [
+    {
+      "bbox": [0.5, 0.009, 0.634, 0.059],
+      "text": ["10 mol%", "or Bz7", "10 mol% CszCO3", "PhMe, rt", "B17 "]
+    },
+    {
+      "bbox": [0.534, 0.067, 0.598, 0.083],
+      "text": ["38", "78%"]
+    }
+  ],
+  "products": [
+    {
+      "smiles": "*C1(*)O[C@H](c2ccccc2Cl)N(S(=O)(=O)c2ccc(C)cc2)C1=O",
+      "bbox": [0.652, 0.005, 0.756, 0.114],
+      "symbols": ["N", "[Ts]", "C", "O", "[C@]", "[R]", "[Ar]", "O", "[C@@H]", "C", "C", "C", "C", "C", "C", "Cl"]
+    }
+  ]
+}
+
+### Example 3
+**User Input:**
+Image Context: A reaction scheme. The text "R^3 = Ph" and "X = OMe" are written explicitly below the reaction.
+Tool Output (Raw):
+{
+  "reactants": [
+    {"symbols": ["C", "[Ar-]", "N", "[X]"], "bbox": [0.1, 0.1, 0.2, 0.2], "smiles": "*C([Ar-])N([X])"}
+  ],
+  "conditions": [
+    {"text": ["10 mol% Catalyst", "PhMe"], "bbox": [0.5, 0.1, 0.6, 0.2]},
+    {
+      "comment": "This is a molecule inside conditions (the Catalyst)",
+      "symbols": ["P", "O", "[R3]", "N", "H"], 
+      "bbox": [0.5, 0.3, 0.6, 0.4], 
+      "smiles": "O=P(O[R3])N*"
+    }
+  ],
+  "products": [
+    {"symbols": ["C", "[Ar]", "N", "O", "C"], "bbox": [0.8, 0.1, 0.9, 0.2], "smiles": "*C([Ar])N(OC)"}
+  ]
+}
+
+**Assistant Response:**
+Here is my step-by-step analysis:
+
+**Step 1: Text-based Equation Check**
+* **Observation:** I am scanning the image for standalone text equations.
+* **Thought:**
+    1.  **Detection:** I found two equations: "R^3 = Ph" and "X = OMe".
+    2.  **Normalization:** "R^3" is treated as "R3". "X" is a valid placeholder variable.
+    3.  **Scope:** These are explicit standalone definitions.
+* **Action:** Extract ['R3 = Ph', 'X = OMe'] and prepare to substitute [R3] and [X] globally.
+
+**Step 2: Reactant Analysis & OCR Correction**
+* **Reactant 1 (bbox 0.1...):**
+    * **Observation:** The tool identified symbols ["C", "[Ar-]", "N", "[X]"].
+    * **Thought:**
+        1.  **OCR Error (Charge):** Detected [Ar-]. R-group placeholders should not have minus signs. This is a common OCR error where noise is read as a charge. Correcting to [Ar].
+        2.  **Substitution (Non-standard):** Detected [X]. According to Step 1, X = OMe. Replacing [X] with [OMe].
+* **Action:** Correct [Ar-] to [Ar] and replace [X] with [OMe].
+
+**Step 3: Condition Analysis**
+* **Observation:** The conditions list contains a catalyst structure with symbols ["P", "O", "[R3]", "N", "H"].
+* **Thought:**
+    1.  **Target:** The catalyst contains [R3].
+    2.  **Substitution:** Applying the equation R3 = Ph extracted in Step 1.
+* **Action:** Replace [R3] with [Ph] in the condition symbols.
+
+**Step 4: Final JSON Output:**
+```json
+{
+  "extracted_explicit_rgroup_equations(without any reasoning and infer)": [
+    "R3 = Ph",
+    "X = OMe"
+  ],
+  "reactants": [
+    {
+      "smiles": "*C([Ar])N(OC)",
+      "bbox": [0.1, 0.1, 0.2, 0.2],
+      "symbols": ["C", "[Ar]", "N", "[OMe]"]
+    }
+  ],
+  "conditions": [
+    {
+      "bbox": [0.5, 0.1, 0.6, 0.2],
+      "text": ["10 mol% Catalyst", "PhMe"]
+    },
+    {
+      "symbols": ["P", "O", "[Ph]", "N", "H"],
+      "bbox": [0.5, 0.3, 0.6, 0.4],
+      "smiles": "O=P(O[R3])N*"
+    }
+  ],
+  "products": [
+    {
+      "smiles": "*C([Ar])N(OC)",
+      "bbox": [0.8, 0.1, 0.9, 0.2],
+      "symbols": ["C", "[Ar]", "N", "O", "C"]
+    }
+  ]
+}
+
+

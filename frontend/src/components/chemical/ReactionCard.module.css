@@ -1,0 +1,139 @@
+.card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: all 0.15s;
+  background: var(--color-card);
+}
+
+.card:hover {
+  border-color: var(--color-primary);
+}
+
+.highlighted {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.index {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.label {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pageBadge {
+  font-size: 10px;
+  color: var(--color-text-muted);
+  background: var(--color-bg);
+  padding: 1px 5px;
+  border-radius: 3px;
+  margin-left: auto;
+}
+
+.yieldBadge {
+  font-size: 10px;
+  color: var(--color-success);
+  background: #f6ffed;
+  padding: 1px 6px;
+  border-radius: 3px;
+  border: 1px solid #b7eb8f;
+  font-weight: 600;
+}
+
+.reactionScheme {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  background: var(--color-bg);
+  border-radius: var(--radius-sm);
+  overflow-x: auto;
+  margin-bottom: 8px;
+}
+
+.side {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.molBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.structureCanvas {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: #fafafa;
+}
+
+.invalidSmiles {
+  width: 120px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  font-size: 12px;
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.molName {
+  font-size: 10px;
+  color: var(--color-text-secondary);
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.arrow {
+  font-size: 20px;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+  padding: 0 4px;
+}
+
+.noData {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  font-style: italic;
+  padding: 16px;
+}
+
+.conditions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.conditionItem {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+}
+
+.procedureText {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}

@@ -1,0 +1,2038 @@
+[
+  {
+    "reaction_event_id": "rxn_5_0000",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "OCCCCCCCCO",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "*.O=C(O)CCCCCCC(=O)O",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 2,
+      "bbox": [
+        540.0,
+        99.0,
+        880.0,
+        204.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "039c75b06c86715f696459bc839bc2b934e353e512d2f0cd85c88c0522a3937e"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_5_0001",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "OCCCCCCCCO",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "O=CCCCCCCC=O",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 2,
+      "bbox": [
+        540.0,
+        99.0,
+        880.0,
+        204.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "039c75b06c86715f696459bc839bc2b934e353e512d2f0cd85c88c0522a3937e"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_5_0002",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "CC1(C)CCC[C@@]2(C)C1CC[C@@](C)(O)C2CCO",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "CC1(C)CCC[C@@]2(C)C1CC[C@@]1(C)OC(=O)CC21",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 2,
+      "bbox": [
+        555.0,
+        662.0,
+        865.0,
+        781.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "3b43ef0c538407fc4c03b55059055356f440839436065d73555063a87bb0bfd9"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_5_0003",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "F.[H][C@]12CC[C@]3([H])[C@]([H])(CC[C@@]4(C)[C@@]3([H])CC[C@]4([H])[C@H](C)CCCO)[C@@]1(C)CC[C@@H](O)C2",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "[H][C@]12CC[C@]3([H])[C@]([H])(CC[C@@]4(C)[C@@]3([H])CC[C@]4([H])[C@H](C)CCC(=O)O)[C@@]1(C)CCC(=O)C2",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 2,
+      "bbox": [
+        555.0,
+        662.0,
+        865.0,
+        781.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "3b43ef0c538407fc4c03b55059055356f440839436065d73555063a87bb0bfd9"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_5_0004",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "CC12C(=C)*13*21*32*13C21C32C13C21C32*345*67*89**%10*6(*8)*36*%109*74*6125",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "*.*.*.*",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 3,
+      "bbox": [
+        131.0,
+        264.0,
+        444.0,
+        377.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "e40d3f7c1d972d1f87c75f8efefdb2554bdfd9bc5ded40194b4268496a8cd1ac"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_5_0005",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "*.*.*.*",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "*.*",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 3,
+      "bbox": [
+        131.0,
+        264.0,
+        444.0,
+        377.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "e40d3f7c1d972d1f87c75f8efefdb2554bdfd9bc5ded40194b4268496a8cd1ac"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_5_0006",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "*.*",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "*CCCCCCCl",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 3,
+      "bbox": [
+        131.0,
+        264.0,
+        444.0,
+        377.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "e40d3f7c1d972d1f87c75f8efefdb2554bdfd9bc5ded40194b4268496a8cd1ac"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_5_0007",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "*CCCCCCCl",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "[Li]",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 3,
+      "bbox": [
+        131.0,
+        264.0,
+        444.0,
+        377.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "e40d3f7c1d972d1f87c75f8efefdb2554bdfd9bc5ded40194b4268496a8cd1ac"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_5_0008",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "*CCC([C@@](*)(C)I)[C@](C)(I)CCI",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "O=C1CC[CH]O1",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 3,
+      "bbox": [
+        148.0,
+        546.0,
+        428.0,
+        668.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_5_0009",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "CC.CC",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "*.[V]",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 3,
+      "bbox": [
+        148.0,
+        546.0,
+        428.0,
+        668.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_5_0010",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "[H][C@@](C)(CC)C1(C)CCCCC1",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "*.*.*.*",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 3,
+      "bbox": [
+        148.0,
+        546.0,
+        428.0,
+        668.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_5_0011",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "*.*.*.*",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "I",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 3,
+      "bbox": [
+        148.0,
+        546.0,
+        428.0,
+        668.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_5_0012",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "I",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "*.*.*.*",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 3,
+      "bbox": [
+        148.0,
+        546.0,
+        428.0,
+        668.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "d290f036731f863d6f5229e6f1ed513694d1012450fc25a34870d2e9f02276d4"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_5_0013",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 3,
+      "bbox": [
+        168.0,
+        877.0,
+        406.0,
+        931.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "07c5cbf5b766a0df0b88f59b4ae8de942309466d0a481d811bc73428c6a4ef08"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_5_0014",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 3,
+      "bbox": [
+        574.0,
+        786.0,
+        844.0,
+        828.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "52e3d41b96c324eecd2d141a70b3d3bc7958782f2dccd2550775892f904f08f3"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_5_0015",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "[Li].[Li].[Li]",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "[2H]",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 4,
+      "bbox": [
+        126.0,
+        264.0,
+        449.0,
+        438.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_5_0016",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 4,
+      "bbox": [
+        126.0,
+        264.0,
+        449.0,
+        438.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_5_0017",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "*.*",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 4,
+      "bbox": [
+        126.0,
+        264.0,
+        449.0,
+        438.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_5_0018",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "*.*.*",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 4,
+      "bbox": [
+        126.0,
+        264.0,
+        449.0,
+        438.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_5_0019",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "*.*.*",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "[2H]",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 4,
+      "bbox": [
+        126.0,
+        264.0,
+        449.0,
+        438.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_5_0020",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "[2H]",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 4,
+      "bbox": [
+        126.0,
+        264.0,
+        449.0,
+        438.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_5_0021",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "*CCCCCC",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 4,
+      "bbox": [
+        126.0,
+        264.0,
+        449.0,
+        438.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_5_0022",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "*CCCCCC",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 4,
+      "bbox": [
+        126.0,
+        264.0,
+        449.0,
+        438.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_5_0023",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "*CCCCCC",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 4,
+      "bbox": [
+        126.0,
+        264.0,
+        449.0,
+        438.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "71b892da1f516981e0fe7e2eb4c7c8cc1de0cd1e408aba386cdc708a8ecc73b2"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_tbl_5_0000",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "RCHO",
+        "smiles": null,
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "RCOOH",
+        "smiles": null,
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [
+      "Fe(NO3)3·9H2O",
+      "TEMPO",
+      "KCl"
+    ],
+    "solvents": [
+      "DCE"
+    ],
+    "temperature": "r.t.",
+    "time": "12 h or 16 h",
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 1,
+      "bbox": [
+        617.0,
+        482.0,
+        800.0,
+        533.0
+      ],
+      "block_id": "block_5_0009",
+      "figure_id": null,
+      "table_id": null,
+      "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.7,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "table_block_id": "block_5_0009",
+      "entry": {
+        "entry": "Table 1",
+        "reactants": [
+          "RCHO"
+        ],
+        "products": [
+          "RCOOH"
+        ],
+        "solvents": [
+          "DCE"
+        ],
+        "catalysts": [
+          "Fe(NO3)3·9H2O",
+          "TEMPO",
+          "KCl"
+        ],
+        "temperature": "r.t.",
+        "time": "12 h or 16 h",
+        "yield_value": null,
+        "yield_unit": null,
+        "other_conditions": [
+          "Oxidant: O2 or air",
+          "Catalyst loadings: Fe(NO3)3·9H2O (10 mol%), TEMPO (10 mol%), KCl (10 mol%)"
+        ]
+      }
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_tbl_5_0001",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "aldehyde 1a",
+        "smiles": null,
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "2a",
+        "smiles": null,
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "7a",
+        "smiles": null,
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [
+      "Fe(NO3)3·9H2O (10 mol%)",
+      "TEMPO (10 mol%)",
+      "KCl (10 mol%)"
+    ],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 3,
+      "bbox": [
+        515.0,
+        531.0,
+        904.0,
+        718.0
+      ],
+      "block_id": "block_5_0029",
+      "figure_id": null,
+      "table_id": null,
+      "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.7,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "table_block_id": "block_5_0029",
+      "entry": {
+        "entry": "1",
+        "reactants": [
+          "aldehyde 1a"
+        ],
+        "products": [
+          "2a",
+          "7a"
+        ],
+        "solvents": [],
+        "catalysts": [
+          "Fe(NO3)3·9H2O (10 mol%)",
+          "TEMPO (10 mol%)",
+          "KCl (10 mol%)"
+        ],
+        "temperature": null,
+        "time": null,
+        "yield_value": null,
+        "yield_unit": null,
+        "other_conditions": [
+          "NMR yields: 1a = 0%; 2a = 95%; 7a = 0%",
+          "Table 3. Aerobic Oxidation of Aldehyde 1a: The Role of Each Catalytic Component"
+        ]
+      }
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_tbl_5_0002",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "aldehyde 1a",
+        "smiles": null,
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "2a",
+        "smiles": null,
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "7a",
+        "smiles": null,
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 3,
+      "bbox": [
+        515.0,
+        531.0,
+        904.0,
+        718.0
+      ],
+      "block_id": "block_5_0029",
+      "figure_id": null,
+      "table_id": null,
+      "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.7,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "table_block_id": "block_5_0029",
+      "entry": {
+        "entry": "2",
+        "reactants": [
+          "aldehyde 1a"
+        ],
+        "products": [
+          "2a",
+          "7a"
+        ],
+        "solvents": [],
+        "catalysts": [],
+        "temperature": null,
+        "time": null,
+        "yield_value": null,
+        "yield_unit": null,
+        "other_conditions": [
+          "NMR yields: 1a = 98%; 2a = 2%; 7a = 0%",
+          "Table 3. Aerobic Oxidation of Aldehyde 1a: The Role of Each Catalytic Component"
+        ]
+      }
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_tbl_5_0003",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "aldehyde 1a",
+        "smiles": null,
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "2a",
+        "smiles": null,
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "7a",
+        "smiles": null,
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [
+      "Fe(NO3)3·9H2O (10 mol%)",
+      "TEMPO (10 mol%)"
+    ],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 3,
+      "bbox": [
+        515.0,
+        531.0,
+        904.0,
+        718.0
+      ],
+      "block_id": "block_5_0029",
+      "figure_id": null,
+      "table_id": null,
+      "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.7,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "table_block_id": "block_5_0029",
+      "entry": {
+        "entry": "3",
+        "reactants": [
+          "aldehyde 1a"
+        ],
+        "products": [
+          "2a",
+          "7a"
+        ],
+        "solvents": [],
+        "catalysts": [
+          "Fe(NO3)3·9H2O (10 mol%)",
+          "TEMPO (10 mol%)"
+        ],
+        "temperature": null,
+        "time": null,
+        "yield_value": null,
+        "yield_unit": null,
+        "other_conditions": [
+          "NMR yields: 1a = 14%; 2a = 81%; 7a = 0%",
+          "Table 3. Aerobic Oxidation of Aldehyde 1a: The Role of Each Catalytic Component"
+        ]
+      }
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_tbl_5_0004",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "aldehyde 1a",
+        "smiles": null,
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "2a",
+        "smiles": null,
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "7a",
+        "smiles": null,
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [
+      "Fe(NO3)3·9H2O (10 mol%)"
+    ],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 3,
+      "bbox": [
+        515.0,
+        531.0,
+        904.0,
+        718.0
+      ],
+      "block_id": "block_5_0029",
+      "figure_id": null,
+      "table_id": null,
+      "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.7,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "table_block_id": "block_5_0029",
+      "entry": {
+        "entry": "4",
+        "reactants": [
+          "aldehyde 1a"
+        ],
+        "products": [
+          "2a",
+          "7a"
+        ],
+        "solvents": [],
+        "catalysts": [
+          "Fe(NO3)3·9H2O (10 mol%)"
+        ],
+        "temperature": null,
+        "time": null,
+        "yield_value": null,
+        "yield_unit": null,
+        "other_conditions": [
+          "NMR yields: 1a = 0%; 2a = 78%; 7a = 11%",
+          "Table 3. Aerobic Oxidation of Aldehyde 1a: The Role of Each Catalytic Component"
+        ]
+      }
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_tbl_5_0005",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "aldehyde 1a",
+        "smiles": null,
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "2a",
+        "smiles": null,
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "7a",
+        "smiles": null,
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [
+      "Fe(NO3)3·9H2O (10 mol%)",
+      "KCl (10 mol%)"
+    ],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 3,
+      "bbox": [
+        515.0,
+        531.0,
+        904.0,
+        718.0
+      ],
+      "block_id": "block_5_0029",
+      "figure_id": null,
+      "table_id": null,
+      "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.7,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "table_block_id": "block_5_0029",
+      "entry": {
+        "entry": "5",
+        "reactants": [
+          "aldehyde 1a"
+        ],
+        "products": [
+          "2a",
+          "7a"
+        ],
+        "solvents": [],
+        "catalysts": [
+          "Fe(NO3)3·9H2O (10 mol%)",
+          "KCl (10 mol%)"
+        ],
+        "temperature": null,
+        "time": null,
+        "yield_value": null,
+        "yield_unit": null,
+        "other_conditions": [
+          "NMR yields: 1a = 15%; 2a = 64%; 7a = 12%",
+          "Table 3. Aerobic Oxidation of Aldehyde 1a: The Role of Each Catalytic Component"
+        ]
+      }
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_tbl_5_0006",
+    "doc_id": "5",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "aldehyde 1a",
+        "smiles": null,
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "2a",
+        "smiles": null,
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "7a",
+        "smiles": null,
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [
+      "TEMPO (10 mol%)",
+      "KCl (10 mol%)"
+    ],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "5",
+      "source_file": "5.pdf",
+      "page": 3,
+      "bbox": [
+        515.0,
+        531.0,
+        904.0,
+        718.0
+      ],
+      "block_id": "block_5_0029",
+      "figure_id": null,
+      "table_id": null,
+      "section": "Iron Catalysis for Room-Temperature Aerobic Oxidation of Alcohols to Carboxylic Acids",
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.7,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "table_block_id": "block_5_0029",
+      "entry": {
+        "entry": "6",
+        "reactants": [
+          "aldehyde 1a"
+        ],
+        "products": [
+          "2a",
+          "7a"
+        ],
+        "solvents": [],
+        "catalysts": [
+          "TEMPO (10 mol%)",
+          "KCl (10 mol%)"
+        ],
+        "temperature": null,
+        "time": null,
+        "yield_value": null,
+        "yield_unit": null,
+        "other_conditions": [
+          "NMR yields: 1a = 100%; 2a = 0%; 7a = 0%",
+          "Table 3. Aerobic Oxidation of Aldehyde 1a: The Role of Each Catalytic Component"
+        ]
+      }
+    },
+    "errors": []
+  }
+]

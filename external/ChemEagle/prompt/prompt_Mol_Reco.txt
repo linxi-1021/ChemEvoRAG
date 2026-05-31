@@ -1,0 +1,153 @@
+You are the molecular recognition agent. Your task is to detect and transfer every molecules in this reaction image into SMILES. In this reaction graphic, there is a chemical reaction scheme template with multiple product or fragment molecular sub-images with the detailed R-group information and their corresponding coref and text.
+
+Your task is to:
+1. First call [MolDetector, Image2Graph] tool <"get_multi_molecular_text_to_correct_withatoms" function> to process each molecule in this graphic.
+2. After you get the full graph information of each molecule from the tool, Please recheck the tool output and the original graphic and do:
+***correct OCR error***: First find and match molecules and their outputs, then carefully compare with the original image to find those OCR errors of the symbols. Then replace them in the 'symbol' key in the tool output. 
+*** Replacing explicit R-group equation***: Then, check the graphic, only find and extract the explicit, standalone text-based R-group equation that the R-group placeholder is in the graphic, without any reasoning or inference. Then replace them in the 'symbol' key in the tool output. (Extract standalone text only. Strictly DO NOT infer from product tables. And extract ALL explicit text equivalence statements (patterns like "Ar = ...", "R = ...", "Ar2 = ...", "X = ...") found ANYWHERE in the image text.) 
+3. your output should be in the JSON format. We will provide <examples> in the end to help you output. 
+4. Afterwards, the system will run the Graph2SMILES tool to get the final output.
+
+<examples>
+### Example 1
+**User Input:**
+Image Context: A reaction scheme with multiple products. No explicit text equations found.
+Tool Output (Raw):
+[{"bboxes": [{"category": "[Mol]", "bbox": [0.015, 0.568, 0.25, 0.871], "smiles": "O=C1C[C@H](c2ccccc2)[C@@H](c2ccccc2)NC(=O)N1c1ccccc1", "symbols": ["C", "C", "O", "N", "[Ph]", "C", "O", "N", "[C@@H]", "[Ph]", "[C@H]", "[Ph]"]}, {"category": "[Mol]", "bbox": [0.035, 0.004, 0.24, 0.14], "smiles": "*/C=C/C([H])=O", "symbols": ["C", "[Ar]", "C", "C", "[H]", "O"]}, {"category": "[Mol]", "bbox": [0.028, 0.181, 0.154, 0.323], "smiles": "*C([H])=O", "symbols": ["C", "[Ar2]", "[H]", "O"]}, {"category": "[Mol]", "bbox": [0.189, 0.181, 0.388, 0.355], "smiles": "*=C(N)Nc1ccccc1", "symbols": ["N", "[Ph]", "C", "N", "[X]"]}, {"category": "[Mol]", "bbox": [0.329, 0.568, 0.628, 0.885], "smiles": "<invalid>", "symbols": ["C", "C", "O", "N", "[Ph]", "C", "O", "N", "[C@@H]", "[O2C6H4]", "[C@H]", "[4NO2C6H4]"]}, {"category": "[Mol]", "bbox": [0.4, 0.295, 0.665, 0.445], "smiles": "Cc1cc(C)c(N2C=CN(c3c(C)cc(C)cc3C)=C2)c(C)c1.[H]", "symbols": ["N", "[Mes]", "C", "N", "[Mes]", "C", "C", "[H]"]}, {"category": "[Idt]", "bbox": [0.511, 0.454, 0.559, 0.511], "text": ["61"]}, {"category": "[Mol]", "bbox": [0.685, 0.041, 0.915, 0.346], "smiles": "<invalid>", "symbols": ["[Ph]", "N", "C", "[X]", "N", "[C@@H]", "[Ar2]", "[C@@H]", "[Ar7]", "C", "C", "O"]}, {"category": "[Idt]", "bbox": [0.827, 0.333, 0.872, 0.381], "text": ["85"]}, {"category": "[Mol]", "bbox": [0.702, 0.569, 0.988, 0.885], "smiles": "<invalid>", "symbols": ["[Ph]", "N", "C", "N", "[C@@H]", "[OC6H4]", "[C@@H]", "[4-C6H4]", "C", "C", "O", "S"]}], "corefs": [[5, 6], [7, 8]]}]'
+
+**Assistant Response:**
+Here is my step-by-step analysis:
+
+**Step 1: Text-based Equation Check**
+* **Observation:** Scanning for "R = ..." text.
+* **Thought:** No explicit standalone text equations found.
+* **Action:** Record 'No explicit rgroup equation'.
+
+**Step 2: OCR Error Correction (Molecule by Molecule)**
+
+* **Molecule 2 (bbox 0.035...):**
+    * **Observation:** Detected `[Ar]`.
+    * **Thought:** Molecule 3 contains `[Ar2]`. In chemical series, `[Ar]` usually implies `[Ar1]`. Visual re-check confirms the subscript "1" was missed.
+    * **Action:** Correct `[Ar]` to `[Ar1]`.
+
+* **Molecule 5 (bbox 0.329...):**
+    * **Observation:** Detected `[O2C6H4]` and `[4NO2C6H4]`.
+    * **Thought:**
+        1.  `[O2C6H4]` is missing the prefix "4-N". It should be `[4-NO2C6H4]`.
+        2.  `[4NO2C6H4]` is missing the standard hyphen. It should be `[4-NO2C6H4]`.
+    * **Action:** Correct both to `[4-NO2C6H4]`.
+
+* **Molecule 8 (bbox 0.685...):**
+    * **Observation:** Detected `[Ar7]`.
+    * **Thought:** `[Ar7]` is suspicious. Given `[Ar2]` is in the same molecule, `[Ar1]` is expected. The digit "7" is a common OCR misread of "1". Visual re-check confirms "Ar1".
+    * **Action:** Correct `[Ar7]` to `[Ar1]`.
+
+* **Molecule 10 (bbox 0.702...):**
+    * **Observation:** Detected `[OC6H4]` and `[4-C6H4]`.
+    * **Thought:**
+        1.  `[OC6H4]` is missing "4-Me". Likely `[4-MeOC6H4]`.
+        2.  `[4-C6H4]` is missing "Me". Likely `[4-MeC6H4]`.
+        3.  Visual re-check confirms these are Methyl/Methoxy substituted rings.
+    * **Action:** Correct to `[4-MeOC6H4]` and `[4-MeC6H4]`.
+
+**Step 3: Final JSON Output:**
+
+```json
+  {   
+      ## No explicit R-group equations (of the form X = ABCD) were found in the image.
+      'extracted_explicit_rgroup_equations(without any reasoning and infer)': ['No explicit rgroup equation that written as standalone text']
+
+      "bboxes": [{"category": "[Mol]", "bbox": [0.015, 0.568, 0.25, 0.871], "smiles": "O=C1C[C@H](c2ccccc2)[C@@H](c2ccccc2)NC(=O)N1c1ccccc1", "symbols": ["C", "C", "O", "N", "[Ph]", "C", "O", "N", "[C@@H]", "[Ph]", "[C@H]", "[Ph]"]}, {"category": "[Mol]", "bbox": [0.035, 0.004, 0.24, 0.14], "smiles": "*/C=C/C([H])=O", "symbols": ["C", "[Ar1]", "C", "C", "[H]", "O"]}, {"category": "[Mol]", "bbox": [0.028, 0.181, 0.154, 0.323], "smiles": "*C([H])=O", "symbols": ["C", "[Ar2]", "[H]", "O"]}, {"category": "[Mol]", "bbox": [0.189, 0.181, 0.388, 0.355], "smiles": "*=C(N)Nc1ccccc1", "symbols": ["N", "[Ph]", "C", "N", "[X]"]}, {"category": "[Mol]", "bbox": [0.329, 0.568, 0.628, 0.885], "smiles": "<invalid>", "symbols": ["C", "C", "O", "N", "[Ph]", "C", "O", "N", "[C@@H]", "[4-NO2C6H4]", "[C@H]", "[4-NO2C6H4]"]}, {"category": "[Mol]", "bbox": [0.4, 0.295, 0.665, 0.445], "smiles": "Cc1cc(C)c(N2C=CN(c3c(C)cc(C)cc3C)=C2)c(C)c1.[2H]", "symbols": ["N", "[Mes]", "C", "N", "[Mes]", "C", "C", "[2H]"]}, {"category": "[Idt]", "bbox": [0.511, 0.454, 0.559, 0.511], "text": ["61"]}, {"category": "[Mol]", "bbox": [0.685, 0.041, 0.915, 0.346], "smiles": "<invalid>", "symbols": ["[Ph]", "N", "C", "[X]", "N", "[C@@H]", "[Ar2]", "[C@@H]", "[Ar1]", "C", "C", "O"]}, {"category": "[Idt]", "bbox": [0.827, 0.333, 0.872, 0.381], "text": ["85"]}, {"category": "[Mol]", "bbox": [0.702, 0.569, 0.988, 0.885], "smiles": "<invalid>", "symbols": ["[Ph]", "N", "C", "N", "[C@@H]", "[4-MeOC6H4]", "[C@@H]", "[4-MeC6H4]", "C", "C", "O", "S"]}], 
+
+      "corefs": [[5, 6], [7, 8]]
+  }
+
+### Example 2
+**User Input:**
+Image Context: A reaction scheme. Explicit text "Ar = 4-OMeC6H4" is written in the image.
+Tool Output (Raw):
+[{"bboxes": [{"category": "[Mol]", "bbox": [0.066, 0.072, 0.2, 0.287], "smiles": "*/C=C/C([H])=O.C", "symbols": ["C", "C", "[R]", "C", "C", "[H]", "O"]}, {"category": "[Mol]", "bbox": [0.069, 0.677, 0.258, 0.897], "smiles": "*NC(CC(=O)OC)c1ccccc1", "symbols": ["[Ph]", "C", "N", "[Ar1]", "C", "[CO2Me]"]}, {"category": "[Mol]", "bbox": [0.094, 0.267, 0.175, 0.393], "smiles": "O=Nc1ccccc1", "symbols": ["N", "[Ph]", "O"]}, {"category": "[Mol]", "bbox": [0.266, 0.678, 0.484, 0.897], "smiles": "*NC(CC(=O)OC)c1c(F)c(F)c(F)c(F)c1F", "symbols": ["C", "[C6F8]", "N", "[Ar]", "C", "[CO2Me]"]}, {"category": "[Mol]", "bbox": [0.356, 0.349, 0.67, 0.607], "smiles": "CC1=C(N2C=CN(C3=C(C(C)C)C=CC=C3C(C)C)=C2)C(C(C)C)=CC=C1", "symbols": ["C", "C", "C", "C", "C", "C", "[iPr]", "C", "N", "C", "N", "C", "C", "[iPr]", "C", "C", "C", "C", "[iPr]", "C", "C"]}, {"category": "[Idt]", "bbox": [0.487, 0.602, 0.53, 0.652], "text": ["G8"]}, {"category": "[Mol]", "bbox": [0.491, 0.678, 0.712, 0.897], "smiles": "<invalid>", "symbols": ["C", "[C4H9]", "N", "[Ar]", "C", "[CO2Me]"]}, {"category": "[Mol]", "bbox": [0.722, 0.679, 0.955, 0.897], "smiles": "*NC(CC(=O)OC)C(=O)OCC", "symbols": ["C", "[EtO2C]", "N", "[Ar]", "C", "[CO2Me]"]}, {"category": "[Mol]", "bbox": [0.726, 0.148, 0.953, 0.306], "smiles": "*NC(*)CC(=O)OC", "symbols": ["C", "[OMe]", "C", "C", "[R]", "N", "[Ar]", "O"]}], "corefs": [[4, 5]]}]
+
+**Assistant Response:**
+Here is my step-by-step analysis:
+
+**Step 1: Text-based Equation Check**
+* **Observation:** Scanned image for "Ar = ..." or similar text.
+* **Thought:** Found "Ar = 4-OMeC6H4" explicitly written as a standalone equation.
+* **Action:** Extract `['Ar = 4-OMeC6H4']`. I will apply this substitution to all instances of `[Ar]` found in the molecules.
+
+**Step 2: OCR Error Correction & Substitution (Molecule by Molecule)**
+
+* **Molecule 2 (bbox 0.069...):**
+    * **Observation:** Detected `[Ar1]`.
+    * **Thought (OCR):** Other molecules in this series use `[Ar]`. `[Ar1]` is likely an OCR misread of `[Ar]` (interpreting noise as '1'). Visual re-check confirms there is [Ar], not [Ar1]. Correcting `[Ar1]` to `[Ar]`.
+    * **Thought (Substitution):** Now that I have `[Ar]`, I must apply the equation found in Step 1 (`Ar = 4-OMeC6H4`).
+    * **Action:** Replace `[Ar1]` with `[4-OMeC6H4]`.
+
+* **Molecule 4 (bbox 0.266...):**
+    * **Observation:** Detected `[C6F8]` and `[Ar]`.
+    * **Thought (OCR):** `[C6F8]` is chemically unlikely for a phenyl ring. It should correspond to a Pentafluorophenyl group (`C6F5`). The number '8' is a common OCR error for '5'. Visual re-check confirms there is [C6F5], not [C6F8]. Correcting to `[C6F5]`.
+    * **Thought (Substitution):** Found `[Ar]`. Apply explicit equation.
+    * **Action:** Correct `[C6F8]` to `[C6F5]` and replace `[Ar]` with `[4-OMeC6H4]`.
+
+* **Molecules 7, 8, 9:**
+    * **Observation:** Detected `[Ar]` in all these molecules.
+    * **Thought:** No OCR errors found. Apply the global substitution `Ar = 4-OMeC6H4`.
+    * **Action:** Replace all `[Ar]` with `[4-OMeC6H4]`.
+
+**Step 3: Final JSON Output:**
+```json
+  {
+      ## Explicit R-group equations (Ar = 4-OMeC6H4) written as standalone text were found in the image.
+      'extracted_explicit_rgroup_equations(without any reasoning and infer)': ['Ar = 4-OMeC6H4']
+      "bboxes": [{"category": "[Mol]", "bbox": [0.066, 0.072, 0.2, 0.287], "smiles": "*/C=C/C([H])=O.C", "symbols": ["C", "C", "[R]", "C", "C", "[H]", "O"]}, {"category": "[Mol]", "bbox": [0.069, 0.677, 0.258, 0.897], "smiles": "*NC(CC(=O)OC)c1ccccc1", "symbols": ["[Ph]", "C", "N", "[4-OMeC6H4]", "C", "[CO2Me]"]}, {"category": "[Mol]", "bbox": [0.094, 0.267, 0.175, 0.393], "smiles": "O=Nc1ccccc1", "symbols": ["N", "[Ph]", "O"]}, {"category": "[Mol]", "bbox": [0.266, 0.678, 0.484, 0.897], "smiles": "*NC(CC(=O)OC)c1c(F)c(F)c(F)c(F)c1F", "symbols": ["C", "[C6F5]", "N", "[4-OMeC6H4]", "C", "[CO2Me]"]}, {"category": "[Mol]", "bbox": [0.356, 0.349, 0.67, 0.607], "smiles": "CC1=C(N2C=CN(C3=C(C(C)C)C=CC=C3C(C)C)=C2)C(C(C)C)=CC=C1", "symbols": ["C", "C", "C", "C", "C", "C", "[iPr]", "C", "N", "C", "N", "C", "C", "[iPr]", "C", "C", "C", "C", "[iPr]", "C", "C"]}, {"category": "[Idt]", "bbox": [0.487, 0.602, 0.53, 0.652], "text": ["G8"]}, {"category": "[Mol]", "bbox": [0.491, 0.678, 0.712, 0.897], "smiles": "<invalid>", "symbols": ["C", "[C4H9]", "N", "[4-OMeC6H4]", "C", "[CO2Me]"]}, {"category": "[Mol]", "bbox": [0.722, 0.679, 0.955, 0.897], "smiles": "*NC(CC(=O)OC)C(=O)OCC", "symbols": ["C", "[EtO2C]", "N", "[4-OMeC6H4]", "C", "[CO2Me]"]}, {"category": "[Mol]", "bbox": [0.726, 0.148, 0.953, 0.306], "smiles": "*NC(*)CC(=O)OC", "symbols": ["C", "[OMe]", "C", "C", "[R]", "N", "[4-OMeC6H4]", "O"]}], 
+
+      "corefs": [[4, 5]]
+  }
+
+### Example 3 (R-Group Variant Expansion):
+**User Input:**
+Image Context: A reaction scheme. A product molecule has an 'R' group. Next to it, a text block lists "R = F, 89% (5e); R = Cl, 93% (5g); R = Br, 90% (5g); R = CN, 92% (5j)".
+Tool Output (Raw):
+[{"bboxes": [{"category": "[Mol]", "bbox": [0.03, 0.136, 0.325, 0.234], "smiles": "Cc1ccc(C(=O)C2OCCN2S(=O)(=O)c2ccc(C)cc2)cc1", "symbols": ["C", "[Me]", "C", "C", "C", "C", "C", "O", "C", "C", "N", "[Ts]", "O", "C", "C"]}, {"category": "[Idt]", "bbox": [0.138, 0.237, 0.268, 0.261], "text": ["9796 (5b)"]}, {"category": "[Mol]", "bbox": [0.043, 0.011, 0.356, 0.098], "smiles": "[1*]C(=O)CN(C([2*])C([3*])O[Si](C)(C)C(C)(C)CC)S(=O)(=O)c1ccc(C)cc1", "symbols": ["N", "[Ts]", "C", "C", "[R1]", "O", "C", "[R2]", "C", "[OTBS]", "[R3]"]}, {"category": "[Idt]", "bbox": [0.163, 0.098, 0.196, 0.118], "text": []}, {"category": "[Mol]", "bbox": [0.051, 0.269, 0.325, 0.366], "smiles": "*c1ccc(C(=O)C2OCCN2S(=O)(=O)c2ccc(C)cc2)cc1", "symbols": ["C", "O", "C", "C", "C", "C", "C", "C", "[R]", "C", "C", "O", "N", "[Ts]", "C"]}, {"category": "[Idt]", "bbox": [0.339, 0.278, 0.575, 0.366], "text": ["R = F, 89% (Se)", "R", "3", "Cl, 93% (50)", "R =", "90% (5g)", "R = CN; 92% (5j)", "Br,"]}, {"category": "[Mol]", "bbox": [0.065, 0.4, 0.352, 0.49], "smiles": "Cc1ccc(S(=O)(=O)N2CCOC2C(=O)c2cccc(Cl)c2)cc1", "symbols": ["N", "[Ts]", "C", "C", "C", "C", "C", "C", "C", "Cl", "C", "O", "O", "C", "C"]},  {"category": "[Idt]", "bbox": [0.158, 0.496, 0.283, 0.519], "text": ["89%0 (51)"], ...}], "corefs": [[0, 1], [2, 3], .....]}]
+
+**Assistant Response:**
+Here is my step-by-step analysis:
+
+**Step 1: Text-based Equation Check & OCR Correction**
+* **Observation (Text):** Found text block `["R = F, 89% (Se)", ... "Cl, 93% (50)", ... "Br", ... "CN"]`.
+* **Thought (OCR):** The text is messy but clearly lists R-group variants.
+    * "9796 (5b)" -> `97% (5b)`
+    * "89% (Se)" -> `89% (5e)`
+    * "93% (50)" -> `93% (5g)` (Inferred from context of '5' series)
+    * "89%0 (51)" -> `89% (5i)`
+* **Thought (Equation Extraction):** I identified a **one-to-many substitution**:
+    1.  `R = F`
+    2.  `R = Cl`
+    3.  `R = Br`
+    4.  `R = CN`
+* **Action:** Extract these equations and correct the OCR in the text fields.
+
+**Step 2: Molecule Expansion (Crucial Step)**
+* **Target:** Molecule at `bbox [0.051, 0.269...]` contains symbol `[R]`.
+* **Logic:** Since the text explicitly defines 4 distinct variants for this specific molecule, I must **expand** this single entry into 4 separate molecule entries.
+* **Execution:**
+    1.  **Variant 1 (F):** Copy original bbox/smiles. Replace `[R]` with `[F]`.
+    2.  **Variant 2 (Cl):** Copy original bbox/smiles. Replace `[R]` with `[Cl]`.
+    3.  **Variant 3 (Br):** Copy original bbox/smiles. Replace `[R]` with `[Br]`.
+    4.  **Variant 4 (CN):** Copy original bbox/smiles. Replace `[R]` with `[CN]`.
+    *Note: I will remove the original abstract molecule with `[R]` and replace it with these 4 concrete variants.*
+
+**Step 3: Other Molecule Check**
+   No R-groups or equations apply to them. Keep as is.
+**Step 4: Final JSON Output:**
+```json
+{
+## Explicit R-group equations (R = F, 89% (5e); R = Cl, 93% (5g); R = Br, 90% (5g)) written as standalone text were found in the image.
+      'extracted_explicit_rgroup_equations(without any reasoning and infer)': ['R = F, 89% (5e); R = Cl, 93% (5g); R = Br, 90% (5g)']
+  [{"bboxes": [{"category": "[Mol]", "bbox": [0.03, 0.136, 0.325, 0.234], "smiles": "Cc1ccc(C(=O)C2OCCN2S(=O)(=O)c2ccc(C)cc2)cc1", "symbols": ["C", "[Me]", "C", "C", "C", "C", "C", "O", "C", "C", "N", "[Ts]", "O", "C", "C"]}, {"category": "[Idt]", "bbox": [0.138, 0.237, 0.268, 0.261], "text": ["97% (5b)"]}, {"category": "[Mol]", "bbox": [0.043, 0.011, 0.356, 0.098], "smiles": "[1*]C(=O)CN(C([2*])C([3*])O[Si](C)(C)C(C)(C)CC)S(=O)(=O)c1ccc(C)cc1", "symbols": ["N", "[Ts]", "C", "C", "[R1]", "O", "C", "[R2]", "C", "[OTBS]", "[R3]"]}, {"category": "[Idt]", "bbox": [0.163, 0.098, 0.196, 0.118], "text": []}, ###***{"category": "[Mol]", "bbox": [0.051, 0.269, 0.325, 0.366], "smiles": "*c1ccc(C(=O)C2OCCN2S(=O)(=O)c2ccc(C)cc2)cc1", "symbols": ["C", "O", "C", "C", "C", "C", "C", "C", "[F]", "C", "C", "O", "N", "[Ts]", "C"]},{"category": "[Mol]", "bbox": [0.051, 0.269, 0.325, 0.366], "smiles": "*c1ccc(C(=O)C2OCCN2S(=O)(=O)c2ccc(C)cc2)cc1", "symbols": ["C", "O", "C", "C", "C", "C", "C", "C", "[Cl]", "C", "C", "O", "N", "[Ts]", "C"]},{"category": "[Mol]", "bbox": [0.051, 0.269, 0.325, 0.366], "smiles": "*c1ccc(C(=O)C2OCCN2S(=O)(=O)c2ccc(C)cc2)cc1", "symbols": ["C", "O", "C", "C", "C", "C", "C", "C", "[Br]", "C", "C", "O", "N", "[Ts]", "C"]},{"category": "[Mol]", "bbox": [0.051, 0.269, 0.325, 0.366], "smiles": "*c1ccc(C(=O)C2OCCN2S(=O)(=O)c2ccc(C)cc2)cc1", "symbols": ["C", "O", "C", "C", "C", "C", "C", "C", "[CN]", "C", "C", "O", "N", "[Ts]", "C"]} ***###, {"category": "[Idt]", "bbox": [0.339, 0.278, 0.575, 0.366], "text": ["R = F, 89% (5e); R = Cl, 93% (5g); R = Br, 90% (5g),R = CN, 92% (5j)"]}, {"category": "[Mol]", "bbox": [0.065, 0.4, 0.352, 0.49], "smiles": "Cc1ccc(S(=O)(=O)N2CCOC2C(=O)c2cccc(Cl)c2)cc1", "symbols": ["N", "[Ts]", "C", "C", "C", "C", "C", "C", "C", "Cl", "C", "O", "O", "C", "C"]},  {"category": "[Idt]", "bbox": [0.158, 0.496, 0.283, 0.519], "text": ["89% (5i)"]}, ... ], "corefs": [[0, 1], [2, 3], .....]}]
+
+ }
+between ###*** ***### is the updated molecules. (one replace the [R] and add three new molecules) Please ensure that all other information and data remain unchanged, especially the ***number in coordinates***
+
+

@@ -1,0 +1,2310 @@
+[
+  {
+    "reaction_event_id": "rxn_15-SI_0000",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "CC#CC#CC#CC#CC#CC#CC#C[CH2](C)CO",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "[1*]C([2*])O",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "[H]C(=O)C#CC#CC#CC#CC#CC#CC#CC",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "*COC(*)=O",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "*C(*)OC(=O)CCCCCCCCCCCCCCC",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 3,
+      "bbox": [
+        166.0,
+        494.0,
+        830.0,
+        596.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "a10057d28e1754c47bb034603358807ca1eac871f4d7be3fe1cbb2053eceb205"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_15-SI_0001",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "OCCO",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "N#Cc1ccc(CBr)cc1",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "CC.N#Cc1ccc(COCCO)cc1",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 8,
+      "bbox": [
+        189.0,
+        172.0,
+        806.0,
+        237.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "2162062ce33399e26094fc2148c53879c746f6a90e376f104a23516e25c02778"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_15-SI_0002",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "*.*.*.*.*.*.*.*.*",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "*COCCCCCCCCCCCCCCCC.C",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 9,
+      "bbox": [
+        208.0,
+        120.0,
+        789.0,
+        175.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "b1131e55f2680719626522163dcc5aef3cbae6cc96fcd90f2b65b797eaaa894d"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_15-SI_0003",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "C=*O",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "C#CI",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 9,
+      "bbox": [
+        181.0,
+        719.0,
+        816.0,
+        803.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "9b09f7ac0f8f1481e72cf1f76d74e799ed71d5cd8c389d33755ee6da1b5ad140"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_15-SI_0004",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "CC.[OH-]",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "[CH2+][CH2+].[O]",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 13,
+      "bbox": [
+        181.0,
+        108.0,
+        816.0,
+        193.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "c0af452fbb9ee09e588c3ed59e65d84d7c50187f5d53cbdc94052c1464eeaf99"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_15-SI_0005",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "[C-]/C=C/O",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "[I]",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "C=CC.C=CC",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 13,
+      "bbox": [
+        176.0,
+        524.0,
+        823.0,
+        609.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "6f11bfda389040e14a58f788682e806f7d966b8a1342664d6c3eca3898a4cce0"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_15-SI_0006",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "[Ar+].[Ar+].[OH-]",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "CCC",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "[CH]C.[O-]",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 14,
+      "bbox": [
+        176.0,
+        111.0,
+        823.0,
+        189.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "062968f0af62a3d8cb3f26dce310a443d5bdb89dc37336bfbd15c308ab42bb5c"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_15-SI_0007",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "OCCO",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "CCCCOCc1ccc(I)cc1",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 14,
+      "bbox": [
+        188.0,
+        514.0,
+        806.0,
+        601.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "bd2b57e504aaed72edb9cb72ea781eafadffd9f29d137a340b69b7447c8615de"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_15-SI_0008",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "[IH+].[I].[I]",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "*.*.*.[OH-]",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 15,
+      "bbox": [
+        181.0,
+        108.0,
+        816.0,
+        192.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "fb2386982f98fa38a454d77d101b483ff5f09d199b8e0e07efc9ca1949bd5d60"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_15-SI_0009",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "C#N.OCCO",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "C=C(C)/C=C\\C(I)=C/C.CCCCOC",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 15,
+      "bbox": [
+        176.0,
+        533.0,
+        823.0,
+        618.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "12a385088f5fda1b8e1674377390c4b80eeff373ebef82cc85ce357149dc358c"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_15-SI_0010",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "*.[I-].[I-]",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "*.[OH-]",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 16,
+      "bbox": [
+        181.0,
+        107.0,
+        816.0,
+        193.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "27b12ea901f148b6dddaf96c176fc0f2c91c82625fb61b884f2f5a6e6cbac63e"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_15-SI_0011",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "*.OCCO",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "CCCCOC.Cc1ccc(C)cc1",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 16,
+      "bbox": [
+        181.0,
+        495.0,
+        816.0,
+        581.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "a19931eab399e3eeaeb60ee2c9f5fada45e3b22615fc7e0a4a002cb81de60694"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_15-SI_0012",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "*.*.*.[I-]",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "*COCCCCCCCCCCCCCCCC.C=O",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 17,
+      "bbox": [
+        181.0,
+        107.0,
+        816.0,
+        193.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "afadc203d30225591b43374ff87342216255772be078338beb25ab0adac549d9"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_15-SI_0013",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "CC=CO.[I-]",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "C#[I+]",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 17,
+      "bbox": [
+        181.0,
+        543.0,
+        813.0,
+        627.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "b41a144e54462d2972fcfaa7bf516d73473ff79a3dffb36057dc51a47325ef2b"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_15-SI_0014",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "I.[OH]",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "*[Rf].O",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 24,
+      "bbox": [
+        196.0,
+        168.0,
+        801.0,
+        262.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "11a081dc57c81c0032cf67a752f5cfdfdbde77980b12ad7dac3b7f7700a2f4f4"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_15-SI_0015",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "*CCO",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "*.C",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 24,
+      "bbox": [
+        194.0,
+        631.0,
+        801.0,
+        726.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "d8df557cf2abccd95ac62cf1e775ca112d29df710f55d8937622281fd549e01b"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_15-SI_0016",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "*.*.*.*.[OH3+]",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "*.*.O",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 25,
+      "bbox": [
+        196.0,
+        252.0,
+        803.0,
+        344.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "dc213c5cc5f200c40e0f213e42342340086a779adabc28139f5c49512f2b8e0e"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_15-SI_0017",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "*CCO",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "*.[CH-]C=C",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 25,
+      "bbox": [
+        196.0,
+        687.0,
+        801.0,
+        780.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "a5973a0b9730d32d807689432b3d531dec6082b0d5ff096e8063e599dae28ffd"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_15-SI_0018",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "[Fe].[OH-]",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "*[Rf].O",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 26,
+      "bbox": [
+        169.0,
+        302.0,
+        830.0,
+        388.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "e01822e1e576e44b5dd049f7ebe5d7e81ead3bac2821c206bf35b87ecf481861"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_15-SI_0019",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "*.OCCO",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "C=CC(=C)C",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 26,
+      "bbox": [
+        176.0,
+        752.0,
+        823.0,
+        847.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "98bcfe2aedcfb6c0b2532cc38d9269956a747140ee66eab00fdb10328bb6ac90"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_15-SI_0020",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "*.*.*.I.I.I.I",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "CCCCCCC",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 27,
+      "bbox": [
+        159.0,
+        334.0,
+        836.0,
+        429.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "d91c97d1394de042d0b6e55fbbb0ca30a2c072811352d71f70f8a5e962cabf48"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_15-SI_0021",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "*.OCCO",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "CCCCOCc1ccc(C)cc1",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 27,
+      "bbox": [
+        159.0,
+        766.0,
+        836.0,
+        850.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "a0cf8183020e8f40ffe7a3f962f845ce745a844fbcad57c1b7918ce81aa9ee03"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_15-SI_0022",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "CC.[Ir].[Ir].[OH].[Zn]",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "O.[7*]*OCC#CC#CC#CC#CC#CC#CC#CC",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 28,
+      "bbox": [
+        166.0,
+        319.0,
+        830.0,
+        407.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "5a42ca806bb9234b4b271709aa1c79ac2f5cea5871e754ea7253c1ace26689d0"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_15-SI_0023",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "*.OCCO",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "C=CC(=C)COCCO",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 28,
+      "bbox": [
+        154.0,
+        726.0,
+        843.0,
+        816.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "064acca1759e8edbfc9777835864ddd5258ed9b4b8ec3e44b800a9943bb912d5"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_15-SI_0024",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "I.[CH].[OH]",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "*.O",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 29,
+      "bbox": [
+        196.0,
+        349.0,
+        803.0,
+        451.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "665e4e9c49f39c9fa8f55f76bd830e8a9f9b06830ae7c0c6676221822a8f0755"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_15-SI_0025",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-].[N-]",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "",
+        "smiles": "[Ni].[Tl]",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "*.*.*",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 29,
+      "bbox": [
+        156.0,
+        775.0,
+        843.0,
+        876.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "735482a2c596918b05a15712d48e1822a71ef930e79d1dff38db246f69ce328b"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_15-SI_0026",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "",
+        "smiles": "*.*.*",
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "",
+        "smiles": "C=CI.[U]",
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [],
+    "solvents": [],
+    "temperature": null,
+    "time": null,
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 29,
+      "bbox": [
+        156.0,
+        775.0,
+        843.0,
+        876.0
+      ],
+      "block_id": null,
+      "figure_id": null,
+      "table_id": null,
+      "section": null,
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.5,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "mineru_image_hash": "735482a2c596918b05a15712d48e1822a71ef930e79d1dff38db246f69ce328b"
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_tbl_15-SI_0000",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "n-C15H31CH2OH",
+        "smiles": null,
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "1a",
+        "smiles": null,
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "MeOH",
+        "smiles": null,
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "n-C15H31CHO",
+        "smiles": null,
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "HCOOn-C16H33",
+        "smiles": null,
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "n-C15H31COOMe",
+        "smiles": null,
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "n-C15H31COOn-C16H33",
+        "smiles": null,
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "n-C15H31CH2OMe",
+        "smiles": null,
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [
+      "BiCl3 (10 mol%)",
+      "TEMPO (5 mol%)",
+      "Fe(NO3)3·9H2O (6 mol%)"
+    ],
+    "solvents": [
+      "DCE",
+      "MeOH"
+    ],
+    "temperature": "50 °C",
+    "time": "40 h",
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 5,
+      "bbox": [
+        152.0,
+        118.0,
+        848.0,
+        202.0
+      ],
+      "block_id": "block_15-SI_0014",
+      "figure_id": null,
+      "table_id": null,
+      "section": "Optimization for the oxidative methyl esterification of alcohols",
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.7,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "table_block_id": "block_15-SI_0014",
+      "entry": {
+        "entry": null,
+        "reactants": [
+          "n-C15H31CH2OH",
+          "1a",
+          "MeOH"
+        ],
+        "products": [
+          "n-C15H31CHO",
+          "HCOOn-C16H33",
+          "n-C15H31COOMe",
+          "n-C15H31COOn-C16H33",
+          "n-C15H31CH2OMe"
+        ],
+        "solvents": [
+          "DCE",
+          "MeOH"
+        ],
+        "catalysts": [
+          "BiCl3 (10 mol%)",
+          "TEMPO (5 mol%)",
+          "Fe(NO3)3·9H2O (6 mol%)"
+        ],
+        "temperature": "50 °C",
+        "time": "40 h",
+        "yield_value": null,
+        "yield_unit": null,
+        "other_conditions": [
+          "Air + pure O2 balloon",
+          "MeOH (x equiv)",
+          "n-C15H31CH2OH + 1a (1.0 mmol)",
+          "Table S3. Optimization of the amount of MeOH",
+          "3a",
+          "11ea",
+          "5a",
+          "7ae"
+        ]
+      }
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_tbl_15-SI_0001",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "n-C15H31CH2OH",
+        "smiles": null,
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "MeOH",
+        "smiles": null,
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "2e",
+        "smiles": null,
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "n-C15H31CHO",
+        "smiles": null,
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "HCOOn-C16H33",
+        "smiles": null,
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "n-C15H31COOMe",
+        "smiles": null,
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [
+      "BiCl3",
+      "TEMPO",
+      "Fe(NO3)3·9H2O"
+    ],
+    "solvents": [
+      "DCE"
+    ],
+    "temperature": "50 °C",
+    "time": "t h",
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 5,
+      "bbox": [
+        152.0,
+        500.0,
+        842.0,
+        579.0
+      ],
+      "block_id": "block_15-SI_0016",
+      "figure_id": null,
+      "table_id": null,
+      "section": "Optimization for the oxidative methyl esterification of alcohols",
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.7,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "table_block_id": "block_15-SI_0016",
+      "entry": {
+        "entry": null,
+        "reactants": [
+          "n-C15H31CH2OH",
+          "MeOH",
+          "2e"
+        ],
+        "products": [
+          "n-C15H31CHO",
+          "HCOOn-C16H33",
+          "n-C15H31COOMe"
+        ],
+        "solvents": [
+          "DCE"
+        ],
+        "catalysts": [
+          "BiCl3",
+          "TEMPO",
+          "Fe(NO3)3·9H2O"
+        ],
+        "temperature": "50 °C",
+        "time": "t h",
+        "yield_value": null,
+        "yield_unit": null,
+        "other_conditions": [
+          "2e (5.0 equiv)",
+          "BiCl3 (10 mol%)",
+          "TEMPO (5 mol%)",
+          "Fe(NO3)3·9H2O (6 mol%)",
+          "Air + pure O2 balloon",
+          "DCE (x mL)",
+          "Table S4. Optimization of the concentrationa"
+        ]
+      }
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_tbl_15-SI_0002",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "1a (1.0 mmol)",
+        "smiles": null,
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "MeOH",
+        "smiles": null,
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "2e (5.0 equiv)",
+        "smiles": null,
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "n-C15H31CHO",
+        "smiles": null,
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "HCOOn-C16H33",
+        "smiles": null,
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "n-C15H31COOMe",
+        "smiles": null,
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "n-C15H31COOn-C16H33",
+        "smiles": null,
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "n-C15H31OMe",
+        "smiles": null,
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [
+      "BiCl3 (10 mol%)",
+      "TEMPO (5 mol%)",
+      "Fe(NO3)3·9H2O (6 mol%)"
+    ],
+    "solvents": [
+      "DCE"
+    ],
+    "temperature": "T °C",
+    "time": "48 h",
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 6,
+      "bbox": [
+        154.0,
+        109.0,
+        843.0,
+        191.0
+      ],
+      "block_id": "block_15-SI_0018",
+      "figure_id": null,
+      "table_id": null,
+      "section": "Optimization for the oxidative methyl esterification of alcohols",
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.7,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "table_block_id": "block_15-SI_0018",
+      "entry": {
+        "entry": null,
+        "reactants": [
+          "1a (1.0 mmol)",
+          "MeOH",
+          "2e (5.0 equiv)"
+        ],
+        "products": [
+          "n-C15H31CHO",
+          "HCOOn-C16H33",
+          "n-C15H31COOMe",
+          "n-C15H31COOn-C16H33",
+          "n-C15H31OMe"
+        ],
+        "solvents": [
+          "DCE"
+        ],
+        "catalysts": [
+          "BiCl3 (10 mol%)",
+          "TEMPO (5 mol%)",
+          "Fe(NO3)3·9H2O (6 mol%)"
+        ],
+        "temperature": "T °C",
+        "time": "48 h",
+        "yield_value": null,
+        "yield_unit": null,
+        "other_conditions": [
+          "Air + pure O2 balloon",
+          "Table S5. Optimization of the reaction temperaturea"
+        ]
+      }
+    },
+    "errors": []
+  },
+  {
+    "reaction_event_id": "rxn_tbl_15-SI_0003",
+    "doc_id": "15-SI",
+    "reaction_smiles": null,
+    "reactants": [
+      {
+        "name": "n-C15H31CH2OH",
+        "smiles": null,
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "MeOH (1.0 mmol)",
+        "smiles": null,
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "2e (5.0 equiv)",
+        "smiles": null,
+        "role": "reactant",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "products": [
+      {
+        "name": "n-C15H31CHO",
+        "smiles": null,
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "HCOOn-C16H33",
+        "smiles": null,
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      },
+      {
+        "name": "n-C15H31COOMe",
+        "smiles": null,
+        "role": "product",
+        "linked_molecule_card_id": null,
+        "amount": null,
+        "confidence": null
+      }
+    ],
+    "reagents": [],
+    "catalysts": [
+      "BiCl3 (10 mol%)",
+      "TEMPO (5 mol%)",
+      "Fe(NO3)3·9H2O (6 mol%)"
+    ],
+    "solvents": [
+      "MeOH"
+    ],
+    "temperature": "50 °C",
+    "time": "48 h",
+    "yield_value": null,
+    "procedure_text": null,
+    "source": {
+      "doc_id": "15-SI",
+      "source_file": "15-SI.pdf",
+      "page": 6,
+      "bbox": [
+        152.0,
+        472.0,
+        835.0,
+        550.0
+      ],
+      "block_id": "block_15-SI_0020",
+      "figure_id": null,
+      "table_id": null,
+      "section": "Optimization for the oxidative methyl esterification of alcohols",
+      "text_span": null
+    },
+    "supporting_block_ids": [],
+    "supporting_table_ids": [],
+    "supporting_figure_ids": [],
+    "confidence": 0.7,
+    "evidence_completeness": null,
+    "raw_payload": {
+      "table_block_id": "block_15-SI_0020",
+      "entry": {
+        "entry": null,
+        "reactants": [
+          "n-C15H31CH2OH",
+          "MeOH (1.0 mmol)",
+          "2e (5.0 equiv)"
+        ],
+        "products": [
+          "n-C15H31CHO",
+          "HCOOn-C16H33",
+          "n-C15H31COOMe"
+        ],
+        "solvents": [
+          "MeOH"
+        ],
+        "catalysts": [
+          "BiCl3 (10 mol%)",
+          "TEMPO (5 mol%)",
+          "Fe(NO3)3·9H2O (6 mol%)"
+        ],
+        "temperature": "50 °C",
+        "time": "48 h",
+        "yield_value": null,
+        "yield_unit": null,
+        "other_conditions": [
+          "Air + pure O2 balloon",
+          "Table S6. Optimization of the solventa"
+        ]
+      }
+    },
+    "errors": []
+  }
+]
