@@ -93,6 +93,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--limit", type=int, default=0, help="Only evaluate first N questions.")
     parser.add_argument("--paper", default=None, help="Only evaluate questions from a specific paper (e.g. '1').")
+    parser.add_argument("--react", action="store_true", help="Use ReAct multi-round retrieval.")
     args = parser.parse_args()
 
     questions_file = EVAL_DIR / "all_questions.json"
@@ -121,7 +122,21 @@ def main() -> int:
     print(f"Evaluating {len(all_q)} questions\n")
 
     store = LocalStore(base_dir=PROJECT_ROOT)
-    solver = LLMChemSolver()
+
+    # ElementKG client
+    elementkg_client = None
+    try:
+        from normalization import Neo4jIdentityClient, Neo4jIdentityConfig
+        _ekg_config = Neo4jIdentityConfig.from_yaml(PROJECT_ROOT / "config" / "neo4j.yaml")
+        elementkg_client = Neo4jIdentityClient(_ekg_config)
+    except Exception:
+        pass
+
+    if args.react:
+        from solver import ReActChemSolver
+        solver = ReActChemSolver(store, elementkg_client=elementkg_client)
+    else:
+        solver = LLMChemSolver()
 
     results: list[dict] = []
     scores: list[float] = []
@@ -138,18 +153,14 @@ def main() -> int:
         doc_id = source.replace(".pdf", "") if source else None
 
         try:
-            from retrieval.router import RetrievalRouter
-            # 尝试创建 ElementKG 客户端
-            elementkg_client = None
-            try:
-                from normalization import Neo4jIdentityClient, Neo4jIdentityConfig
-                _ekg_config = Neo4jIdentityConfig.from_yaml(PROJECT_ROOT / "config" / "neo4j.yaml")
-                elementkg_client = Neo4jIdentityClient(_ekg_config)
-            except Exception:
-                pass
-            router = RetrievalRouter(store, elementkg_client=elementkg_client)
-            package = router.retrieve(question, doc_ids=[doc_id] if doc_id else None)
-            answer_obj = solver.answer_from_package(package)
+            if args.react:
+                # ReAct solver handles retrieval internally
+                answer_obj = solver.answer(question, doc_ids=[doc_id] if doc_id else None)
+            else:
+                from retrieval.router import RetrievalRouter
+                router = RetrievalRouter(store, elementkg_client=elementkg_client)
+                package = router.retrieve(question, doc_ids=[doc_id] if doc_id else None)
+                answer_obj = solver.answer_from_package(package)
             system_answer = answer_obj.answer
             evidence_ids = [s.evidence_id for s in answer_obj.supporting_evidence]
             confidence = answer_obj.confidence
