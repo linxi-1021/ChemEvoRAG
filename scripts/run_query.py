@@ -46,6 +46,10 @@ def main() -> int:
         help="Synthesise answer with LLM. Requires API_KEY env var.",
     )
     parser.add_argument(
+        "--react", action="store_true",
+        help="Use ReAct multi-round retrieval (implies --use-llm).",
+    )
+    parser.add_argument(
         "--json", action="store_true",
         help="Output full GroundedAnswer as JSON instead of plain text.",
     )
@@ -62,7 +66,11 @@ def main() -> int:
     except Exception:
         pass
 
-    if args.use_llm:
+    if args.react:
+        from solver import ReActChemSolver
+        solver = ReActChemSolver(store, elementkg_client=elementkg_client)
+        answer = solver.answer(args.query, doc_ids=args.doc_id, top_k=args.top_k)
+    elif args.use_llm:
         solver = LLMChemSolver()
         package = RetrievalRouter(store, elementkg_client=elementkg_client).retrieve(
             args.query, doc_ids=args.doc_id, top_k=args.top_k
