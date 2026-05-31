@@ -181,11 +181,12 @@ class ReActChemSolver:
                     raw = raw[4:]
                 raw = raw.strip()
             import sys
-            tqdm.write(f"  [react] round {round_num + 1} assessment: {raw[:100]}", file=sys.stderr)
+            tqdm.write(f"  [react] round {round_num + 1} raw: {repr(raw[:200])}", file=sys.stderr)
             result = json.loads(raw)
             if isinstance(result, dict):
                 return result
-        except Exception:
-            pass
+        except Exception as e:
+            import sys
+            tqdm.write(f"  [react] assessment error: {type(e).__name__}: {e}", file=sys.stderr)
 
         return {"sufficient": len(evidence) > 0, "reason": "assessment failed"}
