@@ -126,17 +126,32 @@ def _detect_search_type(query: str) -> str:
     """自动检测查询类型。"""
     from rdkit import Chem
 
+    # 快速排除自然语言查询（含空格的长查询不是 SMILES/SMARTS）
+    q = query.strip()
+    if len(q) > 30 or (" " in q and len(q) > 10):
+        # 检查是否是官能团关键词
+        q_lower = q.lower()
+        fg_keywords = [
+            "hydroxyl", "carbonyl", "carboxyl", "amine", "ester", "phenyl",
+            "halogen", "aldehyde", "ketone", "benzene", "aromatic",
+            "羟基", "羰基", "羧基", "氨基", "酯基", "苯基", "卤素", "醛基",
+        ]
+        for kw in fg_keywords:
+            if kw in q_lower:
+                return "functional_group"
+        return "similarity"  # 自然语言查询不走结构检索，返回 similarity 会因 SMILES 解析失败而返回空
+
     # 检查是否是有效 SMILES
-    mol = Chem.MolFromSmiles(query)
+    mol = Chem.MolFromSmiles(q)
     if mol is not None:
         return "similarity"
 
     # 检查是否是 SMARTS
-    patt = Chem.MolFromSmarts(query)
+    patt = Chem.MolFromSmarts(q)
     if patt is not None:
         return "substructure"
 
-    # 其他情况 → 尝试用 LLM 转为 SMARTS（官能团描述）
+    # 短查询但不是 SMILES/SMARTS → 尝试 LLM 转为 SMARTS
     return "functional_group"
 
 
