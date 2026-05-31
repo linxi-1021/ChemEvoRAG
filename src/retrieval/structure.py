@@ -30,29 +30,39 @@ def _check_rdkit() -> bool:
     return _rdkit_available
 
 
-_SMARTS_SYSTEM = """\
-You are a chemistry assistant. Convert the user's functional group description \
-into a valid RDKit SMARTS pattern.
+_STRUCTURE_QUERY_SYSTEM = """\
+You are a chemistry assistant. Analyze the user's query and determine if it is \
+asking about chemical structure (substructure, similarity, or functional group).
+
+Return a JSON object:
+{
+  "is_structure_query": true/false,
+  "search_type": "similarity" | "substructure" | "functional_group" | null,
+  "smiles_or_smarts": "<SMILES or SMARTS pattern, or null>"
+}
 
 Rules:
-- Return ONLY the SMARTS string, nothing else.
+- is_structure_query=true ONLY if the query is specifically about finding molecules \
+  by their chemical structure, substructure, similarity, or functional group.
+- is_structure_query=false for general chemistry questions (reactions, conditions, \
+  yields, names, properties, abbreviations, etc.)
+- For similarity: return a valid SMILES string (e.g. "CCO" for ethanol)
+- For substructure: return a valid SMARTS pattern (e.g. "c1ccccc1" for benzene ring)
+- For functional_group: return a valid SMARTS pattern (e.g. "[OX2H]" for hydroxyl)
 - Use standard RDKit SMARTS syntax.
-- Examples:
-  "hydroxyl" → "[OX2H]"
-  "ester" → "[CX3](=O)[OX2]"
-  "benzene ring" → "c1ccccc1"
-  "amine" → "[NX3;H2]"
-  "carboxylic acid" → "[CX3](=O)[OX2H]"
-  "aldehyde" → "[CX3H1](=O)"
-  "ketone" → "[CX3](=O)[#6]"
-  "卤素" → "[F,Cl,Br,I]"
-  "酯基" → "[CX3](=O)[OX2]"
-  "苯环" → "c1ccccc1"
+
+Examples:
+- "CCO" → {"is_structure_query": true, "search_type": "similarity", "smiles_or_smarts": "CCO"}
+- "含有苯环的分子" → {"is_structure_query": true, "search_type": "substructure", "smiles_or_smarts": "c1ccccc1"}
+- "酯基" → {"is_structure_query": true, "search_type": "functional_group", "smiles_or_smarts": "[CX3](=O)[OX2]"}
+- "What solvent gave the highest yield?" → {"is_structure_query": false, "search_type": null, "smiles_or_smarts": null}
+- "What is DCHA?" → {"is_structure_query": false, "search_type": null, "smiles_or_smarts": null}
+- "Which reaction has higher yield?" → {"is_structure_query": false, "search_type": null, "smiles_or_smarts": null}
 """
 
 
-def _query_to_smarts(query: str) -> str | None:
-    """用 LLM 将官能团描述转为 SMARTS 模式。"""
+def _llm_analyze_structure_query(query: str) -> dict | None:
+    """用 LLM 判断查询是否与化学结构相关，如果是则返回 SMILES/SMARTS。"""
     key = os.environ.get("API_KEY")
     if not key:
         return None
@@ -69,19 +79,24 @@ def _query_to_smarts(query: str) -> str | None:
         response = client.chat.completions.create(
             model=model,
             messages=[
-                {"role": "system", "content": _SMARTS_SYSTEM},
+                {"role": "system", "content": _STRUCTURE_QUERY_SYSTEM},
                 {"role": "user", "content": query},
             ],
             temperature=0.0,
-            max_tokens=128,
+            max_tokens=256,
         )
         raw = (response.choices[0].message.content or "").strip()
-        # 清理可能的 markdown 包裹
         if raw.startswith("```"):
-            raw = raw.split("```")[1].strip()
-        return raw if raw else None
+            raw = raw.split("```")[1]
+            if raw.startswith("json"):
+                raw = raw[4:]
+            raw = raw.strip()
+        result = json.loads(raw)
+        if isinstance(result, dict) and "is_structure_query" in result:
+            return result
     except Exception:
-        return None
+        pass
+    return None
 
 
 def structure_search(
@@ -89,16 +104,17 @@ def structure_search(
     store: LocalStore,
     *,
     elementkg_client: Any | None = None,
-    search_type: str = "auto",
     top_k: int = 10,
 ) -> list[CandidateEvidence]:
     """结构检索入口。
 
+    用 LLM 判断查询是否与化学结构相关，如果是则执行结构检索。
+    对自然语言查询（如 "What solvent gave the highest yield?"）直接返回空。
+
     Args:
-        query: SMILES 字符串、SMARTS 模式或官能团描述（中英文均可）
+        query: 用户查询
         store: 本地 evidence 存储
         elementkg_client: ElementKG 客户端（可选）
-        search_type: "substructure" | "similarity" | "functional_group" | "auto"
         top_k: 返回数量
     """
     if not _check_rdkit():
@@ -106,53 +122,32 @@ def structure_search(
 
     from rdkit import Chem
 
-    # 自动检测查询类型
-    if search_type == "auto":
-        search_type = _detect_search_type(query)
+    # 用 LLM 分析查询
+    analysis = _llm_analyze_structure_query(query)
+
+    if analysis is None or not analysis.get("is_structure_query"):
+        return []
+
+    search_type = analysis.get("search_type", "")
+    smiles_or_smarts = analysis.get("smiles_or_smarts", "")
+
+    if not search_type or not smiles_or_smarts:
+        return []
 
     # 收集候选 SMILES
     candidates_smiles = _collect_smiles(store, elementkg_client)
 
     if search_type == "similarity":
-        return _similarity_search(query, candidates_smiles, top_k)
+        # 验证 SMILES
+        mol = Chem.MolFromSmiles(smiles_or_smarts)
+        if mol is None:
+            return []
+        return _similarity_search(smiles_or_smarts, candidates_smiles, top_k)
     elif search_type == "substructure":
-        return _substructure_search(query, candidates_smiles, top_k)
+        return _substructure_search(smiles_or_smarts, candidates_smiles, top_k)
     elif search_type == "functional_group":
-        return _functional_group_search(query, candidates_smiles, top_k)
+        return _substructure_search(smiles_or_smarts, candidates_smiles, top_k)
     return []
-
-
-def _detect_search_type(query: str) -> str:
-    """自动检测查询类型。"""
-    from rdkit import Chem
-
-    # 快速排除自然语言查询（含空格的长查询不是 SMILES/SMARTS）
-    q = query.strip()
-    if len(q) > 30 or (" " in q and len(q) > 10):
-        # 检查是否是官能团关键词
-        q_lower = q.lower()
-        fg_keywords = [
-            "hydroxyl", "carbonyl", "carboxyl", "amine", "ester", "phenyl",
-            "halogen", "aldehyde", "ketone", "benzene", "aromatic",
-            "羟基", "羰基", "羧基", "氨基", "酯基", "苯基", "卤素", "醛基",
-        ]
-        for kw in fg_keywords:
-            if kw in q_lower:
-                return "functional_group"
-        return "similarity"  # 自然语言查询不走结构检索，返回 similarity 会因 SMILES 解析失败而返回空
-
-    # 检查是否是有效 SMILES
-    mol = Chem.MolFromSmiles(q)
-    if mol is not None:
-        return "similarity"
-
-    # 检查是否是 SMARTS
-    patt = Chem.MolFromSmarts(q)
-    if patt is not None:
-        return "substructure"
-
-    # 短查询但不是 SMILES/SMARTS → 尝试 LLM 转为 SMARTS
-    return "functional_group"
 
 
 def _collect_smiles(store: LocalStore, elementkg_client: Any | None) -> list[dict]:
@@ -258,33 +253,6 @@ def _substructure_search(
             continue
         if mol.HasSubstructMatch(pattern):
             results.append(_to_candidate(c, confidence=0.9, search_type="substructure"))
-            if len(results) >= top_k:
-                break
-    return results
-
-
-def _functional_group_search(
-    query: str, candidates: list[dict], top_k: int
-) -> list[CandidateEvidence]:
-    """官能团匹配搜索 — 用 LLM 将描述转为 SMARTS，再做子结构匹配。"""
-    from rdkit import Chem
-
-    # 用 LLM 将官能团描述转为 SMARTS
-    smarts = _query_to_smarts(query)
-    if not smarts:
-        return []
-
-    pattern = Chem.MolFromSmarts(smarts)
-    if pattern is None:
-        return []
-
-    results: list[CandidateEvidence] = []
-    for c in candidates:
-        mol = Chem.MolFromSmiles(c["smiles"])
-        if mol is None:
-            continue
-        if mol.HasSubstructMatch(pattern):
-            results.append(_to_candidate(c, confidence=0.85, search_type="functional_group"))
             if len(results) >= top_k:
                 break
     return results
