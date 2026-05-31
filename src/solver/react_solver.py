@@ -8,10 +8,7 @@ from __future__ import annotations
 
 import json
 import os
-import sys
 from typing import Any
-
-from tqdm import tqdm
 
 from evidence import EvidencePackage, GroundedAnswer, SupportingEvidence
 from retrieval import RetrievalRouter
@@ -181,13 +178,10 @@ class ReActChemSolver:
                 if raw.startswith("json"):
                     raw = raw[4:]
                 raw = raw.strip()
-            import sys
-            tqdm.write(f"  [react] round {round_num + 1} raw: {repr(raw[:200])}", file=sys.stderr)
             result = json.loads(raw)
             if isinstance(result, dict):
                 return result
-        except Exception as e:
-            import sys
-            tqdm.write(f"  [react] assessment error: {type(e).__name__}: {e}", file=sys.stderr)
+        except Exception:
+            pass
 
         return {"sufficient": len(evidence) > 0, "reason": "assessment failed"}
