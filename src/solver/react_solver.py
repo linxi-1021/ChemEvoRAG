@@ -8,7 +8,10 @@ from __future__ import annotations
 
 import json
 import os
+import sys
 from typing import Any
+
+from tqdm import tqdm
 
 from evidence import EvidencePackage, GroundedAnswer, SupportingEvidence
 from retrieval import RetrievalRouter
@@ -177,6 +180,8 @@ class ReActChemSolver:
                 if raw.startswith("json"):
                     raw = raw[4:]
                 raw = raw.strip()
+            import sys
+            tqdm.write(f"  [react] round {round_num + 1} assessment: {raw[:100]}", file=sys.stderr)
             result = json.loads(raw)
             if isinstance(result, dict):
                 return result
