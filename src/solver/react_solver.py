@@ -155,10 +155,6 @@ class ReActChemSolver:
         _log(f"[ReAct] Finished: {len(round_queries)} rounds, {len(accumulated_evidence)} evidence items")
         _log(f"[ReAct] All queries: {round_queries}")
 
-        # Append log to file (not overwrite)
-        with log_path.open("a", encoding="utf-8") as f:
-            f.write("\n".join(log_lines) + "\n\n")
-
         merged_package = EvidencePackage(
             query=query,
             intent=package.intent,
@@ -169,6 +165,16 @@ class ReActChemSolver:
         )
 
         answer = self.llm_solver.answer_from_package(merged_package)
+
+        # Log final answer
+        _log(f"\n[ReAct] Final answer: {answer.answer[:200]}")
+        _log(f"[ReAct] Confidence: {answer.confidence}")
+        if answer.uncertainty:
+            _log(f"[ReAct] Uncertainty: {answer.uncertainty[:200]}")
+
+        # Append log to file (not overwrite)
+        with log_path.open("a", encoding="utf-8") as f:
+            f.write("\n".join(log_lines) + "\n\n")
 
         # Annotate with ReAct metadata
         if len(round_queries) > 1:
