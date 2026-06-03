@@ -95,7 +95,10 @@ class ReActChemSolver:
         round_queries = [query]
         seen_evidence_ids: set[str] = set()
 
+        import datetime
+        timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         _log(f"\n{'='*60}")
+        _log(f"[ReAct] Time: {timestamp}")
         _log(f"[ReAct] Original query: {query}")
 
         for round_num in range(self.max_rounds):
@@ -152,8 +155,9 @@ class ReActChemSolver:
         _log(f"[ReAct] Finished: {len(round_queries)} rounds, {len(accumulated_evidence)} evidence items")
         _log(f"[ReAct] All queries: {round_queries}")
 
-        # Save log to file
-        log_path.write_text("\n".join(log_lines) + "\n", encoding="utf-8")
+        # Append log to file (not overwrite)
+        with log_path.open("a", encoding="utf-8") as f:
+            f.write("\n".join(log_lines) + "\n\n")
 
         merged_package = EvidencePackage(
             query=query,
