@@ -111,7 +111,8 @@ class ReActChemSolver:
                 sufficient = assessment.get("sufficient", False)
                 reason = assessment.get("reason", "")
                 refined = assessment.get("refined_query")
-                print(f"[ReAct] Assessment: sufficient={sufficient}, reason={reason[:100]}", file=sys.stderr)
+                print(f"[ReAct] Assessment: sufficient={sufficient}", file=sys.stderr)
+                print(f"[ReAct] Reason: {reason}", file=sys.stderr)
 
                 if sufficient:
                     print(f"[ReAct] Evidence sufficient, stopping.", file=sys.stderr)
