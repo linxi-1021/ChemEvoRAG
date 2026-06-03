@@ -91,6 +91,20 @@ def _judge_answer(system_answer: str, ground_truth: str, key_entities: list[str]
         return {"score": 0.0, "key_entities_found": [], "key_entities_missing": key_entities, "reasoning": str(exc)}
 
 
+def _save_results(results: list, scores: list, by_intent: dict) -> None:
+    """Save current results to eval_results.json (incremental)."""
+    avg = sum(scores) / len(scores) if scores else 0
+    out_path = EVAL_DIR / "eval_results.json"
+    out_path.write_text(json.dumps({
+        "summary": {
+            "total": len(scores),
+            "average_score": avg,
+            "by_intent": {k: sum(v) / len(v) for k, v in by_intent.items()},
+        },
+        "results": results,
+    }, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--limit", type=int, default=0, help="Only evaluate first N questions.")
@@ -195,7 +209,11 @@ def main() -> int:
         results.append(result)
         tqdm.write(f"  {q['id']}: score={score:.1f} | {system_answer[:80]}...")
 
-    # Summary
+        # Incremental save after each question
+        _save_results(results, scores, by_intent)
+
+    # Final save with summary
+    _save_results(results, scores, by_intent)
     avg = sum(scores) / len(scores) if scores else 0
     print(f"\n{'='*50}")
     print(f"RESULTS: {len(scores)} questions")
@@ -203,14 +221,7 @@ def main() -> int:
     print(f"  By intent:")
     for intent, sc_list in sorted(by_intent.items()):
         print(f"    {intent}: {sum(sc_list)/len(sc_list):.2f} ({len(sc_list)} questions)")
-
-    # Save
-    out_path = EVAL_DIR / "eval_results.json"
-    out_path.write_text(json.dumps({
-        "summary": {"total": len(scores), "average_score": avg, "by_intent": {k: sum(v)/len(v) for k, v in by_intent.items()}},
-        "results": results,
-    }, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"\nSaved to {out_path}")
+    print(f"\nSaved to {EVAL_DIR / 'eval_results.json'}")
 
     return 0
 
