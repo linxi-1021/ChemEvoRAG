@@ -32,9 +32,19 @@ Return a JSON object:
 }
 
 Rules:
-- sufficient=true ONLY if the evidence contains specific, factual data that directly answers the question.
-- If the evidence is partially helpful but missing key details, set sufficient=false and provide a refined_query that targets the missing information.
-- refined_query should be a different search angle: use synonyms, expand abbreviations, try different keywords, or search for related entities.
+- sufficient=true if the evidence contains data that can answer the question, \
+either directly OR by reasonable inference from the available data.
+- Direct: evidence explicitly states the answer (e.g., "DCE was the optimal solvent").
+- Inference: evidence strongly implies the answer (e.g., all experiments use DCE → \
+DCE is optimal; compound named "3-(n-hexyl)-1,2-octadien-4-ol" → "Hex-n" means n-hexyl; \
+a table shows yield data → yield values can be compared).
+- Do NOT set sufficient=false just because the answer is not stated word-for-word. \
+If the evidence provides enough data to logically conclude the answer, that is sufficient.
+- Set sufficient=false ONLY when the evidence truly lacks the information needed \
+(e.g., asking for a yield value that is not in any retrieved text, asking for a \
+compound name that is not mentioned anywhere).
+- If sufficient=false, provide a refined_query that uses DIFFERENT keywords than \
+previous queries. Do not repeat the same search.
 - If the evidence is completely irrelevant, set sufficient=false and refined_query=null.
 """
 
