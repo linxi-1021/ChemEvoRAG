@@ -120,9 +120,11 @@ class ReActChemSolver:
             retrieval_path.extend(package.retrieval_path)
             _log(f"[ReAct] Retrieved: {len(package.candidate_evidence)} candidates, {new_count} new (total: {len(accumulated_evidence)})")
 
-            # Show top evidence
+            # Show top evidence (terminal: short, log: full)
             for i, ev in enumerate(package.candidate_evidence[:3]):
-                _log(f"[ReAct]   [{i+1}] {ev.evidence_type} | {ev.evidence_id} | {(ev.summary or '')[:100]}")
+                summary = ev.summary or ""
+                print(f"[ReAct]   [{i+1}] {ev.evidence_type} | {ev.evidence_id} | {summary[:100]}", file=sys.stderr)
+                log_lines.append(f"[ReAct]   [{i+1}] {ev.evidence_type} | {ev.evidence_id} | {summary}")
 
             # Assess evidence sufficiency
             if round_num < self.max_rounds - 1:  # Don't assess on last round
