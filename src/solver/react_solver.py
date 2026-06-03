@@ -78,16 +78,31 @@ class ReActChemSolver:
     ) -> GroundedAnswer:
         """ReAct loop: iterative retrieval with evidence assessment."""
         import sys
+        from pathlib import Path
+
+        # Log file for ReAct process
+        log_path = Path(__file__).resolve().parents[2] / "data" / "eval" / "react_log.txt"
+        log_path.parent.mkdir(parents=True, exist_ok=True)
+        log_lines: list[str] = []
+
+        def _log(msg: str) -> None:
+            print(msg, file=sys.stderr)
+            log_lines.append(msg)
+
         accumulated_evidence: list = []
         accumulated_provenance = []
         retrieval_path: list[str] = []
         round_queries = [query]
         seen_evidence_ids: set[str] = set()
 
+        _log(f"\n{'='*60}")
+        _log(f"[ReAct] Original query: {query}")
+
         for round_num in range(self.max_rounds):
             current_query = round_queries[-1]
-            print(f"\n{'='*50}", file=sys.stderr)
-            print(f"[ReAct] Round {round_num + 1}: \"{current_query}\"", file=sys.stderr)
+            _log(f"\n{'─'*50}")
+            _log(f"[ReAct] Round {round_num + 1}/{self.max_rounds}")
+            _log(f"[ReAct] Query: {current_query}")
 
             # Retrieve
             package = self.router.retrieve(
@@ -103,7 +118,11 @@ class ReActChemSolver:
                     new_count += 1
             accumulated_provenance.extend(package.provenance)
             retrieval_path.extend(package.retrieval_path)
-            print(f"[ReAct] Retrieved {len(package.candidate_evidence)} candidates, {new_count} new (total: {len(accumulated_evidence)})", file=sys.stderr)
+            _log(f"[ReAct] Retrieved: {len(package.candidate_evidence)} candidates, {new_count} new (total: {len(accumulated_evidence)})")
+
+            # Show top evidence
+            for i, ev in enumerate(package.candidate_evidence[:3]):
+                _log(f"[ReAct]   [{i+1}] {ev.evidence_type} | {ev.evidence_id} | {(ev.summary or '')[:100]}")
 
             # Assess evidence sufficiency
             if round_num < self.max_rounds - 1:  # Don't assess on last round
@@ -111,22 +130,29 @@ class ReActChemSolver:
                 sufficient = assessment.get("sufficient", False)
                 reason = assessment.get("reason", "")
                 refined = assessment.get("refined_query")
-                print(f"[ReAct] Assessment: sufficient={sufficient}", file=sys.stderr)
-                print(f"[ReAct] Reason: {reason}", file=sys.stderr)
+                _log(f"[ReAct] Assessment: sufficient={sufficient}")
+                _log(f"[ReAct] Reason: {reason}")
+                if refined:
+                    _log(f"[ReAct] Refined query: {refined}")
 
                 if sufficient:
-                    print(f"[ReAct] Evidence sufficient, stopping.", file=sys.stderr)
+                    _log(f"[ReAct] → Evidence sufficient, stopping.")
                     break
 
                 if refined and refined not in round_queries:
-                    print(f"[ReAct] Refined query: \"{refined}\"", file=sys.stderr)
                     round_queries.append(refined)
                 else:
-                    print(f"[ReAct] No refined query, stopping.", file=sys.stderr)
+                    _log(f"[ReAct] → No refined query, stopping.")
                     break
 
         # Build final answer from accumulated evidence
-        print(f"[ReAct] Finished: {len(round_queries)} rounds, {len(accumulated_evidence)} evidence items", file=sys.stderr)
+        _log(f"\n{'─'*50}")
+        _log(f"[ReAct] Finished: {len(round_queries)} rounds, {len(accumulated_evidence)} evidence items")
+        _log(f"[ReAct] All queries: {round_queries}")
+
+        # Save log to file
+        log_path.write_text("\n".join(log_lines) + "\n", encoding="utf-8")
+
         merged_package = EvidencePackage(
             query=query,
             intent=package.intent,
