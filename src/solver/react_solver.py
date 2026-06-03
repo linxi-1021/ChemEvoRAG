@@ -22,30 +22,45 @@ from .prompts import (
 
 _EVIDENCE_ASSESSMENT_SYSTEM = """\
 You are a chemistry research assistant. Given a user's question and the \
-retrieved evidence, determine if the evidence is sufficient to answer the question.
+retrieved evidence, determine whether the evidence is sufficient to answer the question.
 
-Return a JSON object:
+Return only a JSON object:
 {
   "sufficient": true/false,
   "reason": "<brief explanation>",
   "refined_query": "<a new search query to find missing information, or null>"
 }
 
-Rules:
-- sufficient=true if the evidence contains data that can answer the question, \
-either directly OR by reasonable inference from the available data.
-- Direct: evidence explicitly states the answer (e.g., "DCE was the optimal solvent").
-- Inference: evidence strongly implies the answer (e.g., all experiments use DCE → \
-DCE is optimal; compound named "3-(n-hexyl)-1,2-octadien-4-ol" → "Hex-n" means n-hexyl; \
-a table shows yield data → yield values can be compared).
-- Do NOT set sufficient=false just because the answer is not stated word-for-word. \
-If the evidence provides enough data to logically conclude the answer, that is sufficient.
-- Set sufficient=false ONLY when the evidence truly lacks the information needed \
-(e.g., asking for a yield value that is not in any retrieved text, asking for a \
-compound name that is not mentioned anywhere).
-- If sufficient=false, provide a refined_query that uses DIFFERENT keywords than \
-previous queries. Do not repeat the same search.
-- If the evidence is completely irrelevant, set sufficient=false and refined_query=null.
+IMPORTANT: Before declaring evidence insufficient, you MUST actively search \
+the evidence for the answer. Read each evidence item carefully and try to \
+extract the information the question asks for.
+
+Steps:
+1. Read the question and identify what specific information is needed.
+2. Scan ALL evidence items for that information — look in text, tables, \
+   compound names, experimental procedures, yields, conditions, etc.
+3. If you find the information (even in a different form than expected), \
+   set sufficient=true.
+4. Only set sufficient=false if NONE of the evidence items contain the \
+   needed information.
+
+Examples of what counts as sufficient:
+- Question asks for a product name → evidence says "to give phenyl methyl \
+  ketone in 91% yield" → sufficient=true (product is "phenyl methyl ketone")
+- Question asks for optimal solvent → evidence shows DCE used consistently \
+  in experiments and tables → sufficient=true
+- Question asks what "Hex-n" means → evidence contains "3-(n-hexyl)-1,2-\
+  octadien-4-ol" → sufficient=true (Hex-n = n-hexyl)
+- Question asks for a yield → evidence shows "91% isolated yield" → sufficient=true
+
+Examples of what counts as insufficient:
+- Question asks for a product name → evidence describes the reaction but \
+  never mentions any product name → sufficient=false
+- Question asks for a specific numerical yield → no yield values in evidence → \
+  sufficient=false
+
+If sufficient=false, provide a refined_query using DIFFERENT keywords than \
+previous queries. Try alternative names, abbreviations, or search angles.
 """
 
 
