@@ -8,6 +8,8 @@ using a second LLM call as judge.  Saves detailed results to data/eval/eval_resu
 from __future__ import annotations
 
 import argparse
+import warnings
+warnings.filterwarnings("ignore", message=".*resume_download.*", category=FutureWarning)
 import json
 import os
 import sys
