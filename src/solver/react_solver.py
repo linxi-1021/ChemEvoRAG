@@ -191,12 +191,12 @@ class ReActChemSolver:
         """LLM assesses whether current evidence is sufficient."""
         key = os.environ.get("API_KEY")
         if not key:
-            return {"sufficient": len(evidence) > 0, "reason": "no LLM"}
+            return {"sufficient": False, "reason": "no LLM"}
 
         try:
             from openai import OpenAI  # type: ignore
         except ImportError:
-            return {"sufficient": len(evidence) > 0, "reason": "no openai"}
+            return {"sufficient": False, "reason": "no openai"}
 
         client = OpenAI(api_key=key, base_url=os.environ.get("BASE_URL") or None)
         model = os.environ.get("LLM_MODEL", "gpt-4o-mini")
@@ -236,4 +236,4 @@ class ReActChemSolver:
         except Exception:
             pass
 
-        return {"sufficient": len(evidence) > 0, "reason": "assessment failed"}
+        return {"sufficient": False, "reason": "assessment failed"}
