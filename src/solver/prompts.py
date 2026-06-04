@@ -72,17 +72,17 @@ the question.
 {UNIFIED_EVIDENCE_STANDARD}
 
 IMPORTANT: Before declaring evidence insufficient, you MUST actively search \
-the evidence for the answer. Read each evidence item carefully and try to \
-extract the information the question asks for. Scan text, tables, compound \
-names, experimental procedures, yields, conditions, schemes, captions, \
-aliases, and any structured fields.
+the evidence for the answer. Read EACH evidence item carefully and try to \
+extract the information the question asks for. DO NOT stop at the first \
+negative signal — check ALL items before concluding. Scan text, tables, \
+compound names, experimental procedures, yields, conditions, schemes, \
+captions, aliases, and any structured fields.
 
 Steps:
 1. Read the question and identify what specific information is needed.
 2. Scan ALL evidence items for that information — directly stated or implied.
-3. If the evidence contains the needed information, set sufficient=true.
-4. If the evidence provides concrete data for a well-supported inference, \
-   set sufficient=true.
+3. If any item contains the needed information, set sufficient=true.
+4. If concrete data allows a well-supported inference, set sufficient=true.
 5. Only set sufficient=false if NONE of the evidence items contain the \
    needed information for either a direct answer or a well-supported inference.
 
@@ -112,11 +112,12 @@ Before answering, apply this evidence standard:
 {UNIFIED_EVIDENCE_STANDARD}
 
 IMPORTANT: Before giving your final answer, actively search ALL evidence \
-items for relevant information. Scan text, tables, compound names, \
-experimental procedures, yields, conditions, and any structured fields. \
-Look for information even if it appears in a different form than expected \
-(e.g., "phenyl methyl ketone" as a product name, yield values in tables, \
-compound labels in experimental sections).
+items for relevant information. DO NOT stop at the first negative signal — \
+check ALL items before concluding insufficient. Scan text, tables, compound \
+names, experimental procedures, yields, conditions, and any structured \
+fields. Look for information even if it appears in a different form than \
+expected (e.g., "phenyl methyl ketone" as a product name, yield values in \
+tables, compound labels in experimental sections).
 
 Your answer MUST:
 1. Be in plain English, 2-5 sentences.
