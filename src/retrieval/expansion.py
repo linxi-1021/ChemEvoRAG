@@ -124,7 +124,7 @@ def _expand_from_reaction(
 def _expand_from_block(
     c: CandidateEvidence, store: LocalStore, seen_ids: set[str]
 ) -> list:
-    """从 block 候选中扩展相邻上下文。"""
+    """从 block 候选中扩展相邻上下文和关联的 molecule/reaction。"""
     result = []
     slots = c.structured_slots or {}
     doc_id = slots.get("doc_id", "")
@@ -141,34 +141,110 @@ def _expand_from_block(
     for block in blocks:
         if block.block_id == block_id:
             # 扩展前一个 block
-            if block.prev_block_id and block.prev_block_id not in seen_ids:
-                prev = _find_block(blocks, block.prev_block_id)
-                if prev:
-                    src = SourceProvenance(
-                        doc_id=doc_id,
-                        source_file=prev.source_file,
-                        page=prev.page,
-                        bbox=prev.bbox,
-                        block_id=prev.block_id,
-                        section=prev.section,
-                    )
-                    result.append(_block_to_candidate(prev, src))
-
+            _add_block_neighbor(result, blocks, block.prev_block_id, doc_id, seen_ids)
             # 扩展后一个 block
-            if block.next_block_id and block.next_block_id not in seen_ids:
-                nxt = _find_block(blocks, block.next_block_id)
-                if nxt:
-                    src = SourceProvenance(
-                        doc_id=doc_id,
-                        source_file=nxt.source_file,
-                        page=nxt.page,
-                        bbox=nxt.bbox,
-                        block_id=nxt.block_id,
-                        section=nxt.section,
-                    )
-                    result.append(_block_to_candidate(nxt, src))
+            _add_block_neighbor(result, blocks, block.next_block_id, doc_id, seen_ids)
             break
 
+    # 反向查找: 找到 source_mentions 中包含此 block_id 的 MoleculeCard
+    result.extend(_find_molecules_mentioning_block(doc_id, block_id, store, seen_ids))
+
+    # 反向查找: 找到 supporting_block_ids 中包含此 block_id 的 ReactionEventCard
+    result.extend(_find_reactions_supporting_block(doc_id, block_id, store, seen_ids))
+
+    return result
+
+
+def _add_block_neighbor(result, blocks, neighbor_id, doc_id, seen_ids):
+    """如果邻居 block 存在且未被包含，添加到结果。"""
+    if not neighbor_id or neighbor_id in seen_ids:
+        return
+    neighbor = _find_block(blocks, neighbor_id)
+    if neighbor:
+        src = SourceProvenance(
+            doc_id=doc_id,
+            source_file=neighbor.source_file,
+            page=neighbor.page,
+            bbox=neighbor.bbox,
+            block_id=neighbor.block_id,
+            section=neighbor.section,
+        )
+        result.append(_block_to_candidate(neighbor, src))
+        seen_ids.add(neighbor_id)
+
+
+def _find_molecules_mentioning_block(
+    doc_id: str, block_id: str, store: LocalStore, seen_ids: set[str]
+) -> list:
+    """找到 source_mentions 中包含此 block_id 的 MoleculeCard。"""
+    result = []
+    try:
+        mols = store.load_molecules(doc_id)
+    except Exception:
+        return result
+    for mol in mols:
+        for mention in mol.source_mentions:
+            if mention.provenance and mention.provenance.block_id == block_id:
+                card_id = mol.molecule_card_id
+                if card_id not in seen_ids:
+                    seen_ids.add(card_id)
+                    names = mol.names + mol.aliases
+                    summary = " | ".join(n for n in [mol.raw_smiles or mol.canonical_smiles] + names if n)
+                    result.append(CandidateEvidence(
+                        evidence_id=card_id,
+                        evidence_type="molecule",
+                        summary=summary,
+                        structured_slots={
+                            "doc_id": doc_id,
+                            "names": mol.names,
+                            "aliases": mol.aliases,
+                            "raw_smiles": mol.raw_smiles,
+                            "canonical_smiles": mol.canonical_smiles,
+                            "inchi_key": mol.inchi_key,
+                            "score": 0.5,
+                        },
+                        source=mention.provenance,
+                        confidence=0.5,
+                    ))
+                break
+    return result
+
+
+def _find_reactions_supporting_block(
+    doc_id: str, block_id: str, store: LocalStore, seen_ids: set[str]
+) -> list:
+    """找到 supporting_block_ids 中包含此 block_id 的 ReactionEventCard。"""
+    result = []
+    try:
+        rxns = store.load_reactions(doc_id)
+    except Exception:
+        return result
+    for rxn in rxns:
+        if block_id in (rxn.supporting_block_ids or []) or (
+            rxn.source and rxn.source.block_id == block_id
+        ):
+            rxn_id = rxn.reaction_event_id
+            if rxn_id not in seen_ids:
+                seen_ids.add(rxn_id)
+                result.append(CandidateEvidence(
+                    evidence_id=rxn_id,
+                    evidence_type="reaction_event",
+                    summary=rxn.procedure_text or "",
+                    structured_slots={
+                        "doc_id": doc_id,
+                        "reactants": [repr(p) for p in rxn.reactants] if rxn.reactants else [],
+                        "products": [repr(p) for p in rxn.products] if rxn.products else [],
+                        "solvents": rxn.solvents,
+                        "catalysts": rxn.catalysts,
+                        "temperature": rxn.temperature,
+                        "time": rxn.time,
+                        "yield": rxn.yield_value,
+                        "score": 0.5,
+                    },
+                    source=rxn.source,
+                    confidence=0.5,
+                ))
+            break
     return result
 
 
