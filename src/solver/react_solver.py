@@ -21,6 +21,8 @@ from .prompts import (
     EVIDENCE_ASSESSMENT_SYSTEM,
 )
 
+import threading
+_react_log_lock = threading.Lock()
 
 
 _EVIDENCE_ASSESSMENT_SYSTEM = EVIDENCE_ASSESSMENT_SYSTEM
@@ -73,8 +75,9 @@ class ReActChemSolver:
         log_lines: list[str] = []
 
         def _log(msg: str) -> None:
-            print(msg, file=sys.stderr)
-            log_lines.append(msg)
+            with _react_log_lock:
+                print(msg, file=sys.stderr)
+                log_lines.append(msg)
 
         accumulated_evidence: list = []
         accumulated_provenance = []
