@@ -3,6 +3,8 @@
 
 For each question: run retrieval + LLM synthesis, compare answer to ground truth
 using a second LLM call as judge.  Saves detailed results to data/eval/eval_results.json.
+
+Supports concurrent evaluation with --workers.
 """
 
 from __future__ import annotations
@@ -13,6 +15,7 @@ warnings.filterwarnings("ignore", message=".*resume_download.*", category=Future
 import json
 import os
 import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from tqdm import tqdm
 
@@ -105,11 +108,62 @@ def _save_results(results: list, scores: list, by_intent: dict) -> None:
     }, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+def _eval_one(q: dict, store: LocalStore, solver, elementkg_client, use_react: bool) -> dict:
+    """Evaluate a single question. Thread-safe."""
+    question = q["question"]
+    ground_truth = q["ground_truth_answer"]
+    key_entities = q.get("key_entities", [])
+    intent = q.get("intent", "unknown")
+    source = q.get("source_paper", "?")
+    doc_id = source.replace(".pdf", "") if source else None
+
+    try:
+        if use_react:
+            answer_obj = solver.answer(question, doc_ids=[doc_id] if doc_id else None)
+        else:
+            from retrieval.router import RetrievalRouter
+            router = RetrievalRouter(store, elementkg_client=elementkg_client)
+            package = router.retrieve(question, doc_ids=[doc_id] if doc_id else None)
+            answer_obj = solver.answer_from_package(package)
+        system_answer = answer_obj.answer
+        evidence_ids = [s.evidence_id for s in answer_obj.supporting_evidence]
+        confidence = answer_obj.confidence
+    except Exception as exc:
+        system_answer = f"[ERROR: {exc}]"
+        evidence_ids = []
+        confidence = 0.0
+
+    judge = _judge_answer(system_answer, ground_truth, key_entities)
+    score = judge.get("score", 0.0)
+
+    return {
+        "id": q["id"],
+        "source_paper": source,
+        "intent": intent,
+        "question": question,
+        "ground_truth": ground_truth,
+        "system_answer": system_answer,
+        "evidence_ids": evidence_ids,
+        "confidence": confidence,
+        "judge_score": score,
+        "entities_found": judge.get("key_entities_found", []),
+        "entities_missing": judge.get("key_entities_missing", []),
+        "judge_reasoning": judge.get("reasoning", ""),
+        "score": score,
+        "intent_key": intent,
+    }
+
+
+import threading
+_eval_write_lock = threading.Lock()
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--limit", type=int, default=0, help="Only evaluate first N questions.")
     parser.add_argument("--paper", default=None, help="Only evaluate questions from a specific paper (e.g. '1').")
     parser.add_argument("--react", action="store_true", help="Use ReAct multi-round retrieval.")
+    parser.add_argument("--workers", type=int, default=1, help="Number of concurrent workers (default: 1).")
     args = parser.parse_args()
 
     questions_file = EVAL_DIR / "all_questions.json"
@@ -118,7 +172,7 @@ def main() -> int:
         return 1
 
     all_q = json.loads(questions_file.read_text("utf-8"))
-    # 按论文编号数字排序（1, 2, 3, ..., 10, 11, ...）
+    # Sort by paper number
     def _paper_sort_key(q):
         paper = q.get("source_paper", "")
         num = ""
@@ -135,7 +189,8 @@ def main() -> int:
     if args.limit:
         all_q = all_q[:args.limit]
 
-    print(f"Evaluating {len(all_q)} questions\n")
+    workers = max(1, args.workers)
+    print(f"Evaluating {len(all_q)} questions with {workers} worker(s)\n")
 
     store = LocalStore(base_dir=PROJECT_ROOT)
 
@@ -158,61 +213,34 @@ def main() -> int:
     scores: list[float] = []
     by_intent: dict[str, list[float]] = {}
 
-    for q in tqdm(all_q, desc="Evaluating", unit="q"):
-        question = q["question"]
-        ground_truth = q["ground_truth_answer"]
-        key_entities = q.get("key_entities", [])
-        intent = q.get("intent", "unknown")
-        source = q.get("source_paper", "?")
+    if workers > 1:
+        # Concurrent evaluation
+        with ThreadPoolExecutor(max_workers=workers) as executor:
+            futures = {
+                executor.submit(_eval_one, q, store, LLMChemSolver() if not args.react else ReActChemSolver(store, elementkg_client=elementkg_client), elementkg_client, args.react): q
+                for q in all_q
+            }
+            with tqdm(total=len(all_q), desc="Evaluating", unit="q") as pbar:
+                for f in as_completed(futures):
+                    result = f.result()
+                    with _eval_write_lock:
+                        results.append(result)
+                        scores.append(result["score"])
+                        by_intent.setdefault(result["intent_key"], []).append(result["score"])
+                        _save_results(results, scores, by_intent)
+                    tqdm.write(f"  {result['id']}: score={result['judge_score']:.1f} | {result['system_answer'][:80]}...")
+                    pbar.update(1)
+    else:
+        # Sequential evaluation
+        for q in tqdm(all_q, desc="Evaluating", unit="q"):
+            result = _eval_one(q, store, solver, elementkg_client, args.react)
+            results.append(result)
+            scores.append(result["score"])
+            by_intent.setdefault(result["intent_key"], []).append(result["score"])
+            tqdm.write(f"  {result['id']}: score={result['judge_score']:.1f} | {result['system_answer'][:80]}...")
+            _save_results(results, scores, by_intent)
 
-        # Extract doc_id from source_paper
-        doc_id = source.replace(".pdf", "") if source else None
-
-        try:
-            if args.react:
-                # ReAct solver handles retrieval internally
-                answer_obj = solver.answer(question, doc_ids=[doc_id] if doc_id else None)
-            else:
-                from retrieval.router import RetrievalRouter
-                router = RetrievalRouter(store, elementkg_client=elementkg_client)
-                package = router.retrieve(question, doc_ids=[doc_id] if doc_id else None)
-                answer_obj = solver.answer_from_package(package)
-            system_answer = answer_obj.answer
-            evidence_ids = [s.evidence_id for s in answer_obj.supporting_evidence]
-            confidence = answer_obj.confidence
-        except Exception as exc:
-            system_answer = f"[ERROR: {exc}]"
-            evidence_ids = []
-            confidence = 0.0
-
-        # Judge
-        judge = _judge_answer(system_answer, ground_truth, key_entities)
-        score = judge.get("score", 0.0)
-
-        scores.append(score)
-        by_intent.setdefault(intent, []).append(score)
-
-        result = {
-            "id": q["id"],
-            "source_paper": source,
-            "intent": intent,
-            "question": question,
-            "ground_truth": ground_truth,
-            "system_answer": system_answer,
-            "evidence_ids": evidence_ids,
-            "confidence": confidence,
-            "judge_score": score,
-            "entities_found": judge.get("key_entities_found", []),
-            "entities_missing": judge.get("key_entities_missing", []),
-            "judge_reasoning": judge.get("reasoning", ""),
-        }
-        results.append(result)
-        tqdm.write(f"  {q['id']}: score={score:.1f} | {system_answer[:80]}...")
-
-        # Incremental save after each question
-        _save_results(results, scores, by_intent)
-
-    # Final save with summary
+    # Final save
     _save_results(results, scores, by_intent)
     avg = sum(scores) / len(scores) if scores else 0
     print(f"\n{'='*50}")
