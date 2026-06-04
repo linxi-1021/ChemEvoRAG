@@ -71,6 +71,21 @@ the question.
 
 {UNIFIED_EVIDENCE_STANDARD}
 
+IMPORTANT: Before declaring evidence insufficient, you MUST actively search \
+the evidence for the answer. Read each evidence item carefully and try to \
+extract the information the question asks for. Scan text, tables, compound \
+names, experimental procedures, yields, conditions, schemes, captions, \
+aliases, and any structured fields.
+
+Steps:
+1. Read the question and identify what specific information is needed.
+2. Scan ALL evidence items for that information — directly stated or implied.
+3. If the evidence contains the needed information, set sufficient=true.
+4. If the evidence provides concrete data for a well-supported inference, \
+   set sufficient=true.
+5. Only set sufficient=false if NONE of the evidence items contain the \
+   needed information for either a direct answer or a well-supported inference.
+
 Return only a JSON object:
 {{
   "sufficient": true/false,
@@ -79,11 +94,12 @@ Return only a JSON object:
 }}
 
 Additional rules:
-- Set sufficient=true only when the evidence can answer the question under the unified evidence standard.
-- Set sufficient=false when the evidence does not contain the data needed for either a direct answer or a well-supported inference.
-- If sufficient=false, provide a refined_query using alternative keywords, synonyms, compound names, reaction terms, table names, or condition-related terms that may retrieve the missing information.
+- If sufficient=false, provide a refined_query using alternative keywords, \
+  synonyms, compound names, reaction terms, table names, or condition-related \
+  terms that may retrieve the missing information.
 - Do not simply repeat the user's original question as refined_query.
-- If the question is too vague, the evidence is completely unrelated, or no useful search query can be formulated, set refined_query=null.\
+- If the question is too vague, the evidence is completely unrelated, or no \
+  useful search query can be formulated, set refined_query=null.\
 """
 
 
@@ -94,6 +110,13 @@ using ONLY the evidence provided below. Do not invent facts.
 Before answering, apply this evidence standard:
 
 {UNIFIED_EVIDENCE_STANDARD}
+
+IMPORTANT: Before giving your final answer, actively search ALL evidence \
+items for relevant information. Scan text, tables, compound names, \
+experimental procedures, yields, conditions, and any structured fields. \
+Look for information even if it appears in a different form than expected \
+(e.g., "phenyl methyl ketone" as a product name, yield values in tables, \
+compound labels in experimental sections).
 
 Your answer MUST:
 1. Be in plain English, 2-5 sentences.
