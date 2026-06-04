@@ -213,6 +213,32 @@ class ReActChemSolver:
                 temperature=0.0,
                 max_tokens=16384,
                 extra_body={"thinking": {"type": "disabled"}},
+                timeout=60,  # 60 second timeout
+            )
+            raw = (response.choices[0].message.content or "").strip()
+            if raw.startswith("```"):
+                raw = raw.split("```")[1]
+                if raw.startswith("json"):
+                    raw = raw[4:]
+                raw = raw.strip()
+            result = json.loads(raw)
+            if isinstance(result, dict):
+                return result
+        except Exception:
+            pass
+
+        # 重试一次
+        try:
+            response = client.chat.completions.create(
+                model=model,
+                messages=[
+                    {"role": "system", "content": _EVIDENCE_ASSESSMENT_SYSTEM},
+                    {"role": "user", "content": user_msg},
+                ],
+                temperature=0.1,
+                max_tokens=16384,
+                extra_body={"thinking": {"type": "disabled"}},
+                timeout=60,
             )
             raw = (response.choices[0].message.content or "").strip()
             if raw.startswith("```"):
