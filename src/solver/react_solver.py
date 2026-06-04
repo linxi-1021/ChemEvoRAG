@@ -25,6 +25,19 @@ import threading
 _react_log_lock = threading.Lock()
 
 
+def _auto_refine_query(current_query: str, used_queries: list[str]) -> str | None:
+    """当评估 LLM 调用失败时，自动生成替代查询。"""
+    import re
+    words = re.findall(r"[A-Za-z0-9\-]+", current_query)
+    if len(words) <= 5:
+        return None
+    mid = len(words) // 3
+    new_query = " ".join(words[mid:])
+    if new_query != current_query and new_query not in used_queries:
+        return new_query
+    return None
+
+
 _EVIDENCE_ASSESSMENT_SYSTEM = EVIDENCE_ASSESSMENT_SYSTEM
 
 
@@ -134,11 +147,16 @@ class ReActChemSolver:
                     _log(f"[ReAct] → Evidence sufficient, stopping.")
                     break
 
-                if refined and refined not in round_queries:
-                    round_queries.append(refined)
-                else:
-                    _log(f"[ReAct] → No refined query, stopping.")
-                    break
+                # 评估失败时自动生成 refined_query，不直接停止
+                if not refined or refined in round_queries:
+                    if reason == "assessment failed":
+                        refined = _auto_refine_query(current_query, round_queries)
+                        _log(f"[ReAct] Assessment failed, auto-refined query: {refined}")
+                    if not refined:
+                        _log(f"[ReAct] → No refined query, stopping.")
+                        break
+
+                round_queries.append(refined)
 
         # Build final answer from accumulated evidence
         _log(f"\n{'─'*50}")
