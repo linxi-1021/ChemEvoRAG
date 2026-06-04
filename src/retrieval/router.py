@@ -117,6 +117,14 @@ class RetrievalRouter:
         # Step 4: Intent-based re-ranking (before dedup/limit)
         candidates = _intent_rerank(candidates, resolved_intent, query)
         candidates = _dedupe_candidates(candidates)
+
+        # Evidence Expansion — 基于内链扩展关联证据
+        try:
+            from .expansion import expand_evidence
+            candidates = expand_evidence(candidates, self.store)
+        except Exception:
+            pass
+
         candidates = candidates[:limit]
 
         provenance = [

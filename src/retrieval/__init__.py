@@ -1,6 +1,7 @@
 """Local retrieval utilities for ChemEvoRAG Phase 1."""
 
 from .entity import entity_search
+from .expansion import expand_evidence
 from .lexical import lexical_search
 from .lightrag_adapter import LightRAGAdapter, LightRAGEvidenceDocument
 from .provenance import provenance_backtrack
@@ -19,6 +20,7 @@ __all__ = [
     "RetrievalRouter",
     "DenseRetriever",
     "dense_search",
+    "expand_evidence",
     "LightRAGAdapter",
     "LightRAGEvidenceDocument",
     "entity_search",
