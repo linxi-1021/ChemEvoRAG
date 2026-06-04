@@ -25,17 +25,8 @@ import threading
 _react_log_lock = threading.Lock()
 
 
-def _auto_refine_query(current_query: str, used_queries: list[str]) -> str | None:
-    """当评估 LLM 调用失败时，自动生成替代查询。"""
-    import re
-    words = re.findall(r"[A-Za-z0-9\-]+", current_query)
-    if len(words) <= 5:
-        return None
-    mid = len(words) // 3
-    new_query = " ".join(words[mid:])
-    if new_query != current_query and new_query not in used_queries:
-        return new_query
-    return None
+class _AssessmentFailed(Exception):
+    pass
 
 
 _EVIDENCE_ASSESSMENT_SYSTEM = EVIDENCE_ASSESSMENT_SYSTEM
@@ -72,6 +63,30 @@ class ReActChemSolver:
         self.llm_solver = LLMChemSolver()
 
     def answer(
+        self,
+        query: str,
+        *,
+        doc_ids: list[str] | None = None,
+        top_k: int = 8,
+        _retry: bool = True,
+    ) -> GroundedAnswer:
+        """ReAct loop: iterative retrieval with evidence assessment.
+
+        If assessment LLM fails in any round, retries the entire process
+        from scratch (up to 1 retry).
+        """
+        try:
+            return self._answer_inner(query, doc_ids=doc_ids, top_k=top_k)
+        except _AssessmentFailed:
+            if _retry:
+                import sys
+                print(f"\n[ReAct] Assessment failed, retrying from scratch...", file=sys.stderr)
+                return self.answer(query, doc_ids=doc_ids, top_k=top_k, _retry=False)
+
+        # Last resort: single-pass with no assessment
+        return self._answer_fallback(query, doc_ids=doc_ids, top_k=top_k)
+
+    def _answer_inner(
         self,
         query: str,
         *,
@@ -143,20 +158,20 @@ class ReActChemSolver:
                 if refined:
                     _log(f"[ReAct] Refined query: {refined}")
 
+                # 评估 LLM 失败 → 抛异常触发从头重试
+                if reason == "assessment failed":
+                    _log(f"[ReAct] → Assessment failed, will retry from scratch.")
+                    raise _AssessmentFailed()
+
                 if sufficient:
                     _log(f"[ReAct] → Evidence sufficient, stopping.")
                     break
 
-                # 评估失败时自动生成 refined_query，不直接停止
-                if not refined or refined in round_queries:
-                    if reason == "assessment failed":
-                        refined = _auto_refine_query(current_query, round_queries)
-                        _log(f"[ReAct] Assessment failed, auto-refined query: {refined}")
-                    if not refined:
-                        _log(f"[ReAct] → No refined query, stopping.")
-                        break
-
-                round_queries.append(refined)
+                if refined and refined not in round_queries:
+                    round_queries.append(refined)
+                else:
+                    _log(f"[ReAct] → No refined query, stopping.")
+                    break
 
         # Build final answer from accumulated evidence
         _log(f"\n{'─'*50}")
@@ -191,6 +206,22 @@ class ReActChemSolver:
                 (answer.uncertainty + " " + note) if answer.uncertainty else note
             )
 
+        return answer
+
+    def _answer_fallback(
+        self,
+        query: str,
+        *,
+        doc_ids: list[str] | None = None,
+        top_k: int = 8,
+    ) -> GroundedAnswer:
+        """Single-pass fallback when ReAct assessment consistently fails."""
+        from retrieval import RetrievalRouter
+        router = RetrievalRouter(self.store, elementkg_client=self.elementkg_client)
+        package = router.retrieve(query, doc_ids=doc_ids, top_k=top_k)
+        answer = self.llm_solver.answer_from_package(package)
+        note = "[ReAct: assessment failed, used single-pass fallback]"
+        answer.uncertainty = (answer.uncertainty + " " + note) if answer.uncertainty else note
         return answer
 
     def _assess_evidence(
