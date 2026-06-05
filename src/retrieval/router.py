@@ -244,7 +244,7 @@ def _llm_infer_intent(query: str) -> str | None:
             model=os.environ.get("LLM_MODEL", "gpt-4o-mini"),
             messages=messages,
             temperature=0.0,
-            max_tokens=256,
+            max_tokens=int(os.environ.get("LLM_MAX_TOKENS", "256")),
         )
         raw = (response.choices[0].message.content or "").strip()
         # Parse JSON response

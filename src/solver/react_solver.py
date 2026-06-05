@@ -260,7 +260,7 @@ class ReActChemSolver:
                     {"role": "user", "content": user_msg},
                 ],
                 temperature=0.0,
-                max_tokens=16384,
+                max_tokens=int(os.environ.get("LLM_MAX_TOKENS", "16384")),
                 extra_body={"thinking": {"type": "disabled"}},
                 timeout=60,  # 60 second timeout
             )
@@ -285,7 +285,7 @@ class ReActChemSolver:
                     {"role": "user", "content": user_msg},
                 ],
                 temperature=0.1,
-                max_tokens=16384,
+                max_tokens=int(os.environ.get("LLM_MAX_TOKENS", "16384")),
                 extra_body={"thinking": {"type": "disabled"}},
                 timeout=60,
             )

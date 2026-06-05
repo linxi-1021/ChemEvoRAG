@@ -80,7 +80,7 @@ def _judge_answer(system_answer: str, ground_truth: str, key_entities: list[str]
             ],
             temperature=0.1,
             seed=42,
-            max_tokens=16384,
+            max_tokens=int(os.environ.get("LLM_MAX_TOKENS", "16384")),
             extra_body={},
         )
         raw = r.choices[0].message.content.strip()

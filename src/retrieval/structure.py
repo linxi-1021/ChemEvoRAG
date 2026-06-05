@@ -84,7 +84,7 @@ def _llm_analyze_structure_query(query: str) -> dict | None:
                 {"role": "user", "content": query},
             ],
             temperature=0.0,
-            max_tokens=256,
+            max_tokens=int(os.environ.get("LLM_MAX_TOKENS", "256")),
         )
         raw = (response.choices[0].message.content or "").strip()
         if raw.startswith("```"):

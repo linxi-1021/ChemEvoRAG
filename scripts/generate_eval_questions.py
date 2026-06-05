@@ -241,7 +241,7 @@ def _send_multimodal_request(
                 {"role": "user", "content": content},
             ],
             temperature=0.2,
-            max_tokens=16384,
+            max_tokens=int(os.environ.get("LLM_MAX_TOKENS", "16384")),
             extra_body={"thinking": {"type": "disabled"}},
         )
         return response.choices[0].message.content
