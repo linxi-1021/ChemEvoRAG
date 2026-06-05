@@ -177,6 +177,34 @@ import threading
 _eval_write_lock = threading.Lock()
 
 
+def _merge_react_logs() -> None:
+    """Merge per-question react logs into sorted react_log.txt."""
+    log_dir = EVAL_DIR / "react_logs"
+    if not log_dir.is_dir():
+        return
+    import re
+    logs = list(log_dir.glob("*.log"))
+    if not logs:
+        return
+
+    # Sort by paper number (extract from filename like "1_abc12345.log")
+    def _log_sort_key(p):
+        name = p.stem.split("_")[0]
+        num = ""
+        for ch in name:
+            if ch.isdigit(): num += ch
+            else: break
+        return int(num) if num else 0
+
+    logs.sort(key=_log_sort_key)
+
+    out_path = EVAL_DIR / "react_log.txt"
+    with out_path.open("w", encoding="utf-8") as f:
+        for p in logs:
+            f.write(p.read_text(encoding="utf-8"))
+            f.write("\n")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--limit", type=int, default=0, help="Only evaluate first N questions.")
@@ -261,6 +289,9 @@ def main() -> int:
 
     # Final save
     _save_results(results, scores, by_intent)
+
+    # Merge per-question react logs into sorted react_log.txt
+    _merge_react_logs()
     avg = sum(scores) / len(scores) if scores else 0
     print(f"\n{'='*50}")
     print(f"RESULTS: {len(scores)} questions")

@@ -97,9 +97,13 @@ class ReActChemSolver:
         import sys
         from pathlib import Path
 
-        # Log file for ReAct process
-        log_path = Path(__file__).resolve().parents[2] / "data" / "eval" / "react_log.txt"
-        log_path.parent.mkdir(parents=True, exist_ok=True)
+        # Log file for ReAct process — one per question (named by doc_id + short query hash)
+        log_dir = Path(__file__).resolve().parents[2] / "data" / "eval" / "react_logs"
+        log_dir.mkdir(parents=True, exist_ok=True)
+        import hashlib
+        doc_tag = doc_ids[0] if doc_ids else "all"
+        query_hash = hashlib.md5(query.encode()).hexdigest()[:8]
+        log_path = log_dir / f"{doc_tag}_{query_hash}.log"
         log_lines: list[str] = []
 
         def _log(msg: str) -> None:
@@ -195,9 +199,9 @@ class ReActChemSolver:
         if answer.uncertainty:
             _log(f"[ReAct] Uncertainty: {answer.uncertainty[:200]}")
 
-        # Append log to file (not overwrite)
-        with log_path.open("a", encoding="utf-8") as f:
-            f.write("\n".join(log_lines) + "\n\n")
+        # Write log to file (overwrite — one file per question)
+        with log_path.open("w", encoding="utf-8") as f:
+            f.write("\n".join(log_lines) + "\n")
 
         # Annotate with ReAct metadata
         if len(round_queries) > 1:
