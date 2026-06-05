@@ -95,8 +95,27 @@ def _judge_answer(system_answer: str, ground_truth: str, key_entities: list[str]
 
 
 def _save_results(results: list, scores: list, by_intent: dict) -> None:
-    """Save current results to eval_results.json (incremental)."""
+    """Save current results to eval_results.json (incremental, sorted)."""
     avg = sum(scores) / len(scores) if scores else 0
+
+    # Sort results by paper number, then by question id
+    def _sort_key(r):
+        paper = r.get("source_paper", "")
+        num = ""
+        for ch in paper:
+            if ch.isdigit():
+                num += ch
+            else:
+                break
+        paper_num = int(num) if num else 0
+        qid = r.get("id", "")
+        # Extract numeric from qid like "q1", "q_batch1_1"
+        import re
+        q_nums = [int(n) for n in re.findall(r"\d+", qid)]
+        return (paper_num, q_nums[0] if q_nums else 0)
+
+    sorted_results = sorted(results, key=_sort_key)
+
     out_path = EVAL_DIR / "eval_results.json"
     out_path.write_text(json.dumps({
         "summary": {
@@ -104,7 +123,7 @@ def _save_results(results: list, scores: list, by_intent: dict) -> None:
             "average_score": avg,
             "by_intent": {k: sum(v) / len(v) for k, v in by_intent.items()},
         },
-        "results": results,
+        "results": sorted_results,
     }, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
