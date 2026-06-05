@@ -261,7 +261,7 @@ class ReActChemSolver:
                 ],
                 temperature=0.0,
                 max_tokens=int(os.environ.get("LLM_MAX_TOKENS", "16384")),
-                extra_body={"thinking": {"type": "disabled"}},
+                extra_body={},
                 timeout=60,  # 60 second timeout
             )
             raw = (response.choices[0].message.content or "").strip()
@@ -286,7 +286,7 @@ class ReActChemSolver:
                 ],
                 temperature=0.1,
                 max_tokens=int(os.environ.get("LLM_MAX_TOKENS", "16384")),
-                extra_body={"thinking": {"type": "disabled"}},
+                extra_body={},
                 timeout=60,
             )
             raw = (response.choices[0].message.content or "").strip()

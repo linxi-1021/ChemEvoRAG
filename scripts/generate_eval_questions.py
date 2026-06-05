@@ -242,7 +242,7 @@ def _send_multimodal_request(
             ],
             temperature=0.2,
             max_tokens=int(os.environ.get("LLM_MAX_TOKENS", "16384")),
-            extra_body={"thinking": {"type": "disabled"}},
+            extra_body={},
         )
         return response.choices[0].message.content
     except Exception as exc:
