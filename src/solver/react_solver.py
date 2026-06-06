@@ -241,7 +241,7 @@ class ReActChemSolver:
     ) -> GroundedAnswer:
         """Single-pass fallback when ReAct assessment consistently fails."""
         from retrieval import RetrievalRouter
-        router = RetrievalRouter(self.store, elementkg_client=self.elementkg_client)
+        router = RetrievalRouter(self.store, elementkg_client=None)
         package = router.retrieve(query, doc_ids=doc_ids, top_k=top_k)
         answer = self.llm_solver.answer_from_package(
             package, prompt_context=prompt_context,

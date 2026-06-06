@@ -161,7 +161,11 @@ def _judge_answer(system_answer: str, ground_truth: str, key_entities: list[str]
     if not key:
         return {"score": 0.0, "key_entities_found": [], "key_entities_missing": key_entities, "reasoning": "no API key"}
 
-    from openai import OpenAI
+    try:
+        from openai import OpenAI
+    except ImportError:
+        return {"score": 0.0, "key_entities_found": [], "key_entities_missing": key_entities, "reasoning": "openai not installed"}
+
     client = OpenAI(api_key=key, base_url=url or None)
 
     entities_str = ", ".join(key_entities) if key_entities else "none"
@@ -285,7 +289,15 @@ def _eval_one(
         evidence_ids = []
         confidence = 0.0
 
-    judge = _judge_answer(system_answer, ground_truth, key_entities)
+    try:
+        judge = _judge_answer(system_answer, ground_truth, key_entities)
+    except Exception as exc:
+        judge = {
+            "score": 0.0,
+            "key_entities_found": [],
+            "key_entities_missing": key_entities,
+            "reasoning": f"Judge failed: {exc}",
+        }
     score = judge.get("score", 0.0)
 
     return {
