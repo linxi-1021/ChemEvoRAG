@@ -230,7 +230,41 @@ def validate_individual_patch(
             if prompts_dir.is_dir():
                 shutil.copytree(prompts_dir, tmp_prompts)
 
-            # Apply patch in temp directory
+            runner = RegressionRunner(project_root)
+
+            # If regression_limit is set, run a "before" eval on the SAME
+            # sampled questions using the ORIGINAL (unpatched) config FIRST,
+            # BEFORE applying the patch.  This ensures apples-to-apples.
+            if regression_limit is not None and regression_limit > 0:
+                tmp_before_output = Path(tmpdir) / "baseline_output"
+                tmp_before_output.mkdir(parents=True, exist_ok=True)
+                before_result = runner.run_eval(
+                    regression_dataset,
+                    tmp_skills,   # ORIGINAL — patch not yet applied
+                    tmp_prompts,
+                    output_dir=tmp_before_output,
+                    workers=workers,
+                    limit=regression_limit,
+                    seed=regression_seed,
+                    stream_output=stream_output,
+                )
+                if before_result.errors:
+                    result["warnings"].append(
+                        f"Baseline subset eval had errors: {before_result.errors}"
+                    )
+                    baseline_for_comparison = (
+                        RegressionResult_from_dict(baseline_result)
+                        if baseline_result else before_result
+                    )
+                else:
+                    baseline_for_comparison = before_result
+            else:
+                baseline_for_comparison = (
+                    RegressionResult_from_dict(baseline_result)
+                    if baseline_result else None
+                )
+
+            # Apply patch in temp directory (AFTER baseline eval)
             try:
                 tmp_applier = PatchApplier(tmp_skills, tmp_prompts)
                 skill_name = skill_config.get("name", "unknown")
@@ -248,38 +282,6 @@ def validate_individual_patch(
                 result["errors"].append(f"Temp apply failed: {e}")
                 patch.status = PatchStatus.REJECTED
                 return result
-
-            # Run regression in temp — use isolated output dir to avoid
-            # overwriting baseline data/eval/eval_results.json
-            runner = RegressionRunner(project_root)
-
-            # If regression_limit is set, run a "before" eval on the SAME sampled
-            # questions using the original (unpatched) config.  This ensures we
-            # compare apples to apples — the same 20 questions before vs after.
-            if regression_limit is not None and regression_limit > 0:
-                tmp_before_output = Path(tmpdir) / "baseline_output"
-                tmp_before_output.mkdir(parents=True, exist_ok=True)
-                before_result = runner.run_eval(
-                    regression_dataset,
-                    # Use the COPIED (but not yet patched) skills/prompts
-                    tmp_skills,
-                    tmp_prompts,
-                    output_dir=tmp_before_output,
-                    workers=workers,
-                    limit=regression_limit,
-                    seed=regression_seed,
-                    stream_output=stream_output,
-                )
-                if before_result.errors:
-                    result["warnings"].append(
-                        f"Baseline subset eval had errors: {before_result.errors}"
-                    )
-                    # Fall back to full baseline
-                    baseline_for_comparison = RegressionResult_from_dict(baseline_result) if baseline_result else before_result
-                else:
-                    baseline_for_comparison = before_result
-            else:
-                baseline_for_comparison = RegressionResult_from_dict(baseline_result) if baseline_result else None
 
             tmp_eval_output = Path(tmpdir) / "eval_output"
             tmp_eval_output.mkdir(parents=True, exist_ok=True)
