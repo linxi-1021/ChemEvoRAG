@@ -111,6 +111,27 @@ def _copy_patches_to_global(patches: list[dict], category: str) -> None:
         _save_json(dest / f"{pid}.json", p)
 
 
+# ── Helpers ───────────────────────────────────────────────────────────
+
+def _require_metric(result: dict, key: str) -> Any:
+    """Get a regression metric from result dict, raising KeyError if missing.
+
+    Checks the top-level dict first, then falls back to result["regression_result"]
+    or result["regression_comparison"].
+    """
+    if key in result and result[key] is not None:
+        return result[key]
+    # Check regression_result sub-dict
+    rr = result.get("regression_result")
+    if isinstance(rr, dict) and rr.get(key) is not None:
+        return rr[key]
+    # Check regression_comparison sub-dict (composition validation)
+    rc = result.get("regression_comparison")
+    if isinstance(rc, dict) and rc.get(key) is not None:
+        return rc[key]
+    raise KeyError(f"Missing regression metric '{key}' for patch {result.get('patch_id')}")
+
+
 # ── Phase functions ──────────────────────────────────────────────────
 
 def phase_analyze(eval_results_path: Path, react_logs_dir: Path, run_dir: Path) -> TraceReport:
@@ -234,11 +255,23 @@ def phase_regression_validate(
         )
         individual_results.append(result)
         if result["passed"]:
+            try:
+                score = _require_metric(result, "average_score")
+                delta = _require_metric(result, "score_delta")
+                ti = _require_metric(result, "targeted_improvement")
+            except KeyError as e:
+                result["passed"] = False
+                result.setdefault("errors", []).append(str(e))
+                _log(f"  REGRESSION FAIL {patch.patch_id}: {result['errors']}")
+                rejected_entry = patch.model_dump(mode="json")
+                rejected_entry["rejection_reason"] = f"individual_regression_failed: missing metrics - {result['errors']}"
+                rejected_in_regression.append(rejected_entry)
+                patch.status = PatchStatus.REJECTED
+                continue
+
             still_valid.append(patch)
             _log(f"  [OK] {patch.patch_id}: passed "
-                 f"(score={result.get('average_score', 0):.4f}, "
-                 f"delta={result.get('score_delta', 0):+.4f}, "
-                 f"targeted_improvement={result.get('targeted_improvement', 0):+.4f})")
+                 f"(score={score:.4f}, delta={delta:+.4f}, targeted_improvement={ti:+.4f})")
         else:
             rejected_entry = patch.model_dump(mode="json")
             rejected_entry["rejection_reason"] = f"individual_regression_failed: {result['errors']}"

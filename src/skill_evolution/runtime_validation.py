@@ -168,7 +168,17 @@ def validate_individual_patch(
             )
 
             if after_result.errors:
+                result["passed"] = False
+                result["errors"].append(f"Regression eval failed: {after_result.errors}")
                 result["warnings"].append(f"Regression eval had errors: {after_result.errors}")
+                result["regression_result"] = None
+                result["average_score"] = None
+                result["score_delta"] = None
+                result["score_drop"] = None
+                result["targeted_improvement"] = None
+                result["failed_cases_increase"] = None
+                patch.status = PatchStatus.REJECTED
+                return result
             else:
                 comparison = runner.compare(
                     RegressionResult_from_dict(baseline_result),
@@ -314,6 +324,12 @@ def validate_composition(
             if after_result.errors:
                 result["errors"].append(f"Regression eval had errors: {after_result.errors}")
                 result["passed"] = False
+                result["regression_comparison"] = None
+                result["average_score"] = None
+                result["score_delta"] = None
+                result["score_drop"] = None
+                result["targeted_improvement"] = None
+                result["failed_cases_increase"] = None
             else:
                 comparison = runner.compare(
                     RegressionResult_from_dict(baseline_regression_result),
