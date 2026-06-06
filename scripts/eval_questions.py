@@ -363,10 +363,13 @@ def run_evaluation(
     use_skills: bool = False,
     skills_dir: Path | None = None,
     prompts_dir: Path | None = None,
+    quiet: bool = False,
 ) -> int:
     """Run evaluation programmatically. Returns 0 on success, 1 on error.
 
     Parameters mirror the CLI flags of eval_questions.py.
+    When quiet=True, ReAct logs are suppressed but the tqdm progress bar
+    and per-question score lines remain visible on stdout.
     """
     questions_file = dataset
     if not questions_file.exists():
@@ -434,46 +437,65 @@ def run_evaluation(
     else:
         solver = LLMChemSolver()
 
-    results: list[dict] = []
-    scores: list[float] = []
-    by_intent: dict[str, list[float]] = {}
+    # Quiet mode: suppress ReAct logs (stderr) but keep tqdm bar on stdout
+    _quiet_stderr = None
+    if quiet:
+        _quiet_stderr = sys.stderr
+        sys.stderr = open(os.devnull, 'w')
 
-    if workers_val > 1:
-        # Concurrent evaluation
-        with ThreadPoolExecutor(max_workers=workers_val) as executor:
-            futures = {
-                executor.submit(
-                    _eval_one, q, store,
-                    LLMChemSolver() if not use_react else ReActChemSolver(store, elementkg_client=elementkg_client),
-                    elementkg_client, use_react,
+    try:
+        results: list[dict] = []
+        scores: list[float] = []
+        by_intent: dict[str, list[float]] = {}
+
+        _tqdm_kwargs = {"file": sys.stdout, "mininterval": 0.5} if quiet else {}
+
+        if workers_val > 1:
+            # Concurrent evaluation
+            with ThreadPoolExecutor(max_workers=workers_val) as executor:
+                futures = {
+                    executor.submit(
+                        _eval_one, q, store,
+                        LLMChemSolver() if not use_react else ReActChemSolver(store, elementkg_client=elementkg_client),
+                        elementkg_client, use_react,
+                        skill_configs.get(q.get("intent", ""), {}),
+                        prompt_registry,
+                    ): q
+                    for q in all_q
+                }
+                with tqdm(total=len(all_q), desc="Evaluating", unit="q", **_tqdm_kwargs) as pbar:
+                    for f in as_completed(futures):
+                        result = f.result()
+                        with _eval_write_lock:
+                            results.append(result)
+                            scores.append(result["score"])
+                            by_intent.setdefault(result["intent_key"], []).append(result["score"])
+                            _save_results(results, scores, by_intent, output_dir=eval_output_dir, metadata=eval_metadata)
+                        if quiet:
+                            print(f"  {result['id']}: score={result['judge_score']:.1f} | {result['system_answer'][:80]}...", flush=True)
+                        else:
+                            tqdm.write(f"  {result['id']}: score={result['judge_score']:.1f} | {result['system_answer'][:80]}...")
+                        pbar.update(1)
+        else:
+            # Sequential evaluation
+            for q in tqdm(all_q, desc="Evaluating", unit="q", **_tqdm_kwargs):
+                result = _eval_one(
+                    q, store, solver, elementkg_client, use_react,
                     skill_configs.get(q.get("intent", ""), {}),
                     prompt_registry,
-                ): q
-                for q in all_q
-            }
-            with tqdm(total=len(all_q), desc="Evaluating", unit="q") as pbar:
-                for f in as_completed(futures):
-                    result = f.result()
-                    with _eval_write_lock:
-                        results.append(result)
-                        scores.append(result["score"])
-                        by_intent.setdefault(result["intent_key"], []).append(result["score"])
-                        _save_results(results, scores, by_intent, output_dir=eval_output_dir, metadata=eval_metadata)
+                )
+                results.append(result)
+                scores.append(result["score"])
+                by_intent.setdefault(result["intent_key"], []).append(result["score"])
+                if quiet:
+                    print(f"  {result['id']}: score={result['judge_score']:.1f} | {result['system_answer'][:80]}...", flush=True)
+                else:
                     tqdm.write(f"  {result['id']}: score={result['judge_score']:.1f} | {result['system_answer'][:80]}...")
-                    pbar.update(1)
-    else:
-        # Sequential evaluation
-        for q in tqdm(all_q, desc="Evaluating", unit="q"):
-            result = _eval_one(
-                q, store, solver, elementkg_client, use_react,
-                skill_configs.get(q.get("intent", ""), {}),
-                prompt_registry,
-            )
-            results.append(result)
-            scores.append(result["score"])
-            by_intent.setdefault(result["intent_key"], []).append(result["score"])
-            tqdm.write(f"  {result['id']}: score={result['judge_score']:.1f} | {result['system_answer'][:80]}...")
-            _save_results(results, scores, by_intent, output_dir=eval_output_dir, metadata=eval_metadata)
+                _save_results(results, scores, by_intent, output_dir=eval_output_dir, metadata=eval_metadata)
+    finally:
+        if _quiet_stderr is not None:
+            sys.stderr.close()
+            sys.stderr = _quiet_stderr
 
     # Final save
     _save_results(results, scores, by_intent, output_dir=eval_output_dir, metadata=eval_metadata)

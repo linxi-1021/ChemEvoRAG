@@ -118,12 +118,12 @@ class RegressionRunner:
         import eval_questions as _eval_mod
 
         if not stream_output:
-            # --- Silent / captured mode (used by tests or --quiet-regression) ---
+            # --- Quiet mode: suppress ReAct logs but keep tqdm progress bar ---
             import io
             captured = io.StringIO()
             import contextlib
             try:
-                with contextlib.redirect_stdout(captured), contextlib.redirect_stderr(captured):
+                with contextlib.redirect_stdout(captured):
                     _rc = _eval_mod.run_evaluation(
                         dataset=dataset_path,
                         output_dir=actual_output_dir,
@@ -134,13 +134,16 @@ class RegressionRunner:
                         use_skills=bool(skills_dir and skills_dir.is_dir()),
                         skills_dir=skills_dir,
                         prompts_dir=prompts_dir,
+                        quiet=True,
                     )
             except Exception as e:
                 captured.write(f"\n[ERROR] eval_questions raised: {e}\n")
-                # Save captured output for debugging
                 log_path = actual_output_dir / "eval_stdout.log"
                 log_path.write_text(captured.getvalue(), encoding="utf-8")
                 return RegressionResult(errors=[f"Eval failed: {e}"])
+            # Save captured stdout for debugging
+            log_path = actual_output_dir / "eval_stdout.log"
+            log_path.write_text(captured.getvalue(), encoding="utf-8")
         else:
             # --- Streaming mode: eval output goes directly to stdout ---
             try:
