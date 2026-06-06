@@ -34,21 +34,20 @@ def _make_fake_project(tmp_path: Path, baseline_total: int = 118) -> Path:
     return project
 
 
-def _make_fake_subprocess_run(output_dir: Path):
-    """Return a fake subprocess.run that writes eval_results.json to output_dir."""
-    def _fake_run(cmd, **kwargs):
-        out_dir = Path(cmd[cmd.index("--output-dir") + 1]) if "--output-dir" in cmd else output_dir
-        out_dir.mkdir(parents=True, exist_ok=True)
-        (out_dir / "eval_results.json").write_text(
-            json.dumps({
-                "summary": {"total": 2, "average_score": 0.85, "by_intent": {}},
-                "results": [{"id": "regression_q1", "score": 0.8}, {"id": "regression_q2", "score": 0.9}],
-            }),
-            encoding="utf-8",
-        )
-        # Return a mock CompletedProcess
-        from subprocess import CompletedProcess
-        return CompletedProcess(cmd, 0, stdout="", stderr="")
+def _make_fake_run_evaluation():
+    """Return a fake run_evaluation that writes eval_results.json to output_dir."""
+    def _fake_run(**kwargs):
+        out_dir = kwargs.get("output_dir")
+        if out_dir:
+            out_dir.mkdir(parents=True, exist_ok=True)
+            (out_dir / "eval_results.json").write_text(
+                json.dumps({
+                    "summary": {"total": 2, "average_score": 0.85, "by_intent": {}},
+                    "results": [{"id": "regression_q1", "score": 0.8}, {"id": "regression_q2", "score": 0.9}],
+                }),
+                encoding="utf-8",
+            )
+        return 0
     return _fake_run
 
 
@@ -67,10 +66,11 @@ class TestRegressionRunnerOutputIsolation:
         from skill_evolution.regression import RegressionRunner
         runner = RegressionRunner(project)
 
-        with patch("subprocess.run", _make_fake_subprocess_run(regression_output)):
+        with patch("eval_questions.run_evaluation", _make_fake_run_evaluation()):
             result = runner.run_eval(
                 dataset_path=project / "data" / "eval" / "eval_questions.json",
                 output_dir=regression_output,
+                stream_output=False,
             )
 
         assert result.total_questions == 2
@@ -108,10 +108,11 @@ class TestRegressionRunnerOutputIsolation:
         from skill_evolution.regression import RegressionRunner
         runner = RegressionRunner(project)
 
-        with patch("subprocess.run", _make_fake_subprocess_run(regression_output)):
+        with patch("eval_questions.run_evaluation", _make_fake_run_evaluation()):
             runner.run_eval(
                 dataset_path=project / "data" / "eval" / "eval_questions.json",
                 output_dir=regression_output,
+                stream_output=False,
             )
 
         # Baseline must still be 118

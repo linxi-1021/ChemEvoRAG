@@ -351,26 +351,29 @@ def _merge_react_logs(*, output_dir: Path | None = None) -> None:
             f.write("\n")
 
 
-def main() -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--limit", type=int, default=0, help="Number of questions to evaluate (randomly sampled). 0 or negative = all.")
-    parser.add_argument("--seed", type=int, default=42, help="Random seed for --limit sampling (default: 42).")
-    parser.add_argument("--paper", default=None, help="Only evaluate questions from a specific paper (e.g. '1').")
-    parser.add_argument("--react", action="store_true", help="Use ReAct multi-round retrieval.")
-    parser.add_argument("--workers", type=int, default=1, help="Number of concurrent workers (default: 1).")
-    parser.add_argument("--skills", action="store_true", help="Load Skill YAML configs and prompt registry.")
-    parser.add_argument("--skills-dir", type=Path, default=PROJECT_ROOT / "config" / "skills", help="Directory containing Skill YAML files (default: config/skills).")
-    parser.add_argument("--prompts-dir", type=Path, default=PROJECT_ROOT / "config" / "prompts", help="Directory containing Prompt Registry YAML files (default: config/prompts).")
-    parser.add_argument("--dataset", type=Path, default=EVAL_DIR / "all_questions.json", help="Path to questions JSON file (default: data/eval/all_questions.json).")
-    parser.add_argument("--output-dir", type=Path, default=EVAL_DIR, help="Directory for eval output (default: data/eval).")
-    args = parser.parse_args()
+def run_evaluation(
+    *,
+    dataset: Path,
+    output_dir: Path,
+    limit: int | None = None,
+    seed: int = 42,
+    paper: str | None = None,
+    use_react: bool = True,
+    workers: int = 1,
+    use_skills: bool = False,
+    skills_dir: Path | None = None,
+    prompts_dir: Path | None = None,
+) -> int:
+    """Run evaluation programmatically. Returns 0 on success, 1 on error.
 
-    questions_file = args.dataset
+    Parameters mirror the CLI flags of eval_questions.py.
+    """
+    questions_file = dataset
     if not questions_file.exists():
         print(f"Questions file not found: {questions_file}", file=sys.stderr)
         return 1
 
-    eval_output_dir = args.output_dir
+    eval_output_dir = output_dir
     eval_output_dir.mkdir(parents=True, exist_ok=True)
 
     all_q = json.loads(questions_file.read_text("utf-8"))
@@ -386,30 +389,32 @@ def main() -> int:
         return int(num) if num else 0
     all_q.sort(key=_paper_sort_key)
 
-    if args.paper:
-        all_q = [q for q in all_q if q.get("source_paper", "").startswith(args.paper)]
+    if paper:
+        all_q = [q for q in all_q if q.get("source_paper", "").startswith(paper)]
 
     # Apply limit with random sampling (seed-controlled for reproducibility)
-    effective_limit: int | None = args.limit if args.limit and args.limit > 0 else None
-    all_q = select_questions(all_q, limit=effective_limit, seed=args.seed)
+    effective_limit: int | None = limit if limit and limit > 0 else None
+    all_q = select_questions(all_q, limit=effective_limit, seed=seed)
 
     # Build sampling metadata
-    sampling_meta = build_sampling_metadata(effective_limit, args.seed, all_q)
+    sampling_meta = build_sampling_metadata(effective_limit, seed, all_q)
     eval_metadata: dict | None = None
     if sampling_meta:
         eval_metadata = {"sampling": sampling_meta}
     elif effective_limit is None:
         eval_metadata = {"sampling": {"mode": "full"}}
 
-    workers = max(1, args.workers)
-    print(f"Evaluating {len(all_q)} questions with {workers} worker(s)\n")
+    workers_val = max(1, workers)
+    print(f"Evaluating {len(all_q)} questions with {workers_val} worker(s)\n")
 
-    # Skill configs (optional, activated by --skills)
+    # Skill configs (optional, activated by use_skills)
     skill_configs: dict[str, dict] = {}
     prompt_registry: dict[str, str] = {}
-    if args.skills:
-        skill_configs = _load_skill_configs(args.skills_dir)
-        prompt_registry = _load_prompt_registry(args.prompts_dir)
+    if use_skills:
+        _sd = skills_dir or PROJECT_ROOT / "config" / "skills"
+        _pd = prompts_dir or PROJECT_ROOT / "config" / "prompts"
+        skill_configs = _load_skill_configs(_sd)
+        prompt_registry = _load_prompt_registry(_pd)
         print(f"Loaded {len(skill_configs)} skill configs, {len(prompt_registry)} prompt registry entries\n")
 
     store = LocalStore(base_dir=PROJECT_ROOT)
@@ -423,7 +428,7 @@ def main() -> int:
     except Exception:
         pass
 
-    if args.react:
+    if use_react:
         from solver import ReActChemSolver
         solver = ReActChemSolver(store, elementkg_client=elementkg_client)
     else:
@@ -433,14 +438,14 @@ def main() -> int:
     scores: list[float] = []
     by_intent: dict[str, list[float]] = {}
 
-    if workers > 1:
+    if workers_val > 1:
         # Concurrent evaluation
-        with ThreadPoolExecutor(max_workers=workers) as executor:
+        with ThreadPoolExecutor(max_workers=workers_val) as executor:
             futures = {
                 executor.submit(
                     _eval_one, q, store,
-                    LLMChemSolver() if not args.react else ReActChemSolver(store, elementkg_client=elementkg_client),
-                    elementkg_client, args.react,
+                    LLMChemSolver() if not use_react else ReActChemSolver(store, elementkg_client=elementkg_client),
+                    elementkg_client, use_react,
                     skill_configs.get(q.get("intent", ""), {}),
                     prompt_registry,
                 ): q
@@ -460,7 +465,7 @@ def main() -> int:
         # Sequential evaluation
         for q in tqdm(all_q, desc="Evaluating", unit="q"):
             result = _eval_one(
-                q, store, solver, elementkg_client, args.react,
+                q, store, solver, elementkg_client, use_react,
                 skill_configs.get(q.get("intent", ""), {}),
                 prompt_registry,
             )
@@ -485,6 +490,34 @@ def main() -> int:
     print(f"\nSaved to {eval_output_dir / 'eval_results.json'}")
 
     return 0
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--limit", type=int, default=0, help="Number of questions to evaluate (randomly sampled). 0 or negative = all.")
+    parser.add_argument("--seed", type=int, default=42, help="Random seed for --limit sampling (default: 42).")
+    parser.add_argument("--paper", default=None, help="Only evaluate questions from a specific paper (e.g. '1').")
+    parser.add_argument("--react", action="store_true", help="Use ReAct multi-round retrieval.")
+    parser.add_argument("--workers", type=int, default=1, help="Number of concurrent workers (default: 1).")
+    parser.add_argument("--skills", action="store_true", help="Load Skill YAML configs and prompt registry.")
+    parser.add_argument("--skills-dir", type=Path, default=PROJECT_ROOT / "config" / "skills", help="Directory containing Skill YAML files (default: config/skills).")
+    parser.add_argument("--prompts-dir", type=Path, default=PROJECT_ROOT / "config" / "prompts", help="Directory containing Prompt Registry YAML files (default: config/prompts).")
+    parser.add_argument("--dataset", type=Path, default=EVAL_DIR / "all_questions.json", help="Path to questions JSON file (default: data/eval/all_questions.json).")
+    parser.add_argument("--output-dir", type=Path, default=EVAL_DIR, help="Directory for eval output (default: data/eval).")
+    args = parser.parse_args()
+
+    return run_evaluation(
+        dataset=args.dataset,
+        output_dir=args.output_dir,
+        limit=args.limit if args.limit and args.limit > 0 else None,
+        seed=args.seed,
+        paper=args.paper,
+        use_react=args.react,
+        workers=args.workers,
+        use_skills=args.skills,
+        skills_dir=args.skills_dir,
+        prompts_dir=args.prompts_dir,
+    )
 
 
 if __name__ == "__main__":

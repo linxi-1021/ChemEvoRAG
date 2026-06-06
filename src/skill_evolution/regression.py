@@ -15,7 +15,6 @@ Usage:
 from __future__ import annotations
 
 import json
-import subprocess
 import sys
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -53,11 +52,8 @@ class RegressionRunner:
     def __init__(
         self,
         project_root: Path,
-        python_executable: str = sys.executable,
     ) -> None:
         self.project_root = Path(project_root)
-        self.python = python_executable
-        self.eval_script = self.project_root / "scripts" / "eval_questions.py"
 
     def run_eval(
         self,
@@ -75,9 +71,8 @@ class RegressionRunner:
     ) -> RegressionResult:
         """Run eval_questions.py and return the results.
 
-        Passes --skills-dir, --prompts-dir, --dataset, --output-dir to the
-        eval script so it uses the correct config and writes output where
-        the caller expects it.
+        Calls eval_questions.run_evaluation() directly (no subprocess) so the
+        eval runs in the same Python process with the same installed packages.
 
         output_dir is REQUIRED for regression validation. Calling with
         output_dir=None will raise ValueError to prevent accidental
@@ -85,11 +80,10 @@ class RegressionRunner:
 
         When limit is not None, random sampling is used with the given seed
         (default 42) for reproducibility. When limit is None, the full
-        dataset is evaluated and no --limit or --seed is passed.
+        dataset is evaluated.
 
-        When stream_output=True (default), uses Popen to stream eval
-        progress in real time (e.g. tqdm bars). Output is also saved to
-        eval_stdout.log. Set stream_output=False or pass
+        When stream_output=True (default), eval progress (tqdm bars, per-question
+        results) prints to stdout in real time. Set stream_output=False or pass
         --quiet-regression to capture silently.
         """
         # Validate workers
@@ -115,86 +109,55 @@ class RegressionRunner:
                 "Use a temporary or run-specific output directory."
             )
 
-        # Use python -u for unbuffered stdout → real-time tqdm streaming
-        cmd = [self.python, "-u", str(self.eval_script)]
-        if use_react:
-            cmd.append("--react")
-        cmd.extend(["--workers", str(workers)])
-
-        if limit is not None:
-            cmd.extend(["--limit", str(limit)])
-            cmd.extend(["--seed", str(seed)])
-
-        # Always pass --skills when skills_dir is provided
-        if skills_dir and skills_dir.is_dir():
-            cmd.append("--skills")
-            cmd.extend(["--skills-dir", str(skills_dir)])
-
-        if prompts_dir and prompts_dir.is_dir():
-            cmd.extend(["--prompts-dir", str(prompts_dir)])
-
-        # Always pass --dataset (required by eval script)
-        cmd.extend(["--dataset", str(dataset_path)])
-
-        # Always pass --output-dir so results go to the right place
         actual_output_dir.mkdir(parents=True, exist_ok=True)
-        cmd.extend(["--output-dir", str(actual_output_dir)])
 
-        import os
-        env = os.environ.copy()
-        env["PYTHONPATH"] = str(self.project_root / "src")
+        # Ensure scripts/ is importable so we can call eval_questions directly
+        scripts_dir = str(self.project_root / "scripts")
+        if scripts_dir not in sys.path:
+            sys.path.insert(0, scripts_dir)
+
+        import eval_questions as _eval_mod
 
         if not stream_output:
             # --- Silent / captured mode (used by tests or --quiet-regression) ---
+            import io
+            captured = io.StringIO()
+            import contextlib
             try:
-                result = subprocess.run(
-                    cmd,
-                    cwd=str(self.project_root),
-                    capture_output=True,
-                    text=True,
-                    timeout=timeout,
-                    env=env,
+                with contextlib.redirect_stdout(captured), contextlib.redirect_stderr(captured):
+                    _rc = _eval_mod.run_evaluation(
+                        dataset=dataset_path,
+                        output_dir=actual_output_dir,
+                        limit=limit,
+                        seed=seed,
+                        use_react=use_react,
+                        workers=workers,
+                        use_skills=bool(skills_dir and skills_dir.is_dir()),
+                        skills_dir=skills_dir,
+                        prompts_dir=prompts_dir,
+                    )
+            except Exception as e:
+                captured.write(f"\n[ERROR] eval_questions raised: {e}\n")
+                # Save captured output for debugging
+                log_path = actual_output_dir / "eval_stdout.log"
+                log_path.write_text(captured.getvalue(), encoding="utf-8")
+                return RegressionResult(errors=[f"Eval failed: {e}"])
+        else:
+            # --- Streaming mode: eval output goes directly to stdout ---
+            try:
+                _eval_mod.run_evaluation(
+                    dataset=dataset_path,
+                    output_dir=actual_output_dir,
+                    limit=limit,
+                    seed=seed,
+                    use_react=use_react,
+                    workers=workers,
+                    use_skills=bool(skills_dir and skills_dir.is_dir()),
+                    skills_dir=skills_dir,
+                    prompts_dir=prompts_dir,
                 )
-            except subprocess.TimeoutExpired:
-                return RegressionResult(errors=[f"Eval timed out after {timeout}s"])
             except Exception as e:
                 return RegressionResult(errors=[f"Eval failed: {e}"])
-
-            if result.returncode != 0:
-                return RegressionResult(errors=[
-                    f"Eval exited with code {result.returncode}",
-                    result.stderr[:500] if result.stderr else "",
-                ])
-        else:
-            # --- Streaming mode: Popen with real-time output ---
-            stdout_lines: list[str] = []
-            process = subprocess.Popen(
-                cmd,
-                cwd=str(self.project_root),
-                stdout=subprocess.PIPE,
-                stderr=subprocess.STDOUT,
-                text=True,
-                bufsize=1,
-                env=env,
-            )
-            # Read lines in real time — tqdm and per-question output appear immediately
-            if process.stdout is not None:
-                for line in process.stdout:
-                    print(line, end="", flush=True)
-                    stdout_lines.append(line)
-
-            returncode = process.wait()
-
-            # Save captured output for debugging
-            log_path = actual_output_dir / "eval_stdout.log"
-            log_path.write_text("".join(stdout_lines), encoding="utf-8")
-
-            if returncode != 0:
-                tail = "".join(stdout_lines[-20:]) if stdout_lines else "(no output)"
-                return RegressionResult(errors=[
-                    f"Eval exited with code {returncode}",
-                    tail[-500:],
-                ])
 
         # Load eval_results.json from the output directory
         eval_results_path = actual_output_dir / "eval_results.json"

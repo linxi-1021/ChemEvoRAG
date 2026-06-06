@@ -163,36 +163,41 @@ class TestBuildSamplingMetadata:
 # ---------------------------------------------------------------------------
 
 class TestRunEvalLimitAndSeed:
-    """RegressionRunner.run_eval must pass --limit and --seed to the eval script."""
+    """RegressionRunner.run_eval must pass limit and seed to run_evaluation()."""
 
     def test_passes_limit_and_seed(self, tmp_path, monkeypatch):
-        """run_eval(..., limit=20, seed=42) passes --limit 20 --seed 42."""
+        """run_eval(..., limit=20, seed=42) passes limit=20, seed=42."""
         from skill_evolution.regression import RegressionRunner
 
         project = tmp_path / "project"
         project.mkdir()
         (project / "scripts").mkdir()
-        (project / "scripts" / "eval_questions.py").write_text("# stub")
+        (project / "scripts" / "eval_questions.py").write_text(
+            "def run_evaluation(**kwargs): pass\n"
+        )
 
         output_dir = tmp_path / "output"
         output_dir.mkdir()
         dataset = tmp_path / "questions.json"
         dataset.write_text("[]", encoding="utf-8")
 
-        captured_cmd: list[str] = []
+        captured_kwargs: dict = {}
 
-        class FakeProcess:
-            def __init__(self, cmd, **kwargs):
-                captured_cmd.extend(cmd)
-                self.stdout = StringIO("done\n")
-                self.returncode = 0
-            def wait(self):
-                return self.returncode
+        def fake_run_evaluation(**kwargs):
+            captured_kwargs.update(kwargs)
+            outp = kwargs["output_dir"]
+            (outp / "eval_results.json").write_text(json.dumps({
+                "summary": {"total": 1, "average_score": 0.9, "by_intent": {}},
+                "results": [{"id": "q1", "score": 0.9, "intent": "test"}],
+            }), encoding="utf-8")
+            return 0
 
-        monkeypatch.setattr("subprocess.Popen", FakeProcess)
+        monkeypatch.setattr(
+            "eval_questions.run_evaluation", fake_run_evaluation,
+        )
 
         runner = RegressionRunner(project)
-        runner.run_eval(
+        result = runner.run_eval(
             dataset_path=dataset,
             output_dir=output_dir,
             workers=4,
@@ -201,12 +206,9 @@ class TestRunEvalLimitAndSeed:
             stream_output=True,
         )
 
-        assert "--limit" in captured_cmd
-        assert captured_cmd[captured_cmd.index("--limit") + 1] == "20"
-        assert "--seed" in captured_cmd
-        assert captured_cmd[captured_cmd.index("--seed") + 1] == "42"
-        # Must NOT contain --sample
-        assert "--sample" not in captured_cmd
+        assert captured_kwargs.get("limit") == 20
+        assert captured_kwargs.get("seed") == 42
+        assert result.average_score == 0.9
 
 
 # ---------------------------------------------------------------------------
@@ -214,33 +216,38 @@ class TestRunEvalLimitAndSeed:
 # ---------------------------------------------------------------------------
 
 class TestRunEvalNoLimitNoSeed:
-    """When limit=None, --limit and --seed must NOT appear in the cmd."""
+    """When limit=None, --limit and --seed must NOT be passed."""
 
     def test_no_limit_no_seed_when_none(self, tmp_path, monkeypatch):
-        """run_eval(..., limit=None) omits --limit and --seed."""
+        """run_eval(..., limit=None) passes limit=None to run_evaluation."""
         from skill_evolution.regression import RegressionRunner
 
         project = tmp_path / "project"
         project.mkdir()
         (project / "scripts").mkdir()
-        (project / "scripts" / "eval_questions.py").write_text("# stub")
+        (project / "scripts" / "eval_questions.py").write_text(
+            "def run_evaluation(**kwargs): pass\n"
+        )
 
         output_dir = tmp_path / "output"
         output_dir.mkdir()
         dataset = tmp_path / "questions.json"
         dataset.write_text("[]", encoding="utf-8")
 
-        captured_cmd: list[str] = []
+        captured_kwargs: dict = {}
 
-        class FakeProcess:
-            def __init__(self, cmd, **kwargs):
-                captured_cmd.extend(cmd)
-                self.stdout = StringIO("done\n")
-                self.returncode = 0
-            def wait(self):
-                return self.returncode
+        def fake_run_evaluation(**kwargs):
+            captured_kwargs.update(kwargs)
+            outp = kwargs["output_dir"]
+            (outp / "eval_results.json").write_text(json.dumps({
+                "summary": {"total": 1, "average_score": 0.9, "by_intent": {}},
+                "results": [{"id": "q1", "score": 0.9, "intent": "test"}],
+            }), encoding="utf-8")
+            return 0
 
-        monkeypatch.setattr("subprocess.Popen", FakeProcess)
+        monkeypatch.setattr(
+            "eval_questions.run_evaluation", fake_run_evaluation,
+        )
 
         runner = RegressionRunner(project)
         runner.run_eval(
@@ -250,8 +257,7 @@ class TestRunEvalNoLimitNoSeed:
             stream_output=True,
         )
 
-        assert "--limit" not in captured_cmd
-        assert "--seed" not in captured_cmd
+        assert captured_kwargs.get("limit") is None
 
 
 # ---------------------------------------------------------------------------
