@@ -451,8 +451,9 @@ def run_evaluation(
         _tqdm_kwargs = {"file": sys.stdout, "mininterval": 0.5} if quiet else {}
 
         if workers_val > 1:
-            # Concurrent evaluation
-            with ThreadPoolExecutor(max_workers=workers_val) as executor:
+            # Concurrent evaluation — explicit executor mgmt for clean Ctrl+C
+            executor = ThreadPoolExecutor(max_workers=workers_val)
+            try:
                 futures = {
                     executor.submit(
                         _eval_one, q, store,
@@ -476,22 +477,36 @@ def run_evaluation(
                         else:
                             tqdm.write(f"  {result['id']}: score={result['judge_score']:.1f} | {result['system_answer'][:80]}...")
                         pbar.update(1)
+            except KeyboardInterrupt:
+                print(f"\n  Interrupted by user — shutting down ({len(results)}/{len(all_q)} completed)...", flush=True)
+                executor.shutdown(wait=False, cancel_futures=True)
+                if results:
+                    _save_results(results, scores, by_intent, output_dir=eval_output_dir, metadata=eval_metadata)
+                return 1
+            else:
+                executor.shutdown(wait=True)
         else:
             # Sequential evaluation
-            for q in tqdm(all_q, desc="Evaluating", unit="q", **_tqdm_kwargs):
-                result = _eval_one(
-                    q, store, solver, elementkg_client, use_react,
-                    skill_configs.get(q.get("intent", ""), {}),
-                    prompt_registry,
-                )
-                results.append(result)
-                scores.append(result["score"])
-                by_intent.setdefault(result["intent_key"], []).append(result["score"])
-                if quiet:
-                    print(f"  {result['id']}: score={result['judge_score']:.1f} | {result['system_answer'][:80]}...", flush=True)
-                else:
-                    tqdm.write(f"  {result['id']}: score={result['judge_score']:.1f} | {result['system_answer'][:80]}...")
-                _save_results(results, scores, by_intent, output_dir=eval_output_dir, metadata=eval_metadata)
+            try:
+                for q in tqdm(all_q, desc="Evaluating", unit="q", **_tqdm_kwargs):
+                    result = _eval_one(
+                        q, store, solver, elementkg_client, use_react,
+                        skill_configs.get(q.get("intent", ""), {}),
+                        prompt_registry,
+                    )
+                    results.append(result)
+                    scores.append(result["score"])
+                    by_intent.setdefault(result["intent_key"], []).append(result["score"])
+                    if quiet:
+                        print(f"  {result['id']}: score={result['judge_score']:.1f} | {result['system_answer'][:80]}...", flush=True)
+                    else:
+                        tqdm.write(f"  {result['id']}: score={result['judge_score']:.1f} | {result['system_answer'][:80]}...")
+                    _save_results(results, scores, by_intent, output_dir=eval_output_dir, metadata=eval_metadata)
+            except KeyboardInterrupt:
+                print(f"\n  Interrupted by user — shutting down ({len(results)}/{len(all_q)} completed)...", flush=True)
+                if results:
+                    _save_results(results, scores, by_intent, output_dir=eval_output_dir, metadata=eval_metadata)
+                return 1
     finally:
         if _quiet_stderr is not None:
             sys.stderr.close()
