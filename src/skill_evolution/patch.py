@@ -449,7 +449,7 @@ def distill_templates(
         pattern_groups.setdefault(key, []).extend(sp.supporting_question_ids)
 
     patches: list[PatchSchema] = []
-    for (intent, pattern), qids in pattern_groups.items():
+    for idx, ((intent, pattern), qids) in enumerate(pattern_groups.items()):
         if len(qids) < 3:
             continue
         avg_score = sum(sp.avg_score for sp in success_patterns
@@ -459,6 +459,7 @@ def distill_templates(
         if avg_score < 0.85:
             continue
         patches.append(PatchSchema(
+            patch_id=f"{intent}_template_distill_{idx + 1}",
             skill_name=intent,
             primary_failure_type=FailureType.UNKNOWN_FAILURE,  # not a failure, but uses same schema
             target_path="templates",

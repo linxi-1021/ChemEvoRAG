@@ -50,6 +50,7 @@ from skill_evolution.runtime_validation import (
     validate_individual_patch,
     validate_composition,
     detect_conflicts,
+    resolve_conflicts,
     RegressionResult_from_dict,
 )
 
@@ -236,8 +237,17 @@ def phase_regression_validate(
     rejected_in_regression: list[dict] = []
 
     for idx, patch in enumerate(patches, 1):
-        _log(f"[{idx}/{len(patches)}] Validating {patch.patch_id} "
-             f"({patch.skill_name} / {patch.operation.value} / {patch.target_path})")
+        # Log patch identity
+        target_file = f"config/skills/{patch.skill_name}.yaml"
+        _log(f"[{idx}/{len(patches)}] Validating {patch.patch_id}")
+        _log(f"  Skill:  {patch.skill_name}")
+        _log(f"  File:   {target_file}")
+        _log(f"  Op:     {patch.operation.value} @ {patch.target_path}")
+        # Log before/after diff for update patches
+        if hasattr(patch, 'current_value') and patch.current_value:
+            _log(f"  Before: {json.dumps(patch.current_value, ensure_ascii=False)}")
+        if hasattr(patch, 'proposed_value') and patch.proposed_value:
+            _log(f"  After:  {json.dumps(patch.proposed_value, ensure_ascii=False)}")
 
         config = skill_configs.get(patch.skill_name, {})
         result = validate_individual_patch(
@@ -300,6 +310,14 @@ def phase_regression_validate(
         _save_json(run_dir / "composition_validation.json", comp_result)
         if comp_result["passed"]:
             _log(f"  [OK] Composition validation PASSED")
+        # Handle conflict-rejected patches from composition auto-resolution
+        conflict_rejected = comp_result.get("conflict_rejected", [])
+        if conflict_rejected:
+            composition_rejected.extend(conflict_rejected)
+            resolved_ids = comp_result.get("resolved_patch_ids", [])
+            still_valid = [p for p in still_valid if p.patch_id in resolved_ids]
+            _log(f"  Composition conflict resolution: {len(resolved_ids)} kept, "
+                 f"{len(conflict_rejected)} rejected by conflict")
         if not comp_result["passed"]:
             _log(f"  COMPOSITION FAIL: {comp_result['errors']}")
             # Record each rejected patch with composition failure reason
@@ -542,32 +560,17 @@ def main() -> int:
         # ─── --apply mode ────────────────────────────────────────────
         _log(f"\n=== APPLY MODE: {len(final_patches)} patches ===")
 
-        # Conflict detection
+        # Conflict detection (final safety check — should already be resolved
+        # in phase_regression_validate, but double-check before writing to disk)
         conflicts = detect_conflicts(final_patches)
         if conflicts:
-            _log(f"  WARNING: {len(conflicts)} conflict(s) detected")
+            _log(f"  WARNING: {len(conflicts)} unresolved conflict(s) detected")
             for id1, id2, path in conflicts:
                 _log(f"    {id1} vs {id2} on '{path}'")
-            # Remove lower-confidence patch from each conflict pair
-            seen = set()
-            filtered: list[PatchSchema] = []
-            for p in final_patches:
-                conflicting_ids = set()
-                for id1, id2, _ in conflicts:
-                    if p.patch_id == id1:
-                        conflicting_ids.add(id2)
-                    elif p.patch_id == id2:
-                        conflicting_ids.add(id1)
-                if p.patch_id not in seen:
-                    # Keep the one with higher confidence
-                    conflicting_patches = [x for x in final_patches if x.patch_id in conflicting_ids]
-                    if all(p.confidence >= x.confidence for x in conflicting_patches):
-                        filtered.append(p)
-                    seen.add(p.patch_id)
-                    for cp in conflicting_patches:
-                        seen.add(cp.patch_id)
-            final_patches = filtered
-            _log(f"  After conflict resolution: {len(final_patches)} patches")
+            # Resolve by keeping highest-confidence patch in each conflict group
+            final_patches, conflict_rejected = resolve_conflicts(final_patches)
+            _log(f"  After conflict resolution: {len(final_patches)} patch(es) kept, "
+                 f"{len(conflict_rejected)} rejected")
 
         if not final_patches:
             _log("No patches left after conflict resolution.")
