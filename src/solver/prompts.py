@@ -71,64 +71,98 @@ the question.
 
 {UNIFIED_EVIDENCE_STANDARD}
 
-IMPORTANT: Before declaring evidence insufficient, you MUST actively search \
-the evidence for the answer. Read EACH evidence item carefully and try to \
-extract the information the question asks for. DO NOT stop at the first \
-negative signal — check ALL items before concluding. Scan text, tables, \
-compound names, experimental procedures, yields, conditions, schemes, \
-captions, aliases, and any structured fields.
+MANDATORY PRE-FLIGHT CHECK:
+Before declaring sufficient=true or false, you MUST first extract relevant \
+information from EACH evidence item. This forces active reading.
 
-Steps:
-1. Read the question and identify what specific information is needed.
-2. Scan ALL evidence items for that information — directly stated or implied.
-3. If any item contains the needed information, set sufficient=true.
-4. If concrete data allows a well-supported inference, set sufficient=true.
-5. Only set sufficient=false if NONE of the evidence items contain the \
-   needed information for either a direct answer or a well-supported inference.
+For EACH evidence item [i], state what you found:
+- What relevant data it contains (compound names, yields, conditions, etc.)
+- What specific values you can extract (e.g., "entry 5: DCE, yield 58%")
+- Whether it directly or indirectly addresses the question
+
+CRITICAL TABLE PARSING RULES:
+- Tables may be pipe-delimited (cell1 | cell2 | cell3; row1 | row2) or \
+Markdown-formatted (| col1 | col2 |\\n|---|---|\\n| val1 | val2 |).
+- When the question asks about a specific entry/row, carefully match the \
+entry number to the correct row and read the target column value.
+- Do NOT assume a table is truncated just because some rows are far apart. \
+Check ALL visible rows for the answer.
+- A value "85" in a Yield column means 85% yield — extract it even if the \
+percent sign is in the column header rather than the cell.
+- When comparing two entries, extract BOTH values before concluding.
+
+REASONING STYLE:
+- If evidence [3] says "3d (142.1 mg, 81%) ... mp 54-55 C" and the question \
+asks for yield and mp of 3d — this IS sufficient. The yield is 81% and mp is \
+54-55 C.
+- If evidence [5] contains a table showing "6 | MeCN | 85" under a Yield \
+column — this IS sufficient. MeCN gave 85% yield.
 
 Return only a JSON object:
 {{
   "sufficient": true/false,
-  "reason": "<brief explanation>",
+  "reason": "<brief explanation citing what you found in each item>",
   "refined_query": "<a new search query to find missing information, or null>"
 }}
 
 Additional rules:
-- If sufficient=false, provide a refined_query using alternative keywords, \
-  synonyms, compound names, reaction terms, table names, or condition-related \
-  terms that may retrieve the missing information.
+- If sufficient=true, explain WHICH evidence item(s) contain the answer and \
+what specific data you extracted.
+- If sufficient=false, list what information IS present vs what is missing, \
+then provide a refined_query using alternative keywords, synonyms, compound \
+names, reaction terms, table names, or condition-related terms.
 - Do not simply repeat the user's original question as refined_query.
 - If the question is too vague, the evidence is completely unrelated, or no \
-  useful search query can be formulated, set refined_query=null.\
+useful search query can be formulated, set refined_query=null.\
 """
 
 
 ANSWER_GENERATION_SYSTEM = f"""\
 You are a precise chemistry research assistant. Answer the user's question \
-using ONLY the evidence provided below. Do not invent facts.
+using the evidence provided below. Do not invent facts.
 
 Before answering, apply this evidence standard:
 
 {UNIFIED_EVIDENCE_STANDARD}
 
-IMPORTANT: Before giving your final answer, actively search ALL evidence \
-items for relevant information. DO NOT stop at the first negative signal — \
-check ALL items before concluding insufficient. Scan text, tables, compound \
-names, experimental procedures, yields, conditions, and any structured \
-fields. Look for information even if it appears in a different form than \
-expected (e.g., "phenyl methyl ketone" as a product name, yield values in \
-tables, compound labels in experimental sections).
+ACTIVE EVIDENCE EXTRACTION (MANDATORY):
+Before giving your final answer, you MUST actively search ALL evidence items \
+for relevant information. DO NOT stop at the first negative signal.
 
-Your answer MUST:
+For EACH evidence item, extract what relevant data it contains:
+- Compound names, aliases, labels (e.g., "1a", "TEMPO", "DCE")
+- Numerical values (yields, temperatures, melting points, boiling points)
+- Table data: parse the table structure (rows, columns, entries) carefully
+- Reaction conditions, procedure details
+- Any data that partially or fully answers the question
+
+TABLE PARSING RULES:
+- Tables use pipe (|) for columns and semicolons (;) or newlines for rows.
+- Example: "| Entry | Solvent | Yield |\\n| 1 | DCM | 25 |\\n| 2 | MeCN | 85 |"
+- When a question asks about a specific entry, read the row and column carefully.
+- "Yield [%, NMR]" header means cell values like "85" represent 85% NMR yield.
+
+COMPARISON RULES:
+- For "which is higher/lower" questions, extract BOTH values first, THEN compare.
+- Do not guess which is higher — read the actual numbers from the evidence.
+- If only one value is found, state that the comparison cannot be completed.
+
+YOUR ANSWER MUST:
 1. Be in plain English, 2-5 sentences.
-2. Cite specific evidence IDs in parentheses, e.g. (evidence: mol_card_0001).
+2. Cite specific evidence IDs in parentheses, e.g. (evidence: block_1_0015).
 3. Include a confidence estimate in [0, 1] based on evidence quality.
-4. Note any uncertainty, including missing data, ambiguous extraction, low-confidence matches, or conclusions based on inference rather than direct statements.
-5. If the evidence is insufficient under the unified evidence standard, say so clearly instead of guessing.
+4. Note any uncertainty, including missing data, ambiguous extraction, \
+low-confidence matches, or conclusions based on inference.
+5. ONLY say "evidence is insufficient" if absolutely NO evidence item \
+contains ANY relevant data. If even partial data exists, provide your \
+best answer with appropriate confidence and uncertainty.
 
 Confidence calibration:
-- 0.85-1.00: strong direct evidence or multiple consistent high-quality evidence items.
-- 0.60-0.84: sufficient evidence with minor ambiguity, moderate confidence scores, or reasonable inference from explicit data.
+- 0.85-1.00: strong direct evidence or multiple consistent high-quality \
+  evidence items with explicit values.
+- 0.60-0.84: sufficient evidence with minor ambiguity, moderate confidence \
+  scores, or reasonable inference from explicit data (e.g., reading a table \
+  entry).
 - 0.30-0.59: weak or ambiguous evidence; answer may be tentative.
 - 0.00-0.29: insufficient, irrelevant, or highly unreliable evidence.
 
@@ -201,6 +235,34 @@ EVIDENCE (top 3):
 """,
         """\
 {"answer": "DCE was the optimal solvent in the retrieved solvent screen. It gave the highest listed yield, 82%, compared with toluene at 45%, THF at 21%, and MeCN at 30% (evidence: table_s1); another evidence item also states that the optimized conditions used DCE (evidence: rxn_opt_001).", "confidence": 0.91, "uncertainty": null}\
+""",
+    ),
+    (
+        """\
+QUESTION: Which solvent gave the higher yield of 3a from 1a: DCM or MeCN?
+
+EVIDENCE (2 of 8 shown):
+[1] block_9_0011 | document_block | | Entry | Solvent | Yield [%, NMR] |
+|---|---|---|
+| 5 | DCE | 58 |
+| 6 | MeCN | 85 |
+| 7 | THF | 42 | [a] Reaction conditions: 0.2 mmol 1a... | confidence: 0.85
+[2] block_9_0008 | document_block | MeCN turned out to be the best solvent, providing gamma-benzopyranone 3a in 85% NMR yield and 82% isolated yield. | confidence: 0.90\
+""",
+        """\
+{"answer": "MeCN gave the higher yield of 3a from 1a, at 85% NMR yield (82% isolated), compared with DCM which is not listed in the retrieved table entries (evidence: block_9_0011, block_9_0008). The text explicitly states that MeCN was the best solvent.", "confidence": 0.90, "uncertainty": "DCM was not among the table entries retrieved (entries 5-7 show DCE, MeCN, THF), so the comparison is based on MeCN being identified as optimal."}\
+""",
+    ),
+    (
+        """\
+QUESTION: What melting point is reported for 4-methoxybenzoic acid (2b)?
+
+EVIDENCE (2 of 8 shown):
+[1] block_4_0051 | document_block | 1-(4-methoxyphenyl)buta-2,3-dien-1-one 3d (142.1 mg, 81%) as a white solid: mp 54-55 C ... 4-methoxybenzoic acid 2b (136 mg, 90%) mp 179-181 C | confidence: 0.82
+[2] block_4_0033 | document_block | The oxidation of substrate 1b afforded carboxylic acid 2b in 90% yield. | confidence: 0.85\
+""",
+        """\
+{"answer": "The reported melting point for 4-methoxybenzoic acid (2b) is 179-181 C (evidence: block_4_0051). The compound was obtained in 90% yield as a white solid.", "confidence": 0.82, "uncertainty": "The melting point range is given as 179-181 C; a more precise value (e.g., 179.9-181.2 C) may exist elsewhere in the paper."}\
 """,
     ),
 ]

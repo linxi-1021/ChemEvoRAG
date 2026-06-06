@@ -32,6 +32,63 @@ if _dotenv.exists():
 from solver.llm_solver import LLMChemSolver
 from storage.local_store import LocalStore
 
+def _apply_skill_prompts(skill_config: dict, prompt_registry: dict[str, str]) -> None:
+    """DEPRECATED: Legacy monkey-patch kept for backward compatibility only.
+
+    Use resolve_prompt_context() from solver.prompt_context instead.
+    This function no longer modifies any module-level variables.
+    """
+    pass  # No-op — monkey-patching removed in favor of explicit PromptContext
+
+
+def _load_skill_configs(skills_dir: Path) -> dict[str, dict]:
+    """Load all Skill YAML files from config/skills/.
+
+    Returns a dict mapping intent name → parsed YAML dict.
+    Gracefully returns {} if the directory doesn't exist.
+    """
+    if not skills_dir.is_dir():
+        return {}
+    configs: dict[str, dict] = {}
+    try:
+        import yaml
+    except ImportError:
+        return {}
+    for f in skills_dir.glob("*.yaml"):
+        try:
+            data = yaml.safe_load(f.read_text("utf-8"))
+            intent = data.get("trigger", {}).get("intent", "")
+            if intent:
+                configs[intent] = data
+        except Exception:
+            pass
+    return configs
+
+
+def _load_prompt_registry(prompts_dir: Path) -> dict[str, str]:
+    """Load all prompt YAML files from config/prompts/.
+
+    Returns a dict mapping prompt_ref → content string.
+    """
+    if not prompts_dir.is_dir():
+        return {}
+    registry: dict[str, str] = {}
+    try:
+        import yaml
+    except ImportError:
+        return {}
+    for f in prompts_dir.glob("*.yaml"):
+        try:
+            data = yaml.safe_load(f.read_text("utf-8"))
+            ref = data.get("prompt_ref", "")
+            content = data.get("content", "")
+            if ref and content:
+                registry[ref] = content
+        except Exception:
+            pass
+    return registry
+
+
 EVAL_DIR = PROJECT_ROOT / "data" / "eval"
 
 JUDGE_PROMPT = """\
@@ -94,9 +151,10 @@ def _judge_answer(system_answer: str, ground_truth: str, key_entities: list[str]
         return {"score": 0.0, "key_entities_found": [], "key_entities_missing": key_entities, "reasoning": str(exc)}
 
 
-def _save_results(results: list, scores: list, by_intent: dict) -> None:
+def _save_results(results: list, scores: list, by_intent: dict, *, output_dir: Path | None = None) -> None:
     """Save current results to eval_results.json (incremental, sorted)."""
     avg = sum(scores) / len(scores) if scores else 0
+    out_dir = output_dir or EVAL_DIR
 
     # Sort results by paper number, then by question id
     def _sort_key(r):
@@ -116,7 +174,7 @@ def _save_results(results: list, scores: list, by_intent: dict) -> None:
 
     sorted_results = sorted(results, key=_sort_key)
 
-    out_path = EVAL_DIR / "eval_results.json"
+    out_path = out_dir / "eval_results.json"
     out_path.write_text(json.dumps({
         "summary": {
             "total": len(scores),
@@ -127,8 +185,21 @@ def _save_results(results: list, scores: list, by_intent: dict) -> None:
     }, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-def _eval_one(q: dict, store: LocalStore, solver, elementkg_client, use_react: bool) -> dict:
-    """Evaluate a single question. Thread-safe."""
+def _eval_one(
+    q: dict,
+    store: LocalStore,
+    solver,
+    elementkg_client,
+    use_react: bool,
+    skill_config: dict | None = None,
+    prompt_registry: dict[str, str] | None = None,
+) -> dict:
+    """Evaluate a single question. Thread-safe.
+
+    Resolves PromptContext from skill_config + prompt_registry and passes
+    it explicitly to the solver, so each question uses the prompts
+    appropriate for its intent.
+    """
     question = q["question"]
     ground_truth = q["ground_truth_answer"]
     key_entities = q.get("key_entities", [])
@@ -136,14 +207,25 @@ def _eval_one(q: dict, store: LocalStore, solver, elementkg_client, use_react: b
     source = q.get("source_paper", "?")
     doc_id = source.replace(".pdf", "") if source else None
 
+    # Resolve PromptContext from Skill YAML + Prompt Registry
+    from solver.prompt_context import resolve_prompt_context
+    prompt_context = resolve_prompt_context(
+        skill_config or {}, prompt_registry or {},
+    )
+
     try:
         if use_react:
-            answer_obj = solver.answer(question, doc_ids=[doc_id] if doc_id else None)
+            answer_obj = solver.answer(
+                question, doc_ids=[doc_id] if doc_id else None,
+                prompt_context=prompt_context,
+            )
         else:
             from retrieval.router import RetrievalRouter
             router = RetrievalRouter(store, elementkg_client=elementkg_client)
             package = router.retrieve(question, doc_ids=[doc_id] if doc_id else None)
-            answer_obj = solver.answer_from_package(package)
+            answer_obj = solver.answer_from_package(
+                package, prompt_context=prompt_context,
+            )
         system_answer = answer_obj.answer
         evidence_ids = [s.evidence_id for s in answer_obj.supporting_evidence]
         confidence = answer_obj.confidence
@@ -211,12 +293,20 @@ def main() -> int:
     parser.add_argument("--paper", default=None, help="Only evaluate questions from a specific paper (e.g. '1').")
     parser.add_argument("--react", action="store_true", help="Use ReAct multi-round retrieval.")
     parser.add_argument("--workers", type=int, default=1, help="Number of concurrent workers (default: 1).")
+    parser.add_argument("--skills", action="store_true", help="Load Skill YAML configs and prompt registry.")
+    parser.add_argument("--skills-dir", type=Path, default=PROJECT_ROOT / "config" / "skills", help="Directory containing Skill YAML files (default: config/skills).")
+    parser.add_argument("--prompts-dir", type=Path, default=PROJECT_ROOT / "config" / "prompts", help="Directory containing Prompt Registry YAML files (default: config/prompts).")
+    parser.add_argument("--dataset", type=Path, default=EVAL_DIR / "all_questions.json", help="Path to questions JSON file (default: data/eval/all_questions.json).")
+    parser.add_argument("--output-dir", type=Path, default=EVAL_DIR, help="Directory for eval output (default: data/eval).")
     args = parser.parse_args()
 
-    questions_file = EVAL_DIR / "all_questions.json"
+    questions_file = args.dataset
     if not questions_file.exists():
-        print("all_questions.json not found. Run generate_eval_questions.py first.", file=sys.stderr)
+        print(f"Questions file not found: {questions_file}", file=sys.stderr)
         return 1
+
+    eval_output_dir = args.output_dir
+    eval_output_dir.mkdir(parents=True, exist_ok=True)
 
     all_q = json.loads(questions_file.read_text("utf-8"))
     # Sort by paper number
@@ -238,6 +328,14 @@ def main() -> int:
 
     workers = max(1, args.workers)
     print(f"Evaluating {len(all_q)} questions with {workers} worker(s)\n")
+
+    # Skill configs (optional, activated by --skills)
+    skill_configs: dict[str, dict] = {}
+    prompt_registry: dict[str, str] = {}
+    if args.skills:
+        skill_configs = _load_skill_configs(args.skills_dir)
+        prompt_registry = _load_prompt_registry(args.prompts_dir)
+        print(f"Loaded {len(skill_configs)} skill configs, {len(prompt_registry)} prompt registry entries\n")
 
     store = LocalStore(base_dir=PROJECT_ROOT)
 
@@ -264,7 +362,13 @@ def main() -> int:
         # Concurrent evaluation
         with ThreadPoolExecutor(max_workers=workers) as executor:
             futures = {
-                executor.submit(_eval_one, q, store, LLMChemSolver() if not args.react else ReActChemSolver(store, elementkg_client=elementkg_client), elementkg_client, args.react): q
+                executor.submit(
+                    _eval_one, q, store,
+                    LLMChemSolver() if not args.react else ReActChemSolver(store, elementkg_client=elementkg_client),
+                    elementkg_client, args.react,
+                    skill_configs.get(q.get("intent", ""), {}),
+                    prompt_registry,
+                ): q
                 for q in all_q
             }
             with tqdm(total=len(all_q), desc="Evaluating", unit="q") as pbar:
@@ -274,21 +378,25 @@ def main() -> int:
                         results.append(result)
                         scores.append(result["score"])
                         by_intent.setdefault(result["intent_key"], []).append(result["score"])
-                        _save_results(results, scores, by_intent)
+                        _save_results(results, scores, by_intent, output_dir=eval_output_dir)
                     tqdm.write(f"  {result['id']}: score={result['judge_score']:.1f} | {result['system_answer'][:80]}...")
                     pbar.update(1)
     else:
         # Sequential evaluation
         for q in tqdm(all_q, desc="Evaluating", unit="q"):
-            result = _eval_one(q, store, solver, elementkg_client, args.react)
+            result = _eval_one(
+                q, store, solver, elementkg_client, args.react,
+                skill_configs.get(q.get("intent", ""), {}),
+                prompt_registry,
+            )
             results.append(result)
             scores.append(result["score"])
             by_intent.setdefault(result["intent_key"], []).append(result["score"])
             tqdm.write(f"  {result['id']}: score={result['judge_score']:.1f} | {result['system_answer'][:80]}...")
-            _save_results(results, scores, by_intent)
+            _save_results(results, scores, by_intent, output_dir=eval_output_dir)
 
     # Final save
-    _save_results(results, scores, by_intent)
+    _save_results(results, scores, by_intent, output_dir=eval_output_dir)
 
     # Merge per-question react logs into sorted react_log.txt
     _merge_react_logs()
@@ -299,7 +407,7 @@ def main() -> int:
     print(f"  By intent:")
     for intent, sc_list in sorted(by_intent.items()):
         print(f"    {intent}: {sum(sc_list)/len(sc_list):.2f} ({len(sc_list)} questions)")
-    print(f"\nSaved to {EVAL_DIR / 'eval_results.json'}")
+    print(f"\nSaved to {eval_output_dir / 'eval_results.json'}")
 
     return 0
 

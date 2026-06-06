@@ -24,24 +24,61 @@ from .prompts import (
     ANSWER_GENERATION_EXAMPLES,
     ANSWER_GENERATION_SYSTEM,
 )
+from .prompt_context import PromptContext
+
+
+def _resolve_answer_prompt(prompt_context: PromptContext | None) -> str:
+    """Resolve the system prompt for answer generation.
+
+    Priority: prompt_context override → default from prompts module.
+    Uses dynamic import to pick up any runtime changes to prompts module.
+    """
+    if prompt_context and prompt_context.answer_generation_system:
+        return prompt_context.answer_generation_system
+    # Dynamic fallback: read from prompts module at call time, not import time
+    import solver.prompts as _prompts_mod
+    return _prompts_mod.ANSWER_GENERATION_SYSTEM
 
 
 def _build_answer_prompt(package: EvidencePackage) -> str:
-    """Build a prompt string from the EvidencePackage for answer generation."""
+    """Build a prompt string from the EvidencePackage for answer generation.
+
+    Includes structured_slots data (yield, solvents, reactants, etc.) to give
+    the LLM richer evidence beyond the 200-char summary truncation.
+    """
 
     lines: list[str] = []
     lines.append(f"QUESTION: {package.query}\n")
-    lines.append(
-        f"EVIDENCE (top {len(package.candidate_evidence)}):"
-    )
 
-    for i, ev in enumerate(package.candidate_evidence[:10]):
-        summary = (ev.summary or ev.evidence_id)[:200]
+    max_evidence = 15
+    actual = min(max_evidence, len(package.candidate_evidence))
+    lines.append(f"EVIDENCE ({actual} of {len(package.candidate_evidence)} shown):")
+
+    _SLOT_KEYS = [
+        "block_type", "yield", "reactants", "products", "solvents",
+        "catalysts", "temperature", "time", "smiles", "canonical_smiles",
+        "names", "aliases", "inchi_key", "supporting_blocks",
+    ]
+
+    for i, ev in enumerate(package.candidate_evidence[:max_evidence]):
+        summary = ev.summary or ev.evidence_id
         conf = ev.confidence or 0.0
         lines.append(
             f"[{i+1}] {ev.evidence_id} | {ev.evidence_type} | "
             f"{summary} | confidence: {conf:.2f}"
         )
+        # Surface key structured_slots to give the LLM more detail
+        if ev.structured_slots:
+            slot_parts = []
+            for key in _SLOT_KEYS:
+                if key in ev.structured_slots:
+                    val = ev.structured_slots[key]
+                    if isinstance(val, list):
+                        val = ", ".join(str(v) for v in val[:5])
+                    if val is not None and str(val).strip():
+                        slot_parts.append(f"{key}={val}")
+            if slot_parts:
+                lines.append(f"    slots: {'; '.join(slot_parts)}")
 
     return "\n".join(lines)
 
@@ -105,7 +142,12 @@ class LLMChemSolver:
         self.api_key = api_key
         self.base_url = base_url
 
-    def answer_from_package(self, package: EvidencePackage) -> GroundedAnswer:
+    def answer_from_package(
+        self,
+        package: EvidencePackage,
+        *,
+        prompt_context: PromptContext | None = None,
+    ) -> GroundedAnswer:
         if not package.candidate_evidence:
             return GroundedAnswer(
                 answer="No supported answer could be produced from the available evidence.",
@@ -130,8 +172,12 @@ class LLMChemSolver:
         ]
 
         user_prompt = _build_answer_prompt(package)
+
+        # Resolve system prompt: prompt_context override → default from prompts.py
+        system_prompt = _resolve_answer_prompt(prompt_context)
+
         llm_output = _call_openai(
-            ANSWER_GENERATION_SYSTEM,
+            system_prompt,
             user_prompt,
             model=self.model,
             api_key=self.api_key,

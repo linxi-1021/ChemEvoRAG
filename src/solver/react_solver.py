@@ -20,6 +20,7 @@ from .prompts import (
     ANSWER_GENERATION_SYSTEM,
     EVIDENCE_ASSESSMENT_SYSTEM,
 )
+from .prompt_context import PromptContext
 
 import threading
 _react_log_lock = threading.Lock()
@@ -27,9 +28,6 @@ _react_log_lock = threading.Lock()
 
 class _AssessmentFailed(Exception):
     pass
-
-
-_EVIDENCE_ASSESSMENT_SYSTEM = EVIDENCE_ASSESSMENT_SYSTEM
 
 
 class ReActChemSolver:
@@ -69,6 +67,7 @@ class ReActChemSolver:
         doc_ids: list[str] | None = None,
         top_k: int = 8,
         _retry: bool = True,
+        prompt_context: PromptContext | None = None,
     ) -> GroundedAnswer:
         """ReAct loop: iterative retrieval with evidence assessment.
 
@@ -76,15 +75,24 @@ class ReActChemSolver:
         from scratch (up to 1 retry).
         """
         try:
-            return self._answer_inner(query, doc_ids=doc_ids, top_k=top_k)
+            return self._answer_inner(
+                query, doc_ids=doc_ids, top_k=top_k,
+                prompt_context=prompt_context,
+            )
         except _AssessmentFailed:
             if _retry:
                 import sys
                 print(f"\n[ReAct] Assessment failed, retrying from scratch...", file=sys.stderr)
-                return self.answer(query, doc_ids=doc_ids, top_k=top_k, _retry=False)
+                return self.answer(
+                    query, doc_ids=doc_ids, top_k=top_k, _retry=False,
+                    prompt_context=prompt_context,
+                )
 
         # Last resort: single-pass with no assessment
-        return self._answer_fallback(query, doc_ids=doc_ids, top_k=top_k)
+        return self._answer_fallback(
+            query, doc_ids=doc_ids, top_k=top_k,
+            prompt_context=prompt_context,
+        )
 
     def _answer_inner(
         self,
@@ -92,6 +100,7 @@ class ReActChemSolver:
         *,
         doc_ids: list[str] | None = None,
         top_k: int = 8,
+        prompt_context: PromptContext | None = None,
     ) -> GroundedAnswer:
         """ReAct loop: iterative retrieval with evidence assessment."""
         import sys
@@ -153,7 +162,10 @@ class ReActChemSolver:
 
             # Assess evidence sufficiency
             if round_num < self.max_rounds - 1:  # Don't assess on last round
-                assessment = self._assess_evidence(query, accumulated_evidence, round_num)
+                assessment = self._assess_evidence(
+                    query, accumulated_evidence, round_num,
+                    prompt_context=prompt_context,
+                )
                 sufficient = assessment.get("sufficient", False)
                 reason = assessment.get("reason", "")
                 refined = assessment.get("refined_query")
@@ -172,6 +184,11 @@ class ReActChemSolver:
                     break
 
                 if refined and refined not in round_queries:
+                    # Check if refined query is too similar to the previous one
+                    if _query_too_similar(refined, round_queries[-1]):
+                        _log(f"[ReAct] Refined query too similar to previous, diversifying...")
+                        refined = _diversify_query(refined, query, round_num, accumulated_evidence)
+                        _log(f"[ReAct] Diversified query: {refined}")
                     round_queries.append(refined)
                 else:
                     _log(f"[ReAct] → No refined query, stopping.")
@@ -191,7 +208,9 @@ class ReActChemSolver:
             retrieval_path=list(set(retrieval_path)),
         )
 
-        answer = self.llm_solver.answer_from_package(merged_package)
+        answer = self.llm_solver.answer_from_package(
+            merged_package, prompt_context=prompt_context,
+        )
 
         # Log final answer
         _log(f"\n[ReAct] Final answer: {answer.answer[:200]}")
@@ -218,18 +237,23 @@ class ReActChemSolver:
         *,
         doc_ids: list[str] | None = None,
         top_k: int = 8,
+        prompt_context: PromptContext | None = None,
     ) -> GroundedAnswer:
         """Single-pass fallback when ReAct assessment consistently fails."""
         from retrieval import RetrievalRouter
         router = RetrievalRouter(self.store, elementkg_client=self.elementkg_client)
         package = router.retrieve(query, doc_ids=doc_ids, top_k=top_k)
-        answer = self.llm_solver.answer_from_package(package)
+        answer = self.llm_solver.answer_from_package(
+            package, prompt_context=prompt_context,
+        )
         note = "[ReAct: assessment failed, used single-pass fallback]"
         answer.uncertainty = (answer.uncertainty + " " + note) if answer.uncertainty else note
         return answer
 
     def _assess_evidence(
-        self, original_query: str, evidence: list, round_num: int
+        self, original_query: str, evidence: list, round_num: int,
+        *,
+        prompt_context: PromptContext | None = None,
     ) -> dict:
         """LLM assesses whether current evidence is sufficient."""
         key = os.environ.get("API_KEY")
@@ -243,6 +267,9 @@ class ReActChemSolver:
 
         client = OpenAI(api_key=key, base_url=os.environ.get("BASE_URL") or None)
         model = os.environ.get("LLM_MODEL", "gpt-4o-mini")
+
+        # Resolve assessment prompt: prompt_context override → default
+        assessment_prompt = _resolve_assessment_prompt(prompt_context)
 
         # Build evidence summary
         ev_lines = []
@@ -260,7 +287,7 @@ class ReActChemSolver:
             response = client.chat.completions.create(
                 model=model,
                 messages=[
-                    {"role": "system", "content": _EVIDENCE_ASSESSMENT_SYSTEM},
+                    {"role": "system", "content": assessment_prompt},
                     {"role": "user", "content": user_msg},
                 ],
                 temperature=0.0,
@@ -285,7 +312,7 @@ class ReActChemSolver:
             response = client.chat.completions.create(
                 model=model,
                 messages=[
-                    {"role": "system", "content": _EVIDENCE_ASSESSMENT_SYSTEM},
+                    {"role": "system", "content": assessment_prompt},
                     {"role": "user", "content": user_msg},
                 ],
                 temperature=0.1,
@@ -306,3 +333,80 @@ class ReActChemSolver:
             pass
 
         return {"sufficient": False, "reason": "assessment failed"}
+
+
+def _resolve_assessment_prompt(prompt_context: PromptContext | None) -> str:
+    """Resolve the system prompt for evidence assessment.
+
+    Priority: prompt_context override → default from prompts module.
+    """
+    if prompt_context and prompt_context.evidence_assessment_system:
+        return prompt_context.evidence_assessment_system
+    # Dynamic fallback: read from prompts module at call time, not import time
+    import solver.prompts as _prompts_mod
+    return _prompts_mod.EVIDENCE_ASSESSMENT_SYSTEM
+
+
+def _query_too_similar(q1: str, q2: str) -> bool:
+    """Check if two queries are too similar (>80% word overlap)."""
+    words1 = set(q1.lower().split())
+    words2 = set(q2.lower().split())
+    if not words1 or not words2:
+        return True
+    overlap = len(words1 & words2) / max(len(words1), len(words2))
+    return overlap > 0.8
+
+
+def _diversify_query(
+    refined: str,
+    original: str,
+    round_num: int,
+    accumulated_evidence: list,
+) -> str:
+    """When refined query is too similar to the previous one, apply a
+    rule-based diversification strategy to generate a more different query.
+
+    Strategies (by round):
+      Round 1 (→2): Try shorter keyword-only query
+      Round 2 (→3): Try adding "experimental section" or "table" context
+    """
+    import re
+
+    # Extract entity names from accumulated evidence summaries
+    evidence_names = set()
+    for ev in accumulated_evidence:
+        summary = ev.summary or ""
+        # Look for compound-like tokens (capitalized words, alphanumeric labels)
+        for token in re.findall(r"\b[A-Za-z][A-Za-z0-9\-]{1,15}\b", summary):
+            evidence_names.add(token)
+
+    # Strategy 1: Extract the core entity name and search for it alone
+    if round_num == 0:
+        # First diversification: find the most specific entity in the query
+        # and search for it with common experimental context terms
+        words = original.split()
+        # Find capitalized words (likely compound names/entities)
+        entities = [w for w in words if w[0:1].isupper() and len(w) > 1]
+        if entities:
+            entity = entities[-1]  # Use the last entity (often the target)
+            return f"{entity} experimental section characterization data"
+
+    # Strategy 2: Add "table" or "scheme" context
+    if round_num == 1:
+        # Look for table/scheme mentions in evidence
+        for ev in accumulated_evidence:
+            summary = ev.summary or ""
+            if "table" in summary.lower() or "entry" in summary.lower():
+                return f"{original} table entry yields conditions"
+            if "scheme" in summary.lower():
+                return f"{original} scheme synthesis procedure"
+
+    # Fallback: Return original with added diversity terms
+    diversity_terms = ["experimental", "characterization", "synthesis procedure",
+                       "conditions", "supporting information"]
+    term = diversity_terms[round_num % len(diversity_terms)]
+    # Remove the term if already present
+    query_words = refined.split()
+    filtered = [w for w in query_words if w.lower() != term.lower()]
+    filtered.append(term)
+    return " ".join(filtered)

@@ -210,7 +210,17 @@ def _extract_table_text(content: dict) -> str:
 
 
 def _html_table_to_text(html: str) -> str:
-    """Extract rows from an HTML table as pipe-separated text."""
+    """Extract rows from an HTML table as Markdown-formatted text.
+
+    Output format:
+        | Header1 | Header2 | Header3 |
+        |---|---|---|
+        | Row1Cell1 | Row1Cell2 | Row1Cell3 |
+        | Row2Cell1 | Row2Cell2 | Row2Cell3 |
+
+    Markdown tables are much easier for LLMs to parse than flat pipe-delimited
+    text, reducing row-column confusion in table-based questions.
+    """
     import re
     rows: list[str] = []
     for tr_match in re.finditer(r"<tr[^>]*>(.*?)</tr>", html, re.DOTALL):
@@ -218,8 +228,13 @@ def _html_table_to_text(html: str) -> str:
         # Strip HTML tags from cell content
         clean_cells = [re.sub(r"<[^>]+>", "", c).strip() for c in cells]
         if any(clean_cells):
-            rows.append(" | ".join(clean_cells))
-    return "; ".join(rows)
+            rows.append("| " + " | ".join(clean_cells) + " |")
+    if not rows:
+        return ""
+    # Insert Markdown separator after the first row (header)
+    num_cols = rows[0].count("|") - 1
+    separator = "| " + " | ".join(["---"] * max(1, num_cols)) + " |"
+    return rows[0] + "\n" + separator + "\n" + "\n".join(rows[1:])
 
 
 def _build_blocks(doc_id: str, pages: list) -> list[DocumentBlock]:
