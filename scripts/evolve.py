@@ -250,6 +250,8 @@ def phase_regression_validate(
             _log(f"  After:  {json.dumps(patch.proposed_value, ensure_ascii=False)}")
 
         config = skill_configs.get(patch.skill_name, {})
+        # Per-patch persist dir under run_dir for post-hoc review
+        patch_persist_dir = run_dir / "per_patch_evals" / patch.patch_id
         result = validate_individual_patch(
             patch, config,
             project_root=PROJECT_ROOT,
@@ -262,6 +264,7 @@ def phase_regression_validate(
             regression_limit=regression_limit,
             regression_seed=regression_seed,
             stream_output=stream_output,
+            persist_dir=patch_persist_dir,
         )
         individual_results.append(result)
         if result["passed"]:

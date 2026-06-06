@@ -184,6 +184,7 @@ def validate_individual_patch(
     regression_limit: int | None = None,
     regression_seed: int = 42,
     stream_output: bool = True,
+    persist_dir: Path | None = None,
 ) -> dict[str, Any]:
     """Validate a single patch by applying it in a temp directory and running regression.
 
@@ -192,6 +193,9 @@ def validate_individual_patch(
 
     When regression_limit is not None, questions are randomly sampled using
     regression_seed for reproducibility.
+
+    When persist_dir is provided, eval output (eval_results.json, react_log.txt,
+    eval_stdout.log) is saved there instead of a temp directory that gets deleted.
     """
     result: dict[str, Any] = {
         "patch_id": patch.patch_id,
@@ -223,9 +227,20 @@ def validate_individual_patch(
 
     # Step 3: Regression validation (if dataset and baseline provided)
     if regression_dataset and regression_dataset.exists() and baseline_result:
-        with tempfile.TemporaryDirectory() as tmpdir:
-            tmp_skills = Path(tmpdir) / "skills"
-            tmp_prompts = Path(tmpdir) / "prompts"
+        # Use persist_dir if provided, otherwise a temp dir that auto-cleans
+        _tmpdir: str
+        _should_cleanup: bool
+        if persist_dir is not None:
+            persist_dir.mkdir(parents=True, exist_ok=True)
+            _tmpdir = str(persist_dir)
+            _should_cleanup = False
+        else:
+            _tmpdir = tempfile.mkdtemp(prefix="patch_eval_")
+            _should_cleanup = True
+        try:
+            tmpdir = Path(_tmpdir)
+            tmp_skills = tmpdir / "skills"
+            tmp_prompts = tmpdir / "prompts"
             shutil.copytree(skills_dir, tmp_skills)
             if prompts_dir.is_dir():
                 shutil.copytree(prompts_dir, tmp_prompts)
@@ -333,7 +348,22 @@ def validate_individual_patch(
                     result["passed"] = False
                     result["errors"].append(f"Regression failed: {comparison.reason}")
                     patch.status = PatchStatus.REJECTED
-                    return result
+                    # Don't return early — fall through to finally for cleanup
+        finally:
+            if _should_cleanup:
+                import shutil as _shutil
+                _shutil.rmtree(_tmpdir, ignore_errors=True)
+            elif persist_dir is not None and result.get("average_score") is not None:
+                # Record summary for later review
+                summary_path = persist_dir / "validation_summary.json"
+                summary_path.write_text(json.dumps({
+                    "patch_id": result.get("patch_id"),
+                    "passed": result.get("passed"),
+                    "average_score": result.get("average_score"),
+                    "score_delta": result.get("score_delta"),
+                    "targeted_improvement": result.get("targeted_improvement"),
+                    "errors": result.get("errors"),
+                }, indent=2, ensure_ascii=False), encoding="utf-8")
 
     if result["passed"]:
         patch.status = PatchStatus.REGRESSION_VALIDATED
