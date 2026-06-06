@@ -144,12 +144,16 @@ def validate_individual_patch(
                 patch.status = PatchStatus.REJECTED
                 return result
 
-            # Run regression in temp
+            # Run regression in temp — use isolated output dir to avoid
+            # overwriting baseline data/eval/eval_results.json
+            tmp_eval_output = Path(tmpdir) / "eval_output"
+            tmp_eval_output.mkdir(parents=True, exist_ok=True)
             runner = RegressionRunner(project_root)
             after_result = runner.run_eval(
                 regression_dataset,
                 tmp_skills,
                 tmp_prompts,
+                output_dir=tmp_eval_output,
             )
 
             if after_result.errors:
@@ -252,10 +256,12 @@ def validate_composition(
                 result["passed"] = False
                 return result
 
-        # Run regression
+        # Run regression — use isolated output dir to avoid overwriting baseline
         if regression_dataset and regression_dataset.exists() and baseline_regression_result:
+            tmp_eval_output = Path(tmpdir) / "eval_output"
+            tmp_eval_output.mkdir(parents=True, exist_ok=True)
             runner = RegressionRunner(project_root)
-            after_result = runner.run_eval(regression_dataset, tmp_skills, tmp_prompts)
+            after_result = runner.run_eval(regression_dataset, tmp_skills, tmp_prompts, output_dir=tmp_eval_output)
             if after_result.errors:
                 result["errors"].append(f"Regression eval had errors: {after_result.errors}")
                 result["passed"] = False

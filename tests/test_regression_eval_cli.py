@@ -125,7 +125,7 @@ class TestRegressionRunnerCLI:
         eval_script.write_text("# stub", encoding="utf-8")
 
         runner = RegressionRunner(tmp_path)
-        runner.run_eval(dataset)  # no skills_dir, no prompts_dir
+        runner.run_eval(dataset, output_dir=tmp_path / "output")  # no skills_dir, no prompts_dir
 
         cmd_str = " ".join(captured_cmd)
         assert "--skills" not in cmd_str
@@ -157,7 +157,7 @@ class TestRegressionRunnerCLI:
         eval_script.write_text("# stub", encoding="utf-8")
 
         runner = RegressionRunner(tmp_path)
-        runner.run_eval(dataset)
+        runner.run_eval(dataset, output_dir=tmp_path / "output")
 
         cmd_str = " ".join(captured_cmd)
         assert "--react" in cmd_str

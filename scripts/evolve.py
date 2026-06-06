@@ -307,11 +307,14 @@ def phase_post_eval(
 ) -> dict[str, Any]:
     """Run post-apply eval and decide keep/rollback."""
     _log("\nRunning post-apply eval...")
+    post_eval_output = run_dir / "post_apply_eval_output"
+    post_eval_output.mkdir(parents=True, exist_ok=True)
     runner = RegressionRunner(PROJECT_ROOT)
     after_result = runner.run_eval(
         EVAL_DIR / "all_questions.json",
         SKILLS_DIR,
         PROMPTS_DIR,
+        output_dir=post_eval_output,
     )
 
     if after_result.errors:

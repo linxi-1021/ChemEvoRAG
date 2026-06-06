@@ -75,7 +75,26 @@ class RegressionRunner:
         Passes --skills-dir, --prompts-dir, --dataset, --output-dir to the
         eval script so it uses the correct config and writes output where
         the caller expects it.
+
+        output_dir is REQUIRED for regression validation. Calling with
+        output_dir=None will raise ValueError to prevent accidental
+        overwriting of the baseline eval_results.json.
         """
+        # Safety: require explicit output_dir to prevent overwriting baseline
+        baseline_eval = self.project_root / "data" / "eval"
+        if output_dir is None:
+            raise ValueError(
+                "output_dir is required for regression eval. "
+                "Pass output_dir explicitly to prevent overwriting "
+                f"baseline at {baseline_eval}"
+            )
+        actual_output_dir = Path(output_dir)
+        if actual_output_dir.resolve() == baseline_eval.resolve():
+            raise ValueError(
+                f"Regression eval cannot write to baseline directory: {baseline_eval}. "
+                "Use a temporary or run-specific output directory."
+            )
+
         cmd = [self.python, str(self.eval_script)]
         if use_react:
             cmd.append("--react")
@@ -93,7 +112,6 @@ class RegressionRunner:
         cmd.extend(["--dataset", str(dataset_path)])
 
         # Always pass --output-dir so results go to the right place
-        actual_output_dir = output_dir or (self.project_root / "data" / "eval")
         actual_output_dir.mkdir(parents=True, exist_ok=True)
         cmd.extend(["--output-dir", str(actual_output_dir)])
 
@@ -144,12 +162,6 @@ class RegressionRunner:
                     "total": len(intent_results),
                     "failed": sum(1 for r in intent_results if r.get("score", 0) < 0.3),
                 }
-
-            # Copy to output_dir if specified
-            if output_dir:
-                output_dir.mkdir(parents=True, exist_ok=True)
-                import shutil
-                shutil.copy2(eval_results_path, output_dir / "eval_results.json")
 
             return RegressionResult(
                 average_score=avg,
