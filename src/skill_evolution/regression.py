@@ -66,7 +66,6 @@ class RegressionRunner:
         workers: int = 1,
         limit: int | None = None,
         seed: int = 42,
-        timeout: int = 1800,
         stream_output: bool = True,
     ) -> RegressionResult:
         """Run eval_questions.py and return the results.
