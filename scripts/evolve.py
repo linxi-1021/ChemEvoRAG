@@ -178,8 +178,17 @@ def phase_regression_validate(
     patches: list[PatchSchema],
     run_dir: Path,
     skill_configs: dict[str, dict],
+    *,
+    workers: int = 1,
+    regression_limit: int | None = None,
+    regression_seed: int = 42,
+    stream_output: bool = True,
 ) -> list[PatchSchema]:
-    """Individual + composition regression validation."""
+    """Individual + composition regression validation.
+
+    When regression_limit is not None, questions are randomly sampled using
+    regression_seed for reproducibility.
+    """
     eval_results_path = EVAL_DIR / "eval_results.json"
     regression_dataset = EVAL_DIR / "all_questions.json"
 
@@ -205,7 +214,10 @@ def phase_regression_validate(
     still_valid: list[PatchSchema] = []
     rejected_in_regression: list[dict] = []
 
-    for patch in patches:
+    for idx, patch in enumerate(patches, 1):
+        _log(f"[{idx}/{len(patches)}] Validating {patch.patch_id} "
+             f"({patch.skill_name} / {patch.operation.value} / {patch.target_path})")
+
         config = skill_configs.get(patch.skill_name, {})
         result = validate_individual_patch(
             patch, config,
@@ -215,10 +227,18 @@ def phase_regression_validate(
             regression_dataset=regression_dataset,
             baseline_result=baseline_result,
             skill_filename=f"{patch.skill_name}.yaml",
+            workers=workers,
+            regression_limit=regression_limit,
+            regression_seed=regression_seed,
+            stream_output=stream_output,
         )
         individual_results.append(result)
         if result["passed"]:
             still_valid.append(patch)
+            _log(f"  [OK] {patch.patch_id}: passed "
+                 f"(score={result.get('average_score', 0):.4f}, "
+                 f"delta={result.get('score_delta', 0):+.4f}, "
+                 f"targeted_improvement={result.get('targeted_improvement', 0):+.4f})")
         else:
             rejected_entry = patch.model_dump(mode="json")
             rejected_entry["rejection_reason"] = f"individual_regression_failed: {result['errors']}"
@@ -231,6 +251,7 @@ def phase_regression_validate(
     # Composition validation (if multiple patches)
     composition_rejected: list[dict] = []
     if len(still_valid) > 1:
+        _log(f"Running composition validation for {len(still_valid)} patches...")
         comp_result = validate_composition(
             still_valid, skill_configs,
             project_root=PROJECT_ROOT,
@@ -238,8 +259,14 @@ def phase_regression_validate(
             prompts_dir=PROMPTS_DIR,
             regression_dataset=regression_dataset,
             baseline_regression_result=baseline_result,
+            workers=workers,
+            regression_limit=regression_limit,
+            regression_seed=regression_seed,
+            stream_output=stream_output,
         )
         _save_json(run_dir / "composition_validation.json", comp_result)
+        if comp_result["passed"]:
+            _log(f"  [OK] Composition validation PASSED")
         if not comp_result["passed"]:
             _log(f"  COMPOSITION FAIL: {comp_result['errors']}")
             # Record each rejected patch with composition failure reason
@@ -369,6 +396,16 @@ def main() -> int:
                         help="Generate patches + full regression validation, no write-back.")
     parser.add_argument("--apply", action="store_true",
                         help="Full pipeline: validate + write-back + post-apply eval.")
+    parser.add_argument("--workers", type=int, default=1,
+                        help="Number of concurrent workers passed to eval_questions.py during regression validation.")
+    parser.add_argument("--quiet-regression", action="store_true",
+                        help="Capture regression eval output instead of streaming question-level progress.")
+    parser.add_argument("--regression-limit", type=int, default=None,
+                        help="Number of eval questions randomly sampled per regression run. "
+                             "Useful for quick validate-only smoke tests. "
+                             "NOT allowed with --apply.")
+    parser.add_argument("--regression-seed", type=int, default=42,
+                        help="Random seed used when --regression-limit samples questions (default: 42).")
     parser.add_argument("--skip-regression", action="store_true",
                         help="Skip regression (DEBUG only, incompatible with --apply).")
     parser.add_argument("--eval-results", type=str, default=str(EVAL_DIR / "eval_results.json"))
@@ -378,6 +415,17 @@ def main() -> int:
     # Safety: --skip-regression + --apply is forbidden
     if args.skip_regression and args.apply:
         _log("ERROR: --skip-regression cannot be combined with --apply.")
+        return 1
+
+    # Safety: --regression-limit + --apply is forbidden
+    if args.apply and args.regression_limit is not None:
+        _log("ERROR: --apply requires full regression; "
+             "--regression-limit is only allowed for --validate-only / debug.")
+        return 1
+
+    # Validate regression_limit
+    if args.regression_limit is not None and args.regression_limit <= 0:
+        _log("ERROR: --regression-limit must be > 0.")
         return 1
 
     eval_results_path = Path(args.eval_results)
@@ -430,7 +478,17 @@ def main() -> int:
             _log("\nWARNING: --skip-regression active, skipping regression.")
             final_patches = accepted
         else:
-            final_patches = phase_regression_validate(accepted, run_dir, skill_configs)
+            stream_output_regression = not args.quiet_regression
+            if args.regression_limit is not None:
+                _log(f"Regression limit: {args.regression_limit} randomly sampled questions per regression eval")
+                _log(f"Regression seed: {args.regression_seed}")
+            final_patches = phase_regression_validate(
+                accepted, run_dir, skill_configs,
+                workers=args.workers,
+                regression_limit=args.regression_limit,
+                regression_seed=args.regression_seed,
+                stream_output=stream_output_regression,
+            )
 
         if args.validate_only:
             _log(f"\n--validate-only: {len(final_patches)} patches validated, not applied.")

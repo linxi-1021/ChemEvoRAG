@@ -68,7 +68,10 @@ class RegressionRunner:
         *,
         use_react: bool = True,
         workers: int = 1,
+        limit: int | None = None,
+        seed: int = 42,
         timeout: int = 1800,
+        stream_output: bool = True,
     ) -> RegressionResult:
         """Run eval_questions.py and return the results.
 
@@ -79,7 +82,24 @@ class RegressionRunner:
         output_dir is REQUIRED for regression validation. Calling with
         output_dir=None will raise ValueError to prevent accidental
         overwriting of the baseline eval_results.json.
+
+        When limit is not None, random sampling is used with the given seed
+        (default 42) for reproducibility. When limit is None, the full
+        dataset is evaluated and no --limit or --seed is passed.
+
+        When stream_output=True (default), uses Popen to stream eval
+        progress in real time (e.g. tqdm bars). Output is also saved to
+        eval_stdout.log. Set stream_output=False or pass
+        --quiet-regression to capture silently.
         """
+        # Validate workers
+        if workers < 1:
+            raise ValueError(f"workers must be >= 1, got {workers}")
+
+        # Validate limit
+        if limit is not None and limit <= 0:
+            raise ValueError(f"limit must be > 0, got {limit}")
+
         # Safety: require explicit output_dir to prevent overwriting baseline
         baseline_eval = self.project_root / "data" / "eval"
         if output_dir is None:
@@ -95,10 +115,15 @@ class RegressionRunner:
                 "Use a temporary or run-specific output directory."
             )
 
-        cmd = [self.python, str(self.eval_script)]
+        # Use python -u for unbuffered stdout → real-time tqdm streaming
+        cmd = [self.python, "-u", str(self.eval_script)]
         if use_react:
             cmd.append("--react")
         cmd.extend(["--workers", str(workers)])
+
+        if limit is not None:
+            cmd.extend(["--limit", str(limit)])
+            cmd.extend(["--seed", str(seed)])
 
         # Always pass --skills when skills_dir is provided
         if skills_dir and skills_dir.is_dir():
@@ -119,25 +144,57 @@ class RegressionRunner:
         env = os.environ.copy()
         env["PYTHONPATH"] = str(self.project_root / "src")
 
-        try:
-            result = subprocess.run(
+        if not stream_output:
+            # --- Silent / captured mode (used by tests or --quiet-regression) ---
+            try:
+                result = subprocess.run(
+                    cmd,
+                    cwd=str(self.project_root),
+                    capture_output=True,
+                    text=True,
+                    timeout=timeout,
+                    env=env,
+                )
+            except subprocess.TimeoutExpired:
+                return RegressionResult(errors=[f"Eval timed out after {timeout}s"])
+            except Exception as e:
+                return RegressionResult(errors=[f"Eval failed: {e}"])
+
+            if result.returncode != 0:
+                return RegressionResult(errors=[
+                    f"Eval exited with code {result.returncode}",
+                    result.stderr[:500] if result.stderr else "",
+                ])
+        else:
+            # --- Streaming mode: Popen with real-time output ---
+            stdout_lines: list[str] = []
+            process = subprocess.Popen(
                 cmd,
                 cwd=str(self.project_root),
-                capture_output=True,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
                 text=True,
-                timeout=timeout,
+                bufsize=1,
                 env=env,
             )
-        except subprocess.TimeoutExpired:
-            return RegressionResult(errors=[f"Eval timed out after {timeout}s"])
-        except Exception as e:
-            return RegressionResult(errors=[f"Eval failed: {e}"])
+            # Read lines in real time — tqdm and per-question output appear immediately
+            if process.stdout is not None:
+                for line in process.stdout:
+                    print(line, end="", flush=True)
+                    stdout_lines.append(line)
 
-        if result.returncode != 0:
-            return RegressionResult(errors=[
-                f"Eval exited with code {result.returncode}",
-                result.stderr[:500] if result.stderr else "",
-            ])
+            returncode = process.wait()
+
+            # Save captured output for debugging
+            log_path = actual_output_dir / "eval_stdout.log"
+            log_path.write_text("".join(stdout_lines), encoding="utf-8")
+
+            if returncode != 0:
+                tail = "".join(stdout_lines[-20:]) if stdout_lines else "(no output)"
+                return RegressionResult(errors=[
+                    f"Eval exited with code {returncode}",
+                    tail[-500:],
+                ])
 
         # Load eval_results.json from the output directory
         eval_results_path = actual_output_dir / "eval_results.json"

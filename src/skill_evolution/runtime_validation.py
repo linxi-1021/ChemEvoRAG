@@ -82,11 +82,18 @@ def validate_individual_patch(
     regression_dataset: Path | None = None,
     baseline_result: dict | None = None,
     skill_filename: str = "",
+    workers: int = 1,
+    regression_limit: int | None = None,
+    regression_seed: int = 42,
+    stream_output: bool = True,
 ) -> dict[str, Any]:
     """Validate a single patch by applying it in a temp directory and running regression.
 
     Does NOT modify real config.
     Returns a dict with: passed, comparison (if regression run), errors.
+
+    When regression_limit is not None, questions are randomly sampled using
+    regression_seed for reproducibility.
     """
     result: dict[str, Any] = {
         "patch_id": patch.patch_id,
@@ -154,6 +161,10 @@ def validate_individual_patch(
                 tmp_skills,
                 tmp_prompts,
                 output_dir=tmp_eval_output,
+                workers=workers,
+                limit=regression_limit,
+                seed=regression_seed,
+                stream_output=stream_output,
             )
 
             if after_result.errors:
@@ -167,7 +178,14 @@ def validate_individual_patch(
                     "passed": comparison.passed,
                     "score_drop": comparison.score_drop,
                     "reason": comparison.reason,
+                    "average_score": comparison.average_score,
+                    "score_delta": comparison.score_delta,
+                    "targeted_improvement": comparison.targeted_improvement,
                 }
+                # Also surface at top level for log readability
+                result["average_score"] = comparison.average_score
+                result["score_delta"] = comparison.score_delta
+                result["targeted_improvement"] = comparison.targeted_improvement
                 if not comparison.passed:
                     result["passed"] = False
                     result["errors"].append(f"Regression failed: {comparison.reason}")
@@ -181,12 +199,36 @@ def validate_individual_patch(
 
 
 def RegressionResult_from_dict(d: dict) -> Any:
-    """Create a RegressionResult from a dict (for comparison purposes)."""
+    """Create a RegressionResult from a dict (for comparison purposes).
+
+    Normalizes both eval_results.json format and already-flattened dicts:
+      - {"summary": {"average_score": N, "by_intent": {...}}, "results": [...]}
+      - {"average_score": N, "total_questions": N, "by_intent": {...}}
+    """
     from .regression import RegressionResult
+
+    if "summary" in d:
+        summary = d["summary"]
+        avg = summary.get("average_score", 0.0)
+        by_intent_raw = summary.get("by_intent", {})
+        total = len(d.get("results", [])) or summary.get("total", 0)
+    else:
+        avg = d.get("average_score", 0.0)
+        total = d.get("total_questions", 0)
+        by_intent_raw = d.get("by_intent", {})
+
+    # Normalize by_intent from {"intent": float} or {"intent": {"average_score": float}}
+    by_intent: dict[str, dict[str, float]] = {}
+    for k, v in by_intent_raw.items():
+        if isinstance(v, dict):
+            by_intent[k] = {"average_score": v.get("average_score", 0.0), "total": v.get("total", 0), "failed": v.get("failed", 0)}
+        else:
+            by_intent[k] = {"average_score": float(v), "total": 0, "failed": 0}
+
     return RegressionResult(
-        average_score=d.get("average_score", 0.0),
-        total_questions=d.get("total_questions", 0),
-        by_intent=d.get("by_intent", {}),
+        average_score=avg,
+        total_questions=total,
+        by_intent=by_intent,
         results_path=d.get("results_path"),
         errors=d.get("errors", []),
     )
@@ -203,11 +245,18 @@ def validate_composition(
     global_smoke_dataset: Path | None = None,
     baseline_regression_result: dict | None = None,
     baseline_global_result: dict | None = None,
+    workers: int = 1,
+    regression_limit: int | None = None,
+    regression_seed: int = 42,
+    stream_output: bool = True,
 ) -> dict[str, Any]:
     """Validate a group of patches together (composition validation).
 
     Applies all patches in a temp directory and runs regression + global smoke.
     Returns a dict with: passed, regression_comparison, global_comparison, errors.
+
+    When regression_limit is not None, questions are randomly sampled using
+    regression_seed for reproducibility.
     """
     result: dict[str, Any] = {
         "passed": True,
@@ -261,7 +310,7 @@ def validate_composition(
             tmp_eval_output = Path(tmpdir) / "eval_output"
             tmp_eval_output.mkdir(parents=True, exist_ok=True)
             runner = RegressionRunner(project_root)
-            after_result = runner.run_eval(regression_dataset, tmp_skills, tmp_prompts, output_dir=tmp_eval_output)
+            after_result = runner.run_eval(regression_dataset, tmp_skills, tmp_prompts, output_dir=tmp_eval_output, workers=workers, limit=regression_limit, seed=regression_seed, stream_output=stream_output)
             if after_result.errors:
                 result["errors"].append(f"Regression eval had errors: {after_result.errors}")
                 result["passed"] = False
@@ -275,7 +324,13 @@ def validate_composition(
                     "passed": comparison.passed,
                     "score_drop": comparison.score_drop,
                     "reason": comparison.reason,
+                    "average_score": comparison.average_score,
+                    "score_delta": comparison.score_delta,
+                    "targeted_improvement": comparison.targeted_improvement,
                 }
+                result["average_score"] = comparison.average_score
+                result["score_delta"] = comparison.score_delta
+                result["targeted_improvement"] = comparison.targeted_improvement
                 if not comparison.passed:
                     result["passed"] = False
                     result["errors"].append(f"Composition regression failed: {comparison.reason}")

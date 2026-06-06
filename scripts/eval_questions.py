@@ -14,6 +14,7 @@ import warnings
 warnings.filterwarnings("ignore", message=".*resume_download.*", category=FutureWarning)
 import json
 import os
+import random
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
@@ -89,6 +90,48 @@ def _load_prompt_registry(prompts_dir: Path) -> dict[str, str]:
     return registry
 
 
+def select_questions(
+    questions: list[dict],
+    *,
+    limit: int | None,
+    seed: int = 42,
+) -> list[dict]:
+    """Select a random sample of questions, sorted by original order.
+
+    - If limit is None or <= 0, return all questions.
+    - If limit >= len(questions), return all questions.
+    - Otherwise, randomly sample `limit` questions using the given seed for reproducibility.
+    """
+    if limit is None or limit <= 0:
+        return questions
+    if limit >= len(questions):
+        return questions
+    rng = random.Random(seed)
+    indexed = list(enumerate(questions))
+    sampled = rng.sample(indexed, k=limit)
+    sampled.sort(key=lambda x: x[0])  # preserve original order
+    return [q for _, q in sampled]
+
+
+def build_sampling_metadata(
+    limit: int | None,
+    seed: int,
+    selected_questions: list[dict],
+) -> dict | None:
+    """Build sampling metadata dict for eval_results.json.
+
+    Returns None when no sampling was applied (limit is None).
+    """
+    if limit is None:
+        return None
+    return {
+        "mode": "random",
+        "limit": limit,
+        "seed": seed,
+        "selected_question_ids": [q["id"] for q in selected_questions],
+    }
+
+
 EVAL_DIR = PROJECT_ROOT / "data" / "eval"
 
 JUDGE_PROMPT = """\
@@ -151,7 +194,12 @@ def _judge_answer(system_answer: str, ground_truth: str, key_entities: list[str]
         return {"score": 0.0, "key_entities_found": [], "key_entities_missing": key_entities, "reasoning": str(exc)}
 
 
-def _save_results(results: list, scores: list, by_intent: dict, *, output_dir: Path | None = None) -> None:
+def _save_results(
+    results: list, scores: list, by_intent: dict,
+    *,
+    output_dir: Path | None = None,
+    metadata: dict | None = None,
+) -> None:
     """Save current results to eval_results.json (incremental, sorted)."""
     avg = sum(scores) / len(scores) if scores else 0
     out_dir = output_dir or EVAL_DIR
@@ -175,14 +223,17 @@ def _save_results(results: list, scores: list, by_intent: dict, *, output_dir: P
     sorted_results = sorted(results, key=_sort_key)
 
     out_path = out_dir / "eval_results.json"
-    out_path.write_text(json.dumps({
+    payload: dict = {
         "summary": {
             "total": len(scores),
             "average_score": avg,
             "by_intent": {k: sum(v) / len(v) for k, v in by_intent.items()},
         },
         "results": sorted_results,
-    }, ensure_ascii=False, indent=2), encoding="utf-8")
+    }
+    if metadata:
+        payload["metadata"] = metadata
+    out_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 def _eval_one(
@@ -290,7 +341,8 @@ def _merge_react_logs(*, output_dir: Path | None = None) -> None:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--limit", type=int, default=0, help="Only evaluate first N questions.")
+    parser.add_argument("--limit", type=int, default=0, help="Number of questions to evaluate (randomly sampled). 0 or negative = all.")
+    parser.add_argument("--seed", type=int, default=42, help="Random seed for --limit sampling (default: 42).")
     parser.add_argument("--paper", default=None, help="Only evaluate questions from a specific paper (e.g. '1').")
     parser.add_argument("--react", action="store_true", help="Use ReAct multi-round retrieval.")
     parser.add_argument("--workers", type=int, default=1, help="Number of concurrent workers (default: 1).")
@@ -324,8 +376,18 @@ def main() -> int:
 
     if args.paper:
         all_q = [q for q in all_q if q.get("source_paper", "").startswith(args.paper)]
-    if args.limit:
-        all_q = all_q[:args.limit]
+
+    # Apply limit with random sampling (seed-controlled for reproducibility)
+    effective_limit: int | None = args.limit if args.limit and args.limit > 0 else None
+    all_q = select_questions(all_q, limit=effective_limit, seed=args.seed)
+
+    # Build sampling metadata
+    sampling_meta = build_sampling_metadata(effective_limit, args.seed, all_q)
+    eval_metadata: dict | None = None
+    if sampling_meta:
+        eval_metadata = {"sampling": sampling_meta}
+    elif effective_limit is None:
+        eval_metadata = {"sampling": {"mode": "full"}}
 
     workers = max(1, args.workers)
     print(f"Evaluating {len(all_q)} questions with {workers} worker(s)\n")
@@ -379,7 +441,7 @@ def main() -> int:
                         results.append(result)
                         scores.append(result["score"])
                         by_intent.setdefault(result["intent_key"], []).append(result["score"])
-                        _save_results(results, scores, by_intent, output_dir=eval_output_dir)
+                        _save_results(results, scores, by_intent, output_dir=eval_output_dir, metadata=eval_metadata)
                     tqdm.write(f"  {result['id']}: score={result['judge_score']:.1f} | {result['system_answer'][:80]}...")
                     pbar.update(1)
     else:
@@ -394,10 +456,10 @@ def main() -> int:
             scores.append(result["score"])
             by_intent.setdefault(result["intent_key"], []).append(result["score"])
             tqdm.write(f"  {result['id']}: score={result['judge_score']:.1f} | {result['system_answer'][:80]}...")
-            _save_results(results, scores, by_intent, output_dir=eval_output_dir)
+            _save_results(results, scores, by_intent, output_dir=eval_output_dir, metadata=eval_metadata)
 
     # Final save
-    _save_results(results, scores, by_intent, output_dir=eval_output_dir)
+    _save_results(results, scores, by_intent, output_dir=eval_output_dir, metadata=eval_metadata)
 
     # Merge per-question react logs into sorted react_log.txt
     _merge_react_logs(output_dir=eval_output_dir)
