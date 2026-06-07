@@ -441,21 +441,34 @@ def distill_templates(
 
     Triggers: same intent + similar pattern + frequency >= 3.
     Returns template_add patches.
+
+    Requirements for a valid template:
+    1. pattern must NOT be a bare score label (e.g. "score_1.0")
+    2. must have at least 3 UNIQUE question_ids (deduplicated)
+    3. must have meaningful structure (query_structure, evidence_type, etc.)
     """
-    # Group success patterns by intent + pattern
-    pattern_groups: dict[tuple[str, str], list[str]] = {}
+    # Filter out score-label patterns — these carry no structural information
+    _SCORE_LABEL_RE = re.compile(r"^score_\d+\.\d+$")
+
+    # Group success patterns by intent + pattern, deduplicating question_ids
+    pattern_groups: dict[tuple[str, str], set[str]] = {}
+    pattern_scores: dict[tuple[str, str], list[float]] = {}
     for sp in success_patterns:
+        # Skip bare score labels
+        if _SCORE_LABEL_RE.match(sp.pattern):
+            continue
         key = (sp.intent, sp.pattern)
-        pattern_groups.setdefault(key, []).extend(sp.supporting_question_ids)
+        pattern_groups.setdefault(key, set()).update(sp.supporting_question_ids)
+        pattern_scores.setdefault(key, []).append(sp.avg_score)
 
     patches: list[PatchSchema] = []
     for idx, ((intent, pattern), qids) in enumerate(pattern_groups.items()):
+        # Require at least 3 UNIQUE question_ids
         if len(qids) < 3:
             continue
-        avg_score = sum(sp.avg_score for sp in success_patterns
-                        if sp.intent == intent and sp.pattern == pattern) / max(1, len([
-            sp for sp in success_patterns if sp.intent == intent and sp.pattern == pattern
-        ]))
+        group_key = (intent, pattern)
+        scores = pattern_scores.get(group_key, [0.0])
+        avg_score = sum(scores) / len(scores) if scores else 0.0
         if avg_score < 0.85:
             continue
         patches.append(PatchSchema(

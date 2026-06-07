@@ -170,7 +170,7 @@ def phase_schema_validate(
     for patch in patches:
         config = skill_configs.get(patch.skill_name, {})
         skill_filename = f"{patch.skill_name}.yaml"
-        vresult = validate_patch(patch, config, skill_filename=skill_filename)
+        vresult = validate_patch(patch, config, skill_filename=skill_filename, prompts_dir=PROMPTS_DIR)
         entry = {
             "patch_id": patch.patch_id,
             "valid": vresult.valid,
@@ -218,7 +218,7 @@ def phase_regression_validate(
         _log("WARNING: all_questions.json not found, skipping regression")
         return patches
 
-    # Load baseline
+    # Load baseline — include results_path so targeted_improvement can be calculated
     baseline_result: dict | None = None
     if eval_results_path.exists():
         baseline_data = json.loads(eval_results_path.read_text("utf-8"))
@@ -229,6 +229,7 @@ def phase_regression_validate(
                 k: {"average_score": v}
                 for k, v in baseline_data.get("summary", {}).get("by_intent", {}).items()
             },
+            "results_path": str(eval_results_path),
         }
 
     # Individual validation

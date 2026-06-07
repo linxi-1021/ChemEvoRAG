@@ -124,6 +124,7 @@ def validate_semantic_invariants(
     patch: PatchSchema,
     skill_config: dict,
     skill_filename: str,
+    prompts_dir: Path | None = None,
 ) -> ValidationResult:
     """Check semantic invariants that go beyond YAML schema."""
     result = ValidationResult(patch_id=patch.patch_id)
@@ -143,10 +144,40 @@ def validate_semantic_invariants(
     # Check prompt refs exist (if patch modifies system_prompt_ref)
     if "system_prompt_ref" in patch.proposed_value:
         new_ref = patch.proposed_value["system_prompt_ref"]
-        # We can't check registry existence here (it's loaded separately),
-        # but we can check the ref format is valid
+        # Check the ref format is valid
         if not re.match(r"^[A-Z][A-Z0-9_]+$", new_ref):
             result.warnings.append(f"Prompt ref '{new_ref}' doesn't follow UPPER_SNAKE_CASE convention.")
+
+        # Check if the referenced prompt file actually exists on disk,
+        # or if a prompt_artifact in this patch will create it.
+        if prompts_dir is not None and prompts_dir.is_dir():
+            # Build set of prompt_refs that will be created by this patch's artifacts
+            will_be_created: set[str] = set()
+            for artifact in patch.prompt_artifacts:
+                will_be_created.add(artifact.prompt_ref)
+                # Also check by registry_path filename
+                if artifact.registry_path:
+                    will_be_created.add(Path(artifact.registry_path).stem.upper())
+
+            # Check if the prompt exists on disk
+            prompt_exists = False
+            for yaml_file in prompts_dir.glob("*.yaml"):
+                try:
+                    import yaml as _yaml
+                    data = _yaml.safe_load(yaml_file.read_text("utf-8"))
+                    if data and data.get("prompt_ref") == new_ref:
+                        prompt_exists = True
+                        break
+                except Exception:
+                    pass
+
+            if not prompt_exists and new_ref not in will_be_created:
+                result.valid = False
+                result.errors.append(
+                    f"Prompt ref '{new_ref}' does not exist in {prompts_dir} "
+                    f"and no prompt_artifact in this patch will create it. "
+                    f"Cannot validate a patch that references a non-existent prompt."
+                )
 
     return result
 
@@ -157,6 +188,7 @@ def validate_patch(
     mutable_paths: list[str] | None = None,
     frozen_paths: list[str] | None = None,
     skill_filename: str = "",
+    prompts_dir: Path | None = None,
 ) -> ValidationResult:
     """Full validation: schema + semantic invariants.
 
@@ -171,7 +203,7 @@ def validate_patch(
     if not result.valid:
         return result
 
-    semantic = validate_semantic_invariants(patch, skill_config, skill_filename)
+    semantic = validate_semantic_invariants(patch, skill_config, skill_filename, prompts_dir=prompts_dir)
     result.errors.extend(semantic.errors)
     result.warnings.extend(semantic.warnings)
     if not semantic.valid:

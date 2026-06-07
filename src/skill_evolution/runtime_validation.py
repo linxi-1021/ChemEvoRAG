@@ -206,7 +206,7 @@ def validate_individual_patch(
     }
 
     # Step 1: Schema + semantic validation
-    vresult = validate_patch(patch, skill_config, skill_filename=skill_filename)
+    vresult = validate_patch(patch, skill_config, skill_filename=skill_filename, prompts_dir=prompts_dir)
     result["errors"].extend(vresult.errors)
     result["warnings"].extend(vresult.warnings)
     if not vresult.valid:
@@ -231,6 +231,9 @@ def validate_individual_patch(
         _tmpdir: str
         _should_cleanup: bool
         if persist_dir is not None:
+            # Clean up from any previous run (always overwrite, never append)
+            if persist_dir.exists():
+                shutil.rmtree(persist_dir, ignore_errors=True)
             persist_dir.mkdir(parents=True, exist_ok=True)
             _tmpdir = str(persist_dir)
             _should_cleanup = False
@@ -326,9 +329,13 @@ def validate_individual_patch(
             else:
                 if baseline_for_comparison is None:
                     baseline_for_comparison = RegressionResult_from_dict(baseline_result) if baseline_result else None
+                # Pass source_failure_ids from patch so targeted_improvement
+                # is calculated on the actual failing questions, not just global metrics
+                targeted_ids = list(patch.source_failure_ids) if patch.source_failure_ids else None
                 comparison = runner.compare(
                     baseline_for_comparison,
                     after_result,
+                    targeted_failure_ids=targeted_ids,
                 )
                 result["regression_result"] = {
                     "passed": comparison.passed,

@@ -260,28 +260,77 @@ def _detect_local_id_miss(result: dict, question: str) -> bool:
     return False
 
 
-def _detect_assessment_false_negative(result: dict, react_log: str) -> bool:
+def _detect_assessment_false_negative(
+    result: dict, react_log: str, gold_answer: str = "", question: str = ""
+) -> bool:
     """Check if assessment incorrectly declared evidence insufficient
-    despite the answer being present in evidence."""
+    despite the answer being present in evidence.
+
+    This should ONLY trigger when the gold answer's specific terms
+    actually appear in the retrieved evidence. Otherwise it's a routing error.
+    """
     answer = result.get("system_answer", "").lower()
-    # If the answer says insufficient but evidence actually contained it
-    if "insufficient" not in answer:
+    # Check if the answer is a refusal (saying evidence is lacking)
+    _REFUSAL_SIGNALS = [
+        "insufficient", "not enough", "does not include", "cannot determine",
+        "unable to", "not sufficient", "not found", "no data", "no evidence",
+        "does not contain", "not available", "could not find",
+    ]
+    is_refusal = any(s in answer for s in _REFUSAL_SIGNALS)
+    if not is_refusal:
         return False
     # Check if evidence IDs were retrieved and substantial
     evidence_ids = result.get("evidence_ids", [])
     if not evidence_ids:
         return False
     # Check react log for rounds with evidence but assessment said insufficient
-    if "insufficient" in react_log and "new:" in react_log:
-        # If there were substantial evidence items but assessment said insufficient
+    react_lower = react_log.lower()
+    assessment_said_insufficient = (
+        "insufficient" in react_lower or "sufficient=false" in react_lower
+    )
+    if assessment_said_insufficient and re.search(r"\d+ new", react_log):
         new_counts = re.findall(r"(\d+) new", react_log)
-        if new_counts and int(new_counts[0]) >= 5:
-            return True
+        if not new_counts or int(new_counts[0]) < 5:
+            return False
+        # Verify that gold answer's specific terms appear in the evidence
+        _COMMON_CHEM_WORDS = {
+            "product", "yield", "reaction", "solvent", "conditions",
+            "temperature", "catalyst", "oxidation", "compound", "molecule",
+            "experimental", "standard", "higher", "lower", "percent",
+            "obtained", "formed", "gave", "showed", "reported",
+            "table", "entry", "data", "results", "paper", "authors",
+            "the", "and", "for", "was", "were", "are", "has", "have",
+            "with", "from", "this", "that", "which", "than", "versus",
+        }
+        if gold_answer:
+            gold_terms = set(re.findall(r'\b\w{3,}\b', gold_answer.lower()))
+            specific_terms = gold_terms - _COMMON_CHEM_WORDS
+            if question:
+                compound_ids = set(re.findall(r'\b(\d+[a-z])\b', question.lower()))
+                specific_terms.update(compound_ids)
+            if specific_terms:
+                react_lower = react_log.lower()
+                matching_specific = sum(1 for t in specific_terms if t in react_lower)
+                if matching_specific >= 1:
+                    return True
+        # No specific terms to match — fall back to evidence count heuristic
+        return True
     return False
 
 
 def _detect_table_reasoning_error(result: dict, react_log: str, question: str) -> bool:
-    """Check if table data was present but misinterpreted."""
+    """Check if table data was present in evidence but the LLM misinterpreted it
+    (e.g., wrong row, wrong column, entry confusion).
+
+    This should ONLY trigger when:
+    1. The question involves table data
+    2. The system generated a WRONG answer (not "insufficient")
+    3. Table data was actually present in the retrieved evidence
+
+    If the system said "insufficient", the failure is either:
+    - routing_error (evidence didn't contain the answer)
+    - assessment_false_negative (evidence contained the answer but assessment missed it)
+    """
     question_lower = question.lower()
     # Table-related questions
     table_signals = ["entry", "table", "row", "column", "yield", "solvent"]
@@ -289,9 +338,16 @@ def _detect_table_reasoning_error(result: dict, react_log: str, question: str) -
         return False
     answer = result.get("system_answer", "").lower()
     score = result.get("score", 1.0)
-    # If score is 0 and question is table-related, likely table reasoning error
-    if score < 0.3:
-        # Check if table blocks were in evidence
+    # Only classify as table_reasoning_error if the system produced a WRONG answer
+    # (not a refusal/non-answer). If it refused, it's routing or assessment failure.
+    _REFUSAL_SIGNALS = [
+        "insufficient", "not enough", "does not include", "cannot determine",
+        "unable to", "not sufficient", "not found", "no data", "no evidence",
+        "does not contain", "not available", "could not find",
+    ]
+    is_refusal = any(s in answer for s in _REFUSAL_SIGNALS)
+    if score < 0.3 and not is_refusal:
+        # System generated a wrong answer from table data
         if "table" in react_log.lower() or "entry" in react_log.lower():
             return True
     return False
@@ -309,17 +365,74 @@ def _detect_generation_error(result: dict, react_log: str) -> bool:
     return False
 
 
-def _detect_routing_error(result: dict, react_log: str) -> bool:
-    """Check if wrong retrieval channels were used."""
+def _detect_routing_error(result: dict, react_log: str, gold_answer: str = "", question: str = "") -> bool:
+    """Check if wrong retrieval channels were used.
+
+    Detects two cases:
+    1. Very few evidence items retrieved across all rounds (low recall)
+    2. Evidence was retrieved but none contained the answer (wrong evidence)
+       - detected by: score < 0.3, answer says "insufficient", and assessment
+         said "sufficient=False" in the react log, AND the gold answer terms
+         do NOT appear in the retrieved evidence
+
+    If the gold answer terms DO appear in the evidence, it's an
+    assessment_false_negative (evidence was there but assessment missed it).
+    """
     score = result.get("score", 1.0)
     if score >= 0.5:
         return False
-    # If evidence count is very low across all rounds, routing may be wrong
+
+    answer = result.get("system_answer", "").lower()
+    _REFUSAL_SIGNALS = [
+        "insufficient", "not enough", "does not include", "cannot determine",
+        "unable to", "not sufficient", "not found", "no data", "no evidence",
+        "does not contain", "not available", "could not find",
+    ]
+    is_refusal = any(s in answer for s in _REFUSAL_SIGNALS)
+
+    # Case 1: Very few evidence items
     new_counts = re.findall(r"(\d+) new", react_log)
     if new_counts:
         total_new = sum(int(n) for n in new_counts)
         if total_new < 3:
             return True
+
+    # Case 2: Evidence was retrieved but assessment said insufficient
+    react_lower = react_log.lower()
+    assessment_said_insufficient = (
+        "insufficient" in react_lower or "sufficient=false" in react_lower
+    )
+    if is_refusal and assessment_said_insufficient:
+        if new_counts and sum(int(n) for n in new_counts) >= 3:
+            # Check if SPECIFIC gold answer terms appear in the evidence.
+            # Filter out common chemistry words to avoid false matches.
+            _COMMON_CHEM_WORDS = {
+                "product", "yield", "reaction", "solvent", "conditions",
+                "temperature", "catalyst", "oxidation", "compound", "molecule",
+                "experimental", "standard", "higher", "lower", "percent",
+                "obtained", "formed", "gave", "showed", "reported",
+                "table", "entry", "data", "results", "paper", "authors",
+                "the", "and", "for", "was", "were", "are", "has", "have",
+                "with", "from", "this", "that", "which", "than", "versus",
+            }
+            if gold_answer:
+                gold_terms = set(re.findall(r'\b\w{3,}\b', gold_answer.lower()))
+                specific_terms = gold_terms - _COMMON_CHEM_WORDS
+                # Also extract compound IDs from the question (e.g., "2c", "2k", "1a")
+                if question:
+                    compound_ids = set(re.findall(r'\b(\d+[a-z])\b', question.lower()))
+                    specific_terms.update(compound_ids)
+                if specific_terms:
+                    react_lower = react_log.lower()
+                    matching_specific = sum(1 for t in specific_terms if t in react_lower)
+                    if matching_specific >= 1:
+                        # Specific gold answer terms found in evidence
+                        # — assessment missed it, not a routing error
+                        return False
+            # Evidence was retrieved but didn't contain the answer
+            # This is a routing error — wrong evidence channels
+            return True
+
     return False
 
 
@@ -367,17 +480,27 @@ def _attribute_failure_rule(
         return FailureType.LOCAL_ID_MISS, 0.80, "Local compound ID mapping failed."
 
     # 5. routing_error
-    if _detect_routing_error(result, react_log):
-        return FailureType.ROUTING_ERROR, 0.70, "Very few evidence items retrieved across all rounds — possible routing error."
+    if _detect_routing_error(result, react_log, gold_answer, question):
+        return FailureType.ROUTING_ERROR, 0.70, "Wrong evidence retrieved — answer terms not found in evidence."
 
     # 6. evidence_expansion_error
     # (hard to detect without comparing expected vs actual expansion)
 
-    # 7. planner_error
+    # 7. planner_error — only if the planner's query refinement was ineffective
+    # (don't trigger if the real issue is retrieval or assessment)
     rounds = result.get("react_rounds_used", 1)
     stop_reason = result.get("stop_reason", "")
     if rounds == 3 and stop_reason == "max_rounds_exhausted":
-        return FailureType.PLANNER_ERROR, 0.60, "ReAct loop exhausted all rounds without finding sufficient evidence."
+        # Check if this is actually a planner issue vs retrieval/assessment
+        # If assessment ever said sufficient, it's not a planner error
+        if "sufficient=true" not in react_log.lower():
+            # Check if new evidence was found in later rounds (planner was working)
+            new_counts = re.findall(r"(\d+) new", react_log)
+            if new_counts and len(new_counts) >= 2:
+                later_new = sum(int(n) for n in new_counts[1:])
+                if later_new == 0:
+                    # Planner's refined queries found nothing — planner error
+                    return FailureType.PLANNER_ERROR, 0.60, "ReAct loop exhausted all rounds — refined queries found no new evidence."
 
     # 8. table_extraction_error vs table_reasoning_error
     if _detect_table_reasoning_error(result, react_log, question):
@@ -385,7 +508,7 @@ def _attribute_failure_rule(
         return FailureType.TABLE_REASONING_ERROR, 0.75, "Table data present in evidence but LLM failed to interpret correctly."
 
     # 9. assessment_false_negative
-    if _detect_assessment_false_negative(result, react_log):
+    if _detect_assessment_false_negative(result, react_log, gold_answer, question):
         return FailureType.ASSESSMENT_FALSE_NEG, 0.85, "Assessment LLM incorrectly judged evidence insufficient despite answer being present."
 
     # 10. generation_error
@@ -505,13 +628,15 @@ def generate_trace_report(
                 report.by_intent[intent].partial_success += 1
 
         if outcome == OutcomeType.SUCCESS:
-            # Collect for success pattern analysis
+            # Use a unique identifier combining question_id and source paper
+            # to prevent the same question template across papers from inflating counts
+            unique_qid = f"{question_id}_{source_paper}" if source_paper else question_id
             report.success_patterns.append(SuccessPattern(
                 intent=intent,
                 pattern=f"score_{score:.1f}",
                 frequency=1,
                 avg_score=score,
-                supporting_question_ids=[question_id],
+                supporting_question_ids=[unique_qid],
             ))
             continue
 
@@ -556,6 +681,21 @@ def generate_trace_report(
         elif primary_failure == FailureType.LOCAL_ID_MISS:
             contributing.append(FailureType.ROUTING_ERROR)
 
+        # Determine if evidence actually contained the answer by checking
+        # if the system's answer matches the gold answer (score > 0.5)
+        # or if the react log shows the assessment found evidence sufficient
+        evidence_contained = score > 0.5 or (
+            "sufficient" in react_log.lower() and "true" in react_log.lower()
+        )
+        # For table_reasoning_error specifically: check if the answer keywords
+        # appear in the retrieved evidence text
+        if primary_failure == FailureType.TABLE_REASONING_ERROR and ground_truth:
+            # Check if any key terms from gold_answer appear in react log evidence
+            gold_terms = set(re.findall(r'\b\w{4,}\b', ground_truth.lower()))
+            react_lower = react_log.lower()
+            matching_terms = sum(1 for t in gold_terms if t in react_lower)
+            evidence_contained = matching_terms >= 2 or evidence_contained
+
         failure = FailureRecord(
             question_id=question_id,
             intent=intent,
@@ -567,7 +707,7 @@ def generate_trace_report(
             attribution_source=AttributionSource.RULE,
             attribution_confidence=conf,
             attribution_explanation=explanation,
-            evidence_contained_answer=conf > 0.7,
+            evidence_contained_answer=evidence_contained,
             gold_answer=ground_truth,
             predicted_answer=system_answer[:200],
             retrieved_evidence_ids=r.get("evidence_ids", []),
