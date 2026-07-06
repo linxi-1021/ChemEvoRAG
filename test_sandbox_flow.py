@@ -1,9 +1,13 @@
-"""Test sandbox flow: verify V2 is created with auto-generated content."""
+"""Test sandbox flow: verify V2 is created with auto-generated content.
+
+DEPRECATED: This test relied on attribution.generate_trace_report which has been
+archived. It should be rewritten using the new evolution pipeline.
+"""
 import sys, tempfile, yaml, shutil
 sys.path.insert(0, 'src')
 from pathlib import Path
+# from skill_evolution.attribution import generate_trace_report  # ARCHIVED
 from skill_evolution.patch import generate_all_patches
-from skill_evolution.attribution import generate_trace_report
 from skill_evolution.apply import PatchApplier
 
 # Generate patches with auto-generated content

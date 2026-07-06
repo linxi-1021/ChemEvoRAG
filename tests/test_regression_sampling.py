@@ -1,4 +1,4 @@
-"""Tests for random sampling in --regression-limit and --seed propagation.
+﻿"""Tests for random sampling in --regression-limit and --seed propagation.
 
 Validates:
 - select_questions random sampling with seed
@@ -271,7 +271,7 @@ class TestIndividualPatchSeed:
         """validate_individual_patch(..., regression_seed=42) passes seed=42."""
         from skill_evolution.runtime_validation import validate_individual_patch
         from skill_evolution.patch import PatchSchema, PatchOperation, PatchStatus
-        from skill_evolution.attribution import FailureType
+        from skill_evolution.types import FailureType
 
         captured_seed = None
 
@@ -339,7 +339,7 @@ class TestCompositionSeed:
         """validate_composition(..., regression_seed=42) passes seed=42."""
         from skill_evolution.runtime_validation import validate_composition
         from skill_evolution.patch import PatchSchema, PatchOperation, PatchStatus
-        from skill_evolution.attribution import FailureType
+        from skill_evolution.types import FailureType
 
         captured_seed = None
 

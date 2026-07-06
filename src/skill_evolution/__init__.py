@@ -1,71 +1,137 @@
 """Skill Evolution module for ChemEvoRAG.
 
-Architecture-aligned modules:
-  schemas.py      — A.D. Skill YAML / Prompt Registry schema definitions
-  config.py       — Shared configuration (thresholds, limits)
-  trace.py        — 1+2. Trace standardization + field audit
-  evaluation.py   — 2. Outcome classification (success/partial/failure/coverage_gap)
-  attribution.py  — 3+E. Failure attribution + success pattern mining + CaseLibrary
-  mutation.py     — 4A. LLM-directed mutation (6 dimensions)
-  distillation.py — 4B+C. Template distillation (add/rewrite/merge + cross-skill promotion)
-  integration.py  — 5. Candidate integration + validator/schema adjustment
-  validation.py   — 6. Schema + semantic + regression + composition validation
-  apply.py        — 7. Writeback + snapshot
-  rollback.py     — 7. Rollback
-  metrics.py      — Cross-round evolution metrics tracking
-  runner.py       — Pipeline orchestrator
+Preserved base modules (validation / regression / writeback):
+  schemas.py              — Skill YAML / Prompt Registry schema definitions
+  types.py                — Shared type definitions (FailureType, FailureRecord, etc.)
+  trace.py                — Trace standardization + field audit
+  evaluation.py           — Outcome classification (success/partial/failure/coverage_gap)
+  patch.py                — PatchSchema, PatchOperation, PatchStatus, patch generation
+  validation.py           — Schema + semantic validation
+  runtime_validation.py   — Regression sandbox validation (targeted + composition)
+  regression.py           — RegressionRunner, RegressionComparison
+  apply.py                — PatchApplier: write patches to YAML files
+  rollback.py             — SnapshotManager: before/after snapshots + rollback
+
+New modules (Reflexion-style evolution):
+  memory.py               — Reflexion episodic memory: reflection generation + retrieval
+  bootstrap.py            — DSPy-style bootstrap: extract few-shot from success traces
+  prompt_evolver.py       — Prompt candidate generation from reflection + bootstrap
+  simple_runner.py        — Minimal closed-loop evolution runner
+
+Archived (do not use):
+  archive/skill_evolution_v1/  — Old over-engineered pipeline (runner, mutation,
+                                  distillation, integration, llm_analysis, etc.)
 """
 
-from .attribution import (
-    generate_trace_report,
-    TraceReport,
-    FailureRecord,
+# ── Shared types ────────────────────────────────────────────────────────────
+from .types import (  # noqa: F401
     FailureType,
+    FailureRecord,
     SuccessPattern,
     CoverageGapRecord,
-    CandidateAttribution,
-    CaseLibrary,
-    build_analysis_clusters,
+    PartialSuccessRecord,
+    AttributionSource,
 )
-from .trace import (
+
+# ── Trace + Evaluation ─────────────────────────────────────────────────────
+from .trace import (  # noqa: F401
     standardize_trace,
     audit_trace_fields,
     StandardTrace,
     FieldAudit,
 )
-from .evaluation import (
+
+from .evaluation import (  # noqa: F401
     evaluate_outcome,
     OutcomeType,
     OutcomeResult,
 )
-from .config import EvolutionConfig, get_config, set_config
-from .runner import EvolutionRunner, RunMode
+
+# ── Patch ───────────────────────────────────────────────────────────────────
+from .patch import (  # noqa: F401
+    PatchSchema,
+    PatchOperation,
+    PatchStatus,
+    PromptArtifact,
+    FailureCluster,
+    cluster_failures,
+    generate_patches_for_cluster,
+    generate_all_patches,
+)
+
+# ── Validation ─────────────────────────────────────────────────────────────
+from .validation import (  # noqa: F401
+    validate_patch,
+    ValidationResult,
+)
+
+# ── Runtime validation ─────────────────────────────────────────────────────
+from .runtime_validation import (  # noqa: F401
+    validate_individual_patch,
+    validate_composition,
+    detect_conflicts,
+    resolve_conflicts,
+)
+
+# ── Regression ──────────────────────────────────────────────────────────────
+from .regression import (  # noqa: F401
+    RegressionRunner,
+    RegressionResult,
+    RegressionComparison,
+)
+
+# ── Apply + Rollback ───────────────────────────────────────────────────────
+from .apply import (  # noqa: F401
+    PatchApplier,
+    PatchApplyError,
+)
+
+from .rollback import (  # noqa: F401
+    SnapshotManager,
+    SnapshotError,
+)
 
 __all__ = [
-    # schemas
-    "EvolutionConfig",
-    "get_config",
-    "set_config",
-    # trace
+    # Types (was attribution)
+    "FailureType",
+    "FailureRecord",
+    "SuccessPattern",
+    "CoverageGapRecord",
+    "PartialSuccessRecord",
+    "AttributionSource",
+    # Trace
     "standardize_trace",
     "audit_trace_fields",
     "StandardTrace",
     "FieldAudit",
-    # evaluation
+    # Evaluation
     "evaluate_outcome",
     "OutcomeType",
     "OutcomeResult",
-    # attribution
-    "generate_trace_report",
-    "TraceReport",
-    "FailureRecord",
-    "FailureType",
-    "SuccessPattern",
-    "CoverageGapRecord",
-    "CandidateAttribution",
-    "CaseLibrary",
-    "build_analysis_clusters",
-    # runner
-    "EvolutionRunner",
-    "RunMode",
+    # Patch
+    "PatchSchema",
+    "PatchOperation",
+    "PatchStatus",
+    "PromptArtifact",
+    "FailureCluster",
+    "cluster_failures",
+    "generate_patches_for_cluster",
+    "generate_all_patches",
+    # Validation
+    "validate_patch",
+    "ValidationResult",
+    # Runtime validation
+    "validate_individual_patch",
+    "validate_composition",
+    "detect_conflicts",
+    "resolve_conflicts",
+    # Regression
+    "RegressionRunner",
+    "RegressionResult",
+    "RegressionComparison",
+    # Apply + Rollback
+    "PatchApplier",
+    "PatchApplyError",
+    "SnapshotManager",
+    "SnapshotError",
 ]

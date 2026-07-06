@@ -1,4 +1,4 @@
-"""Run all 5 verification tests for Skill Evolution refactoring."""
+"""Run verification tests for retained + new Skill Evolution modules."""
 import sys
 import traceback
 sys.path.insert(0, 'src')
@@ -18,11 +18,15 @@ def run_test(name, fn):
         print(f"RESULT: FAILED - {e}")
         traceback.print_exc()
 
-# ─── Test 1: Module imports ───
+# ─── Test 1: Retained module imports ───
 def test_imports():
-    from skill_evolution.attribution import generate_trace_report
-    print('attribution OK')
-    from skill_evolution.patch import generate_all_patches
+    from skill_evolution.types import FailureType, FailureRecord, SuccessPattern, CoverageGapRecord
+    print('types OK')
+    from skill_evolution.trace import standardize_trace, StandardTrace
+    print('trace OK')
+    from skill_evolution.evaluation import evaluate_outcome, OutcomeType
+    print('evaluation OK')
+    from skill_evolution.patch import PatchSchema, PatchOperation, PatchStatus, generate_all_patches
     print('patch OK')
     from skill_evolution.validation import validate_patch
     print('validation OK')
@@ -32,53 +36,29 @@ def test_imports():
     print('apply OK')
     from skill_evolution.rollback import SnapshotManager
     print('rollback OK')
-    from skill_evolution.runtime_validation import validate_individual_patch
+    from skill_evolution.runtime_validation import validate_individual_patch, detect_conflicts
     print('runtime_validation OK')
 
-run_test("1: All skill_evolution module imports", test_imports)
+run_test("1: All retained skill_evolution module imports", test_imports)
 
-# ─── Test 2: evolve.py --analyze-only ───
-def test_analyze_only():
-    import subprocess
-    result = subprocess.run(
-        [sys.executable, "scripts/evolve.py", "--analyze-only"],
-        capture_output=True, text=True, cwd="."
-    )
-    print("STDOUT:", result.stdout)
-    if result.stderr:
-        print("STDERR:", result.stderr)
-    if result.returncode != 0:
-        raise RuntimeError(f"Exit code {result.returncode}")
-    # Check trace_report.json was generated
-    from pathlib import Path
-    tr = Path("trace_report.json")
-    if tr.exists():
-        print(f"trace_report.json generated ({tr.stat().st_size} bytes)")
-    else:
-        print("WARNING: trace_report.json not found (may need evaluation data)")
+# ─── Test 2: New module imports ───
+def test_new_imports():
+    from skill_evolution.memory import generate_reflections, load_memory, format_memory_for_prompt
+    print('memory OK')
+    from skill_evolution.bootstrap import bootstrap_examples, bootstrap_summary
+    print('bootstrap OK')
+    from skill_evolution.prompt_evolver import generate_prompt_candidates, build_prompt_update_patches
+    print('prompt_evolver OK')
+    from skill_evolution.simple_runner import SimpleEvolutionRunner
+    print('simple_runner OK')
 
-run_test("2: evolve.py --analyze-only", test_analyze_only)
+run_test("2: All new Skill Evolution module imports", test_new_imports)
 
-# ─── Test 3: evolve.py --dry-run ───
-def test_dry_run():
-    import subprocess
-    result = subprocess.run(
-        [sys.executable, "scripts/evolve.py", "--dry-run"],
-        capture_output=True, text=True, cwd="."
-    )
-    print("STDOUT:", result.stdout)
-    if result.stderr:
-        print("STDERR:", result.stderr)
-    if result.returncode != 0:
-        raise RuntimeError(f"Exit code {result.returncode}")
-
-run_test("3: evolve.py --dry-run", test_dry_run)
-
-# ─── Test 4: Semantic validation rejects non-existent prompt_ref ───
+# ─── Test 3: Semantic validation rejects non-existent prompt_ref ───
 def test_prompt_ref_rejection():
     from skill_evolution.validation import validate_patch
     from skill_evolution.patch import PatchSchema, PatchOperation, PatchStatus
-    from skill_evolution.attribution import FailureType
+    from skill_evolution.types import FailureType
     from pathlib import Path
 
     patch = PatchSchema(
@@ -105,12 +85,12 @@ def test_prompt_ref_rejection():
     assert not result.valid, 'Should reject non-existent prompt_ref'
     print('TEST PASSED: Non-existent prompt_ref correctly rejected')
 
-run_test("4: Semantic validation rejects non-existent prompt_ref", test_prompt_ref_rejection)
+run_test("3: Semantic validation rejects non-existent prompt_ref", test_prompt_ref_rejection)
 
-# ─── Test 5: Template distillation rejects score-based patterns ───
+# ─── Test 4: Template distillation rejects score-based patterns ───
 def test_score_pattern_rejection():
     from skill_evolution.patch import distill_templates
-    from skill_evolution.attribution import SuccessPattern
+    from skill_evolution.types import SuccessPattern
 
     patterns = [
         SuccessPattern(
@@ -126,7 +106,23 @@ def test_score_pattern_rejection():
     assert len(patches) == 0, f'Should reject score-based patterns, got {len(patches)} patches'
     print('TEST PASSED: score_1.0 pattern correctly rejected')
 
-run_test("5: Template distillation rejects score-based patterns", test_score_pattern_rejection)
+run_test("4: Template distillation rejects score-based patterns", test_score_pattern_rejection)
+
+# ─── Test 5: evolve_prompt.py --analyze-only ───
+def test_evolve_prompt_analyze():
+    import subprocess
+    result = subprocess.run(
+        [sys.executable, "scripts/evolve_prompt.py", "--analyze-only"],
+        capture_output=True, text=True, cwd=".",
+        timeout=60,
+    )
+    print("STDOUT:", result.stdout[:500])
+    if result.stderr:
+        print("STDERR:", result.stderr[:500])
+    if result.returncode != 0:
+        raise RuntimeError(f"Exit code {result.returncode}")
+
+run_test("5: evolve_prompt.py --analyze-only", test_evolve_prompt_analyze)
 
 # ─── Summary ───
 print(f"\n{'='*60}")

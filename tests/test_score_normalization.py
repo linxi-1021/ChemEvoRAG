@@ -1,4 +1,4 @@
-"""Tests for score normalization and result dict population bug fix.
+﻿"""Tests for score normalization and result dict population bug fix.
 
 Validates that:
 - eval_results.json with summary.average_score is correctly read
@@ -86,7 +86,7 @@ class TestValidateIndividualPatchScoreFields:
         """After regression validation, result dict must have average_score."""
         from skill_evolution.runtime_validation import validate_individual_patch
         from skill_evolution.patch import PatchSchema, PatchOperation, PatchStatus
-        from skill_evolution.attribution import FailureType
+        from skill_evolution.types import FailureType
 
         captured_workers = None
 
@@ -154,7 +154,7 @@ class TestValidateIndividualPatchScoreFields:
         """If eval_results.json is not produced, regression should fail."""
         from skill_evolution.runtime_validation import validate_individual_patch
         from skill_evolution.patch import PatchSchema, PatchOperation, PatchStatus
-        from skill_evolution.attribution import FailureType
+        from skill_evolution.types import FailureType
 
         def fake_run_eval(self, dataset_path, skills_dir=None, prompts_dir=None,
                           output_dir=None, *, workers=1, stream_output=True, **kwargs):

@@ -1,4 +1,4 @@
-"""Tests that --workers parameter flows correctly through the call chain."""
+﻿"""Tests that --workers parameter flows correctly through the call chain."""
 
 from __future__ import annotations
 
@@ -116,7 +116,7 @@ def test_validate_individual_patch_passes_workers(monkeypatch, tmp_path):
     """validate_individual_patch should forward workers to RegressionRunner.run_eval."""
     from skill_evolution.runtime_validation import validate_individual_patch
     from skill_evolution.patch import PatchSchema, PatchOperation, PatchStatus
-    from skill_evolution.attribution import FailureType
+    from skill_evolution.types import FailureType
 
     captured_workers = {}
 

@@ -22,7 +22,7 @@ try:
 except ImportError:
     yaml = None  # type: ignore[assignment]
 
-from .attribution import FailureType
+from .types import FailureType
 from .patch import PatchOperation, PatchSchema, PatchStatus
 
 

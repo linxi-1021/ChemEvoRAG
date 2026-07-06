@@ -22,7 +22,7 @@ try:
 except ImportError:
     raise ImportError("pydantic is required for skill_evolution.validation")
 
-from .attribution import FailureType
+from .types import FailureType
 from .patch import PatchOperation, PatchSchema, PatchStatus
 
 

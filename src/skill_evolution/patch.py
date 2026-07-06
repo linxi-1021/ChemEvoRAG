@@ -29,7 +29,7 @@ try:
 except ImportError:
     raise ImportError("pydantic is required for skill_evolution.patch")
 
-from .attribution import FailureRecord, FailureType, SuccessPattern, PartialSuccessRecord
+from .types import FailureRecord, FailureType, SuccessPattern, PartialSuccessRecord
 
 
 # ---------------------------------------------------------------------------

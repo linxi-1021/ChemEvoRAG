@@ -1,4 +1,4 @@
-"""Tests for --regression-limit parameter flow through the call chain.
+﻿"""Tests for --regression-limit parameter flow through the call chain.
 
 Validates:
 - RegressionRunner.run_eval passes --limit N to eval_questions.py
@@ -154,7 +154,7 @@ class TestIndividualPatchLimit:
         """validate_individual_patch(..., regression_limit=20) passes limit=20."""
         from skill_evolution.runtime_validation import validate_individual_patch
         from skill_evolution.patch import PatchSchema, PatchOperation, PatchStatus
-        from skill_evolution.attribution import FailureType
+        from skill_evolution.types import FailureType
 
         captured_limit = None
 
@@ -221,7 +221,7 @@ class TestCompositionLimit:
         """validate_composition(..., regression_limit=20) passes limit=20."""
         from skill_evolution.runtime_validation import validate_composition
         from skill_evolution.patch import PatchSchema, PatchOperation, PatchStatus
-        from skill_evolution.attribution import FailureType
+        from skill_evolution.types import FailureType
 
         captured_limit = None
 

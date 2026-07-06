@@ -1,4 +1,4 @@
-"""Tests for regression error handling — eval crashes must result in passed=False.
+﻿"""Tests for regression error handling — eval crashes must result in passed=False.
 
 Validates:
 - after_result.errors → validate_individual_patch returns passed=False
@@ -40,7 +40,7 @@ class TestIndividualPatchEvalCrash:
         """RegressionRunner returns errors → validate_individual_patch failed."""
         from skill_evolution.runtime_validation import validate_individual_patch
         from skill_evolution.patch import PatchSchema, PatchOperation, PatchStatus
-        from skill_evolution.attribution import FailureType
+        from skill_evolution.types import FailureType
         from skill_evolution.regression import RegressionResult
 
         def fake_run_eval(self, dataset_path, skills_dir=None, prompts_dir=None,
@@ -113,7 +113,7 @@ class TestEvalCrashNotSelected:
         """phase_regression_validate with eval crash → still_valid is empty."""
         from skill_evolution.runtime_validation import validate_individual_patch
         from skill_evolution.patch import PatchSchema, PatchOperation, PatchStatus
-        from skill_evolution.attribution import FailureType
+        from skill_evolution.types import FailureType
         from skill_evolution.regression import RegressionResult
 
         def fake_run_eval(self, dataset_path, skills_dir=None, prompts_dir=None,
@@ -216,7 +216,7 @@ class TestPassedButNoMetrics:
     def test_passed_true_without_metrics_converts_to_failed(self):
         """In phase_regression_validate, passed=True with missing metrics → failed."""
         from skill_evolution.patch import PatchSchema, PatchOperation, PatchStatus
-        from skill_evolution.attribution import FailureType
+        from skill_evolution.types import FailureType
 
         # Simulate a result dict that has passed=True but no metrics
         # This mimics what happens when _require_metric raises KeyError
@@ -254,7 +254,7 @@ class TestCompositionEvalCrash:
         """RegressionRunner errors cause composition to fail."""
         from skill_evolution.runtime_validation import validate_composition
         from skill_evolution.patch import PatchSchema, PatchOperation, PatchStatus
-        from skill_evolution.attribution import FailureType
+        from skill_evolution.types import FailureType
         from skill_evolution.regression import RegressionResult
 
         def fake_run_eval(self, dataset_path, skills_dir=None, prompts_dir=None,
@@ -320,7 +320,7 @@ class TestNormalSuccessPath:
         """Successful eval populates top-level average_score, score_delta, etc."""
         from skill_evolution.runtime_validation import validate_individual_patch
         from skill_evolution.patch import PatchSchema, PatchOperation, PatchStatus
-        from skill_evolution.attribution import FailureType
+        from skill_evolution.types import FailureType
         from skill_evolution.regression import RegressionResult
 
         def fake_run_eval(self, dataset_path, skills_dir=None, prompts_dir=None,
