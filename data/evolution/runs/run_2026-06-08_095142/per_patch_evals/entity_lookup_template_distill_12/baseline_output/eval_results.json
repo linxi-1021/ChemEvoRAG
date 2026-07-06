@@ -1,0 +1,112 @@
+{
+  "summary": {
+    "total": 3,
+    "average_score": 0.0,
+    "by_intent": {
+      "reaction_comparison": 0.0,
+      "property_query": 0.0
+    }
+  },
+  "results": [
+    {
+      "id": "q4",
+      "source_paper": "1.pdf",
+      "intent": "reaction_comparison",
+      "question": "Referring to the additive screen (Table 3), which additive gave a higher yield for the aerobic oxidation screening of 3-(n-hexyl)-1,2-octadien-4-ol: NaCl (entry 5) or NaNO2 (entry 1)?",
+      "ground_truth": "NaCl (entry 5) gave the higher yield: NaCl showed 100% conversion and 72% yield, whereas NaNO2 (entry 1) showed 55% conversion and 35% yield.",
+      "system_answer": "Retrieved reaction evidence: Traditionally, organic ligands are frequently used, however, in order to have a cheap, readily available, easy to use ligand, we took a different approach by screening inorganic halide ligands since halide anions have been reported to act as ligands for transition metals.[21,28,31] Thus, the cheap and readily available inorganic halides were screened in the first place for such a purpose. With this approach we were excited to observe that 10 mol% of LiCl improved the conversion to 95% within 10 h (entry 4)! Furthermore, 10 mol% of NaCl, KCl, RbCl, or CsCl all converted the slow reaction into a very efficient one, which goes to completion within a couple of hours ! In terms of efficiency the order is CsCl> RbCl > KCl > NaCl > LiCl (entries 4–9). For the obvious reason of cost and availability, we chose the kitchen chemical sodium chloride as the additive: the reaction was completed within 4 h to afford 3-(n-hexyl)-1,2-octadien-4-one in 72% isolated (entry 5); the results of KF, KBr, and KI are poor (entries 9–11).",
+      "evidence_ids": [
+        "block_1_0018",
+        "block_1_0036",
+        "block_1_0124",
+        "block_1_0127",
+        "block_1_0009",
+        "block_1_0041",
+        "block_1_0121",
+        "block_1_0122"
+      ],
+      "confidence": 1.0,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "NaCl",
+        "NaNO2",
+        "3-(n-hexyl)-1,2-octadien-4-ol",
+        "Table 3"
+      ],
+      "judge_reasoning": "openai not installed",
+      "score": 0.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q5",
+      "source_paper": "3.pdf",
+      "intent": "property_query",
+      "question": "What isolated yield and E/Z ratio were obtained in the reported 0.1 mmol scale oxidation of E-1a to give E-2a under the optimized conditions (scale‑up/test experiment shown in Scheme 2)?",
+      "ground_truth": "90% isolated yield after 6 h; product E-2a obtained with E/Z = 97/3 (starting E-1a was E/Z = 99/1).",
+      "system_answer": "Retrieved molecule identity evidence: To further show the practicality and efficiency of this catalytic system, a 0.1 mol reaction of E-1a was conducted under the optimized conditions to give E-2a in 90% isolated yield in 6 h without changing the  E / Z ratio (Scheme 2) .",
+      "evidence_ids": [
+        "block_3_0019",
+        "block_3_0009",
+        "block_3_0013",
+        "block_3_0010",
+        "block_3_0008",
+        "block_3_0017",
+        "block_3_0011",
+        "block_3_0014"
+      ],
+      "confidence": 0.718,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "E-1a",
+        "E-2a",
+        "Scheme 2"
+      ],
+      "judge_reasoning": "openai not installed",
+      "score": 0.0,
+      "intent_key": "property_query"
+    },
+    {
+      "id": "q4",
+      "source_paper": "16.pdf",
+      "intent": "reaction_comparison",
+      "question": "Under the standard substrate‑scope conditions (Table 2), which substrate gave the higher isolated yield to product 2a: n‑C8H17OTBS (1aa) or n‑C8H17OTMS (1ab)?",
+      "ground_truth": "n‑C8H17OTBS (1aa) gave the higher yield: 84% vs n‑C8H17OTMS (1ab) 77%.",
+      "system_answer": "Retrieved reaction evidence: |  | RCH2OSi1 | Fe(NO3)3·9H2O (10 mol%)4-OH-TEMPO (10 mol%)KCl (10 mol%)O2(balloon), THF, time, 25 °C | RCO2H2 |  |\n| --- | --- | --- | --- | --- |\n| Entry | Substrate | Product | Time(h) | Yield(%) |\n| 1b | n-C8H17OTBS (1aa) | n-C7H15CO2H (2a) | 21 | 84 |\n| 2 | n-C8H17OTMS (1ab) | (2a) | 24 | 77 |\n| 3 | n-C8H17ODMPS (1ac) | (2a) | 50 | 90 |\n| 4 | n-C8H17OTPS (1ad) | (2a) | 59 | 74 |\n| 5cd | n-C15H31OTBS (1ba) | n-C14H29CO2H (2b) | 45 | 89 |\n| 6 | Ph(CH2)3OTBS (1ca) | Ph(CH2)2CO2H (2c) | 69 | 70 |\n| 7 | Cl(CH2)6OTBS (1da) | Cl(CH2)5CO2H (2d) | 64 | 74 |\n| 8 | Br(CH2)9OTBS (1ea) | Br(CH2)8CO2H (2e) | 71 | 86 |\n| 9d | BnO(CH2)3OTBS (1fa) | BnO(CH2)2CO2H (2f) | 53 | 63 |\n| 10 | n-C6H13O(CH2)2OTBS (1ga) | n-C6H13OCH2CO2H (2g) | 63 | 69 |\n| 11 | TsO(CH2)2OTBS (1ha) | TsOCH2CO2H (2h) | 60 | 57 |\n| 12d | MeO2C(CH2)5OTBS (1ia) | MeO2C(CH2)4CO2H (2i) | 35 | 75 |\n| 13 |  | TMS-≡CO2H(2j) | 65 | 59 |\n| 14 |  |  | 70 | 37 |\n| 15e |  |  | 60 | 76 | | Table 2 The substrate scopea | a Reaction conditions: 1 (1.0 mmol), | \\mathrm { F e } ( \\mathrm { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } \\mathrm { O } | (10 mol%), 4-OH-TEMPO (10 mol%), KCl (10 mol%), and | { \\dot { \\bf O } } _ { 2 } | (balloon) in THF (1.0 mL) at | 2 5 ~ ^ { \\circ } \\mathbf { C } . ~ ^ { b } | Reaction was conducted using 1aa (5.0 mmol) in THF (1.2 mL) at room temperature. | \\mathrm { \\mathrm { ~ \\bar { ~ } F e ( N O _ { 3 } ) _ { 3 } { \\cdot } 9 H _ { 2 } \\mathrm { \\bar { O } } } } | (20 mol%) was used. d 4-OH-TEMPO (20 mol%) was used. e TEMPO (10 mol%) was used, with THF (0.5 mL) and DCE (0.5 mL) as the solvent.",
+      "evidence_ids": [
+        "block_16_0022",
+        "block_16_0017",
+        "block_16_0018",
+        "block_16_0024",
+        "block_16_0025",
+        "block_16_0019",
+        "block_16_0020",
+        "block_16_0026"
+      ],
+      "confidence": 1.0,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "1aa",
+        "1ab",
+        "2a"
+      ],
+      "judge_reasoning": "openai not installed",
+      "score": 0.0,
+      "intent_key": "reaction_comparison"
+    }
+  ],
+  "metadata": {
+    "sampling": {
+      "mode": "random",
+      "limit": 3,
+      "seed": 42,
+      "selected_question_ids": [
+        "q4",
+        "q5",
+        "q4"
+      ]
+    }
+  }
+}

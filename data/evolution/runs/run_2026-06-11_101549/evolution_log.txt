@@ -1,0 +1,15 @@
+Run directory: D:\Desktop\evo\ChemEvoRAG_Phase1-main\data\evolution\runs\run_2026-06-11_101549
+
+FATAL: name 'audit_trace_fields' is not defined
+Traceback (most recent call last):
+  File "D:\Desktop\evo\ChemEvoRAG_Phase1-main\src\skill_evolution\runner.py", line 85, in run
+    report = self._stage_1_to_3()
+  File "D:\Desktop\evo\ChemEvoRAG_Phase1-main\src\skill_evolution\runner.py", line 147, in _stage_1_to_3
+    report = generate_trace_report(
+        self.eval_results_path, self.react_logs_dir, skill_configs,
+    )
+  File "D:\Desktop\evo\ChemEvoRAG_Phase1-main\src\skill_evolution\attribution.py", line 509, in generate_trace_report
+    audit = audit_trace_fields(trace)
+            ^^^^^^^^^^^^^^^^^^
+NameError: name 'audit_trace_fields' is not defined
+

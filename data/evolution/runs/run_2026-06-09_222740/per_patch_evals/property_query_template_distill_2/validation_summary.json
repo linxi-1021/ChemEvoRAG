@@ -1,0 +1,10 @@
+{
+  "patch_id": "property_query_template_distill_2",
+  "passed": false,
+  "average_score": 0.772033898305085,
+  "score_delta": -0.09406779661016951,
+  "targeted_improvement": 0.0,
+  "errors": [
+    "Regression failed: Average score 0.7720 below minimum 0.8; Score dropped by 0.0941 (max allowed: 0.0100); Failed cases increased by 20 (max allowed: 1); 14 new high-severity failure(s) detected"
+  ]
+}

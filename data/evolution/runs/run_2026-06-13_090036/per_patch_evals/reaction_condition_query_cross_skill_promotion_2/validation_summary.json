@@ -1,0 +1,10 @@
+{
+  "patch_id": "reaction_condition_query_cross_skill_promotion_2",
+  "passed": false,
+  "average_score": 0.8466666666666667,
+  "score_delta": -0.019435028248587782,
+  "targeted_improvement": 0.0,
+  "errors": [
+    "Regression failed: Score dropped by 0.0194 (max allowed: 0.0100)"
+  ]
+}

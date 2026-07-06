@@ -1,0 +1,43 @@
+[
+  {
+    "patch_id": "reaction_condition_query_template_distill_20",
+    "patch_type": "",
+    "skill_name": "reaction_condition_query",
+    "skill_version": "1.0.0",
+    "target_file": "",
+    "source_failure_ids": [],
+    "targeted_failure_ids": [],
+    "primary_failure_type": "unknown_failure",
+    "target_path": "templates",
+    "operation": "add",
+    "old_value": null,
+    "new_value": null,
+    "current_value": {},
+    "proposed_value": {
+      "name": "distilled_property_extraction_table_evidence_numeric_value_reaction_condition_query",
+      "description": "Auto-distilled from 6 successful queries with structure 'property_extraction_table_evidence_numeric_value' in reaction_condition_query.",
+      "applicable_when": {
+        "intent": "reaction_condition_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ],
+        "query_structure": "property_extraction",
+        "evidence_type": "table_evidence"
+      },
+      "not_applicable_when": [],
+      "slots": [],
+      "examples": []
+    },
+    "prompt_artifacts": [],
+    "rationale": "Structural pattern 'property_extraction_table_evidence_numeric_value' succeeded 6 times in reaction_condition_query (avg 1.00). Query structure: property_extraction, evidence type: table_evidence, answer structure: numeric_value.",
+    "expected_improvement": "Reusable template for property_extraction queries using table_evidence.",
+    "risk_level": "low",
+    "confidence": 0.95,
+    "status": "regression_validated",
+    "dependencies": [],
+    "validation_status": "pending"
+  }
+]

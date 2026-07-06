@@ -1,0 +1,48 @@
+{
+  "run_id": "run_2026-06-10_1322",
+  "generated_at": "2026-06-10T17:00:37.825457",
+  "stop_reason": "validate_only",
+  "summary": {
+    "total_questions": 118,
+    "average_score": 0.8661016949152545,
+    "failures": 5,
+    "partial_successes": 26,
+    "coverage_gaps": 1,
+    "success_patterns": 86
+  },
+  "candidate_patches_count": 10,
+  "validated_patches_count": 1,
+  "rejected_patches_count": 9,
+  "validated_patch_ids": [
+    "reaction_condition_query_template_distill_20"
+  ],
+  "rejection_summary": {
+    "individual_regression_failed: ['Regression failed: Average score 0.4667 below minimum 0.8; Score dropped by 0.3994 (max allowed: 0.0100); Targeted improvement -0.5727 below minimum 0.05; 5 new high-severity failure(s) detected']": [
+      "reaction_condition_query_round1_patch1"
+    ],
+    "individual_regression_failed: ['Regression failed: Score dropped by 0.0194 (max allowed: 0.0180); Targeted improvement 0.0159 below minimum 0.05']": [
+      "reaction_comparison_round1_patch1"
+    ],
+    "individual_regression_failed: ['Regression failed: Average score 0.7767 below minimum 0.8; Score dropped by 0.0894 (max allowed: 0.0100); Targeted improvement 0.0000 below minimum 0.05']": [
+      "entity_lookup_round1_patch1"
+    ],
+    "individual_regression_failed: ['Regression failed: Score dropped by 0.0261 (max allowed: 0.0100)']": [
+      "property_query_template_distill_2"
+    ],
+    "individual_regression_failed: ['Regression failed: Average score 0.7800 below minimum 0.8; Score dropped by 0.0861 (max allowed: 0.0100)']": [
+      "entity_lookup_template_distill_4"
+    ],
+    "individual_regression_failed: ['Regression failed: Average score 0.7833 below minimum 0.8; Score dropped by 0.0828 (max allowed: 0.0100); 3 new high-severity failure(s) detected']": [
+      "reaction_comparison_template_distill_9"
+    ],
+    "individual_regression_failed: ['Regression failed: Average score 0.7167 below minimum 0.8; Score dropped by 0.1494 (max allowed: 0.0100); 2 new high-severity failure(s) detected']": [
+      "alias_resolution_template_distill_10"
+    ],
+    "individual_regression_failed: ['Regression failed: Score dropped by 0.0394 (max allowed: 0.0100)']": [
+      "reaction_condition_query_template_distill_12"
+    ],
+    "individual_regression_failed: ['Regression failed: Average score 0.7800 below minimum 0.8; Score dropped by 0.0861 (max allowed: 0.0100); 1 new high-severity failure(s) detected']": [
+      "alias_resolution_template_distill_15"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+Run directory: D:\Desktop\evo\ChemEvoRAG_Phase1-main\data\evolution\runs\run_2026-06-09_213508
+Trace report: 5 failures, 26 partial, 86 success
+Generated 10 candidate patches
+
+[LLM Analysis] Processing cluster: assessment_false_negative__strategy.assessment__evidence_assessment
+  Failure type: assessment_false_negative, Prompt role: evidence_assessment
+  Affected skills: ['entity_lookup', 'reaction_comparison', 'reaction_condition_query']
+  Cluster size: 4
+  Stage 2: Running LLM failure analysis...
+  Primary failure type: assessment_false_negative
+  Root causes: 3
+  Should generate patch: True
+  Risk level: medium
+  Recommended change: prompt (priority: primary)
+  Recommended change: retrieval_routing (priority: secondary)
+  Recommended change: evidence_expansion (priority: secondary)
+  Stage 3: Generating V2 prompt (EVIDENCE_ASSESSMENT_SYSTEM_V2)...
+  V2 prompt generated: ['Preserved V1 grounding constraints, table parsing rules, and reasoning style examples', "Added 'Fragmented Evidence Cross-Referencing Rules' section with three specific rules for combining information across evidence items", 'Added a concrete example showing cross-referencing between a table block and a molecule block', 'Modified the pre-flight check to implicitly require cross-referencing when evidence is fragmented']
+  Generated 14 patches
+
+[LLM Analysis] Total LLM-driven patches: 14
+Total patches after LLM analysis: 24
+Schema validation: 24 accepted, 0 rejected
+
+--dry-run: 24 patches validated, not applied.

@@ -1,0 +1,10 @@
+{
+  "patch_id": "property_query_cross_skill_promotion_4",
+  "passed": false,
+  "average_score": 0.7600000000000001,
+  "score_delta": -0.10610169491525434,
+  "targeted_improvement": 0.0,
+  "errors": [
+    "Regression failed: Average score 0.7600 below minimum 0.8; Score dropped by 0.1061 (max allowed: 0.0100)"
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "run_id": "run_2026-06-11_101752",
+  "generated_at": "2026-06-11T10:44:00.495886",
+  "summary": {
+    "total_questions": 118,
+    "average_score": 0.8661016949152545,
+    "failures": 6,
+    "partial_successes": 26,
+    "coverage_gaps": 0,
+    "success_patterns": 86
+  },
+  "candidate_patches": 5,
+  "selected_patches": [
+    "alias_resolution_template_distill_1",
+    "alias_resolution_cross_skill_promotion_1"
+  ],
+  "validated_patches": [
+    "alias_resolution_cross_skill_promotion_1"
+  ],
+  "rejected_patches": [
+    {
+      "patch_id": "reaction_condition_query_cross_skill_promotion_2",
+      "patch_type": "template_add",
+      "skill_name": "reaction_condition_query",
+      "skill_version": "1.0.0",
+      "target_file": "",
+      "source_failure_ids": [],
+      "targeted_failure_ids": [],
+      "primary_failure_type": "unknown_failure",
+      "target_path": "templates",
+      "operation": "add",
+      "old_value": null,
+      "new_value": null,
+      "current_value": {},
+      "proposed_value": {
+        "name": "cross_skill_property_extraction_table_evidence_numeric_value_property_query_to_reaction_condition_query",
+        "description": "Cross-skill promotion: pattern 'property_extraction_table_evidence_numeric_value' from property_query → reaction_condition_query (14 successes, similarity=0.80)",
+        "applicable_when": {
+          "intent": "reaction_condition_query",
+          "query_structure": "property_extraction",
+          "evidence_type": "table_evidence"
+        },
+        "not_applicable_when": [],
+        "slots": [],
+        "examples": [],
+        "promoted_from": "property_query"
+      },
+      "prompt_artifacts": [],
+      "rationale": "Cross-skill promotion from property_query: pattern 'property_extraction_table_evidence_numeric_value'.",
+      "expected_improvement": "Apply successful property_query pattern to reaction_condition_query.",
+      "risk_level": "medium",
+      "confidence": 0.7,
+      "status": "candidate",
+      "dependencies": [],
+      "validation_status": "pending",
+      "rejection_reason": "rejected: exceeds max_patches_per_round"
+    },
+    {
+      "patch_id": "property_query_cross_skill_promotion_3",
+      "patch_type": "template_add",
+      "skill_name": "property_query",
+      "skill_version": "1.0.0",
+      "target_file": "",
+      "source_failure_ids": [],
+      "targeted_failure_ids": [],
+      "primary_failure_type": "unknown_failure",
+      "target_path": "templates",
+      "operation": "add",
+      "old_value": null,
+      "new_value": null,
+      "current_value": {},
+      "proposed_value": {
+        "name": "cross_skill_property_extraction_table_evidence_list_reaction_condition_query_to_property_query",
+        "description": "Cross-skill promotion: pattern 'property_extraction_table_evidence_list' from reaction_condition_query → property_query (5 successes, similarity=0.80)",
+        "applicable_when": {
+          "intent": "property_query",
+          "query_structure": "property_extraction",
+          "evidence_type": "table_evidence"
+        },
+        "not_applicable_when": [],
+        "slots": [],
+        "examples": [],
+        "promoted_from": "reaction_condition_query"
+      },
+      "prompt_artifacts": [],
+      "rationale": "Cross-skill promotion from reaction_condition_query: pattern 'property_extraction_table_evidence_list'.",
+      "expected_improvement": "Apply successful reaction_condition_query pattern to property_query.",
+      "risk_level": "medium",
+      "confidence": 0.7,
+      "status": "candidate",
+      "dependencies": [],
+      "validation_status": "pending",
+      "rejection_reason": "rejected: exceeds max_patches_per_round"
+    },
+    {
+      "patch_id": "property_query_cross_skill_promotion_4",
+      "patch_type": "template_add",
+      "skill_name": "property_query",
+      "skill_version": "1.0.0",
+      "target_file": "",
+      "source_failure_ids": [],
+      "targeted_failure_ids": [],
+      "primary_failure_type": "unknown_failure",
+      "target_path": "templates",
+      "operation": "add",
+      "old_value": null,
+      "new_value": null,
+      "current_value": {},
+      "proposed_value": {
+        "name": "cross_skill_property_extraction_table_evidence_numeric_value_reaction_condition_query_to_property_query",
+        "description": "Cross-skill promotion: pattern 'property_extraction_table_evidence_numeric_value' from reaction_condition_query → property_query (6 successes, similarity=0.80)",
+        "applicable_when": {
+          "intent": "property_query",
+          "query_structure": "property_extraction",
+          "evidence_type": "table_evidence"
+        },
+        "not_applicable_when": [],
+        "slots": [],
+        "examples": [],
+        "promoted_from": "reaction_condition_query"
+      },
+      "prompt_artifacts": [],
+      "rationale": "Cross-skill promotion from reaction_condition_query: pattern 'property_extraction_table_evidence_numeric_value'.",
+      "expected_improvement": "Apply successful reaction_condition_query pattern to property_query.",
+      "risk_level": "medium",
+      "confidence": 0.7,
+      "status": "candidate",
+      "dependencies": [],
+      "validation_status": "pending",
+      "rejection_reason": "rejected: exceeds max_patches_per_round"
+    }
+  ],
+  "conflicts_resolved": []
+}

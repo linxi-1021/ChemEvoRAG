@@ -1,0 +1,300 @@
+schema_version: '1.0'
+name: entity_lookup
+skill_version: 1.0.0
+status: stable
+description: Handles queries about a specific molecule, compound, or chemical entity
+  by name, alias, SMILES, InChIKey, or role.
+lifecycle:
+  created_at: '2026-06-05'
+  updated_at: '2026-06-05'
+  owner: EVOChemRAG
+trigger:
+  intent: entity_lookup
+  confidence_threshold: 0.7
+  aliases:
+  - compound_query
+  - molecule_query
+  required_signals:
+  - compound_or_entity_reference
+  negative_intents:
+  - alias_resolution
+  - mechanism_query
+scope:
+  supported_properties:
+  - identity
+  - structure
+  - formula
+  - role
+  - description
+  domain_constraints:
+  - chemical entity identification
+dependencies:
+  prompts:
+  - EVIDENCE_ASSESSMENT_SYSTEM
+  - ANSWER_GENERATION_SYSTEM
+  indexes:
+  - entity_search
+  - elementkg_search
+  - lexical_search
+  - dense_search
+  - structure_search
+  validators:
+  - citation_validator
+  core_modules:
+  - ElementKG
+interface:
+  input_schema:
+    required:
+    - query
+    - intent
+    optional:
+    - resolved_entities
+    - document_context
+  output_schema:
+    required:
+    - answer
+    - evidence_items
+    - confidence
+    optional:
+    - extracted_values
+    - uncertainty_notes
+strategy:
+  retrieval_routing:
+    primary_channels:
+    - entity_search
+    - elementkg_search
+    - lexical_search
+    top_k:
+      entity_search: 10
+      elementkg_search: 5
+      lexical_search: 8
+      final_rerank: 10
+    boost_weights:
+      molecule_evidence:
+        weight: 5.0
+        rationale: Entity lookups prioritize molecule evidence.
+      entity_exact_match:
+        weight: 3.0
+        rationale: Exact entity match is most reliable.
+  query_rewrite:
+    enabled: true
+    max_variants: 2
+    diversity_threshold: 0.8
+    preserve_original_query: true
+    fallback_terms:
+    - compound
+    - molecule
+    - structure
+    - identity
+  evidence_expansion:
+    enabled: true
+    expand_from_block_neighbors: true
+    expand_from_molecule_mentions: true
+    max_expanded_blocks: 5
+  assessment:
+    system_prompt_ref: EVIDENCE_ASSESSMENT_SYSTEM
+    require_numeric_extraction: false
+    require_citation_check: true
+    failure_labels:
+    - insufficient_evidence
+    - entity_miss
+    - compound_mismatch
+  answer_generation:
+    system_prompt_ref: ANSWER_GENERATION_SYSTEM
+    max_evidence_items: 10
+    require_grounded_answer: true
+    uncertainty_policy: state_uncertainty_when_evidence_is_partial
+templates:
+- name: compound_identity_lookup
+  description: Look up a compound's identity, SMILES, and role in the paper.
+  applicable_when:
+    query_pattern:
+    - compound_description
+    - what_is_compound_X
+    - structure_of_X
+    required_signals:
+    - compound_reference
+  slots:
+  - compound_id
+  - name
+  - smiles
+  - role
+  - evidence_id
+- name: cross_skill_simple_lookup_table_evidence_list_alias_resolution_to_entity_lookup
+  description: 'Cross-skill promotion: pattern ''simple_lookup_table_evidence_list''
+    from alias_resolution → entity_lookup (7 successes, similarity=0.80)'
+  applicable_when:
+    intent: entity_lookup
+    query_structure: simple_lookup
+    evidence_type: table_evidence
+  not_applicable_when: []
+  slots: []
+  examples: []
+  promoted_from: alias_resolution
+evaluation:
+  metrics:
+  - evidence_recall
+  - citation_accuracy
+  - answer_groundedness
+  pass_criteria:
+    evidence_recall: 0.9
+    answer_groundedness: 0.9
+  regression_cases_ref: eval/entity_lookup_regression.yaml
+evolution:
+  enabled: true
+  mutable_paths:
+  - strategy.retrieval_routing.primary_channels
+  - strategy.retrieval_routing.top_k
+  - strategy.retrieval_routing.boost_weights
+  - strategy.query_rewrite.max_variants
+  - strategy.query_rewrite.diversity_threshold
+  - strategy.query_rewrite.fallback_terms
+  - strategy.evidence_expansion
+  - strategy.assessment
+  - strategy.answer_generation
+  - templates
+  frozen_paths:
+  - name
+  - trigger.intent
+  - interface.input_schema
+  - dependencies.core_modules
+  mutation_policy:
+    allow_prompt_mutation: true
+    allow_policy_mutation: true
+    allow_template_addition: true
+    allow_template_merge: true
+    require_regression_test: true
+    require_human_approval_for:
+    - interface
+    - dependencies
+    - trigger
+  failure_to_patch_mapping:
+    entity_miss:
+      target_paths:
+      - strategy.query_rewrite
+      - strategy.retrieval_routing
+      allowed_operations:
+      - update
+      allowed_fields:
+      - fallback_terms
+      - diversity_threshold
+      - boost_weights
+    alias_miss:
+      target_paths:
+      - strategy.query_rewrite
+      - strategy.retrieval_routing
+      allowed_operations:
+      - update
+      allowed_fields:
+      - fallback_terms
+      - primary_channels
+    local_id_miss:
+      target_paths:
+      - strategy.query_rewrite
+      allowed_operations:
+      - update
+      allowed_fields:
+      - fallback_terms
+      - max_variants
+    routing_error:
+      target_paths:
+      - strategy.retrieval_routing
+      allowed_operations:
+      - update
+      allowed_fields:
+      - primary_channels
+      - top_k
+      - boost_weights
+    evidence_expansion_error:
+      target_paths:
+      - strategy.evidence_expansion
+      - strategy.retrieval_routing
+      allowed_operations:
+      - update
+      allowed_fields:
+      - expand_from_block_neighbors
+      - max_expanded_blocks
+      - top_k
+    planner_error:
+      target_paths:
+      - strategy.query_rewrite
+      allowed_operations:
+      - update
+      allowed_fields:
+      - diversity_threshold
+    assessment_false_negative:
+      target_paths:
+      - strategy.assessment
+      allowed_operations:
+      - update
+      allowed_fields:
+      - system_prompt_ref
+      - require_numeric_extraction
+      - failure_labels
+    table_reasoning_error:
+      target_paths:
+      - strategy.assessment
+      - strategy.answer_generation
+      allowed_operations:
+      - update
+      allowed_fields:
+      - system_prompt_ref
+      - max_evidence_items
+    generation_error:
+      target_paths:
+      - strategy.answer_generation
+      allowed_operations:
+      - update
+      allowed_fields:
+      - system_prompt_ref
+      - max_evidence_items
+    unknown_failure:
+      target_paths: []
+      allowed_operations: []
+safety:
+  elementkg_modification: forbidden
+  max_patches_per_round: 2
+  consecutive_fail_limit: 3
+  patch_confidence_threshold: 0.75
+  uncertain_patch_queue: true
+  schema_validation:
+    before_patch: true
+    after_patch: true
+    reject_on_schema_error: true
+  semantic_invariants:
+  - skill_name_matches_filename
+  - trigger_intent_matches_skill_name
+  - all_prompt_refs_exist
+  - all_mutable_paths_exist
+  - no_frozen_path_modified
+  risk_policy:
+    low:
+      allow_auto_promote_after_regression: true
+    medium:
+      require_regression_pass: true
+      require_composition_validation: true
+    high:
+      require_human_approval: true
+  rollback:
+    snapshot_before_apply: true
+    rollback_on_score_drop: true
+    rollback_scope: last_promoted_patch_batch
+cases:
+  representative:
+  - query: Which pain reliever compound is listed?
+    intent: entity_lookup
+    expected_answer: Aspirin (acetylsalicylic acid) is listed.
+    outcome: success
+  external_case_refs:
+    regression_cases: eval/entity_lookup_regression.yaml
+provenance:
+  created_from:
+  - manual_seed
+  last_modified_by: manual_seed
+  last_modified_reason: Initial seed.
+changelog:
+- version: 1.0.0
+  round: initial
+  change_type: seed
+  reason: Initial skill definition.
+  affected_paths: []

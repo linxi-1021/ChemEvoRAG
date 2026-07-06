@@ -1,0 +1,10 @@
+{
+  "patch_id": "answer_generation_system_v2_prompt_content",
+  "passed": false,
+  "average_score": 0.8372881355932206,
+  "score_delta": -0.028813559322033888,
+  "targeted_improvement": 0.1545454545454545,
+  "errors": [
+    "Regression failed: Score dropped by 0.0288 (max allowed: 0.0200); 6 new high-severity failure(s) detected"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "patch_id": "",
+  "passed": false,
+  "average_score": 0.85,
+  "score_delta": -0.016101694915254483,
+  "targeted_improvement": 0.029545454545454652,
+  "errors": [
+    "Regression failed: Targeted improvement 0.0295 below minimum 0.05"
+  ]
+}

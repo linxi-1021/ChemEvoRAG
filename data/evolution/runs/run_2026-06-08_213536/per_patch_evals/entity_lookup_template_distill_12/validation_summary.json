@@ -1,0 +1,10 @@
+{
+  "patch_id": "entity_lookup_template_distill_12",
+  "passed": false,
+  "average_score": 0.8838983050847461,
+  "score_delta": 0.017796610169491633,
+  "targeted_improvement": 0.0,
+  "errors": [
+    "Regression failed: Failed cases increased by 8 (max allowed: 1); 3 new high-severity failure(s) detected"
+  ]
+}

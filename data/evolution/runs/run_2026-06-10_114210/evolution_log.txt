@@ -1,0 +1,42 @@
+Run directory: D:\Desktop\evo\ChemEvoRAG_Phase1-main\data\evolution\runs\run_2026-06-10_114210
+Trace report: 5 failures, 26 partial, 86 success
+Generated 10 candidate patches
+
+[LLM Analysis] Processing cluster: assessment_false_negative__strategy.assessment__evidence_assessment
+  Failure type: assessment_false_negative, Prompt role: evidence_assessment
+  Affected skills: ['entity_lookup', 'reaction_comparison', 'reaction_condition_query']
+  Cluster size: 4
+  Stage 2: Running LLM failure analysis...
+  Primary failure type: assessment_false_negative
+  Root causes: 4
+  Should generate patch: True
+  Risk level: medium
+  Recommended change: prompt (priority: primary)
+  Recommended change: retrieval_routing (priority: secondary)
+  Recommended change: evidence_expansion (priority: secondary)
+  Stage 3: Generating V2 prompt (EVIDENCE_ASSESSMENT_SYSTEM_V2)...
+  V2 prompt generated: ['Preserved V1 grounding constraints, table parsing rules, and reasoning style', 'Added fragmented table handling rule: instructs LLM to infer table structure from context and consider partial table data sufficient for comparison/optimization questions', 'Added compound alias resolution rule: instructs LLM to check all evidence items for compound aliases, SMILES, and cross-reference with molecule evidence', 'Added explicit instruction to not require exact label in table if compound is identified elsewhere']
+  Generated 11 patches
+
+[LLM Analysis] Total LLM-driven patches: 11
+Total patches after LLM analysis: 21
+Schema validation: 21 accepted, 0 rejected
+Regression limit: 10 randomly sampled questions per regression eval
+Regression seed: 42
+[1/21] Validating reaction_condition_query_round1_patch1
+  Skill:  reaction_condition_query
+  File:   config/skills/reaction_condition_query.yaml
+  Op:     update @ strategy.assessment
+  Before: {"system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM"}
+  After:  {"system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_V2"}
+
+FATAL ERROR: name 'RegressionResult' is not defined
+Traceback (most recent call last):
+  File "D:\Desktop\evo\ChemEvoRAG_Phase1-main\scripts\evolve.py", line 794, in main
+    final_patches = phase_regression_validate(
+  File "D:\Desktop\evo\ChemEvoRAG_Phase1-main\scripts\evolve.py", line 433, in phase_regression_validate
+    result = validate_individual_patch(
+  File "D:\Desktop\evo\ChemEvoRAG_Phase1-main\src\skill_evolution\runtime_validation.py", line 332, in validate_individual_patch
+    avg_after = RegressionResult(
+NameError: name 'RegressionResult' is not defined. Did you mean: 'RegressionRunner'?
+

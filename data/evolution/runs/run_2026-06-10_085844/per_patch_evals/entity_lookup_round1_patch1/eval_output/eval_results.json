@@ -1,0 +1,59 @@
+{
+  "summary": {
+    "total": 1,
+    "average_score": 1.0,
+    "by_intent": {
+      "alias_resolution": 1.0
+    }
+  },
+  "results": [
+    {
+      "id": "q1",
+      "source_paper": "8.pdf",
+      "intent": "alias_resolution",
+      "question": "In this paper, what compound does the label '2a' refer to?",
+      "ground_truth": "2a refers to benzoic acid (the carboxylic acid product obtained from benzyl alcohol 1a).",
+      "system_answer": "The label '2a' refers to benzoic acid (evidence: block_8_0011, block_8_0013, block_8_0020). It is obtained from the aerobic oxidation of benzyl alcohol (1a) under the reported reaction conditions (evidence: block_8_0011, block_8_0020).",
+      "evidence_ids": [
+        "block_8_0011",
+        "block_8_0009",
+        "block_8_0013",
+        "block_8_0010",
+        "block_8_0020",
+        "block_8_0151",
+        "block_8_0073",
+        "block_8_0031"
+      ],
+      "confidence": 0.85,
+      "judge_score": 1.0,
+      "entities_found": [
+        "2a",
+        "1a",
+        "benzoic acid"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies 2a as benzoic acid and mentions it is obtained from benzyl alcohol (1a), matching all key entities and the core fact from the ground truth.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    }
+  ],
+  "metadata": {
+    "sampling": {
+      "mode": "random",
+      "limit": 10,
+      "seed": 42,
+      "selected_question_ids": [
+        "q4",
+        "q4",
+        "q5",
+        "q3",
+        "q4",
+        "q2",
+        "q1",
+        "q4",
+        "q4",
+        "q2"
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "patch_id": "entity_lookup_round1_patch1",
+  "passed": false,
+  "average_score": 0.77,
+  "score_delta": -0.09610169491525444,
+  "targeted_improvement": 0.0,
+  "errors": [
+    "Regression failed: Average score 0.7700 below minimum 0.8; Score dropped by 0.0961 (max allowed: 0.0100); Targeted improvement 0.0000 below minimum 0.05"
+  ]
+}

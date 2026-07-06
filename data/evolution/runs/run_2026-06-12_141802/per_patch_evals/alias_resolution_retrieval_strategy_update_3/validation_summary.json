@@ -1,0 +1,10 @@
+{
+  "patch_id": "alias_resolution_retrieval_strategy_update_3",
+  "passed": false,
+  "average_score": 0.8866666666666667,
+  "score_delta": 0.020564971751412253,
+  "targeted_improvement": -0.4431818181818182,
+  "errors": [
+    "Regression failed: Targeted improvement -0.4432 below minimum 0.05"
+  ]
+}

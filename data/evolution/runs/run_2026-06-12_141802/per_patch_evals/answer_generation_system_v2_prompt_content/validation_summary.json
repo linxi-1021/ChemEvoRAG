@@ -1,0 +1,10 @@
+{
+  "patch_id": "answer_generation_system_v2_prompt_content",
+  "passed": false,
+  "average_score": 0.86,
+  "score_delta": -0.006101694915254474,
+  "targeted_improvement": -0.4431818181818182,
+  "errors": [
+    "Regression failed: Targeted improvement -0.4432 below minimum 0.05"
+  ]
+}

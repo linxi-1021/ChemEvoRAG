@@ -333,7 +333,7 @@
     "block_id": "block_1_0015",
     "doc_id": "1",
     "block_type": "table",
-    "text": "Entry | Solvent | Time [h] | Conv. [%, NMR] | Yield [%, NMR]; 1 | DCM | 48 | 44 | 25; 2 | toluene | 48 | 52 | 21; 3 | THF | 48 | 50 | 19; 4 | DME | 48 | 54 | 22; 5 | DCE | 48 | 75 | 43; 6 | $CH_3CN$ | 39 | 55 | 13; 7 | $CH_3CN/H_2O^{[b]}$ | 39 | 28 | 9; 8 | benzene | 39 | 59 | 20; 9 | DMF | 39 | 23 | 4; 10 | ethyl acetate | 39 | 57 | 21 | [a] Reaction conditions: alcohol (0.2 mmol), TEMPO (0.02 mmol), and Fe(NO3)3. 9H2O (0.02 mmol) in solvent (2 mL) at room temperature. | [b] CH3CN/H2O = 9/1",
+    "text": "| Entry | Solvent | Time [h] | Conv. [%, NMR] | Yield [%, NMR] |\n| --- | --- | --- | --- | --- |\n| 1 | DCM | 48 | 44 | 25 |\n| 2 | toluene | 48 | 52 | 21 |\n| 3 | THF | 48 | 50 | 19 |\n| 4 | DME | 48 | 54 | 22 |\n| 5 | DCE | 48 | 75 | 43 |\n| 6 | $CH_3CN$ | 39 | 55 | 13 |\n| 7 | $CH_3CN/H_2O^{[b]}$ | 39 | 28 | 9 |\n| 8 | benzene | 39 | 59 | 20 |\n| 9 | DMF | 39 | 23 | 4 |\n| 10 | ethyl acetate | 39 | 57 | 21 | | [a] Reaction conditions: alcohol (0.2 mmol), TEMPO (0.02 mmol), and Fe(NO3)3. 9H2O (0.02 mmol) in solvent (2 mL) at room temperature. | [b] CH3CN/H2O = 9/1",
     "page": 3,
     "bbox": [
       78.0,
@@ -355,7 +355,7 @@
     "block_id": "block_1_0016",
     "doc_id": "1",
     "block_type": "table",
-    "text": "Entry | Salts | Time [h] | Conv. [%, NMR] | Yield [%, NMR]; $1^{[b]}$ | $Fe(NO_3)_3 \\cdot 9H_2O$ | 48 | 75 | 43; 2 | $FeCl_36H_2O$ | 24 | 19 | 12; 3 | $Cu(NO_3)_23H_2O^{[29]}$ | 24 | 44 | 33; 4 | $Zn(NO_3)_26H_2O$ | 24 | 10 | 2 | [a] Reaction conditions: alcohol (0.5 mmol), TEMPO (0.05 mmol), salt (0.05 mmol), solvent (3 mL), room temperature. | [b] Reaction conditions: alcohol (0.2 mmol), TEMPO (0.02 mmol), Fe(NO3)3·9 H2O (0.02 mmol), solvent (2 mL), rt.",
+    "text": "| Entry | Salts | Time [h] | Conv. [%, NMR] | Yield [%, NMR] |\n| --- | --- | --- | --- | --- |\n| $1^{[b]}$ | $Fe(NO_3)_3 \\cdot 9H_2O$ | 48 | 75 | 43 |\n| 2 | $FeCl_36H_2O$ | 24 | 19 | 12 |\n| 3 | $Cu(NO_3)_23H_2O^{[29]}$ | 24 | 44 | 33 |\n| 4 | $Zn(NO_3)_26H_2O$ | 24 | 10 | 2 | | [a] Reaction conditions: alcohol (0.5 mmol), TEMPO (0.05 mmol), salt (0.05 mmol), solvent (3 mL), room temperature. | [b] Reaction conditions: alcohol (0.2 mmol), TEMPO (0.02 mmol), Fe(NO3)3·9 H2O (0.02 mmol), solvent (2 mL), rt.",
     "page": 3,
     "bbox": [
       78.0,
@@ -377,7 +377,7 @@
     "block_id": "block_1_0017",
     "doc_id": "1",
     "block_type": "table",
-    "text": "Entry | Additive | Time [h] | Conv. [%, NMR] | Yield [%, NMR]; 1 | $NaNO_{2}$ | 36 | 55 | 35; 2 | $KNO_{2}$ | 36 | 48 | 24; 3 | TBN | 36 | 58 | 24; 4 | $LiCl\\cdot H_{2}O$ | 10 | 95 | 74; 5 | NaCl | 4 | 100 | 72; 6 | KCl | 4.5 | 100 | 81; 7 | RbCl | 3 | 100 | 74; 8 | CsCl | 3 | 100 | 73; 9 | $KF\\cdot 2H_{2}O$ | 25 | 49 | 13; 10 | KBr | 25 | 75 | 50; 11 | KI | 25 | 45 | 20; 12 | $NaCl^{[b]}$ | 5 | 100 | 72 | [a] Reaction conditions: alcohol (0.5 mmol), TEMPO (0.05 mmol), nitrate (0.05 mmol), additive (0.05 mmol), DCE (3 mL), 25 8C. | [b] NaCl (20 mol%) was used.",
+    "text": "| Entry | Additive | Time [h] | Conv. [%, NMR] | Yield [%, NMR] |\n| --- | --- | --- | --- | --- |\n| 1 | $NaNO_{2}$ | 36 | 55 | 35 |\n| 2 | $KNO_{2}$ | 36 | 48 | 24 |\n| 3 | TBN | 36 | 58 | 24 |\n| 4 | $LiCl\\cdot H_{2}O$ | 10 | 95 | 74 |\n| 5 | NaCl | 4 | 100 | 72 |\n| 6 | KCl | 4.5 | 100 | 81 |\n| 7 | RbCl | 3 | 100 | 74 |\n| 8 | CsCl | 3 | 100 | 73 |\n| 9 | $KF\\cdot 2H_{2}O$ | 25 | 49 | 13 |\n| 10 | KBr | 25 | 75 | 50 |\n| 11 | KI | 25 | 45 | 20 |\n| 12 | $NaCl^{[b]}$ | 5 | 100 | 72 | | [a] Reaction conditions: alcohol (0.5 mmol), TEMPO (0.05 mmol), nitrate (0.05 mmol), additive (0.05 mmol), DCE (3 mL), 25 8C. | [b] NaCl (20 mol%) was used.",
     "page": 3,
     "bbox": [
       505.0,
@@ -905,7 +905,7 @@
     "block_id": "block_1_0041",
     "doc_id": "1",
     "block_type": "table",
-    "text": "| DCE,  $O_2$  (1 atm), r.t.; Etry | TEMPO(equiv.) | NaCl(equiv.) | Time[h] | Conv. (yield)[%]; $1^{[a]}$ | 0 | 0.1 | 26 | 2 (1); 2 | 2.5 | 0 | 10 | 1 (0); 3 | 2.5 | 1 | 10 | 0 (0); $4^{[b]}$ | 2.5 | 1 | 10 | 1 (0) | Table 4. Control experiments for the aerobic oxidation of 1- phenylethanol. | [a] 0.05 equiv. of | \\mathrm { F e } ( \\mathrm { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 | H2O was added. | 3 3[b] 1.0 equiv. of NaNO3 was added instead of | \\mathrm { F e } ( \\mathrm { N } { \\bf \\bar { O } } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } \\mathrm { O } .",
+    "text": "|  | DCE,  $O_2$  (1 atm), r.t. |\n| --- | --- |\n| Etry | TEMPO(equiv.) | NaCl(equiv.) | Time[h] | Conv. (yield)[%] |\n| $1^{[a]}$ | 0 | 0.1 | 26 | 2 (1) |\n| 2 | 2.5 | 0 | 10 | 1 (0) |\n| 3 | 2.5 | 1 | 10 | 0 (0) |\n| $4^{[b]}$ | 2.5 | 1 | 10 | 1 (0) | | Table 4. Control experiments for the aerobic oxidation of 1- phenylethanol. | [a] 0.05 equiv. of | \\mathrm { F e } ( \\mathrm { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 | H2O was added. | 3 3[b] 1.0 equiv. of NaNO3 was added instead of | \\mathrm { F e } ( \\mathrm { N } { \\bf \\bar { O } } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } \\mathrm { O } .",
     "page": 6,
     "bbox": [
       505.0,

@@ -1,0 +1,10 @@
+{
+  "patch_id": "reaction_comparison_template_distill_9",
+  "passed": false,
+  "average_score": 0.7898305084745766,
+  "score_delta": -0.07627118644067787,
+  "targeted_improvement": 0.0,
+  "errors": [
+    "Regression failed: Average score 0.7898 below minimum 0.8; Score dropped by 0.0763 (max allowed: 0.0100); Failed cases increased by 17 (max allowed: 1); 11 new high-severity failure(s) detected"
+  ]
+}

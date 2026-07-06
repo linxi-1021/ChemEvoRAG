@@ -1,0 +1,299 @@
+schema_version: '1.0'
+name: alias_resolution
+skill_version: 1.0.0
+status: stable
+description: Handles queries about what an abbreviation, code-name, or chemical alias
+  refers to.
+lifecycle:
+  created_at: '2026-06-05'
+  updated_at: '2026-06-05'
+  owner: EVOChemRAG
+trigger:
+  intent: alias_resolution
+  confidence_threshold: 0.7
+  aliases:
+  - abbreviation_query
+  - name_resolution
+  required_signals:
+  - alias_or_abbreviation_term
+  negative_intents:
+  - property_query
+  - reaction_condition_query
+scope:
+  supported_properties:
+  - canonical_name
+  - iupac_name
+  - smiles
+  - inchikey
+  - pubchem_id
+  domain_constraints:
+  - chemistry abbreviations and compound aliases
+dependencies:
+  prompts:
+  - EVIDENCE_ASSESSMENT_SYSTEM
+  - ANSWER_GENERATION_SYSTEM
+  indexes:
+  - entity_search
+  - elementkg_search
+  - lexical_search
+  - dense_search
+  - structure_search
+  validators:
+  - citation_validator
+  core_modules:
+  - ElementKG
+interface:
+  input_schema:
+    required:
+    - query
+    - intent
+    optional:
+    - resolved_entities
+    - document_context
+  output_schema:
+    required:
+    - answer
+    - evidence_items
+    - confidence
+    optional:
+    - extracted_values
+    - uncertainty_notes
+strategy:
+  retrieval_routing:
+    primary_channels:
+    - entity_search
+    - elementkg_search
+    - lexical_search
+    top_k:
+      entity_search: 10
+      elementkg_search: 5
+      lexical_search: 8
+      final_rerank: 10
+    boost_weights:
+      molecule_evidence:
+        weight: 5.0
+        rationale: Alias resolution is about identifying chemical entities.
+      entity_exact_match:
+        weight: 3.0
+        rationale: Exact name/alias match is strongest signal.
+  query_rewrite:
+    enabled: true
+    max_variants: 2
+    diversity_threshold: 0.8
+    preserve_original_query: true
+    fallback_terms:
+    - canonical name
+    - IUPAC
+    - abbreviation
+    - refers to
+  evidence_expansion:
+    enabled: true
+    expand_from_block_neighbors: true
+    expand_from_molecule_mentions: true
+    max_expanded_blocks: 3
+  assessment:
+    system_prompt_ref: EVIDENCE_ASSESSMENT_SYSTEM
+    require_numeric_extraction: false
+    require_citation_check: false
+    failure_labels:
+    - insufficient_evidence
+    - entity_miss
+    - alias_miss
+  answer_generation:
+    system_prompt_ref: ANSWER_GENERATION_SYSTEM
+    max_evidence_items: 10
+    require_grounded_answer: true
+    uncertainty_policy: state_uncertainty_when_evidence_is_partial
+templates:
+- name: abbreviation_resolution
+  description: Resolve a chemical abbreviation or code-name to its full chemical name.
+  applicable_when:
+    query_pattern:
+    - what_is_X
+    - X_refers_to
+    - X_stands_for
+    required_signals:
+    - alias_term
+  slots:
+  - alias
+  - canonical_name
+  - smiles
+  - inchikey
+  - evidence_id
+- name: distilled_simple_lookup_text_evidence_list_alias_resolution
+  description: Auto-distilled from 3 successful queries with structure 'simple_lookup_text_evidence_list'
+    in alias_resolution.
+  applicable_when:
+    intent: alias_resolution
+    query_structure: simple_lookup
+    evidence_type: text_evidence
+  not_applicable_when: []
+  slots: []
+  examples: []
+evaluation:
+  metrics:
+  - evidence_recall
+  - citation_accuracy
+  - answer_groundedness
+  pass_criteria:
+    evidence_recall: 0.95
+    answer_groundedness: 0.9
+  regression_cases_ref: eval/alias_resolution_regression.yaml
+evolution:
+  enabled: true
+  mutable_paths:
+  - strategy.retrieval_routing.primary_channels
+  - strategy.retrieval_routing.top_k
+  - strategy.retrieval_routing.boost_weights
+  - strategy.query_rewrite.max_variants
+  - strategy.query_rewrite.diversity_threshold
+  - strategy.query_rewrite.fallback_terms
+  - strategy.evidence_expansion
+  - strategy.assessment
+  - strategy.answer_generation
+  - templates
+  frozen_paths:
+  - name
+  - trigger.intent
+  - interface.input_schema
+  - dependencies.core_modules
+  mutation_policy:
+    allow_prompt_mutation: true
+    allow_policy_mutation: true
+    allow_template_addition: true
+    allow_template_merge: true
+    require_regression_test: true
+    require_human_approval_for:
+    - interface
+    - dependencies
+    - trigger
+  failure_to_patch_mapping:
+    entity_miss:
+      target_paths:
+      - strategy.query_rewrite
+      - strategy.retrieval_routing
+      allowed_operations:
+      - update
+      allowed_fields:
+      - fallback_terms
+      - diversity_threshold
+      - boost_weights
+    alias_miss:
+      target_paths:
+      - strategy.query_rewrite
+      - strategy.retrieval_routing
+      allowed_operations:
+      - update
+      allowed_fields:
+      - fallback_terms
+      - primary_channels
+    local_id_miss:
+      target_paths:
+      - strategy.query_rewrite
+      allowed_operations:
+      - update
+      allowed_fields:
+      - fallback_terms
+      - max_variants
+    routing_error:
+      target_paths:
+      - strategy.retrieval_routing
+      allowed_operations:
+      - update
+      allowed_fields:
+      - primary_channels
+      - top_k
+      - boost_weights
+    evidence_expansion_error:
+      target_paths:
+      - strategy.evidence_expansion
+      - strategy.retrieval_routing
+      allowed_operations:
+      - update
+      allowed_fields:
+      - expand_from_block_neighbors
+      - max_expanded_blocks
+      - top_k
+    planner_error:
+      target_paths:
+      - strategy.query_rewrite
+      allowed_operations:
+      - update
+      allowed_fields:
+      - diversity_threshold
+    assessment_false_negative:
+      target_paths:
+      - strategy.assessment
+      allowed_operations:
+      - update
+      allowed_fields:
+      - system_prompt_ref
+      - require_numeric_extraction
+      - failure_labels
+    table_reasoning_error:
+      target_paths:
+      - strategy.assessment
+      - strategy.answer_generation
+      allowed_operations:
+      - update
+      allowed_fields:
+      - system_prompt_ref
+      - max_evidence_items
+    generation_error:
+      target_paths:
+      - strategy.answer_generation
+      allowed_operations:
+      - update
+      allowed_fields:
+      - system_prompt_ref
+      - max_evidence_items
+    unknown_failure:
+      target_paths: []
+      allowed_operations: []
+safety:
+  elementkg_modification: forbidden
+  max_patches_per_round: 2
+  consecutive_fail_limit: 3
+  patch_confidence_threshold: 0.75
+  uncertain_patch_queue: true
+  schema_validation:
+    before_patch: true
+    after_patch: true
+    reject_on_schema_error: true
+  semantic_invariants:
+  - skill_name_matches_filename
+  - trigger_intent_matches_skill_name
+  - all_prompt_refs_exist
+  - all_mutable_paths_exist
+  - no_frozen_path_modified
+  risk_policy:
+    low:
+      allow_auto_promote_after_regression: true
+    medium:
+      require_regression_pass: true
+      require_composition_validation: true
+    high:
+      require_human_approval: true
+  rollback:
+    snapshot_before_apply: true
+    rollback_on_score_drop: true
+    rollback_scope: last_promoted_patch_batch
+cases:
+  representative:
+  - query: What is DCHA?
+    intent: alias_resolution
+    expected_answer: DCHA refers to dicyclohexylamine.
+    outcome: success
+  external_case_refs:
+    regression_cases: eval/alias_resolution_regression.yaml
+provenance:
+  created_from:
+  - manual_seed
+  last_modified_by: manual_seed
+  last_modified_reason: Initial seed.
+changelog:
+- version: 1.0.0
+  round: initial
+  change_type: seed
+  reason: Initial skill definition.
+  affected_paths: []

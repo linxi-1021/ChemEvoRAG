@@ -1,0 +1,338 @@
+schema_version: '1.0'
+name: property_query
+skill_version: 1.0.0
+status: stable
+description: Handles compound-level property queries such as yield, melting point,
+  boiling point, mass, and purity.
+lifecycle:
+  created_at: '2026-06-05'
+  updated_at: '2026-06-05'
+  owner: EVOChemRAG
+trigger:
+  intent: property_query
+  confidence_threshold: 0.7
+  aliases:
+  - property_lookup
+  - compound_property_query
+  required_signals:
+  - property_term
+  negative_intents:
+  - mechanism_query
+  - synthesis_route_query
+scope:
+  supported_properties:
+  - isolated_yield
+  - melting_point
+  - boiling_point
+  - mass
+  - purity
+  supported_units:
+  - '%'
+  - C
+  - mg
+  - g
+  unsupported_properties:
+  - biological_activity
+  - computational_energy
+  domain_constraints:
+  - experimental chemistry literature
+dependencies:
+  prompts:
+  - EVIDENCE_ASSESSMENT_SYSTEM
+  - ANSWER_GENERATION_SYSTEM
+  indexes:
+  - entity_search
+  - lexical_search
+  - reaction_event_search
+  - dense_search
+  - structure_search
+  - elementkg_search
+  validators:
+  - numeric_extraction_validator
+  - citation_validator
+  core_modules:
+  - ElementKG
+interface:
+  input_schema:
+    required:
+    - query
+    - intent
+    optional:
+    - resolved_entities
+    - document_context
+  output_schema:
+    required:
+    - answer
+    - evidence_items
+    - confidence
+    optional:
+    - extracted_values
+    - uncertainty_notes
+strategy:
+  retrieval_routing:
+    primary_channels:
+    - entity_search
+    - lexical_search
+    - reaction_event_search
+    top_k:
+      entity_search: 8
+      lexical_search: 10
+      reaction_event_search: 12
+      final_rerank: 15
+    boost_weights:
+      table_block:
+        weight: 5.0
+        rationale: Property values often appear in tables.
+      numeric_match:
+        weight: 1.5
+        rationale: Property queries require numeric evidence.
+      molecule_evidence:
+        weight: 2.0
+        rationale: Compound-level evidence should be prioritized.
+  query_rewrite:
+    enabled: true
+    max_variants: 3
+    diversity_threshold: 0.8
+    preserve_original_query: true
+    fallback_terms:
+    - experimental
+    - characterization
+    - physical properties
+    - isolated
+  evidence_expansion:
+    enabled: true
+    expand_from_block_neighbors: true
+    expand_from_molecule_mentions: true
+    max_expanded_blocks: 5
+  assessment:
+    system_prompt_ref: EVIDENCE_ASSESSMENT_SYSTEM
+    require_numeric_extraction: true
+    require_citation_check: true
+    failure_labels:
+    - insufficient_evidence
+    - numeric_conflict
+    - compound_mismatch
+    - assessment_false_negative
+  answer_generation:
+    system_prompt_ref: ANSWER_GENERATION_SYSTEM
+    max_evidence_items: 15
+    require_grounded_answer: true
+    uncertainty_policy: state_uncertainty_when_evidence_is_partial
+templates:
+- name: yield_extraction
+  description: Extract isolated yield from experimental sections or tables.
+  applicable_when:
+    property_name:
+    - isolated_yield
+    - yield
+    evidence_type:
+    - experimental_block
+    - reaction_table
+    required_signals:
+    - compound_or_entry_id
+    - numeric_percent_value
+  not_applicable_when:
+  - query asks for reaction condition without specifying yield
+  - evidence has multiple conflicting yields without compound mapping
+  slots:
+  - compound_id
+  - yield_value
+  - unit
+  - evidence_id
+- name: melting_point_extraction
+  description: Extract melting point or boiling point from characterization data.
+  applicable_when:
+    property_name:
+    - melting_point
+    - boiling_point
+    evidence_type:
+    - characterization_block
+    - property_table
+  not_applicable_when:
+  - evidence contains only yield data, no mp/bp
+- name: cross_skill_property_extraction_table_evidence_list_reaction_condition_query_to_property_query
+  description: 'Cross-skill promotion: pattern ''property_extraction_table_evidence_list''
+    from reaction_condition_query → property_query (6 successes, similarity=0.80)'
+  applicable_when:
+    intent: property_query
+    query_structure: property_extraction
+    evidence_type: table_evidence
+  not_applicable_when: []
+  slots: []
+  examples: []
+  promoted_from: reaction_condition_query
+evaluation:
+  metrics:
+  - numeric_exact_match
+  - evidence_recall
+  - citation_accuracy
+  - answer_groundedness
+  pass_criteria:
+    numeric_exact_match: 0.9
+    citation_accuracy: 0.95
+    answer_groundedness: 0.95
+  regression_cases_ref: eval/property_query_regression.yaml
+evolution:
+  enabled: true
+  mutable_paths:
+  - strategy.retrieval_routing.primary_channels
+  - strategy.retrieval_routing.top_k
+  - strategy.retrieval_routing.boost_weights
+  - strategy.query_rewrite.max_variants
+  - strategy.query_rewrite.diversity_threshold
+  - strategy.query_rewrite.fallback_terms
+  - strategy.evidence_expansion
+  - strategy.assessment
+  - strategy.answer_generation
+  - templates
+  frozen_paths:
+  - name
+  - trigger.intent
+  - interface.input_schema
+  - dependencies.core_modules
+  mutation_policy:
+    allow_prompt_mutation: true
+    allow_policy_mutation: true
+    allow_template_addition: true
+    allow_template_merge: true
+    require_regression_test: true
+    require_human_approval_for:
+    - interface
+    - dependencies
+    - trigger
+  failure_to_patch_mapping:
+    entity_miss:
+      target_paths:
+      - strategy.query_rewrite
+      - strategy.retrieval_routing
+      allowed_operations:
+      - update
+      allowed_fields:
+      - fallback_terms
+      - diversity_threshold
+      - boost_weights
+    alias_miss:
+      target_paths:
+      - strategy.query_rewrite
+      - strategy.retrieval_routing
+      allowed_operations:
+      - update
+      allowed_fields:
+      - fallback_terms
+      - primary_channels
+    local_id_miss:
+      target_paths:
+      - strategy.query_rewrite
+      allowed_operations:
+      - update
+      allowed_fields:
+      - fallback_terms
+      - max_variants
+    routing_error:
+      target_paths:
+      - strategy.retrieval_routing
+      allowed_operations:
+      - update
+      allowed_fields:
+      - primary_channels
+      - top_k
+      - boost_weights
+    evidence_expansion_error:
+      target_paths:
+      - strategy.evidence_expansion
+      - strategy.retrieval_routing
+      allowed_operations:
+      - update
+      allowed_fields:
+      - expand_from_block_neighbors
+      - max_expanded_blocks
+      - top_k
+    planner_error:
+      target_paths:
+      - strategy.query_rewrite
+      allowed_operations:
+      - update
+      allowed_fields:
+      - diversity_threshold
+    assessment_false_negative:
+      target_paths:
+      - strategy.assessment
+      allowed_operations:
+      - update
+      allowed_fields:
+      - system_prompt_ref
+      - require_numeric_extraction
+      - failure_labels
+    table_reasoning_error:
+      target_paths:
+      - strategy.assessment
+      - strategy.answer_generation
+      allowed_operations:
+      - update
+      allowed_fields:
+      - system_prompt_ref
+      - max_evidence_items
+    generation_error:
+      target_paths:
+      - strategy.answer_generation
+      allowed_operations:
+      - update
+      allowed_fields:
+      - system_prompt_ref
+      - max_evidence_items
+    unknown_failure:
+      target_paths: []
+      allowed_operations: []
+safety:
+  elementkg_modification: forbidden
+  max_patches_per_round: 2
+  consecutive_fail_limit: 3
+  patch_confidence_threshold: 0.75
+  uncertain_patch_queue: true
+  schema_validation:
+    before_patch: true
+    after_patch: true
+    reject_on_schema_error: true
+  semantic_invariants:
+  - skill_name_matches_filename
+  - trigger_intent_matches_skill_name
+  - all_prompt_refs_exist
+  - all_mutable_paths_exist
+  - no_frozen_path_modified
+  risk_policy:
+    low:
+      allow_auto_promote_after_regression: true
+    medium:
+      require_regression_pass: true
+      require_composition_validation: true
+    high:
+      require_human_approval: true
+  rollback:
+    snapshot_before_apply: true
+    rollback_on_score_drop: true
+    rollback_scope: last_promoted_patch_batch
+cases:
+  representative:
+  - query: What melting point is reported for compound 2b?
+    intent: property_query
+    expected_answer: mp 179.9-181.2 C
+    outcome: success
+  - query: What isolated yield was reported for 2a?
+    intent: property_query
+    expected_answer: 95% yield
+    outcome: success
+  external_case_refs:
+    success_cases: cases/property_query_success.yaml
+    failure_cases: cases/property_query_failures.yaml
+    regression_cases: eval/property_query_regression.yaml
+provenance:
+  created_from:
+  - manual_seed
+  last_modified_by: manual_seed
+  last_modified_reason: Initial seed based on architecture spec.
+changelog:
+- version: 1.0.0
+  round: initial
+  change_type: seed
+  reason: Initial skill definition.
+  affected_paths: []

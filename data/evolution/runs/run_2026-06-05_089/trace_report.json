@@ -1,0 +1,1333 @@
+{
+  "run_id": "run_2026-06-05_1857",
+  "generated_at": "2026-06-05T18:57:55.821855",
+  "skill_snapshot": {},
+  "environment": {
+    "model_name": "",
+    "temperature": 0.1,
+    "embedding_model": "all-MiniLM-L6-v2",
+    "retriever_version": "",
+    "prompt_registry_version": "1.0",
+    "corpus_snapshot_id": "",
+    "eval_dataset_version": "v1_118qs",
+    "random_seed": 42
+  },
+  "total_questions": 118,
+  "average_score": 0.8881355932203393,
+  "by_intent": {
+    "alias_resolution": {
+      "average_score": 0.9159999999999999,
+      "total": 25,
+      "success": 21,
+      "partial_success": 4,
+      "system_failure": 0,
+      "coverage_gap": 0
+    },
+    "entity_lookup": {
+      "average_score": 0.8826086956521739,
+      "total": 23,
+      "success": 19,
+      "partial_success": 2,
+      "system_failure": 2,
+      "coverage_gap": 0
+    },
+    "reaction_condition_query": {
+      "average_score": 0.9083333333333333,
+      "total": 24,
+      "success": 17,
+      "partial_success": 7,
+      "system_failure": 0,
+      "coverage_gap": 0
+    },
+    "reaction_comparison": {
+      "average_score": 0.8695652173913043,
+      "total": 23,
+      "success": 16,
+      "partial_success": 6,
+      "system_failure": 1,
+      "coverage_gap": 0
+    },
+    "property_query": {
+      "average_score": 0.8608695652173913,
+      "total": 23,
+      "success": 17,
+      "partial_success": 5,
+      "system_failure": 1,
+      "coverage_gap": 0
+    }
+  },
+  "failures": [
+    {
+      "question_id": "q2",
+      "intent": "entity_lookup",
+      "skill_name": "entity_lookup",
+      "skill_version": "1.0.0",
+      "score": 0.0,
+      "outcome_type": "system_failure",
+      "primary_failure_type": "unknown_failure",
+      "contributing_failure_types": [],
+      "attribution_source": "rule",
+      "attribution_confidence": 0.3,
+      "attribution_explanation": "No rule matched. Manual review recommended.",
+      "evidence_contained_answer": false,
+      "corpus_contained_answer": null,
+      "gold_answer": "Iron(III) nitrate nonahydrate, formula Fe(NO3)3·9H2O (used as the iron catalyst in the reported oxidations).",
+      "predicted_answer": "Retrieved molecule identity evidence: In conclusion, we have developed a mild and ecofriendly protocol for the aerobic oxidation of allylic alcohols using Fe(NO3)3 9H2O/TEMPO/NaCl as catalyst in DCE t",
+      "retrieval_path": [],
+      "retrieved_evidence_ids": [
+        "block_3_0020",
+        "block_3_0005",
+        "block_3_0010",
+        "block_3_0009",
+        "block_3_0008",
+        "block_3_0017",
+        "block_3_0013",
+        "mol_3_0000"
+      ],
+      "gold_evidence_ids": [],
+      "cited_evidence_ids": [],
+      "react_rounds_used": 1,
+      "stop_reason": "evidence_sufficient",
+      "proposed_patch_targets": [],
+      "evolution_action": "manual_review"
+    },
+    {
+      "question_id": "q5",
+      "intent": "property_query",
+      "skill_name": "property_query",
+      "skill_version": "1.0.0",
+      "score": 0.0,
+      "outcome_type": "system_failure",
+      "primary_failure_type": "unknown_failure",
+      "contributing_failure_types": [],
+      "attribution_source": "rule",
+      "attribution_confidence": 0.3,
+      "attribution_explanation": "No rule matched. Manual review recommended.",
+      "evidence_contained_answer": false,
+      "corpus_contained_answer": null,
+      "gold_answer": "Mp 179.9–181.2 °C (reported for 4-methoxybenzoic acid, 2b; EtOAc/petroleum ether).",
+      "predicted_answer": "No melting point for 4-methoxybenzoic acid (2b) is reported in the provided Experimental-section evidence. The Experimental entry for 2b gives only the isolated mass and yield, 57.6 mg and 38%, plus t",
+      "retrieval_path": [],
+      "retrieved_evidence_ids": [
+        "block_8_0009",
+        "block_8_0011",
+        "block_8_0010",
+        "block_8_0013",
+        "block_8_0018",
+        "block_8_0020",
+        "block_8_0031",
+        "block_8_0045",
+        "block_8_0059",
+        "block_8_0073",
+        "block_8_0107"
+      ],
+      "gold_evidence_ids": [],
+      "cited_evidence_ids": [],
+      "react_rounds_used": 3,
+      "stop_reason": "max_rounds_exhausted",
+      "proposed_patch_targets": [],
+      "evolution_action": "manual_review"
+    },
+    {
+      "question_id": "q4",
+      "intent": "reaction_comparison",
+      "skill_name": "reaction_comparison",
+      "skill_version": "1.0.0",
+      "score": 0.0,
+      "outcome_type": "system_failure",
+      "primary_failure_type": "table_reasoning_error",
+      "contributing_failure_types": [],
+      "attribution_source": "rule",
+      "attribution_confidence": 0.75,
+      "attribution_explanation": "Table data present in evidence but LLM failed to interpret correctly.",
+      "evidence_contained_answer": true,
+      "corpus_contained_answer": null,
+      "gold_answer": "Product 2c gave the higher yield (2c: 100% vs. 2k: 71%).",
+      "predicted_answer": "Product 2k was obtained in the higher yield under the authors’ standard conditions (evidence: block_12_0025). The scope description says the heteroaromatic derivatives 2j and 2k were accessible, and 2",
+      "retrieval_path": [],
+      "retrieved_evidence_ids": [
+        "block_12_0029",
+        "block_12_0023",
+        "block_12_0030",
+        "block_12_0022",
+        "block_12_0013",
+        "block_12_0027",
+        "block_12_0026",
+        "block_12_0025",
+        "block_12_0020",
+        "block_12_0034",
+        "block_12_0043"
+      ],
+      "gold_evidence_ids": [],
+      "cited_evidence_ids": [],
+      "react_rounds_used": 3,
+      "stop_reason": "max_rounds_exhausted",
+      "proposed_patch_targets": [
+        "strategy.assessment",
+        "strategy.answer_generation"
+      ],
+      "evolution_action": "generate_patch_candidate"
+    },
+    {
+      "question_id": "q_batch2_2",
+      "intent": "entity_lookup",
+      "skill_name": "entity_lookup",
+      "skill_version": "1.0.0",
+      "score": 0.0,
+      "outcome_type": "system_failure",
+      "primary_failure_type": "unknown_failure",
+      "contributing_failure_types": [],
+      "attribution_source": "rule",
+      "attribution_confidence": 0.3,
+      "attribution_explanation": "No rule matched. Manual review recommended.",
+      "evidence_contained_answer": false,
+      "corpus_contained_answer": null,
+      "gold_answer": "EtO2C(CH2)5COOMe — i.e., EtO2C–(CH2)5–COOCH3 (an ethyl ester at one end and a methyl ester at the other).",
+      "predicted_answer": "Compound 6oe is printed as methyl 6-ethoxyhexanoate on the page (evidence: block_15-SI_0062). The accompanying analytical data are consistent with that structure, including formula C9H18O3 from the HR",
+      "retrieval_path": [],
+      "retrieved_evidence_ids": [
+        "mol_15-SI_0033",
+        "mol_15-SI_0035",
+        "block_15-SI_0063",
+        "block_15-SI_0137",
+        "block_15-SI_0031",
+        "block_15-SI_0035",
+        "block_15-SI_0041",
+        "block_15-SI_0065",
+        "block_15-SI_0092",
+        "block_15-SI_0103",
+        "block_15-SI_0099",
+        "block_15-SI_0062",
+        "block_15-SI_0045",
+        "block_15-SI_0047"
+      ],
+      "gold_evidence_ids": [],
+      "cited_evidence_ids": [],
+      "react_rounds_used": 3,
+      "stop_reason": "max_rounds_exhausted",
+      "proposed_patch_targets": [],
+      "evolution_action": "manual_review"
+    }
+  ],
+  "partial_successes": [
+    {
+      "question_id": "q4",
+      "intent": "reaction_comparison",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q5",
+      "intent": "property_query",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q5",
+      "intent": "property_query",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q3",
+      "intent": "reaction_condition_query",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "Local compound ID mapping failed.",
+      "primary_failure_type": "local_id_miss",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q4",
+      "intent": "reaction_comparison",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q5",
+      "intent": "property_query",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q3",
+      "intent": "reaction_condition_query",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q4",
+      "intent": "reaction_comparison",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q5",
+      "intent": "property_query",
+      "score": 0.5,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q3",
+      "intent": "reaction_condition_query",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "Abbreviation/alias not expanded to full chemical name.",
+      "primary_failure_type": "alias_miss",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q5",
+      "intent": "property_query",
+      "score": 0.3,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "uncertain_queue"
+    },
+    {
+      "question_id": "q4",
+      "intent": "reaction_comparison",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q3",
+      "intent": "reaction_condition_query",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q_batch1_1",
+      "intent": "alias_resolution",
+      "score": 0.3,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "uncertain_queue"
+    },
+    {
+      "question_id": "q_batch1_2",
+      "intent": "reaction_condition_query",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q_batch3_1",
+      "intent": "alias_resolution",
+      "score": 0.3,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "uncertain_queue"
+    },
+    {
+      "question_id": "q2",
+      "intent": "entity_lookup",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q4",
+      "intent": "reaction_comparison",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q2",
+      "intent": "entity_lookup",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q3",
+      "intent": "reaction_condition_query",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q3",
+      "intent": "reaction_condition_query",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q1",
+      "intent": "alias_resolution",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q1",
+      "intent": "alias_resolution",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q4",
+      "intent": "reaction_comparison",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    }
+  ],
+  "coverage_gaps": [],
+  "success_patterns": [
+    {
+      "intent": "alias_resolution",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q3"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "score_0.9",
+      "frequency": 1,
+      "avg_score": 0.9,
+      "supporting_question_ids": [
+        "q2"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q3"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_comparison",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q4"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "property_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "score_0.9",
+      "frequency": 1,
+      "avg_score": 0.9,
+      "supporting_question_ids": [
+        "q1"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q3"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_comparison",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q4"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "score_0.9",
+      "frequency": 1,
+      "avg_score": 0.9,
+      "supporting_question_ids": [
+        "q3"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_comparison",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q4"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "property_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "property_query",
+      "pattern": "score_0.9",
+      "frequency": 1,
+      "avg_score": 0.9,
+      "supporting_question_ids": [
+        "q5"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q3"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_comparison",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q4"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_comparison",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q4"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q3"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_comparison",
+      "pattern": "score_0.9",
+      "frequency": 1,
+      "avg_score": 0.9,
+      "supporting_question_ids": [
+        "q4"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q3"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_comparison",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q4"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "property_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q3"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "property_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q3"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "property_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_comparison",
+      "pattern": "score_0.9",
+      "frequency": 1,
+      "avg_score": 0.9,
+      "supporting_question_ids": [
+        "q4"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "property_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q3"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_comparison",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q4"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "property_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "property_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q_batch1_3"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q_batch2_1"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_comparison",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q_batch2_3"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q_batch3_2"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q3"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_comparison",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q4"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "property_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q3"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "property_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_comparison",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q4"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "property_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q3"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_comparison",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q4"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "property_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_comparison",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q4"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "property_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q3"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_comparison",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q4"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "property_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q3"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_comparison",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q4"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "property_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q3"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    },
+    {
+      "intent": "property_query",
+      "pattern": "score_1.0",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5"
+      ],
+      "candidate_template_action": "distill_or_refine_template"
+    }
+  ]
+}

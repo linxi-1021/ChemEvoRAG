@@ -135,7 +135,7 @@
     "block_id": "block_7_0006",
     "doc_id": "7",
     "block_type": "table",
-    "text": "RCHO | non-metal catalystadditive,  $O_{2}$ , rt | RCOOH (1); RCHO | Ir or Ru-based photocatalystLED,  $O_{2}$ , rt | RCOOH (2); RCHO | noble metal catalyst(Ag, Ru, Au, Pt, Re, etc.)additive,  $O_{2}$ , 50 - 140 °C | RCOOH (3); RCHO | earth abundant metal catalyst(Cu, Fe, Co, Ni)additive,  $O_{2}$ , rt or 50 °C | RCOOH (4) | Known protocols: | This work:",
+    "text": "| RCHO | non-metal catalystadditive,  $O_{2}$ , rt | RCOOH (1) |\n| --- | --- | --- |\n| RCHO | Ir or Ru-based photocatalystLED,  $O_{2}$ , rt | RCOOH (2) |\n| RCHO | noble metal catalyst(Ag, Ru, Au, Pt, Re, etc.)additive,  $O_{2}$ , 50 - 140 °C | RCOOH (3) |\n| RCHO | earth abundant metal catalyst(Cu, Fe, Co, Ni)additive,  $O_{2}$ , rt or 50 °C | RCOOH (4) | | Known protocols: | This work:",
     "page": 1,
     "bbox": [
       512.0,
@@ -157,7 +157,7 @@
     "block_id": "block_7_0007",
     "doc_id": "7",
     "block_type": "table",
-    "text": "RCHO | $\\xrightarrow[\\text{pure O}_2\\text{ or air flow, MeCN, rt}]{\\text{Fe(NO}_3\\text{)}_3 \\cdot 9\\text{H}_2\\text{O (5 mol\\%)}}$ | RCOOH (5)",
+    "text": "| RCHO | $\\xrightarrow[\\text{pure O}_2\\text{ or air flow, MeCN, rt}]{\\text{Fe(NO}_3\\text{)}_3 \\cdot 9\\text{H}_2\\text{O (5 mol\\%)}}$ | RCOOH (5) |\n| --- | --- | --- |",
     "page": 1,
     "bbox": [
       517.0,
@@ -245,7 +245,7 @@
     "block_id": "block_7_0011",
     "doc_id": "7",
     "block_type": "table",
-    "text": "$n-C_{11}H_{23}CHO$  1a | $\\xrightarrow{Fe(NO_3)_3\\cdot9H_2O (5 mol\\%)} TEMPO, O_2, solvent$  25 °C, 12 h | $n-C_{11}H_{23}COOH + n-C_{11}H_{23}CO_3H$; 2a | 3a; Entry | TEMPO (mol%) | KCl (mol%) | Solventb | Yield of 2ac/% | Yield of 3ac/% | Recovery of 1ac/%; $1^d$ | 10 | 10 | DCE | 95 | — | —; $2^d$ | 10 | 0 | DCE | 81 | — | 14; 3 | 0 | 0 | DCE | 64 | 32 | —; 4 | 1 | 0 | DCE | 26 | — | 74; 5 | 0 | 0 | DCEe | 72 | 28 | —; 6 | 0 | 0 | DCM | 84 | ~7 | —; 7 | 0 | 0 | MeCNe | 94 | — | — | Table 1 Optimization of the aerobic oxidation reaction of aldehyde 1aa | a The reaction was carried out on a 1.0 mmol scale of 1a in 4.0 mL of solvent at | 2 5 \\ ^ { \\circ } \\mathsf { C } | with a bag of O . b The solvents were directly used from commercial suppliers, if not specifically mentioned. c NMR yield. d 10 mol% | \\mathsf { o f } \\mathsf { F e } ( \\mathsf { N O } _ { 3 } ) _ { 3 } { \\cdot } \\mathsf { 9 H } _ { 2 } \\mathsf { O } | was added. e Anhydrous solvent was added.",
+    "text": "| $n-C_{11}H_{23}CHO$  1a | $\\xrightarrow{Fe(NO_3)_3\\cdot9H_2O (5 mol\\%)} TEMPO, O_2, solvent$  25 °C, 12 h | $n-C_{11}H_{23}COOH + n-C_{11}H_{23}CO_3H$ |\n| --- | --- | --- |\n| 2a | 3a |\n| Entry | TEMPO (mol%) | KCl (mol%) | Solventb | Yield of 2ac/% | Yield of 3ac/% | Recovery of 1ac/% |\n| $1^d$ | 10 | 10 | DCE | 95 | — | — |\n| $2^d$ | 10 | 0 | DCE | 81 | — | 14 |\n| 3 | 0 | 0 | DCE | 64 | 32 | — |\n| 4 | 1 | 0 | DCE | 26 | — | 74 |\n| 5 | 0 | 0 | DCEe | 72 | 28 | — |\n| 6 | 0 | 0 | DCM | 84 | ~7 | — |\n| 7 | 0 | 0 | MeCNe | 94 | — | — | | Table 1 Optimization of the aerobic oxidation reaction of aldehyde 1aa | a The reaction was carried out on a 1.0 mmol scale of 1a in 4.0 mL of solvent at | 2 5 \\ ^ { \\circ } \\mathsf { C } | with a bag of O . b The solvents were directly used from commercial suppliers, if not specifically mentioned. c NMR yield. d 10 mol% | \\mathsf { o f } \\mathsf { F e } ( \\mathsf { N O } _ { 3 } ) _ { 3 } { \\cdot } \\mathsf { 9 H } _ { 2 } \\mathsf { O } | was added. e Anhydrous solvent was added.",
     "page": 2,
     "bbox": [
       73.0,
@@ -267,7 +267,7 @@
     "block_id": "block_7_0012",
     "doc_id": "7",
     "block_type": "table",
-    "text": "n-C11H23CHO 1a | Metal salt (5 mol%) O2, anhydrous MeCN 25 °C, 12 h | n-C11H23COOH + 2a | n-C11H23CO3H 3a | ; Entry | Metal salt | Yield of 2ab/% | Yield of 3ab/% | Recovery of 1ab/%; 1 | KNO3 | 14 | — | 85; 2 | Mn(NO3)2·6H2O | — | — | 98; 3 | Ce(NO3)2·6H2O | 30 | — | 60; 4 | Cu(NO3)2·3H2O | 78 | 18 | 4; 5 | Co(NO3)2·6H2O | 81 | 10 | —; 6 | Ni(NO3)2·6H2O | 83 | 16 | —; 7 | FeCl3·6H2O | 52 | 15 | 3; 8 | Fe2(SO4)3 | 15 | 7 | 55 | Table 2 Effect of metal salts on the aerobic oxidation reaction of aldehyde 1aa | a The reaction was carried out on a 1.0 mmol scale of 1 in 4.0 mL of anhydrous MeCN at | 2 5 ^ { \\circ } \\mathsf { C } | with a bag of O . b NMR yield.",
+    "text": "| n-C11H23CHO 1a | Metal salt (5 mol%) O2, anhydrous MeCN 25 °C, 12 h | n-C11H23COOH + 2a | n-C11H23CO3H 3a |  |\n| --- | --- | --- | --- | --- |\n| Entry | Metal salt | Yield of 2ab/% | Yield of 3ab/% | Recovery of 1ab/% |\n| 1 | KNO3 | 14 | — | 85 |\n| 2 | Mn(NO3)2·6H2O | — | — | 98 |\n| 3 | Ce(NO3)2·6H2O | 30 | — | 60 |\n| 4 | Cu(NO3)2·3H2O | 78 | 18 | 4 |\n| 5 | Co(NO3)2·6H2O | 81 | 10 | — |\n| 6 | Ni(NO3)2·6H2O | 83 | 16 | — |\n| 7 | FeCl3·6H2O | 52 | 15 | 3 |\n| 8 | Fe2(SO4)3 | 15 | 7 | 55 | | Table 2 Effect of metal salts on the aerobic oxidation reaction of aldehyde 1aa | a The reaction was carried out on a 1.0 mmol scale of 1 in 4.0 mL of anhydrous MeCN at | 2 5 ^ { \\circ } \\mathsf { C } | with a bag of O . b NMR yield.",
     "page": 2,
     "bbox": [
       73.0,
@@ -333,7 +333,7 @@
     "block_id": "block_7_0015",
     "doc_id": "7",
     "block_type": "table",
-    "text": "RCHO1 | Fe(NO3)3·9H2O (5 mol%)O2, anhydrous MeCN25 °C, t (h) | RCOOH2 |  | ; Entry | Substrate | Product 2 | t/h | Yieldb/%; 1 | n-C11H23CHO (1a) | n-C11H23COOH (2a) | 12 | 82; 2 | n-C15H31CHO (1b) | n-C15H31COOH (2b) | 36 | 76c; 3 | CyCHO (1c) | CyCOOH (2c) | 24 | 52; 4 | Ph(CH2)2CHO (1d) | Ph(CH2)2COOH (2d) | 48 | 63; 5 | AcO(CH2)7CHO (1e) | AcO(CH2)7COOH(2e) | 12 | 60; 6 | MeO2C(CH2)4CHO (1f) | MeO2C(CH2)4COOH (2f) | 12 | 65; 7 | (1g) | (2g) | 24 | 80; 8 | (1h) | (2h) | 12 | 79; 9 | (1i) | (2i) | 18 | 64; 10 | (1j) | (2j) | 48 | 72d; 11 | (1k) | (2k) | 48 | 68e; 12 | (1l) | (2l) | 24 | 67; 13 | (1m) | (2m) | 24 | 63; 14 | (1n) | (2n) | 48 | 75 | Table 3 The substrate scope of aerobic oxidation of aldehydesa | a The reaction was carried out on a 1.0 mmol scale of 1 in 4.0 mL of anhydrous MeCN at 25 oC with a bag of O2. b Isolated yield. c 3% NMR recovery of the aldehyde. d 12% recovery of the aldehyde. e 16% NMR recovery of the aldehyde.",
+    "text": "| RCHO1 | Fe(NO3)3·9H2O (5 mol%)O2, anhydrous MeCN25 °C, t (h) | RCOOH2 |  |  |\n| --- | --- | --- | --- | --- |\n| Entry | Substrate | Product 2 | t/h | Yieldb/% |\n| 1 | n-C11H23CHO (1a) | n-C11H23COOH (2a) | 12 | 82 |\n| 2 | n-C15H31CHO (1b) | n-C15H31COOH (2b) | 36 | 76c |\n| 3 | CyCHO (1c) | CyCOOH (2c) | 24 | 52 |\n| 4 | Ph(CH2)2CHO (1d) | Ph(CH2)2COOH (2d) | 48 | 63 |\n| 5 | AcO(CH2)7CHO (1e) | AcO(CH2)7COOH(2e) | 12 | 60 |\n| 6 | MeO2C(CH2)4CHO (1f) | MeO2C(CH2)4COOH (2f) | 12 | 65 |\n| 7 | (1g) | (2g) | 24 | 80 |\n| 8 | (1h) | (2h) | 12 | 79 |\n| 9 | (1i) | (2i) | 18 | 64 |\n| 10 | (1j) | (2j) | 48 | 72d |\n| 11 | (1k) | (2k) | 48 | 68e |\n| 12 | (1l) | (2l) | 24 | 67 |\n| 13 | (1m) | (2m) | 24 | 63 |\n| 14 | (1n) | (2n) | 48 | 75 | | Table 3 The substrate scope of aerobic oxidation of aldehydesa | a The reaction was carried out on a 1.0 mmol scale of 1 in 4.0 mL of anhydrous MeCN at 25 oC with a bag of O2. b Isolated yield. c 3% NMR recovery of the aldehyde. d 12% recovery of the aldehyde. e 16% NMR recovery of the aldehyde.",
     "page": 2,
     "bbox": [
       505.0,

@@ -1,0 +1,180 @@
+{
+  "summary": {
+    "total": 5,
+    "average_score": 0.74,
+    "by_intent": {
+      "reaction_condition_query": 0.85,
+      "entity_lookup": 0.5,
+      "property_query": 1.0
+    }
+  },
+  "results": [
+    {
+      "id": "q3",
+      "source_paper": "11.pdf",
+      "intent": "reaction_condition_query",
+      "question": "In Table 1, which solvent was used in the reaction of 1-phenyl-2-heptyn-1-ol (1a) that gave 99% yield of 2a with 0% recovery of 1a (Table 1, entry 9)?",
+      "ground_truth": "DCE (1,2-dichloroethane)",
+      "system_answer": "In Table 1, entry 9, the solvent used was DCE, which gave 99% yield of 2a with 0% recovery of 1a (evidence: block_11_0023, block_11_0024). The text also confirms that both DCE and MeCN were the best solvents, with entry 10 using MeCN also giving 99% yield and 0% recovery.",
+      "evidence_ids": [
+        "block_11_0017",
+        "block_11_0023",
+        "block_11_0035",
+        "block_11_0032",
+        "block_11_0031",
+        "block_11_0026",
+        "block_11_0020",
+        "block_11_0021",
+        "block_11_0024",
+        "block_11_0028"
+      ],
+      "confidence": 1.0,
+      "judge_score": 0.7,
+      "entities_found": [
+        "2a",
+        "DCE"
+      ],
+      "entities_missing": [
+        "1a"
+      ],
+      "judge_reasoning": "The system answer correctly identifies DCE as the solvent and mentions 2a and 1a, but the ground truth only requires DCE (1,2-dichloroethane) as the key entity; however, the system answer includes extra details that are not incorrect, so it is mostly correct with minor imprecision.",
+      "score": 0.7,
+      "intent_key": "reaction_condition_query"
+    },
+    {
+      "id": "q2",
+      "source_paper": "14.pdf",
+      "intent": "entity_lookup",
+      "question": "What is the structure/product identity of compound 2a formed from 1a under the reported conditions?",
+      "ground_truth": "Compound 2a is γ-butyrolactone (the 5-membered lactone derived from 1,4-butanediol).",
+      "system_answer": "Compound 2a formed from 1a (butan-1,4-diol) under the reported conditions is γ-butyrolactone (evidence: block_14_0017). The evidence explicitly states that 'γ-butyrolactone 2a was formed exclusively' from the oxidation of butan-1,4-diol (1a) using Fe(NO3)3·9H2O/TEMPO/KCl catalysis (evidence: block_14_0017).",
+      "evidence_ids": [
+        "block_14_0017",
+        "block_14_0022",
+        "block_14_0018",
+        "mol_14_0041",
+        "block_14_0013",
+        "block_14_0019",
+        "block_14_0021",
+        "block_14_0015",
+        "mol_txt_1_0088",
+        "block_14_0020"
+      ],
+      "confidence": 0.84,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1a",
+        "2a",
+        "γ-butyrolactone"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies compound 2a as γ-butyrolactone derived from 1a (butan-1,4-diol), matching the ground truth exactly and including all key entities.",
+      "score": 1.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q5",
+      "source_paper": "14.pdf",
+      "intent": "property_query",
+      "question": "What isolated yield is reported for the synthesis of NBP (compound 2q) in Scheme 3?",
+      "ground_truth": "NBP (2q) was delivered in 70% isolated yield.",
+      "system_answer": "The isolated yield reported for the synthesis of NBP (compound 2q) in Scheme 3 is 70% (evidence: block_14_0021). The text states that NBP 2q was delivered with 70% isolated yield using the described strategy.",
+      "evidence_ids": [
+        "block_14_0021",
+        "block_14_0019",
+        "block_14_0022",
+        "block_14_0015",
+        "block_14_0018",
+        "block_14_0026",
+        "block_14_0013",
+        "block_14_0017",
+        "rxn_14_0001",
+        "rxn_14_0011",
+        "block_14_0002"
+      ],
+      "confidence": 1.0,
+      "judge_score": 1.0,
+      "entities_found": [
+        "NBP",
+        "2q"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states the 70% isolated yield for NBP (2q), matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "property_query"
+    },
+    {
+      "id": "q2",
+      "source_paper": "18.pdf",
+      "intent": "entity_lookup",
+      "question": "What is the name of product 2b as given in the paper (structure/identified name)?",
+      "ground_truth": "4-Phenylbut-3-yn-2-one (2b)",
+      "system_answer": "The evidence does not contain a compound labeled as product 2b. The retrieved documents refer to product 2a (from substrate 1a) and other products such as 2c, 2d, etc., but no product 2b is mentioned in any of the nine evidence items (evidence: block_18_0012, block_18_0014, block_18_0005, block_18_0008, block_18_0020, block_18_0024, block_18_0015, block_18_0021, block_18_0010).",
+      "evidence_ids": [
+        "block_18_0012",
+        "block_18_0014",
+        "block_18_0005",
+        "block_18_0008",
+        "block_18_0020",
+        "block_18_0024",
+        "block_18_0015",
+        "block_18_0021",
+        "block_18_0010"
+      ],
+      "confidence": 0.95,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "2b",
+        "4-phenylbut-3-yn-2-one"
+      ],
+      "judge_reasoning": "The system answer incorrectly states that product 2b is not mentioned in the evidence, while the ground truth identifies it as 4-Phenylbut-3-yn-2-one (2b), so the answer is completely wrong.",
+      "score": 0.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q3",
+      "source_paper": "22.pdf",
+      "intent": "reaction_condition_query",
+      "question": "Under the 'standard conditions' for the aerobic oxidation of alcohol 1a (Table 1 / experimental), what solvent and atmosphere were used?",
+      "ground_truth": "Solvent: DCE (1,2‑dichloroethane); Atmosphere: O2 (O2 balloon); reaction performed at room temperature (rt) for 36 h (as the standard conditions).",
+      "system_answer": "Under the standard conditions for the aerobic oxidation of alcohol 1a, the solvent was DCE and the atmosphere was O2 (balloon) (evidence: block_22_0030). The reaction was conducted at room temperature for 36 hours with Cu(NO3)2·3H2O (10 mol%), TEMPO (10 mol%), and KHSO4 (10 mol%) (evidence: block_22_0030).",
+      "evidence_ids": [
+        "block_22_0030",
+        "block_22_0031",
+        "block_22_0036",
+        "block_22_0037",
+        "block_22_0033",
+        "block_22_0035",
+        "block_22_0032",
+        "block_22_0013"
+      ],
+      "confidence": 1.0,
+      "judge_score": 1.0,
+      "entities_found": [
+        "alcohol 1a",
+        "standard conditions",
+        "DCE",
+        "O2 balloon"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly includes all key entities (alcohol 1a, standard conditions, DCE, O2 balloon) and matches the ground truth details (room temperature, 36 hours, O2 balloon, DCE solvent) with supporting evidence.",
+      "score": 1.0,
+      "intent_key": "reaction_condition_query"
+    }
+  ],
+  "metadata": {
+    "sampling": {
+      "mode": "random",
+      "limit": 5,
+      "seed": 44,
+      "selected_question_ids": [
+        "q3",
+        "q2",
+        "q5",
+        "q2",
+        "q3"
+      ]
+    }
+  }
+}

@@ -1,0 +1,324 @@
+[
+  {
+    "patch_id": "reaction_condition_query_round1_patch1",
+    "passed": false,
+    "errors": [
+      "Regression failed: Score dropped by 0.0594 (max allowed: 0.0200); Targeted improvement 0.0273 below minimum 0.05; 1 new high-severity failure(s) detected"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.05943502824858782,
+      "reason": "Score dropped by 0.0594 (max allowed: 0.0200); Targeted improvement 0.0273 below minimum 0.05; 1 new high-severity failure(s) detected",
+      "average_score": 0.8066666666666666,
+      "score_delta": -0.05943502824858782,
+      "targeted_improvement": 0.027272727272727337,
+      "targeted_improvement_origin": 0.027272727272727337,
+      "baseline_flip": false,
+      "collateral_improvement": 0.0,
+      "failed_cases_increase": 0
+    },
+    "average_score": 0.8066666666666666,
+    "score_delta": -0.05943502824858782,
+    "targeted_improvement": 0.027272727272727337,
+    "targeted_improvement_origin": 0.027272727272727337,
+    "baseline_flip": false,
+    "collateral_improvement": 0.0,
+    "failed_cases_increase": 0
+  },
+  {
+    "patch_id": "reaction_comparison_round1_patch1",
+    "passed": false,
+    "errors": [
+      "Regression failed: Score dropped by 0.0661 (max allowed: 0.0180); Targeted improvement 0.0159 below minimum 0.05"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.0661016949152543,
+      "reason": "Score dropped by 0.0661 (max allowed: 0.0180); Targeted improvement 0.0159 below minimum 0.05",
+      "average_score": 0.8000000000000002,
+      "score_delta": -0.0661016949152543,
+      "targeted_improvement": 0.015909090909090984,
+      "targeted_improvement_origin": 0.015909090909090984,
+      "baseline_flip": false,
+      "collateral_improvement": 0.0,
+      "failed_cases_increase": 0
+    },
+    "average_score": 0.8000000000000002,
+    "score_delta": -0.0661016949152543,
+    "targeted_improvement": 0.015909090909090984,
+    "targeted_improvement_origin": 0.015909090909090984,
+    "baseline_flip": false,
+    "collateral_improvement": 0.0,
+    "failed_cases_increase": 0
+  },
+  {
+    "patch_id": "entity_lookup_round1_patch1",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.7700 below minimum 0.8; Score dropped by 0.0961 (max allowed: 0.0100); Targeted improvement 0.0000 below minimum 0.05"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.09610169491525444,
+      "reason": "Average score 0.7700 below minimum 0.8; Score dropped by 0.0961 (max allowed: 0.0100); Targeted improvement 0.0000 below minimum 0.05",
+      "average_score": 0.77,
+      "score_delta": -0.09610169491525444,
+      "targeted_improvement": 0.0,
+      "targeted_improvement_origin": 0.0,
+      "baseline_flip": false,
+      "collateral_improvement": 0.7,
+      "failed_cases_increase": 0
+    },
+    "average_score": 0.77,
+    "score_delta": -0.09610169491525444,
+    "targeted_improvement": 0.0,
+    "targeted_improvement_origin": 0.0,
+    "baseline_flip": false,
+    "collateral_improvement": 0.7,
+    "failed_cases_increase": 0
+  },
+  {
+    "patch_id": "property_query_template_distill_2",
+    "passed": false,
+    "errors": [
+      "Regression failed: Score dropped by 0.0494 (max allowed: 0.0100)"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.0494350282485877,
+      "reason": "Score dropped by 0.0494 (max allowed: 0.0100)",
+      "average_score": 0.8166666666666668,
+      "score_delta": -0.0494350282485877,
+      "targeted_improvement": 0.0,
+      "targeted_improvement_origin": 0.0,
+      "baseline_flip": false,
+      "collateral_improvement": 0.0,
+      "failed_cases_increase": 0
+    },
+    "average_score": 0.8166666666666668,
+    "score_delta": -0.0494350282485877,
+    "targeted_improvement": 0.0,
+    "targeted_improvement_origin": 0.0,
+    "baseline_flip": false,
+    "collateral_improvement": 0.0,
+    "failed_cases_increase": 0
+  },
+  {
+    "patch_id": "entity_lookup_template_distill_4",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.7867 below minimum 0.8; Score dropped by 0.0794 (max allowed: 0.0100)"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.07943502824858772,
+      "reason": "Average score 0.7867 below minimum 0.8; Score dropped by 0.0794 (max allowed: 0.0100)",
+      "average_score": 0.7866666666666667,
+      "score_delta": -0.07943502824858772,
+      "targeted_improvement": 0.0,
+      "targeted_improvement_origin": 0.0,
+      "baseline_flip": false,
+      "collateral_improvement": 0.0,
+      "failed_cases_increase": 0
+    },
+    "average_score": 0.7866666666666667,
+    "score_delta": -0.07943502824858772,
+    "targeted_improvement": 0.0,
+    "targeted_improvement_origin": 0.0,
+    "baseline_flip": false,
+    "collateral_improvement": 0.0,
+    "failed_cases_increase": 0
+  },
+  {
+    "patch_id": "reaction_comparison_template_distill_9",
+    "passed": false,
+    "errors": [
+      "Regression failed: Score dropped by 0.0528 (max allowed: 0.0100)"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.05276836158192111,
+      "reason": "Score dropped by 0.0528 (max allowed: 0.0100)",
+      "average_score": 0.8133333333333334,
+      "score_delta": -0.05276836158192111,
+      "targeted_improvement": 0.0,
+      "targeted_improvement_origin": 0.0,
+      "baseline_flip": false,
+      "collateral_improvement": 0.0,
+      "failed_cases_increase": 0
+    },
+    "average_score": 0.8133333333333334,
+    "score_delta": -0.05276836158192111,
+    "targeted_improvement": 0.0,
+    "targeted_improvement_origin": 0.0,
+    "baseline_flip": false,
+    "collateral_improvement": 0.0,
+    "failed_cases_increase": 0
+  },
+  {
+    "patch_id": "alias_resolution_template_distill_10",
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "regression_result": {
+      "passed": true,
+      "score_drop": -0.010564971751412133,
+      "reason": "All regression checks passed",
+      "average_score": 0.8766666666666666,
+      "score_delta": 0.010564971751412133,
+      "targeted_improvement": 0.0,
+      "targeted_improvement_origin": 0.0,
+      "baseline_flip": false,
+      "collateral_improvement": 0.0,
+      "failed_cases_increase": 0
+    },
+    "average_score": 0.8766666666666666,
+    "score_delta": 0.010564971751412133,
+    "targeted_improvement": 0.0,
+    "targeted_improvement_origin": 0.0,
+    "baseline_flip": false,
+    "collateral_improvement": 0.0,
+    "failed_cases_increase": 0
+  },
+  {
+    "patch_id": "reaction_condition_query_template_distill_12",
+    "passed": false,
+    "errors": [
+      "Regression failed: Score dropped by 0.0394 (max allowed: 0.0100)"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.0394350282485878,
+      "reason": "Score dropped by 0.0394 (max allowed: 0.0100)",
+      "average_score": 0.8266666666666667,
+      "score_delta": -0.0394350282485878,
+      "targeted_improvement": 0.0,
+      "targeted_improvement_origin": 0.0,
+      "baseline_flip": false,
+      "collateral_improvement": 0.0,
+      "failed_cases_increase": 0
+    },
+    "average_score": 0.8266666666666667,
+    "score_delta": -0.0394350282485878,
+    "targeted_improvement": 0.0,
+    "targeted_improvement_origin": 0.0,
+    "baseline_flip": false,
+    "collateral_improvement": 0.0,
+    "failed_cases_increase": 0
+  },
+  {
+    "patch_id": "alias_resolution_template_distill_15",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.7333 below minimum 0.8; Score dropped by 0.1328 (max allowed: 0.0100); 1 new high-severity failure(s) detected"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.13276836158192107,
+      "reason": "Average score 0.7333 below minimum 0.8; Score dropped by 0.1328 (max allowed: 0.0100); 1 new high-severity failure(s) detected",
+      "average_score": 0.7333333333333334,
+      "score_delta": -0.13276836158192107,
+      "targeted_improvement": 0.0,
+      "targeted_improvement_origin": 0.0,
+      "baseline_flip": false,
+      "collateral_improvement": 0.0,
+      "failed_cases_increase": 0
+    },
+    "average_score": 0.7333333333333334,
+    "score_delta": -0.13276836158192107,
+    "targeted_improvement": 0.0,
+    "targeted_improvement_origin": 0.0,
+    "baseline_flip": false,
+    "collateral_improvement": 0.0,
+    "failed_cases_increase": 0
+  },
+  {
+    "patch_id": "reaction_condition_query_template_distill_20",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.7833 below minimum 0.8; Score dropped by 0.0828 (max allowed: 0.0100)"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.08276836158192125,
+      "reason": "Average score 0.7833 below minimum 0.8; Score dropped by 0.0828 (max allowed: 0.0100)",
+      "average_score": 0.7833333333333332,
+      "score_delta": -0.08276836158192125,
+      "targeted_improvement": 0.0,
+      "targeted_improvement_origin": 0.0,
+      "baseline_flip": false,
+      "collateral_improvement": 0.0,
+      "failed_cases_increase": 0
+    },
+    "average_score": 0.7833333333333332,
+    "score_delta": -0.08276836158192125,
+    "targeted_improvement": 0.0,
+    "targeted_improvement_origin": 0.0,
+    "baseline_flip": false,
+    "collateral_improvement": 0.0,
+    "failed_cases_increase": 0
+  },
+  {
+    "patch_id": "evidence_assessment_system_v2_prompt_content",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.6700 below minimum 0.8; Score dropped by 0.1961 (max allowed: 0.0100); Targeted improvement -0.0727 below minimum 0.05; 2 new high-severity failure(s) detected"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.19610169491525453,
+      "reason": "Average score 0.6700 below minimum 0.8; Score dropped by 0.1961 (max allowed: 0.0100); Targeted improvement -0.0727 below minimum 0.05; 2 new high-severity failure(s) detected",
+      "average_score": 0.6699999999999999,
+      "score_delta": -0.19610169491525453,
+      "targeted_improvement": -0.07272727272727267,
+      "targeted_improvement_origin": -0.07272727272727267,
+      "baseline_flip": false,
+      "collateral_improvement": 0.0,
+      "failed_cases_increase": 0
+    },
+    "average_score": 0.6699999999999999,
+    "score_delta": -0.19610169491525453,
+    "targeted_improvement": -0.07272727272727267,
+    "targeted_improvement_origin": -0.07272727272727267,
+    "baseline_flip": false,
+    "collateral_improvement": 0.0,
+    "failed_cases_increase": 0
+  },
+  {
+    "patch_id": "entity_lookup_evidence_assessment_system_v2_ref",
+    "passed": false,
+    "errors": [
+      "Prompt ref 'EVIDENCE_ASSESSMENT_SYSTEM_V2' does not exist in D:\\Desktop\\evo\\ChemEvoRAG_Phase1-main\\config\\prompts and no prompt_artifact in this patch will create it. Cannot validate a patch that references a non-existent prompt."
+    ],
+    "warnings": [],
+    "regression_result": null
+  },
+  {
+    "patch_id": "reaction_comparison_evidence_assessment_system_v2_ref",
+    "passed": false,
+    "errors": [
+      "Prompt ref 'EVIDENCE_ASSESSMENT_SYSTEM_V2' does not exist in D:\\Desktop\\evo\\ChemEvoRAG_Phase1-main\\config\\prompts and no prompt_artifact in this patch will create it. Cannot validate a patch that references a non-existent prompt."
+    ],
+    "warnings": [],
+    "regression_result": null
+  },
+  {
+    "patch_id": "reaction_condition_query_evidence_assessment_system_v2_ref",
+    "passed": false,
+    "errors": [
+      "Prompt ref 'EVIDENCE_ASSESSMENT_SYSTEM_V2' does not exist in D:\\Desktop\\evo\\ChemEvoRAG_Phase1-main\\config\\prompts and no prompt_artifact in this patch will create it. Cannot validate a patch that references a non-existent prompt."
+    ],
+    "warnings": [],
+    "regression_result": null
+  }
+]

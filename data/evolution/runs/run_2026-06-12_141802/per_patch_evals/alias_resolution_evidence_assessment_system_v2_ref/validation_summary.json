@@ -1,0 +1,10 @@
+{
+  "patch_id": "alias_resolution_evidence_assessment_system_v2_ref",
+  "passed": false,
+  "average_score": 0.8400000000000002,
+  "score_delta": -0.02610169491525427,
+  "targeted_improvement": -0.4431818181818182,
+  "errors": [
+    "Regression failed: Score dropped by 0.0261 (max allowed: 0.0100); Targeted improvement -0.4432 below minimum 0.05"
+  ]
+}

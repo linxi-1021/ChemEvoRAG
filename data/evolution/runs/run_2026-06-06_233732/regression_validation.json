@@ -1,0 +1,173 @@
+[
+  {
+    "patch_id": "reaction_condition_query_round1_patch1",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.4350 below minimum 0.8; Score dropped by 0.4311 (max allowed: 0.01); Failed cases increased by 10 (max allowed: 1)"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.4311016949152545,
+      "reason": "Average score 0.4350 below minimum 0.8; Score dropped by 0.4311 (max allowed: 0.01); Failed cases increased by 10 (max allowed: 1)",
+      "average_score": 0.43499999999999994,
+      "score_delta": -0.4311016949152545,
+      "targeted_improvement": 0.0
+    },
+    "average_score": 0.43499999999999994,
+    "score_delta": -0.4311016949152545,
+    "targeted_improvement": 0.0
+  },
+  {
+    "patch_id": "reaction_condition_query_round1_patch2",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.5100 below minimum 0.8; Score dropped by 0.3561 (max allowed: 0.01); Failed cases increased by 8 (max allowed: 1)"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.35610169491525445,
+      "reason": "Average score 0.5100 below minimum 0.8; Score dropped by 0.3561 (max allowed: 0.01); Failed cases increased by 8 (max allowed: 1)",
+      "average_score": 0.51,
+      "score_delta": -0.35610169491525445,
+      "targeted_improvement": 0.0
+    },
+    "average_score": 0.51,
+    "score_delta": -0.35610169491525445,
+    "targeted_improvement": 0.0
+  },
+  {
+    "patch_id": "reaction_comparison_round1_patch1",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.6400 below minimum 0.8; Score dropped by 0.2261 (max allowed: 0.01); Failed cases increased by 6 (max allowed: 1)"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.22610169491525445,
+      "reason": "Average score 0.6400 below minimum 0.8; Score dropped by 0.2261 (max allowed: 0.01); Failed cases increased by 6 (max allowed: 1)",
+      "average_score": 0.64,
+      "score_delta": -0.22610169491525445,
+      "targeted_improvement": 0.0
+    },
+    "average_score": 0.64,
+    "score_delta": -0.22610169491525445,
+    "targeted_improvement": 0.0
+  },
+  {
+    "patch_id": "reaction_comparison_round1_patch2",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.5950 below minimum 0.8; Score dropped by 0.2711 (max allowed: 0.01); Failed cases increased by 7 (max allowed: 1)"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.2711016949152545,
+      "reason": "Average score 0.5950 below minimum 0.8; Score dropped by 0.2711 (max allowed: 0.01); Failed cases increased by 7 (max allowed: 1)",
+      "average_score": 0.595,
+      "score_delta": -0.2711016949152545,
+      "targeted_improvement": 0.0
+    },
+    "average_score": 0.595,
+    "score_delta": -0.2711016949152545,
+    "targeted_improvement": 0.0
+  },
+  {
+    "patch_id": "",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.6700 below minimum 0.8; Score dropped by 0.1961 (max allowed: 0.01); Failed cases increased by 5 (max allowed: 1)"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.19610169491525453,
+      "reason": "Average score 0.6700 below minimum 0.8; Score dropped by 0.1961 (max allowed: 0.01); Failed cases increased by 5 (max allowed: 1)",
+      "average_score": 0.6699999999999999,
+      "score_delta": -0.19610169491525453,
+      "targeted_improvement": 0.0
+    },
+    "average_score": 0.6699999999999999,
+    "score_delta": -0.19610169491525453,
+    "targeted_improvement": 0.0
+  },
+  {
+    "patch_id": "",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.6050 below minimum 0.8; Score dropped by 0.2611 (max allowed: 0.01); Failed cases increased by 7 (max allowed: 1)"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.2611016949152545,
+      "reason": "Average score 0.6050 below minimum 0.8; Score dropped by 0.2611 (max allowed: 0.01); Failed cases increased by 7 (max allowed: 1)",
+      "average_score": 0.605,
+      "score_delta": -0.2611016949152545,
+      "targeted_improvement": 0.0
+    },
+    "average_score": 0.605,
+    "score_delta": -0.2611016949152545,
+    "targeted_improvement": 0.0
+  },
+  {
+    "patch_id": "",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.5900 below minimum 0.8; Score dropped by 0.2761 (max allowed: 0.01); Failed cases increased by 7 (max allowed: 1)"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.2761016949152544,
+      "reason": "Average score 0.5900 below minimum 0.8; Score dropped by 0.2761 (max allowed: 0.01); Failed cases increased by 7 (max allowed: 1)",
+      "average_score": 0.5900000000000001,
+      "score_delta": -0.2761016949152544,
+      "targeted_improvement": 0.0
+    },
+    "average_score": 0.5900000000000001,
+    "score_delta": -0.2761016949152544,
+    "targeted_improvement": 0.0
+  },
+  {
+    "patch_id": "",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.5700 below minimum 0.8; Score dropped by 0.2961 (max allowed: 0.01); Failed cases increased by 8 (max allowed: 1)"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.2961016949152544,
+      "reason": "Average score 0.5700 below minimum 0.8; Score dropped by 0.2961 (max allowed: 0.01); Failed cases increased by 8 (max allowed: 1)",
+      "average_score": 0.5700000000000001,
+      "score_delta": -0.2961016949152544,
+      "targeted_improvement": 0.0
+    },
+    "average_score": 0.5700000000000001,
+    "score_delta": -0.2961016949152544,
+    "targeted_improvement": 0.0
+  },
+  {
+    "patch_id": "",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.5950 below minimum 0.8; Score dropped by 0.2711 (max allowed: 0.01); Failed cases increased by 7 (max allowed: 1)"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.2711016949152545,
+      "reason": "Average score 0.5950 below minimum 0.8; Score dropped by 0.2711 (max allowed: 0.01); Failed cases increased by 7 (max allowed: 1)",
+      "average_score": 0.595,
+      "score_delta": -0.2711016949152545,
+      "targeted_improvement": 0.0
+    },
+    "average_score": 0.595,
+    "score_delta": -0.2711016949152545,
+    "targeted_improvement": 0.0
+  }
+]

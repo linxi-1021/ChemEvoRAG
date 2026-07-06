@@ -1,0 +1,10 @@
+{
+  "patch_id": "entity_lookup_template_distill_1",
+  "passed": false,
+  "average_score": 0.8093220338983054,
+  "score_delta": -0.05677966101694909,
+  "targeted_improvement": 0.0,
+  "errors": [
+    "Regression failed: Score dropped by 0.0568 (max allowed: 0.01); Failed cases increased by 14 (max allowed: 1)"
+  ]
+}

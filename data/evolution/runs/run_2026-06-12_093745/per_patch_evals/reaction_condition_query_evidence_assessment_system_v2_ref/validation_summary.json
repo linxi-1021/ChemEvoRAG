@@ -1,0 +1,10 @@
+{
+  "patch_id": "reaction_condition_query_evidence_assessment_system_v2_ref",
+  "passed": false,
+  "average_score": 0.8633333333333334,
+  "score_delta": -0.002768361581921064,
+  "targeted_improvement": 0.029545454545454652,
+  "errors": [
+    "Regression failed: Targeted improvement 0.0295 below minimum 0.05"
+  ]
+}

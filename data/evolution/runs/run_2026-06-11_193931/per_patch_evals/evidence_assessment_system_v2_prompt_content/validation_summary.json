@@ -1,0 +1,10 @@
+{
+  "patch_id": "evidence_assessment_system_v2_prompt_content",
+  "passed": false,
+  "average_score": 0.8584745762711868,
+  "score_delta": -0.007627118644067621,
+  "targeted_improvement": 0.09090909090909088,
+  "errors": [
+    "Regression failed: 3 new high-severity failure(s) detected"
+  ]
+}

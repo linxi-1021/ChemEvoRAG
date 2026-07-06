@@ -1,0 +1,1862 @@
+{
+  "summary": {
+    "total": 60,
+    "average_score": 0.8566666666666668,
+    "by_intent": {
+      "alias_resolution": 0.9199999999999999,
+      "entity_lookup": 0.8083333333333332,
+      "reaction_condition_query": 0.8272727272727273,
+      "reaction_comparison": 0.8333333333333334,
+      "property_query": 0.8375
+    }
+  },
+  "results": [
+    {
+      "id": "q1",
+      "source_paper": "1.pdf",
+      "intent": "alias_resolution",
+      "question": "In Scheme 1 and the accompanying tables the label 'Hex-n' is used repeatedly. What does 'Hex-n' refer to in this paper?",
+      "ground_truth": "Hex-n denotes an n‑hexyl substituent (the n‑hexyl group used in 3-(n-hexyl)-1,2-octadien-4-ol / corresponding substrates).",
+      "system_answer": "In this paper, 'Hex-n' refers to an n-hexyl group, as seen in the compound name '3-(n-hexyl)-1,2-octadien-4-ol' (evidence: block_1_0009, block_1_0012, block_1_0018). The 'n' denotes a normal (straight-chain) hexyl substituent.",
+      "evidence_ids": [
+        "block_1_0009",
+        "block_1_0040",
+        "block_1_0036",
+        "block_1_0012",
+        "block_1_0018",
+        "block_1_0124",
+        "block_1_0014",
+        "block_1_0007"
+      ],
+      "confidence": 0.85,
+      "judge_score": 1.0,
+      "entities_found": [
+        "Hex-n",
+        "3-(n-hexyl)-1,2-octadien-4-ol"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies Hex-n as an n-hexyl group and mentions the compound 3-(n-hexyl)-1,2-octadien-4-ol, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q2",
+      "source_paper": "1.pdf",
+      "intent": "entity_lookup",
+      "question": "In the large-scale experiment (Eq. 2) the paper oxidizes 1-phenylethanol. What is the product obtained from oxidation of 1-phenylethanol in that large-scale reaction (give the product name reported in the paper)?",
+      "ground_truth": "Phenyl methyl ketone (acetophenone) is formed from 1-phenylethanol (reported as the product in Eq. (2)).",
+      "system_answer": "The product obtained from the large-scale oxidation of 1-phenylethanol is phenyl methyl ketone (also called acetophenone), reported in 91% isolated yield (evidence: block_1_0036). The paper also refers to this product as phenyl methyl ketone in Eq. (2) and provides its characterization data (evidence: block_1_0036, mol_1_0030).",
+      "evidence_ids": [
+        "block_1_0036",
+        "block_1_0029",
+        "block_1_0009",
+        "block_1_0043",
+        "block_1_0040",
+        "block_1_0004",
+        "block_1_0120",
+        "block_1_0091",
+        "mol_1_0030",
+        "mol_txt_1_0071"
+      ],
+      "confidence": 0.89,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1-phenylethanol",
+        "phenyl methyl ketone",
+        "acetophenone"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies the product as phenyl methyl ketone (acetophenone) from 1-phenylethanol, matches the ground truth, and includes all key entities.",
+      "score": 1.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q3",
+      "source_paper": "1.pdf",
+      "intent": "reaction_condition_query",
+      "question": "Which solvent was selected as optimal for the aerobic oxidation of 3-(n-hexyl)-1,2-octadien-4-ol in the optimization studies (Table 1 and related text)?",
+      "ground_truth": "1,2-Dichloroethane (DCE) was selected as the optimal solvent.",
+      "system_answer": "DCE (1,2-dichloroethane) was selected as the optimal solvent for the aerobic oxidation of 3-(n-hexyl)-1,2-octadien-4-ol. In the solvent screening table (Table 1, evidence: block_1_0015), DCE gave the highest conversion (75%) and yield (43%) among the ten solvents tested, including DCM, toluene, THF, DME, CH3CN, benzene, DMF, and ethyl acetate. The text also states that the authors aimed to use \"cheap routine chemicals (the catalysts and solvent)\" and all subsequent optimization and substrate scope reactions were performed in DCE (evidence: block_1_0012, block_1_0017).",
+      "evidence_ids": [
+        "block_1_0009",
+        "block_1_0041",
+        "block_1_0124",
+        "block_1_0127",
+        "block_1_0007",
+        "block_1_0122",
+        "block_1_0046",
+        "block_1_0048",
+        "mol_txt_1_0047",
+        "mol_txt_1_0028",
+        "block_1_0012",
+        "block_1_0017",
+        "block_1_0015"
+      ],
+      "confidence": 0.95,
+      "judge_score": 1.0,
+      "entities_found": [
+        "3-(n-hexyl)-1,2-octadien-4-ol",
+        "DCE",
+        "1,2-dichloroethane"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies DCE (1,2-dichloroethane) as the optimal solvent and includes the substrate name, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "reaction_condition_query"
+    },
+    {
+      "id": "q1",
+      "source_paper": "2.pdf",
+      "intent": "alias_resolution",
+      "question": "In this paper, what does the abbreviation 'DCE' refer to?",
+      "ground_truth": "1,2-dichloroethane",
+      "system_answer": "In this paper, 'DCE' refers to 1,2-dichloroethane (evidence: block_2_0008, block_2_0007). The text states that 1,2-dichloroethane is the best solvent for the reaction and then refers to it as DCE (evidence: block_2_0008).",
+      "evidence_ids": [
+        "block_2_0006",
+        "block_2_0012",
+        "block_2_0008",
+        "block_2_0013",
+        "block_2_0007",
+        "block_2_0010",
+        "block_2_0003",
+        "block_2_0021"
+      ],
+      "confidence": 0.95,
+      "judge_score": 1.0,
+      "entities_found": [
+        "DCE"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies that DCE refers to 1,2-dichloroethane, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q5",
+      "source_paper": "2.pdf",
+      "intent": "property_query",
+      "question": "What boiling point (at 760 mmHg) is reported for the purified propiolaldehyde (compound 1)?",
+      "ground_truth": "bp 54–57 °C at 760 mmHg",
+      "system_answer": "The boiling point of purified propiolaldehyde (compound 1) at 760 mmHg is reported as 54–57 °C (evidence: block_2_0013). The initial distillation gave a broader range of 53–83 °C due to solvent contamination, but after redistillation the pure product boiled at 54–57 °C/760 mm Hg.",
+      "evidence_ids": [
+        "block_2_0013",
+        "block_2_0006",
+        "block_2_0008",
+        "block_2_0012",
+        "block_2_0010",
+        "block_2_0005",
+        "block_2_0007",
+        "block_2_0002"
+      ],
+      "confidence": 1.0,
+      "judge_score": 1.0,
+      "entities_found": [
+        "propiolaldehyde (1)",
+        "boiling point"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states the boiling point as 54–57 °C at 760 mmHg, matching the ground truth exactly, and includes all key entities.",
+      "score": 1.0,
+      "intent_key": "property_query"
+    },
+    {
+      "id": "q1",
+      "source_paper": "3.pdf",
+      "intent": "alias_resolution",
+      "question": "In this paper, what does the label 'E-1a' refer to?",
+      "ground_truth": "The E-isomer of substrate 1a — the (E)-configured allylic alcohol used as the model substrate in the optimization and scale‑up experiments (E-1a, stated as E/Z = 99/1 in the paper; structure shown in Table 1 and Scheme 2).",
+      "system_answer": "In this paper, the label 'E-1a' refers to geraniol, which is an E-allylic alcohol used as a substrate for aerobic oxidation reactions (evidence: block_3_0010). The paper describes the iron-catalyzed aerobic oxidation of E-1a to produce the corresponding aldehyde E-2a while retaining the double-bond configuration (evidence: block_3_0010, block_3_0013, block_3_0019).",
+      "evidence_ids": [
+        "block_3_0010",
+        "block_3_0009",
+        "block_3_0013",
+        "block_3_0017",
+        "block_3_0008",
+        "block_3_0011",
+        "block_3_0019",
+        "block_3_0006"
+      ],
+      "confidence": 0.85,
+      "judge_score": 0.7,
+      "entities_found": [
+        "E-1a"
+      ],
+      "entities_missing": [
+        "1a"
+      ],
+      "judge_reasoning": "The system answer correctly identifies E-1a as the E-isomer of the allylic alcohol and mentions its use in aerobic oxidation, but omits the specific detail that 1a refers to the model substrate with E/Z = 99/1 and its structure in Table 1/Scheme 2.",
+      "score": 0.7,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q2",
+      "source_paper": "3.pdf",
+      "intent": "entity_lookup",
+      "question": "What is the chemical composition (formula/IUPAC) of the catalyst referred to as 'Fe(NO3)3·9H2O' in the experiments?",
+      "ground_truth": "Iron(III) nitrate nonahydrate, formula Fe(NO3)3·9H2O (used as the iron catalyst in the reported oxidations).",
+      "system_answer": "The catalyst 'Fe(NO3)3·9H2O' is iron(III) nitrate nonahydrate. Its chemical formula is Fe(NO3)3·9H2O, and its IUPAC name is iron(III) nitrate nonahydrate (evidence: block_3_0020, block_3_0005, block_3_0010).",
+      "evidence_ids": [
+        "block_3_0020",
+        "block_3_0005",
+        "block_3_0010",
+        "block_3_0009",
+        "block_3_0008",
+        "block_3_0017",
+        "block_3_0013",
+        "block_3_0014"
+      ],
+      "confidence": 0.97,
+      "judge_score": 1.0,
+      "entities_found": [
+        "Fe(NO3)3·9H2O"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies the catalyst as iron(III) nitrate nonahydrate with the exact formula Fe(NO3)3·9H2O, matching all key facts from the ground truth.",
+      "score": 1.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q4",
+      "source_paper": "3.pdf",
+      "intent": "reaction_comparison",
+      "question": "In Table 1, which entry gave the higher isolated yield for conversion of E-1a to 2a — entry 1 (conc. = 5.0, 12 h) or entry 9 (conc. = 0.1, 3 h) — and what were the reported yields and E/Z ratios for those entries?",
+      "ground_truth": "Entry 1 gave a slightly higher yield: entry 1 — 98% yield (reported) with E/Z = 80/20; entry 9 — 95% yield with E/Z = 97/3.",
+      "system_answer": "Entry 9 gave a higher isolated yield (95%) compared to entry 1 (98% NMR yield but 0% isolated yield, with 80/20 E/Z). Entry 1 had a yield of 98% (NMR) with 0% isolated yield and an E/Z ratio of 80/20, while entry 9 had a yield of 95% (NMR) with 0% isolated yield and an E/Z ratio of 97/3 (evidence: block_3_0013).",
+      "evidence_ids": [
+        "block_3_0013",
+        "block_3_0010",
+        "block_3_0017",
+        "block_3_0009",
+        "block_3_0008",
+        "block_3_0014",
+        "block_3_0015",
+        "block_3_0011"
+      ],
+      "confidence": 0.95,
+      "judge_score": 0.7,
+      "entities_found": [
+        "entry 1",
+        "entry 9"
+      ],
+      "entities_missing": [
+        "E-1a",
+        "2a",
+        "E-2a"
+      ],
+      "judge_reasoning": "The system answer correctly compares yields and E/Z ratios for entries 1 and 9, but it incorrectly states both have 0% isolated yield (ground truth does not mention isolated yield) and misses the key entities E-1a, 2a, and E-2a.",
+      "score": 0.7,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q1",
+      "source_paper": "4.pdf",
+      "intent": "alias_resolution",
+      "question": "In this paper, what does the abbreviation 'TEMPO' refer to?",
+      "ground_truth": "2,2,6,6-tetramethylpiperidine-N-oxyl",
+      "system_answer": "In this paper, 'TEMPO' refers to 2,2,6,6-tetramethylpiperidine-N-oxyl (evidence: mol_4_0001). It is used as a catalyst (10 mol %) together with Fe(NO3)3·9H2O and NaCl for the aerobic oxidation of homopropargylic alcohols (evidence: block_4_0016, block_4_0023, block_4_0029).",
+      "evidence_ids": [
+        "block_4_0016",
+        "block_4_0021",
+        "block_4_0023",
+        "block_4_0029",
+        "block_4_0024",
+        "block_4_0004",
+        "block_4_0006",
+        "block_4_0008",
+        "block_4_0013",
+        "block_4_0034",
+        "block_4_0076",
+        "block_4_0003",
+        "block_4_0005",
+        "mol_4_0001",
+        "block_4_0020",
+        "block_4_0032"
+      ],
+      "confidence": 0.81,
+      "judge_score": 1.0,
+      "entities_found": [
+        "TEMPO"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies TEMPO as 2,2,6,6-tetramethylpiperidine-N-oxyl, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q2",
+      "source_paper": "4.pdf",
+      "intent": "entity_lookup",
+      "question": "What IUPAC name does the paper give for compound 3a?",
+      "ground_truth": "1-Phenylbuta-2,3-dien-1-one (3a)",
+      "system_answer": "The paper gives the IUPAC name for compound 3a as 1-Phenylbuta-2,3-dien-1-one (evidence: block_4_0041, block_4_0039, block_4_0040).",
+      "evidence_ids": [
+        "block_4_0029",
+        "block_4_0053",
+        "block_4_0057",
+        "block_4_0041",
+        "mol_4_0049",
+        "block_4_0073",
+        "block_4_0049",
+        "block_4_0037",
+        "block_4_0042",
+        "block_4_0039",
+        "block_4_0040",
+        "block_4_0051",
+        "block_4_0063",
+        "block_4_0021"
+      ],
+      "confidence": 0.95,
+      "judge_score": 1.0,
+      "entities_found": [
+        "3a",
+        "1-Phenylbuta-2,3-dien-1-one"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states the IUPAC name and compound identifier matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q3",
+      "source_paper": "4.pdf",
+      "intent": "reaction_condition_query",
+      "question": "Under the paper's standard conditions for the aerobic oxidation of 1-phenylbut-3-yn-1-ol (1a) to give 2a, what solvent, atmosphere, temperature and reaction time were used?",
+      "ground_truth": "Solvent: DCE (1,2-dichloroethane); Atmosphere: O2 (balloon); Temperature: room temperature (rt); Time: 4 h",
+      "system_answer": "Under the paper's standard conditions for the aerobic oxidation of 1-phenylbut-3-yn-1-ol (1a) to give 2a, the solvent was DCE, the atmosphere was molecular oxygen (O2) at atmospheric pressure, the temperature was room temperature, and the reaction time was 4 hours (evidence: block_4_0025, block_4_0023, block_4_0040). The standard procedure used 10 mol% Fe(NO3)3·9H2O, 10 mol% TEMPO, and 10 mol% NaCl in DCE at room temperature under an oxygen balloon (evidence: block_4_0023, block_4_0040).",
+      "evidence_ids": [
+        "block_4_0025",
+        "block_4_0023",
+        "block_4_0016",
+        "block_4_0040",
+        "block_4_0029",
+        "block_4_0021",
+        "block_4_0024",
+        "block_4_0019",
+        "block_4_0051",
+        "block_4_0063"
+      ],
+      "confidence": 0.91,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1a",
+        "2a",
+        "DCE",
+        "O2",
+        "rt",
+        "4 h"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly includes all key entities (1a, 2a, DCE, O2, rt, 4 h) and matches the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "reaction_condition_query"
+    },
+    {
+      "id": "q1",
+      "source_paper": "5.pdf",
+      "intent": "alias_resolution",
+      "question": "In this paper, what compound does the label \"1a\" refer to?",
+      "ground_truth": "Lauraldehyde (1a) — n-C11H23CHO (lauraldehyde)",
+      "system_answer": "The label \"1a\" refers to lauraldehyde (dodecanal). Evidence block_5_0008 states: \"when lauraldehyde 1a was treated with 10 mol % each of Fe(NO3)3·9H2O, TEMPO, and KCl with an O2 balloon in DCE at rt for 12 h, 94% isolated yield of lauric acid 2a was formed.\" This identifies 1a as lauraldehyde, which is dodecanal.",
+      "evidence_ids": [
+        "block_5_0024",
+        "block_5_0027",
+        "block_5_0008",
+        "block_5_0021",
+        "block_5_0028",
+        "block_5_0011",
+        "block_5_0031",
+        "block_5_0006"
+      ],
+      "confidence": 0.58,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1a",
+        "lauraldehyde"
+      ],
+      "entities_missing": [
+        "n-C11H23CHO"
+      ],
+      "judge_reasoning": "The system answer correctly identifies 1a as lauraldehyde (dodecanal) and provides supporting evidence, but does not explicitly mention the molecular formula n-C11H23CHO from the ground truth, though it is implied by 'dodecanal'.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q1",
+      "source_paper": "6.pdf",
+      "intent": "alias_resolution",
+      "question": "In this paper, what does the abbreviation 'EATA' stand for?",
+      "ground_truth": "EATA = enantioselective allenylation of terminal alkynes.",
+      "system_answer": "The evidence is insufficient to determine what 'EATA' stands for. The abbreviation is mentioned in the context of a reaction developed by the authors' group (evidence: block_6_0013, block_6_0023), but no full expansion or definition is provided in the retrieved text.",
+      "evidence_ids": [
+        "block_6_0013",
+        "block_6_0034",
+        "block_6_0021",
+        "block_6_0023",
+        "block_6_0037",
+        "block_6_0041",
+        "block_6_0052",
+        "block_6_0054",
+        "block_6_0058",
+        "block_6_0060"
+      ],
+      "confidence": 0.15,
+      "judge_score": 0.0,
+      "entities_found": [
+        "EATA"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer fails to provide the correct expansion of EATA as given in the ground truth, stating instead that the evidence is insufficient.",
+      "score": 0.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q5",
+      "source_paper": "6.pdf",
+      "intent": "property_query",
+      "question": "What yield and E/Z ratio were reported for the isolated (−)-lamenallenic acid (Ra)-(−)-1 after hydrolysis (KOH)?",
+      "ground_truth": "(−)-lamenallenic acid (Ra)-(−)-1 was obtained in 98% yield with E/Z = 94/6 (reported [α]D20 = −55.2, c = 0.995, EtOH).",
+      "system_answer": "The isolated (−)-lamenallenic acid (Ra)-(−)-1 after hydrolysis with KOH was obtained in 98% yield with an E/Z ratio of 94/6 (evidence: block_6_0021, block_6_0058).",
+      "evidence_ids": [
+        "block_6_0019",
+        "block_6_0018",
+        "block_6_0021",
+        "block_6_0054",
+        "block_6_0058",
+        "block_6_0060",
+        "block_6_0015",
+        "block_6_0016",
+        "block_6_0017"
+      ],
+      "confidence": 0.82,
+      "judge_score": 0.7,
+      "entities_found": [
+        "(−)-lamenallenic acid",
+        "(Ra)-(−)-1",
+        "yield",
+        "E/Z"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states the yield (98%) and E/Z ratio (94/6), but omits the specific optical rotation data [α]D20 = −55.2, c = 0.995, EtOH, which is a minor omission.",
+      "score": 0.7,
+      "intent_key": "property_query"
+    },
+    {
+      "id": "q1",
+      "source_paper": "7.pdf",
+      "intent": "alias_resolution",
+      "question": "In this paper, what compound does the label '1a' refer to?",
+      "ground_truth": "n-C11H23CHO (1a)",
+      "system_answer": "The label '1a' refers to n-C11H23CHO, which is dodecanal (n-undecyl aldehyde). This is shown in Table 3, entry 1, where the substrate is listed as 'n-C11H23CHO (1a)' (evidence: block_7_0015). The large-scale procedure also uses '1a' as the starting aldehyde to produce dodecanoic acid (2a) (evidence: block_7_0031).",
+      "evidence_ids": [
+        "block_7_0004",
+        "block_7_0031",
+        "block_7_0015",
+        "block_7_0010",
+        "block_7_0002",
+        "block_7_0030",
+        "block_7_0021",
+        "block_7_0006"
+      ],
+      "confidence": 0.85,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1a",
+        "n-C11H23CHO"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies '1a' as n-C11H23CHO (dodecanal) and matches the ground truth exactly, with all key entities present.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q2",
+      "source_paper": "7.pdf",
+      "intent": "entity_lookup",
+      "question": "What is the chemical identity/name given in the paper for Fe(NO3)3·9H2O, the catalyst used in the study?",
+      "ground_truth": "Fe(NO3)3·9H2O — iron(III) nitrate nonahydrate (used as the single-component catalyst)",
+      "system_answer": "The paper identifies Fe(NO3)3·9H2O as iron(III) nitrate nonahydrate (evidence: mol_7_0023). It is described as a single-component catalyst for the aerobic oxidation of aldehydes to carboxylic acids (evidence: block_7_0002, block_7_0004, block_7_0026).",
+      "evidence_ids": [
+        "block_7_0004",
+        "mol_7_0023",
+        "block_7_0010",
+        "block_7_0002",
+        "block_7_0015",
+        "block_7_0011",
+        "mol_7_0014",
+        "block_7_0026"
+      ],
+      "confidence": 0.91,
+      "judge_score": 1.0,
+      "entities_found": [
+        "Fe(NO3)3·9H2O",
+        "iron(III) nitrate nonahydrate"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies Fe(NO3)3·9H2O as iron(III) nitrate nonahydrate and states it is used as a single-component catalyst, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q1",
+      "source_paper": "8.pdf",
+      "intent": "alias_resolution",
+      "question": "In this paper, what compound does the label '2a' refer to?",
+      "ground_truth": "2a refers to benzoic acid (the carboxylic acid product obtained from benzyl alcohol 1a).",
+      "system_answer": "In this paper, the label '2a' refers to benzoic acid. The evidence explicitly states that 'Benzoic acid (2a) was obtained in 57% yield from benzyl alcohol (1a)' (evidence: block_8_0011) and the table shows 'Ph (1a)' yielding '57 (2a)' (evidence: block_8_0013). The experimental procedure also describes the isolation of 'benzoic acid (2a)' (evidence: block_8_0020).",
+      "evidence_ids": [
+        "block_8_0011",
+        "block_8_0009",
+        "block_8_0013",
+        "block_8_0010",
+        "block_8_0020",
+        "block_8_0249",
+        "block_8_0027",
+        "block_8_0028"
+      ],
+      "confidence": 0.95,
+      "judge_score": 1.0,
+      "entities_found": [
+        "2a",
+        "1a",
+        "benzoic acid"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies that 2a refers to benzoic acid and mentions the relationship with 1a, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q3",
+      "source_paper": "8.pdf",
+      "intent": "reaction_condition_query",
+      "question": "Under the standard conditions reported (Table 1 and Experimental), what solvent, temperature, and reaction time were used for the aerobic oxidation of benzyl alcohol 1a to give 2a?",
+      "ground_truth": "The standard reaction used DCE (1,2-dichloroethane) as solvent, at 25 °C, for 48 h (with O2; Fe(NO3)3·9H2O 10 mol%, TEMPO 10–30 mol%, KCl 10 mol%).",
+      "system_answer": "Under the standard conditions reported in Table 1 and the Experimental section, the aerobic oxidation of benzyl alcohol 1a to benzoic acid 2a was carried out in DCE at 25 °C for 48 hours (evidence: block_8_0011, block_8_0020). The reaction used 10 mol% each of Fe(NO3)3·9H2O, TEMPO, and KCl under an oxygen atmosphere (evidence: block_8_0011, block_8_0020).",
+      "evidence_ids": [
+        "block_8_0013",
+        "block_8_0010",
+        "block_8_0011",
+        "block_8_0009",
+        "block_8_0020",
+        "block_8_0018",
+        "block_8_0027",
+        "block_8_0249"
+      ],
+      "confidence": 0.9,
+      "judge_score": 0.7,
+      "entities_found": [
+        "1a",
+        "2a",
+        "DCE",
+        "Fe(NO3)3·9H2O",
+        "KCl"
+      ],
+      "entities_missing": [
+        "TEMPO"
+      ],
+      "judge_reasoning": "The system answer correctly identifies most key entities and conditions, but states TEMPO as 10 mol% while ground truth allows 10–30 mol%, missing the range detail.",
+      "score": 0.7,
+      "intent_key": "reaction_condition_query"
+    },
+    {
+      "id": "q4",
+      "source_paper": "8.pdf",
+      "intent": "reaction_comparison",
+      "question": "Which substrate gave the higher isolated yield in the 100 mmol slow-flow air large-scale reactions reported in Scheme 5: 1k or 1l?",
+      "ground_truth": "1l gave the higher isolated yield (93%) compared to 1k (87%).",
+      "system_answer": "Substrate 1l gave the higher isolated yield (93%) compared to 1k (87%) in the 100 mmol slow-flow air large-scale reactions reported in Scheme 5 (evidence: block_8_0015, block_8_0249, block_8_0251). The evidence explicitly states that 1k afforded an 87% isolated yield of 2k, while 1l produced 2l in 93% yield.",
+      "evidence_ids": [
+        "block_8_0015",
+        "block_8_0010",
+        "block_8_0249",
+        "block_8_0251",
+        "block_8_0011",
+        "block_8_0013",
+        "block_8_0253",
+        "block_8_0122",
+        "block_8_0007"
+      ],
+      "confidence": 1.0,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1k",
+        "1l",
+        "2k",
+        "2l",
+        "Scheme 5"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states that 1l gave a higher yield (93%) than 1k (87%), includes all key entities, and matches the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q2",
+      "source_paper": "9.pdf",
+      "intent": "entity_lookup",
+      "question": "What is the chemical name (as given in the paper) of compound 1a?",
+      "ground_truth": "1a: 2-(1-hydroxy-3-phenylprop-2-yn-1-yl)phenol.",
+      "system_answer": "The chemical name of compound 1a, as given in the paper, is 2-(1-hydroxy-3-phenylprop-2-yn-1-yl)phenol (evidence: block_9_0007).",
+      "evidence_ids": [
+        "block_9_0011",
+        "block_9_0040",
+        "block_9_0042",
+        "block_9_0044",
+        "block_9_0019",
+        "block_9_0006",
+        "block_9_0007",
+        "block_9_0021"
+      ],
+      "confidence": 0.66,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1a",
+        "2-(1-hydroxy-3-phenylprop-2-yn-1-yl)phenol"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer exactly matches the ground truth chemical name for compound 1a and includes both key entities.",
+      "score": 1.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q3",
+      "source_paper": "9.pdf",
+      "intent": "reaction_condition_query",
+      "question": "Which solvent was used in the reaction that afforded 3a in 85% NMR yield (82% isolated) from 1a?",
+      "ground_truth": "MeCN (acetonitrile).",
+      "system_answer": "MeCN (acetonitrile) was the solvent used in the reaction that afforded 3a in 85% NMR yield (82% isolated) from 1a (evidence: block_9_0011, block_9_0008). The table shows entry 6 with MeCN giving 85% (82% isolated) yield, and the text explicitly states that MeCN turned out to be the best solvent.",
+      "evidence_ids": [
+        "block_9_0011",
+        "block_9_0009",
+        "block_9_0019",
+        "block_9_0013",
+        "block_9_0008",
+        "block_9_0041",
+        "block_9_0007",
+        "block_9_0017",
+        "block_9_0012"
+      ],
+      "confidence": 1.0,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1a",
+        "3a",
+        "MeCN",
+        "acetonitrile",
+        "Table 2 entry 6"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies MeCN (acetonitrile) as the solvent, mentions the yields and references to 1a and 3a, and refers to the table entry, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "reaction_condition_query"
+    },
+    {
+      "id": "q5",
+      "source_paper": "9.pdf",
+      "intent": "property_query",
+      "question": "What was the isolated yield (and isolated mass) reported for gram-scale synthesis of product 3l?",
+      "ground_truth": "3l isolated yield 85% (1.53 g).",
+      "system_answer": "The gram-scale synthesis of product 3l gave an isolated yield of 85% and an isolated mass of 1.53 g (evidence: block_9_0024).",
+      "evidence_ids": [
+        "block_9_0011",
+        "block_9_0019",
+        "block_9_0009",
+        "block_9_0013",
+        "block_9_0041",
+        "block_9_0042",
+        "block_9_0044",
+        "block_9_0023",
+        "block_9_0024"
+      ],
+      "confidence": 0.71,
+      "judge_score": 1.0,
+      "entities_found": [
+        "3l"
+      ],
+      "entities_missing": [
+        "1l",
+        "gram-scale",
+        "Scheme 4"
+      ],
+      "judge_reasoning": "The system answer correctly states the isolated yield (85%) and mass (1.53 g) for product 3l, matching the ground truth exactly, but the key entities '1l', 'gram-scale', and 'Scheme 4' are not present in the system answer; however, the ground truth only contains '3l' as a key entity, and the system answer includes it, so the score is 1.0.",
+      "score": 1.0,
+      "intent_key": "property_query"
+    },
+    {
+      "id": "q1",
+      "source_paper": "10.pdf",
+      "intent": "alias_resolution",
+      "question": "In this paper, what compound does the label '1a' refer to (give the molecular formula/name exactly as shown in the article)?",
+      "ground_truth": "n-C11H23CH2OH (1a)",
+      "system_answer": "The label '1a' refers to 1-dodecanol, with the molecular formula n-C11H23CH2OH, as shown in the article (evidence: block_10_0012, block_10_0018, block_10_0015).",
+      "evidence_ids": [
+        "block_10_0006",
+        "block_10_0046",
+        "block_10_0016",
+        "block_10_0071",
+        "block_10_0048",
+        "block_10_0059",
+        "block_10_0061",
+        "block_10_0073",
+        "block_10_0018",
+        "block_10_0015",
+        "block_10_0023",
+        "block_10_0012"
+      ],
+      "confidence": 0.95,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1a"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies '1a' as 1-dodecanol with the molecular formula n-C11H23CH2OH, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q2",
+      "source_paper": "10.pdf",
+      "intent": "entity_lookup",
+      "question": "What is the structure/name of the product labeled '2a' formed from oxidation of 1a (provide the exact representation used in the paper)?",
+      "ground_truth": "n-C11H23CHO (2a)",
+      "system_answer": "The product labeled '2a' formed from oxidation of 1a is an aldehyde, specifically n-dodecanal (n-C11H23CHO). The paper provides its full name as 'n-C11H23CHO' in the table headers and describes it as 'aldehyde 2a' (evidence: block_10_0015, block_10_0018, block_10_0011). The 1H NMR data shows a characteristic aldehyde proton at δ 9.76 (t, J = 1.6 Hz, 1H, CHO) (evidence: block_10_0071).",
+      "evidence_ids": [
+        "block_10_0016",
+        "block_10_0006",
+        "block_10_0071",
+        "block_10_0046",
+        "block_10_0032",
+        "block_10_0067",
+        "block_10_0037",
+        "block_10_0039",
+        "block_10_0015",
+        "block_10_0018",
+        "block_10_0012",
+        "block_10_0022",
+        "block_10_0017"
+      ],
+      "confidence": 0.95,
+      "judge_score": 1.0,
+      "entities_found": [
+        "2a",
+        "n-C11H23CHO"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies the product as n-C11H23CHO (2a) and provides supporting evidence, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q4",
+      "source_paper": "10.pdf",
+      "intent": "reaction_comparison",
+      "question": "According to Table 2 in the article, which solvent gave the higher yield for conversion of 1a to 2a — dichloromethane (DCM) or toluene — and what yields are reported for each?",
+      "ground_truth": "Toluene gave the higher yield: DCM 65% vs toluene 77% (reported yields in Table 2).",
+      "system_answer": "Toluene gave the higher yield for conversion of 1a to 2a, with a reported 77% NMR yield, compared to DCM which gave a 65% NMR yield (evidence: block_10_0017, block_10_0018).",
+      "evidence_ids": [
+        "block_10_0017",
+        "block_10_0018",
+        "block_10_0073",
+        "block_10_0023",
+        "block_10_0015",
+        "block_10_0024",
+        "block_10_0025",
+        "block_10_0012",
+        "block_10_0016",
+        "block_10_0020",
+        "rxn_tbl_10_0006"
+      ],
+      "confidence": 1.0,
+      "judge_score": 1.0,
+      "entities_found": [
+        "DCM",
+        "toluene",
+        "1a",
+        "2a"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states that toluene gave a higher yield (77%) compared to DCM (65%) for conversion of 1a to 2a, matching all key entities and facts from the ground truth.",
+      "score": 1.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q2",
+      "source_paper": "11.pdf",
+      "intent": "entity_lookup",
+      "question": "What copper catalyst (formula and hydrate state) is identified and used as the optimal catalyst throughout the study?",
+      "ground_truth": "Cu(NO3)2·3H2O (copper(II) nitrate trihydrate)",
+      "system_answer": "The optimal copper catalyst identified and used throughout the study is copper(II) nitrate trihydrate, Cu(NO3)2·3H2O (evidence: block_11_0032, block_11_0026, block_11_0031, block_11_0023, block_11_0035, block_11_0011, block_11_0047, block_11_0044). This catalyst is described as readily available and cheap (evidence: block_11_0011), and it is used in combination with TEMPO (2,2,6,6-tetramethyl-1-piperidinyloxy) or 4-HO-TEMPO for the aerobic oxidation of alcohols (evidence: block_11_0011).",
+      "evidence_ids": [
+        "block_11_0032",
+        "block_11_0026",
+        "block_11_0031",
+        "block_11_0023",
+        "block_11_0035",
+        "block_11_0021",
+        "block_11_0020",
+        "block_11_0018",
+        "block_11_0011",
+        "block_11_0028",
+        "block_11_0047",
+        "block_11_0044"
+      ],
+      "confidence": 0.95,
+      "judge_score": 1.0,
+      "entities_found": [
+        "Cu(NO3)2·3H2O"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies copper(II) nitrate trihydrate, Cu(NO3)2·3H2O, as the optimal copper catalyst, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q4",
+      "source_paper": "11.pdf",
+      "intent": "reaction_comparison",
+      "question": "Which copper salt gave the higher yield of 2a in Table 2 — CuBr2 or Cu(NO3)2·3H2O — and what were the reported yields for each?",
+      "ground_truth": "Cu(NO3)2·3H2O gave the higher yield: 96% (for 2a) vs CuBr2 which gave 12% (Table 2).",
+      "system_answer": "Cu(NO3)2·3H2O gave the higher yield of 2a at 96%, while CuBr2 gave only 12% (evidence: block_11_0026, Table 2, entries 3 and 6).",
+      "evidence_ids": [
+        "block_11_0035",
+        "block_11_0032",
+        "block_11_0023",
+        "block_11_0026",
+        "block_11_0031",
+        "block_11_0020",
+        "block_11_0021",
+        "block_11_0028",
+        "block_11_0027",
+        "block_11_0017"
+      ],
+      "confidence": 1.0,
+      "judge_score": 1.0,
+      "entities_found": [
+        "CuBr2",
+        "Cu(NO3)2·3H2O",
+        "2a"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states the yields and comparison between Cu(NO3)2·3H2O and CuBr2 for 2a, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q1",
+      "source_paper": "12.pdf",
+      "intent": "alias_resolution",
+      "question": "In this paper, what chemical species is denoted by the label \"1a\"?",
+      "ground_truth": "1a refers to the isochroman substrate shown in the paper (the parent isochroman used as the model substrate in Schemes/Table; the starting material for formation of lactone 2a).",
+      "system_answer": "In this paper, the label \"1a\" denotes isochroman (evidence: block_12_0020, block_12_0023). The text describes the aerobic oxidation of isochroman 1a as the starting substrate in the reaction optimization (evidence: block_12_0020).",
+      "evidence_ids": [
+        "block_12_0013",
+        "block_12_0026",
+        "block_12_0044",
+        "block_12_0020",
+        "block_12_0023",
+        "block_12_0028",
+        "block_12_0046",
+        "block_12_0051"
+      ],
+      "confidence": 0.59,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1a",
+        "isochroman"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies 1a as isochroman and mentions it as the starting substrate, matching the ground truth's description of 1a as the parent isochroman used as the model substrate.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q3",
+      "source_paper": "12.pdf",
+      "intent": "reaction_condition_query",
+      "question": "What were the standard reaction conditions (catalysts, solvent and atmosphere) used to convert 1a to 2a in the paper?",
+      "ground_truth": "5 mol% Fe(NO3)3·9H2O and 5 mol% 4-OH-TEMPO in MeCN with an O2 balloon at room temperature (rt).",
+      "system_answer": "The standard reaction conditions for converting 1a to 2a were: 5 mol% Fe(NO3)3·9H2O and 5 mol% 4-OH-TEMPO as catalysts, MeCN as solvent, and an oxygen balloon atmosphere at room temperature (25 °C) for 24 h (evidence: block_12_0023, block_12_0020).",
+      "evidence_ids": [
+        "block_12_0023",
+        "block_12_0029",
+        "block_12_0030",
+        "block_12_0022",
+        "block_12_0020",
+        "block_12_0027",
+        "block_12_0026",
+        "block_12_0013"
+      ],
+      "confidence": 0.95,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1a",
+        "2a",
+        "Fe(NO3)3·9H2O",
+        "4-OH-TEMPO",
+        "MeCN",
+        "O2 balloon"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer includes all key entities and matches the ground truth exactly, with only minor additional details (room temperature specified as 25 °C and reaction time 24 h) that do not contradict the ground truth.",
+      "score": 1.0,
+      "intent_key": "reaction_condition_query"
+    },
+    {
+      "id": "q1",
+      "source_paper": "13.pdf",
+      "intent": "alias_resolution",
+      "question": "In this paper, what chemical entity is denoted by the label '1a'?",
+      "ground_truth": "Cetyl alcohol (1a; hexadecan-1-ol).",
+      "system_answer": "In this paper, the label '1a' denotes cetyl alcohol (n-C15H31CH2OH), as shown in the table header and the gram-scale reaction description where '10 mmol of cetyl alcohol 1a' is used (evidence: block_13_0017, block_13_0014).",
+      "evidence_ids": [
+        "block_13_0010",
+        "block_13_0017",
+        "block_13_0015",
+        "block_13_0014",
+        "block_13_0001",
+        "mol_13_0044",
+        "block_13_0021",
+        "block_13_0024"
+      ],
+      "confidence": 0.85,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1a",
+        "cetyl alcohol"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies that label '1a' denotes cetyl alcohol, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q3",
+      "source_paper": "13.pdf",
+      "intent": "reaction_condition_query",
+      "question": "Under the standard Conditions A used for the aerobic oxidation of 1a, what solvent was used and what were the catalyst loadings of Cu(NO3)2·3H2O and TEMPO?",
+      "ground_truth": "Solvent: DCE (1,2‑dichloroethane). Catalyst loadings: Cu(NO3)2·3H2O 10 mol% and TEMPO 10 mol% (KHSO4 10 mol% as co‑catalyst; reaction run under O2 balloon).",
+      "system_answer": "Under the standard Conditions A for the aerobic oxidation of 1a, the solvent used was DCE, and the catalyst loadings were 10 mol% Cu(NO3)2·3H2O and 10 mol% TEMPO (evidence: block_13_0014). The reaction was conducted at room temperature for 36 h with an O2 balloon (evidence: block_13_0014).",
+      "evidence_ids": [
+        "block_13_0014",
+        "block_13_0015",
+        "block_13_0010",
+        "block_13_0017",
+        "block_13_0022",
+        "block_13_0016",
+        "block_13_0011",
+        "block_13_0012"
+      ],
+      "confidence": 0.95,
+      "judge_score": 0.7,
+      "entities_found": [
+        "Conditions A",
+        "Cu(NO3)2·3H2O",
+        "TEMPO",
+        "DCE"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies the solvent, catalyst loadings, and reaction conditions, but omits the co-catalyst KHSO4 10 mol% mentioned in the ground truth, making it mostly correct with a minor omission.",
+      "score": 0.7,
+      "intent_key": "reaction_condition_query"
+    },
+    {
+      "id": "q1",
+      "source_paper": "14.pdf",
+      "intent": "alias_resolution",
+      "question": "In this paper what compound does the abbreviation 'NBP' refer to?",
+      "ground_truth": "NBP refers to n-butylphthalide (n‑butylphthalide).",
+      "system_answer": "In this paper, the abbreviation 'NBP' refers to n-butylphthalide, a commercial drug (evidence: block_14_0021). The text states that NBP is a marketed antiplatelet drug for ischemia-cerebral apoplexy and describes its synthesis from diol 1q (evidence: block_14_0021).",
+      "evidence_ids": [
+        "block_14_0013",
+        "block_14_0026",
+        "block_14_0015",
+        "block_14_0021",
+        "block_14_0017",
+        "block_14_0019",
+        "mol_14_0007",
+        "mol_14_0009"
+      ],
+      "confidence": 0.9,
+      "judge_score": 1.0,
+      "entities_found": [
+        "NBP"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies NBP as n-butylphthalide, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q4",
+      "source_paper": "14.pdf",
+      "intent": "reaction_comparison",
+      "question": "Which gave the higher NMR yield for formation of 2a: entry 1 (using DCE as solvent) or entry 7 (using toluene) in Table 1?",
+      "ground_truth": "Entry 7 (toluene) gave the higher yield: 87% NMR yield (81% isolated) vs entry 1 (DCE) 59% NMR yield.",
+      "system_answer": "Entry 7 (using toluene) gave the higher NMR yield for formation of 2a, at 87%, compared to entry 1 (using DCE) which gave 59% (evidence: block_14_0017, block_14_0019).",
+      "evidence_ids": [
+        "block_14_0017",
+        "block_14_0019",
+        "block_14_0021",
+        "block_14_0018",
+        "block_14_0022",
+        "block_14_0020",
+        "block_14_0015",
+        "rxn_14_0001"
+      ],
+      "confidence": 1.0,
+      "judge_score": 0.9,
+      "entities_found": [
+        "entry 1",
+        "entry 7",
+        "DCE",
+        "toluene",
+        "2a"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies the higher yield for entry 7 (toluene) at 87% vs entry 1 (DCE) at 59%, and mentions 2a, but omits the isolated yield of 81% for entry 7, which is a minor detail.",
+      "score": 0.9,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q_batch1_1",
+      "source_paper": "15-SI.pdf",
+      "intent": "alias_resolution",
+      "question": "In the supporting information, what does TEMPO refer to?",
+      "ground_truth": "TEMPO = 2,2,6,6‑Tetramethylpiperidinooxy",
+      "system_answer": "In the supporting information, TEMPO refers to a chemical reagent, 2,2,6,6-tetramethylpiperidine-1-oxyl, used as a catalyst or additive in the reactions. It is listed as a purchased reagent (98% purity) from Shanghai Darui Fine Chemical Co., Ltd. (evidence: block_15-SI_0004) and is used in typical procedures at 5 mol% loading (evidence: block_15-SI_0041, block_15-SI_0009).",
+      "evidence_ids": [
+        "block_15-SI_0041",
+        "block_15-SI_0004",
+        "block_15-SI_0115",
+        "block_15-SI_0051",
+        "block_15-SI_0053",
+        "block_15-SI_0059",
+        "block_15-SI_0061",
+        "block_15-SI_0073",
+        "block_15-SI_0008",
+        "block_15-SI_0009"
+      ],
+      "confidence": 0.85,
+      "judge_score": 1.0,
+      "entities_found": [
+        "TEMPO"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies TEMPO as 2,2,6,6-tetramethylpiperidine-1-oxyl, which is equivalent to the ground truth's 2,2,6,6‑Tetramethylpiperidinooxy, and includes all key entities.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q_batch1_3",
+      "source_paper": "15-SI.pdf",
+      "intent": "property_query",
+      "question": "What yield was reported for methyl palmitate (6ae)?",
+      "ground_truth": "Formed in 83% NMR yield (crude); isolated yield 73% (198.3 mg)",
+      "system_answer": "The highest NMR yield reported for methyl palmitate (6ae) is 84%, observed in multiple entries: Entry 3 of Table S4 (block_15-SI_0017) with 84% yield, and Entry 1 of Table S5 (block_15-SI_0021) and Entry 1 of Table S6 (block_15-SI_0023) also showing 84% yield. Additionally, a 73% isolated yield is reported in the experimental procedure (block_15-SI_0035).",
+      "evidence_ids": [
+        "block_15-SI_0013",
+        "block_15-SI_0015",
+        "block_15-SI_0017",
+        "block_15-SI_0019",
+        "block_15-SI_0021",
+        "block_15-SI_0023",
+        "block_15-SI_0025",
+        "block_15-SI_0009",
+        "block_15-SI_0035",
+        "block_15-SI_0012"
+      ],
+      "confidence": 0.95,
+      "judge_score": 0.3,
+      "entities_found": [
+        "6ae",
+        "methyl palmitate"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies the compound and mentions a 73% isolated yield, but incorrectly states the NMR yield as 84% instead of the ground truth 83%, and includes extra entries not present in the ground truth.",
+      "score": 0.3,
+      "intent_key": "property_query"
+    },
+    {
+      "id": "q_batch2_1",
+      "source_paper": "15-SI.pdf",
+      "intent": "alias_resolution",
+      "question": "In the compound labels on these pages, what does the abbreviation 'COOMe' refer to?",
+      "ground_truth": "The methyl ester functional group: –COOCH3 (carboxylate ester with a methyl alcohol portion).",
+      "system_answer": "The abbreviation 'COOMe' is not explicitly defined in the provided evidence. However, based on standard chemical nomenclature and the context of the evidence, 'COOMe' typically refers to a methyl ester group (C(=O)OCH3). The evidence frequently uses 'OCH3' to denote a methoxy group (e.g., in NMR data: '3.66 (s, 3 H, OCH3)'), and 'COOMe' would be the corresponding ester abbreviation (evidence: block_15-SI_0041, block_15-SI_0035).",
+      "evidence_ids": [
+        "block_15-SI_0008",
+        "block_15-SI_0009",
+        "block_15-SI_0041",
+        "block_15-SI_0011",
+        "block_15-SI_0029",
+        "block_15-SI_0035",
+        "block_15-SI_0061",
+        "block_15-SI_0065",
+        "block_15-SI_0013",
+        "block_15-SI_0015",
+        "block_15-SI_0017",
+        "block_15-SI_0021",
+        "block_15-SI_0025",
+        "block_15-SI_0034"
+      ],
+      "confidence": 0.35,
+      "judge_score": 0.7,
+      "entities_found": [
+        "COOMe"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies COOMe as a methyl ester group and matches the ground truth's definition, but it adds a note about lack of explicit evidence and uses slightly different notation (C(=O)OCH3 vs –COOCH3), which is a minor imprecision.",
+      "score": 0.7,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q_batch2_3",
+      "source_paper": "15-SI.pdf",
+      "intent": "reaction_comparison",
+      "question": "Between compounds 6fe and 6ke, which sample was reported to have the higher purity by NMR and what were the values?",
+      "ground_truth": "6ke had the higher purity: 98% for 6ke versus 96% for 6fe.",
+      "system_answer": "The evidence does not contain any data for compounds named \"6fe\" or \"6ke\". All retrieved tables and entries refer to compounds such as 6ae, 6ab, 6ac, 6ad, and others, but none match the labels 6fe or 6ke. Therefore, the question cannot be answered from the provided evidence.",
+      "evidence_ids": [
+        "block_15-SI_0009",
+        "block_15-SI_0021",
+        "block_15-SI_0017",
+        "block_15-SI_0025",
+        "block_15-SI_0013",
+        "block_15-SI_0015",
+        "block_15-SI_0019",
+        "block_15-SI_0023"
+      ],
+      "confidence": 0.0,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "6fe",
+        "6ke"
+      ],
+      "judge_reasoning": "The system answer incorrectly states that no data exists for 6fe or 6ke, while the ground truth provides specific purity values for both compounds.",
+      "score": 0.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q_batch3_2",
+      "source_paper": "15-SI.pdf",
+      "intent": "reaction_condition_query",
+      "question": "What solvent was used for the 1H NMR spectra of compound 6Ae?",
+      "ground_truth": "CDCl3",
+      "system_answer": "The evidence does not specify the solvent used for recording the 1H NMR spectra of compound 6Ae. The 1H NMR data for 6Ae is reported in CDCl3 (evidence: block_15-SI_0087), but this is the NMR solvent, not the reaction solvent. The reaction that produces 6Ae uses DCE as the solvent (evidence: block_15-SI_0087, block_15-SI_0011).",
+      "evidence_ids": [
+        "block_15-SI_0021",
+        "block_15-SI_0009",
+        "block_15-SI_0013",
+        "block_15-SI_0015",
+        "block_15-SI_0017",
+        "block_15-SI_0025",
+        "block_15-SI_0019",
+        "block_15-SI_0023",
+        "block_15-SI_0031",
+        "block_15-SI_0114",
+        "mol_15-SI_0081",
+        "block_15-SI_0035",
+        "block_15-SI_0087",
+        "block_15-SI_0029",
+        "block_15-SI_0041",
+        "block_15-SI_0059"
+      ],
+      "confidence": 0.95,
+      "judge_score": 0.0,
+      "entities_found": [
+        "6Ae"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer incorrectly states that the solvent for recording 1H NMR of 6Ae is not specified, but the ground truth clearly states it is CDCl3, which the system answer itself mentions as the NMR solvent, leading to a contradiction and a score of 0.0.",
+      "score": 0.0,
+      "intent_key": "reaction_condition_query"
+    },
+    {
+      "id": "q1",
+      "source_paper": "16.pdf",
+      "intent": "alias_resolution",
+      "question": "In this paper, what does the abbreviation 'TBS' refer to (i.e., what silyl protecting group is depicted for 'TBS')?",
+      "ground_truth": "TBS = tert-butyldimethylsilyl group (SiMe2–tBu; tert-butyldimethylsilyl ether).",
+      "system_answer": "In this paper, 'TBS' refers to the tert-butyldimethylsilyl protecting group. This is evident from the text, which mentions 'TBS and TMS ethers' and uses the full name 'tert-butyldimethylsilylether' for the model substrate 1aa (n-C8H17OTBS) (evidence: block_16_0011, block_16_0019, block_16_0026).",
+      "evidence_ids": [
+        "block_16_0010",
+        "block_16_0026",
+        "block_16_0018",
+        "block_16_0019",
+        "block_16_0028",
+        "block_16_0020",
+        "block_16_0025",
+        "block_16_0029",
+        "block_16_0022",
+        "block_16_0024",
+        "block_16_0011"
+      ],
+      "confidence": 0.9,
+      "judge_score": 1.0,
+      "entities_found": [
+        "TBS"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies TBS as the tert-butyldimethylsilyl group/ether, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q2",
+      "source_paper": "16.pdf",
+      "intent": "entity_lookup",
+      "question": "What is the structure of substrate 1aa (how is 1aa described in the paper)?",
+      "ground_truth": "1aa = n-C8H17OTBS, i.e. n‑octyl tert‑butyldimethylsilyl ether (n‑C8H17–O–SiMe2tBu).",
+      "system_answer": "Substrate 1aa is described as 1-octyl tert-butyldimethylsilylether (n-C8H17OTBS) in the paper (evidence: block_16_0011, block_16_0018, block_16_0022). It is used as the model substrate for the deprotective oxidation reaction to produce octanoic acid (2a).",
+      "evidence_ids": [
+        "block_16_0017",
+        "block_16_0018",
+        "block_16_0022",
+        "block_16_0024",
+        "block_16_0025",
+        "block_16_0011",
+        "block_16_0019",
+        "block_16_0020"
+      ],
+      "confidence": 0.85,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1aa",
+        "n-C8H17OTBS"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies 1aa as n-C8H17OTBS and matches the ground truth description, with all key entities present.",
+      "score": 1.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q1",
+      "source_paper": "17.pdf",
+      "intent": "alias_resolution",
+      "question": "In this paper, what does the abbreviation 'PMB' (as in PMB ether) stand for?",
+      "ground_truth": "PMB = p‑Methoxybenzyl",
+      "system_answer": "In this paper, 'PMB' stands for p-methoxybenzyl, as explicitly stated in the evidence: 'p-Methoxybenzyl (PMB) ether is one of the most frequently applied protecting strategies for alcohol protection' (evidence: block_17_0005). The abbreviation is used throughout the paper to refer to p-methoxybenzyl ethers.",
+      "evidence_ids": [
+        "block_17_0026",
+        "block_17_0014",
+        "block_17_0024",
+        "block_17_0025",
+        "block_17_0012",
+        "block_17_0037",
+        "block_17_0005",
+        "block_17_0007"
+      ],
+      "confidence": 0.95,
+      "judge_score": 1.0,
+      "entities_found": [
+        "PMB",
+        "PMB ether"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states that PMB stands for p-methoxybenzyl and mentions PMB ether, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q4",
+      "source_paper": "17.pdf",
+      "intent": "reaction_comparison",
+      "question": "Which reaction gave the higher NMR yield of carboxylic acid 2a under the paper's standard conditions: oxidation of PMB ether 1a or oxidation of the corresponding alcohol 1a'?",
+      "ground_truth": "Oxidation of PMB ether 1a gave the higher yield: 94% NMR (1a → 2a) vs 55% NMR for the corresponding alcohol 1a' → 2a.",
+      "system_answer": "The oxidation of PMB ether 1a gave the higher NMR yield of carboxylic acid 2a. Under the standard conditions, PMB ether 1a afforded 2a in 95% NMR yield (evidence: block_17_0035, block_17_0039), whereas the corresponding alcohol 1a' gave only 55% NMR yield of 2a after 11.5 hours (evidence: block_17_0025).",
+      "evidence_ids": [
+        "block_17_0025",
+        "block_17_0012",
+        "block_17_0005",
+        "block_17_0013",
+        "block_17_0035",
+        "block_17_0010",
+        "block_17_0014",
+        "block_17_0039"
+      ],
+      "confidence": 0.95,
+      "judge_score": 0.9,
+      "entities_found": [
+        "1a",
+        "1a'",
+        "2a"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states that PMB ether 1a gave a higher yield (95% vs 55%) compared to alcohol 1a', matching the ground truth's 94% vs 55% with only a minor rounding difference (95% vs 94%), and includes all key entities.",
+      "score": 0.9,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q5",
+      "source_paper": "17.pdf",
+      "intent": "property_query",
+      "question": "According to Table 1 (entry 1), what NMR yield of carboxylic acid 2a was obtained from substrate 1a under the listed conditions?",
+      "ground_truth": "94% NMR yield of 2a (Table 1, entry 1).",
+      "system_answer": "According to Table 1, entry 1, the NMR yield of carboxylic acid 2a from substrate 1a was 94% (evidence: block_17_0013). The table shows that under the listed conditions (X/Y/Z = 10/10/10, DCE solvent, 18 h), the NMR yield of 2a is 94, with 0% recovery of 1a.",
+      "evidence_ids": [
+        "block_17_0013",
+        "block_17_0012",
+        "block_17_0035",
+        "block_17_0025",
+        "block_17_0011",
+        "block_17_0039",
+        "block_17_0014",
+        "block_17_0034"
+      ],
+      "confidence": 0.85,
+      "judge_score": 1.0,
+      "entities_found": [
+        "2a",
+        "1a",
+        "Table 1"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states the 94% NMR yield of 2a from 1a in Table 1 entry 1, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "property_query"
+    },
+    {
+      "id": "q1",
+      "source_paper": "18.pdf",
+      "intent": "alias_resolution",
+      "question": "In the paper, what does the abbreviation 'DCE' refer to?",
+      "ground_truth": "DCE = 1,2-dichloroethane",
+      "system_answer": "In the paper, 'DCE' refers to 1,2-dichloroethane (evidence: block_18_0008, block_18_0009). The text explicitly states '1,2-dichloroethane (DCE)' and also mentions using DCE as a solvent in Table 1 (evidence: block_18_0010).",
+      "evidence_ids": [
+        "block_18_0015",
+        "block_18_0005",
+        "block_18_0020",
+        "block_18_0008",
+        "block_18_0025",
+        "block_18_0012",
+        "block_18_0013",
+        "block_18_0014",
+        "block_18_0007",
+        "block_18_0010",
+        "block_18_0070",
+        "block_18_0019"
+      ],
+      "confidence": 0.95,
+      "judge_score": 1.0,
+      "entities_found": [
+        "DCE",
+        "1,2-dichloroethane"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies DCE as 1,2-dichloroethane and includes all key entities from the ground truth.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q3",
+      "source_paper": "18.pdf",
+      "intent": "reaction_condition_query",
+      "question": "What solvent, catalyst loading (Fe and TEMPO), atmosphere, temperature and reaction time were used for the room-temperature oxidation of substrate 1a to ketone 2a in Table 1?",
+      "ground_truth": "Solvent: toluene; catalysts/additives: Fe(NO3)3·9H2O (5 mol%), TEMPO (3 mol%), NaCl (5 mol%); atmosphere: O2; temperature: room temperature (r.t.); time: 2 h",
+      "system_answer": "For the room-temperature oxidation of substrate 1a to ketone 2a in Table 1, the conditions were: toluene as solvent (1.0 M), Fe(NO3)3·9H2O (5 mol%), TEMPO (3 mol%), NaCl (5 mol%), O2 atmosphere (balloon), room temperature, and 2 hours reaction time (evidence: block_18_0010, block_18_0008).",
+      "evidence_ids": [
+        "block_18_0020",
+        "block_18_0021",
+        "block_18_0010",
+        "block_18_0015",
+        "block_18_0008",
+        "block_18_0012",
+        "block_18_0027",
+        "block_18_0007"
+      ],
+      "confidence": 0.95,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1a",
+        "2a",
+        "Fe(NO3)3·9H2O 5 mol%",
+        "TEMPO 3 mol%",
+        "NaCl 5 mol%",
+        "toluene",
+        "O2",
+        "r.t.",
+        "2 h"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer includes all key entities from the ground truth, with precise matching of conditions and concentrations, and is fully correct.",
+      "score": 1.0,
+      "intent_key": "reaction_condition_query"
+    },
+    {
+      "id": "q4",
+      "source_paper": "18.pdf",
+      "intent": "reaction_comparison",
+      "question": "For substrate 1b (R = H) converted to 2b, which method reported in Table 2 (Method A or Method B) gave the higher isolated yield, and what were the two isolated yields?",
+      "ground_truth": "Method B gave the higher isolated yield: Method A = 77% (2b), Method B = 91% (2b)",
+      "system_answer": "For substrate 1b (R = H) converted to 2b, Method B gave the higher isolated yield of 91%, compared to Method A which gave 77% (evidence: block_18_0015, entries 1 and 2).",
+      "evidence_ids": [
+        "block_18_0015",
+        "block_18_0020",
+        "block_18_0012",
+        "block_18_0021",
+        "block_18_0010",
+        "block_18_0005",
+        "block_18_0008",
+        "block_18_0007"
+      ],
+      "confidence": 1.0,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1b",
+        "2b",
+        "Method A",
+        "Method B"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states that Method B gave the higher isolated yield (91%) compared to Method A (77%) for substrate 1b converted to 2b, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q5",
+      "source_paper": "18.pdf",
+      "intent": "property_query",
+      "question": "What isolated yield was obtained for 4-(trimethylsilyl)but-3-yn-2-one (2w) in the 1.0 mol scale reaction described in the paper's large-scale example?",
+      "ground_truth": "90% isolated yield (1.0 mol scale, 8 hours)",
+      "system_answer": "The isolated yield obtained for 4-(trimethylsilyl)but-3-yn-2-one (2w) in the 1.0 mol scale reaction was 90% (evidence: block_18_0023). The reaction used 2 mol% each of Fe(NO3)3·9H2O, TEMPO, and NaCl, and the product was isolated by simple distillation.",
+      "evidence_ids": [
+        "block_18_0023",
+        "block_18_0020",
+        "block_18_0015",
+        "block_18_0010",
+        "block_18_0021",
+        "block_18_0008",
+        "block_18_0012",
+        "block_18_0005",
+        "block_18_0032",
+        "block_18_0033",
+        "block_18_0068",
+        "block_18_0074",
+        "block_18_0081",
+        "block_18_0088",
+        "mol_18_0001"
+      ],
+      "confidence": 1.0,
+      "judge_score": 0.7,
+      "entities_found": [
+        "2w",
+        "4-(trimethylsilyl)but-3-yn-2-one",
+        "1.0 mol scale reaction"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states the 90% isolated yield for the 1.0 mol scale reaction and identifies the compound, but omits the reaction time of 8 hours mentioned in the ground truth.",
+      "score": 0.7,
+      "intent_key": "property_query"
+    },
+    {
+      "id": "q1",
+      "source_paper": "19.pdf",
+      "intent": "alias_resolution",
+      "question": "In this paper what does the abbreviation 'PMB' stand for?",
+      "ground_truth": "PMB = p‑methoxybenzyl (the p‑methoxybenzyl protecting group/aryl‑methylene group)",
+      "system_answer": "In this paper, 'PMB' stands for p-methoxybenzyl (evidence: mol_19_0000). The evidence explicitly states 'p-Methoxybenzyl (PMB) ethers' and describes PMB ethers as p-methoxybenzyl ethers (evidence: mol_19_0000).",
+      "evidence_ids": [
+        "mol_19_0000",
+        "block_19_0009",
+        "mol_19_0036",
+        "mol_19_0016",
+        "block_19_0027",
+        "block_19_0011",
+        "block_19_0016",
+        "block_19_0006"
+      ],
+      "confidence": 0.62,
+      "judge_score": 1.0,
+      "entities_found": [
+        "PMB"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly defines PMB as p-methoxybenzyl, matching the ground truth exactly, and includes all key entities.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q1",
+      "source_paper": "20.pdf",
+      "intent": "alias_resolution",
+      "question": "In this paper, what does the label '1a' refer to?",
+      "ground_truth": "n-hexadecanal (the aldehyde substrate n-hexadecanal)",
+      "system_answer": "In this paper, the label '1a' refers to n-hexadecanal (also written as nC15H31CHO), which is a linear aliphatic aldehyde used as the model substrate for the copper-catalyzed aerobic oxidation to carboxylic acids (evidence: block_20_0019, block_20_0021).",
+      "evidence_ids": [
+        "block_20_0019",
+        "block_20_0027",
+        "block_20_0028",
+        "mol_20_0041",
+        "block_20_0013",
+        "block_20_0031",
+        "block_20_0020",
+        "block_20_0021"
+      ],
+      "confidence": 0.85,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1a",
+        "n-hexadecanal"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies '1a' as n-hexadecanal and matches the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q2",
+      "source_paper": "20.pdf",
+      "intent": "entity_lookup",
+      "question": "What is the product identity/structure of compound 2a formed from 1a under the standard conditions?",
+      "ground_truth": "Hexadecanoic acid (n-hexadecanoic acid, palmitic acid)",
+      "system_answer": "Compound 2a is n-pentadecanoic acid (n-C15H31COOH), the carboxylic acid formed by oxidation of n-hexadecanal (1a) under the standard conditions (evidence: block_20_0021, block_20_0019). The standard conditions use 10 mol% Cu(NO3)2·3H2O and 10 mol% TEMPO in DCE with an O2 balloon at room temperature for 18 h, giving 2a in 86% NMR yield (evidence: block_20_0021).",
+      "evidence_ids": [
+        "block_20_0013",
+        "block_20_0019",
+        "block_20_0022",
+        "block_20_0020",
+        "block_20_0021",
+        "block_20_0027",
+        "block_20_0028",
+        "block_20_0031"
+      ],
+      "confidence": 0.85,
+      "judge_score": 0.0,
+      "entities_found": [
+        "2a"
+      ],
+      "entities_missing": [
+        "hexadecanoic acid",
+        "palmitic acid"
+      ],
+      "judge_reasoning": "The system answer incorrectly identifies 2a as n-pentadecanoic acid (C15) instead of hexadecanoic acid (C16), which is a critical factual error, and misses the key entities hexadecanoic acid and palmitic acid.",
+      "score": 0.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q3",
+      "source_paper": "20.pdf",
+      "intent": "reaction_condition_query",
+      "question": "Under the reported standard Cu/TEMPO catalytic conditions (e.g., conversion of 1a to 2a), what solvent and atmosphere/oxidant were used?",
+      "ground_truth": "DCE (1,2-dichloroethane) as solvent and O2 (oxygen) supplied as an O2 balloon (ambient O2); catalysts: Cu(NO3)2·3H2O (10 mol%) and TEMPO (10 mol%) at room temperature",
+      "system_answer": "Under the reported standard Cu/TEMPO catalytic conditions for the conversion of 1a to 2a, the solvent was DCE and the atmosphere/oxidant was O2 (oxygen balloon) (evidence: block_20_0021, block_20_0026). The reaction was carried out at room temperature for 18-24 hours (evidence: block_20_0021, block_20_0026).",
+      "evidence_ids": [
+        "block_20_0021",
+        "block_20_0026",
+        "block_20_0025",
+        "block_20_0014",
+        "block_20_0013",
+        "block_20_0019",
+        "block_20_0031",
+        "block_20_0022"
+      ],
+      "confidence": 0.95,
+      "judge_score": 0.7,
+      "entities_found": [
+        "1a",
+        "TEMPO",
+        "DCE",
+        "O2 balloon"
+      ],
+      "entities_missing": [
+        "Cu(NO3)2·3H2O"
+      ],
+      "judge_reasoning": "The system answer correctly identifies DCE as solvent, O2 balloon as oxidant, and mentions TEMPO, but omits the specific copper catalyst Cu(NO3)2·3H2O and its loading, which is a key detail in the ground truth.",
+      "score": 0.7,
+      "intent_key": "reaction_condition_query"
+    },
+    {
+      "id": "q5",
+      "source_paper": "20.pdf",
+      "intent": "property_query",
+      "question": "What yield was reported for oxidation of the steroidal substrate 1B to carboxylic acid 2B?",
+      "ground_truth": "75% yield",
+      "system_answer": "The oxidation of the steroidal substrate 1B to carboxylic acid 2B was reported in 75% yield (evidence: block_20_0024). The reaction also converted a secondary alcohol to a ketone under the same conditions.",
+      "evidence_ids": [
+        "block_20_0026",
+        "block_20_0021",
+        "block_20_0025",
+        "block_20_0013",
+        "block_20_0019",
+        "block_20_0014",
+        "block_20_0022",
+        "block_20_0027",
+        "block_20_0024",
+        "block_20_0020"
+      ],
+      "confidence": 1.0,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1B",
+        "2B"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states the 75% yield and includes both key entities 1B and 2B, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "property_query"
+    },
+    {
+      "id": "q2",
+      "source_paper": "21.pdf",
+      "intent": "entity_lookup",
+      "question": "What is compound 2a as presented in the paper (name/structure)?",
+      "ground_truth": "2a is ε-caprolactone (the six-membered lactone product derived from 1,6-hexanediol; structure shown in the Schemes).",
+      "system_answer": "Compound 2a is ε-caprolactone, with the SMILES structure O=C1CCCCCO1 (evidence: block_21_0021, block_21_0023, block_21_0034, mol_21_0001). The paper consistently refers to it as ε-caprolactone, a seven-membered lactone formed from the aerobic oxidative lactonization of 1,6-hexandiol (1a).",
+      "evidence_ids": [
+        "block_21_0021",
+        "block_21_0023",
+        "block_21_0034",
+        "block_21_0027",
+        "block_21_0028",
+        "block_21_0015",
+        "block_21_0024",
+        "block_21_0013",
+        "mol_21_0001",
+        "mol_21_0016",
+        "mol_21_0027",
+        "mol_21_0035",
+        "mol_21_0076",
+        "mol_21_0085",
+        "mol_21_0002",
+        "mol_21_0006"
+      ],
+      "confidence": 0.95,
+      "judge_score": 0.7,
+      "entities_found": [
+        "2a",
+        "ε-caprolactone"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies 2a as ε-caprolactone and mentions the SMILES and source, but incorrectly states it is a seven-membered lactone instead of a six-membered lactone as in the ground truth.",
+      "score": 0.7,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q2",
+      "source_paper": "22.pdf",
+      "intent": "entity_lookup",
+      "question": "What is the chemical identity (as given in the paper) of substrate 1a?",
+      "ground_truth": "1a is n‑C15H31CH2OH (the primary alcohol used; i.e., 1‑hexadecanol as written in the paper).",
+      "system_answer": "Substrate 1a is identified as n-C15H31CH2OH, a primary alcohol with a 15-carbon alkyl chain (evidence: block_22_0036, block_22_0035). The paper also refers to it as 'alcohol 1a' (evidence: block_22_0035, block_22_0024).",
+      "evidence_ids": [
+        "block_22_0041",
+        "block_22_0035",
+        "block_22_0036",
+        "block_22_0029",
+        "block_22_0037",
+        "block_22_0044",
+        "block_22_0024",
+        "block_22_0013"
+      ],
+      "confidence": 0.71,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1a",
+        "n‑C15H31CH2OH"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies substrate 1a as n-C15H31CH2OH, a primary alcohol, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q3",
+      "source_paper": "22.pdf",
+      "intent": "reaction_condition_query",
+      "question": "Under the 'standard conditions' for the aerobic oxidation of alcohol 1a (Table 1 / experimental), what solvent and atmosphere were used?",
+      "ground_truth": "Solvent: DCE (1,2‑dichloroethane); Atmosphere: O2 (O2 balloon); reaction performed at room temperature (rt) for 36 h (as the standard conditions).",
+      "system_answer": "Under the standard conditions for the aerobic oxidation of alcohol 1a, the solvent was DCE and the atmosphere was O2 (balloon) at room temperature (evidence: block_22_0030). The table header explicitly states 'DCE, O2 (balloon), rt, 36 h' as the standard conditions.",
+      "evidence_ids": [
+        "block_22_0030",
+        "block_22_0031",
+        "block_22_0036",
+        "block_22_0037",
+        "block_22_0033",
+        "block_22_0035",
+        "block_22_0032",
+        "block_22_0013"
+      ],
+      "confidence": 1.0,
+      "judge_score": 1.0,
+      "entities_found": [
+        "alcohol 1a",
+        "standard conditions",
+        "DCE",
+        "O2 balloon"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies all key entities: alcohol 1a, standard conditions, DCE as solvent, and O2 balloon as atmosphere, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "reaction_condition_query"
+    },
+    {
+      "id": "q4",
+      "source_paper": "22.pdf",
+      "intent": "reaction_comparison",
+      "question": "Which gave the higher yield of carboxylic acid 2a in the experiments shown in Fig. 2 (eqns (4)–(5)): using the filtrate (Cu(NO3)2–TEMPO, used as catalyst) or using the precipitate (AgBr) as the catalyst?",
+      "ground_truth": "The filtrate (Cu(NO3)2–TEMPO) gave the higher yield: 96% NMR (isolated) yield of 2a, whereas the precipitate (AgBr) resulted in no reaction (100% recovery of alcohol 1a, i.e., no formation of 2a).",
+      "system_answer": "The filtrate (Cu(NO3)2–TEMPO) gave the higher yield of carboxylic acid 2a, at 96%, while the precipitate (AgBr) gave no reaction (0% yield) (evidence: block_22_0035).",
+      "evidence_ids": [
+        "block_22_0035",
+        "block_22_0041",
+        "block_22_0036",
+        "block_22_0037",
+        "block_22_0030",
+        "block_22_0024",
+        "block_22_0033",
+        "block_22_0038",
+        "block_22_0032",
+        "rxn_tbl_22_0006",
+        "block_22_0031",
+        "block_22_0027",
+        "block_22_0029",
+        "block_22_0054"
+      ],
+      "confidence": 1.0,
+      "judge_score": 1.0,
+      "entities_found": [
+        "filtrate (Cu(NO3)2–TEMPO)",
+        "precipitate (AgBr)",
+        "2a"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states the yield for the filtrate (96% of 2a) and that the precipitate gave no reaction (0% yield), matching the ground truth's key facts and entities.",
+      "score": 1.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q5",
+      "source_paper": "22.pdf",
+      "intent": "property_query",
+      "question": "In the control experiment carried out in the absence of KHSO4 (entry 4, Table 1 and corresponding text), what NMR yield of aldehyde 2a' was reported?",
+      "ground_truth": "In the absence of KHSO4 (entry 4) the NMR yield of aldehyde 2a' was 61% (with 21% recovery of 1a).",
+      "system_answer": "In the control experiment carried out in the absence of KHSO4 (entry 4, Table 1), the NMR yield of aldehyde 2a' was 61% (evidence: block_22_0021, block_22_0030). The corresponding text also states that 61% NMR yield of aldehyde 2a' was obtained with 21% recovery of alcohol 1a (evidence: block_22_0021).",
+      "evidence_ids": [
+        "block_22_0035",
+        "block_22_0021",
+        "block_22_0030",
+        "block_22_0031",
+        "block_22_0023",
+        "block_22_0027",
+        "block_22_0037",
+        "block_22_0041",
+        "block_22_0033",
+        "block_22_0036",
+        "block_22_0032"
+      ],
+      "confidence": 0.99,
+      "judge_score": 1.0,
+      "entities_found": [
+        "entry 4",
+        "KHSO4 absent",
+        "aldehyde 2a'"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states the NMR yield of aldehyde 2a' as 61% in the absence of KHSO4 (entry 4) and includes the 21% recovery of alcohol 1a, matching all key entities and facts from the ground truth.",
+      "score": 1.0,
+      "intent_key": "property_query"
+    },
+    {
+      "id": "q1",
+      "source_paper": "23.pdf",
+      "intent": "alias_resolution",
+      "question": "In the paper, what does the abbreviation 'Ts' (as used in labels such as 1a) refer to?",
+      "ground_truth": "Ts = p‑toluenesulfonyl (tosyl) protecting group",
+      "system_answer": "In the paper, 'Ts' refers to the tosyl group (p-toluenesulfonyl). This is evident from the use of 'N–Ts' in the text (evidence: block_23_0020) and from compound labels such as 'Ts1a' and '1-tosyl-1H-indol-3-yl' (evidence: block_23_0024, block_23_0027).",
+      "evidence_ids": [
+        "block_23_0010",
+        "block_23_0015",
+        "block_23_0009",
+        "block_23_0012",
+        "block_23_0016",
+        "block_23_0020",
+        "block_23_0024",
+        "block_23_0027"
+      ],
+      "confidence": 0.85,
+      "judge_score": 1.0,
+      "entities_found": [
+        "Ts"
+      ],
+      "entities_missing": [
+        "1a"
+      ],
+      "judge_reasoning": "The system answer correctly identifies Ts as the tosyl group (p-toluenesulfonyl), matching the ground truth, but does not mention the entity '1a' which is listed as a key entity to check.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q2",
+      "source_paper": "23.pdf",
+      "intent": "entity_lookup",
+      "question": "What is the chemical name/structure given in the paper for compound 2a?",
+      "ground_truth": "2a is 1‑tosyl‑1H‑indole‑2‑carbaldehyde (the aldehyde derived from 1a)",
+      "system_answer": "The evidence does not explicitly provide a chemical name or structure for compound 2a. The retrieved data includes spectroscopic and analytical data for several compounds (e.g., block_23_0051, block_23_0044, block_23_0048) and molecular SMILES for other compounds (e.g., mol_23_0000–mol_23_0005), but none of these are labeled as compound 2a. Therefore, the evidence is insufficient to answer the question.",
+      "evidence_ids": [
+        "block_23_0051",
+        "block_23_0044",
+        "block_23_0048",
+        "block_23_0056",
+        "block_23_0020",
+        "block_23_0038",
+        "block_23_0043",
+        "block_23_0047",
+        "mol_13_0038",
+        "mol_23_0000",
+        "mol_23_0001",
+        "mol_23_0002",
+        "mol_23_0003",
+        "mol_23_0004",
+        "mol_23_0005",
+        "mol_23_0006"
+      ],
+      "confidence": 0.1,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "2a",
+        "1‑tosyl‑1H‑indole‑2‑carbaldehyde"
+      ],
+      "judge_reasoning": "The system answer states the evidence is insufficient and does not provide the chemical name or structure for compound 2a, while the ground truth explicitly identifies 2a as 1‑tosyl‑1H‑indole‑2‑carbaldehyde, so the answer is completely wrong.",
+      "score": 0.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q3",
+      "source_paper": "23.pdf",
+      "intent": "reaction_condition_query",
+      "question": "According to the standard reaction conditions used for the aerobic oxidation of 1a to 2a (Table 1), which solvent and oxidant/atmosphere were used?",
+      "ground_truth": "Solvent: DCE (1,2‑dichloroethane); oxidant/atmosphere: oxygen (O2) delivered from an O2 balloon (room temperature)",
+      "system_answer": "The standard reaction conditions for the aerobic oxidation of 1a to 2a (Table 1) used DCE as the solvent and oxygen (O2 balloon) as the oxidant/atmosphere (evidence: block_23_0014, block_23_0021). The catalyst system was 10 mol% Fe(NO3)3·9H2O, 10 mol% TEMPO, and 10 mol% NaCl in DCE at room temperature (evidence: block_23_0014, block_23_0021).",
+      "evidence_ids": [
+        "block_23_0024",
+        "block_23_0015",
+        "block_23_0018",
+        "block_23_0022",
+        "block_23_0014",
+        "block_23_0021",
+        "block_23_0012",
+        "block_23_0010"
+      ],
+      "confidence": 0.95,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1a",
+        "2a",
+        "Table 1",
+        "DCE",
+        "O2 (balloon)"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly includes all key entities (1a, 2a, Table 1, DCE, O2 balloon) and matches the ground truth facts about solvent, oxidant/atmosphere, and room temperature, with only minor extra details about catalyst composition that do not contradict the ground truth.",
+      "score": 1.0,
+      "intent_key": "reaction_condition_query"
+    }
+  ],
+  "metadata": {
+    "sampling": {
+      "mode": "full"
+    }
+  }
+}

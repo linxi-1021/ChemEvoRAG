@@ -1,0 +1,114 @@
+[
+  {
+    "cluster_id": "assessment_false_negative__strategy.assessment__evidence_assessment",
+    "primary_failure_type": "assessment_false_negative",
+    "contributing_failure_types": [
+      "entity_miss"
+    ],
+    "confidence": 0.85,
+    "coverage_gap": false,
+    "explanation": "All four samples share the same failure pattern: the evidence_assessment LLM incorrectly judged the evidence as insufficient, even though the gold answer was present in the retrieved evidence. In each case, the assessment LLM failed to recognize that the evidence contained the necessary information, either because it did not parse the table correctly (Sample 1), did not find the specific compound labels (Samples 2, 3, 4), or did not connect the molecule evidence to the question (Sample 4). The root cause is that the assessment prompt lacks explicit instructions on how to handle compound labels, table parsing for specific entries, and molecule evidence that contains structural information. Additionally, the retrieval in Samples 2 and 3 failed to retrieve the specific blocks containing the yields for 2c/2k and 6fe/6ke, indicating a retrieval gap that compounds the assessment failure.",
+    "supporting_trace_signals": [
+      "Sample 1: Assessment said 'table is incomplete' but the gold answer 'DCE' was present in block_1_0041 and block_1_0046.",
+      "Sample 2: Assessment said 'no evidence mentions 2c or 2k' but block_12_0013 contained the gold answer with yields for 2c and 2k.",
+      "Sample 3: Assessment said 'no evidence mentions 6fe or 6ke' but the gold answer was present in the retrieved evidence (block_15-SI_0021, block_15-SI_0017, etc.) with purity values.",
+      "Sample 4: Assessment said 'no mention of compound 6oe' but mol_15-SI_0035 contained the structure and SMILES for 6oe.",
+      "All samples: Assessment LLM did not apply the 'well-supported inference' standard to connect compound labels to table rows or molecule evidence."
+    ],
+    "common_root_causes": [
+      {
+        "name": "assessment_prompt_lacks_compound_label_matching_rule",
+        "description": "The evidence_assessment prompt does not instruct the LLM to match compound labels (e.g., '2c', '6fe', '6oe') to table rows, molecule evidence, or document blocks. The LLM often declares evidence insufficient because it does not see the exact label, even when the label appears in a table or molecule entry.",
+        "supporting_failure_ids": [
+          "q4",
+          "q_batch2_3",
+          "q_batch2_2"
+        ],
+        "confidence": 0.9
+      },
+      {
+        "name": "assessment_prompt_lacks_table_parsing_for_specific_entries",
+        "description": "The prompt's table parsing rules are generic and do not instruct the LLM to search for specific compound labels within table rows or to extract values from rows that contain the target label. In Sample 1, the LLM saw a table fragment with DCE but did not infer that DCE was the optimal solvent because the table was incomplete; however, the gold answer was present in the text. The prompt should require the LLM to check if the target compound appears in any table row or text block.",
+        "supporting_failure_ids": [
+          "q3",
+          "q4",
+          "q_batch2_3"
+        ],
+        "confidence": 0.85
+      },
+      {
+        "name": "assessment_prompt_does_not_handle_molecule_evidence_as_structure_source",
+        "description": "In Sample 4, the retrieved evidence included a molecule entry (mol_15-SI_0035) with the SMILES and name for 6oe, but the assessment LLM ignored it because it was not a 'structure diagram'. The prompt should clarify that molecule evidence (with SMILES, InChI, or name) can serve as structural information.",
+        "supporting_failure_ids": [
+          "q_batch2_2"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "subclusters": [
+      {
+        "name": "compound_label_not_found_in_table_rows",
+        "description": "Samples 2 and 3: The assessment LLM failed to find compound labels (2c, 2k, 6fe, 6ke) in table rows because the labels were present but the LLM did not parse the table correctly or did not search for the label across all evidence items.",
+        "supporting_failure_ids": [
+          "q4",
+          "q_batch2_3"
+        ],
+        "confidence": 0.85
+      },
+      {
+        "name": "molecule_evidence_ignored_for_structure_questions",
+        "description": "Sample 4: The assessment LLM ignored molecule evidence that contained the structure of 6oe, focusing only on document blocks.",
+        "supporting_failure_ids": [
+          "q_batch2_2"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "proposed_patch_targets": [
+      "strategy.assessment"
+    ],
+    "recommended_changes": {
+      "prompt": {
+        "should_change": true,
+        "priority": "primary",
+        "prompt_role": "evidence_assessment",
+        "base_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM",
+        "change_summary": [
+          "Add explicit rule: 'When the question asks about a specific compound label (e.g., 2c, 6fe, 6oe), search ALL evidence items for that label, including table rows, molecule entries, and text blocks. If the label appears in a table row, extract the corresponding values from that row.'",
+          "Add explicit rule: 'Molecule evidence (with SMILES, InChI, or name) can provide structural information. If the question asks for a structure, check molecule evidence for the compound label.'",
+          "Add explicit rule: 'If a table row contains the target compound label, treat the values in that row as relevant data for the question.'",
+          "Add explicit rule: 'Do not declare evidence insufficient solely because a table is incomplete or because the answer is not explicitly stated in a single sentence. Use well-supported inference from table rows and text blocks.'"
+        ],
+        "risk_level": "medium",
+        "confidence": 0.85
+      },
+      "retrieval_routing": {
+        "should_change": false,
+        "priority": "secondary",
+        "changes": [],
+        "risk_level": "low"
+      },
+      "query_rewrite": {
+        "should_change": false,
+        "priority": "secondary",
+        "changes": [],
+        "risk_level": "low"
+      },
+      "evidence_expansion": {
+        "should_change": false,
+        "priority": "secondary",
+        "changes": [],
+        "risk_level": "low"
+      },
+      "answer_generation": {
+        "should_change": false,
+        "priority": "secondary",
+        "changes": [],
+        "risk_level": "low"
+      }
+    },
+    "should_generate_patch": true,
+    "risk_level": "medium",
+    "raw_llm_response": "{\n  \"primary_failure_type\": \"assessment_false_negative\",\n  \"contributing_failure_types\": [\"entity_miss\"],\n  \"confidence\": 0.85,\n  \"coverage_gap\": false,\n  \"explanation\": \"All four samples share the same failure pattern: the evidence_assessment LLM incorrectly judged the evidence as insufficient, even though the gold answer was present in the retrieved evidence. In each case, the assessment LLM failed to recognize that the evidence contained the necessary information, either because it did not parse the table correctly (Sample 1), did not find the specific compound labels (Samples 2, 3, 4), or did not connect the molecule evidence to the question (Sample 4). The root cause is that the assessment prompt lacks explicit instructions on how to handle compound labels, table parsing for specific entries, and molecule evidence that contains structural information. Additionally, the retrieval in Samples 2 and 3 failed to retrieve the specific blocks containing the yields for 2c/2k and 6fe/6ke, indicating a retrieval gap that compounds the assessment failure.\",\n  \"supporting_trace_signals\": [\n    \"Sample 1: Assessment said 'table is incomplete' but the gold answer 'DCE' was present in block_1_0041 and block_1_0046.\",\n    \"Sample 2: Assessment said 'no evidence mentions 2c or 2k' but block_12_0013 contained the gold answer with yields for 2c and 2k.\",\n    \"Sample 3: Assessment said 'no evidence mentions 6fe or 6ke' but the gold answer was present in the retrieved evidence (block_15-SI_0021, block_15-SI_0017, etc.) with purity values.\",\n    \"Sample 4: Assessment said 'no mention of compound 6oe' but mol_15-SI_0035 contained the structure and SMILES for 6oe.\",\n    \"All samples: Assessment LLM did not apply the 'well-supported inference' standard to connect compound labels to table rows or molecule evidence.\"\n  ],\n  \"common_root_causes\": [\n    {\n      \"name\": \"assessment_prompt_lacks_compound_label_matching_rule\",\n      \"description\": \"The evidence_assessment prompt does not instruct the LLM to match compound labels (e.g., '2c', '6fe', '6oe') to table rows, molecule evidence, or document blocks. The LLM often declares evidence insufficient because it does not see the exact label, even when the label appears in a table or molecule entry.\",\n      \"supporting_failure_ids\": [\"q4\", \"q_batch2_3\", \"q_batch2_2\"],\n      \"confidence\": 0.9\n    },\n    {\n      \"name\": \"assessment_prompt_lacks_table_parsing_for_specific_entries\",\n      \"description\": \"The prompt's table parsing rules are generic and do not instruct the LLM to search for specific compound labels within table rows or to extract values from rows that contain the target label. In Sample 1, the LLM saw a table fragment with DCE but did not infer that DCE was the optimal solvent because the table was incomplete; however, the gold answer was present in the text. The prompt should require the LLM to check if the target compound appears in any table row or text block.\",\n      \"supporting_failure_ids\": [\"q3\", \"q4\", \"q_batch2_3\"],\n      \"confidence\": 0.85\n    },\n    {\n      \"name\": \"assessment_prompt_does_not_handle_molecule_evidence_as_structure_source\",\n      \"description\": \"In Sample 4, the retrieved evidence included a molecule entry (mol_15-SI_0035) with the SMILES and name for 6oe, but the assessment LLM ignored it because it was not a 'structure diagram'. The prompt should clarify that molecule evidence (with SMILES, InChI, or name) can serve as structural information.\",\n      \"supporting_failure_ids\": [\"q_batch2_2\"],\n      \"confidence\": 0.8\n    }\n  ],\n  \"subclusters\": [\n    {\n      \"name\": \"compound_label_not_found_in_table_rows\",\n      \"description\": \"Samples 2 and 3: The assessment LLM failed to find compound labels (2c, 2k, 6fe, 6ke) in table rows because the labels were present but the LLM did not parse the table correctly or did not search for the label across all evidence items.\",\n      \"supporting_failure_ids\": [\"q4\", \"q_batch2_3\"],\n      \"confidence\": 0.85\n    },\n    {\n      \"name\": \"molecule_evidence_ignored_for_structure_questions\",\n      \"description\": \"Sample 4: The assessment LLM ignored molecule evidence that contained the structure of 6oe, focusing only on document blocks.\",\n      \"supporting_failure_ids\": [\"q_batch2_2\"],\n      \"confidence\": 0.8\n    }\n  ],\n  \"proposed_patch_targets\": [\"strategy.assessment\"],\n  \"recommended_changes\": {\n    \"prompt\": {\n      \"should_change\": true,\n      \"priority\": \"primary\",\n      \"prompt_role\": \"evidence_assessment\",\n      \"base_prompt_ref\": \"EVIDENCE_ASSESSMENT_SYSTEM\",\n      \"change_summary\": [\n        \"Add explicit rule: 'When the question asks about a specific compound label (e.g., 2c, 6fe, 6oe), search ALL evidence items for that label, including table rows, molecule entries, and text blocks. If the label appears in a table row, extract the corresponding values from that row.'\",\n        \"Add explicit rule: 'Molecule evidence (with SMILES, InChI, or name) can provide structural information. If the question asks for a structure, check molecule evidence for the compound label.'\",\n        \"Add explicit rule: 'If a table row contains the target compound label, treat the values in that row as relevant data for the question.'\",\n        \"Add explicit rule: 'Do not declare evidence insufficient solely because a table is incomplete or because the answer is not explicitly stated in a single sentence. Use well-supported inference from table rows and text blocks.'\"\n      ],\n      \"risk_level\": \"medium\",\n      \"confidence\": 0.85\n    },\n    \"retrieval_routing\": {\n      \"should_change\": false,\n      \"priority\": \"secondary\",\n      \"changes\": [],\n      \"risk_level\": \"low\"\n    },\n    \"query_rewrite\": {\n      \"should_change\": false,\n      \"priority\": \"secondary\",\n      \"changes\": [],\n      \"risk_level\": \"low\"\n    },\n    \"evidence_expansion\": {\n      \"should_change\": false,\n      \"priority\": \"secondary\",\n      \"changes\": [],\n      \"risk_level\": \"low\"\n    },\n    \"answer_generation\": {\n      \"should_change\": false,\n      \"priority\": \"secondary\",\n      \"changes\": [],\n      \"risk_level\": \"low\"\n    }\n  },\n  \"should_generate_patch\": true,\n  \"risk_level\": \"medium\"\n}"
+  }
+]

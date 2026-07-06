@@ -1,0 +1,165 @@
+[
+  {
+    "cluster_id": "assessment_false_negative__strategy.assessment__evidence_assessment",
+    "primary_failure_type": "assessment_false_negative",
+    "contributing_failure_types": [
+      "evidence_expansion_error",
+      "retrieval_routing_error"
+    ],
+    "confidence": 0.85,
+    "coverage_gap": false,
+    "explanation": "The assessment LLM incorrectly judged evidence as insufficient in all 4 samples, despite the answer being present in the retrieved evidence. The root causes are: (1) the assessment prompt lacks explicit rules for handling fragmented evidence (e.g., answer split across multiple blocks), (2) retrieval routing underweights table blocks and molecule evidence that contain the answer, and (3) evidence expansion does not retrieve adjacent blocks that provide context (e.g., table captions, compound labels).",
+    "supporting_trace_signals": [
+      "gold answer appears in retrieved table_block or molecule evidence",
+      "assessment_result is sufficient=false",
+      "evidence_contained_answer is false but corpus_contained_answer is unknown",
+      "retrieval rounds show relevant evidence was retrieved but not used by assessment"
+    ],
+    "common_root_causes": [
+      {
+        "name": "Assessment prompt lacks fragmented evidence aggregation rule",
+        "description": "The assessment prompt does not instruct the LLM to combine information from multiple evidence items (e.g., a table block and a molecule block) to infer the answer. This causes false negatives when the answer is split across blocks.",
+        "supporting_failure_ids": [
+          "q3",
+          "q4",
+          "q_batch2_3",
+          "q_batch2_2"
+        ],
+        "confidence": 0.85
+      },
+      {
+        "name": "Retrieval routing underweights table blocks and molecule evidence",
+        "description": "Table blocks and molecule evidence that contain the answer are not boosted enough, leading to low ranking and potential exclusion from the final set. For example, in q3, the table block with DCE as optimal solvent was retrieved but not prioritized.",
+        "supporting_failure_ids": [
+          "q3",
+          "q4"
+        ],
+        "confidence": 0.78
+      },
+      {
+        "name": "Evidence expansion does not retrieve adjacent context blocks",
+        "description": "The answer often requires combining a table block with its caption or a molecule block with its structural formula. Current expansion (max 5 blocks) is insufficient to capture these relationships.",
+        "supporting_failure_ids": [
+          "q_batch2_2",
+          "q_batch2_3"
+        ],
+        "confidence": 0.76
+      }
+    ],
+    "subclusters": [
+      {
+        "name": "Fragmented table + molecule evidence",
+        "failure_ids": [
+          "q3",
+          "q_batch2_2"
+        ],
+        "specific_issue": "Answer is split across a table block (e.g., solvent name) and a molecule block (e.g., compound name). Assessment fails to combine them.",
+        "recommended_rule": "Add a rule to the assessment prompt: 'If the answer requires combining information from multiple evidence items (e.g., a table and a molecule), explicitly state that you must cross-reference them.'"
+      },
+      {
+        "name": "Missing compound labels in retrieved evidence",
+        "failure_ids": [
+          "q4",
+          "q_batch2_3"
+        ],
+        "specific_issue": "Retrieved evidence contains tables with product labels (e.g., 2a, 6ae) but not the specific compounds asked about (2c, 2k, 6fe, 6ke). The answer is in adjacent blocks not retrieved.",
+        "recommended_rule": "Increase evidence expansion to include blocks that contain compound labels matching the question's product names."
+      }
+    ],
+    "proposed_patch_targets": [
+      "strategy.assessment",
+      "strategy.evidence_expansion",
+      "strategy.retrieval_routing"
+    ],
+    "recommended_changes": {
+      "prompt": {
+        "should_change": true,
+        "priority": "primary",
+        "prompt_role": "evidence_assessment",
+        "base_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM",
+        "change_summary": [
+          "Add explicit instruction to combine information from multiple evidence items when the answer is fragmented.",
+          "Add rule: 'If a table block contains a solvent or condition, and a molecule block contains the compound name, you must cross-reference them to determine if the evidence answers the question.'",
+          "Add rule: 'If the question asks about a specific compound label (e.g., 2c, 6fe), check if any evidence item contains that label, even if the label is in a different block.'"
+        ],
+        "risk_level": "medium",
+        "confidence": 0.82
+      },
+      "retrieval_routing": {
+        "should_change": true,
+        "priority": "secondary",
+        "changes": [
+          {
+            "target_path": "strategy.retrieval_routing.boost_weights.table_block.weight",
+            "operation": "update",
+            "current_value": 4.0,
+            "proposed_value": 6.0,
+            "rationale": "Table blocks often contain the answer (e.g., optimal solvent, yield values) but are underweighted, causing them to be ranked low.",
+            "expected_improvement": "Improve recall of table evidence for optimization and comparison questions.",
+            "source_failure_ids": [
+              "q3",
+              "q4"
+            ],
+            "confidence": 0.78
+          },
+          {
+            "target_path": "strategy.retrieval_routing.boost_weights.molecule_evidence.weight",
+            "operation": "update",
+            "current_value": 5.0,
+            "proposed_value": 7.0,
+            "rationale": "Molecule evidence often contains compound labels and structural information that is critical for entity lookup questions.",
+            "expected_improvement": "Improve recall of molecule evidence for compound identification questions.",
+            "source_failure_ids": [
+              "q_batch2_2"
+            ],
+            "confidence": 0.76
+          }
+        ],
+        "risk_level": "low"
+      },
+      "query_rewrite": {
+        "should_change": false,
+        "changes": [],
+        "risk_level": "low"
+      },
+      "evidence_expansion": {
+        "should_change": true,
+        "priority": "secondary",
+        "changes": [
+          {
+            "target_path": "strategy.evidence_expansion.max_expanded_blocks",
+            "operation": "update",
+            "current_value": 5,
+            "proposed_value": 8,
+            "rationale": "Adjacent blocks often contain table captions, compound labels, or procedure details that are needed to interpret the primary evidence.",
+            "expected_improvement": "Improve completeness of evidence for fragmented answers.",
+            "source_failure_ids": [
+              "q_batch2_2",
+              "q_batch2_3"
+            ],
+            "confidence": 0.76
+          },
+          {
+            "target_path": "strategy.evidence_expansion.expand_from_molecule_mentions",
+            "operation": "update",
+            "current_value": true,
+            "proposed_value": true,
+            "rationale": "No change needed, but ensure that molecule mentions trigger expansion to adjacent blocks that may contain structural data.",
+            "expected_improvement": "N/A",
+            "source_failure_ids": [],
+            "confidence": 0.9
+          }
+        ],
+        "risk_level": "low"
+      },
+      "answer_generation": {
+        "should_change": false,
+        "changes": [],
+        "risk_level": "low"
+      }
+    },
+    "should_generate_patch": true,
+    "risk_level": "medium",
+    "raw_llm_response": "```json\n{\n  \"cluster_id\": \"assessment_false_negative__strategy.assessment__evidence_assessment\",\n  \"primary_failure_type\": \"assessment_false_negative\",\n  \"contributing_failure_types\": [\"evidence_expansion_error\", \"retrieval_routing_error\"],\n  \"confidence\": 0.85,\n  \"coverage_gap\": false,\n  \"explanation\": \"The assessment LLM incorrectly judged evidence as insufficient in all 4 samples, despite the answer being present in the retrieved evidence. The root causes are: (1) the assessment prompt lacks explicit rules for handling fragmented evidence (e.g., answer split across multiple blocks), (2) retrieval routing underweights table blocks and molecule evidence that contain the answer, and (3) evidence expansion does not retrieve adjacent blocks that provide context (e.g., table captions, compound labels).\",\n  \"supporting_trace_signals\": [\n    \"gold answer appears in retrieved table_block or molecule evidence\",\n    \"assessment_result is sufficient=false\",\n    \"evidence_contained_answer is false but corpus_contained_answer is unknown\",\n    \"retrieval rounds show relevant evidence was retrieved but not used by assessment\"\n  ],\n  \"common_root_causes\": [\n    {\n      \"name\": \"Assessment prompt lacks fragmented evidence aggregation rule\",\n      \"description\": \"The assessment prompt does not instruct the LLM to combine information from multiple evidence items (e.g., a table block and a molecule block) to infer the answer. This causes false negatives when the answer is split across blocks.\",\n      \"supporting_failure_ids\": [\"q3\", \"q4\", \"q_batch2_3\", \"q_batch2_2\"],\n      \"confidence\": 0.85\n    },\n    {\n      \"name\": \"Retrieval routing underweights table blocks and molecule evidence\",\n      \"description\": \"Table blocks and molecule evidence that contain the answer are not boosted enough, leading to low ranking and potential exclusion from the final set. For example, in q3, the table block with DCE as optimal solvent was retrieved but not prioritized.\",\n      \"supporting_failure_ids\": [\"q3\", \"q4\"],\n      \"confidence\": 0.78\n    },\n    {\n      \"name\": \"Evidence expansion does not retrieve adjacent context blocks\",\n      \"description\": \"The answer often requires combining a table block with its caption or a molecule block with its structural formula. Current expansion (max 5 blocks) is insufficient to capture these relationships.\",\n      \"supporting_failure_ids\": [\"q_batch2_2\", \"q_batch2_3\"],\n      \"confidence\": 0.76\n    }\n  ],\n  \"subclusters\": [\n    {\n      \"name\": \"Fragmented table + molecule evidence\",\n      \"failure_ids\": [\"q3\", \"q_batch2_2\"],\n      \"specific_issue\": \"Answer is split across a table block (e.g., solvent name) and a molecule block (e.g., compound name). Assessment fails to combine them.\",\n      \"recommended_rule\": \"Add a rule to the assessment prompt: 'If the answer requires combining information from multiple evidence items (e.g., a table and a molecule), explicitly state that you must cross-reference them.'\"\n    },\n    {\n      \"name\": \"Missing compound labels in retrieved evidence\",\n      \"failure_ids\": [\"q4\", \"q_batch2_3\"],\n      \"specific_issue\": \"Retrieved evidence contains tables with product labels (e.g., 2a, 6ae) but not the specific compounds asked about (2c, 2k, 6fe, 6ke). The answer is in adjacent blocks not retrieved.\",\n      \"recommended_rule\": \"Increase evidence expansion to include blocks that contain compound labels matching the question's product names.\"\n    }\n  ],\n  \"proposed_patch_targets\": [\"strategy.assessment\", \"strategy.evidence_expansion\", \"strategy.retrieval_routing\"],\n  \"recommended_changes\": {\n    \"prompt\": {\n      \"should_change\": true,\n      \"priority\": \"primary\",\n      \"prompt_role\": \"evidence_assessment\",\n      \"base_prompt_ref\": \"EVIDENCE_ASSESSMENT_SYSTEM\",\n      \"change_summary\": [\n        \"Add explicit instruction to combine information from multiple evidence items when the answer is fragmented.\",\n        \"Add rule: 'If a table block contains a solvent or condition, and a molecule block contains the compound name, you must cross-reference them to determine if the evidence answers the question.'\",\n        \"Add rule: 'If the question asks about a specific compound label (e.g., 2c, 6fe), check if any evidence item contains that label, even if the label is in a different block.'\"\n      ],\n      \"risk_level\": \"medium\",\n      \"confidence\": 0.82\n    },\n    \"retrieval_routing\": {\n      \"should_change\": true,\n      \"priority\": \"secondary\",\n      \"changes\": [\n        {\n          \"target_path\": \"strategy.retrieval_routing.boost_weights.table_block.weight\",\n          \"operation\": \"update\",\n          \"current_value\": 4.0,\n          \"proposed_value\": 6.0,\n          \"rationale\": \"Table blocks often contain the answer (e.g., optimal solvent, yield values) but are underweighted, causing them to be ranked low.\",\n          \"expected_improvement\": \"Improve recall of table evidence for optimization and comparison questions.\",\n          \"source_failure_ids\": [\"q3\", \"q4\"],\n          \"confidence\": 0.78\n        },\n        {\n          \"target_path\": \"strategy.retrieval_routing.boost_weights.molecule_evidence.weight\",\n          \"operation\": \"update\",\n          \"current_value\": 5.0,\n          \"proposed_value\": 7.0,\n          \"rationale\": \"Molecule evidence often contains compound labels and structural information that is critical for entity lookup questions.\",\n          \"expected_improvement\": \"Improve recall of molecule evidence for compound identification questions.\",\n          \"source_failure_ids\": [\"q_batch2_2\"],\n          \"confidence\": 0.76\n        }\n      ],\n      \"risk_level\": \"low\"\n    },\n    \"query_rewrite\": {\n      \"should_change\": false,\n      \"changes\": [],\n      \"risk_level\": \"low\"\n    },\n    \"evidence_expansion\": {\n      \"should_change\": true,\n      \"priority\": \"secondary\",\n      \"changes\": [\n        {\n          \"target_path\": \"strategy.evidence_expansion.max_expanded_blocks\",\n          \"operation\": \"update\",\n          \"current_value\": 5,\n          \"proposed_value\": 8,\n          \"rationale\": \"Adjacent blocks often contain table captions, compound labels, or procedure details that are needed to interpret the primary evidence.\",\n          \"expected_improvement\": \"Improve completeness of evidence for fragmented answers.\",\n          \"source_failure_ids\": [\"q_batch2_2\", \"q_batch2_3\"],\n          \"confidence\": 0.76\n        },\n        {\n          \"target_path\": \"strategy.evidence_expansion.expand_from_molecule_mentions\",\n          \"operation\": \"update\",\n          \"current_value\": true,\n          \"proposed_value\": true,\n          \"rationale\": \"No change needed, but ensure that molecule mentions trigger expansion to adjacent blocks that may contain structural data.\",\n          \"expected_improvement\": \"N/A\",\n          \"source_failure_ids\": [],\n          \"confidence\": 0.9\n        }\n      ],\n      \"risk_level\": \"low\"\n    },\n    \"answer_generation\": {\n      \"should_change\": false,\n      \"changes\": [],\n      \"risk_level\": \"low\"\n    }\n  },\n  \"should_generate_patch\": true,\n  \"risk_level\": \"medium\"\n}\n```"
+  }
+]

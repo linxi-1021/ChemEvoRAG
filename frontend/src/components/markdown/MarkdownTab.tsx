@@ -76,8 +76,12 @@ function matchEvidenceBlock(
 export default function MarkdownTab({ docId, docData }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const highlightedBlockIds = useAppStore(s => s.highlightedBlockIds);
+  const highlightedRectId = useAppStore(s => s.highlightedRectId);
   const scrollTargetId = useAppStore(s => s.scrollTargetId);
+  const scrollToCardType = useAppStore(s => s.scrollToCardType);
+  const scrollToPdfType = useAppStore(s => s.scrollToPdfType);
   const highlightBlocks = useAppStore(s => s.highlightBlocks);
+  const scrollToPdf = useAppStore(s => s.scrollToPdf);
   const setCurrentPage = useAppStore(s => s.setCurrentPage);
 
   // Build structured blocks from content_list_v2 + evidence
@@ -93,6 +97,7 @@ export default function MarkdownTab({ docId, docData }: Props) {
       imageUrl: string | null;
       tableHtml: string | null;
       level?: number;
+      bbox?: [number, number, number, number];
     }[] = [];
 
     let blockIdx = 0;
@@ -102,6 +107,9 @@ export default function MarkdownTab({ docId, docData }: Props) {
       const pageNum = pageIdx + 1;
 
       for (const clBlock of page) {
+        // Skip page headers, footers, and page numbers (not content)
+        if (clBlock.type === 'page_header' || clBlock.type === 'page_footer' || clBlock.type === 'page_number') continue;
+
         const text = extractText(clBlock.content);
         if (!text && clBlock.type !== 'image' && clBlock.type !== 'table') continue;
 
@@ -119,6 +127,7 @@ export default function MarkdownTab({ docId, docData }: Props) {
           imageUrl: imageUrl ? getImageUrl(docId, imageUrl.replace('images/', '').replace('.jpg', '')) : null,
           tableHtml,
           level,
+          bbox: clBlock.bbox as [number, number, number, number] | undefined,
         });
       }
     }
@@ -135,10 +144,103 @@ export default function MarkdownTab({ docId, docData }: Props) {
     }
   }, [scrollTargetId]);
 
+  // Scroll to matching markdown card when image/table is clicked in PDF
+  useEffect(() => {
+    if (!scrollToCardType || !containerRef.current) return;
+    const { type, pageNum: pg, bbox: srcBbox } = scrollToCardType;
+
+    // Find candidate cards by type and page
+    const cards = containerRef.current.querySelectorAll('[data-block-id]');
+    const candidates: { card: Element; bbox: [number, number, number, number] }[] = [];
+    for (const card of Array.from(cards)) {
+      const typeEl = card.querySelector('[class*="typeLabel"]');
+      const pageEl = card.querySelector('[class*="pageBadge"]');
+      if (typeEl && typeEl.textContent === type && pageEl && pageEl.textContent === `P${pg}`) {
+        // Get bbox from structuredBlocks data attribute or fallback
+        const bboxStr = card.getAttribute('data-bbox');
+        if (bboxStr) {
+          candidates.push({ card, bbox: JSON.parse(bboxStr) });
+        } else {
+          candidates.push({ card, bbox: [0, 0, 0, 0] });
+        }
+      }
+    }
+
+    if (candidates.length === 0) return;
+
+    // Find closest by y-center if source bbox is provided
+    let best = candidates[0];
+    if (srcBbox) {
+      const srcYCenter = (srcBbox[1] + srcBbox[3]) / 2;
+      let bestDist = Infinity;
+      for (const c of candidates) {
+        const cy = (c.bbox[1] + c.bbox[3]) / 2;
+        const dist = Math.abs(cy - srcYCenter);
+        if (dist < bestDist) {
+          bestDist = dist;
+          best = c;
+        }
+      }
+    }
+
+    best.card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    // Persistent highlight — stays until highlightedRectId changes
+    best.card.style.borderColor = 'var(--color-primary)';
+    best.card.style.background = 'rgba(22, 119, 255, 0.08)';
+    best.card.style.boxShadow = '0 0 0 2px rgba(22, 119, 255, 0.15)';
+  }, [scrollToCardType]);
+
+  // Highlight matching markdown card when image/table card is clicked in markdown
+  useEffect(() => {
+    if (!scrollToPdfType || !containerRef.current) return;
+    const { type, pageNum: pg, bbox: srcBbox } = scrollToPdfType;
+    const cards = containerRef.current.querySelectorAll('[data-block-id]');
+    const candidates: { card: Element; bbox: [number, number, number, number] }[] = [];
+    for (const card of Array.from(cards)) {
+      const typeEl = card.querySelector('[class*="typeLabel"]');
+      const pageEl = card.querySelector('[class*="pageBadge"]');
+      if (typeEl && typeEl.textContent === type && pageEl && pageEl.textContent === `P${pg}`) {
+        const bboxStr = card.getAttribute('data-bbox');
+        candidates.push({ card, bbox: bboxStr ? JSON.parse(bboxStr) : [0, 0, 0, 0] });
+      }
+    }
+    if (candidates.length === 0) return;
+    let best = candidates[0];
+    if (srcBbox) {
+      const srcYCenter = (srcBbox[1] + srcBbox[3]) / 2;
+      let bestDist = Infinity;
+      for (const c of candidates) {
+        const cy = (c.bbox[1] + c.bbox[3]) / 2;
+        const dist = Math.abs(cy - srcYCenter);
+        if (dist < bestDist) { bestDist = dist; best = c; }
+      }
+    }
+    best.card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    // Persistent highlight — stays until highlightedRectId changes
+    best.card.style.borderColor = 'var(--color-primary)';
+    best.card.style.background = 'rgba(22, 119, 255, 0.08)';
+    best.card.style.boxShadow = '0 0 0 2px rgba(22, 119, 255, 0.15)';
+  }, [scrollToPdfType]);
+
+  // Clear card highlight when highlightedRectId changes to null (text block clicked)
+  useEffect(() => {
+    if (highlightedRectId || !containerRef.current) return;
+    const cards = containerRef.current.querySelectorAll('[data-block-id]');
+    for (const card of Array.from(cards)) {
+      if (card.style.borderColor) {
+        card.style.borderColor = '';
+        card.style.background = '';
+        card.style.boxShadow = '';
+      }
+    }
+  }, [highlightedRectId]);
+
   const handleBlockClick = (block: typeof structuredBlocks[0]) => {
-    if (block.evidenceBlockId) {
-      // Find ALL markdown blocks that share the same evidence block ID
-      // (same paragraph group — a paragraph may span multiple content_list_v2 blocks)
+    if (block.type === 'image' || block.type === 'table') {
+      // Image/table — scroll PDF to the page and highlight matching bbox
+      scrollToPdf(block.type, block.page, block.bbox);
+    } else if (block.evidenceBlockId) {
+      // Text block — find ALL markdown blocks that share the same evidence block ID
       const allMatchingIds = structuredBlocks
         .filter(b => b.evidenceBlockId === block.evidenceBlockId)
         .map(b => b.evidenceBlockId!);
@@ -157,6 +259,7 @@ export default function MarkdownTab({ docId, docData }: Props) {
         <div
           key={block.id}
           data-block-id={block.evidenceBlockId || block.id}
+          data-bbox={block.bbox ? JSON.stringify(block.bbox) : undefined}
           className={`${styles.card} ${
             block.evidenceBlockId && highlightedBlockIds.has(block.evidenceBlockId) ? styles.highlighted : ''
           }`}

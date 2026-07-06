@@ -1,0 +1,29 @@
+{
+  "run_id": "run_2026-06-08_0950",
+  "generated_at": "2026-06-08T09:50:32.459293",
+  "stop_reason": "dry_run",
+  "summary": {
+    "total_questions": 118,
+    "average_score": 0.8661016949152545,
+    "failures": 4,
+    "partial_successes": 26,
+    "coverage_gaps": 2,
+    "success_patterns": 86
+  },
+  "candidate_patches_count": 11,
+  "validated_patches_count": 11,
+  "rejected_patches_count": 0,
+  "validated_patch_ids": [
+    "reaction_condition_query_round1_patch1",
+    "reaction_comparison_round1_patch1",
+    "entity_lookup_round1_patch1",
+    "entity_lookup_template_distill_1",
+    "alias_resolution_template_distill_3",
+    "reaction_comparison_template_distill_9",
+    "reaction_condition_query_template_distill_11",
+    "entity_lookup_template_distill_12",
+    "property_query_template_distill_13",
+    "reaction_condition_query_template_distill_20",
+    "alias_resolution_template_distill_22"
+  ]
+}

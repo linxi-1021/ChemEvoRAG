@@ -15,6 +15,7 @@ Usage:
 from __future__ import annotations
 
 import json
+import os
 import sys
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -40,6 +41,9 @@ class RegressionComparison:
     score_delta: float = 0.0
     failed_cases_increase: int = 0
     targeted_improvement: float = 0.0
+    targeted_improvement_origin: float = 0.0  # vs original eval score
+    baseline_flip: bool = False  # original was failure, regression baseline became success
+    collateral_improvement: float = 0.0  # improvement on non-targeted failures
     new_high_severity_failures: int = 0
     report_path: str | None = None
     errors: list[str] = field(default_factory=list)
@@ -117,6 +121,36 @@ class RegressionRunner:
 
         import eval_questions as _eval_mod
 
+        # Thread-safe GBK fix: use env var instead of modifying shared sys.stdout
+        _old_encoding = os.environ.get("PYTHONIOENCODING", "")
+        if sys.platform == "win32":
+            os.environ["PYTHONIOENCODING"] = "utf-8"
+
+        try:
+            result = self._run_eval_inner(
+                _eval_mod, dataset_path, actual_output_dir,
+                limit, seed, use_react, workers,
+                skills_dir, prompts_dir, stream_output,
+            )
+        finally:
+            # Restore original encoding
+            if _old_encoding:
+                os.environ["PYTHONIOENCODING"] = _old_encoding
+            elif "PYTHONIOENCODING" in os.environ:
+                del os.environ["PYTHONIOENCODING"]
+
+        return result
+
+    def _run_eval_inner(
+        self,
+        _eval_mod,
+        dataset_path: Path,
+        actual_output_dir: Path,
+        limit, seed, use_react, workers,
+        skills_dir, prompts_dir, stream_output,
+    ) -> RegressionResult:
+        """Inner eval runner (separated for stream cleanup)."""
+
         if not stream_output:
             # --- Quiet mode: suppress ReAct logs but keep tqdm progress bar ---
             import io
@@ -139,11 +173,11 @@ class RegressionRunner:
             except Exception as e:
                 captured.write(f"\n[ERROR] eval_questions raised: {e}\n")
                 log_path = actual_output_dir / "eval_stdout.log"
-                log_path.write_text(captured.getvalue(), encoding="utf-8")
+                log_path.write_text(captured.getvalue(), encoding="utf-8", errors="replace")
                 return RegressionResult(errors=[f"Eval failed: {e}"])
             # Save captured stdout for debugging
             log_path = actual_output_dir / "eval_stdout.log"
-            log_path.write_text(captured.getvalue(), encoding="utf-8")
+            log_path.write_text(captured.getvalue(), encoding="utf-8", errors="replace")
         else:
             # --- Streaming mode: eval output goes directly to stdout ---
             try:
@@ -204,14 +238,19 @@ class RegressionRunner:
         targeted_failure_ids: list[str] | None = None,
         min_targeted_improvement: float = 0.05,
         max_failed_cases_increase: int = 1,
+        original_eval_path: str | Path | None = None,
     ) -> RegressionComparison:
         """Compare before vs after eval results and determine pass/fail.
 
         Checks (all must pass):
         1. after.average_score >= min_score
         2. score_drop <= max_score_drop (where score_drop = before - after)
-        3. If targeted_failure_ids provided, targeted improvement >= min_targeted_improvement
+        3. If targeted_failure_ids provided, targeted_improvement >= min_targeted_improvement
         4. failed_cases_increase <= max_failed_cases_increase
+
+        When original_eval_path is provided, targeted_improvement is calculated
+        against the original eval scores (not regression baseline), so that
+        LLM non-determinism doesn't "wash out" the improvement signal.
         """
         if before.errors:
             return RegressionComparison(
@@ -241,37 +280,94 @@ class RegressionRunner:
         failed_cases_increase = after_failed - before_failed
 
         # Calculate targeted improvement
+        # Use original eval scores as baseline (not regression baseline)
+        # to avoid LLM non-determinism "washing out" the improvement signal
         targeted_improvement = 0.0
-        if targeted_failure_ids:
-            # Try to load results from paths
-            before_results: dict = {}
-            after_results: dict = {}
+        targeted_improvement_origin = 0.0
+        baseline_flip = False
+        collateral_improvement = 0.0
+
+        # Load original eval results if available
+        original_results: dict = {}
+        if original_eval_path:
             try:
-                if before.results_path:
-                    before_data = json.loads(Path(before.results_path).read_text("utf-8"))
-                    # Use composite key (id_source_paper) to handle duplicate IDs
-                    before_results = {f"{r['id']}_{r.get('source_paper', '')}": r
-                                      for r in before_data.get("results", [])}
-                if after.results_path:
-                    after_data = json.loads(Path(after.results_path).read_text("utf-8"))
-                    after_results = {f"{r['id']}_{r.get('source_paper', '')}": r
-                                     for r in after_data.get("results", [])}
+                orig_path = Path(original_eval_path)
+                if orig_path.exists():
+                    orig_data = json.loads(orig_path.read_text("utf-8"))
+                    original_results = {f"{r['id']}_{r.get('source_paper', '')}": r
+                                        for r in orig_data.get("results", [])}
             except Exception:
                 pass
 
-            if before_results and after_results:
-                improvements = []
-                for fid in targeted_failure_ids:
-                    # Match by composite key (q3_1.pdf) or plain ID (q3)
-                    # Find all matching entries and average their scores
+        # Load before/after regression results
+        before_results: dict = {}
+        after_results: dict = {}
+        try:
+            if before.results_path:
+                before_data = json.loads(Path(before.results_path).read_text("utf-8"))
+                before_results = {f"{r['id']}_{r.get('source_paper', '')}": r
+                                  for r in before_data.get("results", [])}
+            if after.results_path:
+                after_data = json.loads(Path(after.results_path).read_text("utf-8"))
+                after_results = {f"{r['id']}_{r.get('source_paper', '')}": r
+                                 for r in after_data.get("results", [])}
+        except Exception:
+            pass
+
+        if targeted_failure_ids and after_results:
+            improvements_origin = []
+            improvements_replay = []
+            flip_detected = False
+
+            for fid in targeted_failure_ids:
+                # Match by composite key or plain ID
+                a_scores = [r.get("score", 0.0) for k, r in after_results.items()
+                            if k == fid or k.startswith(f"{fid}_") or r.get("id") == fid]
+                a_avg = sum(a_scores) / len(a_scores) if a_scores else 0.0
+
+                # Calculate vs original eval (primary metric)
+                if original_results:
+                    o_scores = [r.get("score", 0.0) for k, r in original_results.items()
+                                if k == fid or k.startswith(f"{fid}_") or r.get("id") == fid]
+                    o_avg = sum(o_scores) / len(o_scores) if o_scores else 0.0
+                    improvements_origin.append(a_avg - o_avg)
+
+                    # Check baseline flip: original was failure, regression baseline became success
+                    if before_results:
+                        b_scores = [r.get("score", 0.0) for k, r in before_results.items()
+                                    if k == fid or k.startswith(f"{fid}_") or r.get("id") == fid]
+                        b_avg = sum(b_scores) / len(b_scores) if b_scores else 0.0
+                        if o_avg < 0.5 and b_avg >= 0.8:
+                            flip_detected = True
+
+                # Calculate vs regression baseline (diagnostic metric)
+                if before_results:
                     b_scores = [r.get("score", 0.0) for k, r in before_results.items()
                                 if k == fid or k.startswith(f"{fid}_") or r.get("id") == fid]
-                    a_scores = [r.get("score", 0.0) for k, r in after_results.items()
-                                if k == fid or k.startswith(f"{fid}_") or r.get("id") == fid]
                     b_avg = sum(b_scores) / len(b_scores) if b_scores else 0.0
-                    a_avg = sum(a_scores) / len(a_scores) if a_scores else 0.0
-                    improvements.append(a_avg - b_avg)
-                targeted_improvement = sum(improvements) / len(improvements) if improvements else 0.0
+                    improvements_replay.append(a_avg - b_avg)
+
+            targeted_improvement_origin = sum(improvements_origin) / len(improvements_origin) if improvements_origin else 0.0
+            targeted_improvement = sum(improvements_replay) / len(improvements_replay) if improvements_replay else 0.0
+            baseline_flip = flip_detected
+
+        # Calculate collateral improvement (improvements on non-targeted failures)
+        if original_results and after_results and targeted_failure_ids:
+            targeted_set = set(targeted_failure_ids)
+            collateral_deltas = []
+            for k, orig_r in original_results.items():
+                qid = orig_r.get("id", "")
+                if qid in targeted_set:
+                    continue
+                orig_score = orig_r.get("score", 0.0)
+                if orig_score >= 0.5:
+                    continue  # Not a failure
+                after_r = after_results.get(k)
+                if after_r:
+                    after_score = after_r.get("score", 0.0)
+                    collateral_deltas.append(after_score - orig_score)
+            if collateral_deltas:
+                collateral_improvement = sum(collateral_deltas) / len(collateral_deltas)
 
         # Check new high-severity failures (score dropped from >= 0.5 to < 0.3)
         new_high_severity = 0
@@ -297,6 +393,9 @@ class RegressionRunner:
             score_delta=score_delta,
             failed_cases_increase=failed_cases_increase,
             targeted_improvement=targeted_improvement,
+            targeted_improvement_origin=targeted_improvement_origin,
+            baseline_flip=baseline_flip,
+            collateral_improvement=collateral_improvement,
             new_high_severity_failures=new_high_severity,
         )
 
@@ -307,24 +406,26 @@ class RegressionRunner:
             errors.append(f"Average score {after.average_score:.4f} below minimum {min_score}")
 
         # Check 2: score drop (with targeted improvement adjustment)
-        # If targeted failures improved, allow slightly more global score drop
+        # Use targeted_improvement_origin (vs original eval) for decision
         effective_max_drop = max_score_drop
-        if targeted_improvement > 0:
-            # Allow up to 2x max_score_drop if targeted improvement is positive
-            effective_max_drop = max_score_drop + min(targeted_improvement * 0.5, max_score_drop)
+        if targeted_improvement_origin > 0:
+            effective_max_drop = max_score_drop + min(targeted_improvement_origin * 0.5, max_score_drop)
         if score_drop > effective_max_drop:
             errors.append(f"Score dropped by {score_drop:.4f} (max allowed: {effective_max_drop:.4f})")
 
-        # Check 3: targeted improvement (only if we could calculate it)
+        # Check 3: targeted improvement (use original eval as baseline)
         if targeted_failure_ids and len(targeted_failure_ids) > 0:
-            # Only check targeted improvement if we have results data to compare
-            # (i.e., targeted_improvement was actually calculated, not stuck at 0.0)
-            if before.results_path and after.results_path:
+            if original_results and after.results_path:
+                if targeted_improvement_origin < min_targeted_improvement:
+                    errors.append(
+                        f"Targeted improvement {targeted_improvement_origin:.4f} below minimum {min_targeted_improvement}"
+                    )
+            # If no original_results, fall back to regression baseline comparison
+            elif before.results_path and after.results_path:
                 if targeted_improvement < min_targeted_improvement:
                     errors.append(
                         f"Targeted improvement {targeted_improvement:.4f} below minimum {min_targeted_improvement}"
                     )
-            # If no results_path, skip targeted check (can't calculate)
 
         # Check 4: failed cases increase
         if failed_cases_increase > max_failed_cases_increase:

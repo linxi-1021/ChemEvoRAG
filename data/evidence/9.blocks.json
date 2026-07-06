@@ -201,7 +201,7 @@
     "block_id": "block_9_0009",
     "doc_id": "9",
     "block_type": "table",
-    "text": "Entry | Additive | Equiv. | $t_1/t_2(h)$ | Yield (%) [b]; 2a | 3a | 4a; 1 | $K_2CO_3$ | 2.0 | 3.0/4.0 | 0 | 40 | 52; 2 | NaOH | 2.0 | 3.0/2.5 | 0 | 15 | 61; 3 | $PCy_3$ | 0.2 | 3.0/2.5 | 29 | 12 | 19; 4 | TfOH | 0.2 | 2.3/2.5 | 86 | 0 | 0; 5 | t-BuOLi | 0.2 | 3.2/14 | 79 | 0 | 0; 6 | DMAP | 0.2 | 3.3/2.5 | 0 | 85 | 0 | [a] The reaction was conducted using 1 a (1.0 mmol), Fe(NO ) ·9H O (0.05 mmol), NaCl (0.05 mmol), TEMPO (0.05 mmol), and additive in MeCN (5 mL) with an oxygen balloon at 258C. | [b] Determined by 1 H NMR analysis with dibromomethane as the internal standard.",
+    "text": "| Entry | Additive | Equiv. | $t_1/t_2(h)$ | Yield (%) [b] |\n| --- | --- | --- | --- | --- |\n| 2a | 3a | 4a |\n| 1 | $K_2CO_3$ | 2.0 | 3.0/4.0 | 0 | 40 | 52 |\n| 2 | NaOH | 2.0 | 3.0/2.5 | 0 | 15 | 61 |\n| 3 | $PCy_3$ | 0.2 | 3.0/2.5 | 29 | 12 | 19 |\n| 4 | TfOH | 0.2 | 2.3/2.5 | 86 | 0 | 0 |\n| 5 | t-BuOLi | 0.2 | 3.2/14 | 79 | 0 | 0 |\n| 6 | DMAP | 0.2 | 3.3/2.5 | 0 | 85 | 0 | | [a] The reaction was conducted using 1 a (1.0 mmol), Fe(NO ) ·9H O (0.05 mmol), NaCl (0.05 mmol), TEMPO (0.05 mmol), and additive in MeCN (5 mL) with an oxygen balloon at 258C. | [b] Determined by 1 H NMR analysis with dibromomethane as the internal standard.",
     "page": 2,
     "bbox": [
       78.0,
@@ -245,7 +245,7 @@
     "block_id": "block_9_0011",
     "doc_id": "9",
     "block_type": "table",
-    "text": "Entry | Solvent | $t_1/t_2$ (h) | Yield of 3a(%) [b] | Recovery of 1a(%) [b]; 1 | DMF | 2.8/1.7 | 0 | 73; 2 | dioxane | 2.7/2.4 | 0 | 43; 3 | THF | 2.5/2.0 | 0 | 49; 4 | DCM | 3.0/2.5 | 8 | 0; 5 | DCE | 3.0/2.5 | 58 | 0; 6 | MeCN | 3.3/2.5 | 85 (82)[c] | 0 | [a] The reaction was conducted using 1 a (1.0 mmol), Fe(NO3)3·9H2O (0.05 mmol), NaCl (0.05 mmol), TEMPO (0.05 mmol) in solvent (5 mL) with an oxygen balloon at 25 8C. After the disappearance of 1 a by TLC, DMAP (0.2 mmol) was added into the resulting mixture. | [b] Determined by 1 H NMR analysis with dibromomethane as the internal standard. | [c] The number in parenthesis represents isolated yield. DMAP: 4-dimethylaminopyridine.",
+    "text": "| Entry | Solvent | $t_1/t_2$ (h) | Yield of 3a(%) [b] | Recovery of 1a(%) [b] |\n| --- | --- | --- | --- | --- |\n| 1 | DMF | 2.8/1.7 | 0 | 73 |\n| 2 | dioxane | 2.7/2.4 | 0 | 43 |\n| 3 | THF | 2.5/2.0 | 0 | 49 |\n| 4 | DCM | 3.0/2.5 | 8 | 0 |\n| 5 | DCE | 3.0/2.5 | 58 | 0 |\n| 6 | MeCN | 3.3/2.5 | 85 (82)[c] | 0 | | [a] The reaction was conducted using 1 a (1.0 mmol), Fe(NO3)3·9H2O (0.05 mmol), NaCl (0.05 mmol), TEMPO (0.05 mmol) in solvent (5 mL) with an oxygen balloon at 25 8C. After the disappearance of 1 a by TLC, DMAP (0.2 mmol) was added into the resulting mixture. | [b] Determined by 1 H NMR analysis with dibromomethane as the internal standard. | [c] The number in parenthesis represents isolated yield. DMAP: 4-dimethylaminopyridine.",
     "page": 2,
     "bbox": [
       507.0,
@@ -289,7 +289,7 @@
     "block_id": "block_9_0013",
     "doc_id": "9",
     "block_type": "table",
-    "text": "Entry | x | $t_1/t_2$  (h) | Yield (%) [b]; 2a | 3a; 1 | 10 | 3.25/2.5 | 67 | 19; 2 | 15 | 3.0/2.5 | 0 | 72; 3 | 20 | 3.3/2.5 | 0 | 85 (81)[c]; 4 | 30 | 2.6/1.5 | 0 | 83 | Table 3. The effect of the DMAP loading.[a]",
+    "text": "| Entry | x | $t_1/t_2$  (h) | Yield (%) [b] |\n| --- | --- | --- | --- |\n| 2a | 3a |\n| 1 | 10 | 3.25/2.5 | 67 | 19 |\n| 2 | 15 | 3.0/2.5 | 0 | 72 |\n| 3 | 20 | 3.3/2.5 | 0 | 85 (81)[c] |\n| 4 | 30 | 2.6/1.5 | 0 | 83 | | Table 3. The effect of the DMAP loading.[a]",
     "page": 3,
     "bbox": [
       78.0,
@@ -421,7 +421,7 @@
     "block_id": "block_9_0019",
     "doc_id": "9",
     "block_type": "table",
-    "text": "Entry | R1/R2 | t1/t2(h) | Yield of 3 (%); 1 | H/Ph (1a) | 3.3/2.5 | 82 (3a); 2 | H/p-MeC6H4(1b) | 3.0/3.0 | 81 (3b); 3[b] | H/p-MeOC6H4(1c) | 3.75/5.5 | 81 (3c); 4 | H/p-ClC6H4(1d) | 3.3/11.6 | 68 (3d); 5 | H/H (1e) | 4.0/3.0 | 20 (3e); 6 | H/n-Bu (1f) | 3.0/3.0 | 44 (3f); 7 | 5-Cl/Ph (1g) | 3.5/3.0 | 78 (3g); 8 | 5-Cl/Cyclopropyl (1h) | 3.5/3.5 | 86 (3h); 9 | 5-Cl/2-thienyl (1i) | 3.5/3.5 | 52 (3i); 10 | 5-Cl/3-thienyl (1j) | 3.5/4.0 | 78 (3j); 11 | 5-Me/Ph (1k) | 3.5/3.0 | 67 (3k); 12 | 5-Br/Ph (1l) | 3.75/13 | 78 (3l); 13 | 5-NO2/Ph (1m) | 3.75/13 | 85 (3m); 14 | 3-Cl, 5-Cl/Ph (1n) | 12/7.0 | 63 (3n); 15 | 5-MeO/Ph (1o) | 13/4.0 | 13 (3o) | Table 4. The substrate scope.[a]",
+    "text": "| Entry | R1/R2 | t1/t2(h) | Yield of 3 (%) |\n| --- | --- | --- | --- |\n| 1 | H/Ph (1a) | 3.3/2.5 | 82 (3a) |\n| 2 | H/p-MeC6H4(1b) | 3.0/3.0 | 81 (3b) |\n| 3[b] | H/p-MeOC6H4(1c) | 3.75/5.5 | 81 (3c) |\n| 4 | H/p-ClC6H4(1d) | 3.3/11.6 | 68 (3d) |\n| 5 | H/H (1e) | 4.0/3.0 | 20 (3e) |\n| 6 | H/n-Bu (1f) | 3.0/3.0 | 44 (3f) |\n| 7 | 5-Cl/Ph (1g) | 3.5/3.0 | 78 (3g) |\n| 8 | 5-Cl/Cyclopropyl (1h) | 3.5/3.5 | 86 (3h) |\n| 9 | 5-Cl/2-thienyl (1i) | 3.5/3.5 | 52 (3i) |\n| 10 | 5-Cl/3-thienyl (1j) | 3.5/4.0 | 78 (3j) |\n| 11 | 5-Me/Ph (1k) | 3.5/3.0 | 67 (3k) |\n| 12 | 5-Br/Ph (1l) | 3.75/13 | 78 (3l) |\n| 13 | 5-NO2/Ph (1m) | 3.75/13 | 85 (3m) |\n| 14 | 3-Cl, 5-Cl/Ph (1n) | 12/7.0 | 63 (3n) |\n| 15 | 5-MeO/Ph (1o) | 13/4.0 | 13 (3o) | | Table 4. The substrate scope.[a]",
     "page": 3,
     "bbox": [
       507.0,

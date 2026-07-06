@@ -1,0 +1,10 @@
+{
+  "patch_id": "alias_resolution_template_distill_22",
+  "passed": false,
+  "average_score": 0.8745762711864411,
+  "score_delta": 0.00847457627118664,
+  "targeted_improvement": 0.0,
+  "errors": [
+    "Regression failed: Failed cases increased by 7 (max allowed: 1); 2 new high-severity failure(s) detected"
+  ]
+}

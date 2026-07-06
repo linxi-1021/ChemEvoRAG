@@ -1,0 +1,10 @@
+{
+  "patch_id": "reaction_condition_query_template_distill_11",
+  "passed": false,
+  "average_score": 0.8593220338983053,
+  "score_delta": -0.006779661016949157,
+  "targeted_improvement": 0.0,
+  "errors": [
+    "Regression failed: Failed cases increased by 10 (max allowed: 1); 4 new high-severity failure(s) detected"
+  ]
+}

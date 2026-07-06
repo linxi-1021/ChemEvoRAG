@@ -1,0 +1,10 @@
+{
+  "patch_id": "evidence_assessment_system_v2_prompt_content",
+  "passed": false,
+  "average_score": 0.8333333333333334,
+  "score_delta": -0.03276836158192109,
+  "targeted_improvement": -0.8863636363636364,
+  "errors": [
+    "Regression failed: Score dropped by 0.0328 (max allowed: 0.0100); Targeted improvement -0.8864 below minimum 0.05"
+  ]
+}

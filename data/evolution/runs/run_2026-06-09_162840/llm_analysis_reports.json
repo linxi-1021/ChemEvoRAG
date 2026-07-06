@@ -1,0 +1,64 @@
+[
+  {
+    "cluster_id": "assessment_false_negative__strategy.assessment__evidence_assessment",
+    "llm_validated_failure_type": "assessment_false_negative",
+    "common_root_causes": [
+      {
+        "name": "Insufficient handling of implicit data in tables and structured text",
+        "description": "The assessment LLM fails to recognize that the answer is present in the evidence when it is embedded in a table or structured text (e.g., a table of yields, a compound name with structural information). The LLM requires explicit statements or clear visual depictions, ignoring that the data can be extracted by reading the table or parsing the name.",
+        "supporting_failure_ids": [
+          "q3",
+          "q4",
+          "q_batch2_3",
+          "q_batch2_2"
+        ],
+        "confidence": 0.9
+      },
+      {
+        "name": "Over-reliance on explicit statements and visual depictions",
+        "description": "The LLM demands that the answer be stated in plain text or shown in an image, rather than inferring it from structured data (e.g., a table row, a compound name with functional groups). This leads to false negatives when the answer is logically deducible from the evidence.",
+        "supporting_failure_ids": [
+          "q3",
+          "q4",
+          "q_batch2_3",
+          "q_batch2_2"
+        ],
+        "confidence": 0.85
+      }
+    ],
+    "subclusters": [
+      {
+        "name": "Table parsing failure for optimization/comparison questions",
+        "failure_ids": [
+          "q3",
+          "q4",
+          "q_batch2_3"
+        ],
+        "specific_issue": "The LLM fails to extract the optimal solvent or higher yield from a table of experimental data. It requires an explicit statement of optimality or comparison, even when the table clearly shows the highest yield or purity.",
+        "recommended_rule": "Add explicit instruction: 'When a table contains yields, conversions, or purity values for multiple entries, the entry with the highest value can be identified as the optimal or best result, even if no explicit statement of optimality is present.'"
+      },
+      {
+        "name": "Compound structure inference from name",
+        "failure_ids": [
+          "q_batch2_2"
+        ],
+        "specific_issue": "The LLM fails to infer the structure of a compound from its systematic name (e.g., 'methyl 6-ethoxyhexanoate' implies an ethyl ester at one end and a methyl ester at the other). It demands an image or explicit structural depiction.",
+        "recommended_rule": "Add explicit instruction: 'A compound's systematic name (IUPAC or common) provides sufficient structural information to answer questions about its functional groups, substituents, or connectivity. Do not require an image or structural diagram if the name is given.'"
+      }
+    ],
+    "outliers": [],
+    "negative_cases": [
+      "Do NOT add a rule that forces the LLM to always assume a table contains the answer, as this could cause false positives when the table is irrelevant or incomplete.",
+      "Do NOT remove the requirement for evidence to contain comparable data, as this would break correct rejections for questions where no data is present.",
+      "Do NOT instruct the LLM to infer from absence of data or retrieval bias."
+    ],
+    "recommended_prompt_changes": [
+      "Add a sub-section under 'CRITICAL TABLE PARSING RULES' that explicitly states: 'If a table lists yields, conversions, selectivities, or purity values for multiple entries, the entry with the highest value can be identified as the optimal or best result, even if no explicit statement of optimality is present.'",
+      "Add a rule: 'A compound's systematic name (IUPAC or common) provides sufficient structural information to answer questions about its functional groups, substituents, or connectivity. Do not require an image or structural diagram if the name is given.'",
+      "Modify the 'Evidence sufficiency standard' section to include: 'For comparison or optimization questions, a table with comparable numerical data (yields, purity, etc.) is sufficient to determine the highest or best entry, even without an explicit statement.'"
+    ],
+    "should_generate_patch": true,
+    "risk_level": "medium",
+    "raw_llm_response": "```json\n{\n  \"cluster_id\": \"assessment_false_negative__strategy.assessment__evidence_assessment\",\n  \"llm_validated_failure_type\": \"assessment_false_negative\",\n  \"common_root_causes\": [\n    {\n      \"name\": \"Insufficient handling of implicit data in tables and structured text\",\n      \"description\": \"The assessment LLM fails to recognize that the answer is present in the evidence when it is embedded in a table or structured text (e.g., a table of yields, a compound name with structural information). The LLM requires explicit statements or clear visual depictions, ignoring that the data can be extracted by reading the table or parsing the name.\",\n      \"supporting_failure_ids\": [\"q3\", \"q4\", \"q_batch2_3\", \"q_batch2_2\"],\n      \"confidence\": 0.9\n    },\n    {\n      \"name\": \"Over-reliance on explicit statements and visual depictions\",\n      \"description\": \"The LLM demands that the answer be stated in plain text or shown in an image, rather than inferring it from structured data (e.g., a table row, a compound name with functional groups). This leads to false negatives when the answer is logically deducible from the evidence.\",\n      \"supporting_failure_ids\": [\"q3\", \"q4\", \"q_batch2_3\", \"q_batch2_2\"],\n      \"confidence\": 0.85\n    }\n  ],\n  \"subclusters\": [\n    {\n      \"name\": \"Table parsing failure for optimization/comparison questions\",\n      \"failure_ids\": [\"q3\", \"q4\", \"q_batch2_3\"],\n      \"specific_issue\": \"The LLM fails to extract the optimal solvent or higher yield from a table of experimental data. It requires an explicit statement of optimality or comparison, even when the table clearly shows the highest yield or purity.\",\n      \"recommended_rule\": \"Add explicit instruction: 'When a table contains yields, conversions, or purity values for multiple entries, the entry with the highest value can be identified as the optimal or best result, even if no explicit statement of optimality is present.'\"\n    },\n    {\n      \"name\": \"Compound structure inference from name\",\n      \"failure_ids\": [\"q_batch2_2\"],\n      \"specific_issue\": \"The LLM fails to infer the structure of a compound from its systematic name (e.g., 'methyl 6-ethoxyhexanoate' implies an ethyl ester at one end and a methyl ester at the other). It demands an image or explicit structural depiction.\",\n      \"recommended_rule\": \"Add explicit instruction: 'A compound's systematic name (IUPAC or common) provides sufficient structural information to answer questions about its functional groups, substituents, or connectivity. Do not require an image or structural diagram if the name is given.'\"\n    }\n  ],\n  \"outliers\": [],\n  \"negative_cases\": [\n    \"Do NOT add a rule that forces the LLM to always assume a table contains the answer, as this could cause false positives when the table is irrelevant or incomplete.\",\n    \"Do NOT remove the requirement for evidence to contain comparable data, as this would break correct rejections for questions where no data is present.\",\n    \"Do NOT instruct the LLM to infer from absence of data or retrieval bias.\"\n  ],\n  \"recommended_prompt_changes\": [\n    \"Add a sub-section under 'CRITICAL TABLE PARSING RULES' that explicitly states: 'If a table lists yields, conversions, selectivities, or purity values for multiple entries, the entry with the highest value can be identified as the optimal or best result, even if no explicit statement of optimality is present.'\",\n    \"Add a rule: 'A compound's systematic name (IUPAC or common) provides sufficient structural information to answer questions about its functional groups, substituents, or connectivity. Do not require an image or structural diagram if the name is given.'\",\n    \"Modify the 'Evidence sufficiency standard' section to include: 'For comparison or optimization questions, a table with comparable numerical data (yields, purity, etc.) is sufficient to determine the highest or best entry, even without an explicit statement.'\"\n  ],\n  \"should_generate_patch\": true,\n  \"risk_level\": \"medium\"\n}\n```"
+  }
+]

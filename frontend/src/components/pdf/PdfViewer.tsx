@@ -18,7 +18,7 @@ export default function PdfViewer({ docId, docData }: Props) {
   const currentPage = useAppStore(s => s.currentPage);
   const setCurrentPage = useAppStore(s => s.setCurrentPage);
   const totalPages = docData.contentList?.length || 0;
-  const { renderPage } = usePdfRenderer(pdfUrl);
+  const { renderPage, docGeneration } = usePdfRenderer(pdfUrl);
 
   const programmaticScrollRef = useRef(false);
 
@@ -57,6 +57,13 @@ export default function PdfViewer({ docId, docData }: Props) {
     return () => { clearTimeout(timer); programmaticScrollRef.current = false; };
   }, [currentPage]);
 
+  // Scroll PDF to page when scrollToPdfType changes (image/table click from markdown)
+  const scrollToPdfType = useAppStore(s => s.scrollToPdfType);
+  useEffect(() => {
+    if (!scrollToPdfType) return;
+    setCurrentPage(scrollToPdfType.pageNum - 1);
+  }, [scrollToPdfType, setCurrentPage]);
+
   const pageNumbers = useMemo(
     () => Array.from({ length: totalPages }, (_, i) => i + 1),
     [totalPages],
@@ -77,6 +84,7 @@ export default function PdfViewer({ docId, docData }: Props) {
             docId={docId}
             docData={docData}
             renderPage={renderPage}
+            docGeneration={docGeneration}
           />
         ))}
       </div>
@@ -85,41 +93,45 @@ export default function PdfViewer({ docId, docData }: Props) {
 }
 
 function PdfPageCanvas({
-  pageNum, docId, docData, renderPage,
+  pageNum, docId, docData, renderPage, docGeneration,
 }: {
   pageNum: number; docId: string; docData: DocumentData;
   renderPage: (pageNum: number, canvas: HTMLCanvasElement, docId: string) => Promise<{ width: number; height: number } | null>;
+  docGeneration: number;
 }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [dims, setDims] = useState<{ width: number; height: number } | null>(null);
   const [renderScale, setRenderScale] = useState(2.0);
   const renderingRef = useRef(false);
+  const genRef = useRef(docGeneration);
 
   useEffect(() => {
     if (!canvasRef.current || renderingRef.current) return;
     renderingRef.current = true;
+    genRef.current = docGeneration;
     let cancelled = false;
     renderPage(pageNum, canvasRef.current, docId).then(result => {
-      if (!cancelled && result) {
+      if (!cancelled && result && genRef.current === docGeneration) {
         setDims({ width: result.width, height: result.height });
         setRenderScale(result.renderScale);
       }
       renderingRef.current = false;
     });
     return () => { cancelled = true; renderingRef.current = false; };
-  }, [pageNum, renderPage, docId]);
+  }, [pageNum, renderPage, docId, docGeneration]);
 
-  // Layout.json blocks (PDF point coordinates)
+  // Layout.json blocks — filter out page headers/footers/numbers (not content)
   const layoutBlocks: LayoutBlock[] = useMemo(() => {
     if (!docData.layout?.pdf_info) return [];
     const page = docData.layout.pdf_info[pageNum - 1];
-    return page?.preproc_blocks || [];
+    const blocks = page?.preproc_blocks || [];
+    const SKIP = new Set(['page_header', 'page_footer', 'page_number']);
+    return blocks.filter(b => !SKIP.has(b.type));
   }, [docData.layout, pageNum]);
 
   // Evidence blocks for this page
-  const pageEvidenceBlocks = useMemo(() => {
-    return docData.evidenceBlocks.filter(b => b.page === pageNum);
-  }, [docData.evidenceBlocks, pageNum]);
+  // Pass ALL evidence blocks (not just current page) for cross-page continuation matching
+  const pageEvidenceBlocks = docData.evidenceBlocks;
 
   const pageMolecules = useMemo(() => {
     return docData.molecules.filter(m =>
@@ -148,6 +160,7 @@ function PdfPageCanvas({
             viewportWidth={dims.width}
             viewportHeight={dims.height}
             docId={docId}
+            pageNum={pageNum}
           />
         )}
       </div>

@@ -1,0 +1,10 @@
+{
+  "patch_id": "reaction_comparison_retrieval_strategy_update_3",
+  "passed": false,
+  "average_score": 0.7800000000000001,
+  "score_delta": -0.08610169491525432,
+  "targeted_improvement": -0.3204545454545453,
+  "errors": [
+    "Regression failed: Average score 0.7800 below minimum 0.8; Score dropped by 0.0861 (max allowed: 0.0100); Targeted improvement -0.3205 below minimum 0.05"
+  ]
+}

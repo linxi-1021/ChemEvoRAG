@@ -1,0 +1,19 @@
+Run directory: D:\Desktop\evo\ChemEvoRAG_Phase1-main\data\evolution\runs\run_2026-06-09_203930
+Trace report: 5 failures, 26 partial, 86 success
+Generated 10 candidate patches
+
+[LLM Analysis] Processing cluster: assessment_false_negative__strategy.assessment__evidence_assessment
+  Failure type: assessment_false_negative, Prompt role: evidence_assessment
+  Affected skills: ['entity_lookup', 'reaction_comparison', 'reaction_condition_query']
+  Cluster size: 4
+  Stage 2: Running LLM failure analysis...
+  Primary failure type: 
+  Root causes: 0
+  Should generate patch: False
+  Risk level: high
+  Skipping patch generation (should_generate_patch=False)
+
+[LLM Analysis] No LLM-driven patches generated
+Schema validation: 10 accepted, 0 rejected
+
+--dry-run: 10 patches validated, not applied.

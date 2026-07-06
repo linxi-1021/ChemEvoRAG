@@ -1,0 +1,2947 @@
+{
+  "run_id": "run_2026-06-09_2050",
+  "generated_at": "2026-06-09T20:50:26.517188",
+  "skill_snapshot": {},
+  "environment": {
+    "model_name": "",
+    "temperature": 0.1,
+    "embedding_model": "all-MiniLM-L6-v2",
+    "retriever_version": "",
+    "prompt_registry_version": "1.0",
+    "corpus_snapshot_id": "",
+    "eval_dataset_version": "v1_118qs",
+    "random_seed": 42
+  },
+  "total_questions": 118,
+  "average_score": 0.8661016949152545,
+  "by_intent": {
+    "alias_resolution": {
+      "average_score": 0.9,
+      "total": 25,
+      "success": 19,
+      "partial_success": 5,
+      "system_failure": 0,
+      "coverage_gap": 1
+    },
+    "entity_lookup": {
+      "average_score": 0.9130434782608695,
+      "total": 23,
+      "success": 21,
+      "partial_success": 0,
+      "system_failure": 2,
+      "coverage_gap": 0
+    },
+    "reaction_condition_query": {
+      "average_score": 0.8249999999999998,
+      "total": 24,
+      "success": 15,
+      "partial_success": 8,
+      "system_failure": 1,
+      "coverage_gap": 0
+    },
+    "reaction_comparison": {
+      "average_score": 0.7826086956521737,
+      "total": 23,
+      "success": 13,
+      "partial_success": 8,
+      "system_failure": 2,
+      "coverage_gap": 0
+    },
+    "property_query": {
+      "average_score": 0.908695652173913,
+      "total": 23,
+      "success": 18,
+      "partial_success": 5,
+      "system_failure": 0,
+      "coverage_gap": 0
+    }
+  },
+  "failures": [
+    {
+      "question_id": "q3",
+      "question": "Which solvent was selected as optimal for the aerobic oxidation of 3-(n-hexyl)-1,2-octadien-4-ol in the optimization studies (Table 1 and related text)?",
+      "intent": "reaction_condition_query",
+      "skill_name": "reaction_condition_query",
+      "skill_version": "1.0.0",
+      "score": 0.0,
+      "outcome_type": "system_failure",
+      "primary_failure_type": "assessment_false_negative",
+      "contributing_failure_types": [],
+      "attribution_source": "rule",
+      "attribution_confidence": 0.85,
+      "attribution_explanation": "Assessment LLM incorrectly judged evidence insufficient despite answer being present.",
+      "evidence_contained_answer": false,
+      "corpus_contained_answer": null,
+      "gold_answer": "1,2-Dichloroethane (DCE) was selected as the optimal solvent.",
+      "predicted_answer": "The evidence does not include Table 1 or any related text that reports the optimal solvent for the aerobic oxidation of 3-(n-hexyl)-1,2-octadien-4-ol. While several procedures use DCE, no solvent-scre",
+      "retrieval_path": [],
+      "retrieved_evidence_ids": [
+        "block_1_0009",
+        "block_1_0041",
+        "block_1_0124",
+        "block_1_0127",
+        "block_1_0007",
+        "block_1_0122",
+        "block_1_0046",
+        "block_1_0048",
+        "mol_txt_1_0047",
+        "mol_txt_1_0028",
+        "mol_txt_1_0063",
+        "block_1_0012"
+      ],
+      "gold_evidence_ids": [],
+      "cited_evidence_ids": [],
+      "react_rounds_used": 2,
+      "stop_reason": "no_refined_query",
+      "proposed_patch_targets": [
+        "strategy.assessment"
+      ],
+      "evolution_action": "generate_patch_candidate",
+      "retrieval_rounds": [
+        {
+          "round": 1,
+          "query": "Which solvent was selected as optimal for the aerobic oxidation of 3-(n-hexyl)-1,2-octadien-4-ol in the optimization studies (Table 1 and related text)?",
+          "refined_query": "aerobic oxidation 3-(n-hexyl)-1,2-octadien-4-ol solvent optimization Table 1 DCE",
+          "retrieval_actions": [],
+          "retrieved_evidence": [
+            {
+              "evidence_id": "block_1_0009",
+              "evidence_type": "document_block",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "As we know, living organisms utilize copper and iron for their oxidation reactions and iron-containing hemoglobin carries oxygen for our breathing. In addition, the following values were reported by: "
+            },
+            {
+              "evidence_id": "block_1_0041",
+              "evidence_type": "document_block",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "|  | DCE,  $O_2$  (1 atm), r.t. |"
+            },
+            {
+              "evidence_id": "block_1_0124",
+              "evidence_type": "document_block",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "The reaction of hexadecan-1-ol (241.7 mg, 1.0 mmol),  \\mathrm { F e } ( \\mathrm { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } \\mathrm { O } (20.5 mg, 0.05 mmol), TEMPO (8.2 mg, 0.05 mmol"
+            }
+          ],
+          "new_evidence_count": 8,
+          "skipped_due_to_similarity": false,
+          "similarity_to_previous_query": 0.0
+        },
+        {
+          "round": 2,
+          "query": "aerobic oxidation 3-(n-hexyl)-1,2-octadien-4-ol solvent optimization Table 1 DCE",
+          "refined_query": "aerobic oxidation 3-(n-hexyl)-1,2-octadien-4-ol solvent optimization Table 1 DCE",
+          "retrieval_actions": [],
+          "retrieved_evidence": [
+            {
+              "evidence_id": "mol_txt_1_0047",
+              "evidence_type": "molecule",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "3-(n-hexyl)-1,2-octadien-4-ol | 3-(n-hexyl)-1,2-octadien-4-ol"
+            },
+            {
+              "evidence_id": "mol_txt_1_0028",
+              "evidence_type": "molecule",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "3-(n-hexyl)-1,2-octadien-4-one | 3-(n-hexyl)-1,2-octadien-4-one"
+            },
+            {
+              "evidence_id": "block_1_0012",
+              "evidence_type": "document_block",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "Based on our previous control experiment (Scheme 1), we used the highly sterically hindered 3- (n-hexyl)-1,2-octadien-4-ol as the model alcohol with TEMPO as the catalyst and set the following criteri"
+            }
+          ],
+          "new_evidence_count": 5,
+          "skipped_due_to_similarity": false,
+          "similarity_to_previous_query": 0.0
+        }
+      ],
+      "assessment_result": "sufficient=False",
+      "assessment_reason": "Evidence [2] contains a table with DCE as solvent and some conversion/yield data, but the table appears truncated and does not show a full optimization comparison for the specific substrate 3-(n-hexyl)-1,2-octadien-4-ol. Evidence [7] mentions DCE in a general procedure but not for this substrate. No evidence explicitly states which solvent was optimal for the aerobic oxidation of 3-(n-hexyl)-1,2-octadien-4-ol, nor provides comparative data (e.g., yields with different solvents) for that specific compound. The question refers to Table 1 and related text, but the retrieved evidence does not contain the full Table 1 or the relevant optimization discussion for this substrate.",
+      "missing_slots": [],
+      "conflicts": [],
+      "retrieval_channel_stats": {
+        "total_by_channel": {
+          "document_block": 4,
+          "molecule": 2
+        },
+        "gold_by_channel": {}
+      }
+    },
+    {
+      "question_id": "q4",
+      "question": "Under the authors' standard conditions, which product was obtained in a higher isolated/NMR yield: product 2c or product 2k?",
+      "intent": "reaction_comparison",
+      "skill_name": "reaction_comparison",
+      "skill_version": "1.0.0",
+      "score": 0.0,
+      "outcome_type": "system_failure",
+      "primary_failure_type": "assessment_false_negative",
+      "contributing_failure_types": [],
+      "attribution_source": "rule",
+      "attribution_confidence": 0.85,
+      "attribution_explanation": "Assessment LLM incorrectly judged evidence insufficient despite answer being present.",
+      "evidence_contained_answer": false,
+      "corpus_contained_answer": null,
+      "gold_answer": "Product 2c gave the higher yield (2c: 100% vs. 2k: 71%).",
+      "predicted_answer": "The evidence is insufficient to determine which of product 2c or product 2k was obtained in higher yield. None of the provided evidence items report an isolated or NMR yield for 2c, and while 2k is br",
+      "retrieval_path": [],
+      "retrieved_evidence_ids": [
+        "block_12_0029",
+        "block_12_0023",
+        "block_12_0030",
+        "block_12_0022",
+        "block_12_0013",
+        "block_12_0027",
+        "block_12_0026",
+        "block_12_0025",
+        "block_12_0020",
+        "block_12_0034",
+        "rxn_tbl_12_0003",
+        "rxn_tbl_12_0002"
+      ],
+      "gold_evidence_ids": [],
+      "cited_evidence_ids": [],
+      "react_rounds_used": 2,
+      "stop_reason": "no_refined_query",
+      "proposed_patch_targets": [
+        "strategy.assessment"
+      ],
+      "evolution_action": "generate_patch_candidate",
+      "retrieval_rounds": [
+        {
+          "round": 1,
+          "query": "Under the authors' standard conditions, which product was obtained in a higher isolated/NMR yield: product 2c or product 2k?",
+          "refined_query": "2c yield 2k yield isolated NMR standard conditions isochromanone",
+          "retrieval_actions": [],
+          "retrieved_evidence": [
+            {
+              "evidence_id": "block_12_0029",
+              "evidence_type": "document_block",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "|  | 1a | X mol% Fe(NO3)3·9H2O X mol% 4-OH-TEMPO Ar, MeCN, 25 °C, 24 h | 2a |"
+            },
+            {
+              "evidence_id": "block_12_0023",
+              "evidence_type": "document_block",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "| Entry | X | Nitroxyl | Solvent | Recovery of 1a (%) | NMR yield of 2a (%) |"
+            },
+            {
+              "evidence_id": "block_12_0030",
+              "evidence_type": "document_block",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "| Entry | X (equiv.) | Y (mg) | Recovery of 1a (%) | NMR yield of 2a (%) |"
+            }
+          ],
+          "new_evidence_count": 8,
+          "skipped_due_to_similarity": false,
+          "similarity_to_previous_query": 0.0
+        },
+        {
+          "round": 2,
+          "query": "2c yield 2k yield isolated NMR standard conditions isochromanone",
+          "refined_query": "2c yield 2k yield isolated NMR standard conditions isochromanone",
+          "retrieval_actions": [],
+          "retrieved_evidence": [
+            {
+              "evidence_id": "block_12_0023",
+              "evidence_type": "document_block",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "| Entry | X | Nitroxyl | Solvent | Recovery of 1a (%) | NMR yield of 2a (%) |"
+            },
+            {
+              "evidence_id": "block_12_0030",
+              "evidence_type": "document_block",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "| Entry | X (equiv.) | Y (mg) | Recovery of 1a (%) | NMR yield of 2a (%) |"
+            },
+            {
+              "evidence_id": "block_12_0029",
+              "evidence_type": "document_block",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "|  | 1a | X mol% Fe(NO3)3·9H2O X mol% 4-OH-TEMPO Ar, MeCN, 25 °C, 24 h | 2a |"
+            }
+          ],
+          "new_evidence_count": 1,
+          "skipped_due_to_similarity": false,
+          "similarity_to_previous_query": 0.0
+        }
+      ],
+      "assessment_result": "sufficient=False",
+      "assessment_reason": "None of the 8 evidence items mention products 2c or 2k, nor do they provide any yield data for these specific compounds. Items [1]-[4] and [6]-[8] discuss optimization or scope for other substrates (e.g., 1a, 2a, 2j, 2k is named but no yield given; 2c is absent). Item [5] is a general background statement. Therefore, the evidence lacks the necessary comparative yield data to answer which product (2c or 2k) was obtained in higher yield.",
+      "missing_slots": [],
+      "conflicts": [],
+      "retrieval_channel_stats": {
+        "total_by_channel": {
+          "document_block": 6
+        },
+        "gold_by_channel": {}
+      }
+    },
+    {
+      "question_id": "q_batch2_3",
+      "question": "Between compounds 6fe and 6ke, which sample was reported to have the higher purity by NMR and what were the values?",
+      "intent": "reaction_comparison",
+      "skill_name": "reaction_comparison",
+      "skill_version": "1.0.0",
+      "score": 0.0,
+      "outcome_type": "system_failure",
+      "primary_failure_type": "assessment_false_negative",
+      "contributing_failure_types": [],
+      "attribution_source": "rule",
+      "attribution_confidence": 0.85,
+      "attribution_explanation": "Assessment LLM incorrectly judged evidence insufficient despite answer being present.",
+      "evidence_contained_answer": false,
+      "corpus_contained_answer": null,
+      "gold_answer": "6ke had the higher purity: 98% for 6ke versus 96% for 6fe.",
+      "predicted_answer": "The provided evidence does not contain data for compounds 6fe or 6ke. The tables only report results for products like 6ae from substrate 1a and various alcohols (evidence: block_15-SI_0009, block_15-",
+      "retrieval_path": [],
+      "retrieved_evidence_ids": [
+        "block_15-SI_0009",
+        "block_15-SI_0021",
+        "block_15-SI_0017",
+        "block_15-SI_0025",
+        "block_15-SI_0013",
+        "block_15-SI_0015",
+        "block_15-SI_0019",
+        "block_15-SI_0023"
+      ],
+      "gold_evidence_ids": [],
+      "cited_evidence_ids": [],
+      "react_rounds_used": 2,
+      "stop_reason": "no_refined_query",
+      "proposed_patch_targets": [
+        "strategy.assessment"
+      ],
+      "evolution_action": "generate_patch_candidate",
+      "retrieval_rounds": [
+        {
+          "round": 1,
+          "query": "Between compounds 6fe and 6ke, which sample was reported to have the higher purity by NMR and what were the values?",
+          "refined_query": "6fe 6ke NMR purity",
+          "retrieval_actions": [],
+          "retrieved_evidence": [
+            {
+              "evidence_id": "block_15-SI_0009",
+              "evidence_type": "document_block",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "| Entry | $R'$ OH | Recovery of 1a | NMR yield |"
+            },
+            {
+              "evidence_id": "block_15-SI_0021",
+              "evidence_type": "document_block",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "| Entry | solvent | Recovery of 1a | NMR Y of 3a | NMR Y of 11ea | NMR Y of 6ae | NMR Y of 5a | NMR Y of 7ae |"
+            },
+            {
+              "evidence_id": "block_15-SI_0017",
+              "evidence_type": "document_block",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "| Entry | x | t | Recovery of 1a | NMR Y of 3a | NMR Y of 11ea | NMR Y of 6ae | NMR Y of 5a | NMR Y of 7ae |"
+            }
+          ],
+          "new_evidence_count": 8,
+          "skipped_due_to_similarity": false,
+          "similarity_to_previous_query": 0.0
+        },
+        {
+          "round": 2,
+          "query": "6fe 6ke NMR purity",
+          "refined_query": "6fe 6ke NMR purity",
+          "retrieval_actions": [],
+          "retrieved_evidence": [
+            {
+              "evidence_id": "block_15-SI_0009",
+              "evidence_type": "document_block",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "| Entry | $R'$ OH | Recovery of 1a | NMR yield |"
+            },
+            {
+              "evidence_id": "block_15-SI_0013",
+              "evidence_type": "document_block",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "| Entry | x/y/z | Recovery of 1a | NMR Y of 3a | NMR Y of 11ea | NMR Y of 6ae | NMR Y of 5a | NMR Y of 7ae |"
+            },
+            {
+              "evidence_id": "block_15-SI_0015",
+              "evidence_type": "document_block",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "| Entry | x | Recovery of 1a | NMR Y of 3a | NMR Y of 11ea | NMR Y of 6ae | NMR Y of 5a | NMR Y of 7ae |"
+            }
+          ],
+          "new_evidence_count": 0,
+          "skipped_due_to_similarity": false,
+          "similarity_to_previous_query": 0.0
+        }
+      ],
+      "assessment_result": "sufficient=False",
+      "assessment_reason": "None of the 8 evidence items mention compounds 6fe or 6ke. The tables list entries like 3a, 11ea, 6ae, 5a, 7ae, etc., but no '6fe' or '6ke' appear. No NMR purity values for these specific compounds are present.",
+      "missing_slots": [],
+      "conflicts": [],
+      "retrieval_channel_stats": {
+        "total_by_channel": {
+          "document_block": 6
+        },
+        "gold_by_channel": {}
+      }
+    },
+    {
+      "question_id": "q_batch2_2",
+      "question": "What is the structure shown for compound 6oe (as printed on the page)?",
+      "intent": "entity_lookup",
+      "skill_name": "entity_lookup",
+      "skill_version": "1.0.0",
+      "score": 0.0,
+      "outcome_type": "system_failure",
+      "primary_failure_type": "assessment_false_negative",
+      "contributing_failure_types": [],
+      "attribution_source": "rule",
+      "attribution_confidence": 0.85,
+      "attribution_explanation": "Assessment LLM incorrectly judged evidence insufficient despite answer being present.",
+      "evidence_contained_answer": false,
+      "corpus_contained_answer": null,
+      "gold_answer": "EtO2C(CH2)5COOMe — i.e., EtO2C–(CH2)5–COOCH3 (an ethyl ester at one end and a methyl ester at the other).",
+      "predicted_answer": "The evidence does not contain a clear structural depiction of compound 6oe as printed on the page. It includes a name (methyl 6-ethoxyhexanoate) and NMR data consistent with that structure, but no ima",
+      "retrieval_path": [],
+      "retrieved_evidence_ids": [
+        "mol_15-SI_0033",
+        "mol_15-SI_0035",
+        "block_15-SI_0063",
+        "block_15-SI_0137",
+        "block_15-SI_0031",
+        "block_15-SI_0035",
+        "block_15-SI_0041",
+        "block_15-SI_0065",
+        "block_15-SI_0062",
+        "block_15-SI_0092",
+        "block_15-SI_0103",
+        "block_15-SI_0099",
+        "block_15-SI_0179",
+        "block_15-SI_0180",
+        "block_15-SI_0028",
+        "block_15-SI_0051"
+      ],
+      "gold_evidence_ids": [],
+      "cited_evidence_ids": [],
+      "react_rounds_used": 3,
+      "stop_reason": "max_rounds_exhausted",
+      "proposed_patch_targets": [
+        "strategy.assessment"
+      ],
+      "evolution_action": "generate_patch_candidate",
+      "retrieval_rounds": [
+        {
+          "round": 1,
+          "query": "What is the structure shown for compound 6oe (as printed on the page)?",
+          "refined_query": "compound 6oe structure SMILES InChI chemical name",
+          "retrieval_actions": [],
+          "retrieved_evidence": [
+            {
+              "evidence_id": "block_15-SI_0063",
+              "evidence_type": "document_block",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "Following Typical Procedure ⅠI, the reaction of 1o (146.0 mg, 1.0 mmol),  \\mathrm { F e } ( \\mathrm { N O } _ { 3 } ) _ { 3 } { \\bullet } 9 \\mathrm { H } _ { 2 } \\mathrm { O } (32.6 mg, 0.08 mmol), TE"
+            },
+            {
+              "evidence_id": "block_15-SI_0137",
+              "evidence_type": "document_block",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "| ppm    | Value |"
+            },
+            {
+              "evidence_id": "block_15-SI_0031",
+              "evidence_type": "document_block",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "To a flask were added 1,6-hexanediol (2.4841 g, 20.4 mmol, 97% purity), Et3N (3.0 mL, d = 0.728 g/mL, 21.6 mmol), and DCM (40 mL). Then MsCl (1.6 mL, d = 1.478 g/mL, 20.6 mmol) was added dropwise with"
+            }
+          ],
+          "new_evidence_count": 8,
+          "skipped_due_to_similarity": false,
+          "similarity_to_previous_query": 0.0
+        },
+        {
+          "round": 2,
+          "query": "compound 6oe structure SMILES InChI chemical name",
+          "refined_query": "compound 6oe structure SMILES InChI",
+          "retrieval_actions": [],
+          "retrieved_evidence": [
+            {
+              "evidence_id": "block_15-SI_0063",
+              "evidence_type": "document_block",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "Following Typical Procedure ⅠI, the reaction of 1o (146.0 mg, 1.0 mmol),  \\mathrm { F e } ( \\mathrm { N O } _ { 3 } ) _ { 3 } { \\bullet } 9 \\mathrm { H } _ { 2 } \\mathrm { O } (32.6 mg, 0.08 mmol), TE"
+            },
+            {
+              "evidence_id": "block_15-SI_0065",
+              "evidence_type": "document_block",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "Typical Procedure III: To a 50 mL flask were added  \\mathrm { F e } ( \\mathrm { N O } _ { 3 } ) _ { 3 } { \\bullet } 9 \\mathrm { H } _ { 2 } \\mathrm { O } (24.5 mg, 0.06 mmol), TEMPO (8.0 mg, 0.05 mmol"
+            },
+            {
+              "evidence_id": "block_15-SI_0137",
+              "evidence_type": "document_block",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "| ppm    | Value |"
+            }
+          ],
+          "new_evidence_count": 4,
+          "skipped_due_to_similarity": false,
+          "similarity_to_previous_query": 0.0
+        },
+        {
+          "round": 3,
+          "query": "compound 6oe structure SMILES InChI",
+          "refined_query": "",
+          "retrieval_actions": [],
+          "retrieved_evidence": [
+            {
+              "evidence_id": "block_15-SI_0063",
+              "evidence_type": "document_block",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "Following Typical Procedure ⅠI, the reaction of 1o (146.0 mg, 1.0 mmol),  \\mathrm { F e } ( \\mathrm { N O } _ { 3 } ) _ { 3 } { \\bullet } 9 \\mathrm { H } _ { 2 } \\mathrm { O } (32.6 mg, 0.08 mmol), TE"
+            },
+            {
+              "evidence_id": "mol_15-SI_0033",
+              "evidence_type": "molecule",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": true,
+              "used_in_final_answer": false,
+              "summary": "methyl 6-(4-cyanobenzyloxy)hexanoate | 6ne | 6ne (yyb-7-015) | OCCCc1ccc(Cl)cc1 | OCCCc1ccc(Cl)cc1 | ZHBIWFGGIKFSHZ-UHFFFAOYSA-N"
+            },
+            {
+              "evidence_id": "mol_15-SI_0035",
+              "evidence_type": "molecule",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": true,
+              "used_in_final_answer": false,
+              "summary": "methyl 6-ethoxyhexanoate | 6oe | 6oe (yyb-6-155) | COc1ccc(CCCO)cc1 | COc1ccc(CCCO)cc1 | NIIDHUCLROLCBU-UHFFFAOYSA-N"
+            }
+          ],
+          "new_evidence_count": 2,
+          "skipped_due_to_similarity": false,
+          "similarity_to_previous_query": 0.0
+        }
+      ],
+      "assessment_result": "sufficient=False",
+      "assessment_reason": "None of the 8 evidence items mention compound 6oe or provide any structural information (e.g., SMILES, InChI, chemical name, or a drawn structure). The items contain unrelated reaction procedures, NMR data, and experimental details for other compounds (1o, 1i, 1,6-hexanediol, etc.). No structural depiction or description of 6oe is present.",
+      "missing_slots": [],
+      "conflicts": [],
+      "retrieval_channel_stats": {
+        "total_by_channel": {
+          "document_block": 7,
+          "molecule": 2
+        },
+        "gold_by_channel": {
+          "molecule": 2
+        }
+      }
+    },
+    {
+      "question_id": "q2",
+      "question": "What is the name of product 2b as given in the paper (structure/identified name)?",
+      "intent": "entity_lookup",
+      "skill_name": "entity_lookup",
+      "skill_version": "1.0.0",
+      "score": 0.0,
+      "outcome_type": "system_failure",
+      "primary_failure_type": "unknown_failure",
+      "contributing_failure_types": [],
+      "attribution_source": "rule",
+      "attribution_confidence": 0.3,
+      "attribution_explanation": "No rule matched. Manual review recommended.",
+      "evidence_contained_answer": false,
+      "corpus_contained_answer": null,
+      "gold_answer": "4-Phenylbut-3-yn-2-one (2b)",
+      "predicted_answer": "The retrieved evidence does not provide a full chemical name for product 2b; it is referred to only by the label “2b” in Table 2 as a ketone product from the aerobic oxidation of propargylic alcohol 1",
+      "retrieval_path": [],
+      "retrieved_evidence_ids": [
+        "block_18_0012",
+        "block_18_0014",
+        "block_18_0005",
+        "block_18_0008",
+        "block_18_0020",
+        "block_18_0024",
+        "block_18_0015",
+        "block_18_0021",
+        "block_18_0003",
+        "block_18_0010"
+      ],
+      "gold_evidence_ids": [],
+      "cited_evidence_ids": [],
+      "react_rounds_used": 3,
+      "stop_reason": "max_rounds_exhausted",
+      "proposed_patch_targets": [],
+      "evolution_action": "manual_review",
+      "retrieval_rounds": [
+        {
+          "round": 1,
+          "query": "What is the name of product 2b as given in the paper (structure/identified name)?",
+          "refined_query": "product 2b name structure '4-aryl-3-propargylic alcohol' oxidation",
+          "retrieval_actions": [],
+          "retrieved_evidence": [
+            {
+              "evidence_id": "block_18_0012",
+              "evidence_type": "document_block",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "of 4-aryl-3-propargylic alcohols were examined (Table 2). A wide range of functional groups such as F, Cl, Br, I, CO2Et, CN,  \\mathrm { N O } _ { 2 } , NHTs, alkyl, MeO, etc. were smoothly tolerated. "
+            },
+            {
+              "evidence_id": "block_18_0014",
+              "evidence_type": "document_block",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "Further study indicates that the scope is very broad. When  \\mathbb { R } ^ { 1 } = \\operatorname { P h } and  \\mathrm { R } ^ { 2 } = \\mathrm { P h } or H, the reaction could reach completion within "
+            },
+            {
+              "evidence_id": "block_18_0005",
+              "evidence_type": "document_block",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "As important intermediates in organic synthesis, α,β-unsaturated alkynals and alkynones are very useful precursors for the preparation of various aromatic compounds,1 heterocyclic compounds,2 α,β-enon"
+            }
+          ],
+          "new_evidence_count": 8,
+          "skipped_due_to_similarity": false,
+          "similarity_to_previous_query": 0.0
+        },
+        {
+          "round": 2,
+          "query": "product 2b name structure '4-aryl-3-propargylic alcohol' oxidation",
+          "refined_query": "product 2b name structure '2b' propargylic alcohol oxidation",
+          "retrieval_actions": [],
+          "retrieved_evidence": [
+            {
+              "evidence_id": "block_18_0012",
+              "evidence_type": "document_block",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "of 4-aryl-3-propargylic alcohols were examined (Table 2). A wide range of functional groups such as F, Cl, Br, I, CO2Et, CN,  \\mathrm { N O } _ { 2 } , NHTs, alkyl, MeO, etc. were smoothly tolerated. "
+            },
+            {
+              "evidence_id": "block_18_0015",
+              "evidence_type": "document_block",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "| Entry | Substrate | R | Method | Time (h) | Isolated yield of 2 (%) |"
+            },
+            {
+              "evidence_id": "block_18_0005",
+              "evidence_type": "document_block",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "As important intermediates in organic synthesis, α,β-unsaturated alkynals and alkynones are very useful precursors for the preparation of various aromatic compounds,1 heterocyclic compounds,2 α,β-enon"
+            }
+          ],
+          "new_evidence_count": 1,
+          "skipped_due_to_similarity": false,
+          "similarity_to_previous_query": 0.0
+        },
+        {
+          "round": 3,
+          "query": "product 2b name structure '2b' propargylic alcohol oxidation",
+          "refined_query": "",
+          "retrieval_actions": [],
+          "retrieved_evidence": [
+            {
+              "evidence_id": "mol_1_0010",
+              "evidence_type": "molecule",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "CCCCCCC#CCO"
+            },
+            {
+              "evidence_id": "mol_1_0011",
+              "evidence_type": "molecule",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "OCC#Cc1ccccc1"
+            },
+            {
+              "evidence_id": "mol_1_0012",
+              "evidence_type": "molecule",
+              "channel": "",
+              "score": 0.0,
+              "contains_gold_answer": false,
+              "used_in_final_answer": false,
+              "summary": "O=[N+]([O-])c1ccc(C#CCO)cc1"
+            }
+          ],
+          "new_evidence_count": 8,
+          "skipped_due_to_similarity": false,
+          "similarity_to_previous_query": 0.0
+        }
+      ],
+      "assessment_result": "sufficient=False",
+      "assessment_reason": "Evidence [7] shows a table with entry 1 listing substrate 1b, R=H, method A, 24 h, and isolated yield 77(2b)^b, but it does not provide the name or structure of product 2b. The other evidence items discuss general reaction scope, conditions, or other substrates but do not name 2b. The question asks for the name of product 2b as given in the paper, which is missing from all retrieved evidence.",
+      "missing_slots": [],
+      "conflicts": [],
+      "retrieval_channel_stats": {
+        "total_by_channel": {
+          "document_block": 6,
+          "molecule": 3
+        },
+        "gold_by_channel": {}
+      }
+    }
+  ],
+  "partial_successes": [
+    {
+      "question_id": "q4",
+      "intent": "reaction_comparison",
+      "score": 0.3,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "Assessment LLM incorrectly judged evidence insufficient despite answer being present.",
+      "primary_failure_type": "assessment_false_negative",
+      "evolution_action": "uncertain_queue"
+    },
+    {
+      "question_id": "q1",
+      "intent": "alias_resolution",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q3",
+      "intent": "reaction_condition_query",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "Abbreviation/alias not expanded to full chemical name.",
+      "primary_failure_type": "alias_miss",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q5",
+      "intent": "property_query",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q4",
+      "intent": "reaction_comparison",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "Local compound ID mapping failed.",
+      "primary_failure_type": "local_id_miss",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q5",
+      "intent": "property_query",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q1",
+      "intent": "alias_resolution",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q4",
+      "intent": "reaction_comparison",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q3",
+      "intent": "reaction_condition_query",
+      "score": 0.5,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q4",
+      "intent": "reaction_comparison",
+      "score": 0.5,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q5",
+      "intent": "property_query",
+      "score": 0.5,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q1",
+      "intent": "alias_resolution",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q3",
+      "intent": "reaction_condition_query",
+      "score": 0.5,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "Abbreviation/alias not expanded to full chemical name.",
+      "primary_failure_type": "alias_miss",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q5",
+      "intent": "property_query",
+      "score": 0.3,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "uncertain_queue"
+    },
+    {
+      "question_id": "q3",
+      "intent": "reaction_condition_query",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q4",
+      "intent": "reaction_comparison",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q4",
+      "intent": "reaction_comparison",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q_batch1_3",
+      "intent": "property_query",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q_batch1_2",
+      "intent": "reaction_condition_query",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q3",
+      "intent": "reaction_condition_query",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q4",
+      "intent": "reaction_comparison",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q1",
+      "intent": "alias_resolution",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q3",
+      "intent": "reaction_condition_query",
+      "score": 0.5,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "Abbreviation/alias not expanded to full chemical name.",
+      "primary_failure_type": "alias_miss",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q1",
+      "intent": "alias_resolution",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q4",
+      "intent": "reaction_comparison",
+      "score": 0.7,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "No rule matched. Manual review recommended.",
+      "primary_failure_type": "unknown_failure",
+      "evolution_action": "minor_patch_candidate"
+    },
+    {
+      "question_id": "q3",
+      "intent": "reaction_condition_query",
+      "score": 0.5,
+      "outcome_type": "partial_success",
+      "partial_success_reason": "Local compound ID mapping failed.",
+      "primary_failure_type": "local_id_miss",
+      "evolution_action": "minor_patch_candidate"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "question_id": "q1",
+      "intent": "alias_resolution",
+      "score": 0.0,
+      "outcome_type": "coverage_gap",
+      "gap_reason": "Answer not found in retrieved evidence or corpus.",
+      "coverage_gap_verified_by": "oracle_search",
+      "evolution_action": "record_only"
+    }
+  ],
+  "success_patterns": [
+    {
+      "intent": "entity_lookup",
+      "pattern": "simple_lookup_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2_1"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "entity_lookup"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "property_query",
+      "pattern": "property_extraction_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5_1"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "property_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "simple_lookup_text_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1_2"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "text_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "alias_resolution"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "simple_lookup_entity_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2_2"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "entity_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "entity_lookup"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "procedure_query_text_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q3_2"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "procedure_query",
+      "evidence_type": "text_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "reaction_condition_query",
+        "query_signals": [
+          "conditions",
+          "procedure",
+          "synthesis",
+          "protocol"
+        ]
+      },
+      "reusable_template": "For procedure/condition queries: identify all condition parameters (solvent, temperature, time, catalyst, atmosphere) from evidence, present them in structured format."
+    },
+    {
+      "intent": "reaction_comparison",
+      "pattern": "comparison_text_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q4_2"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "comparison",
+      "evidence_type": "text_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "reaction_comparison",
+        "query_signals": [
+          "compare",
+          "versus",
+          "higher",
+          "lower",
+          "best"
+        ]
+      },
+      "reusable_template": "For comparison queries: extract all relevant values from evidence, identify the comparison dimension, and explicitly state which option ranks highest/lowest with the supporting value."
+    },
+    {
+      "intent": "property_query",
+      "pattern": "simple_lookup_entity_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5_2"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "entity_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "property_query"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "property_extraction_table_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2_3"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "entity_lookup",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "reaction_comparison",
+      "pattern": "comparison_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q4_3"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "comparison",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "reaction_comparison",
+        "query_signals": [
+          "compare",
+          "versus",
+          "higher",
+          "lower",
+          "best"
+        ]
+      },
+      "reusable_template": "For comparison queries: extract all relevant values from evidence, identify the comparison dimension, and explicitly state which option ranks highest/lowest with the supporting value."
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "simple_lookup_entity_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1_4"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "entity_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "alias_resolution"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "simple_lookup_entity_evidence_narrative",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2_4"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "entity_evidence",
+      "answer_structure": "narrative",
+      "trigger_conditions": {
+        "intent": "entity_lookup"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "property_extraction_table_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q3_4"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "reaction_condition_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "simple_lookup_table_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2_5"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "table_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "entity_lookup"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "property_extraction_table_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q3_5"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "reaction_condition_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "property_query",
+      "pattern": "property_extraction_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5_5"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "property_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "simple_lookup_entity_evidence_narrative",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1_6"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "entity_evidence",
+      "answer_structure": "narrative",
+      "trigger_conditions": {
+        "intent": "alias_resolution"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "simple_lookup_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2_6"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "entity_lookup"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "property_query",
+      "pattern": "property_extraction_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5_6"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "property_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "identification_table_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1_7"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "identification",
+      "evidence_type": "table_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "alias_resolution"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "property_extraction_table_evidence_boolean",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2_7"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "boolean",
+      "trigger_conditions": {
+        "intent": "entity_lookup",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "property_extraction_table_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q3_7"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "reaction_condition_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "reaction_comparison",
+      "pattern": "comparison_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q4_7"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "comparison",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "reaction_comparison",
+        "query_signals": [
+          "compare",
+          "versus",
+          "higher",
+          "lower",
+          "best"
+        ]
+      },
+      "reusable_template": "For comparison queries: extract all relevant values from evidence, identify the comparison dimension, and explicitly state which option ranks highest/lowest with the supporting value."
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "simple_lookup_table_evidence_narrative",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2_8"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "table_evidence",
+      "answer_structure": "narrative",
+      "trigger_conditions": {
+        "intent": "entity_lookup"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "reaction_comparison",
+      "pattern": "comparison_text_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q4_8"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "comparison",
+      "evidence_type": "text_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "reaction_comparison",
+        "query_signals": [
+          "compare",
+          "versus",
+          "higher",
+          "lower",
+          "best"
+        ]
+      },
+      "reusable_template": "For comparison queries: extract all relevant values from evidence, identify the comparison dimension, and explicitly state which option ranks highest/lowest with the supporting value."
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "simple_lookup_table_evidence_boolean",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1_9"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "table_evidence",
+      "answer_structure": "boolean",
+      "trigger_conditions": {
+        "intent": "alias_resolution"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "simple_lookup_table_evidence_boolean",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2_9"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "table_evidence",
+      "answer_structure": "boolean",
+      "trigger_conditions": {
+        "intent": "entity_lookup"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "property_extraction_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q3_9"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "reaction_condition_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "reaction_comparison",
+      "pattern": "comparison_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q4_9"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "comparison",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "reaction_comparison",
+        "query_signals": [
+          "compare",
+          "versus",
+          "higher",
+          "lower",
+          "best"
+        ]
+      },
+      "reusable_template": "For comparison queries: extract all relevant values from evidence, identify the comparison dimension, and explicitly state which option ranks highest/lowest with the supporting value."
+    },
+    {
+      "intent": "property_query",
+      "pattern": "procedure_query_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5_9"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "procedure_query",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "property_query",
+        "query_signals": [
+          "conditions",
+          "procedure",
+          "synthesis",
+          "protocol"
+        ]
+      },
+      "reusable_template": "For procedure/condition queries: identify all condition parameters (solvent, temperature, time, catalyst, atmosphere) from evidence, present them in structured format."
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "identification_table_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1_10"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "identification",
+      "evidence_type": "table_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "alias_resolution"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "simple_lookup_table_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2_10"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "table_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "entity_lookup"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "property_extraction_table_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q3_10"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "reaction_condition_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "reaction_comparison",
+      "pattern": "comparison_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q4_10"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "comparison",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "reaction_comparison",
+        "query_signals": [
+          "compare",
+          "versus",
+          "higher",
+          "lower",
+          "best"
+        ]
+      },
+      "reusable_template": "For comparison queries: extract all relevant values from evidence, identify the comparison dimension, and explicitly state which option ranks highest/lowest with the supporting value."
+    },
+    {
+      "intent": "property_query",
+      "pattern": "property_extraction_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5_10"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "property_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "simple_lookup_table_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1_11"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "table_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "alias_resolution"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "comparison_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2_11"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "comparison",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "entity_lookup",
+        "query_signals": [
+          "compare",
+          "versus",
+          "higher",
+          "lower",
+          "best"
+        ]
+      },
+      "reusable_template": "For comparison queries: extract all relevant values from evidence, identify the comparison dimension, and explicitly state which option ranks highest/lowest with the supporting value."
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "property_extraction_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q3_11"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "reaction_condition_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "reaction_comparison",
+      "pattern": "comparison_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q4_11"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "comparison",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "reaction_comparison",
+        "query_signals": [
+          "compare",
+          "versus",
+          "higher",
+          "lower",
+          "best"
+        ]
+      },
+      "reusable_template": "For comparison queries: extract all relevant values from evidence, identify the comparison dimension, and explicitly state which option ranks highest/lowest with the supporting value."
+    },
+    {
+      "intent": "property_query",
+      "pattern": "property_extraction_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5_11"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "property_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "simple_lookup_table_evidence_boolean",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1_12"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "table_evidence",
+      "answer_structure": "boolean",
+      "trigger_conditions": {
+        "intent": "alias_resolution"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "simple_lookup_table_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2_12"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "table_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "entity_lookup"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "property_extraction_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q3_12"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "reaction_condition_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "property_query",
+      "pattern": "property_extraction_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5_12"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "property_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "simple_lookup_table_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1_13"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "table_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "alias_resolution"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "simple_lookup_table_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2_13"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "table_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "entity_lookup"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "property_query",
+      "pattern": "property_extraction_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5_13"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "property_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "identification_entity_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1_14"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "identification",
+      "evidence_type": "entity_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "alias_resolution"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "simple_lookup_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2_14"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "entity_lookup"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "property_extraction_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q3_14"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "reaction_condition_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "property_query",
+      "pattern": "procedure_query_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5_14"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "procedure_query",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "property_query",
+        "query_signals": [
+          "conditions",
+          "procedure",
+          "synthesis",
+          "protocol"
+        ]
+      },
+      "reusable_template": "For procedure/condition queries: identify all condition parameters (solvent, temperature, time, catalyst, atmosphere) from evidence, present them in structured format."
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "simple_lookup_entity_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q_batch1_1_15-SI"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "entity_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "alias_resolution"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "simple_lookup_table_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q_batch2_1_15-SI"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "table_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "alias_resolution"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "identification_table_evidence_narrative",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q_batch3_1_15-SI"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "identification",
+      "evidence_type": "table_evidence",
+      "answer_structure": "narrative",
+      "trigger_conditions": {
+        "intent": "alias_resolution"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "property_extraction_table_evidence_narrative",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q_batch3_2_15-SI"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "narrative",
+      "trigger_conditions": {
+        "intent": "reaction_condition_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "simple_lookup_table_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1_16"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "table_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "alias_resolution"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "simple_lookup_table_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2_16"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "table_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "entity_lookup"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "property_extraction_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q3_16"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "reaction_condition_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "reaction_comparison",
+      "pattern": "comparison_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q4_16"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "comparison",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "reaction_comparison",
+        "query_signals": [
+          "compare",
+          "versus",
+          "higher",
+          "lower",
+          "best"
+        ]
+      },
+      "reusable_template": "For comparison queries: extract all relevant values from evidence, identify the comparison dimension, and explicitly state which option ranks highest/lowest with the supporting value."
+    },
+    {
+      "intent": "property_query",
+      "pattern": "property_extraction_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5_16"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "property_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "simple_lookup_text_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1_17"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "text_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "alias_resolution"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "procedure_query_table_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2_17"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "procedure_query",
+      "evidence_type": "table_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "entity_lookup",
+        "query_signals": [
+          "conditions",
+          "procedure",
+          "synthesis",
+          "protocol"
+        ]
+      },
+      "reusable_template": "For procedure/condition queries: identify all condition parameters (solvent, temperature, time, catalyst, atmosphere) from evidence, present them in structured format."
+    },
+    {
+      "intent": "property_query",
+      "pattern": "property_extraction_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5_17"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "property_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "simple_lookup_table_evidence_narrative",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1_18"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "table_evidence",
+      "answer_structure": "narrative",
+      "trigger_conditions": {
+        "intent": "alias_resolution"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "property_extraction_table_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q3_18"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "reaction_condition_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "reaction_comparison",
+      "pattern": "comparison_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q4_18"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "comparison",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "reaction_comparison",
+        "query_signals": [
+          "compare",
+          "versus",
+          "higher",
+          "lower",
+          "best"
+        ]
+      },
+      "reusable_template": "For comparison queries: extract all relevant values from evidence, identify the comparison dimension, and explicitly state which option ranks highest/lowest with the supporting value."
+    },
+    {
+      "intent": "property_query",
+      "pattern": "property_extraction_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5_18"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "property_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "simple_lookup_table_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2_19"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "table_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "entity_lookup"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "property_extraction_table_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q3_19"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "reaction_condition_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "reaction_comparison",
+      "pattern": "comparison_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q4_19"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "comparison",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "reaction_comparison",
+        "query_signals": [
+          "compare",
+          "versus",
+          "higher",
+          "lower",
+          "best"
+        ]
+      },
+      "reusable_template": "For comparison queries: extract all relevant values from evidence, identify the comparison dimension, and explicitly state which option ranks highest/lowest with the supporting value."
+    },
+    {
+      "intent": "property_query",
+      "pattern": "property_extraction_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5_19"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "property_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "simple_lookup_table_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1_20"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "table_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "alias_resolution"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "simple_lookup_table_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2_20"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "table_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "entity_lookup"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "reaction_comparison",
+      "pattern": "comparison_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q4_20"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "comparison",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "reaction_comparison",
+        "query_signals": [
+          "compare",
+          "versus",
+          "higher",
+          "lower",
+          "best"
+        ]
+      },
+      "reusable_template": "For comparison queries: extract all relevant values from evidence, identify the comparison dimension, and explicitly state which option ranks highest/lowest with the supporting value."
+    },
+    {
+      "intent": "property_query",
+      "pattern": "property_extraction_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5_20"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "property_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "simple_lookup_table_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2_21"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "table_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "entity_lookup"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "property_extraction_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q3_21"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "reaction_condition_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "reaction_comparison",
+      "pattern": "comparison_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q4_21"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "comparison",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "reaction_comparison",
+        "query_signals": [
+          "compare",
+          "versus",
+          "higher",
+          "lower",
+          "best"
+        ]
+      },
+      "reusable_template": "For comparison queries: extract all relevant values from evidence, identify the comparison dimension, and explicitly state which option ranks highest/lowest with the supporting value."
+    },
+    {
+      "intent": "property_query",
+      "pattern": "property_extraction_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5_21"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "property_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "property_extraction_table_evidence_narrative",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1_22"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "narrative",
+      "trigger_conditions": {
+        "intent": "alias_resolution",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "simple_lookup_table_evidence_narrative",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2_22"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "table_evidence",
+      "answer_structure": "narrative",
+      "trigger_conditions": {
+        "intent": "entity_lookup"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "reaction_condition_query",
+      "pattern": "property_extraction_table_evidence_narrative",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q3_22"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "narrative",
+      "trigger_conditions": {
+        "intent": "reaction_condition_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "property_query",
+      "pattern": "property_extraction_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5_22"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "property_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    },
+    {
+      "intent": "alias_resolution",
+      "pattern": "simple_lookup_table_evidence_list",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q1_23"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "table_evidence",
+      "answer_structure": "list",
+      "trigger_conditions": {
+        "intent": "alias_resolution"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "entity_lookup",
+      "pattern": "simple_lookup_entity_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q2_23"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "simple_lookup",
+      "evidence_type": "entity_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "entity_lookup"
+      },
+      "reusable_template": ""
+    },
+    {
+      "intent": "reaction_comparison",
+      "pattern": "comparison_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q4_23"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "comparison",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "reaction_comparison",
+        "query_signals": [
+          "compare",
+          "versus",
+          "higher",
+          "lower",
+          "best"
+        ]
+      },
+      "reusable_template": "For comparison queries: extract all relevant values from evidence, identify the comparison dimension, and explicitly state which option ranks highest/lowest with the supporting value."
+    },
+    {
+      "intent": "property_query",
+      "pattern": "property_extraction_table_evidence_numeric_value",
+      "frequency": 1,
+      "avg_score": 1.0,
+      "supporting_question_ids": [
+        "q5_23"
+      ],
+      "candidate_template_action": "distill_or_refine_template",
+      "query_structure": "property_extraction",
+      "evidence_type": "table_evidence",
+      "answer_structure": "numeric_value",
+      "trigger_conditions": {
+        "intent": "property_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ]
+      },
+      "reusable_template": "For property extraction queries: locate the specific property in evidence, extract the exact value with units, and cite the evidence source."
+    }
+  ],
+  "trace_field_audits": [
+    {
+      "question_id": "q3",
+      "field_status": {
+        "question_id": "missing",
+        "question": "available",
+        "gold_answer": "missing",
+        "predicted_answer": "missing",
+        "score": "missing",
+        "intent": "available",
+        "react_log": "missing",
+        "retrieved_evidence_ids": "available",
+        "assessment_result": "missing",
+        "assessment_reason": "missing"
+      },
+      "missing_fields": [
+        "question_id",
+        "gold_answer",
+        "predicted_answer",
+        "score",
+        "react_log",
+        "assessment_result",
+        "assessment_reason"
+      ],
+      "trace_quality": "minimal"
+    },
+    {
+      "question_id": "q4",
+      "field_status": {
+        "question_id": "missing",
+        "question": "available",
+        "gold_answer": "missing",
+        "predicted_answer": "missing",
+        "score": "available",
+        "intent": "available",
+        "react_log": "missing",
+        "retrieved_evidence_ids": "available",
+        "assessment_result": "missing",
+        "assessment_reason": "missing"
+      },
+      "missing_fields": [
+        "question_id",
+        "gold_answer",
+        "predicted_answer",
+        "react_log",
+        "assessment_result",
+        "assessment_reason"
+      ],
+      "trace_quality": "minimal"
+    },
+    {
+      "question_id": "q_batch2_3",
+      "field_status": {
+        "question_id": "missing",
+        "question": "available",
+        "gold_answer": "missing",
+        "predicted_answer": "missing",
+        "score": "missing",
+        "intent": "available",
+        "react_log": "missing",
+        "retrieved_evidence_ids": "available",
+        "assessment_result": "missing",
+        "assessment_reason": "missing"
+      },
+      "missing_fields": [
+        "question_id",
+        "gold_answer",
+        "predicted_answer",
+        "score",
+        "react_log",
+        "assessment_result",
+        "assessment_reason"
+      ],
+      "trace_quality": "minimal"
+    },
+    {
+      "question_id": "q_batch2_2",
+      "field_status": {
+        "question_id": "missing",
+        "question": "available",
+        "gold_answer": "missing",
+        "predicted_answer": "missing",
+        "score": "missing",
+        "intent": "available",
+        "react_log": "missing",
+        "retrieved_evidence_ids": "available",
+        "assessment_result": "missing",
+        "assessment_reason": "missing"
+      },
+      "missing_fields": [
+        "question_id",
+        "gold_answer",
+        "predicted_answer",
+        "score",
+        "react_log",
+        "assessment_result",
+        "assessment_reason"
+      ],
+      "trace_quality": "minimal"
+    },
+    {
+      "question_id": "q2",
+      "field_status": {
+        "question_id": "missing",
+        "question": "available",
+        "gold_answer": "missing",
+        "predicted_answer": "missing",
+        "score": "available",
+        "intent": "available",
+        "react_log": "missing",
+        "retrieved_evidence_ids": "available",
+        "assessment_result": "missing",
+        "assessment_reason": "missing"
+      },
+      "missing_fields": [
+        "question_id",
+        "gold_answer",
+        "predicted_answer",
+        "react_log",
+        "assessment_result",
+        "assessment_reason"
+      ],
+      "trace_quality": "minimal"
+    }
+  ],
+  "analysis_clusters": [
+    {
+      "cluster_id": "assessment_false_negative__strategy.assessment__evidence_assessment",
+      "failure_type": "assessment_false_negative",
+      "normalized_target_path": "strategy.assessment",
+      "prompt_role": "evidence_assessment",
+      "affected_skills": [
+        "entity_lookup",
+        "reaction_comparison",
+        "reaction_condition_query"
+      ],
+      "cluster_size": 4
+    }
+  ]
+}

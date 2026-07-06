@@ -1,0 +1,10 @@
+{
+  "patch_id": "reaction_comparison_round1_patch1",
+  "passed": false,
+  "average_score": 0.8366666666666668,
+  "score_delta": -0.02943502824858768,
+  "targeted_improvement": 0.020909090909090988,
+  "errors": [
+    "Regression failed: Score dropped by 0.0294 (max allowed: 0.0200); Targeted improvement 0.0209 below minimum 0.05"
+  ]
+}

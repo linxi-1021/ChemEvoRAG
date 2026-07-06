@@ -1,4 +1,4 @@
-import { useMemo, useState, useRef, useCallback } from 'react';
+import { useMemo, useState, useRef, useCallback, useEffect } from 'react';
 import { useAppStore } from '../../stores/useAppStore';
 import type { LayoutBlock, EvidenceBlock, MoleculeCard, ReactionEvent } from '../../types';
 import styles from './BboxOverlay.module.css';
@@ -12,6 +12,7 @@ interface Props {
   viewportWidth: number;
   viewportHeight: number;
   docId: string;
+  pageNum: number;
 }
 
 interface OverlayRect {
@@ -19,6 +20,8 @@ interface OverlayRect {
   paragraphBlockIds: string[];
   bbox: [number, number, number, number];
   label: string;
+  blockType?: string;
+  pageNum?: number;
   layer: 'block' | 'molecule' | 'reaction';
 }
 
@@ -44,6 +47,7 @@ function extractLayoutText(block: LayoutBlock): string {
  * 1. Skip image blocks and empty-text list blocks entirely.
  * 2. Group remaining blocks by y-center proximity (< 30 PDF-points = same paragraph).
  * 3. Each group consumes one evidence block sequentially.
+ * 4. For cross-page continuations: search all evidence blocks for best text prefix match.
  */
 function matchBlocks(
   layoutBlocks: LayoutBlock[],
@@ -56,9 +60,8 @@ function matchBlocks(
   for (let i = 0; i < layoutBlocks.length; i++) {
     const lb = layoutBlocks[i];
     const text = extractLayoutText(lb);
-    // Skip image blocks entirely
     if (lb.type === 'image') continue;
-    // Skip empty-text list blocks (they don't carry evidence)
+    if (lb.type === 'table' && !text) continue;
     if (lb.type === 'list' && !text) continue;
     actionable.push({ idx: i, block: lb });
   }
@@ -81,36 +84,116 @@ function matchBlocks(
     groups.push([item]);
   }
 
-  // Step 3: Assign each group the next evidence block
+  // Step 3: Assign groups to evidence blocks
   let evIdx = 0;
   for (const group of groups) {
     if (evIdx >= evidenceBlocks.length) break;
-    const evBlock = evidenceBlocks[evIdx];
-    for (const g of group) {
-      result.set(g.idx, [evBlock.block_id]);
+
+    // Get text from first text-bearing block in group
+    const groupText = group
+      .map(g => extractLayoutText(g.block))
+      .find(t => t) || '';
+
+    // Try current evidence block first
+    const evText = evidenceBlocks[evIdx].text || '';
+    const curOverlap = groupText ? countPrefix(groupText, evText) : 0;
+
+    if (curOverlap >= 10 || !groupText) {
+      // Match or empty text → use current
+      for (const g of group) {
+        result.set(g.idx, [evidenceBlocks[evIdx].block_id]);
+      }
+      evIdx++;
+    } else {
+      // No prefix match → search all evidence for best match
+      // (handles cross-page continuations where text starts mid-sentence)
+      let bestIdx = -1;
+      let bestScore = 0;
+      for (let ei = 0; ei < evidenceBlocks.length; ei++) {
+        const evText = evidenceBlocks[ei].text || '';
+        // Try prefix match
+        const prefixScore = countPrefix(groupText, evText);
+        if (prefixScore > bestScore && prefixScore >= 10) {
+          bestScore = prefixScore;
+          bestIdx = ei;
+        }
+        // Try containment (for cross-page continuations starting mid-sentence)
+        if (evText.includes(groupText.slice(0, 30)) && groupText.length >= 10) {
+          const containmentScore = groupText.length + 100; // higher priority
+          if (containmentScore > bestScore) {
+            bestScore = containmentScore;
+            bestIdx = ei;
+          }
+        }
+      }
+      if (bestIdx >= 0) {
+        // Found a better match — use it but don't skip intermediate evidence
+        for (const g of group) {
+          result.set(g.idx, [evidenceBlocks[bestIdx].block_id]);
+        }
+        // Don't advance evIdx — intermediate evidence blocks still need to be matched
+      } else {
+        // No match found — use current as fallback
+        for (const g of group) {
+          result.set(g.idx, [evidenceBlocks[evIdx].block_id]);
+        }
+        evIdx++;
+      }
     }
-    evIdx++;
   }
 
   return result;
 }
 
+/** Count matching characters from start of two strings */
+function countPrefix(a: string, b: string): number {
+  const len = Math.min(a.length, b.length);
+  let i = 0;
+  while (i < len && a[i] === b[i]) i++;
+  return i;
+}
+
 export default function BboxOverlay({
   layoutBlocks, evidenceBlocks, molecules, reactions,
-  scale, viewportWidth, viewportHeight,
+  scale, viewportWidth, viewportHeight, docId, pageNum,
 }: Props) {
   const highlightedBlockIds = useAppStore(s => s.highlightedBlockIds);
   const highlightedMoleculeId = useAppStore(s => s.highlightedMoleculeId);
   const highlightedReactionId = useAppStore(s => s.highlightedReactionId);
+  const highlightedRectId = useAppStore(s => s.highlightedRectId);
+  const scrollToPdfType = useAppStore(s => s.scrollToPdfType);
   const highlightBlocks = useAppStore(s => s.highlightBlocks);
   const highlightMolecule = useAppStore(s => s.highlightMolecule);
   const highlightReaction = useAppStore(s => s.highlightReaction);
+  const highlightRect = useAppStore(s => s.highlightRect);
   const setActiveTab = useAppStore(s => s.setActiveTab);
+  const scrollToCard = useAppStore(s => s.scrollToCard);
 
   const [offset, setOffset] = useState({ x: 0, y: 0 });
   const dragRef = useRef<{ startX: number; startY: number; startOffX: number; startOffY: number } | null>(null);
 
   const blockMapping = useMemo(() => matchBlocks(layoutBlocks, evidenceBlocks), [layoutBlocks, evidenceBlocks]);
+
+  // When scrollToPdfType changes, set persistent highlight on matching bbox
+  useEffect(() => {
+    if (!scrollToPdfType || scrollToPdfType.pageNum !== pageNum) return;
+    const candidates = layoutBlocks.filter(lb => lb.type === scrollToPdfType.type && lb.bbox);
+    if (candidates.length === 0) return;
+
+    let match = candidates[0];
+    if (scrollToPdfType.bbox) {
+      const srcYCenter = (scrollToPdfType.bbox[1] + scrollToPdfType.bbox[3]) / 2;
+      let bestDist = Infinity;
+      for (const c of candidates) {
+        const cy = (c.bbox[1] + c.bbox[3]) / 2;
+        const dist = Math.abs(cy - srcYCenter);
+        if (dist < bestDist) { bestDist = dist; match = c; }
+      }
+    }
+
+    const rectId = `layout_${match.type}_${match.bbox[0]}_${match.bbox[1]}`;
+    highlightRect(rectId);
+  }, [scrollToPdfType, pageNum, layoutBlocks]);
 
   const rects = useMemo(() => {
     const result: OverlayRect[] = [];
@@ -125,6 +208,8 @@ export default function BboxOverlay({
         bbox: lb.bbox,
         label: `[${lb.type}] ${(text || '(cont)').slice(0, 60)}`,
         layer: 'block',
+        blockType: lb.type,
+        pageNum,
       });
     }
     for (const mol of molecules) {
@@ -159,7 +244,7 @@ export default function BboxOverlay({
       w: (r.bbox[2] - r.bbox[0]) * scale,
       h: (r.bbox[3] - r.bbox[1]) * scale,
     }));
-  }, [rects, scale, offset]);
+  }, [rects, scale, offset, highlightedBlockIds, highlightedRectId]);
 
   const handleMouseDown = useCallback((e: React.MouseEvent) => {
     if (e.button !== 1) return;
@@ -188,7 +273,11 @@ export default function BboxOverlay({
   }, [offset]);
 
   const handleClick = (rect: OverlayRect) => {
-    if (rect.layer === 'block' && rect.paragraphBlockIds.length > 0) {
+    if (rect.layer === 'block' && (rect.blockType === 'image' || rect.blockType === 'table')) {
+      highlightRect(rect.id);
+      setActiveTab('markdown');
+      scrollToCard(rect.blockType!, rect.pageNum!, rect.bbox);
+    } else if (rect.layer === 'block' && rect.paragraphBlockIds.length > 0) {
       highlightBlocks(rect.paragraphBlockIds);
       setActiveTab('markdown');
     } else if (rect.layer === 'molecule') {
@@ -199,7 +288,11 @@ export default function BboxOverlay({
   };
 
   const getHighlighted = (rect: OverlayRect): boolean => {
-    if (rect.layer === 'block') return rect.paragraphBlockIds.some(id => highlightedBlockIds.has(id));
+    if (rect.id === highlightedRectId) return true;
+    if (rect.layer === 'block') {
+      if (highlightedBlockIds.size === 0) return false;
+      return rect.paragraphBlockIds.some(id => highlightedBlockIds.has(id));
+    }
     if (rect.layer === 'molecule') return highlightedMoleculeId === rect.id;
     if (rect.layer === 'reaction') return highlightedReactionId === rect.id;
     return false;

@@ -1,0 +1,10 @@
+{
+  "patch_id": "entity_lookup_fallback_update_6",
+  "passed": false,
+  "average_score": 0.8133333333333334,
+  "score_delta": -0.05276836158192111,
+  "targeted_improvement": -0.4431818181818182,
+  "errors": [
+    "Regression failed: Score dropped by 0.0528 (max allowed: 0.0100); Targeted improvement -0.4432 below minimum 0.05"
+  ]
+}

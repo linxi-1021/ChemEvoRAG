@@ -1,0 +1,411 @@
+[
+  {
+    "patch_id": "reaction_condition_query_round1_patch1",
+    "patch_type": "",
+    "skill_name": "reaction_condition_query",
+    "skill_version": "1.0.0",
+    "target_file": "",
+    "source_failure_ids": [
+      "q3"
+    ],
+    "targeted_failure_ids": [],
+    "primary_failure_type": "assessment_false_negative",
+    "target_path": "strategy.assessment",
+    "operation": "update",
+    "old_value": null,
+    "new_value": null,
+    "current_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM"
+    },
+    "proposed_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_V2"
+    },
+    "prompt_artifacts": [
+      {
+        "prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_V2",
+        "base_prompt_ref": "",
+        "prompt_role": "",
+        "version": "2.0",
+        "prompt_filename": "",
+        "created_from": "EVIDENCE_ASSESSMENT_SYSTEM",
+        "diff_summary": "General assessment improvement",
+        "registry_path": "config/prompts/evidence_assessment_system_v2.yaml",
+        "content": "You are a chemistry research assistant. Given a user's question and the\nretrieved evidence, determine whether the evidence is sufficient to answer\nthe question.\n\nEvidence sufficiency standard:\n- Evidence is sufficient if it contains enough information to answer the question, either directly or by well-supported inference.\n- Direct evidence means the evidence explicitly states the answer.\n  Example: the evidence says \"DCE was the optimal solvent.\"\n- Well-supported inference means the evidence provides concrete data that can be logically used to answer the question.\n  Examples:\n  - A table lists yields for several solvents, and DCE has the highest yield -> DCE can be identified as the best solvent in that table.\n  - A compound is named \"3-(n-hexyl)-1,2-octadien-4-ol\" -> \"Hex-n\" can reasonably refer to an n-hexyl group.\n  - A table shows yield values -> the values can be compared to answer ranking or optimization questions.\n- Do not require the answer to appear word-for-word if the evidence provides enough data for a logically supported conclusion.\n- Do not infer claims from absence of evidence, retrieval bias, or unsupported assumptions.\n- For optimization, comparison, \"highest\", \"best\", or \"optimal\" questions, the evidence must contain either:\n  1. an explicit statement of optimality or comparison, or\n  2. comparable experimental data such as yields, conversions, selectivities, or condition tables.\n- Evidence is insufficient when the information needed to answer the question is missing.\n\nMANDATORY PRE-FLIGHT CHECK:\nBefore declaring sufficient=true or false, you MUST first extract relevant\ninformation from EACH evidence item. This forces active reading.\n\nFor EACH evidence item [i], state what you found:\n- What relevant data it contains (compound names, yields, conditions, etc.)\n- What specific values you can extract (e.g., \"entry 5: DCE, yield 58%\")\n- Whether it directly or indirectly addresses the question\n\nCRITICAL TABLE PARSING RULES:\n- Tables may be pipe-delimited (cell1 | cell2 | cell3; row1 | row2) or\nMarkdown-formatted (| col1 | col2 |\\n|---|---|\\n| val1 | val2 |).\n- When the question asks about a specific entry/row, carefully match the\nentry number to the correct row and read the target column value.\n- Do NOT assume a table is truncated just because some rows are far apart.\nCheck ALL visible rows for the answer.\n- A value \"85\" in a Yield column means 85% yield — extract it even if the\npercent sign is in the column header rather than the cell.\n- When comparing two entries, extract BOTH values before concluding.\n\nREASONING STYLE:\n- If evidence [3] says \"3d (142.1 mg, 81%) ... mp 54-55 C\" and the question\nasks for yield and mp of 3d — this IS sufficient. The yield is 81% and mp is\n54-55 C.\n- If evidence [5] contains a table showing \"6 | MeCN | 85\" under a Yield\ncolumn — this IS sufficient. MeCN gave 85% yield.\n\nReturn only a JSON object:\n{\n  \"sufficient\": true/false,\n  \"reason\": \"<brief explanation citing what you found in each item>\",\n  \"refined_query\": \"<a new search query to find missing information, or null>\"\n}\n\nAdditional rules:\n- If sufficient=true, explain WHICH evidence item(s) contain the answer and\nwhat specific data you extracted.\n- If sufficient=false, list what information IS present vs what is missing,\nthen provide a refined_query using alternative keywords, synonyms, compound\nnames, reaction terms, table names, or condition-related terms.\n- Do not simply repeat the user's original question as refined_query.\n- If the question is too vague, the evidence is completely unrelated, or no\nuseful search query can be formulated, set refined_query=null.\n\nGENERAL ASSESSMENT IMPROVEMENT (auto-added by Skill Evolution):\n- Before declaring sufficient=false, re-read each evidence item carefully.\n- Check if the answer can be derived by combining information from multiple items.\n- Only declare insufficient if NO combination of evidence items contains the\n  information needed to answer the question.\n",
+        "change_summary": [],
+        "preserved_constraints": [],
+        "targeted_failure_ids": [],
+        "validation_requirements": []
+      }
+    ],
+    "rationale": "Evidence contained target values but assessment judged insufficient.",
+    "expected_improvement": "Reduce false negatives in evidence assessment for numeric extraction.",
+    "risk_level": "medium",
+    "confidence": 0.85,
+    "status": "candidate",
+    "dependencies": [],
+    "validation_status": "pending"
+  },
+  {
+    "patch_id": "reaction_comparison_round1_patch1",
+    "patch_type": "",
+    "skill_name": "reaction_comparison",
+    "skill_version": "1.0.0",
+    "target_file": "",
+    "source_failure_ids": [
+      "q4",
+      "q_batch2_3"
+    ],
+    "targeted_failure_ids": [],
+    "primary_failure_type": "assessment_false_negative",
+    "target_path": "strategy.assessment",
+    "operation": "update",
+    "old_value": null,
+    "new_value": null,
+    "current_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM"
+    },
+    "proposed_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_V2"
+    },
+    "prompt_artifacts": [
+      {
+        "prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_V2",
+        "base_prompt_ref": "",
+        "prompt_role": "",
+        "version": "2.0",
+        "prompt_filename": "",
+        "created_from": "EVIDENCE_ASSESSMENT_SYSTEM",
+        "diff_summary": "General assessment improvement",
+        "registry_path": "config/prompts/evidence_assessment_system_v2.yaml",
+        "content": "You are a chemistry research assistant. Given a user's question and the\nretrieved evidence, determine whether the evidence is sufficient to answer\nthe question.\n\nEvidence sufficiency standard:\n- Evidence is sufficient if it contains enough information to answer the question, either directly or by well-supported inference.\n- Direct evidence means the evidence explicitly states the answer.\n  Example: the evidence says \"DCE was the optimal solvent.\"\n- Well-supported inference means the evidence provides concrete data that can be logically used to answer the question.\n  Examples:\n  - A table lists yields for several solvents, and DCE has the highest yield -> DCE can be identified as the best solvent in that table.\n  - A compound is named \"3-(n-hexyl)-1,2-octadien-4-ol\" -> \"Hex-n\" can reasonably refer to an n-hexyl group.\n  - A table shows yield values -> the values can be compared to answer ranking or optimization questions.\n- Do not require the answer to appear word-for-word if the evidence provides enough data for a logically supported conclusion.\n- Do not infer claims from absence of evidence, retrieval bias, or unsupported assumptions.\n- For optimization, comparison, \"highest\", \"best\", or \"optimal\" questions, the evidence must contain either:\n  1. an explicit statement of optimality or comparison, or\n  2. comparable experimental data such as yields, conversions, selectivities, or condition tables.\n- Evidence is insufficient when the information needed to answer the question is missing.\n\nMANDATORY PRE-FLIGHT CHECK:\nBefore declaring sufficient=true or false, you MUST first extract relevant\ninformation from EACH evidence item. This forces active reading.\n\nFor EACH evidence item [i], state what you found:\n- What relevant data it contains (compound names, yields, conditions, etc.)\n- What specific values you can extract (e.g., \"entry 5: DCE, yield 58%\")\n- Whether it directly or indirectly addresses the question\n\nCRITICAL TABLE PARSING RULES:\n- Tables may be pipe-delimited (cell1 | cell2 | cell3; row1 | row2) or\nMarkdown-formatted (| col1 | col2 |\\n|---|---|\\n| val1 | val2 |).\n- When the question asks about a specific entry/row, carefully match the\nentry number to the correct row and read the target column value.\n- Do NOT assume a table is truncated just because some rows are far apart.\nCheck ALL visible rows for the answer.\n- A value \"85\" in a Yield column means 85% yield — extract it even if the\npercent sign is in the column header rather than the cell.\n- When comparing two entries, extract BOTH values before concluding.\n\nREASONING STYLE:\n- If evidence [3] says \"3d (142.1 mg, 81%) ... mp 54-55 C\" and the question\nasks for yield and mp of 3d — this IS sufficient. The yield is 81% and mp is\n54-55 C.\n- If evidence [5] contains a table showing \"6 | MeCN | 85\" under a Yield\ncolumn — this IS sufficient. MeCN gave 85% yield.\n\nReturn only a JSON object:\n{\n  \"sufficient\": true/false,\n  \"reason\": \"<brief explanation citing what you found in each item>\",\n  \"refined_query\": \"<a new search query to find missing information, or null>\"\n}\n\nAdditional rules:\n- If sufficient=true, explain WHICH evidence item(s) contain the answer and\nwhat specific data you extracted.\n- If sufficient=false, list what information IS present vs what is missing,\nthen provide a refined_query using alternative keywords, synonyms, compound\nnames, reaction terms, table names, or condition-related terms.\n- Do not simply repeat the user's original question as refined_query.\n- If the question is too vague, the evidence is completely unrelated, or no\nuseful search query can be formulated, set refined_query=null.\n\nNUMERIC VALUE DETECTION (auto-added by Skill Evolution):\n- Before declaring sufficient=false, carefully check if the evidence contains\n  numeric values (yields, temperatures, percentages, ratios) that answer the question.\n- A table cell containing \"85\" under a \"Yield\" column means 85% yield — this IS\n  a valid numeric answer even without the percent sign.\n- Extract exact numbers from evidence before deciding insufficiency.\n",
+        "change_summary": [],
+        "preserved_constraints": [],
+        "targeted_failure_ids": [],
+        "validation_requirements": []
+      }
+    ],
+    "rationale": "Evidence contained target values but assessment judged insufficient.",
+    "expected_improvement": "Reduce false negatives in evidence assessment for numeric extraction.",
+    "risk_level": "medium",
+    "confidence": 0.85,
+    "status": "candidate",
+    "dependencies": [],
+    "validation_status": "pending"
+  },
+  {
+    "patch_id": "entity_lookup_round1_patch1",
+    "patch_type": "",
+    "skill_name": "entity_lookup",
+    "skill_version": "1.0.0",
+    "target_file": "",
+    "source_failure_ids": [
+      "q_batch2_2"
+    ],
+    "targeted_failure_ids": [],
+    "primary_failure_type": "assessment_false_negative",
+    "target_path": "strategy.assessment",
+    "operation": "update",
+    "old_value": null,
+    "new_value": null,
+    "current_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM"
+    },
+    "proposed_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_V2"
+    },
+    "prompt_artifacts": [
+      {
+        "prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_V2",
+        "base_prompt_ref": "",
+        "prompt_role": "",
+        "version": "2.0",
+        "prompt_filename": "",
+        "created_from": "EVIDENCE_ASSESSMENT_SYSTEM",
+        "diff_summary": "General assessment improvement",
+        "registry_path": "config/prompts/evidence_assessment_system_v2.yaml",
+        "content": "You are a chemistry research assistant. Given a user's question and the\nretrieved evidence, determine whether the evidence is sufficient to answer\nthe question.\n\nEvidence sufficiency standard:\n- Evidence is sufficient if it contains enough information to answer the question, either directly or by well-supported inference.\n- Direct evidence means the evidence explicitly states the answer.\n  Example: the evidence says \"DCE was the optimal solvent.\"\n- Well-supported inference means the evidence provides concrete data that can be logically used to answer the question.\n  Examples:\n  - A table lists yields for several solvents, and DCE has the highest yield -> DCE can be identified as the best solvent in that table.\n  - A compound is named \"3-(n-hexyl)-1,2-octadien-4-ol\" -> \"Hex-n\" can reasonably refer to an n-hexyl group.\n  - A table shows yield values -> the values can be compared to answer ranking or optimization questions.\n- Do not require the answer to appear word-for-word if the evidence provides enough data for a logically supported conclusion.\n- Do not infer claims from absence of evidence, retrieval bias, or unsupported assumptions.\n- For optimization, comparison, \"highest\", \"best\", or \"optimal\" questions, the evidence must contain either:\n  1. an explicit statement of optimality or comparison, or\n  2. comparable experimental data such as yields, conversions, selectivities, or condition tables.\n- Evidence is insufficient when the information needed to answer the question is missing.\n\nMANDATORY PRE-FLIGHT CHECK:\nBefore declaring sufficient=true or false, you MUST first extract relevant\ninformation from EACH evidence item. This forces active reading.\n\nFor EACH evidence item [i], state what you found:\n- What relevant data it contains (compound names, yields, conditions, etc.)\n- What specific values you can extract (e.g., \"entry 5: DCE, yield 58%\")\n- Whether it directly or indirectly addresses the question\n\nCRITICAL TABLE PARSING RULES:\n- Tables may be pipe-delimited (cell1 | cell2 | cell3; row1 | row2) or\nMarkdown-formatted (| col1 | col2 |\\n|---|---|\\n| val1 | val2 |).\n- When the question asks about a specific entry/row, carefully match the\nentry number to the correct row and read the target column value.\n- Do NOT assume a table is truncated just because some rows are far apart.\nCheck ALL visible rows for the answer.\n- A value \"85\" in a Yield column means 85% yield — extract it even if the\npercent sign is in the column header rather than the cell.\n- When comparing two entries, extract BOTH values before concluding.\n\nREASONING STYLE:\n- If evidence [3] says \"3d (142.1 mg, 81%) ... mp 54-55 C\" and the question\nasks for yield and mp of 3d — this IS sufficient. The yield is 81% and mp is\n54-55 C.\n- If evidence [5] contains a table showing \"6 | MeCN | 85\" under a Yield\ncolumn — this IS sufficient. MeCN gave 85% yield.\n\nReturn only a JSON object:\n{\n  \"sufficient\": true/false,\n  \"reason\": \"<brief explanation citing what you found in each item>\",\n  \"refined_query\": \"<a new search query to find missing information, or null>\"\n}\n\nAdditional rules:\n- If sufficient=true, explain WHICH evidence item(s) contain the answer and\nwhat specific data you extracted.\n- If sufficient=false, list what information IS present vs what is missing,\nthen provide a refined_query using alternative keywords, synonyms, compound\nnames, reaction terms, table names, or condition-related terms.\n- Do not simply repeat the user's original question as refined_query.\n- If the question is too vague, the evidence is completely unrelated, or no\nuseful search query can be formulated, set refined_query=null.\n\nGENERAL ASSESSMENT IMPROVEMENT (auto-added by Skill Evolution):\n- Before declaring sufficient=false, re-read each evidence item carefully.\n- Check if the answer can be derived by combining information from multiple items.\n- Only declare insufficient if NO combination of evidence items contains the\n  information needed to answer the question.\n",
+        "change_summary": [],
+        "preserved_constraints": [],
+        "targeted_failure_ids": [],
+        "validation_requirements": []
+      }
+    ],
+    "rationale": "Evidence contained target values but assessment judged insufficient.",
+    "expected_improvement": "Reduce false negatives in evidence assessment for numeric extraction.",
+    "risk_level": "medium",
+    "confidence": 0.85,
+    "status": "candidate",
+    "dependencies": [],
+    "validation_status": "pending"
+  },
+  {
+    "patch_id": "property_query_template_distill_2",
+    "patch_type": "",
+    "skill_name": "property_query",
+    "skill_version": "1.0.0",
+    "target_file": "",
+    "source_failure_ids": [],
+    "targeted_failure_ids": [],
+    "primary_failure_type": "unknown_failure",
+    "target_path": "templates",
+    "operation": "add",
+    "old_value": null,
+    "new_value": null,
+    "current_value": {},
+    "proposed_value": {
+      "name": "distilled_property_extraction_table_evidence_numeric_value_property_query",
+      "description": "Auto-distilled from 15 successful queries with structure 'property_extraction_table_evidence_numeric_value' in property_query.",
+      "applicable_when": {
+        "intent": "property_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ],
+        "query_structure": "property_extraction",
+        "evidence_type": "table_evidence"
+      },
+      "not_applicable_when": [],
+      "slots": [],
+      "examples": []
+    },
+    "prompt_artifacts": [],
+    "rationale": "Structural pattern 'property_extraction_table_evidence_numeric_value' succeeded 15 times in property_query (avg 1.00). Query structure: property_extraction, evidence type: table_evidence, answer structure: numeric_value.",
+    "expected_improvement": "Reusable template for property_extraction queries using table_evidence.",
+    "risk_level": "low",
+    "confidence": 0.95,
+    "status": "candidate",
+    "dependencies": [],
+    "validation_status": "pending"
+  },
+  {
+    "patch_id": "entity_lookup_template_distill_4",
+    "patch_type": "",
+    "skill_name": "entity_lookup",
+    "skill_version": "1.0.0",
+    "target_file": "",
+    "source_failure_ids": [],
+    "targeted_failure_ids": [],
+    "primary_failure_type": "unknown_failure",
+    "target_path": "templates",
+    "operation": "add",
+    "old_value": null,
+    "new_value": null,
+    "current_value": {},
+    "proposed_value": {
+      "name": "distilled_simple_lookup_table_evidence_list_entity_lookup",
+      "description": "Auto-distilled from 9 successful queries with structure 'simple_lookup_table_evidence_list' in entity_lookup.",
+      "applicable_when": {
+        "intent": "entity_lookup",
+        "query_structure": "simple_lookup",
+        "evidence_type": "table_evidence"
+      },
+      "not_applicable_when": [],
+      "slots": [],
+      "examples": []
+    },
+    "prompt_artifacts": [],
+    "rationale": "Structural pattern 'simple_lookup_table_evidence_list' succeeded 9 times in entity_lookup (avg 1.00). Query structure: simple_lookup, evidence type: table_evidence, answer structure: list.",
+    "expected_improvement": "Reusable template for simple_lookup queries using table_evidence.",
+    "risk_level": "low",
+    "confidence": 0.95,
+    "status": "candidate",
+    "dependencies": [],
+    "validation_status": "pending"
+  },
+  {
+    "patch_id": "reaction_comparison_template_distill_9",
+    "patch_type": "",
+    "skill_name": "reaction_comparison",
+    "skill_version": "1.0.0",
+    "target_file": "",
+    "source_failure_ids": [],
+    "targeted_failure_ids": [],
+    "primary_failure_type": "unknown_failure",
+    "target_path": "templates",
+    "operation": "add",
+    "old_value": null,
+    "new_value": null,
+    "current_value": {},
+    "proposed_value": {
+      "name": "distilled_comparison_table_evidence_numeric_value_reaction_comparison",
+      "description": "Auto-distilled from 11 successful queries with structure 'comparison_table_evidence_numeric_value' in reaction_comparison.",
+      "applicable_when": {
+        "intent": "reaction_comparison",
+        "query_signals": [
+          "compare",
+          "versus",
+          "higher",
+          "lower",
+          "best"
+        ],
+        "query_structure": "comparison",
+        "evidence_type": "table_evidence"
+      },
+      "not_applicable_when": [],
+      "slots": [],
+      "examples": []
+    },
+    "prompt_artifacts": [],
+    "rationale": "Structural pattern 'comparison_table_evidence_numeric_value' succeeded 11 times in reaction_comparison (avg 1.00). Query structure: comparison, evidence type: table_evidence, answer structure: numeric_value.",
+    "expected_improvement": "Reusable template for comparison queries using table_evidence.",
+    "risk_level": "low",
+    "confidence": 0.95,
+    "status": "candidate",
+    "dependencies": [],
+    "validation_status": "pending"
+  },
+  {
+    "patch_id": "alias_resolution_template_distill_10",
+    "patch_type": "",
+    "skill_name": "alias_resolution",
+    "skill_version": "1.0.0",
+    "target_file": "",
+    "source_failure_ids": [],
+    "targeted_failure_ids": [],
+    "primary_failure_type": "unknown_failure",
+    "target_path": "templates",
+    "operation": "add",
+    "old_value": null,
+    "new_value": null,
+    "current_value": {},
+    "proposed_value": {
+      "name": "distilled_simple_lookup_table_evidence_list_alias_resolution",
+      "description": "Auto-distilled from 6 successful queries with structure 'simple_lookup_table_evidence_list' in alias_resolution.",
+      "applicable_when": {
+        "intent": "alias_resolution",
+        "query_structure": "simple_lookup",
+        "evidence_type": "table_evidence"
+      },
+      "not_applicable_when": [],
+      "slots": [],
+      "examples": []
+    },
+    "prompt_artifacts": [],
+    "rationale": "Structural pattern 'simple_lookup_table_evidence_list' succeeded 6 times in alias_resolution (avg 1.00). Query structure: simple_lookup, evidence type: table_evidence, answer structure: list.",
+    "expected_improvement": "Reusable template for simple_lookup queries using table_evidence.",
+    "risk_level": "low",
+    "confidence": 0.95,
+    "status": "candidate",
+    "dependencies": [],
+    "validation_status": "pending"
+  },
+  {
+    "patch_id": "reaction_condition_query_template_distill_12",
+    "patch_type": "",
+    "skill_name": "reaction_condition_query",
+    "skill_version": "1.0.0",
+    "target_file": "",
+    "source_failure_ids": [],
+    "targeted_failure_ids": [],
+    "primary_failure_type": "unknown_failure",
+    "target_path": "templates",
+    "operation": "add",
+    "old_value": null,
+    "new_value": null,
+    "current_value": {},
+    "proposed_value": {
+      "name": "distilled_property_extraction_table_evidence_list_reaction_condition_query",
+      "description": "Auto-distilled from 6 successful queries with structure 'property_extraction_table_evidence_list' in reaction_condition_query.",
+      "applicable_when": {
+        "intent": "reaction_condition_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ],
+        "query_structure": "property_extraction",
+        "evidence_type": "table_evidence"
+      },
+      "not_applicable_when": [],
+      "slots": [],
+      "examples": []
+    },
+    "prompt_artifacts": [],
+    "rationale": "Structural pattern 'property_extraction_table_evidence_list' succeeded 6 times in reaction_condition_query (avg 1.00). Query structure: property_extraction, evidence type: table_evidence, answer structure: list.",
+    "expected_improvement": "Reusable template for property_extraction queries using table_evidence.",
+    "risk_level": "low",
+    "confidence": 0.95,
+    "status": "candidate",
+    "dependencies": [],
+    "validation_status": "pending"
+  },
+  {
+    "patch_id": "alias_resolution_template_distill_15",
+    "patch_type": "",
+    "skill_name": "alias_resolution",
+    "skill_version": "1.0.0",
+    "target_file": "",
+    "source_failure_ids": [],
+    "targeted_failure_ids": [],
+    "primary_failure_type": "unknown_failure",
+    "target_path": "templates",
+    "operation": "add",
+    "old_value": null,
+    "new_value": null,
+    "current_value": {},
+    "proposed_value": {
+      "name": "distilled_identification_table_evidence_list_alias_resolution",
+      "description": "Auto-distilled from 3 successful queries with structure 'identification_table_evidence_list' in alias_resolution.",
+      "applicable_when": {
+        "intent": "alias_resolution",
+        "query_structure": "identification",
+        "evidence_type": "table_evidence"
+      },
+      "not_applicable_when": [],
+      "slots": [],
+      "examples": []
+    },
+    "prompt_artifacts": [],
+    "rationale": "Structural pattern 'identification_table_evidence_list' succeeded 3 times in alias_resolution (avg 1.00). Query structure: identification, evidence type: table_evidence, answer structure: list.",
+    "expected_improvement": "Reusable template for identification queries using table_evidence.",
+    "risk_level": "low",
+    "confidence": 0.95,
+    "status": "candidate",
+    "dependencies": [],
+    "validation_status": "pending"
+  },
+  {
+    "patch_id": "reaction_condition_query_template_distill_20",
+    "patch_type": "",
+    "skill_name": "reaction_condition_query",
+    "skill_version": "1.0.0",
+    "target_file": "",
+    "source_failure_ids": [],
+    "targeted_failure_ids": [],
+    "primary_failure_type": "unknown_failure",
+    "target_path": "templates",
+    "operation": "add",
+    "old_value": null,
+    "new_value": null,
+    "current_value": {},
+    "proposed_value": {
+      "name": "distilled_property_extraction_table_evidence_numeric_value_reaction_condition_query",
+      "description": "Auto-distilled from 6 successful queries with structure 'property_extraction_table_evidence_numeric_value' in reaction_condition_query.",
+      "applicable_when": {
+        "intent": "reaction_condition_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ],
+        "query_structure": "property_extraction",
+        "evidence_type": "table_evidence"
+      },
+      "not_applicable_when": [],
+      "slots": [],
+      "examples": []
+    },
+    "prompt_artifacts": [],
+    "rationale": "Structural pattern 'property_extraction_table_evidence_numeric_value' succeeded 6 times in reaction_condition_query (avg 1.00). Query structure: property_extraction, evidence type: table_evidence, answer structure: numeric_value.",
+    "expected_improvement": "Reusable template for property_extraction queries using table_evidence.",
+    "risk_level": "low",
+    "confidence": 0.95,
+    "status": "candidate",
+    "dependencies": [],
+    "validation_status": "pending"
+  }
+]

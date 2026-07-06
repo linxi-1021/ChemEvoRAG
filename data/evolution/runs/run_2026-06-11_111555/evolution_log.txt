@@ -1,0 +1,22 @@
+Run directory: D:\Desktop\evo\ChemEvoRAG_Phase1-main\data\evolution\runs\run_2026-06-11_111555
+Trace report: 6 failures, 26 partial, 86 success
+
+[Mutation] Cluster: generation_error__strategy.answer_generation__answer_generation
+  Failure type: generation_error, Skills: ['alias_resolution', 'entity_lookup']
+
+FATAL: 'dict' object has no attribute 'primary_failure_type'
+Traceback (most recent call last):
+  File "D:\Desktop\evo\ChemEvoRAG_Phase1-main\src\skill_evolution\runner.py", line 93, in run
+    mutation_patches = self._stage_4a_mutation(report)
+  File "D:\Desktop\evo\ChemEvoRAG_Phase1-main\src\skill_evolution\runner.py", line 186, in _stage_4a_mutation
+    patches = generate_all_mutations(
+  File "D:\Desktop\evo\ChemEvoRAG_Phase1-main\src\skill_evolution\mutation.py", line 487, in generate_all_mutations
+    prompt_result = generate_prompt_mutation(
+  File "D:\Desktop\evo\ChemEvoRAG_Phase1-main\src\skill_evolution\mutation.py", line 223, in generate_prompt_mutation
+    result = llm_gen(
+  File "D:\Desktop\evo\ChemEvoRAG_Phase1-main\src\skill_evolution\llm_analysis.py", line 507, in generate_v2_prompt
+    user_prompt = _build_generation_user_prompt(
+  File "D:\Desktop\evo\ChemEvoRAG_Phase1-main\src\skill_evolution\llm_analysis.py", line 431, in _build_generation_user_prompt
+    lines.append(f"Failure type: {analysis_report.primary_failure_type}")
+AttributeError: 'dict' object has no attribute 'primary_failure_type'
+

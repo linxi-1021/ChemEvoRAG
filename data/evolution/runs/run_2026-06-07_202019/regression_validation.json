@@ -1,0 +1,50 @@
+[
+  {
+    "patch_id": "reaction_condition_query_round1_patch1",
+    "passed": false,
+    "errors": [
+      "Regression eval failed: [\"Eval failed: 'gbk' codec can't encode character '\\\\u2212' in position 97: illegal multibyte sequence\"]"
+    ],
+    "warnings": [
+      "Regression eval had errors: [\"Eval failed: 'gbk' codec can't encode character '\\\\u2212' in position 97: illegal multibyte sequence\"]"
+    ],
+    "regression_result": null,
+    "average_score": null,
+    "score_delta": null,
+    "score_drop": null,
+    "targeted_improvement": null,
+    "failed_cases_increase": null
+  },
+  {
+    "patch_id": "reaction_comparison_round1_patch1",
+    "passed": false,
+    "errors": [
+      "Regression eval failed: [\"Eval failed: 'gbk' codec can't encode character '\\\\u2212' in position 97: illegal multibyte sequence\"]"
+    ],
+    "warnings": [
+      "Regression eval had errors: [\"Eval failed: 'gbk' codec can't encode character '\\\\u2212' in position 97: illegal multibyte sequence\"]"
+    ],
+    "regression_result": null,
+    "average_score": null,
+    "score_delta": null,
+    "score_drop": null,
+    "targeted_improvement": null,
+    "failed_cases_increase": null
+  },
+  {
+    "patch_id": "entity_lookup_round1_patch1",
+    "passed": false,
+    "errors": [
+      "Regression eval failed: [\"Eval failed: 'gbk' codec can't encode character '\\\\u2212' in position 97: illegal multibyte sequence\"]"
+    ],
+    "warnings": [
+      "Regression eval had errors: [\"Eval failed: 'gbk' codec can't encode character '\\\\u2212' in position 97: illegal multibyte sequence\"]"
+    ],
+    "regression_result": null,
+    "average_score": null,
+    "score_delta": null,
+    "score_drop": null,
+    "targeted_improvement": null,
+    "failed_cases_increase": null
+  }
+]

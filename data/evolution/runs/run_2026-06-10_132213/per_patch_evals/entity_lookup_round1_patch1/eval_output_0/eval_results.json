@@ -1,0 +1,354 @@
+{
+  "summary": {
+    "total": 10,
+    "average_score": 0.78,
+    "by_intent": {
+      "entity_lookup": 0.5,
+      "alias_resolution": 1.0,
+      "reaction_comparison": 0.78,
+      "reaction_condition_query": 1.0,
+      "property_query": 0.9
+    }
+  },
+  "results": [
+    {
+      "id": "q4",
+      "source_paper": "1.pdf",
+      "intent": "reaction_comparison",
+      "question": "Referring to the additive screen (Table 3), which additive gave a higher yield for the aerobic oxidation screening of 3-(n-hexyl)-1,2-octadien-4-ol: NaCl (entry 5) or NaNO2 (entry 1)?",
+      "ground_truth": "NaCl (entry 5) gave the higher yield: NaCl showed 100% conversion and 72% yield, whereas NaNO2 (entry 1) showed 55% conversion and 35% yield.",
+      "system_answer": "NaCl (entry 5) gave a higher yield than NaNO2 (entry 1) for the aerobic oxidation of 3-(n-hexyl)-1,2-octadien-4-ol. NaCl provided 72% NMR yield with 100% conversion in 4 hours, while NaNO2 gave only 35% NMR yield with 55% conversion in 36 hours (evidence: block_1_0017).",
+      "evidence_ids": [
+        "block_1_0018",
+        "block_1_0036",
+        "block_1_0124",
+        "block_1_0127",
+        "block_1_0009",
+        "block_1_0041",
+        "block_1_0121",
+        "block_1_0122",
+        "mol_txt_1_0047",
+        "block_1_0017",
+        "block_1_0074"
+      ],
+      "confidence": 1.0,
+      "judge_score": 1.0,
+      "entities_found": [
+        "NaCl",
+        "NaNO2",
+        "3-(n-hexyl)-1,2-octadien-4-ol"
+      ],
+      "entities_missing": [
+        "Table 3"
+      ],
+      "judge_reasoning": "The system answer correctly states that NaCl gave higher yield than NaNO2, with matching conversion and yield percentages, and includes the substrate name; it only omits the explicit mention of 'Table 3', which is not essential for factual correctness.",
+      "score": 1.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q4",
+      "source_paper": "3.pdf",
+      "intent": "reaction_comparison",
+      "question": "In Table 1, which entry gave the higher isolated yield for conversion of E-1a to 2a — entry 1 (conc. = 5.0, 12 h) or entry 9 (conc. = 0.1, 3 h) — and what were the reported yields and E/Z ratios for those entries?",
+      "ground_truth": "Entry 1 gave a slightly higher yield: entry 1 — 98% yield (reported) with E/Z = 80/20; entry 9 — 95% yield with E/Z = 97/3.",
+      "system_answer": "Entry 9 gave a higher isolated yield (95%) compared to entry 1 (98% NMR yield, but the isolated yield is 0% as indicated by the parentheses showing recovery of alcohol). For entry 1 (conc. = 5.0, 12 h), the reported yield of 2a is 98% with 0% isolated (the parentheses show recovery of alcohol), and the E/Z ratio is 80/20. For entry 9 (conc. = 0.1, 3 h), the reported yield of 2a is 95% with 0% recovery of alcohol (meaning 95% isolated yield), and the E/Z ratio is 97/3 (evidence: block_3_0013).",
+      "evidence_ids": [
+        "block_3_0013",
+        "block_3_0010",
+        "block_3_0017",
+        "block_3_0009",
+        "block_3_0008",
+        "block_3_0014",
+        "block_3_0015",
+        "block_3_0011"
+      ],
+      "confidence": 0.95,
+      "judge_score": 0.5,
+      "entities_found": [
+        "entry 1",
+        "entry 9",
+        "2a"
+      ],
+      "entities_missing": [
+        "E-1a",
+        "E-2a"
+      ],
+      "judge_reasoning": "The system answer correctly compares yields and E/Z ratios for entries 1 and 9, but it misstates the isolated yield for entry 1 (0% vs ground truth's 98% reported yield) and omits key entities E-1a and E-2a.",
+      "score": 0.5,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q5",
+      "source_paper": "3.pdf",
+      "intent": "property_query",
+      "question": "What isolated yield and E/Z ratio were obtained in the reported 0.1 mmol scale oxidation of E-1a to give E-2a under the optimized conditions (scale‑up/test experiment shown in Scheme 2)?",
+      "ground_truth": "90% isolated yield after 6 h; product E-2a obtained with E/Z = 97/3 (starting E-1a was E/Z = 99/1).",
+      "system_answer": "The evidence reports a 0.1 mol (100 mmol) scale reaction of E-1a under optimized conditions, giving E-2a in 90% isolated yield with an E/Z ratio of 97:3 (evidence: block_3_0019, block_3_0016). The reaction time was 6 hours, and the E/Z ratio was unchanged from the small-scale conditions (evidence: block_3_0019).",
+      "evidence_ids": [
+        "block_3_0013",
+        "block_3_0017",
+        "block_3_0014",
+        "block_3_0019",
+        "block_3_0009",
+        "block_3_0010",
+        "block_3_0008",
+        "block_3_0011",
+        "block_3_0016"
+      ],
+      "confidence": 0.86,
+      "judge_score": 0.9,
+      "entities_found": [
+        "E-1a",
+        "E-2a"
+      ],
+      "entities_missing": [
+        "Scheme 2"
+      ],
+      "judge_reasoning": "The system answer correctly reports the 90% yield, 6-hour reaction time, and E/Z ratio of 97:3, but omits the mention of Scheme 2 and the starting E/Z ratio of 99/1, which are minor details.",
+      "score": 0.9,
+      "intent_key": "property_query"
+    },
+    {
+      "id": "q3",
+      "source_paper": "4.pdf",
+      "intent": "reaction_condition_query",
+      "question": "Under the paper's standard conditions for the aerobic oxidation of 1-phenylbut-3-yn-1-ol (1a) to give 2a, what solvent, atmosphere, temperature and reaction time were used?",
+      "ground_truth": "Solvent: DCE (1,2-dichloroethane); Atmosphere: O2 (balloon); Temperature: room temperature (rt); Time: 4 h",
+      "system_answer": "Under the paper's standard conditions for the aerobic oxidation of 1-phenylbut-3-yn-1-ol (1a) to give 2a, the solvent was DCE, the atmosphere was molecular oxygen (O2) at atmospheric pressure, the temperature was room temperature, and the reaction time was 4 hours (evidence: block_4_0025, block_4_0023, block_4_0029). The standard procedure used 10 mol% Fe(NO3)3·9H2O, 10 mol% TEMPO, and 10 mol% NaCl in DCE at room temperature under an oxygen balloon (evidence: block_4_0023, block_4_0029).",
+      "evidence_ids": [
+        "block_4_0025",
+        "block_4_0023",
+        "block_4_0016",
+        "block_4_0040",
+        "block_4_0029",
+        "block_4_0021",
+        "block_4_0024",
+        "block_4_0019",
+        "block_4_0051",
+        "block_4_0063"
+      ],
+      "confidence": 0.92,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1a",
+        "2a",
+        "DCE",
+        "O2",
+        "rt",
+        "4 h"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly specifies all key entities: solvent DCE, atmosphere O2 (balloon), room temperature, and 4 h reaction time, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "reaction_condition_query"
+    },
+    {
+      "id": "q4",
+      "source_paper": "6.pdf",
+      "intent": "reaction_comparison",
+      "question": "Which gave the higher NMR yield in Table 1: the reaction with R = Ph (entry 1) or the reaction with R = Me (entry 8)?",
+      "ground_truth": "R = Me (entry 8) gave the higher NMR yield: 55% (entry 8) vs 52% for R = Ph (entry 1).",
+      "system_answer": "The reaction with R = Me (entry 8) gave a higher NMR yield of 57% compared to the reaction with R = Ph (entry 1) which gave 52% (evidence: block_6_0019).",
+      "evidence_ids": [
+        "block_6_0015",
+        "block_6_0016",
+        "block_6_0019",
+        "block_6_0030",
+        "block_6_0034",
+        "block_6_0037",
+        "block_6_0039",
+        "block_6_0041",
+        "block_6_0020",
+        "block_6_0021",
+        "block_6_0013"
+      ],
+      "confidence": 0.95,
+      "judge_score": 0.7,
+      "entities_found": [
+        "entry 1",
+        "entry 8",
+        "R = Ph",
+        "R = Me"
+      ],
+      "entities_missing": [
+        "Table 1"
+      ],
+      "judge_reasoning": "The system answer correctly identifies that R = Me gives a higher yield than R = Ph, but states 57% instead of the correct 55% from the ground truth, and omits the key entity 'Table 1'.",
+      "score": 0.7,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q2",
+      "source_paper": "7.pdf",
+      "intent": "entity_lookup",
+      "question": "What is the chemical identity/name given in the paper for Fe(NO3)3·9H2O, the catalyst used in the study?",
+      "ground_truth": "Fe(NO3)3·9H2O — iron(III) nitrate nonahydrate (used as the single-component catalyst)",
+      "system_answer": "The paper identifies Fe(NO3)3·9H2O as iron(III) nitrate nonahydrate (evidence: mol_7_0023). It is described as a single-component catalyst used for the aerobic oxidation of aldehydes to carboxylic acids at room temperature (evidence: block_7_0002, block_7_0004, block_7_0026).",
+      "evidence_ids": [
+        "block_7_0004",
+        "mol_7_0023",
+        "block_7_0010",
+        "block_7_0002",
+        "block_7_0015",
+        "block_7_0011",
+        "mol_7_0014",
+        "block_7_0026"
+      ],
+      "confidence": 0.91,
+      "judge_score": 1.0,
+      "entities_found": [
+        "Fe(NO3)3·9H2O",
+        "iron(III) nitrate nonahydrate"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies Fe(NO3)3·9H2O as iron(III) nitrate nonahydrate and states it is used as a single-component catalyst, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q1",
+      "source_paper": "8.pdf",
+      "intent": "alias_resolution",
+      "question": "In this paper, what compound does the label '2a' refer to?",
+      "ground_truth": "2a refers to benzoic acid (the carboxylic acid product obtained from benzyl alcohol 1a).",
+      "system_answer": "The label '2a' refers to benzoic acid (evidence: block_8_0011, block_8_0013, block_8_0020). In the paper, benzoic acid (2a) is obtained from the aerobic oxidation of benzyl alcohol (1a) (evidence: block_8_0011, block_8_0020).",
+      "evidence_ids": [
+        "block_8_0011",
+        "block_8_0009",
+        "block_8_0013",
+        "block_8_0010",
+        "block_8_0020",
+        "block_8_0151",
+        "block_8_0073",
+        "block_8_0031"
+      ],
+      "confidence": 0.95,
+      "judge_score": 1.0,
+      "entities_found": [
+        "2a",
+        "1a",
+        "benzoic acid"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies 2a as benzoic acid and mentions it is obtained from benzyl alcohol 1a, matching all key entities and facts in the ground truth.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q4",
+      "source_paper": "16.pdf",
+      "intent": "reaction_comparison",
+      "question": "Under the standard substrate‑scope conditions (Table 2), which substrate gave the higher isolated yield to product 2a: n‑C8H17OTBS (1aa) or n‑C8H17OTMS (1ab)?",
+      "ground_truth": "n‑C8H17OTBS (1aa) gave the higher yield: 84% vs n‑C8H17OTMS (1ab) 77%.",
+      "system_answer": "Under the standard substrate-scope conditions (Table 2), n-C8H17OTBS (1aa) gave the higher isolated yield to product 2a at 84%, compared to n-C8H17OTMS (1ab) at 77% (evidence: block_16_0022).",
+      "evidence_ids": [
+        "block_16_0022",
+        "block_16_0017",
+        "block_16_0018",
+        "block_16_0024",
+        "block_16_0025",
+        "block_16_0019",
+        "block_16_0020",
+        "block_16_0026",
+        "block_16_0021"
+      ],
+      "confidence": 1.0,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1aa",
+        "1ab",
+        "2a"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states that n-C8H17OTBS (1aa) gave a higher yield of 84% compared to n-C8H17OTMS (1ab) at 77%, and includes all key entities.",
+      "score": 1.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q4",
+      "source_paper": "17.pdf",
+      "intent": "reaction_comparison",
+      "question": "Which reaction gave the higher NMR yield of carboxylic acid 2a under the paper's standard conditions: oxidation of PMB ether 1a or oxidation of the corresponding alcohol 1a'?",
+      "ground_truth": "Oxidation of PMB ether 1a gave the higher yield: 94% NMR (1a → 2a) vs 55% NMR for the corresponding alcohol 1a' → 2a.",
+      "system_answer": "The oxidation of PMB ether 1a gave a higher NMR yield of carboxylic acid 2a (95%) compared to the oxidation of the corresponding alcohol 1a', which gave only 55% NMR yield of acid 2a under the same standard conditions (evidence: block_17_0025, block_17_0035). The evidence explicitly states that the reaction rate of PMB ether 1a is much faster than that of alcohol 1a' (evidence: block_17_0025).",
+      "evidence_ids": [
+        "block_17_0025",
+        "block_17_0012",
+        "block_17_0005",
+        "block_17_0013",
+        "block_17_0035",
+        "block_17_0010",
+        "block_17_0014",
+        "block_17_0039"
+      ],
+      "confidence": 0.95,
+      "judge_score": 0.7,
+      "entities_found": [
+        "1a",
+        "1a'",
+        "2a"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies the higher yield for PMB ether 1a (95% vs ground truth 94%) and the lower yield for alcohol 1a' (55% matches), but the yield for 1a is slightly off (95% vs 94%), which is a minor imprecision.",
+      "score": 0.7,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q2",
+      "source_paper": "19.pdf",
+      "intent": "entity_lookup",
+      "question": "What aryl group (Ar) is used for compound 1a in the paper (how is Ar defined for 1a)?",
+      "ground_truth": "Ar for 1a is 4‑OMe‑C6H4 (p‑methoxyphenyl / p‑methoxybenzyl)",
+      "system_answer": "The evidence does not explicitly define the aryl group (Ar) for compound 1a. The paper focuses on PMB (p-methoxybenzyl) ethers, and 1a is described as the PMB ether of dodecanol (a linear alkyl chain), not an aryl-containing substrate (evidence: block_19_0008, block_19_0022). The aryl group Ar is not defined for 1a in the retrieved evidence.",
+      "evidence_ids": [
+        "block_19_0004",
+        "block_19_0010",
+        "block_19_0016",
+        "block_19_0011",
+        "block_19_0009",
+        "block_19_0022",
+        "block_19_0006",
+        "block_19_0008",
+        "mol_12_0000",
+        "mol_12_0001",
+        "mol_12_0002",
+        "mol_12_0015",
+        "mol_17_0000",
+        "mol_17_0001",
+        "mol_17_0003",
+        "mol_17_0005"
+      ],
+      "confidence": 0.65,
+      "judge_score": 0.0,
+      "entities_found": [
+        "1a"
+      ],
+      "entities_missing": [
+        "Ar",
+        "4‑OMe‑C6H4"
+      ],
+      "judge_reasoning": "The system answer incorrectly states that Ar is not defined for 1a, while the ground truth specifies Ar as 4‑OMe‑C6H4 (p‑methoxyphenyl), so it is completely wrong.",
+      "score": 0.0,
+      "intent_key": "entity_lookup"
+    }
+  ],
+  "metadata": {
+    "sampling": {
+      "mode": "random",
+      "limit": 10,
+      "seed": 42,
+      "selected_question_ids": [
+        "q4",
+        "q4",
+        "q5",
+        "q3",
+        "q4",
+        "q2",
+        "q1",
+        "q4",
+        "q4",
+        "q2"
+      ]
+    }
+  }
+}

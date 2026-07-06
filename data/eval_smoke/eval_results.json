@@ -1,0 +1,113 @@
+{
+  "summary": {
+    "total": 3,
+    "average_score": 0.9,
+    "by_intent": {
+      "alias_resolution": 1.0,
+      "entity_lookup": 0.7,
+      "reaction_condition_query": 1.0
+    }
+  },
+  "results": [
+    {
+      "id": "q1",
+      "source_paper": "1.pdf",
+      "intent": "alias_resolution",
+      "question": "In Scheme 1 and the accompanying tables the label 'Hex-n' is used repeatedly. What does 'Hex-n' refer to in this paper?",
+      "ground_truth": "Hex-n denotes an n‑hexyl substituent (the n‑hexyl group used in 3-(n-hexyl)-1,2-octadien-4-ol / corresponding substrates).",
+      "system_answer": "The label 'Hex-n' refers to the normal hexyl group (n-hexyl, i.e., a straight-chain C6H13 substituent). The text mentions the model compound 3-(n-hexyl)-1,2-octadien-4-ol and its oxidation product, indicating that 'Hex-n' is shorthand for the n-hexyl chain used in the allenol substrates (evidence: block_1_0009, block_1_0012).",
+      "evidence_ids": [
+        "block_1_0009",
+        "block_1_0040",
+        "block_1_0036",
+        "block_1_0012",
+        "block_1_0018",
+        "block_1_0124",
+        "block_1_0014",
+        "block_1_0007"
+      ],
+      "confidence": 0.7,
+      "judge_score": 1.0,
+      "entities_found": [
+        "Hex-n",
+        "3-(n-hexyl)-1,2-octadien-4-ol"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "System answer accurately defines Hex-n as n-hexyl group and names the model compound, matching the ground truth completely.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q2",
+      "source_paper": "1.pdf",
+      "intent": "entity_lookup",
+      "question": "In the large-scale experiment (Eq. 2) the paper oxidizes 1-phenylethanol. What is the product obtained from oxidation of 1-phenylethanol in that large-scale reaction (give the product name reported in the paper)?",
+      "ground_truth": "Phenyl methyl ketone (acetophenone) is formed from 1-phenylethanol (reported as the product in Eq. (2)).",
+      "system_answer": "The product obtained from the large-scale oxidation of 1-phenylethanol is phenyl methyl ketone (evidence: block_1_0036).",
+      "evidence_ids": [
+        "block_1_0036",
+        "block_1_0029",
+        "block_1_0009",
+        "block_1_0043",
+        "block_1_0040",
+        "block_1_0004",
+        "block_1_0120",
+        "block_1_0091",
+        "block_1_0041",
+        "block_1_0094",
+        "block_1_0122",
+        "block_1_0015",
+        "block_1_0016"
+      ],
+      "confidence": 0.95,
+      "judge_score": 0.7,
+      "entities_found": [
+        "1-phenylethanol",
+        "phenyl methyl ketone"
+      ],
+      "entities_missing": [
+        "acetophenone"
+      ],
+      "judge_reasoning": "The system correctly identifies the product as phenyl methyl ketone but omits the synonym acetophenone, a minor omission.",
+      "score": 0.7,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q3",
+      "source_paper": "1.pdf",
+      "intent": "reaction_condition_query",
+      "question": "Which solvent was selected as optimal for the aerobic oxidation of 3-(n-hexyl)-1,2-octadien-4-ol in the optimization studies (Table 1 and related text)?",
+      "ground_truth": "1,2-Dichloroethane (DCE) was selected as the optimal solvent.",
+      "system_answer": "The optimal solvent for the aerobic oxidation of 3-(n-hexyl)-1,2-octadien-4-ol was DCE (1,2-dichloroethane). In the solvent screening (Table 1), DCE gave the highest conversion (75%) and NMR yield (43%) at room temperature, outperforming DCM (25% yield), toluene (21%), THF (19%), and other solvents (evidence: block_1_0015). The general optimized procedure later in the paper also uses DCE as the solvent, consistent with the screening results (evidence: block_1_0046).",
+      "evidence_ids": [
+        "block_1_0009",
+        "block_1_0041",
+        "block_1_0124",
+        "block_1_0127",
+        "block_1_0007",
+        "block_1_0122",
+        "block_1_0046",
+        "block_1_0048",
+        "block_1_0012",
+        "block_1_0094",
+        "block_1_0015",
+        "block_1_0016",
+        "block_1_0052",
+        "mol_txt_1_0047",
+        "mol_txt_1_0028",
+        "mol_txt_1_0063"
+      ],
+      "confidence": 0.88,
+      "judge_score": 1.0,
+      "entities_found": [
+        "3-(n-hexyl)-1,2-octadien-4-ol",
+        "DCE",
+        "1,2-dichloroethane"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies DCE as the optimal solvent, includes the substrate name, and mentions both DCE and 1,2-dichloroethane, perfectly matching the ground truth and all key entities.",
+      "score": 1.0,
+      "intent_key": "reaction_condition_query"
+    }
+  ]
+}

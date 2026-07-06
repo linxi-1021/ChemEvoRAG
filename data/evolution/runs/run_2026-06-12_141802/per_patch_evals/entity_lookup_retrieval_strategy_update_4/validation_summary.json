@@ -1,0 +1,10 @@
+{
+  "patch_id": "entity_lookup_retrieval_strategy_update_4",
+  "passed": false,
+  "average_score": 0.85,
+  "score_delta": -0.016101694915254483,
+  "targeted_improvement": -0.4431818181818182,
+  "errors": [
+    "Regression failed: Score dropped by 0.0161 (max allowed: 0.0100); Targeted improvement -0.4432 below minimum 0.05"
+  ]
+}

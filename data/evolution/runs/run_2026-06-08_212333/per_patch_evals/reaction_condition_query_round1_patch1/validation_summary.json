@@ -1,0 +1,10 @@
+{
+  "patch_id": "reaction_condition_query_round1_patch1",
+  "passed": false,
+  "average_score": 0.8847457627118646,
+  "score_delta": 0.018644067796610098,
+  "targeted_improvement": 0.13636363636363635,
+  "errors": [
+    "Regression failed: Failed cases increased by 8 (max allowed: 1); 4 new high-severity failure(s) detected"
+  ]
+}

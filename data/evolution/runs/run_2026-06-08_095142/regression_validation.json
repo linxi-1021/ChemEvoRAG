@@ -1,0 +1,233 @@
+[
+  {
+    "patch_id": "reaction_condition_query_round1_patch1",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.0000 below minimum 0.8; Targeted improvement 0.0000 below minimum 0.05"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.0,
+      "reason": "Average score 0.0000 below minimum 0.8; Targeted improvement 0.0000 below minimum 0.05",
+      "average_score": 0.0,
+      "score_delta": 0.0,
+      "targeted_improvement": 0.0,
+      "failed_cases_increase": 0
+    },
+    "average_score": 0.0,
+    "score_delta": 0.0,
+    "targeted_improvement": 0.0,
+    "failed_cases_increase": 0
+  },
+  {
+    "patch_id": "reaction_comparison_round1_patch1",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.0000 below minimum 0.8; Targeted improvement 0.0000 below minimum 0.05"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.0,
+      "reason": "Average score 0.0000 below minimum 0.8; Targeted improvement 0.0000 below minimum 0.05",
+      "average_score": 0.0,
+      "score_delta": 0.0,
+      "targeted_improvement": 0.0,
+      "failed_cases_increase": 0
+    },
+    "average_score": 0.0,
+    "score_delta": 0.0,
+    "targeted_improvement": 0.0,
+    "failed_cases_increase": 0
+  },
+  {
+    "patch_id": "entity_lookup_round1_patch1",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.0000 below minimum 0.8; Targeted improvement 0.0000 below minimum 0.05"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.0,
+      "reason": "Average score 0.0000 below minimum 0.8; Targeted improvement 0.0000 below minimum 0.05",
+      "average_score": 0.0,
+      "score_delta": 0.0,
+      "targeted_improvement": 0.0,
+      "failed_cases_increase": 0
+    },
+    "average_score": 0.0,
+    "score_delta": 0.0,
+    "targeted_improvement": 0.0,
+    "failed_cases_increase": 0
+  },
+  {
+    "patch_id": "entity_lookup_template_distill_1",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.0000 below minimum 0.8"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.0,
+      "reason": "Average score 0.0000 below minimum 0.8",
+      "average_score": 0.0,
+      "score_delta": 0.0,
+      "targeted_improvement": 0.0,
+      "failed_cases_increase": 0
+    },
+    "average_score": 0.0,
+    "score_delta": 0.0,
+    "targeted_improvement": 0.0,
+    "failed_cases_increase": 0
+  },
+  {
+    "patch_id": "alias_resolution_template_distill_3",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.0000 below minimum 0.8"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.0,
+      "reason": "Average score 0.0000 below minimum 0.8",
+      "average_score": 0.0,
+      "score_delta": 0.0,
+      "targeted_improvement": 0.0,
+      "failed_cases_increase": 0
+    },
+    "average_score": 0.0,
+    "score_delta": 0.0,
+    "targeted_improvement": 0.0,
+    "failed_cases_increase": 0
+  },
+  {
+    "patch_id": "reaction_comparison_template_distill_9",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.0000 below minimum 0.8"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.0,
+      "reason": "Average score 0.0000 below minimum 0.8",
+      "average_score": 0.0,
+      "score_delta": 0.0,
+      "targeted_improvement": 0.0,
+      "failed_cases_increase": 0
+    },
+    "average_score": 0.0,
+    "score_delta": 0.0,
+    "targeted_improvement": 0.0,
+    "failed_cases_increase": 0
+  },
+  {
+    "patch_id": "reaction_condition_query_template_distill_11",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.0000 below minimum 0.8"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.0,
+      "reason": "Average score 0.0000 below minimum 0.8",
+      "average_score": 0.0,
+      "score_delta": 0.0,
+      "targeted_improvement": 0.0,
+      "failed_cases_increase": 0
+    },
+    "average_score": 0.0,
+    "score_delta": 0.0,
+    "targeted_improvement": 0.0,
+    "failed_cases_increase": 0
+  },
+  {
+    "patch_id": "entity_lookup_template_distill_12",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.0000 below minimum 0.8"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.0,
+      "reason": "Average score 0.0000 below minimum 0.8",
+      "average_score": 0.0,
+      "score_delta": 0.0,
+      "targeted_improvement": 0.0,
+      "failed_cases_increase": 0
+    },
+    "average_score": 0.0,
+    "score_delta": 0.0,
+    "targeted_improvement": 0.0,
+    "failed_cases_increase": 0
+  },
+  {
+    "patch_id": "property_query_template_distill_13",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.0000 below minimum 0.8"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.0,
+      "reason": "Average score 0.0000 below minimum 0.8",
+      "average_score": 0.0,
+      "score_delta": 0.0,
+      "targeted_improvement": 0.0,
+      "failed_cases_increase": 0
+    },
+    "average_score": 0.0,
+    "score_delta": 0.0,
+    "targeted_improvement": 0.0,
+    "failed_cases_increase": 0
+  },
+  {
+    "patch_id": "reaction_condition_query_template_distill_20",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.0000 below minimum 0.8"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.0,
+      "reason": "Average score 0.0000 below minimum 0.8",
+      "average_score": 0.0,
+      "score_delta": 0.0,
+      "targeted_improvement": 0.0,
+      "failed_cases_increase": 0
+    },
+    "average_score": 0.0,
+    "score_delta": 0.0,
+    "targeted_improvement": 0.0,
+    "failed_cases_increase": 0
+  },
+  {
+    "patch_id": "alias_resolution_template_distill_22",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.0000 below minimum 0.8"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.0,
+      "reason": "Average score 0.0000 below minimum 0.8",
+      "average_score": 0.0,
+      "score_delta": 0.0,
+      "targeted_improvement": 0.0,
+      "failed_cases_increase": 0
+    },
+    "average_score": 0.0,
+    "score_delta": 0.0,
+    "targeted_improvement": 0.0,
+    "failed_cases_increase": 0
+  }
+]

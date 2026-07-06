@@ -1,0 +1,233 @@
+[
+  {
+    "patch_id": "reaction_condition_query_round1_patch1",
+    "skill_name": "reaction_condition_query",
+    "skill_version": "1.0.0",
+    "source_failure_ids": [
+      "q3"
+    ],
+    "primary_failure_type": "table_reasoning_error",
+    "target_path": "strategy.assessment",
+    "operation": "update",
+    "current_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM"
+    },
+    "proposed_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_TABLE_V2"
+    },
+    "prompt_artifacts": [
+      {
+        "prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_TABLE_V2",
+        "created_from": "EVIDENCE_ASSESSMENT_SYSTEM",
+        "diff_summary": "Add explicit table row/column parsing instructions to prevent entry confusion.",
+        "registry_path": "config/prompts/evidence_assessment_system_table_v2.yaml"
+      }
+    ],
+    "rationale": "Table entries were misread (wrong row, wrong column, or entry confusion).",
+    "expected_improvement": "Improve table parsing accuracy for comparison and property queries.",
+    "risk_level": "medium",
+    "confidence": 0.75,
+    "status": "schema_validated"
+  },
+  {
+    "patch_id": "reaction_condition_query_round1_patch2",
+    "skill_name": "reaction_condition_query",
+    "skill_version": "1.0.0",
+    "source_failure_ids": [
+      "q3"
+    ],
+    "primary_failure_type": "table_reasoning_error",
+    "target_path": "strategy.answer_generation",
+    "operation": "update",
+    "current_value": {
+      "max_evidence_items": 15
+    },
+    "proposed_value": {
+      "max_evidence_items": 18
+    },
+    "prompt_artifacts": [],
+    "rationale": "Increase evidence limit to capture more context for table-based questions.",
+    "expected_improvement": "More evidence items for LLM to compare table entries.",
+    "risk_level": "low",
+    "confidence": 0.6000000000000001,
+    "status": "schema_validated"
+  },
+  {
+    "patch_id": "reaction_comparison_round1_patch1",
+    "skill_name": "reaction_comparison",
+    "skill_version": "1.0.0",
+    "source_failure_ids": [
+      "q4"
+    ],
+    "primary_failure_type": "table_reasoning_error",
+    "target_path": "strategy.assessment",
+    "operation": "update",
+    "current_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM"
+    },
+    "proposed_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_TABLE_V2"
+    },
+    "prompt_artifacts": [
+      {
+        "prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_TABLE_V2",
+        "created_from": "EVIDENCE_ASSESSMENT_SYSTEM",
+        "diff_summary": "Add explicit table row/column parsing instructions to prevent entry confusion.",
+        "registry_path": "config/prompts/evidence_assessment_system_table_v2.yaml"
+      }
+    ],
+    "rationale": "Table entries were misread (wrong row, wrong column, or entry confusion).",
+    "expected_improvement": "Improve table parsing accuracy for comparison and property queries.",
+    "risk_level": "medium",
+    "confidence": 0.75,
+    "status": "schema_validated"
+  },
+  {
+    "patch_id": "reaction_comparison_round1_patch2",
+    "skill_name": "reaction_comparison",
+    "skill_version": "1.0.0",
+    "source_failure_ids": [
+      "q4"
+    ],
+    "primary_failure_type": "table_reasoning_error",
+    "target_path": "strategy.answer_generation",
+    "operation": "update",
+    "current_value": {
+      "max_evidence_items": 15
+    },
+    "proposed_value": {
+      "max_evidence_items": 18
+    },
+    "prompt_artifacts": [],
+    "rationale": "Increase evidence limit to capture more context for table-based questions.",
+    "expected_improvement": "More evidence items for LLM to compare table entries.",
+    "risk_level": "low",
+    "confidence": 0.6000000000000001,
+    "status": "schema_validated"
+  },
+  {
+    "patch_id": "",
+    "skill_name": "entity_lookup",
+    "skill_version": "1.0.0",
+    "source_failure_ids": [],
+    "primary_failure_type": "unknown_failure",
+    "target_path": "templates",
+    "operation": "add",
+    "current_value": {},
+    "proposed_value": {
+      "name": "distilled_score_1.0_entity_lookup",
+      "description": "Auto-distilled from 21 successful queries with pattern 'score_1.0'.",
+      "applicable_when": {
+        "intent": "entity_lookup",
+        "pattern": "score_1.0"
+      },
+      "frequency": 21
+    },
+    "prompt_artifacts": [],
+    "rationale": "Pattern 'score_1.0' succeeded 21 times in entity_lookup (avg 1.00).",
+    "expected_improvement": "Reusable template for similar future queries.",
+    "risk_level": "low",
+    "confidence": 0.95,
+    "status": "schema_validated"
+  },
+  {
+    "patch_id": "",
+    "skill_name": "property_query",
+    "skill_version": "1.0.0",
+    "source_failure_ids": [],
+    "primary_failure_type": "unknown_failure",
+    "target_path": "templates",
+    "operation": "add",
+    "current_value": {},
+    "proposed_value": {
+      "name": "distilled_score_1.0_property_query",
+      "description": "Auto-distilled from 18 successful queries with pattern 'score_1.0'.",
+      "applicable_when": {
+        "intent": "property_query",
+        "pattern": "score_1.0"
+      },
+      "frequency": 18
+    },
+    "prompt_artifacts": [],
+    "rationale": "Pattern 'score_1.0' succeeded 18 times in property_query (avg 1.00).",
+    "expected_improvement": "Reusable template for similar future queries.",
+    "risk_level": "low",
+    "confidence": 0.95,
+    "status": "schema_validated"
+  },
+  {
+    "patch_id": "",
+    "skill_name": "alias_resolution",
+    "skill_version": "1.0.0",
+    "source_failure_ids": [],
+    "primary_failure_type": "unknown_failure",
+    "target_path": "templates",
+    "operation": "add",
+    "current_value": {},
+    "proposed_value": {
+      "name": "distilled_score_1.0_alias_resolution",
+      "description": "Auto-distilled from 19 successful queries with pattern 'score_1.0'.",
+      "applicable_when": {
+        "intent": "alias_resolution",
+        "pattern": "score_1.0"
+      },
+      "frequency": 19
+    },
+    "prompt_artifacts": [],
+    "rationale": "Pattern 'score_1.0' succeeded 19 times in alias_resolution (avg 1.00).",
+    "expected_improvement": "Reusable template for similar future queries.",
+    "risk_level": "low",
+    "confidence": 0.95,
+    "status": "schema_validated"
+  },
+  {
+    "patch_id": "",
+    "skill_name": "reaction_condition_query",
+    "skill_version": "1.0.0",
+    "source_failure_ids": [],
+    "primary_failure_type": "unknown_failure",
+    "target_path": "templates",
+    "operation": "add",
+    "current_value": {},
+    "proposed_value": {
+      "name": "distilled_score_1.0_reaction_condition_query",
+      "description": "Auto-distilled from 15 successful queries with pattern 'score_1.0'.",
+      "applicable_when": {
+        "intent": "reaction_condition_query",
+        "pattern": "score_1.0"
+      },
+      "frequency": 15
+    },
+    "prompt_artifacts": [],
+    "rationale": "Pattern 'score_1.0' succeeded 15 times in reaction_condition_query (avg 1.00).",
+    "expected_improvement": "Reusable template for similar future queries.",
+    "risk_level": "low",
+    "confidence": 0.95,
+    "status": "schema_validated"
+  },
+  {
+    "patch_id": "",
+    "skill_name": "reaction_comparison",
+    "skill_version": "1.0.0",
+    "source_failure_ids": [],
+    "primary_failure_type": "unknown_failure",
+    "target_path": "templates",
+    "operation": "add",
+    "current_value": {},
+    "proposed_value": {
+      "name": "distilled_score_1.0_reaction_comparison",
+      "description": "Auto-distilled from 13 successful queries with pattern 'score_1.0'.",
+      "applicable_when": {
+        "intent": "reaction_comparison",
+        "pattern": "score_1.0"
+      },
+      "frequency": 13
+    },
+    "prompt_artifacts": [],
+    "rationale": "Pattern 'score_1.0' succeeded 13 times in reaction_comparison (avg 1.00).",
+    "expected_improvement": "Reusable template for similar future queries.",
+    "risk_level": "low",
+    "confidence": 0.95,
+    "status": "schema_validated"
+  }
+]

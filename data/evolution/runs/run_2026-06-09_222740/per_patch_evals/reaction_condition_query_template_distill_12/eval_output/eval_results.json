@@ -1,0 +1,630 @@
+{
+  "summary": {
+    "total": 21,
+    "average_score": 0.9238095238095237,
+    "by_intent": {
+      "alias_resolution": 0.9727272727272727,
+      "entity_lookup": 0.8333333333333334,
+      "reaction_condition_query": 1.0,
+      "property_query": 0.85
+    }
+  },
+  "results": [
+    {
+      "id": "q1",
+      "source_paper": "1.pdf",
+      "intent": "alias_resolution",
+      "question": "In Scheme 1 and the accompanying tables the label 'Hex-n' is used repeatedly. What does 'Hex-n' refer to in this paper?",
+      "ground_truth": "Hex-n denotes an n‑hexyl substituent (the n‑hexyl group used in 3-(n-hexyl)-1,2-octadien-4-ol / corresponding substrates).",
+      "system_answer": "In this paper, 'Hex-n' refers to an n-hexyl group, as seen in the compound name '3-(n-hexyl)-1,2-octadien-4-ol' (evidence: block_1_0009, block_1_0012, block_1_0018). The 'n' indicates a normal (straight-chain) hexyl substituent.",
+      "evidence_ids": [
+        "block_1_0009",
+        "block_1_0040",
+        "block_1_0036",
+        "block_1_0012",
+        "block_1_0018",
+        "block_1_0124",
+        "block_1_0014",
+        "block_1_0007"
+      ],
+      "confidence": 0.85,
+      "judge_score": 1.0,
+      "entities_found": [
+        "Hex-n",
+        "3-(n-hexyl)-1,2-octadien-4-ol"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies Hex-n as an n-hexyl group and mentions the compound 3-(n-hexyl)-1,2-octadien-4-ol, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q1",
+      "source_paper": "2.pdf",
+      "intent": "alias_resolution",
+      "question": "In this paper, what does the abbreviation 'DCE' refer to?",
+      "ground_truth": "1,2-dichloroethane",
+      "system_answer": "In this paper, 'DCE' refers to 1,2-dichloroethane (evidence: block_2_0008, block_2_0007). The text states that 1,2-dichloroethane is the best solvent for the reaction and later refers to it as DCE (evidence: block_2_0008).",
+      "evidence_ids": [
+        "block_2_0006",
+        "block_2_0012",
+        "block_2_0008",
+        "block_2_0013",
+        "block_2_0007",
+        "block_2_0010",
+        "block_2_0003",
+        "block_2_0021"
+      ],
+      "confidence": 0.85,
+      "judge_score": 1.0,
+      "entities_found": [
+        "DCE"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies that DCE refers to 1,2-dichloroethane, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q5",
+      "source_paper": "2.pdf",
+      "intent": "property_query",
+      "question": "What boiling point (at 760 mmHg) is reported for the purified propiolaldehyde (compound 1)?",
+      "ground_truth": "bp 54–57 °C at 760 mmHg",
+      "system_answer": "The boiling point reported for purified propiolaldehyde (compound 1) at 760 mmHg is 54–57 °C (evidence: block_2_0013). The initial distillation gave a broader range of 53–83 °C/760 mm Hg due to solvent contamination, but after redistillation the pure product boiled at 54–57 °C/760 mm Hg.",
+      "evidence_ids": [
+        "block_2_0013",
+        "block_2_0006",
+        "block_2_0008",
+        "block_2_0012",
+        "block_2_0010",
+        "block_2_0011",
+        "block_2_0015",
+        "block_2_0018"
+      ],
+      "confidence": 1.0,
+      "judge_score": 1.0,
+      "entities_found": [
+        "propiolaldehyde (1)",
+        "boiling point"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states the boiling point as 54–57 °C at 760 mmHg, matching the ground truth exactly, and includes all key entities.",
+      "score": 1.0,
+      "intent_key": "property_query"
+    },
+    {
+      "id": "q1",
+      "source_paper": "4.pdf",
+      "intent": "alias_resolution",
+      "question": "In this paper, what does the abbreviation 'TEMPO' refer to?",
+      "ground_truth": "2,2,6,6-tetramethylpiperidine-N-oxyl",
+      "system_answer": "In this paper, 'TEMPO' refers to 2,2,6,6-tetramethylpiperidine-N-oxyl (evidence: mol_4_0001). It is used as a catalyst (10 mol %) together with Fe(NO3)3·9H2O and NaCl for the aerobic oxidation of homopropargylic alcohols (evidence: block_4_0016, block_4_0023, block_4_0029).",
+      "evidence_ids": [
+        "mol_4_0001",
+        "block_4_0013",
+        "block_4_0016",
+        "block_4_0021",
+        "block_4_0023",
+        "block_4_0029",
+        "block_4_0024",
+        "block_4_0004"
+      ],
+      "confidence": 0.78,
+      "judge_score": 1.0,
+      "entities_found": [
+        "TEMPO"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies TEMPO as 2,2,6,6-tetramethylpiperidine-N-oxyl, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q1",
+      "source_paper": "5.pdf",
+      "intent": "alias_resolution",
+      "question": "In this paper, what compound does the label \"1a\" refer to?",
+      "ground_truth": "Lauraldehyde (1a) — n-C11H23CHO (lauraldehyde)",
+      "system_answer": "The label \"1a\" refers to lauraldehyde (n-dodecanal). Evidence block_5_0008 states that \"lauraldehyde 1a\" was treated under the reaction conditions, and block_5_0026 also refers to \"lauraldehyde 1a\". Additionally, block_5_0028 and block_5_0029 mention aldehyde 1a in the context of oxidation to lauric acid 2a.",
+      "evidence_ids": [
+        "block_5_0024",
+        "block_5_0027",
+        "block_5_0008",
+        "block_5_0021",
+        "block_5_0028",
+        "block_5_0011",
+        "block_5_0031",
+        "block_5_0006",
+        "block_5_0017",
+        "block_5_0026",
+        "block_5_0029"
+      ],
+      "confidence": 0.85,
+      "judge_score": 0.7,
+      "entities_found": [
+        "1a",
+        "lauraldehyde"
+      ],
+      "entities_missing": [
+        "n-C11H23CHO"
+      ],
+      "judge_reasoning": "The system correctly identifies '1a' as lauraldehyde and mentions n-dodecanal, but omits the exact chemical formula n-C11H23CHO from the ground truth.",
+      "score": 0.7,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q2",
+      "source_paper": "5.pdf",
+      "intent": "entity_lookup",
+      "question": "What is the chemical formula/structure given in the paper for the carboxylic acid product labeled 2a?",
+      "ground_truth": "2a is lauric acid: n-C11H23CO2H (lauric acid)",
+      "system_answer": "The carboxylic acid product labeled 2a is lauric acid (n-C11H23CO2H), derived from lauraldehyde (n-C11H23CHO, 1a) or from n-C12H25OH (3a) (evidence: block_5_0008, block_5_0010, block_5_0017). Its chemical formula/structure is n-C11H23CO2H, corresponding to a linear chain of 12 carbon atoms with a terminal carboxylic acid group.",
+      "evidence_ids": [
+        "block_5_0027",
+        "block_5_0005",
+        "block_5_0024",
+        "block_5_0008",
+        "block_5_0010",
+        "block_5_0019",
+        "block_5_0031",
+        "block_5_0032",
+        "block_5_0017",
+        "mol_5_0001",
+        "mol_21_0013",
+        "mol_txt_1_0091",
+        "mol_19_0050",
+        "block_5_0029"
+      ],
+      "confidence": 0.95,
+      "judge_score": 1.0,
+      "entities_found": [
+        "2a",
+        "lauric acid",
+        "n-C11H23CO2H"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies 2a as lauric acid with the exact formula n-C11H23CO2H, matching all key entities from the ground truth.",
+      "score": 1.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q2",
+      "source_paper": "7.pdf",
+      "intent": "entity_lookup",
+      "question": "What is the chemical identity/name given in the paper for Fe(NO3)3·9H2O, the catalyst used in the study?",
+      "ground_truth": "Fe(NO3)3·9H2O — iron(III) nitrate nonahydrate (used as the single-component catalyst)",
+      "system_answer": "The paper identifies Fe(NO3)3·9H2O as iron(III) nitrate nonahydrate, used as a single-component catalyst for the aerobic oxidation of aldehydes to carboxylic acids (evidence: block_7_0002, block_7_0004). It is described as a cheap iron catalyst and is referred to as \"Fe(NO3)3·9H2O\" throughout the text (evidence: block_7_0004, block_7_0010).",
+      "evidence_ids": [
+        "block_7_0004",
+        "block_7_0010",
+        "block_7_0002",
+        "block_7_0015",
+        "block_7_0011",
+        "block_7_0026",
+        "block_7_0031",
+        "block_7_0009"
+      ],
+      "confidence": 0.95,
+      "judge_score": 1.0,
+      "entities_found": [
+        "Fe(NO3)3·9H2O",
+        "iron(III) nitrate nonahydrate"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies Fe(NO3)3·9H2O as iron(III) nitrate nonahydrate and states it is used as a single-component catalyst, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q1",
+      "source_paper": "8.pdf",
+      "intent": "alias_resolution",
+      "question": "In this paper, what compound does the label '2a' refer to?",
+      "ground_truth": "2a refers to benzoic acid (the carboxylic acid product obtained from benzyl alcohol 1a).",
+      "system_answer": "The label '2a' refers to benzoic acid. This is evident from the text stating 'Benzoic acid (2a) was obtained in 57% yield from benzyl alcohol (1a)' (evidence: block_8_0011) and from the table entry showing 'Ph (1a)' yields '57 (2a)' (evidence: block_8_0013). The experimental procedure also describes the isolation of 'benzoic acid (2a)' (evidence: block_8_0020).",
+      "evidence_ids": [
+        "block_8_0011",
+        "block_8_0009",
+        "block_8_0013",
+        "block_8_0010",
+        "block_8_0020",
+        "block_8_0249",
+        "block_8_0027",
+        "block_8_0028"
+      ],
+      "confidence": 0.95,
+      "judge_score": 1.0,
+      "entities_found": [
+        "2a",
+        "1a",
+        "benzoic acid"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies that '2a' refers to benzoic acid, mentions the starting material 1a, and includes all key entities from the ground truth.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q2",
+      "source_paper": "8.pdf",
+      "intent": "entity_lookup",
+      "question": "What is the chemical name of compound 2t as given in the paper?",
+      "ground_truth": "2t is 4-acetylbenzoic acid (4-Acetylbenzoic Acid, listed as 2t in the Experimental section).",
+      "system_answer": "The chemical name of compound 2t as given in the paper is 4-Acetylbenzoic Acid (evidence: block_8_0227).",
+      "evidence_ids": [
+        "block_8_0009",
+        "block_8_0010",
+        "block_8_0011",
+        "block_8_0018",
+        "block_8_0227",
+        "block_8_0013",
+        "block_8_0020",
+        "block_8_0122"
+      ],
+      "confidence": 0.67,
+      "judge_score": 1.0,
+      "entities_found": [
+        "2t",
+        "4-Acetylbenzoic Acid"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies the chemical name of compound 2t as 4-Acetylbenzoic Acid, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q2",
+      "source_paper": "9.pdf",
+      "intent": "entity_lookup",
+      "question": "What is the chemical name (as given in the paper) of compound 1a?",
+      "ground_truth": "1a: 2-(1-hydroxy-3-phenylprop-2-yn-1-yl)phenol.",
+      "system_answer": "The chemical name of compound 1a, as given in the paper, is 2-(1-hydroxy-3-phenylprop-2-yn-1-yl)phenol (evidence: block_9_0007).",
+      "evidence_ids": [
+        "block_9_0011",
+        "block_9_0040",
+        "block_9_0042",
+        "block_9_0044",
+        "block_9_0019",
+        "block_9_0006",
+        "block_9_0007",
+        "block_9_0021"
+      ],
+      "confidence": 0.66,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1a",
+        "2-(1-hydroxy-3-phenylprop-2-yn-1-yl)phenol"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer exactly matches the ground truth chemical name for compound 1a and includes both key entities.",
+      "score": 1.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q1",
+      "source_paper": "12.pdf",
+      "intent": "alias_resolution",
+      "question": "In this paper, what chemical species is denoted by the label \"1a\"?",
+      "ground_truth": "1a refers to the isochroman substrate shown in the paper (the parent isochroman used as the model substrate in Schemes/Table; the starting material for formation of lactone 2a).",
+      "system_answer": "The label \"1a\" denotes isochroman, as indicated by the statement \"the aerobic oxidation of isochroman 1a\" (evidence: block_12_0020). This is further supported by the reaction table where 1a is the starting material for the aerobic oxidation to produce lactone 2a (evidence: block_12_0023).",
+      "evidence_ids": [
+        "block_12_0013",
+        "block_12_0026",
+        "block_12_0044",
+        "block_12_0020",
+        "block_12_0023",
+        "block_12_0028",
+        "block_12_0046",
+        "block_12_0051"
+      ],
+      "confidence": 0.85,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1a",
+        "isochroman"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies 1a as isochroman and matches the ground truth that it is the starting material for lactone 2a.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q_batch1_3",
+      "source_paper": "15-SI.pdf",
+      "intent": "property_query",
+      "question": "What yield was reported for methyl palmitate (6ae)?",
+      "ground_truth": "Formed in 83% NMR yield (crude); isolated yield 73% (198.3 mg)",
+      "system_answer": "The highest NMR yield reported for methyl palmitate (6ae) is 84% (evidence: block_15-SI_0017, entry 3; block_15-SI_0019, entry 5; block_15-SI_0021, entry 1; block_15-SI_0023, entry 1). An isolated yield of 73% is also reported (evidence: block_15-SI_0035).",
+      "evidence_ids": [
+        "block_15-SI_0013",
+        "block_15-SI_0015",
+        "block_15-SI_0017",
+        "block_15-SI_0019",
+        "block_15-SI_0021",
+        "block_15-SI_0023",
+        "block_15-SI_0025",
+        "block_15-SI_0009",
+        "block_15-SI_0035"
+      ],
+      "confidence": 0.95,
+      "judge_score": 0.7,
+      "entities_found": [
+        "6ae",
+        "methyl palmitate"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies the compound and reports an isolated yield of 73%, but states the NMR yield as 84% instead of the ground truth's 83%, which is a minor inaccuracy.",
+      "score": 0.7,
+      "intent_key": "property_query"
+    },
+    {
+      "id": "q1",
+      "source_paper": "16.pdf",
+      "intent": "alias_resolution",
+      "question": "In this paper, what does the abbreviation 'TBS' refer to (i.e., what silyl protecting group is depicted for 'TBS')?",
+      "ground_truth": "TBS = tert-butyldimethylsilyl group (SiMe2–tBu; tert-butyldimethylsilyl ether).",
+      "system_answer": "In this paper, 'TBS' refers to the tert-butyldimethylsilyl protecting group. The evidence explicitly mentions 'TBS and TMS ethers' and 'tert-butyldimethyl-(4-nitrobenzyl-oxy)silane' (evidence: block_16_0019), and also refers to 'n-C8H17OTBS' (evidence: block_16_0018) and 'Ph(CH2)3OTBS' (evidence: block_16_0025), confirming that TBS denotes the tert-butyldimethylsilyl group.",
+      "evidence_ids": [
+        "block_16_0010",
+        "block_16_0026",
+        "block_16_0018",
+        "block_16_0019",
+        "block_16_0028",
+        "block_16_0020",
+        "block_16_0025",
+        "block_16_0029"
+      ],
+      "confidence": 0.9,
+      "judge_score": 1.0,
+      "entities_found": [
+        "TBS"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies TBS as the tert-butyldimethylsilyl group, matching the ground truth exactly, and includes the key entity TBS.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q2",
+      "source_paper": "16.pdf",
+      "intent": "entity_lookup",
+      "question": "What is the structure of substrate 1aa (how is 1aa described in the paper)?",
+      "ground_truth": "1aa = n-C8H17OTBS, i.e. n‑octyl tert‑butyldimethylsilyl ether (n‑C8H17–O–SiMe2tBu).",
+      "system_answer": "Substrate 1aa is described as 1-octyl tert-butyldimethylsilylether (n-C8H17OTBS) in the paper (evidence: block_16_0011, block_16_0018, block_16_0022). It is used as the model substrate for the deprotective oxidation reaction to produce octanoic acid (2a).",
+      "evidence_ids": [
+        "block_16_0017",
+        "block_16_0018",
+        "block_16_0022",
+        "block_16_0024",
+        "block_16_0025",
+        "block_16_0011",
+        "block_16_0019",
+        "block_16_0020"
+      ],
+      "confidence": 0.85,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1aa",
+        "n-C8H17OTBS"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies 1aa as n-C8H17OTBS (1-octyl tert-butyldimethylsilylether) and matches the ground truth exactly, with all key entities present.",
+      "score": 1.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q1",
+      "source_paper": "18.pdf",
+      "intent": "alias_resolution",
+      "question": "In the paper, what does the abbreviation 'DCE' refer to?",
+      "ground_truth": "DCE = 1,2-dichloroethane",
+      "system_answer": "In the paper, 'DCE' refers to 1,2-dichloroethane (evidence: block_18_0008, block_18_0007). The text explicitly states '1,2-dichloroethane (DCE)' (evidence: block_18_0008) and also mentions '1,2-dichloroethane' as the solvent abbreviated as DCE (evidence: block_18_0007).",
+      "evidence_ids": [
+        "block_18_0015",
+        "block_18_0005",
+        "block_18_0020",
+        "block_18_0008",
+        "block_18_0025",
+        "block_18_0012",
+        "block_18_0013",
+        "block_18_0014",
+        "block_18_0007",
+        "block_18_0010",
+        "block_18_0070",
+        "block_18_0019",
+        "block_18_0055",
+        "block_18_0021"
+      ],
+      "confidence": 0.95,
+      "judge_score": 1.0,
+      "entities_found": [
+        "DCE",
+        "1,2-dichloroethane"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies DCE as 1,2-dichloroethane, matching the ground truth exactly, and includes both key entities.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q1",
+      "source_paper": "19.pdf",
+      "intent": "alias_resolution",
+      "question": "In this paper what does the abbreviation 'PMB' stand for?",
+      "ground_truth": "PMB = p‑methoxybenzyl (the p‑methoxybenzyl protecting group/aryl‑methylene group)",
+      "system_answer": "In this paper, 'PMB' stands for p-methoxybenzyl (evidence: block_19_0004, block_19_0006). The paper discusses PMB ethers as protecting groups for hydroxyl groups, and the abbreviation is explicitly defined as p-methoxybenzyl (evidence: block_19_0004).",
+      "evidence_ids": [
+        "block_19_0009",
+        "block_19_0011",
+        "block_19_0016",
+        "block_19_0006",
+        "block_19_0024",
+        "block_19_0002",
+        "block_19_0014",
+        "block_19_0004"
+      ],
+      "confidence": 0.85,
+      "judge_score": 1.0,
+      "entities_found": [
+        "PMB"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies PMB as p-methoxybenzyl, matching the ground truth exactly, and includes all key entities.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q1",
+      "source_paper": "20.pdf",
+      "intent": "alias_resolution",
+      "question": "In this paper, what does the label '1a' refer to?",
+      "ground_truth": "n-hexadecanal (the aldehyde substrate n-hexadecanal)",
+      "system_answer": "In this paper, the label '1a' refers to n-hexadecanal, a linear aliphatic aldehyde with the formula n-C15H31CHO (evidence: block_20_0019, block_20_0021). It is used as the model substrate for the copper-catalyzed aerobic oxidation to the corresponding carboxylic acid 2a (evidence: block_20_0019, block_20_0021).",
+      "evidence_ids": [
+        "block_20_0019",
+        "block_20_0027",
+        "block_20_0028",
+        "block_20_0013",
+        "block_20_0031",
+        "block_20_0020",
+        "block_20_0021",
+        "block_20_0023"
+      ],
+      "confidence": 0.9,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1a",
+        "n-hexadecanal"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies '1a' as n-hexadecanal and includes all key entities from the ground truth.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q2",
+      "source_paper": "20.pdf",
+      "intent": "entity_lookup",
+      "question": "What is the product identity/structure of compound 2a formed from 1a under the standard conditions?",
+      "ground_truth": "Hexadecanoic acid (n-hexadecanoic acid, palmitic acid)",
+      "system_answer": "Compound 2a is n-pentadecanoic acid (n-C15H31COOH), the carboxylic acid formed by oxidation of n-hexadecanal (1a, n-C15H31CHO) under the standard conditions (evidence: block_20_0021, block_20_0020). The standard conditions use 10 mol% Cu(NO3)2·3H2O and 10 mol% TEMPO in DCE with an O2 balloon at room temperature for 18 h, giving 2a in 86% yield (evidence: block_20_0021).",
+      "evidence_ids": [
+        "block_20_0013",
+        "block_20_0019",
+        "block_20_0022",
+        "block_20_0020",
+        "block_20_0021",
+        "block_20_0027",
+        "block_20_0028",
+        "block_20_0031"
+      ],
+      "confidence": 0.85,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "2a",
+        "hexadecanoic acid",
+        "palmitic acid"
+      ],
+      "judge_reasoning": "The system answer incorrectly identifies 2a as n-pentadecanoic acid (C15) instead of hexadecanoic acid (C16), which is a completely wrong compound, and none of the key entities from the ground truth appear.",
+      "score": 0.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q3",
+      "source_paper": "22.pdf",
+      "intent": "reaction_condition_query",
+      "question": "Under the 'standard conditions' for the aerobic oxidation of alcohol 1a (Table 1 / experimental), what solvent and atmosphere were used?",
+      "ground_truth": "Solvent: DCE (1,2‑dichloroethane); Atmosphere: O2 (O2 balloon); reaction performed at room temperature (rt) for 36 h (as the standard conditions).",
+      "system_answer": "Under the standard conditions for the aerobic oxidation of alcohol 1a, the solvent was DCE and the atmosphere was O2 (balloon) at room temperature (rt) (evidence: block_22_0030). The table header and footnote explicitly state: 'DCE, O2 (balloon), rt, 36 h' and 'the reaction was conducted with 1.0 mmol of 1a in 4 mL of DCE at rt for 36 h with an O2 balloon' (evidence: block_22_0030).",
+      "evidence_ids": [
+        "block_22_0030",
+        "block_22_0031",
+        "block_22_0036",
+        "block_22_0037",
+        "block_22_0033",
+        "block_22_0035",
+        "block_22_0032",
+        "block_22_0013"
+      ],
+      "confidence": 1.0,
+      "judge_score": 1.0,
+      "entities_found": [
+        "alcohol 1a",
+        "standard conditions",
+        "DCE",
+        "O2 balloon"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly includes all key entities (alcohol 1a, standard conditions, DCE, O2 balloon) and matches the ground truth details (solvent, atmosphere, room temperature, 36 h).",
+      "score": 1.0,
+      "intent_key": "reaction_condition_query"
+    },
+    {
+      "id": "q1",
+      "source_paper": "23.pdf",
+      "intent": "alias_resolution",
+      "question": "In the paper, what does the abbreviation 'Ts' (as used in labels such as 1a) refer to?",
+      "ground_truth": "Ts = p‑toluenesulfonyl (tosyl) protecting group",
+      "system_answer": "In the paper, 'Ts' refers to the tosyl group (p-toluenesulfonyl). This is evident from the use of 'Ts' in labels such as '1-tosyl-1H-indol-2-yl' and 'N–Ts' (evidence: block_23_0020, block_23_0024, block_23_0027).",
+      "evidence_ids": [
+        "block_23_0010",
+        "block_23_0015",
+        "block_23_0009",
+        "block_23_0012",
+        "block_23_0016",
+        "block_23_0020",
+        "block_23_0024",
+        "block_23_0027"
+      ],
+      "confidence": 0.85,
+      "judge_score": 1.0,
+      "entities_found": [
+        "Ts"
+      ],
+      "entities_missing": [
+        "1a"
+      ],
+      "judge_reasoning": "The system answer correctly identifies Ts as tosyl (p-toluenesulfonyl), matching the ground truth, but does not mention the entity '1a' which is listed as a key entity to check.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q3",
+      "source_paper": "23.pdf",
+      "intent": "reaction_condition_query",
+      "question": "According to the standard reaction conditions used for the aerobic oxidation of 1a to 2a (Table 1), which solvent and oxidant/atmosphere were used?",
+      "ground_truth": "Solvent: DCE (1,2‑dichloroethane); oxidant/atmosphere: oxygen (O2) delivered from an O2 balloon (room temperature)",
+      "system_answer": "The standard reaction conditions for the aerobic oxidation of 1a to 2a (Table 1) used DCE as the solvent and oxygen (O2 balloon) as the oxidant/atmosphere (evidence: block_23_0021, block_23_0014). The catalyst system consisted of 10 mol% Fe(NO3)3·9H2O, 10 mol% TEMPO, and 10 mol% NaCl in DCE at room temperature (evidence: block_23_0024, block_23_0015, block_23_0018).",
+      "evidence_ids": [
+        "block_23_0024",
+        "block_23_0015",
+        "block_23_0018",
+        "block_23_0022",
+        "block_23_0014",
+        "block_23_0021",
+        "block_23_0012",
+        "block_23_0010"
+      ],
+      "confidence": 0.95,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1a",
+        "2a",
+        "Table 1",
+        "DCE",
+        "O2 (balloon)"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly includes all key entities (1a, 2a, Table 1, DCE, O2 balloon) and matches the ground truth facts about solvent, oxidant/atmosphere, and room temperature, with no omissions or errors.",
+      "score": 1.0,
+      "intent_key": "reaction_condition_query"
+    }
+  ],
+  "metadata": {
+    "sampling": {
+      "mode": "full"
+    }
+  }
+}

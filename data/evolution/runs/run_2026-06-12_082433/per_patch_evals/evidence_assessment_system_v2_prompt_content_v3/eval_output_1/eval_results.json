@@ -1,0 +1,187 @@
+{
+  "summary": {
+    "total": 5,
+    "average_score": 0.8,
+    "by_intent": {
+      "entity_lookup": 0.5,
+      "property_query": 1.0,
+      "reaction_condition_query": 1.0
+    }
+  },
+  "results": [
+    {
+      "id": "q5",
+      "source_paper": "1.pdf",
+      "intent": "property_query",
+      "question": "What isolated yield (%) of phenyl methyl ketone (acetophenone) was obtained in the 4.0 mmol (large-scale) oxidation of 1-phenylethanol reported in Eq. (2)?",
+      "ground_truth": "91% isolated yield of phenyl methyl ketone (acetophenone).",
+      "system_answer": "The isolated yield of phenyl methyl ketone (acetophenone) in the 4.0 mmol (large-scale) oxidation of 1-phenylethanol reported in Eq. (2) is 91% (evidence: block_1_0122, block_1_0036). The evidence describes a 4.0 mol (not 4.0 mmol) scale reaction, but the yield is explicitly stated as 91% for this large-scale run.",
+      "evidence_ids": [
+        "block_1_0041",
+        "block_1_0122",
+        "block_1_0036",
+        "block_1_0009",
+        "block_1_0121",
+        "block_1_0080",
+        "block_1_0124",
+        "block_1_0071",
+        "block_1_0055",
+        "block_1_0103",
+        "block_1_0017"
+      ],
+      "confidence": 0.92,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1-phenylethanol",
+        "phenyl methyl ketone",
+        "Eq. (2)"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states the 91% isolated yield of phenyl methyl ketone from 1-phenylethanol in Eq. (2), matching the ground truth exactly, and all key entities are present.",
+      "score": 1.0,
+      "intent_key": "property_query"
+    },
+    {
+      "id": "q2",
+      "source_paper": "8.pdf",
+      "intent": "entity_lookup",
+      "question": "What is the chemical name of compound 2t as given in the paper?",
+      "ground_truth": "2t is 4-acetylbenzoic acid (4-Acetylbenzoic Acid, listed as 2t in the Experimental section).",
+      "system_answer": "The chemical name of compound 2t as given in the paper is 4-Acetylbenzoic Acid (evidence: block_8_0227).",
+      "evidence_ids": [
+        "block_8_0009",
+        "block_8_0010",
+        "block_8_0011",
+        "block_8_0018",
+        "block_8_0227",
+        "block_8_0013",
+        "block_8_0020",
+        "block_8_0122"
+      ],
+      "confidence": 0.67,
+      "judge_score": 1.0,
+      "entities_found": [
+        "2t",
+        "4-Acetylbenzoic Acid"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies the chemical name of compound 2t as 4-Acetylbenzoic Acid, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q5",
+      "source_paper": "12.pdf",
+      "intent": "property_query",
+      "question": "When the reaction of 1a was run on 10 mmol scale, what was the isolated yield and mass of 2a reported in the paper?",
+      "ground_truth": "98% isolated yield; isolated mass 1.4506 g.",
+      "system_answer": "When the reaction of 1a was run on 10 mmol scale, the isolated yield of 2a was 98% and the mass was 1.4506 g (evidence: block_12_0026).",
+      "evidence_ids": [
+        "block_12_0023",
+        "block_12_0030",
+        "block_12_0029",
+        "block_12_0022",
+        "block_12_0026",
+        "block_12_0020",
+        "block_12_0013",
+        "block_12_0028",
+        "rxn_tbl_12_0001",
+        "block_12_0049",
+        "block_12_0048"
+      ],
+      "confidence": 0.92,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1a",
+        "2a",
+        "10 mmol",
+        "isolated yield",
+        "1.4506 g"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states the isolated yield (98%) and mass (1.4506 g) for the 10 mmol scale reaction of 1a to 2a, matching all key entities from the ground truth.",
+      "score": 1.0,
+      "intent_key": "property_query"
+    },
+    {
+      "id": "q3",
+      "source_paper": "17.pdf",
+      "intent": "reaction_condition_query",
+      "question": "Under the paper's standard catalytic aerobic oxidation conditions for converting PMB ether 1a to carboxylic acid 2a, what solvent, catalysts (with loadings) and atmosphere were used?",
+      "ground_truth": "Solvent: DCE (1.0 mL); Catalysts: Fe(NO3)3·9H2O (10 mol%) and TEMPO (10 mol%); Atmosphere: O2 (oxygen balloon) at room temperature (≈25 °C).",
+      "system_answer": "Under the paper's standard conditions for converting PMB ether 1a to carboxylic acid 2a, the solvent was DCE (1.0 mL), the catalysts were Fe(NO3)3·9H2O (10 mol%) and TEMPO (10 mol%), and the atmosphere was an oxygen balloon at room temperature for 8 h (evidence: block_17_0013, block_17_0035, block_17_0039).",
+      "evidence_ids": [
+        "block_17_0013",
+        "block_17_0035",
+        "block_17_0010",
+        "block_17_0001",
+        "block_17_0012",
+        "block_17_0002",
+        "block_17_0039",
+        "block_17_0005"
+      ],
+      "confidence": 0.95,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1a",
+        "2a",
+        "Fe(NO3)3·9H2O",
+        "TEMPO",
+        "DCE",
+        "O2"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly includes all key entities and conditions from the ground truth, with only minor additional details (room temperature for 8 h) that do not contradict the ground truth.",
+      "score": 1.0,
+      "intent_key": "reaction_condition_query"
+    },
+    {
+      "id": "q2",
+      "source_paper": "18.pdf",
+      "intent": "entity_lookup",
+      "question": "What is the name of product 2b as given in the paper (structure/identified name)?",
+      "ground_truth": "4-Phenylbut-3-yn-2-one (2b)",
+      "system_answer": "The evidence does not contain a compound labeled as product 2b. The retrieved documents refer to product 2b only as a ketone or aldehyde derived from substrate 1b, but do not provide its specific chemical name or structure (evidence: block_18_0015, block_18_0008).",
+      "evidence_ids": [
+        "block_18_0012",
+        "block_18_0014",
+        "block_18_0005",
+        "block_18_0008",
+        "block_18_0020",
+        "block_18_0024",
+        "block_18_0015",
+        "block_18_0021"
+      ],
+      "confidence": 0.25,
+      "judge_score": 0.0,
+      "entities_found": [
+        "2b"
+      ],
+      "entities_missing": [
+        "4-phenylbut-3-yn-2-one"
+      ],
+      "judge_reasoning": "The system answer fails to identify the specific chemical name '4-Phenylbut-3-yn-2-one' for product 2b, which is the key fact in the ground truth.",
+      "score": 0.0,
+      "intent_key": "entity_lookup"
+    }
+  ],
+  "metadata": {
+    "sampling": {
+      "mode": "random",
+      "limit": 10,
+      "seed": 43,
+      "selected_question_ids": [
+        "q5",
+        "q3",
+        "q4",
+        "q2",
+        "q3",
+        "q5",
+        "q3",
+        "q2",
+        "q5",
+        "q4"
+      ]
+    }
+  }
+}

@@ -174,8 +174,24 @@ class PatchApplier:
             )
         return self._apply_add(skill_config, patch)
 
+
+    def _load_prompt_yaml(self, prompt_ref: str) -> dict | None:
+        """Load a prompt YAML by its prompt_ref value."""
+        if not self.prompts_dir.is_dir():
+            return None
+        for f in self.prompts_dir.glob("*.yaml"):
+            try:
+                data = yaml.safe_load(f.read_text("utf-8"))
+                if data and data.get("prompt_ref") == prompt_ref:
+                    return data
+            except Exception:
+                pass
+        return None
     def _write_prompt_artifacts(self, patch: PatchSchema) -> list[str]:
         """Write prompt artifacts to the prompts directory.
+
+        Loads source prompts by exact prompt_ref match, derives new versions,
+        and writes them to self.prompts_dir.
 
         Returns list of written prompt file paths.
         """
@@ -183,34 +199,147 @@ class PatchApplier:
         for artifact in patch.prompt_artifacts:
             if not artifact.prompt_ref or not artifact.registry_path:
                 continue
-            # Create the prompt file
+
             prompt_path = self.prompts_dir / Path(artifact.registry_path).name
             prompt_path.parent.mkdir(parents=True, exist_ok=True)
 
-            # If the source prompt exists, copy it as base
+            # Try to load source prompt by exact prompt_ref match
             source_ref = artifact.created_from
-            if source_ref:
-                source_files = list(self.prompts_dir.glob(f"*{source_ref.lower()}*.yaml"))
-                if source_files:
-                    shutil.copy2(source_files[0], prompt_path)
-                    written.append(str(prompt_path))
-                    continue
+            source_data = self._load_prompt_yaml(source_ref) if source_ref else None
 
-            # Otherwise create a minimal placeholder
-            placeholder = {
-                "prompt_ref": artifact.prompt_ref,
-                "version": "1.0.0",
-                "status": "experimental",
-                "created_from": artifact.created_from,
-                "created_by": "skill_evolution_pipeline",
-                "created_at": datetime.now().strftime("%Y-%m-%d"),
-                "content": f"# TODO: Generate content for {artifact.prompt_ref}\n# Based on: {artifact.created_from}\n# Diff: {artifact.diff_summary}\n",
-                "diff_summary": artifact.diff_summary,
-            }
-            prompt_path.write_text(
-                yaml.dump(placeholder, allow_unicode=True, default_flow_style=False),
-                encoding="utf-8",
-            )
+            # Use auto-generated content from artifact if available,
+            # otherwise derive from source prompt
+            if artifact.content:
+                prompt_data = {
+                    "prompt_ref": artifact.prompt_ref,
+                    "version": "1.0.0",
+                    "status": "experimental",
+                    "created_from": source_ref or "",
+                    "created_by": "skill_evolution_pipeline",
+                    "created_at": datetime.now().strftime("%Y-%m-%d"),
+                    "content": artifact.content,
+                    "diff_summary": artifact.diff_summary,
+                    "validation": {"passed_regression_runs": []},
+                    "hash": "",
+                }
+                prompt_path.write_text(
+                    yaml.dump(prompt_data, allow_unicode=True, default_flow_style=False, sort_keys=False),
+                    encoding="utf-8",
+                )
+            elif source_data:
+                derived = dict(source_data)
+                derived["prompt_ref"] = artifact.prompt_ref
+                derived["version"] = "1.0.0"
+                derived["status"] = "experimental"
+                derived["created_from"] = source_ref
+                derived["created_by"] = "skill_evolution_pipeline"
+                derived["created_at"] = datetime.now().strftime("%Y-%m-%d")
+                derived["diff_summary"] = artifact.diff_summary
+                derived["validation"] = {"passed_regression_runs": []}
+                derived["hash"] = ""
+                prompt_path.write_text(
+                    yaml.dump(derived, allow_unicode=True, default_flow_style=False, sort_keys=False),
+                    encoding="utf-8",
+                )
+            else:
+                placeholder = {
+                    "prompt_ref": artifact.prompt_ref,
+                    "version": "1.0.0",
+                    "status": "experimental",
+                    "created_from": artifact.created_from or "",
+                    "created_by": "skill_evolution_pipeline",
+                    "created_at": datetime.now().strftime("%Y-%m-%d"),
+                    "content": f"# TODO: Generate content for {artifact.prompt_ref}\n# Based on: {artifact.created_from}\n# Diff: {artifact.diff_summary}\n",
+                    "diff_summary": artifact.diff_summary,
+                    "validation": {"passed_regression_runs": []},
+                    "hash": "",
+                }
+                prompt_path.write_text(
+                    yaml.dump(placeholder, allow_unicode=True, default_flow_style=False, sort_keys=False),
+                    encoding="utf-8",
+                )
+            written.append(str(prompt_path))
+
+        return written
+
+
+    def write_prompt_artifacts_to_sandbox(
+        self,
+        sandbox_prompts_dir: Path,
+        patch: PatchSchema,
+    ) -> list[str]:
+        """Write prompt artifacts to a sandbox prompts directory.
+
+        Used during regression validation. Loads source prompts from the
+        ORIGINAL prompts dir (self.prompts_dir), derives new versions,
+        and writes them to the sandbox directory.
+        """
+        if yaml is None:
+            return []
+
+        written: list[str] = []
+        for artifact in patch.prompt_artifacts:
+            if not artifact.prompt_ref or not artifact.registry_path:
+                continue
+
+            prompt_path = sandbox_prompts_dir / Path(artifact.registry_path).name
+            prompt_path.parent.mkdir(parents=True, exist_ok=True)
+
+            source_ref = artifact.created_from
+            source_data = self._load_prompt_yaml(source_ref) if source_ref else None
+
+            # Use auto-generated content from artifact if available,
+            # otherwise derive from source prompt
+            if artifact.content:
+                # Content was auto-generated by patch generation (e.g., failure-driven rules)
+                prompt_data = {
+                    "prompt_ref": artifact.prompt_ref,
+                    "version": "1.0.0",
+                    "status": "experimental",
+                    "created_from": source_ref or "",
+                    "created_by": "skill_evolution_pipeline",
+                    "created_at": datetime.now().strftime("%Y-%m-%d"),
+                    "content": artifact.content,
+                    "diff_summary": artifact.diff_summary,
+                    "validation": {"passed_regression_runs": []},
+                    "hash": "",
+                }
+                prompt_path.write_text(
+                    yaml.dump(prompt_data, allow_unicode=True, default_flow_style=False, sort_keys=False),
+                    encoding="utf-8",
+                )
+            elif source_data:
+                derived = dict(source_data)
+                derived["prompt_ref"] = artifact.prompt_ref
+                derived["version"] = "1.0.0"
+                derived["status"] = "experimental"
+                derived["created_from"] = source_ref
+                derived["created_by"] = "skill_evolution_pipeline"
+                derived["created_at"] = datetime.now().strftime("%Y-%m-%d")
+                derived["diff_summary"] = artifact.diff_summary
+                derived["validation"] = {"passed_regression_runs": []}
+                derived["hash"] = ""
+                prompt_path.write_text(
+                    yaml.dump(derived, allow_unicode=True, default_flow_style=False, sort_keys=False),
+                    encoding="utf-8",
+                )
+            else:
+                placeholder = {
+                    "prompt_ref": artifact.prompt_ref,
+                    "version": "1.0.0",
+                    "status": "experimental",
+                    "created_from": artifact.created_from or "",
+                    "created_by": "skill_evolution_pipeline",
+                    "created_at": datetime.now().strftime("%Y-%m-%d"),
+                    "content": f"# TODO: Generate content for {artifact.prompt_ref}\n# Based on: {artifact.created_from}\n# Diff: {artifact.diff_summary}\n",
+                    "diff_summary": artifact.diff_summary,
+                    "validation": {"passed_regression_runs": []},
+                    "hash": "",
+                }
+                prompt_path.write_text(
+                    yaml.dump(placeholder, allow_unicode=True, default_flow_style=False, sort_keys=False),
+                    encoding="utf-8",
+                )
             written.append(str(prompt_path))
 
         return written

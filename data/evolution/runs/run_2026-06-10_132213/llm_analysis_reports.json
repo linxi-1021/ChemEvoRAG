@@ -1,0 +1,18 @@
+[
+  {
+    "cluster_id": "assessment_false_negative__strategy.assessment__evidence_assessment",
+    "primary_failure_type": "",
+    "contributing_failure_types": [],
+    "confidence": 0.0,
+    "coverage_gap": false,
+    "explanation": "",
+    "supporting_trace_signals": [],
+    "common_root_causes": [],
+    "subclusters": [],
+    "proposed_patch_targets": [],
+    "recommended_changes": {},
+    "should_generate_patch": false,
+    "risk_level": "high",
+    "raw_llm_response": "[LLM call failed]"
+  }
+]

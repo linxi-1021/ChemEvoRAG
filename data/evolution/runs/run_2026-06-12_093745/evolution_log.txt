@@ -1,0 +1,58 @@
+Run directory: D:\Desktop\evo\ChemEvoRAG_Phase1-main\data\evolution\runs\run_2026-06-12_093745
+Trace report: 6 failures, 26 partial, 86 success
+
+[SuccessAnalysis] Analyzing successful traces...
+  Global: 5 intents analyzed
+  Contrastive: 2 clusters analyzed
+
+[Mutation] Cluster: generation_error__strategy.answer_generation__answer_generation
+  Failure type: generation_error, Skills: ['alias_resolution', 'entity_lookup']
+  Generated 1 mutation patch(es)
+
+[Mutation] Cluster: assessment_false_negative__strategy.assessment__evidence_assessment
+  Failure type: assessment_false_negative, Skills: ['reaction_comparison', 'reaction_condition_query']
+  Generated 7 mutation patch(es)
+
+[Distillation] 0 template_add, 5 cross-skill promotions
+
+[Integration] 13 selected, 0 rejected, 0 conflicts resolved
+Schema validation: 13 accepted, 0 rejected
+[1/13] Validating answer_generation_system_v2_prompt_content
+  [FAIL] ['Regression failed: Targeted improvement -0.4470 below minimum 0.05']
+[2/13] Validating evidence_assessment_system_v2_prompt_content
+  [OK] score=0.8600, delta=-0.0061
+[3/13] Validating 
+  [OK] score=0.8700, delta=+0.0039
+[4/13] Validating 
+  [OK] score=0.8600, delta=-0.0061
+[5/13] Validating 
+  [OK] score=0.8567, delta=-0.0094
+[6/13] Validating 
+  [FAIL] ['Regression failed: Targeted improvement 0.0295 below minimum 0.05']
+[7/13] Validating alias_resolution_cross_skill_promotion_1
+  [FAIL] ['Regression failed: Score dropped by 0.0261 (max allowed: 0.0100)']
+[8/13] Validating reaction_condition_query_cross_skill_promotion_2
+  [FAIL] ['Regression failed: Score dropped by 0.0494 (max allowed: 0.0100)']
+[9/13] Validating entity_lookup_cross_skill_promotion_3
+  [FAIL] ['Regression failed: Score dropped by 0.0128 (max allowed: 0.0100)']
+[10/13] Validating property_query_cross_skill_promotion_4
+  [FAIL] ['Regression failed: Score dropped by 0.0128 (max allowed: 0.0100)']
+[11/13] Validating property_query_cross_skill_promotion_5
+  [FAIL] ['Regression failed: Score dropped by 0.0128 (max allowed: 0.0100)']
+[12/13] Validating reaction_comparison_evidence_assessment_system_v2_ref
+  [OK] score=0.8700, delta=+0.0039
+[13/13] Validating reaction_condition_query_evidence_assessment_system_v2_ref
+  [FAIL] ['Regression failed: Targeted improvement 0.0295 below minimum 0.05']
+
+[Refine Round 1/5] 1 prompt patch(es) failed — returning to Stage 4A
+
+FATAL: [WinError 3] 系统找不到指定的路径。: 'D:\\Desktop\\evo\\ChemEvoRAG_Phase1-main\\data\\evolution\\runs\\run_2026-06-12_093745\\per_patch_evals\\answer_generation_system_v2_prompt_content'
+Traceback (most recent call last):
+  File "D:\Desktop\evo\ChemEvoRAG_Phase1-main\src\skill_evolution\runner.py", line 131, in run
+    fb = self._collect_regression_feedback(pd)
+  File "D:\Desktop\evo\ChemEvoRAG_Phase1-main\src\skill_evolution\runner.py", line 598, in _collect_regression_feedback
+    for d in persist_dir.iterdir():
+  File "C:\Users\ASUS\.conda\envs\chemevorag\lib\pathlib.py", line 1017, in iterdir
+    for name in self._accessor.listdir(self):
+FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'D:\\Desktop\\evo\\ChemEvoRAG_Phase1-main\\data\\evolution\\runs\\run_2026-06-12_093745\\per_patch_evals\\answer_generation_system_v2_prompt_content'
+

@@ -134,68 +134,7 @@ def build_sampling_metadata(
 
 EVAL_DIR = PROJECT_ROOT / "data" / "eval"
 
-JUDGE_PROMPT = """\
-You are an evaluator. Compare the system's answer to the ground-truth answer.
-Score from 0 to 1:
-  1.0 = system answer is fully correct, contains all key facts from ground truth
-  0.7 = mostly correct, minor omissions or imprecise wording
-  0.5 = partially correct, some right facts but missing important details
-  0.3 = vaguely related but factually wrong or very incomplete
-  0.0 = completely wrong or unrelated
-
-Also note whether key_entities from the ground truth appear in the system answer.
-
-Return ONLY a JSON object:
-{
-  "score": 0.0,
-  "key_entities_found": ["entity1"],
-  "key_entities_missing": ["entity2"],
-  "reasoning": "<one sentence explaining the score>"
-}"""
-
-
-def _judge_answer(system_answer: str, ground_truth: str, key_entities: list[str]) -> dict:
-    key = os.environ.get("API_KEY")
-    url = os.environ.get("BASE_URL")
-    model = os.environ.get("LLM_MODEL", "gpt-5-mini")
-    if not key:
-        return {"score": 0.0, "key_entities_found": [], "key_entities_missing": key_entities, "reasoning": "no API key"}
-
-    try:
-        from openai import OpenAI
-    except ImportError:
-        return {"score": 0.0, "key_entities_found": [], "key_entities_missing": key_entities, "reasoning": "openai not installed"}
-
-    client = OpenAI(api_key=key, base_url=url or None)
-
-    entities_str = ", ".join(key_entities) if key_entities else "none"
-    user_prompt = (
-        f"SYSTEM ANSWER:\n{system_answer}\n\n"
-        f"GROUND TRUTH:\n{ground_truth}\n\n"
-        f"KEY ENTITIES TO CHECK: [{entities_str}]"
-    )
-
-    try:
-        r = client.chat.completions.create(
-            model=model,
-            messages=[
-                {"role": "system", "content": JUDGE_PROMPT},
-                {"role": "user", "content": user_prompt},
-            ],
-            temperature=0.1,
-            seed=42,
-            max_tokens=int(os.environ.get("LLM_MAX_TOKENS", "16384")),
-            extra_body={},
-        )
-        raw = r.choices[0].message.content.strip()
-        if raw.startswith("```"):
-            raw = raw.split("```")[1]
-            if raw.startswith("json"):
-                raw = raw[4:]
-            raw = raw.strip()
-        return json.loads(raw)
-    except Exception as exc:
-        return {"score": 0.0, "key_entities_found": [], "key_entities_missing": key_entities, "reasoning": str(exc)}
+from judge import judge_answer
 
 
 def _save_results(
@@ -290,7 +229,7 @@ def _eval_one(
         confidence = 0.0
 
     try:
-        judge = _judge_answer(system_answer, ground_truth, key_entities)
+        judge = judge_answer(system_answer, ground_truth, key_entities)
     except Exception as exc:
         judge = {
             "score": 0.0,

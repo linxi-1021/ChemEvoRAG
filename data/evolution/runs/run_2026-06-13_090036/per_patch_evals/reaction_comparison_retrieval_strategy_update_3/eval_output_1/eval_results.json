@@ -1,0 +1,184 @@
+{
+  "summary": {
+    "total": 5,
+    "average_score": 0.6,
+    "by_intent": {
+      "entity_lookup": 0.5,
+      "property_query": 0.5,
+      "reaction_comparison": 1.0
+    }
+  },
+  "results": [
+    {
+      "id": "q5",
+      "source_paper": "1.pdf",
+      "intent": "property_query",
+      "question": "What isolated yield (%) of phenyl methyl ketone (acetophenone) was obtained in the 4.0 mmol (large-scale) oxidation of 1-phenylethanol reported in Eq. (2)?",
+      "ground_truth": "91% isolated yield of phenyl methyl ketone (acetophenone).",
+      "system_answer": "The isolated yield of phenyl methyl ketone (acetophenone) in the 4.0 mmol (large-scale) oxidation of 1-phenylethanol reported in Eq. (2) is 91% (evidence: block_1_0122, block_1_0036). The evidence describes a 4.0 mol (not mmol) scale reaction that gave 436.6414 g of product, corresponding to a 91% isolated yield (evidence: block_1_0122).",
+      "evidence_ids": [
+        "block_1_0041",
+        "block_1_0122",
+        "block_1_0036",
+        "block_1_0009",
+        "block_1_0121",
+        "block_1_0080",
+        "block_1_0124",
+        "block_1_0071",
+        "block_1_0055",
+        "block_1_0103",
+        "block_1_0017"
+      ],
+      "confidence": 0.92,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1-phenylethanol",
+        "phenyl methyl ketone",
+        "Eq. (2)"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states the 91% isolated yield of phenyl methyl ketone from the oxidation of 1-phenylethanol in Eq. (2), matching the ground truth exactly, and all key entities are present.",
+      "score": 1.0,
+      "intent_key": "property_query"
+    },
+    {
+      "id": "q4",
+      "source_paper": "4.pdf",
+      "intent": "reaction_comparison",
+      "question": "Which gave the higher yield in the paper: oxidation of 1-(4-isopropylphenyl)but-3-yn-1-ol (1b) to 3b, or oxidation of 1-(4-methoxyphenyl)but-3-yn-1-ol (1d) to 3d?",
+      "ground_truth": "Oxidation of 1b → 3b gave 91%, whereas 1d → 3d gave 81%; 1b → 3b is higher (91% vs 81%)",
+      "system_answer": "The oxidation of 1-(4-isopropylphenyl)but-3-yn-1-ol (1b) to 3b gave a higher yield than the oxidation of 1-(4-methoxyphenyl)but-3-yn-1-ol (1d) to 3d. At the 1.0 mmol scale, 1b gave 91% yield (evidence: block_4_0044) while 1d gave 81% yield (evidence: block_4_0051). At the 5.0 mmol scale, 1b gave 86% yield (evidence: block_4_0046) while 1d gave 88% yield (evidence: block_4_0053), but the 1.0 mmol scale comparison is more directly comparable as both used the same procedure.",
+      "evidence_ids": [
+        "block_4_0046",
+        "block_4_0029",
+        "block_4_0044",
+        "block_4_0051",
+        "block_4_0053",
+        "block_4_0065",
+        "block_4_0040",
+        "block_4_0073",
+        "block_4_0055",
+        "block_4_0057",
+        "block_4_0059",
+        "block_4_0067",
+        "block_4_0071"
+      ],
+      "confidence": 0.95,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1b",
+        "3b",
+        "1d",
+        "3d"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states that 1b to 3b gave a higher yield (91%) than 1d to 3d (81%), matching the ground truth exactly, and includes all key entities.",
+      "score": 1.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q2",
+      "source_paper": "8.pdf",
+      "intent": "entity_lookup",
+      "question": "What is the chemical name of compound 2t as given in the paper?",
+      "ground_truth": "2t is 4-acetylbenzoic acid (4-Acetylbenzoic Acid, listed as 2t in the Experimental section).",
+      "system_answer": "The chemical name of compound 2t as given in the paper is 4-Acetylbenzoic Acid (evidence: block_8_0227).",
+      "evidence_ids": [
+        "block_8_0009",
+        "block_8_0010",
+        "block_8_0011",
+        "block_8_0018",
+        "block_8_0227",
+        "block_8_0013",
+        "block_8_0020",
+        "block_8_0122"
+      ],
+      "confidence": 0.67,
+      "judge_score": 1.0,
+      "entities_found": [
+        "2t",
+        "4-Acetylbenzoic Acid"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies the chemical name of compound 2t as 4-Acetylbenzoic Acid, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q2",
+      "source_paper": "18.pdf",
+      "intent": "entity_lookup",
+      "question": "What is the name of product 2b as given in the paper (structure/identified name)?",
+      "ground_truth": "4-Phenylbut-3-yn-2-one (2b)",
+      "system_answer": "The evidence does not contain the name of product 2b. The retrieved documents refer to product 2b only as a yield value (e.g., '77(2b)' and '91 (2b)' in Table 2) without providing its chemical name or structure (evidence: block_18_0015).",
+      "evidence_ids": [
+        "block_18_0012",
+        "block_18_0014",
+        "block_18_0005",
+        "block_18_0008",
+        "block_18_0020",
+        "block_18_0024",
+        "block_18_0015",
+        "block_18_0021",
+        "block_18_0010"
+      ],
+      "confidence": 0.64,
+      "judge_score": 0.0,
+      "entities_found": [
+        "2b"
+      ],
+      "entities_missing": [
+        "4-phenylbut-3-yn-2-one"
+      ],
+      "judge_reasoning": "The system answer incorrectly states that the name of product 2b is not in the evidence, while the ground truth provides the exact name '4-Phenylbut-3-yn-2-one (2b)', so it is completely wrong.",
+      "score": 0.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q5",
+      "source_paper": "19.pdf",
+      "intent": "property_query",
+      "question": "What yield values are reported for aldehyde 2a: the isolated yield shown in Scheme 2 and the NMR yield reported in Table 1 (optimized conditions)?",
+      "ground_truth": "Isolated yield in Scheme 2: 82% (2a; noted as 2a:4a = 98:2); NMR yield in Table 1 (optimized entry): 71% NMR yield",
+      "system_answer": "Retrieved reaction evidence: | Entry | X (mol%) | solvent | Recovery of 1a (%) | NMR yield (%) |\n| --- | --- | --- | --- | --- |\n| 2a | 3a | 1a&#x27; | 1a&#x27;&#x27; | 4a | 5a |\n| 1 | 0 | Toluene | 84 | 10 | 0 | 0 | 0 | 0 | 16 |\n| 2 | 6 | Toluene | 76 | 18 | 0 | 0 | 0 | 0 | 24 |\n| 3 | 12 | Toluene | 2 | 74 | 18 | 1 | 0 | 2 | 92 |\n| 4 | 18 | Toluene | 9 | 71 | 0 | 7 | 4 | 2 | 85 |\n| 5 | 18 | DCM | 0 | 28 | 66 | 0 | 0 | 3 | 96 |\n| 6 | 18 | MeCN | 0 | 16 | 74 | 0 | 0 | 3 | 98 |\n| 7 | 18 | MTBE | 23 | 30 | 16 | 22 | 8 | 2 | 78 |\n| $8^{[b]}$ | 18 | Toluene | 92 | 8 | 0 | 0 | 0 | 0 | 8 |\n| $9^{[c]}$ | 18 | Toluene | 100 | 0 | 0 | 0 | 0 | 0 | 0 |\n| $10^{[d]}$ | 18 | Toluene | 100 | 0 | 0 | 0 | 0 | 0 | 0 |\n| $11^{[e]}$ | 18 | Toluene | 13 | 66 | 0 | 9 | 5 | 2 | 84 | | [a] Reaction conditions: To a 25 mL flask were added KCl, TEMPO, and Fe(NO ) · 9H O sequentially. After adding 1.0 mL of solvent, the resulting mixture was stirred at rt for 5 min, then 1 a (0.5 mmol) and 1.0 mL of solvent were added. After the installation of an | { { 0 } _ { 2 } } | balloon, the resulting mixture was stirred at 25°C for 20 h. The recovery and NMR yield were determined by 1 H NMR analysis of the crude product. [b] 10 mol% Cu(NO ) · 3H O was used instead of | \\mathsf { F e } ( \\mathsf { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathsf { H } _ { 2 } \\mathsf { O } . | . [c] The reaction was conducted in the absence of | \\mathsf { F e } ( \\mathsf { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathsf { H } _ { 2 } \\mathsf { O } . | [d] The reaction was conducted in the absence of TEMPO. [e] The reaction was conducted without pre-stirring the catalysts.",
+      "evidence_ids": [
+        "block_19_0010",
+        "block_19_0013",
+        "block_19_0006",
+        "block_19_0012",
+        "block_19_0008",
+        "block_19_0022",
+        "block_19_0009",
+        "block_19_0014",
+        "block_19_0004",
+        "block_19_0016"
+      ],
+      "confidence": 0.865,
+      "judge_score": 0.0,
+      "entities_found": [
+        "2a"
+      ],
+      "entities_missing": [
+        "Scheme 2",
+        "Table 1 entry 4"
+      ],
+      "judge_reasoning": "The system answer provides a table of NMR yields but does not mention the isolated yield of 82% from Scheme 2 or the specific 71% NMR yield from Table 1 entry 4, and the key entities 'Scheme 2' and 'Table 1 entry 4' are missing.",
+      "score": 0.0,
+      "intent_key": "property_query"
+    }
+  ],
+  "metadata": {
+    "sampling": {
+      "mode": "random",
+      "limit": 5,
+      "seed": 43,
+      "selected_question_ids": [
+        "q5",
+        "q4",
+        "q2",
+        "q2",
+        "q5"
+      ]
+    }
+  }
+}

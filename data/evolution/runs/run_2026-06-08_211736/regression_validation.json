@@ -1,0 +1,191 @@
+[
+  {
+    "patch_id": "reaction_condition_query_round1_patch1",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.0000 below minimum 0.8; Score dropped by 0.8661 (max allowed: 0.0100); Targeted improvement -0.8227 below minimum 0.05; Failed cases increased by 118 (max allowed: 1); 110 new high-severity failure(s) detected"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.8661016949152545,
+      "reason": "Average score 0.0000 below minimum 0.8; Score dropped by 0.8661 (max allowed: 0.0100); Targeted improvement -0.8227 below minimum 0.05; Failed cases increased by 118 (max allowed: 1); 110 new high-severity failure(s) detected",
+      "average_score": 0.0,
+      "score_delta": -0.8661016949152545,
+      "targeted_improvement": -0.8227272727272728,
+      "failed_cases_increase": 118
+    },
+    "average_score": 0.0,
+    "score_delta": -0.8661016949152545,
+    "targeted_improvement": -0.8227272727272728,
+    "failed_cases_increase": 118
+  },
+  {
+    "patch_id": "reaction_comparison_round1_patch1",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.0000 below minimum 0.8; Score dropped by 0.8661 (max allowed: 0.0100); Targeted improvement -0.4091 below minimum 0.05; Failed cases increased by 118 (max allowed: 1); 110 new high-severity failure(s) detected"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.8661016949152545,
+      "reason": "Average score 0.0000 below minimum 0.8; Score dropped by 0.8661 (max allowed: 0.0100); Targeted improvement -0.4091 below minimum 0.05; Failed cases increased by 118 (max allowed: 1); 110 new high-severity failure(s) detected",
+      "average_score": 0.0,
+      "score_delta": -0.8661016949152545,
+      "targeted_improvement": -0.4090909090909091,
+      "failed_cases_increase": 118
+    },
+    "average_score": 0.0,
+    "score_delta": -0.8661016949152545,
+    "targeted_improvement": -0.4090909090909091,
+    "failed_cases_increase": 118
+  },
+  {
+    "patch_id": "property_query_template_distill_2",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.0000 below minimum 0.8; Score dropped by 0.8661 (max allowed: 0.0100); Failed cases increased by 118 (max allowed: 1); 110 new high-severity failure(s) detected"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.8661016949152545,
+      "reason": "Average score 0.0000 below minimum 0.8; Score dropped by 0.8661 (max allowed: 0.0100); Failed cases increased by 118 (max allowed: 1); 110 new high-severity failure(s) detected",
+      "average_score": 0.0,
+      "score_delta": -0.8661016949152545,
+      "targeted_improvement": 0.0,
+      "failed_cases_increase": 118
+    },
+    "average_score": 0.0,
+    "score_delta": -0.8661016949152545,
+    "targeted_improvement": 0.0,
+    "failed_cases_increase": 118
+  },
+  {
+    "patch_id": "reaction_comparison_template_distill_9",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.0000 below minimum 0.8; Score dropped by 0.8661 (max allowed: 0.0100); Failed cases increased by 118 (max allowed: 1); 110 new high-severity failure(s) detected"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.8661016949152545,
+      "reason": "Average score 0.0000 below minimum 0.8; Score dropped by 0.8661 (max allowed: 0.0100); Failed cases increased by 118 (max allowed: 1); 110 new high-severity failure(s) detected",
+      "average_score": 0.0,
+      "score_delta": -0.8661016949152545,
+      "targeted_improvement": 0.0,
+      "failed_cases_increase": 118
+    },
+    "average_score": 0.0,
+    "score_delta": -0.8661016949152545,
+    "targeted_improvement": 0.0,
+    "failed_cases_increase": 118
+  },
+  {
+    "patch_id": "alias_resolution_template_distill_10",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.0000 below minimum 0.8; Score dropped by 0.8661 (max allowed: 0.0100); Failed cases increased by 118 (max allowed: 1); 110 new high-severity failure(s) detected"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.8661016949152545,
+      "reason": "Average score 0.0000 below minimum 0.8; Score dropped by 0.8661 (max allowed: 0.0100); Failed cases increased by 118 (max allowed: 1); 110 new high-severity failure(s) detected",
+      "average_score": 0.0,
+      "score_delta": -0.8661016949152545,
+      "targeted_improvement": 0.0,
+      "failed_cases_increase": 118
+    },
+    "average_score": 0.0,
+    "score_delta": -0.8661016949152545,
+    "targeted_improvement": 0.0,
+    "failed_cases_increase": 118
+  },
+  {
+    "patch_id": "reaction_condition_query_template_distill_12",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.0000 below minimum 0.8; Score dropped by 0.8661 (max allowed: 0.0100); Failed cases increased by 118 (max allowed: 1); 110 new high-severity failure(s) detected"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.8661016949152545,
+      "reason": "Average score 0.0000 below minimum 0.8; Score dropped by 0.8661 (max allowed: 0.0100); Failed cases increased by 118 (max allowed: 1); 110 new high-severity failure(s) detected",
+      "average_score": 0.0,
+      "score_delta": -0.8661016949152545,
+      "targeted_improvement": 0.0,
+      "failed_cases_increase": 118
+    },
+    "average_score": 0.0,
+    "score_delta": -0.8661016949152545,
+    "targeted_improvement": 0.0,
+    "failed_cases_increase": 118
+  },
+  {
+    "patch_id": "entity_lookup_template_distill_13",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.0000 below minimum 0.8; Score dropped by 0.8661 (max allowed: 0.0100); Failed cases increased by 118 (max allowed: 1); 110 new high-severity failure(s) detected"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.8661016949152545,
+      "reason": "Average score 0.0000 below minimum 0.8; Score dropped by 0.8661 (max allowed: 0.0100); Failed cases increased by 118 (max allowed: 1); 110 new high-severity failure(s) detected",
+      "average_score": 0.0,
+      "score_delta": -0.8661016949152545,
+      "targeted_improvement": 0.0,
+      "failed_cases_increase": 118
+    },
+    "average_score": 0.0,
+    "score_delta": -0.8661016949152545,
+    "targeted_improvement": 0.0,
+    "failed_cases_increase": 118
+  },
+  {
+    "patch_id": "entity_lookup_template_distill_15",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.0000 below minimum 0.8; Score dropped by 0.8661 (max allowed: 0.0100); Failed cases increased by 118 (max allowed: 1); 110 new high-severity failure(s) detected"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.8661016949152545,
+      "reason": "Average score 0.0000 below minimum 0.8; Score dropped by 0.8661 (max allowed: 0.0100); Failed cases increased by 118 (max allowed: 1); 110 new high-severity failure(s) detected",
+      "average_score": 0.0,
+      "score_delta": -0.8661016949152545,
+      "targeted_improvement": 0.0,
+      "failed_cases_increase": 118
+    },
+    "average_score": 0.0,
+    "score_delta": -0.8661016949152545,
+    "targeted_improvement": 0.0,
+    "failed_cases_increase": 118
+  },
+  {
+    "patch_id": "reaction_condition_query_template_distill_21",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.0000 below minimum 0.8; Score dropped by 0.8661 (max allowed: 0.0100); Failed cases increased by 118 (max allowed: 1); 110 new high-severity failure(s) detected"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.8661016949152545,
+      "reason": "Average score 0.0000 below minimum 0.8; Score dropped by 0.8661 (max allowed: 0.0100); Failed cases increased by 118 (max allowed: 1); 110 new high-severity failure(s) detected",
+      "average_score": 0.0,
+      "score_delta": -0.8661016949152545,
+      "targeted_improvement": 0.0,
+      "failed_cases_increase": 118
+    },
+    "average_score": 0.0,
+    "score_delta": -0.8661016949152545,
+    "targeted_improvement": 0.0,
+    "failed_cases_increase": 118
+  }
+]

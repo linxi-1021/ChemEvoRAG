@@ -1,0 +1,341 @@
+[
+  {
+    "patch_id": "reaction_condition_query_round1_patch1",
+    "skill_name": "reaction_condition_query",
+    "skill_version": "1.0.0",
+    "source_failure_ids": [
+      "q3"
+    ],
+    "primary_failure_type": "assessment_false_negative",
+    "target_path": "strategy.assessment",
+    "operation": "update",
+    "current_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM"
+    },
+    "proposed_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_V2"
+    },
+    "prompt_artifacts": [
+      {
+        "prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_V2",
+        "created_from": "EVIDENCE_ASSESSMENT_SYSTEM",
+        "diff_summary": "Strengthen assessment to detect when numeric values are present in evidence but not recognized.",
+        "registry_path": "config/prompts/evidence_assessment_system_v2.yaml"
+      }
+    ],
+    "rationale": "Evidence contained target values but assessment judged insufficient.",
+    "expected_improvement": "Reduce false negatives in evidence assessment for numeric extraction.",
+    "risk_level": "medium",
+    "confidence": 0.85,
+    "status": "candidate"
+  },
+  {
+    "patch_id": "reaction_comparison_round1_patch1",
+    "skill_name": "reaction_comparison",
+    "skill_version": "1.0.0",
+    "source_failure_ids": [
+      "q_batch2_3"
+    ],
+    "primary_failure_type": "assessment_false_negative",
+    "target_path": "strategy.assessment",
+    "operation": "update",
+    "current_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM"
+    },
+    "proposed_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_V2"
+    },
+    "prompt_artifacts": [
+      {
+        "prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_V2",
+        "created_from": "EVIDENCE_ASSESSMENT_SYSTEM",
+        "diff_summary": "Strengthen assessment to detect when numeric values are present in evidence but not recognized.",
+        "registry_path": "config/prompts/evidence_assessment_system_v2.yaml"
+      }
+    ],
+    "rationale": "Evidence contained target values but assessment judged insufficient.",
+    "expected_improvement": "Reduce false negatives in evidence assessment for numeric extraction.",
+    "risk_level": "medium",
+    "confidence": 0.85,
+    "status": "candidate"
+  },
+  {
+    "patch_id": "entity_lookup_round1_patch1",
+    "skill_name": "entity_lookup",
+    "skill_version": "1.0.0",
+    "source_failure_ids": [
+      "q_batch2_2"
+    ],
+    "primary_failure_type": "assessment_false_negative",
+    "target_path": "strategy.assessment",
+    "operation": "update",
+    "current_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM"
+    },
+    "proposed_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_V2"
+    },
+    "prompt_artifacts": [
+      {
+        "prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_V2",
+        "created_from": "EVIDENCE_ASSESSMENT_SYSTEM",
+        "diff_summary": "Strengthen assessment to detect when numeric values are present in evidence but not recognized.",
+        "registry_path": "config/prompts/evidence_assessment_system_v2.yaml"
+      }
+    ],
+    "rationale": "Evidence contained target values but assessment judged insufficient.",
+    "expected_improvement": "Reduce false negatives in evidence assessment for numeric extraction.",
+    "risk_level": "medium",
+    "confidence": 0.85,
+    "status": "candidate"
+  },
+  {
+    "patch_id": "entity_lookup_template_distill_1",
+    "skill_name": "entity_lookup",
+    "skill_version": "1.0.0",
+    "source_failure_ids": [],
+    "primary_failure_type": "unknown_failure",
+    "target_path": "templates",
+    "operation": "add",
+    "current_value": {},
+    "proposed_value": {
+      "name": "distilled_simple_lookup_entity_evidence_numeric_value_entity_lookup",
+      "description": "Auto-distilled from 3 successful queries with structure 'simple_lookup_entity_evidence_numeric_value' in entity_lookup.",
+      "applicable_when": {
+        "intent": "entity_lookup",
+        "query_structure": "simple_lookup",
+        "evidence_type": "entity_evidence"
+      },
+      "not_applicable_when": [],
+      "slots": [],
+      "examples": []
+    },
+    "prompt_artifacts": [],
+    "rationale": "Structural pattern 'simple_lookup_entity_evidence_numeric_value' succeeded 3 times in entity_lookup (avg 1.00). Query structure: simple_lookup, evidence type: entity_evidence, answer structure: numeric_value.",
+    "expected_improvement": "Reusable template for simple_lookup queries using entity_evidence.",
+    "risk_level": "low",
+    "confidence": 0.95,
+    "status": "candidate"
+  },
+  {
+    "patch_id": "alias_resolution_template_distill_3",
+    "skill_name": "alias_resolution",
+    "skill_version": "1.0.0",
+    "source_failure_ids": [],
+    "primary_failure_type": "unknown_failure",
+    "target_path": "templates",
+    "operation": "add",
+    "current_value": {},
+    "proposed_value": {
+      "name": "distilled_simple_lookup_entity_evidence_list_alias_resolution",
+      "description": "Auto-distilled from 4 successful queries with structure 'simple_lookup_entity_evidence_list' in alias_resolution.",
+      "applicable_when": {
+        "intent": "alias_resolution",
+        "query_structure": "simple_lookup",
+        "evidence_type": "entity_evidence"
+      },
+      "not_applicable_when": [],
+      "slots": [],
+      "examples": []
+    },
+    "prompt_artifacts": [],
+    "rationale": "Structural pattern 'simple_lookup_entity_evidence_list' succeeded 4 times in alias_resolution (avg 1.00). Query structure: simple_lookup, evidence type: entity_evidence, answer structure: list.",
+    "expected_improvement": "Reusable template for simple_lookup queries using entity_evidence.",
+    "risk_level": "low",
+    "confidence": 0.95,
+    "status": "candidate"
+  },
+  {
+    "patch_id": "reaction_comparison_template_distill_9",
+    "skill_name": "reaction_comparison",
+    "skill_version": "1.0.0",
+    "source_failure_ids": [],
+    "primary_failure_type": "unknown_failure",
+    "target_path": "templates",
+    "operation": "add",
+    "current_value": {},
+    "proposed_value": {
+      "name": "distilled_comparison_table_evidence_numeric_value_reaction_comparison",
+      "description": "Auto-distilled from 11 successful queries with structure 'comparison_table_evidence_numeric_value' in reaction_comparison.",
+      "applicable_when": {
+        "intent": "reaction_comparison",
+        "query_signals": [
+          "compare",
+          "versus",
+          "higher",
+          "lower",
+          "best"
+        ],
+        "query_structure": "comparison",
+        "evidence_type": "table_evidence"
+      },
+      "not_applicable_when": [],
+      "slots": [],
+      "examples": []
+    },
+    "prompt_artifacts": [],
+    "rationale": "Structural pattern 'comparison_table_evidence_numeric_value' succeeded 11 times in reaction_comparison (avg 1.00). Query structure: comparison, evidence type: table_evidence, answer structure: numeric_value.",
+    "expected_improvement": "Reusable template for comparison queries using table_evidence.",
+    "risk_level": "low",
+    "confidence": 0.95,
+    "status": "candidate"
+  },
+  {
+    "patch_id": "reaction_condition_query_template_distill_11",
+    "skill_name": "reaction_condition_query",
+    "skill_version": "1.0.0",
+    "source_failure_ids": [],
+    "primary_failure_type": "unknown_failure",
+    "target_path": "templates",
+    "operation": "add",
+    "current_value": {},
+    "proposed_value": {
+      "name": "distilled_property_extraction_table_evidence_list_reaction_condition_query",
+      "description": "Auto-distilled from 6 successful queries with structure 'property_extraction_table_evidence_list' in reaction_condition_query.",
+      "applicable_when": {
+        "intent": "reaction_condition_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ],
+        "query_structure": "property_extraction",
+        "evidence_type": "table_evidence"
+      },
+      "not_applicable_when": [],
+      "slots": [],
+      "examples": []
+    },
+    "prompt_artifacts": [],
+    "rationale": "Structural pattern 'property_extraction_table_evidence_list' succeeded 6 times in reaction_condition_query (avg 1.00). Query structure: property_extraction, evidence type: table_evidence, answer structure: list.",
+    "expected_improvement": "Reusable template for property_extraction queries using table_evidence.",
+    "risk_level": "low",
+    "confidence": 0.95,
+    "status": "candidate"
+  },
+  {
+    "patch_id": "entity_lookup_template_distill_12",
+    "skill_name": "entity_lookup",
+    "skill_version": "1.0.0",
+    "source_failure_ids": [],
+    "primary_failure_type": "unknown_failure",
+    "target_path": "templates",
+    "operation": "add",
+    "current_value": {},
+    "proposed_value": {
+      "name": "distilled_simple_lookup_table_evidence_list_entity_lookup",
+      "description": "Auto-distilled from 8 successful queries with structure 'simple_lookup_table_evidence_list' in entity_lookup.",
+      "applicable_when": {
+        "intent": "entity_lookup",
+        "query_structure": "simple_lookup",
+        "evidence_type": "table_evidence"
+      },
+      "not_applicable_when": [],
+      "slots": [],
+      "examples": []
+    },
+    "prompt_artifacts": [],
+    "rationale": "Structural pattern 'simple_lookup_table_evidence_list' succeeded 8 times in entity_lookup (avg 1.00). Query structure: simple_lookup, evidence type: table_evidence, answer structure: list.",
+    "expected_improvement": "Reusable template for simple_lookup queries using table_evidence.",
+    "risk_level": "low",
+    "confidence": 0.95,
+    "status": "candidate"
+  },
+  {
+    "patch_id": "property_query_template_distill_13",
+    "skill_name": "property_query",
+    "skill_version": "1.0.0",
+    "source_failure_ids": [],
+    "primary_failure_type": "unknown_failure",
+    "target_path": "templates",
+    "operation": "add",
+    "current_value": {},
+    "proposed_value": {
+      "name": "distilled_property_extraction_table_evidence_numeric_value_property_query",
+      "description": "Auto-distilled from 13 successful queries with structure 'property_extraction_table_evidence_numeric_value' in property_query.",
+      "applicable_when": {
+        "intent": "property_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ],
+        "query_structure": "property_extraction",
+        "evidence_type": "table_evidence"
+      },
+      "not_applicable_when": [],
+      "slots": [],
+      "examples": []
+    },
+    "prompt_artifacts": [],
+    "rationale": "Structural pattern 'property_extraction_table_evidence_numeric_value' succeeded 13 times in property_query (avg 1.00). Query structure: property_extraction, evidence type: table_evidence, answer structure: numeric_value.",
+    "expected_improvement": "Reusable template for property_extraction queries using table_evidence.",
+    "risk_level": "low",
+    "confidence": 0.95,
+    "status": "candidate"
+  },
+  {
+    "patch_id": "reaction_condition_query_template_distill_20",
+    "skill_name": "reaction_condition_query",
+    "skill_version": "1.0.0",
+    "source_failure_ids": [],
+    "primary_failure_type": "unknown_failure",
+    "target_path": "templates",
+    "operation": "add",
+    "current_value": {},
+    "proposed_value": {
+      "name": "distilled_property_extraction_table_evidence_numeric_value_reaction_condition_query",
+      "description": "Auto-distilled from 6 successful queries with structure 'property_extraction_table_evidence_numeric_value' in reaction_condition_query.",
+      "applicable_when": {
+        "intent": "reaction_condition_query",
+        "query_signals": [
+          "yield",
+          "temperature",
+          "solvent",
+          "catalyst"
+        ],
+        "query_structure": "property_extraction",
+        "evidence_type": "table_evidence"
+      },
+      "not_applicable_when": [],
+      "slots": [],
+      "examples": []
+    },
+    "prompt_artifacts": [],
+    "rationale": "Structural pattern 'property_extraction_table_evidence_numeric_value' succeeded 6 times in reaction_condition_query (avg 1.00). Query structure: property_extraction, evidence type: table_evidence, answer structure: numeric_value.",
+    "expected_improvement": "Reusable template for property_extraction queries using table_evidence.",
+    "risk_level": "low",
+    "confidence": 0.95,
+    "status": "candidate"
+  },
+  {
+    "patch_id": "alias_resolution_template_distill_22",
+    "skill_name": "alias_resolution",
+    "skill_version": "1.0.0",
+    "source_failure_ids": [],
+    "primary_failure_type": "unknown_failure",
+    "target_path": "templates",
+    "operation": "add",
+    "current_value": {},
+    "proposed_value": {
+      "name": "distilled_simple_lookup_table_evidence_list_alias_resolution",
+      "description": "Auto-distilled from 6 successful queries with structure 'simple_lookup_table_evidence_list' in alias_resolution.",
+      "applicable_when": {
+        "intent": "alias_resolution",
+        "query_structure": "simple_lookup",
+        "evidence_type": "table_evidence"
+      },
+      "not_applicable_when": [],
+      "slots": [],
+      "examples": []
+    },
+    "prompt_artifacts": [],
+    "rationale": "Structural pattern 'simple_lookup_table_evidence_list' succeeded 6 times in alias_resolution (avg 1.00). Query structure: simple_lookup, evidence type: table_evidence, answer structure: list.",
+    "expected_improvement": "Reusable template for simple_lookup queries using table_evidence.",
+    "risk_level": "low",
+    "confidence": 0.95,
+    "status": "candidate"
+  }
+]

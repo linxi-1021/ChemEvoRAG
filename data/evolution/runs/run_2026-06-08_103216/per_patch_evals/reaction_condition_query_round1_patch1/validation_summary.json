@@ -1,0 +1,10 @@
+{
+  "patch_id": "reaction_condition_query_round1_patch1",
+  "passed": false,
+  "average_score": 0.7949152542372886,
+  "score_delta": -0.07118644067796587,
+  "targeted_improvement": 0.11818181818181805,
+  "errors": [
+    "Regression failed: Average score 0.7949 below minimum 0.8; Score dropped by 0.0712 (max allowed: 0.0200); Failed cases increased by 16 (max allowed: 1); 10 new high-severity failure(s) detected"
+  ]
+}

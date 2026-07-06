@@ -1,0 +1,80 @@
+[
+  {
+    "cluster_id": "assessment_false_negative__strategy.assessment__evidence_assessment",
+    "llm_validated_failure_type": "assessment_false_negative",
+    "common_root_causes": [
+      {
+        "name": "Overly strict interpretation of 'direct evidence' and 'well-supported inference'",
+        "description": "The LLM requires explicit statements or highly explicit data (e.g., a table with the exact compound name and yield) and fails to recognize implicit but logically deducible information. For example, it fails to infer that a compound name like 'methyl 6-ethoxyhexanoate' corresponds to the structure EtO2C(CH2)5COOMe, or that a procedure using DCE as solvent implies DCE was selected as optimal when no other solvent is mentioned.",
+        "supporting_failure_ids": [
+          "q3",
+          "q4",
+          "q_batch2_3",
+          "q_batch2_2"
+        ],
+        "confidence": 0.85
+      },
+      {
+        "name": "Failure to integrate information across multiple evidence items",
+        "description": "The LLM often examines each evidence item in isolation and does not combine data from different items to answer the question. For instance, in q4, the LLM could not find a yield for 2c in one item but missed that another item (e.g., a table or text) might contain it. In q_batch2_3, it failed to locate data for 6fe and 6ke across different tables or sections.",
+        "supporting_failure_ids": [
+          "q4",
+          "q_batch2_3"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "name": "Inability to handle compound naming variations and structural representations",
+        "description": "The LLM fails to recognize that a systematic name (e.g., 'methyl 6-ethoxyhexanoate') is equivalent to a structural formula (e.g., EtO2C(CH2)5COOMe). It also fails to map compound labels (e.g., '2c', '6ke') to their data in tables when the table uses different naming conventions or abbreviations.",
+        "supporting_failure_ids": [
+          "q_batch2_2",
+          "q_batch2_3"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "subclusters": [
+      {
+        "name": "Inference from procedure context",
+        "failure_ids": [
+          "q3"
+        ],
+        "specific_issue": "The LLM requires an explicit statement like 'DCE was selected as the optimal solvent' and does not infer optimality from the fact that DCE is the only solvent used in the described procedure, even when the question asks for the optimal solvent.",
+        "recommended_rule": "Add a rule: 'If a question asks for the optimal solvent/condition and the evidence describes a procedure using only one solvent/condition, that can be considered sufficient evidence that it was selected as optimal, unless there is explicit evidence to the contrary.'"
+      },
+      {
+        "name": "Missing data across evidence items",
+        "failure_ids": [
+          "q4",
+          "q_batch2_3"
+        ],
+        "specific_issue": "The LLM fails to locate yield or purity data for specific compounds (2c, 6fe, 6ke) because it does not search across all evidence items thoroughly or does not recognize that data for a compound may be in a different table or section (e.g., SI).",
+        "recommended_rule": "Add a rule: 'When searching for data on a specific compound, you must check all evidence items, including tables, figures, and text. If a compound label appears in one item but data appears in another, you must combine the information.'"
+      },
+      {
+        "name": "Structural formula vs. name mismatch",
+        "failure_ids": [
+          "q_batch2_2"
+        ],
+        "specific_issue": "The LLM does not recognize that a systematic name (methyl 6-ethoxyhexanoate) is a valid representation of the structure EtO2C(CH2)5COOMe, and instead demands an 'image' or explicit structural depiction.",
+        "recommended_rule": "Add a rule: 'A systematic chemical name (IUPAC or common) is a valid representation of a compound's structure. Do not require an image or graphical depiction if the name unambiguously defines the structure.'"
+      }
+    ],
+    "outliers": [],
+    "negative_cases": [
+      "Do NOT add a rule that would cause the LLM to accept insufficient evidence (e.g., inferring optimality from a single data point without comparison).",
+      "Do NOT relax the standard so much that the LLM accepts vague or ambiguous evidence (e.g., a compound name that could refer to multiple structures).",
+      "Do NOT require the LLM to hallucinate data that is not present in the evidence."
+    ],
+    "recommended_prompt_changes": [
+      "Add a rule for inference from procedure context (see subcluster 1).",
+      "Add a rule for cross-evidence integration (see subcluster 2).",
+      "Add a rule for structural formula vs. name equivalence (see subcluster 3).",
+      "Modify the 'well-supported inference' section to include examples of implicit optimality (e.g., 'if only one solvent is used in the described procedure, it can be inferred as the selected solvent').",
+      "Add a note that compound names and structural formulas are interchangeable representations."
+    ],
+    "should_generate_patch": true,
+    "risk_level": "medium",
+    "raw_llm_response": "```json\n{\n  \"cluster_id\": \"assessment_false_negative__strategy.assessment__evidence_assessment\",\n  \"llm_validated_failure_type\": \"assessment_false_negative\",\n  \"common_root_causes\": [\n    {\n      \"name\": \"Overly strict interpretation of 'direct evidence' and 'well-supported inference'\",\n      \"description\": \"The LLM requires explicit statements or highly explicit data (e.g., a table with the exact compound name and yield) and fails to recognize implicit but logically deducible information. For example, it fails to infer that a compound name like 'methyl 6-ethoxyhexanoate' corresponds to the structure EtO2C(CH2)5COOMe, or that a procedure using DCE as solvent implies DCE was selected as optimal when no other solvent is mentioned.\",\n      \"supporting_failure_ids\": [\"q3\", \"q4\", \"q_batch2_3\", \"q_batch2_2\"],\n      \"confidence\": 0.85\n    },\n    {\n      \"name\": \"Failure to integrate information across multiple evidence items\",\n      \"description\": \"The LLM often examines each evidence item in isolation and does not combine data from different items to answer the question. For instance, in q4, the LLM could not find a yield for 2c in one item but missed that another item (e.g., a table or text) might contain it. In q_batch2_3, it failed to locate data for 6fe and 6ke across different tables or sections.\",\n      \"supporting_failure_ids\": [\"q4\", \"q_batch2_3\"],\n      \"confidence\": 0.8\n    },\n    {\n      \"name\": \"Inability to handle compound naming variations and structural representations\",\n      \"description\": \"The LLM fails to recognize that a systematic name (e.g., 'methyl 6-ethoxyhexanoate') is equivalent to a structural formula (e.g., EtO2C(CH2)5COOMe). It also fails to map compound labels (e.g., '2c', '6ke') to their data in tables when the table uses different naming conventions or abbreviations.\",\n      \"supporting_failure_ids\": [\"q_batch2_2\", \"q_batch2_3\"],\n      \"confidence\": 0.8\n    }\n  ],\n  \"subclusters\": [\n    {\n      \"name\": \"Inference from procedure context\",\n      \"failure_ids\": [\"q3\"],\n      \"specific_issue\": \"The LLM requires an explicit statement like 'DCE was selected as the optimal solvent' and does not infer optimality from the fact that DCE is the only solvent used in the described procedure, even when the question asks for the optimal solvent.\",\n      \"recommended_rule\": \"Add a rule: 'If a question asks for the optimal solvent/condition and the evidence describes a procedure using only one solvent/condition, that can be considered sufficient evidence that it was selected as optimal, unless there is explicit evidence to the contrary.'\"\n    },\n    {\n      \"name\": \"Missing data across evidence items\",\n      \"failure_ids\": [\"q4\", \"q_batch2_3\"],\n      \"specific_issue\": \"The LLM fails to locate yield or purity data for specific compounds (2c, 6fe, 6ke) because it does not search across all evidence items thoroughly or does not recognize that data for a compound may be in a different table or section (e.g., SI).\",\n      \"recommended_rule\": \"Add a rule: 'When searching for data on a specific compound, you must check all evidence items, including tables, figures, and text. If a compound label appears in one item but data appears in another, you must combine the information.'\"\n    },\n    {\n      \"name\": \"Structural formula vs. name mismatch\",\n      \"failure_ids\": [\"q_batch2_2\"],\n      \"specific_issue\": \"The LLM does not recognize that a systematic name (methyl 6-ethoxyhexanoate) is a valid representation of the structure EtO2C(CH2)5COOMe, and instead demands an 'image' or explicit structural depiction.\",\n      \"recommended_rule\": \"Add a rule: 'A systematic chemical name (IUPAC or common) is a valid representation of a compound's structure. Do not require an image or graphical depiction if the name unambiguously defines the structure.'\"\n    }\n  ],\n  \"outliers\": [],\n  \"negative_cases\": [\n    \"Do NOT add a rule that would cause the LLM to accept insufficient evidence (e.g., inferring optimality from a single data point without comparison).\",\n    \"Do NOT relax the standard so much that the LLM accepts vague or ambiguous evidence (e.g., a compound name that could refer to multiple structures).\",\n    \"Do NOT require the LLM to hallucinate data that is not present in the evidence.\"\n  ],\n  \"recommended_prompt_changes\": [\n    \"Add a rule for inference from procedure context (see subcluster 1).\",\n    \"Add a rule for cross-evidence integration (see subcluster 2).\",\n    \"Add a rule for structural formula vs. name equivalence (see subcluster 3).\",\n    \"Modify the 'well-supported inference' section to include examples of implicit optimality (e.g., 'if only one solvent is used in the described procedure, it can be inferred as the selected solvent').\",\n    \"Add a note that compound names and structural formulas are interchangeable representations.\"\n  ],\n  \"should_generate_patch\": true,\n  \"risk_level\": \"medium\"\n}\n```"
+  }
+]

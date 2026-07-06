@@ -1,0 +1,159 @@
+[
+  {
+    "patch_id": "reaction_condition_query_round1_patch1",
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "regression_result": {
+      "passed": true,
+      "score_drop": 0.0011016949152544697,
+      "reason": "All regression checks passed",
+      "average_score": 0.865,
+      "score_delta": -0.0011016949152544697,
+      "targeted_improvement": 0.0
+    },
+    "average_score": 0.865,
+    "score_delta": -0.0011016949152544697,
+    "targeted_improvement": 0.0
+  },
+  {
+    "patch_id": "reaction_condition_query_round1_patch2",
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "regression_result": {
+      "passed": true,
+      "score_drop": -0.02389830508474544,
+      "reason": "All regression checks passed",
+      "average_score": 0.8899999999999999,
+      "score_delta": 0.02389830508474544,
+      "targeted_improvement": 0.0
+    },
+    "average_score": 0.8899999999999999,
+    "score_delta": 0.02389830508474544,
+    "targeted_improvement": 0.0
+  },
+  {
+    "patch_id": "reaction_comparison_round1_patch1",
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "regression_result": {
+      "passed": true,
+      "score_drop": -0.023898305084745552,
+      "reason": "All regression checks passed",
+      "average_score": 0.89,
+      "score_delta": 0.023898305084745552,
+      "targeted_improvement": 0.0
+    },
+    "average_score": 0.89,
+    "score_delta": 0.023898305084745552,
+    "targeted_improvement": 0.0
+  },
+  {
+    "patch_id": "reaction_comparison_round1_patch2",
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "regression_result": {
+      "passed": true,
+      "score_drop": -0.02389830508474544,
+      "reason": "All regression checks passed",
+      "average_score": 0.8899999999999999,
+      "score_delta": 0.02389830508474544,
+      "targeted_improvement": 0.0
+    },
+    "average_score": 0.8899999999999999,
+    "score_delta": 0.02389830508474544,
+    "targeted_improvement": 0.0
+  },
+  {
+    "patch_id": "",
+    "passed": false,
+    "errors": [
+      "Regression failed: Average score 0.7550 below minimum 0.8; Score dropped by 0.1111 (max allowed: 0.01); Failed cases increased by 3 (max allowed: 1)"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.11110169491525435,
+      "reason": "Average score 0.7550 below minimum 0.8; Score dropped by 0.1111 (max allowed: 0.01); Failed cases increased by 3 (max allowed: 1)",
+      "average_score": 0.7550000000000001,
+      "score_delta": -0.11110169491525435,
+      "targeted_improvement": 0.0
+    },
+    "average_score": 0.7550000000000001,
+    "score_delta": -0.11110169491525435,
+    "targeted_improvement": 0.0
+  },
+  {
+    "patch_id": "",
+    "passed": false,
+    "errors": [
+      "Regression failed: Score dropped by 0.0111 (max allowed: 0.01)"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.011101694915254368,
+      "reason": "Score dropped by 0.0111 (max allowed: 0.01)",
+      "average_score": 0.8550000000000001,
+      "score_delta": -0.011101694915254368,
+      "targeted_improvement": 0.0
+    },
+    "average_score": 0.8550000000000001,
+    "score_delta": -0.011101694915254368,
+    "targeted_improvement": 0.0
+  },
+  {
+    "patch_id": "",
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "regression_result": {
+      "passed": true,
+      "score_drop": -0.013898305084745433,
+      "reason": "All regression checks passed",
+      "average_score": 0.8799999999999999,
+      "score_delta": 0.013898305084745433,
+      "targeted_improvement": 0.0
+    },
+    "average_score": 0.8799999999999999,
+    "score_delta": 0.013898305084745433,
+    "targeted_improvement": 0.0
+  },
+  {
+    "patch_id": "",
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "regression_result": {
+      "passed": true,
+      "score_drop": -0.02389830508474544,
+      "reason": "All regression checks passed",
+      "average_score": 0.8899999999999999,
+      "score_delta": 0.02389830508474544,
+      "targeted_improvement": 0.0
+    },
+    "average_score": 0.8899999999999999,
+    "score_delta": 0.02389830508474544,
+    "targeted_improvement": 0.0
+  },
+  {
+    "patch_id": "",
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "regression_result": {
+      "passed": true,
+      "score_drop": -0.023898305084745552,
+      "reason": "All regression checks passed",
+      "average_score": 0.89,
+      "score_delta": 0.023898305084745552,
+      "targeted_improvement": 0.0
+    },
+    "average_score": 0.89,
+    "score_delta": 0.023898305084745552,
+    "targeted_improvement": 0.0
+  }
+]

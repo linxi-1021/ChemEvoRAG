@@ -1,0 +1,18 @@
+{
+  "passed": false,
+  "patch_ids": [
+    "reaction_condition_query_round1_patch1",
+    "reaction_condition_query_round1_patch2",
+    "reaction_comparison_round1_patch1",
+    "reaction_comparison_round1_patch2",
+    "",
+    "",
+    ""
+  ],
+  "errors": [
+    "Conflict: patches reaction_condition_query_round1_patch1 and reaction_comparison_round1_patch1 both target 'strategy.assessment.system_prompt_ref'",
+    "Conflict: patches reaction_condition_query_round1_patch2 and reaction_comparison_round1_patch2 both target 'strategy.answer_generation.max_evidence_items'"
+  ],
+  "regression_comparison": null,
+  "global_comparison": null
+}

@@ -1,0 +1,174 @@
+{
+  "run_id": "run_2026-06-08_0951",
+  "generated_at": "2026-06-08T09:51:53.270068",
+  "stop_reason": "validate_only",
+  "summary": {
+    "total_questions": 118,
+    "average_score": 0.8661016949152545,
+    "failures": 4,
+    "partial_successes": 26,
+    "coverage_gaps": 2,
+    "success_patterns": 86
+  },
+  "candidate_patches_count": 11,
+  "validated_patches_count": 0,
+  "rejected_patches_count": 11,
+  "validated_patch_ids": [],
+  "rejection_summary": {
+    "individual_regression_failed: ['Regression failed: Average score 0.0000 below minimum 0.8; Targeted improvement 0.0000 below minimum 0.05']": [
+      "reaction_condition_query_round1_patch1",
+      "reaction_comparison_round1_patch1",
+      "entity_lookup_round1_patch1"
+    ],
+    "individual_regression_failed: ['Regression failed: Average score 0.0000 below minimum 0.8']": [
+      "entity_lookup_template_distill_1",
+      "alias_resolution_template_distill_3",
+      "reaction_comparison_template_distill_9",
+      "reaction_condition_query_template_distill_11",
+      "entity_lookup_template_distill_12",
+      "property_query_template_distill_13",
+      "reaction_condition_query_template_distill_20",
+      "alias_resolution_template_distill_22"
+    ]
+  },
+  "patch_details": [
+    {
+      "patch_id": "reaction_condition_query_round1_patch1",
+      "skill_name": "reaction_condition_query",
+      "target_path": "strategy.assessment",
+      "operation": "update",
+      "primary_failure_type": "assessment_false_negative",
+      "source_failure_ids": [
+        "q3"
+      ],
+      "rationale": "Evidence contained target values but assessment judged insufficient.",
+      "risk_level": "medium",
+      "confidence": 0.85,
+      "rejection_reason": "individual_regression_failed: ['Regression failed: Average score 0.0000 below minimum 0.8; Targeted improvement 0.0000 below minimum 0.05']"
+    },
+    {
+      "patch_id": "reaction_comparison_round1_patch1",
+      "skill_name": "reaction_comparison",
+      "target_path": "strategy.assessment",
+      "operation": "update",
+      "primary_failure_type": "assessment_false_negative",
+      "source_failure_ids": [
+        "q_batch2_3"
+      ],
+      "rationale": "Evidence contained target values but assessment judged insufficient.",
+      "risk_level": "medium",
+      "confidence": 0.85,
+      "rejection_reason": "individual_regression_failed: ['Regression failed: Average score 0.0000 below minimum 0.8; Targeted improvement 0.0000 below minimum 0.05']"
+    },
+    {
+      "patch_id": "entity_lookup_round1_patch1",
+      "skill_name": "entity_lookup",
+      "target_path": "strategy.assessment",
+      "operation": "update",
+      "primary_failure_type": "assessment_false_negative",
+      "source_failure_ids": [
+        "q_batch2_2"
+      ],
+      "rationale": "Evidence contained target values but assessment judged insufficient.",
+      "risk_level": "medium",
+      "confidence": 0.85,
+      "rejection_reason": "individual_regression_failed: ['Regression failed: Average score 0.0000 below minimum 0.8; Targeted improvement 0.0000 below minimum 0.05']"
+    },
+    {
+      "patch_id": "entity_lookup_template_distill_1",
+      "skill_name": "entity_lookup",
+      "target_path": "templates",
+      "operation": "add",
+      "primary_failure_type": "unknown_failure",
+      "source_failure_ids": [],
+      "rationale": "Structural pattern 'simple_lookup_entity_evidence_numeric_value' succeeded 3 times in entity_lookup (avg 1.00). Query structure: simple_lookup, evidence type: entity_evidence, answer structure: numeric_value.",
+      "risk_level": "low",
+      "confidence": 0.95,
+      "rejection_reason": "individual_regression_failed: ['Regression failed: Average score 0.0000 below minimum 0.8']"
+    },
+    {
+      "patch_id": "alias_resolution_template_distill_3",
+      "skill_name": "alias_resolution",
+      "target_path": "templates",
+      "operation": "add",
+      "primary_failure_type": "unknown_failure",
+      "source_failure_ids": [],
+      "rationale": "Structural pattern 'simple_lookup_entity_evidence_list' succeeded 4 times in alias_resolution (avg 1.00). Query structure: simple_lookup, evidence type: entity_evidence, answer structure: list.",
+      "risk_level": "low",
+      "confidence": 0.95,
+      "rejection_reason": "individual_regression_failed: ['Regression failed: Average score 0.0000 below minimum 0.8']"
+    },
+    {
+      "patch_id": "reaction_comparison_template_distill_9",
+      "skill_name": "reaction_comparison",
+      "target_path": "templates",
+      "operation": "add",
+      "primary_failure_type": "unknown_failure",
+      "source_failure_ids": [],
+      "rationale": "Structural pattern 'comparison_table_evidence_numeric_value' succeeded 11 times in reaction_comparison (avg 1.00). Query structure: comparison, evidence type: table_evidence, answer structure: numeric_value.",
+      "risk_level": "low",
+      "confidence": 0.95,
+      "rejection_reason": "individual_regression_failed: ['Regression failed: Average score 0.0000 below minimum 0.8']"
+    },
+    {
+      "patch_id": "reaction_condition_query_template_distill_11",
+      "skill_name": "reaction_condition_query",
+      "target_path": "templates",
+      "operation": "add",
+      "primary_failure_type": "unknown_failure",
+      "source_failure_ids": [],
+      "rationale": "Structural pattern 'property_extraction_table_evidence_list' succeeded 6 times in reaction_condition_query (avg 1.00). Query structure: property_extraction, evidence type: table_evidence, answer structure: list.",
+      "risk_level": "low",
+      "confidence": 0.95,
+      "rejection_reason": "individual_regression_failed: ['Regression failed: Average score 0.0000 below minimum 0.8']"
+    },
+    {
+      "patch_id": "entity_lookup_template_distill_12",
+      "skill_name": "entity_lookup",
+      "target_path": "templates",
+      "operation": "add",
+      "primary_failure_type": "unknown_failure",
+      "source_failure_ids": [],
+      "rationale": "Structural pattern 'simple_lookup_table_evidence_list' succeeded 8 times in entity_lookup (avg 1.00). Query structure: simple_lookup, evidence type: table_evidence, answer structure: list.",
+      "risk_level": "low",
+      "confidence": 0.95,
+      "rejection_reason": "individual_regression_failed: ['Regression failed: Average score 0.0000 below minimum 0.8']"
+    },
+    {
+      "patch_id": "property_query_template_distill_13",
+      "skill_name": "property_query",
+      "target_path": "templates",
+      "operation": "add",
+      "primary_failure_type": "unknown_failure",
+      "source_failure_ids": [],
+      "rationale": "Structural pattern 'property_extraction_table_evidence_numeric_value' succeeded 13 times in property_query (avg 1.00). Query structure: property_extraction, evidence type: table_evidence, answer structure: numeric_value.",
+      "risk_level": "low",
+      "confidence": 0.95,
+      "rejection_reason": "individual_regression_failed: ['Regression failed: Average score 0.0000 below minimum 0.8']"
+    },
+    {
+      "patch_id": "reaction_condition_query_template_distill_20",
+      "skill_name": "reaction_condition_query",
+      "target_path": "templates",
+      "operation": "add",
+      "primary_failure_type": "unknown_failure",
+      "source_failure_ids": [],
+      "rationale": "Structural pattern 'property_extraction_table_evidence_numeric_value' succeeded 6 times in reaction_condition_query (avg 1.00). Query structure: property_extraction, evidence type: table_evidence, answer structure: numeric_value.",
+      "risk_level": "low",
+      "confidence": 0.95,
+      "rejection_reason": "individual_regression_failed: ['Regression failed: Average score 0.0000 below minimum 0.8']"
+    },
+    {
+      "patch_id": "alias_resolution_template_distill_22",
+      "skill_name": "alias_resolution",
+      "target_path": "templates",
+      "operation": "add",
+      "primary_failure_type": "unknown_failure",
+      "source_failure_ids": [],
+      "rationale": "Structural pattern 'simple_lookup_table_evidence_list' succeeded 6 times in alias_resolution (avg 1.00). Query structure: simple_lookup, evidence type: table_evidence, answer structure: list.",
+      "risk_level": "low",
+      "confidence": 0.95,
+      "rejection_reason": "individual_regression_failed: ['Regression failed: Average score 0.0000 below minimum 0.8']"
+    }
+  ]
+}

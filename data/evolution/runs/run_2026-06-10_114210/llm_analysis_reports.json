@@ -1,0 +1,161 @@
+[
+  {
+    "cluster_id": "assessment_false_negative__strategy.assessment__evidence_assessment",
+    "primary_failure_type": "assessment_false_negative",
+    "contributing_failure_types": [
+      "evidence_expansion_error",
+      "retrieval_routing_error"
+    ],
+    "confidence": 0.82,
+    "coverage_gap": false,
+    "explanation": "The assessment LLM incorrectly judged evidence as insufficient in all 4 samples, despite the answer being present in the retrieved evidence. The root causes are: (1) the assessment prompt lacks explicit rules for handling fragmented or incomplete table data, (2) retrieval routing underweights table blocks and molecule evidence that contain the answer, and (3) evidence expansion does not retrieve enough adjacent blocks to provide full table context. The evidence_contained_answer flag is false in all samples, indicating that the assessment is the primary failure point, but retrieval and expansion issues contribute.",
+    "supporting_trace_signals": [
+      "assessment_result is sufficient=false in all samples",
+      "gold answer appears in retrieved evidence (e.g., table blocks, molecule entries)",
+      "evidence_contained_answer is false in all samples",
+      "retrieved evidence includes partial tables or molecule entries that contain the answer"
+    ],
+    "common_root_causes": [
+      {
+        "name": "assessment prompt lacks fragmented table handling rules",
+        "description": "The evidence_assessment prompt does not instruct the LLM to handle fragmented or incomplete table data. In sample q3, the table fragment with DCE and yield data was present but the LLM deemed it insufficient because the table was incomplete. The prompt should include rules for aggregating partial table data and inferring optimality from available rows.",
+        "supporting_failure_ids": [
+          "q3"
+        ],
+        "confidence": 0.85
+      },
+      {
+        "name": "assessment prompt lacks compound alias resolution instructions",
+        "description": "In samples q4, q_batch2_3, and q_batch2_2, the LLM failed to recognize that compound aliases (e.g., 2c, 2k, 6fe, 6ke, 6oe) appear in the evidence under different naming conventions or in molecule entries. The prompt should instruct the LLM to check for compound aliases and cross-reference with molecule evidence.",
+        "supporting_failure_ids": [
+          "q4",
+          "q_batch2_3",
+          "q_batch2_2"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "name": "retrieval routing underweights table blocks and molecule evidence",
+        "description": "In samples q3 and q4, the answer was present in table blocks but the retrieval routing did not prioritize them sufficiently. The boost weight for table_block is 4.0-5.0, but for questions requiring comparison or optimization, a higher weight is needed. Additionally, molecule evidence (e.g., mol_15-SI_0035 for 6oe) was retrieved but not given enough weight in the final rerank.",
+        "supporting_failure_ids": [
+          "q3",
+          "q4",
+          "q_batch2_2"
+        ],
+        "confidence": 0.75
+      },
+      {
+        "name": "evidence expansion insufficient for table context",
+        "description": "In sample q3, the retrieved table fragment lacked column headers and entry numbers. Expanding to more adjacent blocks (e.g., the table caption or preceding rows) would provide the missing context. The current max_expanded_blocks of 5 is too low for tables that span multiple blocks.",
+        "supporting_failure_ids": [
+          "q3"
+        ],
+        "confidence": 0.7
+      }
+    ],
+    "subclusters": [
+      {
+        "name": "fragmented table data",
+        "failure_ids": [
+          "q3"
+        ],
+        "specific_issue": "Table fragment with DCE and yield data was present but the LLM deemed it insufficient because the table was incomplete (missing column headers, entry numbers). The assessment prompt should instruct the LLM to aggregate partial table data and infer optimality from available rows.",
+        "recommended_rule": "Add to evidence_assessment prompt: 'If evidence contains a table fragment with partial data (e.g., missing column headers or entry numbers), attempt to infer the table structure from context (e.g., adjacent blocks, common table patterns). If the fragment contains comparable data (e.g., yields for different solvents), consider it sufficient for comparison or optimization questions.'"
+      },
+      {
+        "name": "compound alias not recognized",
+        "failure_ids": [
+          "q4",
+          "q_batch2_3",
+          "q_batch2_2"
+        ],
+        "specific_issue": "The LLM failed to recognize that compound aliases (e.g., 2c, 2k, 6fe, 6ke, 6oe) appear in the evidence under different naming conventions or in molecule entries. The assessment prompt should instruct the LLM to check for compound aliases and cross-reference with molecule evidence.",
+        "recommended_rule": "Add to evidence_assessment prompt: 'If the question asks about a specific compound (e.g., 6oe), check all evidence items for that compound's name, aliases, or SMILES. Molecule evidence (e.g., mol_*) often contains the compound's structure or SMILES. Do not require the exact label to appear in a table if the compound is identified elsewhere.'"
+      }
+    ],
+    "proposed_patch_targets": [
+      "strategy.assessment",
+      "strategy.retrieval_routing",
+      "strategy.evidence_expansion"
+    ],
+    "recommended_changes": {
+      "prompt": {
+        "should_change": true,
+        "priority": "primary",
+        "prompt_role": "evidence_assessment",
+        "base_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM",
+        "change_summary": [
+          "Add fragmented table handling rule: instruct LLM to aggregate partial table data and infer structure from context.",
+          "Add compound alias resolution rule: instruct LLM to check for compound aliases in molecule evidence and cross-reference with table data.",
+          "Add explicit instruction to check molecule evidence for compound structures and SMILES."
+        ],
+        "risk_level": "medium",
+        "confidence": 0.82
+      },
+      "retrieval_routing": {
+        "should_change": true,
+        "priority": "secondary",
+        "changes": [
+          {
+            "target_path": "strategy.retrieval_routing.boost_weights.table_block.weight",
+            "operation": "update",
+            "current_value": 4.0,
+            "proposed_value": 6.0,
+            "rationale": "Table evidence often contains the answer for comparison and optimization questions but is underweighted. Increasing the weight will improve recall of table blocks.",
+            "expected_improvement": "Improve evidence recall for table-supported questions.",
+            "source_failure_ids": [
+              "q3",
+              "q4"
+            ],
+            "confidence": 0.76
+          },
+          {
+            "target_path": "strategy.retrieval_routing.boost_weights.molecule_evidence.weight",
+            "operation": "update",
+            "current_value": 5.0,
+            "proposed_value": 7.0,
+            "rationale": "Molecule evidence contains compound structures and SMILES that are critical for entity lookup questions. Increasing the weight will improve recall of molecule entries.",
+            "expected_improvement": "Improve evidence recall for entity lookup questions.",
+            "source_failure_ids": [
+              "q_batch2_2"
+            ],
+            "confidence": 0.74
+          }
+        ],
+        "risk_level": "low"
+      },
+      "query_rewrite": {
+        "should_change": false,
+        "changes": [],
+        "risk_level": "low"
+      },
+      "evidence_expansion": {
+        "should_change": true,
+        "priority": "secondary",
+        "changes": [
+          {
+            "target_path": "strategy.evidence_expansion.max_expanded_blocks",
+            "operation": "update",
+            "current_value": 5,
+            "proposed_value": 8,
+            "rationale": "Adjacent blocks often contain table captions, column headers, or procedure details that provide context for fragmented tables. Increasing max_expanded_blocks will improve long-range evidence completeness.",
+            "expected_improvement": "Improve table context for fragmented table data.",
+            "source_failure_ids": [
+              "q3"
+            ],
+            "confidence": 0.73
+          }
+        ],
+        "risk_level": "low"
+      },
+      "answer_generation": {
+        "should_change": false,
+        "changes": [],
+        "risk_level": "low"
+      }
+    },
+    "should_generate_patch": true,
+    "risk_level": "medium",
+    "raw_llm_response": "```json\n{\n  \"cluster_id\": \"assessment_false_negative__strategy.assessment__evidence_assessment\",\n  \"primary_failure_type\": \"assessment_false_negative\",\n  \"contributing_failure_types\": [\"evidence_expansion_error\", \"retrieval_routing_error\"],\n  \"confidence\": 0.82,\n  \"coverage_gap\": false,\n  \"explanation\": \"The assessment LLM incorrectly judged evidence as insufficient in all 4 samples, despite the answer being present in the retrieved evidence. The root causes are: (1) the assessment prompt lacks explicit rules for handling fragmented or incomplete table data, (2) retrieval routing underweights table blocks and molecule evidence that contain the answer, and (3) evidence expansion does not retrieve enough adjacent blocks to provide full table context. The evidence_contained_answer flag is false in all samples, indicating that the assessment is the primary failure point, but retrieval and expansion issues contribute.\",\n  \"supporting_trace_signals\": [\n    \"assessment_result is sufficient=false in all samples\",\n    \"gold answer appears in retrieved evidence (e.g., table blocks, molecule entries)\",\n    \"evidence_contained_answer is false in all samples\",\n    \"retrieved evidence includes partial tables or molecule entries that contain the answer\"\n  ],\n  \"common_root_causes\": [\n    {\n      \"name\": \"assessment prompt lacks fragmented table handling rules\",\n      \"description\": \"The evidence_assessment prompt does not instruct the LLM to handle fragmented or incomplete table data. In sample q3, the table fragment with DCE and yield data was present but the LLM deemed it insufficient because the table was incomplete. The prompt should include rules for aggregating partial table data and inferring optimality from available rows.\",\n      \"supporting_failure_ids\": [\"q3\"],\n      \"confidence\": 0.85\n    },\n    {\n      \"name\": \"assessment prompt lacks compound alias resolution instructions\",\n      \"description\": \"In samples q4, q_batch2_3, and q_batch2_2, the LLM failed to recognize that compound aliases (e.g., 2c, 2k, 6fe, 6ke, 6oe) appear in the evidence under different naming conventions or in molecule entries. The prompt should instruct the LLM to check for compound aliases and cross-reference with molecule evidence.\",\n      \"supporting_failure_ids\": [\"q4\", \"q_batch2_3\", \"q_batch2_2\"],\n      \"confidence\": 0.80\n    },\n    {\n      \"name\": \"retrieval routing underweights table blocks and molecule evidence\",\n      \"description\": \"In samples q3 and q4, the answer was present in table blocks but the retrieval routing did not prioritize them sufficiently. The boost weight for table_block is 4.0-5.0, but for questions requiring comparison or optimization, a higher weight is needed. Additionally, molecule evidence (e.g., mol_15-SI_0035 for 6oe) was retrieved but not given enough weight in the final rerank.\",\n      \"supporting_failure_ids\": [\"q3\", \"q4\", \"q_batch2_2\"],\n      \"confidence\": 0.75\n    },\n    {\n      \"name\": \"evidence expansion insufficient for table context\",\n      \"description\": \"In sample q3, the retrieved table fragment lacked column headers and entry numbers. Expanding to more adjacent blocks (e.g., the table caption or preceding rows) would provide the missing context. The current max_expanded_blocks of 5 is too low for tables that span multiple blocks.\",\n      \"supporting_failure_ids\": [\"q3\"],\n      \"confidence\": 0.70\n    }\n  ],\n  \"subclusters\": [\n    {\n      \"name\": \"fragmented table data\",\n      \"failure_ids\": [\"q3\"],\n      \"specific_issue\": \"Table fragment with DCE and yield data was present but the LLM deemed it insufficient because the table was incomplete (missing column headers, entry numbers). The assessment prompt should instruct the LLM to aggregate partial table data and infer optimality from available rows.\",\n      \"recommended_rule\": \"Add to evidence_assessment prompt: 'If evidence contains a table fragment with partial data (e.g., missing column headers or entry numbers), attempt to infer the table structure from context (e.g., adjacent blocks, common table patterns). If the fragment contains comparable data (e.g., yields for different solvents), consider it sufficient for comparison or optimization questions.'\"\n    },\n    {\n      \"name\": \"compound alias not recognized\",\n      \"failure_ids\": [\"q4\", \"q_batch2_3\", \"q_batch2_2\"],\n      \"specific_issue\": \"The LLM failed to recognize that compound aliases (e.g., 2c, 2k, 6fe, 6ke, 6oe) appear in the evidence under different naming conventions or in molecule entries. The assessment prompt should instruct the LLM to check for compound aliases and cross-reference with molecule evidence.\",\n      \"recommended_rule\": \"Add to evidence_assessment prompt: 'If the question asks about a specific compound (e.g., 6oe), check all evidence items for that compound's name, aliases, or SMILES. Molecule evidence (e.g., mol_*) often contains the compound's structure or SMILES. Do not require the exact label to appear in a table if the compound is identified elsewhere.'\"\n    }\n  ],\n  \"proposed_patch_targets\": [\"strategy.assessment\", \"strategy.retrieval_routing\", \"strategy.evidence_expansion\"],\n  \"recommended_changes\": {\n    \"prompt\": {\n      \"should_change\": true,\n      \"priority\": \"primary\",\n      \"prompt_role\": \"evidence_assessment\",\n      \"base_prompt_ref\": \"EVIDENCE_ASSESSMENT_SYSTEM\",\n      \"change_summary\": [\n        \"Add fragmented table handling rule: instruct LLM to aggregate partial table data and infer structure from context.\",\n        \"Add compound alias resolution rule: instruct LLM to check for compound aliases in molecule evidence and cross-reference with table data.\",\n        \"Add explicit instruction to check molecule evidence for compound structures and SMILES.\"\n      ],\n      \"risk_level\": \"medium\",\n      \"confidence\": 0.82\n    },\n    \"retrieval_routing\": {\n      \"should_change\": true,\n      \"priority\": \"secondary\",\n      \"changes\": [\n        {\n          \"target_path\": \"strategy.retrieval_routing.boost_weights.table_block.weight\",\n          \"operation\": \"update\",\n          \"current_value\": 4.0,\n          \"proposed_value\": 6.0,\n          \"rationale\": \"Table evidence often contains the answer for comparison and optimization questions but is underweighted. Increasing the weight will improve recall of table blocks.\",\n          \"expected_improvement\": \"Improve evidence recall for table-supported questions.\",\n          \"source_failure_ids\": [\"q3\", \"q4\"],\n          \"confidence\": 0.76\n        },\n        {\n          \"target_path\": \"strategy.retrieval_routing.boost_weights.molecule_evidence.weight\",\n          \"operation\": \"update\",\n          \"current_value\": 5.0,\n          \"proposed_value\": 7.0,\n          \"rationale\": \"Molecule evidence contains compound structures and SMILES that are critical for entity lookup questions. Increasing the weight will improve recall of molecule entries.\",\n          \"expected_improvement\": \"Improve evidence recall for entity lookup questions.\",\n          \"source_failure_ids\": [\"q_batch2_2\"],\n          \"confidence\": 0.74\n        }\n      ],\n      \"risk_level\": \"low\"\n    },\n    \"query_rewrite\": {\n      \"should_change\": false,\n      \"changes\": [],\n      \"risk_level\": \"low\"\n    },\n    \"evidence_expansion\": {\n      \"should_change\": true,\n      \"priority\": \"secondary\",\n      \"changes\": [\n        {\n          \"target_path\": \"strategy.evidence_expansion.max_expanded_blocks\",\n          \"operation\": \"update\",\n          \"current_value\": 5,\n          \"proposed_value\": 8,\n          \"rationale\": \"Adjacent blocks often contain table captions, column headers, or procedure details that provide context for fragmented tables. Increasing max_expanded_blocks will improve long-range evidence completeness.\",\n          \"expected_improvement\": \"Improve table context for fragmented table data.\",\n          \"source_failure_ids\": [\"q3\"],\n          \"confidence\": 0.73\n        }\n      ],\n      \"risk_level\": \"low\"\n    },\n    \"answer_generation\": {\n      \"should_change\": false,\n      \"changes\": [],\n      \"risk_level\": \"low\"\n    }\n  },\n  \"should_generate_patch\": true,\n  \"risk_level\": \"medium\"\n}\n```"
+  }
+]

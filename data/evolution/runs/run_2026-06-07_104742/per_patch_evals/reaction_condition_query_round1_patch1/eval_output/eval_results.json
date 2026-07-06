@@ -1,0 +1,100 @@
+{
+  "summary": {
+    "total": 4,
+    "average_score": 0.0,
+    "by_intent": {
+      "property_query": 0.0,
+      "reaction_condition_query": 0.0
+    }
+  },
+  "results": [
+    {
+      "id": "q3",
+      "source_paper": "3.pdf",
+      "intent": "reaction_condition_query",
+      "question": "According to the optimized room‑temperature procedure used to oxidize E-1a to E-2a (as reported in the abstract/Table 1), what solvent, catalyst/TEMPO/NaCl loadings, atmosphere, and temperature were used?",
+      "ground_truth": "DCE (0.1 M); 10 mol % Fe(NO3)3·9H2O, 10 mol % TEMPO, 10 mol % NaCl; O2 (atmospheric oxygen); room temperature (rt).",
+      "system_answer": "[ERROR: 'gbk' codec can't encode character '\\u2011' in position 55: illegal multibyte sequence]",
+      "evidence_ids": [],
+      "confidence": 0.0,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "E-1a",
+        "E-2a",
+        "Fe(NO3)3·9H2O",
+        "TEMPO",
+        "NaCl",
+        "DCE"
+      ],
+      "judge_reasoning": "The system answer is an error message and contains none of the key entities or factual information from the ground truth.",
+      "score": 0.0,
+      "intent_key": "reaction_condition_query"
+    },
+    {
+      "id": "q5",
+      "source_paper": "3.pdf",
+      "intent": "property_query",
+      "question": "What isolated yield and E/Z ratio were obtained in the reported 0.1 mmol scale oxidation of E-1a to give E-2a under the optimized conditions (scale‑up/test experiment shown in Scheme 2)?",
+      "ground_truth": "90% isolated yield after 6 h; product E-2a obtained with E/Z = 97/3 (starting E-1a was E/Z = 99/1).",
+      "system_answer": "[ERROR: 'gbk' codec can't encode character '\\u2011' in position 171: illegal multibyte sequence]",
+      "evidence_ids": [],
+      "confidence": 0.0,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "E-1a",
+        "E-2a",
+        "Scheme 2"
+      ],
+      "judge_reasoning": "The system answer is an error message and contains no factual information from the ground truth.",
+      "score": 0.0,
+      "intent_key": "property_query"
+    },
+    {
+      "id": "q5",
+      "source_paper": "6.pdf",
+      "intent": "property_query",
+      "question": "What yield and E/Z ratio were reported for the isolated (−)-lamenallenic acid (Ra)-(−)-1 after hydrolysis (KOH)?",
+      "ground_truth": "(−)-lamenallenic acid (Ra)-(−)-1 was obtained in 98% yield with E/Z = 94/6 (reported [α]D20 = −55.2, c = 0.995, EtOH).",
+      "system_answer": "[ERROR: 'gbk' codec can't encode character '\\u2212' in position 81: illegal multibyte sequence]",
+      "evidence_ids": [],
+      "confidence": 0.0,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "(−)-lamenallenic acid",
+        "(Ra)-(−)-1",
+        "yield",
+        "E/Z"
+      ],
+      "judge_reasoning": "The system answer is an error message and contains none of the key entities or factual information from the ground truth.",
+      "score": 0.0,
+      "intent_key": "property_query"
+    },
+    {
+      "id": "q5",
+      "source_paper": "13.pdf",
+      "intent": "property_query",
+      "question": "What was the isolated amount and isolated yield when the 50 mmol scale oxidation of (S)-2‑methylbutanol was performed (reported for (S)-2o)?",
+      "ground_truth": "3.6 g isolated of (S)-2o, 72% isolated yield.",
+      "system_answer": "[ERROR: 'gbk' codec can't encode character '\\u2011' in position 113: illegal multibyte sequence]",
+      "evidence_ids": [],
+      "confidence": 0.0,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "(S)-2‑methylbutanol",
+        "(S)-2o"
+      ],
+      "judge_reasoning": "The system answer is an error message and contains no factual information from the ground truth.",
+      "score": 0.0,
+      "intent_key": "property_query"
+    }
+  ],
+  "metadata": {
+    "sampling": {
+      "mode": "full"
+    }
+  }
+}

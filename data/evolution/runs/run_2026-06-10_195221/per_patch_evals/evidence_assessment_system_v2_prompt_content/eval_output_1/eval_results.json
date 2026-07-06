@@ -1,0 +1,356 @@
+{
+  "summary": {
+    "total": 10,
+    "average_score": 0.6,
+    "by_intent": {
+      "entity_lookup": 0.5,
+      "reaction_condition_query": 0.6666666666666666,
+      "property_query": 0.6666666666666666,
+      "reaction_comparison": 0.5
+    }
+  },
+  "results": [
+    {
+      "id": "q5",
+      "source_paper": "1.pdf",
+      "intent": "property_query",
+      "question": "What isolated yield (%) of phenyl methyl ketone (acetophenone) was obtained in the 4.0 mmol (large-scale) oxidation of 1-phenylethanol reported in Eq. (2)?",
+      "ground_truth": "91% isolated yield of phenyl methyl ketone (acetophenone).",
+      "system_answer": "The isolated yield of phenyl methyl ketone (acetophenone) in the 4.0 mmol (large-scale) oxidation of 1-phenylethanol reported in Eq. (2) is 91% (evidence: block_1_0122, block_1_0036). The evidence describes a 4.0 mol (not 4.0 mmol) reaction, but the yield is explicitly stated as 91% for the large-scale reaction.",
+      "evidence_ids": [
+        "block_1_0041",
+        "block_1_0122",
+        "block_1_0036",
+        "block_1_0009",
+        "block_1_0121",
+        "block_1_0080",
+        "block_1_0124",
+        "block_1_0071",
+        "block_1_0103",
+        "block_1_0100",
+        "block_1_0055",
+        "block_1_0064",
+        "block_1_0120"
+      ],
+      "confidence": 0.92,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1-phenylethanol",
+        "phenyl methyl ketone",
+        "Eq. (2)"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states the 91% isolated yield of phenyl methyl ketone (acetophenone) from the oxidation of 1-phenylethanol in Eq. (2), matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "property_query"
+    },
+    {
+      "id": "q3",
+      "source_paper": "3.pdf",
+      "intent": "reaction_condition_query",
+      "question": "According to the optimized room‑temperature procedure used to oxidize E-1a to E-2a (as reported in the abstract/Table 1), what solvent, catalyst/TEMPO/NaCl loadings, atmosphere, and temperature were used?",
+      "ground_truth": "DCE (0.1 M); 10 mol % Fe(NO3)3·9H2O, 10 mol % TEMPO, 10 mol % NaCl; O2 (atmospheric oxygen); room temperature (rt).",
+      "system_answer": "The optimized room-temperature procedure for oxidizing E-1a to E-2a used 10 mol% Fe(NO3)3·9H2O, 10 mol% TEMPO, and 10 mol% NaCl in DCE (0.1 M substrate concentration) under an oxygen atmosphere at room temperature (evidence: block_3_0010, block_3_0009). The abstract also confirms the use of atmospheric pressure of oxygen at room temperature (evidence: block_3_0005).",
+      "evidence_ids": [
+        "block_3_0017",
+        "block_3_0013",
+        "block_3_0014",
+        "block_3_0009",
+        "block_3_0010",
+        "block_3_0008",
+        "block_3_0011",
+        "block_3_0019",
+        "block_3_0005",
+        "block_3_0020"
+      ],
+      "confidence": 0.85,
+      "judge_score": 1.0,
+      "entities_found": [
+        "E-1a",
+        "E-2a",
+        "Fe(NO3)3·9H2O",
+        "TEMPO",
+        "NaCl",
+        "DCE"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly includes all key entities and conditions (DCE 0.1 M, 10 mol% each of Fe(NO3)3·9H2O, TEMPO, NaCl, O2 atmosphere, room temperature) matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "reaction_condition_query"
+    },
+    {
+      "id": "q4",
+      "source_paper": "4.pdf",
+      "intent": "reaction_comparison",
+      "question": "Which gave the higher yield in the paper: oxidation of 1-(4-isopropylphenyl)but-3-yn-1-ol (1b) to 3b, or oxidation of 1-(4-methoxyphenyl)but-3-yn-1-ol (1d) to 3d?",
+      "ground_truth": "Oxidation of 1b → 3b gave 91%, whereas 1d → 3d gave 81%; 1b → 3b is higher (91% vs 81%)",
+      "system_answer": "Retrieved reaction evidence: The reaction of 1-(4-isopropylphenyl)but-3-yn-1-ol 1b (943.8 mg, 5.0 mmol), Fe  \\mathrm { ( N O _ { 3 } ) _ { 3 } } { \\cdot } 9 \\mathrm { H } _ { 2 } 0 (202.7 mg, 0.5 mmol), TEMPO (78.5 mg, 0.5 mmol), and NaCl (28.4 mg, 0.5 mmol) in DCE (5 mL) afforded 1-(4-isopropylphenyl)buta-2,3-dien-1-one 3b (800.8 mg, 86%) (eluent: petroleum ether/diethyl ether¼10/1) as an oil.",
+      "evidence_ids": [
+        "block_4_0046",
+        "block_4_0029",
+        "block_4_0044",
+        "block_4_0051",
+        "block_4_0053",
+        "block_4_0065",
+        "block_4_0040",
+        "block_4_0073",
+        "block_4_0055",
+        "block_4_0057",
+        "block_4_0059"
+      ],
+      "confidence": 1.0,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "1b",
+        "3b",
+        "1d",
+        "3d"
+      ],
+      "judge_reasoning": "Request timed out.",
+      "score": 0.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q2",
+      "source_paper": "8.pdf",
+      "intent": "entity_lookup",
+      "question": "What is the chemical name of compound 2t as given in the paper?",
+      "ground_truth": "2t is 4-acetylbenzoic acid (4-Acetylbenzoic Acid, listed as 2t in the Experimental section).",
+      "system_answer": "The chemical name of compound 2t as given in the paper is 4-Acetylbenzoic Acid (evidence: block_8_0227).",
+      "evidence_ids": [
+        "block_8_0009",
+        "block_8_0010",
+        "block_8_0011",
+        "block_8_0018",
+        "block_8_0227",
+        "block_8_0013",
+        "block_8_0020",
+        "block_8_0122"
+      ],
+      "confidence": 0.67,
+      "judge_score": 1.0,
+      "entities_found": [
+        "2t",
+        "4-Acetylbenzoic Acid"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies the chemical name of compound 2t as 4-Acetylbenzoic Acid, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q3",
+      "source_paper": "10.pdf",
+      "intent": "reaction_condition_query",
+      "question": "For the 100 mmol-scale aerobic oxidation of 1a performed with a slow flow of air, what catalyst loadings, solvent, air flow rate, temperature and reaction time were used?",
+      "ground_truth": "Fe(NO3)3·9H2O 5 mol%, 4‑OH‑TEMPO 10 mol%, NaCl 10 mol%; solvent DCE; air flow 30 mL/min; 25 °C; 15.5 h.",
+      "system_answer": "Retrieved reaction evidence: |  | n-C11H23CH2OH 1a | Fe(NO3)3·9H2O (x mol%) 4-OH-TEMPO (y mol%) NaCl (z mol%) DCE, O2 bag, 25 °C, t (h) | n-C11H23CHO + n-C11H23COOH 2a 3a |\n| --- | --- | --- | --- |\n| Entry | x | y | z | t (h) | Yield (%)b | Recovery of 1a (%)b |\n| 2a | 3a |\n| 1 | 5 | 5 | 5 | 20.5 | 63 | trace | 27 |\n| 2 | 5 | 5 | 5 | 28.5 | 71 | 1 | 14 |\n| 3 | 5 | 10 | 10 | 20 | 85 | 11 | - |\n| 4 | 5 | 10 | 10 | 19 | 88 | 3 | 2.5 |\n| 5 | 5 | 10 | 0 | 24 | 57 | - | 34 |\n| 6 | 10 | 10 | 10 | 9 | 85 | 10 | 1.5 |\n| 7c | 10 | 10 | 10 | 12 | 78 | 21 | - |\n| 8c,d | 10 | 10 | 10 | 12 | - | 100 | - | | Table 1. Optimization of the Aerobic Oxidation Reaction of | { \\bf 1 } \\mathsf { a } ^ { a } | a The reactions were carried out on a 1.0 mmol scale of 1a in 4.0 mL of DCE with a bag of | \\mathrm { O } _ { 2 } , \\mathrm { \\Lambda } ^ { b } \\mathrm { N M R } | yields. c KCl was used instead of NaCl. d TEMPO was used instead of 4-OH-TEMPO.",
+      "evidence_ids": [
+        "block_10_0015",
+        "block_10_0023",
+        "block_10_0018",
+        "block_10_0024",
+        "block_10_0025",
+        "block_10_0071",
+        "block_10_0073",
+        "block_10_0021",
+        "block_10_0048",
+        "block_10_0006"
+      ],
+      "confidence": 0.915,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "1a",
+        "Fe(NO3)3·9H2O",
+        "4-OH-TEMPO",
+        "NaCl",
+        "DCE"
+      ],
+      "judge_reasoning": "Request timed out.",
+      "score": 0.0,
+      "intent_key": "reaction_condition_query"
+    },
+    {
+      "id": "q5",
+      "source_paper": "12.pdf",
+      "intent": "property_query",
+      "question": "When the reaction of 1a was run on 10 mmol scale, what was the isolated yield and mass of 2a reported in the paper?",
+      "ground_truth": "98% isolated yield; isolated mass 1.4506 g.",
+      "system_answer": "Retrieved reaction evidence: | Entry | X | Nitroxyl | Solvent | Recovery of 1a (%) | NMR yield of 2a (%) |\n| --- | --- | --- | --- | --- | --- |\n| 1 | 5 | 4-OH-TEMPO | MeCN | 0 | $100 (94^b)$ |\n| 2 | 5 | 4-OH-TEMPO | DCM | 12 | 89 |\n| 3 | 5 | 4-OH-TEMPO | DCE | 16 | 84 |\n| 4 | 5 | 4-OH-TEMPO | CHCl3 | 50 | 50 |\n| 5 | 5 | 4-OH-TEMPO | Toluene | 78 | 22 |\n| 6 | 5 | 4-OH-TEMPO | MTBE | 58 | 40 |\n| 7 | 5 | 4-OH-TEMPO | MeOH | 97 | 1 |\n| 8 | 5 | 4-OMe-TEMPO | MeCN | 0 | 100 |\n| 9 | 5 | 4-OBz-TEMPO | MeCN | 0 | 100 |\n| 10 | 5 | 4-Oxo-TEMPO | MeCN | 25 | 75 |\n| 11 | 5 | 4-NHAc-TEMPO | MeCN | 0 | 100 |\n| 12 | 5 | 4-NH2-TEMPO | MeCN | 0 | 100 |\n| 13 | 5 | TEMPO | MeCN | 1 | 99 |\n| 14 | 2 | 4-OH-TEMPO | MeCN | 15 | 85 |\n| 15 | 1 | 4-OH-TEMPO | MeCN | 50 | 42 |\n| $16^c$ | 5 | 4-OH-TEMPO | MeCN | 100 | 0 |\n| $17^d$ | 5 | — | MeCN | 97 | 0 | | a Reaction conditions: 1a (1.0 mmol), Fe(NO ) ·9H O (X mol%) and 4-OH-TEMPO (X mol%) in solvent (1.25 M) with an oxygen balloon at room temperature and the recovery and NMR yield were determined by 1 H NMR analysis of the crude product. b Isolated yield. c Without Fe | \\left( \\mathbf { N O } _ { 3 } \\right) _ { 3 } { \\cdot } 9 \\mathbf { H } _ { 2 } \\mathbf { O } . \\mathbf { \\Lambda } ^ { i } | Without 4-OH-TEMPO.",
+      "evidence_ids": [
+        "block_12_0023",
+        "block_12_0030",
+        "block_12_0029",
+        "block_12_0022",
+        "block_12_0026",
+        "block_12_0020",
+        "block_12_0013",
+        "block_12_0028",
+        "rxn_tbl_12_0001",
+        "block_12_0027"
+      ],
+      "confidence": 0.891,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "1a",
+        "2a",
+        "10 mmol",
+        "isolated yield",
+        "1.4506 g"
+      ],
+      "judge_reasoning": "Request timed out.",
+      "score": 0.0,
+      "intent_key": "property_query"
+    },
+    {
+      "id": "q3",
+      "source_paper": "17.pdf",
+      "intent": "reaction_condition_query",
+      "question": "Under the paper's standard catalytic aerobic oxidation conditions for converting PMB ether 1a to carboxylic acid 2a, what solvent, catalysts (with loadings) and atmosphere were used?",
+      "ground_truth": "Solvent: DCE (1.0 mL); Catalysts: Fe(NO3)3·9H2O (10 mol%) and TEMPO (10 mol%); Atmosphere: O2 (oxygen balloon) at room temperature (≈25 °C).",
+      "system_answer": "Under the paper's standard conditions for converting PMB ether 1a to carboxylic acid 2a, the solvent was DCE (1.0 mL), the catalysts were Fe(NO3)3·9H2O (10 mol%) and TEMPO (10 mol%), and the atmosphere was an oxygen balloon at room temperature for 8 h (evidence: block_17_0013, block_17_0035, block_17_0039).",
+      "evidence_ids": [
+        "block_17_0013",
+        "block_17_0035",
+        "block_17_0010",
+        "block_17_0001",
+        "block_17_0012",
+        "block_17_0002",
+        "block_17_0039",
+        "block_17_0005"
+      ],
+      "confidence": 0.95,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1a",
+        "2a",
+        "Fe(NO3)3·9H2O",
+        "TEMPO",
+        "DCE",
+        "O2"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly includes all key entities and conditions from the ground truth, with only minor additional details (time and evidence) that do not contradict the ground truth.",
+      "score": 1.0,
+      "intent_key": "reaction_condition_query"
+    },
+    {
+      "id": "q2",
+      "source_paper": "18.pdf",
+      "intent": "entity_lookup",
+      "question": "What is the name of product 2b as given in the paper (structure/identified name)?",
+      "ground_truth": "4-Phenylbut-3-yn-2-one (2b)",
+      "system_answer": "The evidence does not contain a compound labeled as \"product 2b\" with a specific name. The table in block_18_0015 shows that substrate 1b (with R = H) yields product 2b, but the paper does not provide a systematic name for 2b in the retrieved evidence. The product 2b is likely the corresponding ynone or ketone derived from the propargylic alcohol substrate, but its exact name is not stated.",
+      "evidence_ids": [
+        "block_18_0012",
+        "block_18_0014",
+        "block_18_0005",
+        "block_18_0008",
+        "block_18_0020",
+        "block_18_0024",
+        "block_18_0015",
+        "block_18_0021",
+        "mol_2_0000",
+        "mol_5_0007",
+        "block_18_0003"
+      ],
+      "confidence": 0.3,
+      "judge_score": 0.0,
+      "entities_found": [
+        "2b"
+      ],
+      "entities_missing": [
+        "4-phenylbut-3-yn-2-one"
+      ],
+      "judge_reasoning": "The system answer fails to provide the correct name '4-Phenylbut-3-yn-2-one' for product 2b, stating instead that the name is not given, which is incorrect based on the ground truth.",
+      "score": 0.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q5",
+      "source_paper": "19.pdf",
+      "intent": "property_query",
+      "question": "What yield values are reported for aldehyde 2a: the isolated yield shown in Scheme 2 and the NMR yield reported in Table 1 (optimized conditions)?",
+      "ground_truth": "Isolated yield in Scheme 2: 82% (2a; noted as 2a:4a = 98:2); NMR yield in Table 1 (optimized entry): 71% NMR yield",
+      "system_answer": "For aldehyde 2a, the isolated yield shown in Scheme 2 is 82% (evidence: block_19_0009, block_19_0022). The NMR yield reported in Table 1 under the optimized conditions (entry 4: 18 mol% KCl, toluene) is 71% (evidence: block_19_0010, block_19_0008).",
+      "evidence_ids": [
+        "block_19_0010",
+        "block_19_0013",
+        "block_19_0006",
+        "block_19_0012",
+        "block_19_0008",
+        "block_19_0022",
+        "block_19_0009",
+        "block_19_0014"
+      ],
+      "confidence": 0.85,
+      "judge_score": 1.0,
+      "entities_found": [
+        "2a",
+        "Scheme 2",
+        "Table 1 entry 4"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states the isolated yield (82%) for aldehyde 2a in Scheme 2 and the NMR yield (71%) under the optimized conditions (Table 1 entry 4), matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "property_query"
+    },
+    {
+      "id": "q4",
+      "source_paper": "20.pdf",
+      "intent": "reaction_comparison",
+      "question": "Which gave the higher yield for oxidation of 1a: the standard reaction with Cu(NO3)2·3H2O/TEMPO (Table 1, entry 1) or the reaction carried out without Cu(NO3)2·3H2O (Table 1, entry 15)?",
+      "ground_truth": "The standard reaction with Cu(NO3)2·3H2O/TEMPO gave the higher yield (86%); the reaction without Cu(NO3)2·3H2O gave 0% yield.",
+      "system_answer": "The standard reaction with Cu(NO3)2·3H2O/TEMPO (Table 1, entry 1) gave a yield of 86%, while the reaction carried out without Cu(NO3)2·3H2O (Table 1, entry 15) gave a yield of 0% (evidence: block_20_0021). Therefore, the standard reaction gave the higher yield.",
+      "evidence_ids": [
+        "block_20_0019",
+        "block_20_0021",
+        "block_20_0026",
+        "block_20_0022",
+        "block_20_0014",
+        "block_20_0025",
+        "block_20_0027",
+        "block_20_0031",
+        "rxn_tbl_20_0001",
+        "rxn_tbl_20_0000",
+        "rxn_tbl_20_0002",
+        "rxn_tbl_20_0003"
+      ],
+      "confidence": 1.0,
+      "judge_score": 1.0,
+      "entities_found": [
+        "Cu(NO3)2·3H2O",
+        "Table 1",
+        "entry 15"
+      ],
+      "entities_missing": [
+        "1a"
+      ],
+      "judge_reasoning": "The system answer correctly states the yields and identifies the standard reaction as higher, matching the ground truth; the missing entity '1a' is not required for factual correctness as it is not mentioned in the ground truth comparison.",
+      "score": 1.0,
+      "intent_key": "reaction_comparison"
+    }
+  ],
+  "metadata": {
+    "sampling": {
+      "mode": "random",
+      "limit": 10,
+      "seed": 43,
+      "selected_question_ids": [
+        "q5",
+        "q3",
+        "q4",
+        "q2",
+        "q3",
+        "q5",
+        "q3",
+        "q2",
+        "q5",
+        "q4"
+      ]
+    }
+  }
+}

@@ -1,0 +1,65 @@
+Run directory: D:\Desktop\evo\ChemEvoRAG_Phase1-main\data\evolution\runs\run_2026-06-12_021819
+Trace report: 6 failures, 26 partial, 86 success
+
+[SuccessAnalysis] Analyzing successful traces...
+  Global: 5 intents analyzed
+  Contrastive: 2 clusters analyzed
+
+[Mutation] Cluster: generation_error__strategy.answer_generation__answer_generation
+  Failure type: generation_error, Skills: ['alias_resolution']
+  Generated 0 mutation patch(es)
+
+[Mutation] Cluster: assessment_false_negative__strategy.assessment__evidence_assessment
+  Failure type: assessment_false_negative, Skills: ['reaction_comparison', 'reaction_condition_query']
+  Generated 0 mutation patch(es)
+
+[Distillation] 0 template_add, 5 cross-skill promotions
+
+[Integration] 5 selected, 0 rejected, 0 conflicts resolved
+
+--dry-run: 5 patches selected.
+
+--- alias_resolution_cross_skill_promotion_1 ---
+  Type: template_add
+  Skill: alias_resolution
+  Target: templates
+  Op: add
+  After:  {"name": "cross_skill_simple_lookup_table_evidence_list_entity_lookup_to_alias_resolution", "description": "Cross-skill promotion: pattern 'simple_lookup_table_evidence_list' from entity_lookup → alias_resolution (8 successes, similarity=0.80)", "applicable_when": {"intent": "alias_resolution", "query_structure": "simple_lookup", "evidence_type": "table_evidence"}, "not_applicable_when": [], "slots": [], "examples": [], "promoted_from": "entity_lookup"}
+  Reason: Cross-skill promotion from entity_lookup: pattern 'simple_lookup_table_evidence_list'.
+  Risk: medium | Confidence: 0.70
+
+--- reaction_condition_query_cross_skill_promotion_2 ---
+  Type: template_add
+  Skill: reaction_condition_query
+  Target: templates
+  Op: add
+  After:  {"name": "cross_skill_property_extraction_table_evidence_numeric_value_property_query_to_reaction_condition_query", "description": "Cross-skill promotion: pattern 'property_extraction_table_evidence_numeric_value' from property_query → reaction_condition_query (15 successes, similarity=0.80)", "applicable_when": {"intent": "reaction_condition_query", "query_structure": "property_extraction", "evidence_type": "table_evidence"}, "not_applicable_when": [], "slots": [], "examples": [], "promoted_from": "property_query"}
+  Reason: Cross-skill promotion from property_query: pattern 'property_extraction_table_evidence_numeric_value'.
+  Risk: medium | Confidence: 0.70
+
+--- entity_lookup_cross_skill_promotion_3 ---
+  Type: template_add
+  Skill: entity_lookup
+  Target: templates
+  Op: add
+  After:  {"name": "cross_skill_simple_lookup_table_evidence_list_alias_resolution_to_entity_lookup", "description": "Cross-skill promotion: pattern 'simple_lookup_table_evidence_list' from alias_resolution → entity_lookup (7 successes, similarity=0.80)", "applicable_when": {"intent": "entity_lookup", "query_structure": "simple_lookup", "evidence_type": "table_evidence"}, "not_applicable_when": [], "slots": [], "examples": [], "promoted_from": "alias_resolution"}
+  Reason: Cross-skill promotion from alias_resolution: pattern 'simple_lookup_table_evidence_list'.
+  Risk: medium | Confidence: 0.70
+
+--- property_query_cross_skill_promotion_4 ---
+  Type: template_add
+  Skill: property_query
+  Target: templates
+  Op: add
+  After:  {"name": "cross_skill_property_extraction_table_evidence_list_reaction_condition_query_to_property_query", "description": "Cross-skill promotion: pattern 'property_extraction_table_evidence_list' from reaction_condition_query → property_query (6 successes, similarity=0.80)", "applicable_when": {"intent": "property_query", "query_structure": "property_extraction", "evidence_type": "table_evidence"}, "not_applicable_when": [], "slots": [], "examples": [], "promoted_from": "reaction_condition_query"}
+  Reason: Cross-skill promotion from reaction_condition_query: pattern 'property_extraction_table_evidence_list'.
+  Risk: medium | Confidence: 0.70
+
+--- property_query_cross_skill_promotion_5 ---
+  Type: template_add
+  Skill: property_query
+  Target: templates
+  Op: add
+  After:  {"name": "cross_skill_property_extraction_table_evidence_numeric_value_reaction_condition_query_to_property_query", "description": "Cross-skill promotion: pattern 'property_extraction_table_evidence_numeric_value' from reaction_condition_query → property_query (6 successes, similarity=0.80)", "applicable_when": {"intent": "property_query", "query_structure": "property_extraction", "evidence_type": "table_evidence"}, "not_applicable_when": [], "slots": [], "examples": [], "promoted_from": "reaction_condition_query"}
+  Reason: Cross-skill promotion from reaction_condition_query: pattern 'property_extraction_table_evidence_numeric_value'.
+  Risk: medium | Confidence: 0.70

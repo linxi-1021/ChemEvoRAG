@@ -1,0 +1,199 @@
+Run directory: D:\Desktop\evo\ChemEvoRAG_Phase1-main\data\evolution\runs\run_2026-06-12_141802
+Trace report: 6 failures, 26 partial, 86 success
+
+[SuccessAnalysis] Analyzing successful traces...
+  Global: 5 intents analyzed
+  Contrastive: 2 clusters analyzed
+
+[Mutation] Cluster: generation_error__strategy.answer_generation__answer_generation
+  Failure type: generation_error, Skills: ['alias_resolution', 'entity_lookup']
+  Generated 1 mutation patch(es)
+
+[Mutation] Cluster: assessment_false_negative__strategy.assessment__evidence_assessment
+  Failure type: assessment_false_negative, Skills: ['reaction_comparison', 'reaction_condition_query']
+  Generated 7 mutation patch(es)
+
+[Distillation] 0 template_add, 4 cross-skill promotions
+
+[Integration] 12 selected, 0 rejected, 0 conflicts resolved
+Schema validation: 12 accepted, 0 rejected
+[1/12] Validating answer_generation_system_v2_prompt_content
+  [FAIL] ['Regression failed: Score dropped by 0.0128 (max allowed: 0.0100); Targeted improvement -0.4432 below minimum 0.05']
+[2/12] Validating evidence_assessment_system_v2_prompt_content
+  [FAIL] ['Regression failed: Average score 0.8000 below minimum 0.8; Score dropped by 0.0661 (max allowed: 0.0200); 1 new high-severity failure(s) detected']
+[3/12] Validating reaction_comparison_retrieval_strategy_update_3
+  [FAIL] ['Regression failed: Score dropped by 0.0461 (max allowed: 0.0200); Targeted improvement 0.0395 below minimum 0.05; 1 new high-severity failure(s) detected']
+[4/12] Validating reaction_condition_query_retrieval_strategy_update_4
+  [FAIL] ['Regression failed: Targeted improvement 0.0295 below minimum 0.05']
+[5/12] Validating reaction_comparison_fallback_update_5
+  [OK] score=0.8800, delta=+0.0139
+[6/12] Validating reaction_condition_query_fallback_update_6
+  [FAIL] ['Regression failed: Score dropped by 0.0294 (max allowed: 0.0100); Targeted improvement -0.0580 below minimum 0.05; 1 new high-severity failure(s) detected']
+[7/12] Validating alias_resolution_cross_skill_promotion_1
+  [OK] score=0.8633, delta=-0.0028
+[8/12] Validating reaction_condition_query_cross_skill_promotion_2
+  [FAIL] ['Regression failed: Score dropped by 0.0128 (max allowed: 0.0100)']
+[9/12] Validating property_query_cross_skill_promotion_3
+  [OK] score=0.8700, delta=+0.0039
+[10/12] Validating property_query_cross_skill_promotion_4
+  [FAIL] ['Regression failed: Score dropped by 0.0594 (max allowed: 0.0100); 1 new high-severity failure(s) detected']
+[11/12] Validating reaction_comparison_evidence_assessment_system_v2_ref
+  [OK] score=0.8467, delta=-0.0194
+[12/12] Validating reaction_condition_query_evidence_assessment_system_v2_ref
+  [OK] score=0.8833, delta=+0.0172
+
+[Refine Round 1/5] 2 prompt patch(es) failed — returning to Stage 4A
+  [4A Refine] Cluster: generation_error__strategy.answer_generation__answer_generation, feedback from 2 failed patch(es)
+  Generated 7 refined mutation patch(es)
+  [4A Refine] Cluster: assessment_false_negative__strategy.assessment__evidence_assessment, feedback from 2 failed patch(es)
+  Generated 7 refined mutation patch(es)
+
+[Integration] 14 selected, 0 rejected, 0 conflicts resolved
+Schema validation: 14 accepted, 0 rejected
+[1/14] Validating evidence_assessment_system_v2_prompt_content
+  [FAIL] ['Regression failed: Targeted improvement -0.4432 below minimum 0.05']
+[2/14] Validating evidence_assessment_system_v2_prompt_content
+  [FAIL] ['Regression failed: Targeted improvement 0.0295 below minimum 0.05']
+[3/14] Validating alias_resolution_retrieval_strategy_update_3
+  [FAIL] ['Regression failed: Targeted improvement -0.4432 below minimum 0.05']
+[4/14] Validating entity_lookup_retrieval_strategy_update_4
+  [FAIL] ['Regression failed: Average score 0.7833 below minimum 0.8; Score dropped by 0.0828 (max allowed: 0.0100); Targeted improvement -0.4432 below minimum 0.05; 1 new high-severity failure(s) detected']
+[5/14] Validating alias_resolution_fallback_update_5
+  [OK] score=0.8667, delta=+0.0006
+[6/14] Validating entity_lookup_fallback_update_6
+  [FAIL] ['Regression failed: Score dropped by 0.0261 (max allowed: 0.0100); Targeted improvement -0.4432 below minimum 0.05']
+[7/14] Validating reaction_comparison_retrieval_strategy_update_3
+  [FAIL] ['Regression failed: Score dropped by 0.0361 (max allowed: 0.0200); 1 new high-severity failure(s) detected']
+[8/14] Validating reaction_condition_query_retrieval_strategy_update_4
+  [FAIL] ['Regression failed: Targeted improvement 0.0295 below minimum 0.05']
+[9/14] Validating reaction_comparison_fallback_update_5
+  [FAIL] ['Regression failed: Score dropped by 0.0461 (max allowed: 0.0200); Targeted improvement 0.0295 below minimum 0.05']
+[10/14] Validating reaction_condition_query_fallback_update_6
+  [OK] score=0.8600, delta=-0.0061
+[11/14] Validating alias_resolution_evidence_assessment_system_v2_ref
+  [OK] score=0.8467, delta=-0.0194
+[12/14] Validating entity_lookup_evidence_assessment_system_v2_ref
+  [FAIL] ['Regression failed: Score dropped by 0.0628 (max allowed: 0.0100); Targeted improvement -0.4432 below minimum 0.05']
+[13/14] Validating reaction_comparison_evidence_assessment_system_v2_ref
+  [OK] score=0.8467, delta=-0.0194
+[14/14] Validating reaction_condition_query_evidence_assessment_system_v2_ref
+  [FAIL] ['Regression failed: Score dropped by 0.0461 (max allowed: 0.0148); Targeted improvement 0.0095 below minimum 0.05']
+  Refine round 1: 4 patch(es) passed
+
+[Refine Round 2/5] 2 prompt patch(es) failed — returning to Stage 4A
+  [4A Refine] Cluster: generation_error__strategy.answer_generation__answer_generation, feedback from 1 failed patch(es)
+  Generated 7 refined mutation patch(es)
+  [4A Refine] Cluster: assessment_false_negative__strategy.assessment__evidence_assessment, feedback from 1 failed patch(es)
+  Generated 7 refined mutation patch(es)
+
+[Integration] 14 selected, 0 rejected, 0 conflicts resolved
+Schema validation: 14 accepted, 0 rejected
+[1/14] Validating evidence_assessment_system_v2_prompt_content
+  [FAIL] ['Regression failed: Targeted improvement -0.4432 below minimum 0.05']
+[2/14] Validating evidence_assessment_system_v2_prompt_content
+  [FAIL] ['Regression failed: Targeted improvement 0.0295 below minimum 0.05']
+[3/14] Validating alias_resolution_retrieval_strategy_update_3
+  [FAIL] ['Regression failed: Targeted improvement -0.4432 below minimum 0.05']
+[4/14] Validating entity_lookup_retrieval_strategy_update_4
+  [FAIL] ['Regression failed: Score dropped by 0.0161 (max allowed: 0.0100); Targeted improvement -0.4432 below minimum 0.05']
+[5/14] Validating alias_resolution_fallback_update_5
+  [FAIL] ['Regression failed: Score dropped by 0.0194 (max allowed: 0.0100); Targeted improvement -0.4432 below minimum 0.05']
+[6/14] Validating entity_lookup_fallback_update_6
+  [FAIL] ['Regression failed: Score dropped by 0.0528 (max allowed: 0.0100); Targeted improvement -0.4432 below minimum 0.05']
+[7/14] Validating reaction_comparison_retrieval_strategy_update_3
+  [FAIL] ['Regression failed: Targeted improvement 0.0295 below minimum 0.05; 1 new high-severity failure(s) detected']
+[8/14] Validating reaction_condition_query_retrieval_strategy_update_4
+  [FAIL] ['Regression failed: Targeted improvement 0.0295 below minimum 0.05']
+[9/14] Validating reaction_comparison_fallback_update_5
+  [FAIL] ['Regression failed: Score dropped by 0.0294 (max allowed: 0.0200)']
+[10/14] Validating reaction_condition_query_fallback_update_6
+  [FAIL] ['Regression failed: Score dropped by 0.0361 (max allowed: 0.0200)']
+[11/14] Validating alias_resolution_evidence_assessment_system_v2_ref
+  [FAIL] ['Regression failed: Score dropped by 0.0261 (max allowed: 0.0100); Targeted improvement -0.4432 below minimum 0.05']
+[12/14] Validating entity_lookup_evidence_assessment_system_v2_ref
+  [FAIL] ['Regression failed: Score dropped by 0.0561 (max allowed: 0.0100); Targeted improvement -0.4432 below minimum 0.05']
+[13/14] Validating reaction_comparison_evidence_assessment_system_v2_ref
+  [FAIL] ['Regression failed: Score dropped by 0.0594 (max allowed: 0.0100); Targeted improvement -0.0205 below minimum 0.05; 1 new high-severity failure(s) detected']
+[14/14] Validating reaction_condition_query_evidence_assessment_system_v2_ref
+  [OK] score=0.8733, delta=+0.0072
+  Refine round 2: 1 patch(es) passed
+
+[Refine Round 3/5] 2 prompt patch(es) failed — returning to Stage 4A
+  [4A Refine] Cluster: generation_error__strategy.answer_generation__answer_generation, feedback from 1 failed patch(es)
+  Generated 1 refined mutation patch(es)
+  [4A Refine] Cluster: assessment_false_negative__strategy.assessment__evidence_assessment, feedback from 1 failed patch(es)
+  Generated 7 refined mutation patch(es)
+
+[Integration] 8 selected, 0 rejected, 0 conflicts resolved
+Schema validation: 8 accepted, 0 rejected
+[1/8] Validating answer_generation_system_v2_prompt_content
+  [FAIL] ['Regression failed: Targeted improvement -0.4432 below minimum 0.05']
+[2/8] Validating evidence_assessment_system_v2_prompt_content
+  [OK] score=0.8767, delta=+0.0106
+[3/8] Validating reaction_comparison_retrieval_strategy_update_3
+  [OK] score=0.8800, delta=+0.0139
+[4/8] Validating reaction_condition_query_retrieval_strategy_update_4
+  [OK] score=0.8800, delta=+0.0139
+[5/8] Validating reaction_comparison_fallback_update_5
+  [FAIL] ['Regression failed: Targeted improvement 0.0295 below minimum 0.05']
+[6/8] Validating reaction_condition_query_fallback_update_6
+  [OK] score=0.8767, delta=+0.0106
+[7/8] Validating reaction_comparison_evidence_assessment_system_v2_ref
+  [OK] score=0.8767, delta=+0.0106
+[8/8] Validating reaction_condition_query_evidence_assessment_system_v2_ref
+  [FAIL] ['Regression failed: Score dropped by 0.0261 (max allowed: 0.0200)']
+  Refine round 3: 5 patch(es) passed
+
+[Refine Round 4/5] 1 prompt patch(es) failed — returning to Stage 4A
+  [4A Refine] Cluster: generation_error__strategy.answer_generation__answer_generation, feedback from 1 failed patch(es)
+  Generated 1 refined mutation patch(es)
+  [4A Refine] Cluster: assessment_false_negative__strategy.assessment__evidence_assessment, feedback from 1 failed patch(es)
+  Generated 7 refined mutation patch(es)
+
+[Integration] 8 selected, 0 rejected, 0 conflicts resolved
+Schema validation: 8 accepted, 0 rejected
+[1/8] Validating answer_generation_system_v2_prompt_content
+  [FAIL] ['Regression failed: Targeted improvement -0.4432 below minimum 0.05']
+[2/8] Validating evidence_assessment_system_v2_prompt_content
+  [OK] score=0.8800, delta=+0.0139
+[3/8] Validating reaction_comparison_retrieval_strategy_update_3
+  [FAIL] ['Regression failed: Targeted improvement 0.0170 below minimum 0.05']
+[4/8] Validating reaction_condition_query_retrieval_strategy_update_4
+  [OK] score=0.8600, delta=-0.0061
+[5/8] Validating reaction_comparison_fallback_update_5
+  [OK] score=0.8533, delta=-0.0128
+[6/8] Validating reaction_condition_query_fallback_update_6
+  [OK] score=0.8833, delta=+0.0172
+[7/8] Validating reaction_comparison_evidence_assessment_system_v2_ref
+  [FAIL] ['Regression failed: Score dropped by 0.0294 (max allowed: 0.0200); 1 new high-severity failure(s) detected']
+[8/8] Validating reaction_condition_query_evidence_assessment_system_v2_ref
+  [OK] score=0.8867, delta=+0.0206
+  Refine round 4: 5 patch(es) passed
+
+[Refine Round 5/5] 1 prompt patch(es) failed — returning to Stage 4A
+  [4A Refine] Cluster: generation_error__strategy.answer_generation__answer_generation, feedback from 1 failed patch(es)
+  Generated 1 refined mutation patch(es)
+  [4A Refine] Cluster: assessment_false_negative__strategy.assessment__evidence_assessment, feedback from 1 failed patch(es)
+  Generated 7 refined mutation patch(es)
+
+[Integration] 8 selected, 0 rejected, 0 conflicts resolved
+Schema validation: 8 accepted, 0 rejected
+[1/8] Validating answer_generation_system_v2_prompt_content
+  [FAIL] ['Regression failed: Targeted improvement -0.4432 below minimum 0.05']
+[2/8] Validating evidence_assessment_system_v2_prompt_content
+  [OK] score=0.8700, delta=+0.0039
+[3/8] Validating reaction_comparison_retrieval_strategy_update_3
+  [OK] score=0.8700, delta=+0.0039
+[4/8] Validating reaction_condition_query_retrieval_strategy_update_4
+  [OK] score=0.8467, delta=-0.0194
+[5/8] Validating reaction_comparison_fallback_update_5
+  [OK] score=0.8600, delta=-0.0061
+[6/8] Validating reaction_condition_query_fallback_update_6
+  [OK] score=0.8633, delta=-0.0028
+[7/8] Validating reaction_comparison_evidence_assessment_system_v2_ref
+  [OK] score=0.8767, delta=+0.0106
+[8/8] Validating reaction_condition_query_evidence_assessment_system_v2_ref
+  [FAIL] ['Regression failed: Targeted improvement 0.0295 below minimum 0.05']
+  Refine round 5: 6 patch(es) passed
+
+--validate-only: 26 patches validated.

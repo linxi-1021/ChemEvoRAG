@@ -21,7 +21,7 @@ from typing import Any
 
 from .apply import PatchApplier
 from .patch import PatchSchema, PatchStatus
-from .regression import RegressionComparison, RegressionRunner
+from .regression import RegressionComparison, RegressionResult, RegressionRunner
 from .validation import validate_patch
 
 
@@ -185,6 +185,8 @@ def validate_individual_patch(
     regression_seed: int = 42,
     stream_output: bool = True,
     persist_dir: Path | None = None,
+    original_eval_path: Path | None = None,
+    all_patches: list | None = None,
 ) -> dict[str, Any]:
     """Validate a single patch by applying it in a temp directory and running regression.
 
@@ -206,7 +208,7 @@ def validate_individual_patch(
     }
 
     # Step 1: Schema + semantic validation
-    vresult = validate_patch(patch, skill_config, skill_filename=skill_filename, prompts_dir=prompts_dir)
+    vresult = validate_patch(patch, skill_config, skill_filename=skill_filename, prompts_dir=prompts_dir, all_patches=all_patches)
     result["errors"].extend(vresult.errors)
     result["warnings"].extend(vresult.warnings)
     if not vresult.valid:
@@ -244,80 +246,109 @@ def validate_individual_patch(
             tmpdir = Path(_tmpdir)
             tmp_skills = tmpdir / "skills"
             tmp_prompts = tmpdir / "prompts"
-            shutil.copytree(skills_dir, tmp_skills)
+            tmp_skills.mkdir(parents=True, exist_ok=True)
+            tmp_prompts.mkdir(parents=True, exist_ok=True)
+
+            # Only copy the skill YAML being patched
+            skill_name = skill_config.get("name", "unknown")
+            src_skill = skills_dir / f"{skill_name}.yaml"
+            if src_skill.exists():
+                shutil.copy2(src_skill, tmp_skills / src_skill.name)
+
+            # Only copy prompt YAMLs referenced by this skill
+            strategy = skill_config.get("strategy", {})
+            needed_refs = set()
+            for section in ("assessment", "answer_generation"):
+                ref = strategy.get(section, {}).get("system_prompt_ref", "")
+                if ref:
+                    needed_refs.add(ref)
             if prompts_dir.is_dir():
-                shutil.copytree(prompts_dir, tmp_prompts)
+                for f in prompts_dir.glob("*.yaml"):
+                    try:
+                        import yaml as _yaml
+                        data = _yaml.safe_load(f.read_text("utf-8"))
+                        if data and data.get("prompt_ref", "") in needed_refs:
+                            shutil.copy2(f, tmp_prompts / f.name)
+                    except Exception:
+                        pass
+
+            # Apply patch to the target skill in sandbox
+            applier = PatchApplier(skills_dir, prompts_dir)
+            skill_path = tmp_skills / f"{skill_name}.yaml"
+            if skill_path.exists():
+                import yaml
+                tmp_skill = yaml.safe_load(skill_path.read_text("utf-8"))
+                applier.apply_to_memory(tmp_skill, patch)
+                skill_path.write_text(
+                    yaml.dump(tmp_skill, allow_unicode=True, default_flow_style=False, sort_keys=False),
+                    encoding="utf-8",
+                )
+                # Write prompt artifacts to sandbox (uses original prompts as source)
+                applier.write_prompt_artifacts_to_sandbox(tmp_prompts, patch)
 
             runner = RegressionRunner(project_root)
 
-            # If regression_limit is set, run a "before" eval on the SAME
-            # sampled questions using the ORIGINAL (unpatched) config FIRST,
-            # BEFORE applying the patch.  This ensures apples-to-apples.
-            if regression_limit is not None and regression_limit > 0:
-                tmp_before_output = Path(tmpdir) / "baseline_output"
-                tmp_before_output.mkdir(parents=True, exist_ok=True)
-                before_result = runner.run_eval(
-                    regression_dataset,
-                    tmp_skills,   # ORIGINAL — patch not yet applied
-                    tmp_prompts,
-                    output_dir=tmp_before_output,
-                    workers=workers,
-                    limit=regression_limit,
-                    seed=regression_seed,
+            # No baseline regression — use original eval results as fixed baseline
+            base = RegressionResult_from_dict(baseline_result) if baseline_result else None
+
+            # Run patch regression 3 times in parallel, take average
+            from concurrent.futures import ThreadPoolExecutor, as_completed
+            _num_runs = 3
+            _eval_outputs = []
+            _after_results = []
+
+            def _run_one_eval(run_idx: int):
+                _out = Path(tmpdir) / f"eval_output_{run_idx}"
+                _out.mkdir(parents=True, exist_ok=True)
+                _res = runner.run_eval(
+                    regression_dataset, tmp_skills, tmp_prompts,
+                    output_dir=_out,
+                    workers=workers, limit=regression_limit,
+                    seed=regression_seed + run_idx,
                     stream_output=stream_output,
                 )
-                if before_result.errors:
-                    result["warnings"].append(
-                        f"Baseline subset eval had errors: {before_result.errors}"
-                    )
-                    baseline_for_comparison = (
-                        RegressionResult_from_dict(baseline_result)
-                        if baseline_result else before_result
-                    )
-                else:
-                    baseline_for_comparison = before_result
-            else:
-                baseline_for_comparison = (
-                    RegressionResult_from_dict(baseline_result)
-                    if baseline_result else None
+                return _res, _out
+
+            with ThreadPoolExecutor(max_workers=3) as ex:
+                futures = [ex.submit(_run_one_eval, i) for i in range(_num_runs)]
+                for f in as_completed(futures):
+                    _res, _out = f.result()
+                    _after_results.append(_res)
+                    _eval_outputs.append(_out)
+
+            # Average across runs
+            if all(r and not r.errors for r in _after_results):
+                _avg_score = sum(r.average_score for r in _after_results) / len(_after_results)
+                _by_intent: dict[str, dict[str, float]] = {}
+                _all_intents = set()
+                for r in _after_results:
+                    _all_intents.update(r.by_intent.keys())
+                for intent in _all_intents:
+                    _scores = [r.by_intent.get(intent, {}).get("average_score") for r in _after_results]
+                    _scores = [s for s in _scores if s is not None]
+                    _by_intent[intent] = {
+                        "average_score": sum(_scores) / len(_scores) if _scores else 0.0,
+                    }
+
+                avg_after = RegressionResult(
+                    average_score=_avg_score,
+                    total_questions=_after_results[0].total_questions,
+                    by_intent=_by_intent,
+                    results_path=str(_eval_outputs[0] / "eval_results.json"),
                 )
+                _after_errors = []
+            else:
+                _all_errs = []
+                for r in _after_results:
+                    if r.errors:
+                        _all_errs.extend(r.errors)
+                _after_errors = _all_errs
+                avg_after = None
 
-            # Apply patch in temp directory (AFTER baseline eval)
-            try:
-                tmp_applier = PatchApplier(tmp_skills, tmp_prompts)
-                skill_name = skill_config.get("name", "unknown")
-                skill_path = tmp_skills / f"{skill_name}.yaml"
-                if skill_path.exists():
-                    import yaml
-                    tmp_skill = yaml.safe_load(skill_path.read_text("utf-8"))
-                    tmp_applier.apply_to_memory(tmp_skill, patch)
-                    skill_path.write_text(
-                        yaml.dump(tmp_skill, allow_unicode=True, default_flow_style=False, sort_keys=False),
-                        encoding="utf-8",
-                    )
-            except Exception as e:
+            if _after_errors:
                 result["passed"] = False
-                result["errors"].append(f"Temp apply failed: {e}")
-                patch.status = PatchStatus.REJECTED
-                return result
-
-            tmp_eval_output = Path(tmpdir) / "eval_output"
-            tmp_eval_output.mkdir(parents=True, exist_ok=True)
-            after_result = runner.run_eval(
-                regression_dataset,
-                tmp_skills,
-                tmp_prompts,
-                output_dir=tmp_eval_output,
-                workers=workers,
-                limit=regression_limit,
-                seed=regression_seed,
-                stream_output=stream_output,
-            )
-
-            if after_result.errors:
-                result["passed"] = False
-                result["errors"].append(f"Regression eval failed: {after_result.errors}")
-                result["warnings"].append(f"Regression eval had errors: {after_result.errors}")
+                result["errors"].append(f"Regression eval failed: {_after_errors}")
+                result["warnings"].append(f"Regression eval had errors: {_after_errors}")
                 result["regression_result"] = None
                 result["average_score"] = None
                 result["score_delta"] = None
@@ -327,15 +358,14 @@ def validate_individual_patch(
                 patch.status = PatchStatus.REJECTED
                 return result
             else:
-                if baseline_for_comparison is None:
-                    baseline_for_comparison = RegressionResult_from_dict(baseline_result) if baseline_result else None
                 # Pass source_failure_ids from patch so targeted_improvement
                 # is calculated on the actual failing questions, not just global metrics
                 targeted_ids = list(patch.source_failure_ids) if patch.source_failure_ids else None
                 comparison = runner.compare(
-                    baseline_for_comparison,
-                    after_result,
+                    base,
+                    avg_after,
                     targeted_failure_ids=targeted_ids,
+                    original_eval_path=original_eval_path,
                 )
                 result["regression_result"] = {
                     "passed": comparison.passed,
@@ -344,12 +374,18 @@ def validate_individual_patch(
                     "average_score": comparison.average_score,
                     "score_delta": comparison.score_delta,
                     "targeted_improvement": comparison.targeted_improvement,
+                    "targeted_improvement_origin": comparison.targeted_improvement_origin,
+                    "baseline_flip": comparison.baseline_flip,
+                    "collateral_improvement": comparison.collateral_improvement,
                     "failed_cases_increase": comparison.failed_cases_increase,
                 }
                 # Also surface at top level for log readability
                 result["average_score"] = comparison.average_score
                 result["score_delta"] = comparison.score_delta
                 result["targeted_improvement"] = comparison.targeted_improvement
+                result["targeted_improvement_origin"] = comparison.targeted_improvement_origin
+                result["baseline_flip"] = comparison.baseline_flip
+                result["collateral_improvement"] = comparison.collateral_improvement
                 result["failed_cases_increase"] = comparison.failed_cases_increase
                 if not comparison.passed:
                     result["passed"] = False
@@ -472,36 +508,43 @@ def validate_composition(
         )
         patches = resolved_patches
 
-    # Run baseline subset eval FIRST (before patching) if using sampled questions
+    # No baseline regression — use original eval results as fixed baseline
     baseline_cmp = RegressionResult_from_dict(baseline_regression_result) if baseline_regression_result else None
-    if regression_limit is not None and regression_limit > 0 and regression_dataset and regression_dataset.exists():
-        runner = RegressionRunner(project_root)
-        tmp_before_output = Path(tempfile.mkdtemp(prefix="comp_baseline_"))
-        try:
-            before_result = runner.run_eval(
-                regression_dataset,
-                skills_dir,   # ORIGINAL unpatched skills
-                prompts_dir,  # ORIGINAL unpatched prompts
-                output_dir=tmp_before_output,
-                workers=workers,
-                limit=regression_limit,
-                seed=regression_seed,
-                stream_output=stream_output,
-            )
-            if not before_result.errors:
-                baseline_cmp = before_result
-        finally:
-            shutil.rmtree(tmp_before_output, ignore_errors=True)
 
     # Apply all patches in temp directory
     with tempfile.TemporaryDirectory() as tmpdir:
         tmp_skills = Path(tmpdir) / "skills"
         tmp_prompts = Path(tmpdir) / "prompts"
-        shutil.copytree(skills_dir, tmp_skills)
-        if prompts_dir.is_dir():
-            shutil.copytree(prompts_dir, tmp_prompts)
+        tmp_skills.mkdir(parents=True, exist_ok=True)
+        tmp_prompts.mkdir(parents=True, exist_ok=True)
 
-        applier = PatchApplier(tmp_skills, tmp_prompts)
+        # Only copy skill YAMLs being patched
+        needed_skills = {p.skill_name for p in patches}
+        needed_refs: set[str] = set()
+        for skill_name in needed_skills:
+            src = skills_dir / f"{skill_name}.yaml"
+            if src.exists():
+                shutil.copy2(src, tmp_skills / src.name)
+            # Collect prompt refs from skill configs
+            for cfg in skill_configs.values():
+                if cfg.get("name") == skill_name or cfg.get("trigger", {}).get("intent") == skill_name:
+                    for section in ("assessment", "answer_generation"):
+                        ref = cfg.get("strategy", {}).get(section, {}).get("system_prompt_ref", "")
+                        if ref:
+                            needed_refs.add(ref)
+
+        # Only copy referenced prompt YAMLs
+        if prompts_dir.is_dir():
+            for f in prompts_dir.glob("*.yaml"):
+                try:
+                    import yaml as _yaml
+                    data = _yaml.safe_load(f.read_text("utf-8"))
+                    if data and data.get("prompt_ref", "") in needed_refs:
+                        shutil.copy2(f, tmp_prompts / f.name)
+                except Exception:
+                    pass
+
+        applier = PatchApplier(skills_dir, prompts_dir)
         for patch in patches:
             skill_name = patch.skill_name
             skill_path = tmp_skills / f"{skill_name}.yaml"
@@ -517,6 +560,8 @@ def validate_composition(
                     yaml.dump(skill, allow_unicode=True, default_flow_style=False, sort_keys=False),
                     encoding="utf-8",
                 )
+                # Write prompt artifacts to sandbox (applier uses original prompts as source)
+                applier.write_prompt_artifacts_to_sandbox(tmp_prompts, patch)
             except Exception as e:
                 result["errors"].append(f"Failed to apply {patch.patch_id}: {e}")
                 result["passed"] = False

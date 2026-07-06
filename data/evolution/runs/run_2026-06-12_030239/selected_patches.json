@@ -1,0 +1,548 @@
+[
+  {
+    "patch_id": "",
+    "patch_type": "retrieval_strategy_update",
+    "skill_name": "alias_resolution",
+    "skill_version": "1.0.0",
+    "target_file": "",
+    "source_failure_ids": [
+      "q1"
+    ],
+    "targeted_failure_ids": [],
+    "primary_failure_type": "assessment_false_negative",
+    "target_path": "strategy.retrieval_routing",
+    "operation": "update",
+    "old_value": null,
+    "new_value": null,
+    "current_value": {
+      "boost_weights": {
+        "molecule_evidence": {
+          "weight": 5.0,
+          "rationale": "Alias resolution is about identifying chemical entities."
+        },
+        "entity_exact_match": {
+          "weight": 3.0,
+          "rationale": "Exact name/alias match is strongest signal."
+        }
+      }
+    },
+    "proposed_value": {
+      "boost_weights": {
+        "table_block": {
+          "weight": 6.0
+        }
+      }
+    },
+    "prompt_artifacts": [],
+    "rationale": "Table evidence often contains the answer but is underweighted.",
+    "expected_improvement": "Improve evidence recall for table-supported questions.",
+    "risk_level": "low",
+    "confidence": 0.65,
+    "status": "schema_validated",
+    "dependencies": [],
+    "validation_status": "pending"
+  },
+  {
+    "patch_id": "",
+    "patch_type": "fallback_update",
+    "skill_name": "alias_resolution",
+    "skill_version": "1.0.0",
+    "target_file": "",
+    "source_failure_ids": [
+      "q1"
+    ],
+    "targeted_failure_ids": [],
+    "primary_failure_type": "assessment_false_negative",
+    "target_path": "strategy.assessment",
+    "operation": "update",
+    "old_value": null,
+    "new_value": null,
+    "current_value": {
+      "failure_labels": [
+        "insufficient_evidence",
+        "entity_miss",
+        "alias_miss"
+      ]
+    },
+    "proposed_value": {
+      "failure_labels": [
+        "insufficient_evidence",
+        "entity_miss",
+        "alias_miss",
+        "premature_stop"
+      ]
+    },
+    "prompt_artifacts": [],
+    "rationale": "Add premature_stop label to better detect false negative assessments.",
+    "expected_improvement": "More precise failure categorization.",
+    "risk_level": "low",
+    "confidence": 0.55,
+    "status": "schema_validated",
+    "dependencies": [],
+    "validation_status": "pending"
+  },
+  {
+    "patch_id": "",
+    "patch_type": "retrieval_strategy_update",
+    "skill_name": "reaction_comparison",
+    "skill_version": "1.0.0",
+    "target_file": "",
+    "source_failure_ids": [
+      "q4",
+      "q3"
+    ],
+    "targeted_failure_ids": [],
+    "primary_failure_type": "assessment_false_negative",
+    "target_path": "strategy.retrieval_routing",
+    "operation": "update",
+    "old_value": null,
+    "new_value": null,
+    "current_value": {
+      "boost_weights": {
+        "table_block": {
+          "weight": 5.0,
+          "rationale": "Comparison data often appears in tables."
+        },
+        "numeric_match": {
+          "weight": 2.0,
+          "rationale": "Comparison requires extracting specific numeric values."
+        },
+        "reaction_event": {
+          "weight": 3.0,
+          "rationale": "Reaction events are the primary comparison target."
+        }
+      }
+    },
+    "proposed_value": {
+      "boost_weights": {
+        "table_block": {
+          "weight": 7.0
+        }
+      }
+    },
+    "prompt_artifacts": [],
+    "rationale": "Table evidence often contains the answer but is underweighted.",
+    "expected_improvement": "Improve evidence recall for table-supported questions.",
+    "risk_level": "low",
+    "confidence": 0.65,
+    "status": "schema_validated",
+    "dependencies": [],
+    "validation_status": "pending"
+  },
+  {
+    "patch_id": "",
+    "patch_type": "retrieval_strategy_update",
+    "skill_name": "reaction_condition_query",
+    "skill_version": "1.0.0",
+    "target_file": "",
+    "source_failure_ids": [
+      "q4",
+      "q3"
+    ],
+    "targeted_failure_ids": [],
+    "primary_failure_type": "assessment_false_negative",
+    "target_path": "strategy.retrieval_routing",
+    "operation": "update",
+    "old_value": null,
+    "new_value": null,
+    "current_value": {
+      "boost_weights": {
+        "table_block": {
+          "weight": 4.0,
+          "rationale": "Reaction conditions often appear in optimization tables."
+        },
+        "reaction_event": {
+          "weight": 3.0,
+          "rationale": "ReactionEventCard contains structured condition data."
+        },
+        "molecule_evidence": {
+          "weight": 2.0,
+          "rationale": "Compound identity links to specific reactions."
+        }
+      }
+    },
+    "proposed_value": {
+      "boost_weights": {
+        "table_block": {
+          "weight": 6.0
+        }
+      }
+    },
+    "prompt_artifacts": [],
+    "rationale": "Table evidence often contains the answer but is underweighted.",
+    "expected_improvement": "Improve evidence recall for table-supported questions.",
+    "risk_level": "low",
+    "confidence": 0.65,
+    "status": "schema_validated",
+    "dependencies": [],
+    "validation_status": "pending"
+  },
+  {
+    "patch_id": "",
+    "patch_type": "fallback_update",
+    "skill_name": "reaction_comparison",
+    "skill_version": "1.0.0",
+    "target_file": "",
+    "source_failure_ids": [
+      "q4",
+      "q3"
+    ],
+    "targeted_failure_ids": [],
+    "primary_failure_type": "assessment_false_negative",
+    "target_path": "strategy.assessment",
+    "operation": "update",
+    "old_value": null,
+    "new_value": null,
+    "current_value": {
+      "failure_labels": [
+        "insufficient_evidence",
+        "numeric_conflict",
+        "comparison_ambiguity",
+        "assessment_false_negative"
+      ]
+    },
+    "proposed_value": {
+      "failure_labels": [
+        "insufficient_evidence",
+        "numeric_conflict",
+        "comparison_ambiguity",
+        "assessment_false_negative",
+        "premature_stop"
+      ]
+    },
+    "prompt_artifacts": [],
+    "rationale": "Add premature_stop label to better detect false negative assessments.",
+    "expected_improvement": "More precise failure categorization.",
+    "risk_level": "low",
+    "confidence": 0.55,
+    "status": "schema_validated",
+    "dependencies": [],
+    "validation_status": "pending"
+  },
+  {
+    "patch_id": "",
+    "patch_type": "fallback_update",
+    "skill_name": "reaction_condition_query",
+    "skill_version": "1.0.0",
+    "target_file": "",
+    "source_failure_ids": [
+      "q4",
+      "q3"
+    ],
+    "targeted_failure_ids": [],
+    "primary_failure_type": "assessment_false_negative",
+    "target_path": "strategy.assessment",
+    "operation": "update",
+    "old_value": null,
+    "new_value": null,
+    "current_value": {
+      "failure_labels": [
+        "insufficient_evidence",
+        "condition_mismatch",
+        "assessment_false_negative"
+      ]
+    },
+    "proposed_value": {
+      "failure_labels": [
+        "insufficient_evidence",
+        "condition_mismatch",
+        "assessment_false_negative",
+        "premature_stop"
+      ]
+    },
+    "prompt_artifacts": [],
+    "rationale": "Add premature_stop label to better detect false negative assessments.",
+    "expected_improvement": "More precise failure categorization.",
+    "risk_level": "low",
+    "confidence": 0.55,
+    "status": "schema_validated",
+    "dependencies": [],
+    "validation_status": "pending"
+  },
+  {
+    "patch_id": "alias_resolution_cross_skill_promotion_1",
+    "patch_type": "template_add",
+    "skill_name": "alias_resolution",
+    "skill_version": "1.0.0",
+    "target_file": "",
+    "source_failure_ids": [],
+    "targeted_failure_ids": [],
+    "primary_failure_type": "unknown_failure",
+    "target_path": "templates",
+    "operation": "add",
+    "old_value": null,
+    "new_value": null,
+    "current_value": {},
+    "proposed_value": {
+      "name": "cross_skill_simple_lookup_table_evidence_list_entity_lookup_to_alias_resolution",
+      "description": "Cross-skill promotion: pattern 'simple_lookup_table_evidence_list' from entity_lookup → alias_resolution (8 successes, similarity=0.80)",
+      "applicable_when": {
+        "intent": "alias_resolution",
+        "query_structure": "simple_lookup",
+        "evidence_type": "table_evidence"
+      },
+      "not_applicable_when": [],
+      "slots": [],
+      "examples": [],
+      "promoted_from": "entity_lookup"
+    },
+    "prompt_artifacts": [],
+    "rationale": "Cross-skill promotion from entity_lookup: pattern 'simple_lookup_table_evidence_list'.",
+    "expected_improvement": "Apply successful entity_lookup pattern to alias_resolution.",
+    "risk_level": "medium",
+    "confidence": 0.7,
+    "status": "schema_validated",
+    "dependencies": [],
+    "validation_status": "pending"
+  },
+  {
+    "patch_id": "reaction_condition_query_cross_skill_promotion_2",
+    "patch_type": "template_add",
+    "skill_name": "reaction_condition_query",
+    "skill_version": "1.0.0",
+    "target_file": "",
+    "source_failure_ids": [],
+    "targeted_failure_ids": [],
+    "primary_failure_type": "unknown_failure",
+    "target_path": "templates",
+    "operation": "add",
+    "old_value": null,
+    "new_value": null,
+    "current_value": {},
+    "proposed_value": {
+      "name": "cross_skill_property_extraction_table_evidence_numeric_value_property_query_to_reaction_condition_query",
+      "description": "Cross-skill promotion: pattern 'property_extraction_table_evidence_numeric_value' from property_query → reaction_condition_query (15 successes, similarity=0.80)",
+      "applicable_when": {
+        "intent": "reaction_condition_query",
+        "query_structure": "property_extraction",
+        "evidence_type": "table_evidence"
+      },
+      "not_applicable_when": [],
+      "slots": [],
+      "examples": [],
+      "promoted_from": "property_query"
+    },
+    "prompt_artifacts": [],
+    "rationale": "Cross-skill promotion from property_query: pattern 'property_extraction_table_evidence_numeric_value'.",
+    "expected_improvement": "Apply successful property_query pattern to reaction_condition_query.",
+    "risk_level": "medium",
+    "confidence": 0.7,
+    "status": "schema_validated",
+    "dependencies": [],
+    "validation_status": "pending"
+  },
+  {
+    "patch_id": "entity_lookup_cross_skill_promotion_3",
+    "patch_type": "template_add",
+    "skill_name": "entity_lookup",
+    "skill_version": "1.0.0",
+    "target_file": "",
+    "source_failure_ids": [],
+    "targeted_failure_ids": [],
+    "primary_failure_type": "unknown_failure",
+    "target_path": "templates",
+    "operation": "add",
+    "old_value": null,
+    "new_value": null,
+    "current_value": {},
+    "proposed_value": {
+      "name": "cross_skill_simple_lookup_table_evidence_list_alias_resolution_to_entity_lookup",
+      "description": "Cross-skill promotion: pattern 'simple_lookup_table_evidence_list' from alias_resolution → entity_lookup (6 successes, similarity=0.80)",
+      "applicable_when": {
+        "intent": "entity_lookup",
+        "query_structure": "simple_lookup",
+        "evidence_type": "table_evidence"
+      },
+      "not_applicable_when": [],
+      "slots": [],
+      "examples": [],
+      "promoted_from": "alias_resolution"
+    },
+    "prompt_artifacts": [],
+    "rationale": "Cross-skill promotion from alias_resolution: pattern 'simple_lookup_table_evidence_list'.",
+    "expected_improvement": "Apply successful alias_resolution pattern to entity_lookup.",
+    "risk_level": "medium",
+    "confidence": 0.7,
+    "status": "schema_validated",
+    "dependencies": [],
+    "validation_status": "pending"
+  },
+  {
+    "patch_id": "property_query_cross_skill_promotion_4",
+    "patch_type": "template_add",
+    "skill_name": "property_query",
+    "skill_version": "1.0.0",
+    "target_file": "",
+    "source_failure_ids": [],
+    "targeted_failure_ids": [],
+    "primary_failure_type": "unknown_failure",
+    "target_path": "templates",
+    "operation": "add",
+    "old_value": null,
+    "new_value": null,
+    "current_value": {},
+    "proposed_value": {
+      "name": "cross_skill_property_extraction_table_evidence_list_reaction_condition_query_to_property_query",
+      "description": "Cross-skill promotion: pattern 'property_extraction_table_evidence_list' from reaction_condition_query → property_query (6 successes, similarity=0.80)",
+      "applicable_when": {
+        "intent": "property_query",
+        "query_structure": "property_extraction",
+        "evidence_type": "table_evidence"
+      },
+      "not_applicable_when": [],
+      "slots": [],
+      "examples": [],
+      "promoted_from": "reaction_condition_query"
+    },
+    "prompt_artifacts": [],
+    "rationale": "Cross-skill promotion from reaction_condition_query: pattern 'property_extraction_table_evidence_list'.",
+    "expected_improvement": "Apply successful reaction_condition_query pattern to property_query.",
+    "risk_level": "medium",
+    "confidence": 0.7,
+    "status": "schema_validated",
+    "dependencies": [],
+    "validation_status": "pending"
+  },
+  {
+    "patch_id": "property_query_cross_skill_promotion_5",
+    "patch_type": "template_add",
+    "skill_name": "property_query",
+    "skill_version": "1.0.0",
+    "target_file": "",
+    "source_failure_ids": [],
+    "targeted_failure_ids": [],
+    "primary_failure_type": "unknown_failure",
+    "target_path": "templates",
+    "operation": "add",
+    "old_value": null,
+    "new_value": null,
+    "current_value": {},
+    "proposed_value": {
+      "name": "cross_skill_property_extraction_table_evidence_numeric_value_reaction_condition_query_to_property_query",
+      "description": "Cross-skill promotion: pattern 'property_extraction_table_evidence_numeric_value' from reaction_condition_query → property_query (6 successes, similarity=0.80)",
+      "applicable_when": {
+        "intent": "property_query",
+        "query_structure": "property_extraction",
+        "evidence_type": "table_evidence"
+      },
+      "not_applicable_when": [],
+      "slots": [],
+      "examples": [],
+      "promoted_from": "reaction_condition_query"
+    },
+    "prompt_artifacts": [],
+    "rationale": "Cross-skill promotion from reaction_condition_query: pattern 'property_extraction_table_evidence_numeric_value'.",
+    "expected_improvement": "Apply successful reaction_condition_query pattern to property_query.",
+    "risk_level": "medium",
+    "confidence": 0.7,
+    "status": "schema_validated",
+    "dependencies": [],
+    "validation_status": "pending"
+  },
+  {
+    "patch_id": "alias_resolution_evidence_assessment_system_v2_ref",
+    "patch_type": "prompt_ref_update",
+    "skill_name": "alias_resolution",
+    "skill_version": "1.0.0",
+    "target_file": "config/skills/alias_resolution.yaml",
+    "source_failure_ids": [
+      "q1"
+    ],
+    "targeted_failure_ids": [
+      "q1"
+    ],
+    "primary_failure_type": "assessment_false_negative",
+    "target_path": "strategy.assessment",
+    "operation": "update",
+    "old_value": null,
+    "new_value": null,
+    "current_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM"
+    },
+    "proposed_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_V2"
+    },
+    "prompt_artifacts": [],
+    "rationale": "Point to V2 prompt: Preserved V1 grounding constraints; Added Rule 1: Alias resolution — evidence sufficient if compound name or definition implies meaning of label",
+    "expected_improvement": "Use improved V2 prompt for alias_resolution.",
+    "risk_level": "medium",
+    "confidence": 0.8,
+    "status": "schema_validated",
+    "dependencies": [
+      "evidence_assessment_system_v2_prompt_content"
+    ],
+    "validation_status": "pending"
+  },
+  {
+    "patch_id": "reaction_comparison_evidence_assessment_system_v2_ref",
+    "patch_type": "prompt_ref_update",
+    "skill_name": "reaction_comparison",
+    "skill_version": "1.0.0",
+    "target_file": "config/skills/reaction_comparison.yaml",
+    "source_failure_ids": [
+      "q4",
+      "q3"
+    ],
+    "targeted_failure_ids": [
+      "q4",
+      "q3"
+    ],
+    "primary_failure_type": "assessment_false_negative",
+    "target_path": "strategy.assessment",
+    "operation": "update",
+    "old_value": null,
+    "new_value": null,
+    "current_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM"
+    },
+    "proposed_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_V2"
+    },
+    "prompt_artifacts": [],
+    "rationale": "Point to V2 prompt: Preserved V1 grounding constraints; Added rule: INFERENCE OF OPTIMALITY FROM CONSISTENT USAGE — when a condition is used consistently across all procedures for a reaction, it can be inferred as optimal (fixes q3 failure).",
+    "expected_improvement": "Use improved V2 prompt for reaction_comparison.",
+    "risk_level": "medium",
+    "confidence": 0.8,
+    "status": "schema_validated",
+    "dependencies": [
+      "evidence_assessment_system_v2_prompt_content"
+    ],
+    "validation_status": "pending"
+  },
+  {
+    "patch_id": "reaction_condition_query_evidence_assessment_system_v2_ref",
+    "patch_type": "prompt_ref_update",
+    "skill_name": "reaction_condition_query",
+    "skill_version": "1.0.0",
+    "target_file": "config/skills/reaction_condition_query.yaml",
+    "source_failure_ids": [
+      "q4",
+      "q3"
+    ],
+    "targeted_failure_ids": [
+      "q4",
+      "q3"
+    ],
+    "primary_failure_type": "assessment_false_negative",
+    "target_path": "strategy.assessment",
+    "operation": "update",
+    "old_value": null,
+    "new_value": null,
+    "current_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM"
+    },
+    "proposed_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_V2"
+    },
+    "prompt_artifacts": [],
+    "rationale": "Point to V2 prompt: Preserved V1 grounding constraints; Added rule: INFERENCE OF OPTIMALITY FROM CONSISTENT USAGE — when a condition is used consistently across all procedures for a reaction, it can be inferred as optimal (fixes q3 failure).",
+    "expected_improvement": "Use improved V2 prompt for reaction_condition_query.",
+    "risk_level": "medium",
+    "confidence": 0.8,
+    "status": "schema_validated",
+    "dependencies": [
+      "evidence_assessment_system_v2_prompt_content"
+    ],
+    "validation_status": "pending"
+  }
+]

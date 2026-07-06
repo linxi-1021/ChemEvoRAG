@@ -1,0 +1,146 @@
+[
+  {
+    "patch_id": "reaction_condition_query_round1_patch1",
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "patch_id": "reaction_comparison_round1_patch1",
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "patch_id": "entity_lookup_round1_patch1",
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "patch_id": "entity_lookup_template_distill_1",
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "patch_id": "property_query_template_distill_2",
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "patch_id": "reaction_comparison_template_distill_9",
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "patch_id": "reaction_condition_query_template_distill_12",
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "patch_id": "entity_lookup_template_distill_13",
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "patch_id": "reaction_condition_query_template_distill_20",
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "patch_id": "alias_resolution_template_distill_22",
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "patch_id": "evidence_assessment_system_v2_prompt_content",
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "patch_id": "entity_lookup_evidence_assessment_system_v2_ref",
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "patch_id": "reaction_comparison_evidence_assessment_system_v2_ref",
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "patch_id": "reaction_condition_query_evidence_assessment_system_v2_ref",
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "patch_id": "reaction_comparison_retrieval_strategy_update_strategy_retrieval_routing_boost_weights_table_block_weight",
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "patch_id": "reaction_condition_query_retrieval_strategy_update_strategy_retrieval_routing_boost_weights_table_block_weight",
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "patch_id": "entity_lookup_retrieval_strategy_update_strategy_retrieval_routing_boost_weights_molecule_evidence_weight",
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "patch_id": "reaction_condition_query_retrieval_strategy_update_strategy_retrieval_routing_boost_weights_molecule_evidence_weight",
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "patch_id": "entity_lookup_evidence_expansion_update_strategy_evidence_expansion_max_expanded_blocks",
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "patch_id": "reaction_comparison_evidence_expansion_update_strategy_evidence_expansion_max_expanded_blocks",
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "patch_id": "reaction_condition_query_evidence_expansion_update_strategy_evidence_expansion_max_expanded_blocks",
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "patch_id": "entity_lookup_evidence_expansion_update_strategy_evidence_expansion_expand_from_molecule_mentions",
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "patch_id": "reaction_comparison_evidence_expansion_update_strategy_evidence_expansion_expand_from_molecule_mentions",
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "patch_id": "reaction_condition_query_evidence_expansion_update_strategy_evidence_expansion_expand_from_molecule_mentions",
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  }
+]

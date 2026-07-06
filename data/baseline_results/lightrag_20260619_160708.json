@@ -1,0 +1,57 @@
+{
+  "baseline": "lightrag",
+  "timestamp": "20260619_160708",
+  "total_questions": 3,
+  "metadata": {
+    "mode": "hybrid",
+    "llm_model": "DeepSeek-V4-Flash",
+    "embedding_model": "text-embedding-3-small",
+    "api_base": "https://endpoint.greatrouter.com"
+  },
+  "results": [
+    {
+      "question_id": "q1",
+      "paper_id": "10",
+      "paper_title": "Iron-Catalyzed Aerobic Oxidation of Alcohols: Lower Cost and Improved Selectivity",
+      "intent": "alias_resolution",
+      "question": "In this paper, what compound does the label '1a' refer to (give the molecular formula/name exactly as shown in the article)?",
+      "ground_truth": "n-C11H23CH2OH (1a)",
+      "key_entities": [
+        "1a"
+      ],
+      "system_answer": "Based solely on the provided context, the label '1a' refers to multiple distinct chemical entities depending on the specific experimental context. The Knowledge Graph Data explicitly notes this conflict, stating that \"the label '1a' may refer to distinct chemical entities depending on the specific experimental context or publication.\"\n\nThe specific identities for '1a' found in the context include:\n\n*   **Benzoic Acid (2a)**: In one experimental procedure, '1a' is the starting material (108.5 mg, 1.0 mmol) used in the oxidation reaction to produce Benzoic Acid (2a).\n*   **Palmitic Acid**: In another context, '1a' is identified as palmitic acid, a carboxylic acid starting material used in the preparation of methyl palmitate.\n*   **A Benzylic para-methoxybenzyl (PMB) ether substrate**: '1a' is also characterized as a benzylic para-methoxybenzyl (PMB) ether substrate.\n*   **A specific alcohol substrate**: '1a' is described as a specific alcohol substrate used in large-scale synthesis reactions to produce 2a.\n*   **An aldehyde substrate**: '1a' is also identified as an aldehyde substrate (dodecanal) used in the synthesis of dodecanoic acid.\n*   **A diol substrate (1,6-hexandiol)**: In one instance, '1a' is referred to as a specific diol substrate (1,6-hexandiol).\n\nTherefore, the label '1a' does not have a single, consistent molecular formula or name across the provided documents.\n\n### References\n\n- [1] Benzoic Acid (2a); Typical Procedure I\n- [2] Benzoic Acid (2a); Oxidation Using 30 mol% of TEMPO",
+      "elapsed_sec": 7.71
+    },
+    {
+      "question_id": "q2",
+      "paper_id": "10",
+      "paper_title": "Iron-Catalyzed Aerobic Oxidation of Alcohols: Lower Cost and Improved Selectivity",
+      "intent": "entity_lookup",
+      "question": "What is the structure/name of the product labeled '2a' formed from oxidation of 1a (provide the exact representation used in the paper)?",
+      "ground_truth": "n-C11H23CHO (2a)",
+      "key_entities": [
+        "2a",
+        "n-C11H23CHO"
+      ],
+      "system_answer": "Based solely on the provided context, the product labeled '2a' formed from the oxidation of substrate '1a' is not consistently defined. The context provides multiple, conflicting descriptions for the identity of compound **2a**.\n\nThe entity description for **2a** states that it is most consistently identified as an **aldehyde**, obtained as an oil from the oxidation of alcohol 1a. However, it is also described in other contexts as a **carboxylic acid** (specifically lauric acid, n-C11H23CO2H), a **ketone**, and even a **lactone** (ε-caprolactone). This indicates that the label \"2a\" may refer to different chemical entities depending on the specific reaction or experimental context.\n\nGiven these conflicting descriptions, the exact structure or name of the product labeled '2a' cannot be definitively determined from the provided information.\n\n### References\n\n*   [1] 2a",
+      "elapsed_sec": 2.78
+    },
+    {
+      "question_id": "q3",
+      "paper_id": "10",
+      "paper_title": "Iron-Catalyzed Aerobic Oxidation of Alcohols: Lower Cost and Improved Selectivity",
+      "intent": "reaction_condition_query",
+      "question": "For the 100 mmol-scale aerobic oxidation of 1a performed with a slow flow of air, what catalyst loadings, solvent, air flow rate, temperature and reaction time were used?",
+      "ground_truth": "Fe(NO3)3·9H2O 5 mol%, 4‑OH‑TEMPO 10 mol%, NaCl 10 mol%; solvent DCE; air flow 30 mL/min; 25 °C; 15.5 h.",
+      "key_entities": [
+        "1a",
+        "Fe(NO3)3·9H2O",
+        "4-OH-TEMPO",
+        "NaCl",
+        "DCE"
+      ],
+      "system_answer": "Based solely on the provided context, the specific details for the 100 mmol-scale aerobic oxidation of 1a with a slow flow of air are as follows:\n\nThe reaction was conducted using a **slow flow of air** at a rate of **30 mL/min**. The reaction setup is depicted in **Figure 1**, which illustrates the apparatus used for this scale-up.\n\nHowever, the context does not explicitly state the catalyst loadings, solvent, temperature, or reaction time for this specific 100 mmol-scale reaction of 1a. The context mentions that a \"100 mmol scale reaction of 1a applying a slow flow of air was demonstrated\" and refers to \"Figure 1\" for the apparatus, but the precise reaction parameters for this particular entry are not detailed in the provided text.\n\nWhile the context provides \"Standard Reaction Conditions\" for other aerobic oxidations (e.g., 5 mol% Fe(NO3)3·9H2O, 3 mol% TEMPO, and 5 mol% NaCl in toluene), it does not confirm that these exact conditions were applied to the 100 mmol-scale reaction of 1a. Therefore, I cannot provide the catalyst loadings, solvent, temperature, or reaction time for this specific experiment based on the available information.\n\n### References\n\n*   [1] Document Chunks",
+      "elapsed_sec": 3.01
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+Run directory: D:\Desktop\evo\ChemEvoRAG_Phase1-main\data\evolution\runs\run_2026-06-11_154417
+Trace report: 6 failures, 26 partial, 86 success
+
+[Mutation] Cluster: generation_error__strategy.answer_generation__answer_generation
+  Failure type: generation_error, Skills: ['alias_resolution', 'entity_lookup']
+  Generated 1 mutation patch(es)
+
+[Mutation] Cluster: assessment_false_negative__strategy.assessment__evidence_assessment
+  Failure type: assessment_false_negative, Skills: ['reaction_comparison', 'reaction_condition_query']
+  Generated 3 mutation patch(es)
+
+[Distillation] 1 template_add, 5 cross-skill promotions
+
+[Integration] 2 selected, 8 rejected, 0 conflicts resolved
+Schema validation: 2 accepted, 0 rejected
+[1/2] Validating alias_resolution_template_distill_1
+  [FAIL] ['Regression failed: Score dropped by 0.0428 (max allowed: 0.0100); 1 new high-severity failure(s) detected']
+[2/2] Validating answer_generation_system_v2_prompt_content
+  [Refine] Attempting iterative refinement based on regression feedback...
+  [Refine] V3 generated, re-validating...
+  [Refine] V3 still failed: ['Regression failed: Average score 0.8000 below minimum 0.8; Score dropped by 0.0661 (max allowed: 0.0100); Targeted improvement -0.6705 below minimum 0.05; 1 new high-severity failure(s) detected']
+  [FAIL] ['Regression failed: Score dropped by 0.0161 (max allowed: 0.0123); Targeted improvement 0.0045 below minimum 0.05']
+
+--validate-only: 0 patches validated.

@@ -1,0 +1,10 @@
+{
+  "patch_id": "reaction_comparison_template_distill_9",
+  "passed": false,
+  "average_score": 0.8366666666666666,
+  "score_delta": -0.029435028248587902,
+  "targeted_improvement": 0.0,
+  "errors": [
+    "Regression failed: Score dropped by 0.0294 (max allowed: 0.0100)"
+  ]
+}

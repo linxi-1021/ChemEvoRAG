@@ -1,0 +1,49 @@
+Run directory: D:\Desktop\evo\ChemEvoRAG_Phase1-main\data\evolution\runs\run_2026-06-12_024014
+Trace report: 6 failures, 26 partial, 86 success
+
+[SuccessAnalysis] Analyzing successful traces...
+  Global: 5 intents analyzed
+  Contrastive: 2 clusters analyzed
+
+[Mutation] Cluster: generation_error__strategy.answer_generation__answer_generation
+  Failure type: generation_error, Skills: ['alias_resolution']
+  Generated 4 mutation patch(es)
+
+[Mutation] Cluster: assessment_false_negative__strategy.assessment__evidence_assessment
+  Failure type: assessment_false_negative, Skills: ['reaction_comparison', 'reaction_condition_query']
+  Generated 7 mutation patch(es)
+
+[Distillation] 0 template_add, 5 cross-skill promotions
+
+[Integration] 16 selected, 0 rejected, 0 conflicts resolved
+Schema validation: 14 accepted, 2 rejected
+[1/14] Validating 
+  [FAIL] ['Regression failed: Score dropped by 0.0494 (max allowed: 0.0100); Targeted improvement -0.8864 below minimum 0.05']
+[2/14] Validating 
+  [FAIL] ["Regression eval failed: ['Eval failed: I/O operation on closed file.', 'Eval failed: I/O operation on closed file.', 'Eval failed: I/O operation on closed file.']"]
+[3/14] Validating 
+  [FAIL] ["Regression eval failed: ['Eval failed: I/O operation on closed file.', 'Eval failed: I/O operation on closed file.', 'Eval failed: I/O operation on closed file.']"]
+[4/14] Validating 
+  [FAIL] ["Regression eval failed: ['Eval failed: I/O operation on closed file.', 'Eval failed: I/O operation on closed file.', 'Eval failed: I/O operation on closed file.']"]
+[5/14] Validating 
+  [FAIL] ["Regression eval failed: ['Eval failed: I/O operation on closed file.', 'Eval failed: I/O operation on closed file.', 'Eval failed: I/O operation on closed file.']"]
+[6/14] Validating 
+  [FAIL] ["Regression eval failed: ['Eval failed: I/O operation on closed file.', 'Eval failed: I/O operation on closed file.', 'Eval failed: I/O operation on closed file.']"]
+[7/14] Validating alias_resolution_cross_skill_promotion_1
+  [FAIL] ["Regression eval failed: ['Eval failed: I/O operation on closed file.', 'Eval failed: I/O operation on closed file.', 'Eval failed: I/O operation on closed file.']"]
+[8/14] Validating reaction_condition_query_cross_skill_promotion_2
+  [FAIL] ["Regression eval failed: ['Eval failed: I/O operation on closed file.', 'Eval failed: I/O operation on closed file.', 'Eval failed: I/O operation on closed file.']"]
+[9/14] Validating entity_lookup_cross_skill_promotion_3
+  [FAIL] ["Regression eval failed: ['Eval failed: I/O operation on closed file.', 'Eval failed: I/O operation on closed file.', 'Eval failed: I/O operation on closed file.']"]
+[10/14] Validating property_query_cross_skill_promotion_4
+  [FAIL] ["Regression eval failed: ['Eval failed: I/O operation on closed file.', 'Eval failed: I/O operation on closed file.', 'Eval failed: I/O operation on closed file.']"]
+[11/14] Validating property_query_cross_skill_promotion_5
+  [FAIL] ["Regression eval failed: ['Eval failed: I/O operation on closed file.', 'Eval failed: I/O operation on closed file.', 'Eval failed: I/O operation on closed file.']"]
+[12/14] Validating alias_resolution_evidence_assessment_system_v2_ref
+  [FAIL] ["Prompt ref 'EVIDENCE_ASSESSMENT_SYSTEM_V2' does not exist in D:\\Desktop\\evo\\ChemEvoRAG_Phase1-main\\config\\prompts and no prompt_artifact in this patch will create it. Cannot validate a patch that references a non-existent prompt."]
+[13/14] Validating reaction_comparison_evidence_assessment_system_v2_ref
+  [FAIL] ["Prompt ref 'EVIDENCE_ASSESSMENT_SYSTEM_V2' does not exist in D:\\Desktop\\evo\\ChemEvoRAG_Phase1-main\\config\\prompts and no prompt_artifact in this patch will create it. Cannot validate a patch that references a non-existent prompt."]
+[14/14] Validating reaction_condition_query_evidence_assessment_system_v2_ref
+  [FAIL] ["Prompt ref 'EVIDENCE_ASSESSMENT_SYSTEM_V2' does not exist in D:\\Desktop\\evo\\ChemEvoRAG_Phase1-main\\config\\prompts and no prompt_artifact in this patch will create it. Cannot validate a patch that references a non-existent prompt."]
+
+--validate-only: 0 patches validated.

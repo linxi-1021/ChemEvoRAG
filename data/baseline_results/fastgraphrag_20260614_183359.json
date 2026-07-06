@@ -1,0 +1,78 @@
+{
+  "baseline": "fastgraphrag",
+  "timestamp": "20260614_183359",
+  "total_questions": 3,
+  "metadata": {
+    "model": "DeepSeek-V4-Flash"
+  },
+  "results": [
+    {
+      "question_id": "q1",
+      "paper_id": "10",
+      "paper_title": "Iron-Catalyzed Aerobic Oxidation of Alcohols: Lower Cost and Improved Selectivity",
+      "intent": "alias_resolution",
+      "question": "In this paper, what compound does the label '1a' refer to (give the molecular formula/name exactly as shown in the article)?",
+      "ground_truth": "n-C11H23CH2OH (1a)",
+      "key_entities": [
+        "1a"
+      ],
+      "system_answer": "answer='Not available in the provided data.'",
+      "elapsed_sec": 9.57,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "1a"
+      ],
+      "judge_reasoning": "The system answer states the data is not available, but the ground truth provides the specific entity '1a', so the answer is completely wrong."
+    },
+    {
+      "question_id": "q2",
+      "paper_id": "10",
+      "paper_title": "Iron-Catalyzed Aerobic Oxidation of Alcohols: Lower Cost and Improved Selectivity",
+      "intent": "entity_lookup",
+      "question": "What is the structure/name of the product labeled '2a' formed from oxidation of 1a (provide the exact representation used in the paper)?",
+      "ground_truth": "n-C11H23CHO (2a)",
+      "key_entities": [
+        "2a",
+        "n-C11H23CHO"
+      ],
+      "system_answer": "answer=\"According to the text, the product 2a is 4-methoxybenzoic acid; specifically, in Table 2 of source 8, the NMR yield for 2a is given as 95% for R = OMe (1a), and the footnote [b] says 'NMR yield of corrosponding benzoic acid of 5 is shown in the parenthesis', which is 93%. Combined with the context that 1a is a PMB ether (1a), the product 2a is 4-methoxybenzoic acid. The paper itself calls it simply '2a' but the structure is 4-methoxybenzoic acid.\"",
+      "elapsed_sec": 9.45,
+      "judge_score": 0.0,
+      "entities_found": [
+        "2a"
+      ],
+      "entities_missing": [
+        "n-C11H23CHO"
+      ],
+      "judge_reasoning": "The system answer incorrectly identifies 2a as 4-methoxybenzoic acid, while the ground truth specifies it as n-C11H23CHO, so it is completely wrong."
+    },
+    {
+      "question_id": "q3",
+      "paper_id": "10",
+      "paper_title": "Iron-Catalyzed Aerobic Oxidation of Alcohols: Lower Cost and Improved Selectivity",
+      "intent": "reaction_condition_query",
+      "question": "For the 100 mmol-scale aerobic oxidation of 1a performed with a slow flow of air, what catalyst loadings, solvent, air flow rate, temperature and reaction time were used?",
+      "ground_truth": "Fe(NO3)3·9H2O 5 mol%, 4‑OH‑TEMPO 10 mol%, NaCl 10 mol%; solvent DCE; air flow 30 mL/min; 25 °C; 15.5 h.",
+      "key_entities": [
+        "1a",
+        "Fe(NO3)3·9H2O",
+        "4-OH-TEMPO",
+        "NaCl",
+        "DCE"
+      ],
+      "system_answer": "answer='The user query asks about a 100 mmol-scale aerobic oxidation of 1a with a slow flow of air. The input data mention a 240 mmol scale (SCALE_240_MMOL) with slow flow of air and an 89% yield (YIELD_89), but there is no specific entry for a 100 mmol scale. The sources describe various scales: 10 mmol (source [2]) giving 98% yield, 0.1 mol (100 mmol) in source [8] for allylic alcohol E-1a (90% yield, 6 h, DCE, 10 mol% Fe(NO3)3·9H2O, 10 mol% TEMPO, 10 mol% NaCl), but not for isochroman 1a. No direct information for a 100 mmol aerobic oxidation of isochroman 1a with slow air flow is provided.'",
+      "elapsed_sec": 13.09,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "1a",
+        "Fe(NO3)3·9H2O",
+        "4-OH-TEMPO",
+        "NaCl",
+        "DCE"
+      ],
+      "judge_reasoning": "The system answer does not provide any of the specific conditions from the ground truth (catalyst, co-catalysts, solvent, air flow, temperature, time) and instead discusses unrelated scales and yields, making it completely wrong."
+    }
+  ]
+}

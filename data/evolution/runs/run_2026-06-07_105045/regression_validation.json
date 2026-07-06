@@ -1,0 +1,191 @@
+[
+  {
+    "patch_id": "reaction_condition_query_round1_patch1",
+    "passed": false,
+    "errors": [
+      "Regression failed: Score dropped by 0.0144 (max allowed: 0.01); Failed cases increased by 11 (max allowed: 1)"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.014406779661016889,
+      "reason": "Score dropped by 0.0144 (max allowed: 0.01); Failed cases increased by 11 (max allowed: 1)",
+      "average_score": 0.8516949152542376,
+      "score_delta": -0.014406779661016889,
+      "targeted_improvement": 0.0,
+      "failed_cases_increase": 11
+    },
+    "average_score": 0.8516949152542376,
+    "score_delta": -0.014406779661016889,
+    "targeted_improvement": 0.0,
+    "failed_cases_increase": 11
+  },
+  {
+    "patch_id": "reaction_condition_query_round1_patch2",
+    "passed": false,
+    "errors": [
+      "Regression failed: Score dropped by 0.0593 (max allowed: 0.01); Failed cases increased by 16 (max allowed: 1)"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.05932203389830504,
+      "reason": "Score dropped by 0.0593 (max allowed: 0.01); Failed cases increased by 16 (max allowed: 1)",
+      "average_score": 0.8067796610169494,
+      "score_delta": -0.05932203389830504,
+      "targeted_improvement": 0.0,
+      "failed_cases_increase": 16
+    },
+    "average_score": 0.8067796610169494,
+    "score_delta": -0.05932203389830504,
+    "targeted_improvement": 0.0,
+    "failed_cases_increase": 16
+  },
+  {
+    "patch_id": "reaction_comparison_round1_patch1",
+    "passed": false,
+    "errors": [
+      "Regression failed: Failed cases increased by 9 (max allowed: 1)"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.007627118644067732,
+      "reason": "Failed cases increased by 9 (max allowed: 1)",
+      "average_score": 0.8584745762711867,
+      "score_delta": -0.007627118644067732,
+      "targeted_improvement": 0.0,
+      "failed_cases_increase": 9
+    },
+    "average_score": 0.8584745762711867,
+    "score_delta": -0.007627118644067732,
+    "targeted_improvement": 0.0,
+    "failed_cases_increase": 9
+  },
+  {
+    "patch_id": "reaction_comparison_round1_patch2",
+    "passed": false,
+    "errors": [
+      "Regression failed: Score dropped by 0.0280 (max allowed: 0.01); Failed cases increased by 11 (max allowed: 1)"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.027966101694915202,
+      "reason": "Score dropped by 0.0280 (max allowed: 0.01); Failed cases increased by 11 (max allowed: 1)",
+      "average_score": 0.8381355932203393,
+      "score_delta": -0.027966101694915202,
+      "targeted_improvement": 0.0,
+      "failed_cases_increase": 11
+    },
+    "average_score": 0.8381355932203393,
+    "score_delta": -0.027966101694915202,
+    "targeted_improvement": 0.0,
+    "failed_cases_increase": 11
+  },
+  {
+    "patch_id": "entity_lookup_template_distill_1",
+    "passed": false,
+    "errors": [
+      "Regression failed: Score dropped by 0.0568 (max allowed: 0.01); Failed cases increased by 14 (max allowed: 1)"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.05677966101694909,
+      "reason": "Score dropped by 0.0568 (max allowed: 0.01); Failed cases increased by 14 (max allowed: 1)",
+      "average_score": 0.8093220338983054,
+      "score_delta": -0.05677966101694909,
+      "targeted_improvement": 0.0,
+      "failed_cases_increase": 14
+    },
+    "average_score": 0.8093220338983054,
+    "score_delta": -0.05677966101694909,
+    "targeted_improvement": 0.0,
+    "failed_cases_increase": 14
+  },
+  {
+    "patch_id": "property_query_template_distill_2",
+    "passed": false,
+    "errors": [
+      "Regression failed: Failed cases increased by 11 (max allowed: 1)"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.008474576271186418,
+      "reason": "Failed cases increased by 11 (max allowed: 1)",
+      "average_score": 0.857627118644068,
+      "score_delta": -0.008474576271186418,
+      "targeted_improvement": 0.0,
+      "failed_cases_increase": 11
+    },
+    "average_score": 0.857627118644068,
+    "score_delta": -0.008474576271186418,
+    "targeted_improvement": 0.0,
+    "failed_cases_increase": 11
+  },
+  {
+    "patch_id": "alias_resolution_template_distill_3",
+    "passed": false,
+    "errors": [
+      "Regression failed: Failed cases increased by 9 (max allowed: 1)"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": -0.0016949152542374835,
+      "reason": "Failed cases increased by 9 (max allowed: 1)",
+      "average_score": 0.8677966101694919,
+      "score_delta": 0.0016949152542374835,
+      "targeted_improvement": 0.0,
+      "failed_cases_increase": 9
+    },
+    "average_score": 0.8677966101694919,
+    "score_delta": 0.0016949152542374835,
+    "targeted_improvement": 0.0,
+    "failed_cases_increase": 9
+  },
+  {
+    "patch_id": "reaction_condition_query_template_distill_4",
+    "passed": false,
+    "errors": [
+      "Regression failed: Score dropped by 0.0424 (max allowed: 0.01); Failed cases increased by 13 (max allowed: 1)"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.042372881355932424,
+      "reason": "Score dropped by 0.0424 (max allowed: 0.01); Failed cases increased by 13 (max allowed: 1)",
+      "average_score": 0.823728813559322,
+      "score_delta": -0.042372881355932424,
+      "targeted_improvement": 0.0,
+      "failed_cases_increase": 13
+    },
+    "average_score": 0.823728813559322,
+    "score_delta": -0.042372881355932424,
+    "targeted_improvement": 0.0,
+    "failed_cases_increase": 13
+  },
+  {
+    "patch_id": "reaction_comparison_template_distill_5",
+    "passed": false,
+    "errors": [
+      "Regression failed: Score dropped by 0.0288 (max allowed: 0.01); Failed cases increased by 13 (max allowed: 1)"
+    ],
+    "warnings": [],
+    "regression_result": {
+      "passed": false,
+      "score_drop": 0.028813559322033777,
+      "reason": "Score dropped by 0.0288 (max allowed: 0.01); Failed cases increased by 13 (max allowed: 1)",
+      "average_score": 0.8372881355932207,
+      "score_delta": -0.028813559322033777,
+      "targeted_improvement": 0.0,
+      "failed_cases_increase": 13
+    },
+    "average_score": 0.8372881355932207,
+    "score_delta": -0.028813559322033777,
+    "targeted_improvement": 0.0,
+    "failed_cases_increase": 13
+  }
+]

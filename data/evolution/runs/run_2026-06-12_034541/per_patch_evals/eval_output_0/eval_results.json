@@ -1,0 +1,57 @@
+{
+  "summary": {
+    "total": 1,
+    "average_score": 1.0,
+    "by_intent": {
+      "reaction_comparison": 1.0
+    }
+  },
+  "results": [
+    {
+      "id": "q4",
+      "source_paper": "1.pdf",
+      "intent": "reaction_comparison",
+      "question": "Referring to the additive screen (Table 3), which additive gave a higher yield for the aerobic oxidation screening of 3-(n-hexyl)-1,2-octadien-4-ol: NaCl (entry 5) or NaNO2 (entry 1)?",
+      "ground_truth": "NaCl (entry 5) gave the higher yield: NaCl showed 100% conversion and 72% yield, whereas NaNO2 (entry 1) showed 55% conversion and 35% yield.",
+      "system_answer": "NaCl (entry 5) gave a higher yield than NaNO2 (entry 1) for the aerobic oxidation of 3-(n-hexyl)-1,2-octadien-4-ol. NaCl provided 72% NMR yield with 100% conversion in 4 hours, whereas NaNO2 gave only 35% NMR yield with 55% conversion after 36 hours (evidence: block_1_0017).",
+      "evidence_ids": [
+        "block_1_0018",
+        "block_1_0036",
+        "block_1_0124",
+        "block_1_0127",
+        "block_1_0009",
+        "block_1_0041",
+        "block_1_0121",
+        "block_1_0122",
+        "mol_txt_1_0047",
+        "block_1_0017",
+        "block_1_0074"
+      ],
+      "confidence": 1.0,
+      "judge_score": 1.0,
+      "entities_found": [
+        "NaCl",
+        "NaNO2",
+        "3-(n-hexyl)-1,2-octadien-4-ol"
+      ],
+      "entities_missing": [
+        "Table 3"
+      ],
+      "judge_reasoning": "The system answer correctly states all key facts from the ground truth (NaCl higher yield, 100% conversion and 72% yield vs NaNO2 55% conversion and 35% yield) and includes the substrate name, but omits the mention of 'Table 3' which is a key entity to check.",
+      "score": 1.0,
+      "intent_key": "reaction_comparison"
+    }
+  ],
+  "metadata": {
+    "sampling": {
+      "mode": "random",
+      "limit": 3,
+      "seed": 42,
+      "selected_question_ids": [
+        "q4",
+        "q5",
+        "q4"
+      ]
+    }
+  }
+}

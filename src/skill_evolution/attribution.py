@@ -1,21 +1,20 @@
-"""Failure Attribution for ChemEvoRAG Skill Evolution.
+"""Failure Attribution, Success Pattern Mining, and Case Library. Stage 3 + E layer.
 
-Implements §4 of the Skill Evolution design spec:
-  - OutcomeType / FailureType enums
-  - Rule-based attribution engine (priority order)
-  - LLM attribution fallback
-  - TraceReport generator from eval_results.json + react_logs/
+Responsibilities:
+  - Rule-based candidate attribution (not final judgment)
+  - Analysis clusters (cross-skill grouping for LLM analysis)
+  - Success pattern mining with structural feature extraction
+  - Coverage gap recording to backlog
+  - CaseLibrary (failures, successes, gaps, analysis notes)
 
-Usage:
-    from skill_evolution.attribution import generate_trace_report, TraceReport
-    report = generate_trace_report(eval_results_path, react_logs_dir)
+Principle: 先归因，再进化。规则给出候选结论，LLM 复核，regression 最终裁决。
 """
 
 from __future__ import annotations
 
 import json
-import os
 import re
+from collections import defaultdict
 from datetime import datetime
 from enum import Enum
 from pathlib import Path
@@ -26,30 +25,50 @@ try:
 except ImportError:
     raise ImportError("pydantic is required for skill_evolution.attribution")
 
+from .trace import StandardTrace, FieldAudit, load_react_log, audit_trace_fields
+from .evaluation import OutcomeType, OutcomeResult, evaluate_outcome
 
-# ---------------------------------------------------------------------------
-# §4.1 Enums
-# ---------------------------------------------------------------------------
 
-class OutcomeType(str, Enum):
-    SUCCESS = "success"
-    PARTIAL_SUCCESS = "partial_success"
-    SYSTEM_FAILURE = "system_failure"
-    COVERAGE_GAP = "coverage_gap"
-
+# ══════════════════════════════════════════════════════════════════════════
+# Enums — aligned with architecture diagram
+# ══════════════════════════════════════════════════════════════════════════
 
 class FailureType(str, Enum):
     ENTITY_MISS = "entity_miss"
     ALIAS_MISS = "alias_miss"
     LOCAL_ID_MISS = "local_id_miss"
+    TOOL_ERROR = "tool_error"                     # RDKit / Neo4j / parser errors — no patch
     ROUTING_ERROR = "routing_error"
-    EVIDENCE_EXPANSION_ERROR = "evidence_expansion_error"
     PLANNER_ERROR = "planner_error"
+    GRAPH_EXPANSION_ERROR = "graph_expansion_error"  # evidence expansion / graph neighbor
     ASSESSMENT_FALSE_NEG = "assessment_false_negative"
     TABLE_EXTRACTION_ERROR = "table_extraction_error"
     TABLE_REASONING_ERROR = "table_reasoning_error"
     GENERATION_ERROR = "generation_error"
     UNKNOWN_FAILURE = "unknown_failure"
+
+    @property
+    def is_patchable(self) -> bool:
+        return self not in (FailureType.TOOL_ERROR, FailureType.UNKNOWN_FAILURE,
+                            FailureType.TABLE_EXTRACTION_ERROR)
+
+    @property
+    def mutation_dimension(self) -> str:
+        """Map failure type to the primary mutation dimension."""
+        _map = {
+            FailureType.ENTITY_MISS: "planning",
+            FailureType.ALIAS_MISS: "planning",
+            FailureType.LOCAL_ID_MISS: "planning",
+            FailureType.ROUTING_ERROR: "routing",
+            FailureType.PLANNER_ERROR: "planning",
+            FailureType.GRAPH_EXPANSION_ERROR: "graph_expansion",
+            FailureType.ASSESSMENT_FALSE_NEG: "prompt",
+            FailureType.TABLE_REASONING_ERROR: "prompt",
+            FailureType.GENERATION_ERROR: "prompt",
+            FailureType.TOOL_ERROR: "",
+            FailureType.UNKNOWN_FAILURE: "",
+        }
+        return _map.get(self, "")
 
 
 class AttributionSource(str, Enum):
@@ -58,32 +77,27 @@ class AttributionSource(str, Enum):
     HYBRID = "hybrid"
 
 
-# ---------------------------------------------------------------------------
+# ══════════════════════════════════════════════════════════════════════════
 # Pydantic models
-# ---------------------------------------------------------------------------
+# ══════════════════════════════════════════════════════════════════════════
 
 class _BaseModel(BaseModel):
     model_config = ConfigDict(populate_by_name=True, validate_assignment=True, extra="forbid")
 
 
-class PartialSuccessRecord(_BaseModel):
-    question_id: str
-    intent: str
-    score: float
-    outcome_type: OutcomeType = OutcomeType.PARTIAL_SUCCESS
-    partial_success_reason: str = ""
-    primary_failure_type: FailureType | None = None
-    evolution_action: str = "uncertain_queue"
+class CandidateAttributionEntry(_BaseModel):
+    type: str = ""      # e.g. "assessment_false_negative"
+    confidence: float = 0.0
+    signals: list[str] = Field(default_factory=list)
 
 
-class CoverageGapRecord(_BaseModel):
+class CandidateAttribution(_BaseModel):
     question_id: str
-    intent: str
-    score: float
-    outcome_type: OutcomeType = OutcomeType.COVERAGE_GAP
-    gap_reason: str = ""
-    coverage_gap_verified_by: str = "oracle_search"
-    evolution_action: str = "record_only"
+    candidate_failure_types: list[CandidateAttributionEntry] = Field(default_factory=list)
+    candidate_target_paths: list[str] = Field(default_factory=list)
+    candidate_prompt_role: str = ""
+    uncertainty_flags: list[str] = Field(default_factory=list)
+    needs_llm_review: bool = True
 
 
 class FailureRecord(_BaseModel):
@@ -102,7 +116,6 @@ class FailureRecord(_BaseModel):
     corpus_contained_answer: bool | None = None
     gold_answer: str = ""
     predicted_answer: str = ""
-    retrieval_path: list[str] = Field(default_factory=list)
     retrieved_evidence_ids: list[str] = Field(default_factory=list)
     gold_evidence_ids: list[str] = Field(default_factory=list)
     cited_evidence_ids: list[str] = Field(default_factory=list)
@@ -110,445 +123,420 @@ class FailureRecord(_BaseModel):
     stop_reason: str = ""
     proposed_patch_targets: list[str] = Field(default_factory=list)
     evolution_action: str = "generate_patch_candidate"
+    # Structured data for LLM analysis
+    retrieval_rounds: list[dict[str, Any]] = Field(default_factory=list)
+    channel_stats: dict[str, int] = Field(default_factory=dict)
 
 
 class SuccessPattern(_BaseModel):
     intent: str
-    pattern: str
+    pattern: str          # descriptive name: "{query_structure}_{evidence_type}_{answer_structure}"
     frequency: int = 0
     avg_score: float = 0.0
     supporting_question_ids: list[str] = Field(default_factory=list)
     candidate_template_action: str = "distill_or_refine_template"
+    query_structure: str = ""
+    evidence_type: str = ""
+    answer_structure: str = ""
+    trigger_conditions: dict[str, Any] = Field(default_factory=dict)
+    reusable_template: str = ""
 
 
-class IntentStats(_BaseModel):
-    average_score: float = 0.0
-    total: int = 0
-    success: int = 0
-    partial_success: int = 0
-    system_failure: int = 0
-    coverage_gap: int = 0
+class CoverageGapRecord(_BaseModel):
+    question_id: str
+    intent: str
+    score: float
+    question: str = ""
+    gold_answer: str = ""
+    missing_entities: list[str] = Field(default_factory=list)
+    corpus_search_hint: str = ""
+    source_paper: str = ""
+    detected_at: str = ""
+    status: str = "open"
 
 
-class EnvironmentSnapshot(_BaseModel):
-    model_name: str = ""
-    temperature: float = 0.1
-    embedding_model: str = "all-MiniLM-L6-v2"
-    retriever_version: str = ""
-    prompt_registry_version: str = "1.0"
-    corpus_snapshot_id: str = ""
-    eval_dataset_version: str = "v1_118qs"
-    random_seed: int = 42
+class PartialSuccessRecord(_BaseModel):
+    question_id: str
+    intent: str
+    score: float
+    partial_success_reason: str = ""
+    primary_failure_type: FailureType | None = None
+    evolution_action: str = "uncertain_queue"
+
+
+class AnalysisNote(_BaseModel):
+    run_id: str
+    generated_at: str = ""
+    summary: str = ""
+    findings: list[str] = Field(default_factory=list)
+    recommendations: list[str] = Field(default_factory=list)
+
+
+class CaseLibrary(_BaseModel):
+    failures: list[FailureRecord] = Field(default_factory=list)
+    successes: list[SuccessPattern] = Field(default_factory=list)
+    partial_successes: list[PartialSuccessRecord] = Field(default_factory=list)
+    coverage_gaps: list[CoverageGapRecord] = Field(default_factory=list)
+    analysis_notes: list[AnalysisNote] = Field(default_factory=list)
 
 
 class TraceReport(_BaseModel):
     run_id: str
     generated_at: str = ""
-    skill_snapshot: dict[str, Any] = Field(default_factory=dict)
-    environment: EnvironmentSnapshot = Field(default_factory=EnvironmentSnapshot)
     total_questions: int = 0
     average_score: float = 0.0
-    by_intent: dict[str, IntentStats] = Field(default_factory=dict)
+    by_intent: dict[str, dict[str, float]] = Field(default_factory=dict)
     failures: list[FailureRecord] = Field(default_factory=list)
     partial_successes: list[PartialSuccessRecord] = Field(default_factory=list)
     coverage_gaps: list[CoverageGapRecord] = Field(default_factory=list)
     success_patterns: list[SuccessPattern] = Field(default_factory=list)
+    trace_field_audits: list[dict[str, Any]] = Field(default_factory=list)
+    analysis_clusters: list[dict[str, Any]] = Field(default_factory=list)
 
 
-# ---------------------------------------------------------------------------
-# §4.3 Attribution rule engine (priority-ordered)
-# ---------------------------------------------------------------------------
+# ══════════════════════════════════════════════════════════════════════════
+# Rule-based candidate attribution (priority-ordered)
+# ══════════════════════════════════════════════════════════════════════════
 
-# Priority order: upstream failures first to avoid downstream contamination
-_ATTRIBUTION_PRIORITY = [
-    "coverage_gap_check",
-    "entity_miss",
-    "alias_miss",
-    "local_id_miss",
-    "routing_error",
-    "evidence_expansion_error",
-    "planner_error",
-    "table_extraction_error",
-    "table_reasoning_error",
-    "assessment_false_negative",
-    "generation_error",
-]
-
-
-def _classify_outcome(score: float, evidence_contained_answer: bool | None = None) -> OutcomeType:
-    """Classify outcome from judge score."""
-    if score >= 0.8:
-        return OutcomeType.SUCCESS
-    if score >= 0.3:
-        return OutcomeType.PARTIAL_SUCCESS
-    # score < 0.3 → system_failure or coverage_gap
-    # coverage_gap is determined separately by oracle check
-    return OutcomeType.SYSTEM_FAILURE
+def _get_prompt_role(ft: FailureType) -> str:
+    mapping = {
+        FailureType.ENTITY_MISS: "query_rewrite",
+        FailureType.ALIAS_MISS: "query_rewrite",
+        FailureType.LOCAL_ID_MISS: "query_rewrite",
+        FailureType.ROUTING_ERROR: "retrieval_routing",
+        FailureType.PLANNER_ERROR: "query_rewrite",
+        FailureType.GRAPH_EXPANSION_ERROR: "evidence_expansion",
+        FailureType.ASSESSMENT_FALSE_NEG: "evidence_assessment",
+        FailureType.TABLE_REASONING_ERROR: "evidence_assessment",
+        FailureType.GENERATION_ERROR: "answer_generation",
+        FailureType.TOOL_ERROR: "",
+        FailureType.UNKNOWN_FAILURE: "",
+    }
+    return mapping.get(ft, "")
 
 
-def _check_coverage_gap(
-    result: dict,
-    react_log: str,
-    gold_answer: str,
-) -> bool:
-    """Check if failure is a coverage gap (answer not in corpus).
-
-    Conservative: only returns True if the react log shows all rounds
-    retrieved 0 new evidence AND the final answer explicitly says insufficient.
-    A more rigorous check would use oracle_search, but that requires
-    running additional retrieval which is expensive.
-    """
-    predicted = result.get("system_answer", "")
-    if "insufficient" not in predicted.lower() and "not enough" not in predicted.lower():
-        return False
-    # Check if react log shows evidence exhaustion (all rounds found 0 new items)
-    if not react_log:
-        return False
-    zero_new_pattern = re.findall(r"(\d+) new", react_log)
-    if zero_new_pattern and all(int(n) == 0 for n in zero_new_pattern[1:]):
-        # Second round onward all had 0 new items
-        return True
-    return False
+def _get_normalized_target(ft: FailureType) -> str:
+    mapping = {
+        FailureType.ENTITY_MISS: "strategy.query_rewrite",
+        FailureType.ALIAS_MISS: "strategy.query_rewrite",
+        FailureType.LOCAL_ID_MISS: "strategy.query_rewrite",
+        FailureType.ROUTING_ERROR: "strategy.retrieval_routing",
+        FailureType.PLANNER_ERROR: "strategy.query_rewrite",
+        FailureType.GRAPH_EXPANSION_ERROR: "strategy.evidence_expansion",
+        FailureType.ASSESSMENT_FALSE_NEG: "strategy.assessment",
+        FailureType.TABLE_REASONING_ERROR: "strategy.assessment",
+        FailureType.GENERATION_ERROR: "strategy.answer_generation",
+        FailureType.TOOL_ERROR: "",
+        FailureType.UNKNOWN_FAILURE: "",
+    }
+    return mapping.get(ft, "")
 
 
-def _detect_entity_miss(result: dict, react_log: str, question: str) -> bool:
-    """Check if the question's entities were never found in evidence."""
-    answer = result.get("system_answer", "").lower()
-    if "insufficient" not in answer and "not found" not in answer:
-        return False
-    # Look for evidence IDs in the react log
-    if "molecule" in react_log.lower() or "entity" in react_log.lower():
-        return False
-    # Check if judge reasoning mentions entities not found
-    reasoning = result.get("judge_reasoning", "").lower()
-    if "entity" in reasoning or "not mentioned" in reasoning:
-        return True
-    return False
-
-
-def _detect_alias_miss(result: dict, react_log: str) -> bool:
-    """Check if alias expansion failed."""
-    answer = result.get("system_answer", "").lower()
-    reasoning = result.get("judge_reasoning", "").lower()
-    entities_found = result.get("entities_found", [])
-    entities_missing = result.get("entities_missing", [])
-    # If entities were partially found (abbreviation found but full name not), it's alias_miss
-    if entities_missing and entities_found:
-        for e in entities_missing:
-            if any(c.isupper() for c in e) and len(e) <= 6:
-                return True
-    return False
-
-
-def _detect_local_id_miss(result: dict, question: str) -> bool:
-    """Check if local compound IDs (like 1a, 2b) failed to map."""
-    # Look for local ID patterns in question
-    local_ids = re.findall(r"\b(\d+[a-z])\b", question.lower())
-    if not local_ids:
-        return False
-    answer = result.get("system_answer", "").lower()
-    reasoning = result.get("judge_reasoning", "").lower()
-    # If the answer mentions a different local ID or says not found
-    if "not found" in answer or "not mentioned" in reasoning:
-        return True
-    # If the answer's entities don't match the expected ones
-    entities_found = result.get("entities_found", [])
-    for lid in local_ids:
-        if lid not in str(entities_found).lower():
-            if lid not in answer:
-                return True
-    return False
-
-
-def _detect_assessment_false_negative(
-    result: dict, react_log: str, gold_answer: str = "", question: str = ""
-) -> bool:
-    """Check if assessment incorrectly declared evidence insufficient
-    despite the answer being present in evidence.
-
-    This should ONLY trigger when the gold answer's specific terms
-    actually appear in the retrieved evidence. Otherwise it's a routing error.
-    """
-    answer = result.get("system_answer", "").lower()
-    # Check if the answer is a refusal (saying evidence is lacking)
-    _REFUSAL_SIGNALS = [
-        "insufficient", "not enough", "does not include", "cannot determine",
-        "unable to", "not sufficient", "not found", "no data", "no evidence",
-        "does not contain", "not available", "could not find",
-    ]
-    is_refusal = any(s in answer for s in _REFUSAL_SIGNALS)
-    if not is_refusal:
-        return False
-    # Check if evidence IDs were retrieved and substantial
-    evidence_ids = result.get("evidence_ids", [])
-    if not evidence_ids:
-        return False
-    # Check react log for rounds with evidence but assessment said insufficient
-    react_lower = react_log.lower()
-    assessment_said_insufficient = (
-        "insufficient" in react_lower or "sufficient=false" in react_lower
-    )
-    if assessment_said_insufficient and re.search(r"\d+ new", react_log):
-        new_counts = re.findall(r"(\d+) new", react_log)
-        if not new_counts or int(new_counts[0]) < 5:
-            return False
-        # Verify that gold answer's specific terms appear in the evidence
-        _COMMON_CHEM_WORDS = {
-            "product", "yield", "reaction", "solvent", "conditions",
-            "temperature", "catalyst", "oxidation", "compound", "molecule",
-            "experimental", "standard", "higher", "lower", "percent",
-            "obtained", "formed", "gave", "showed", "reported",
-            "table", "entry", "data", "results", "paper", "authors",
-            "the", "and", "for", "was", "were", "are", "has", "have",
-            "with", "from", "this", "that", "which", "than", "versus",
-        }
-        if gold_answer:
-            gold_terms = set(re.findall(r'\b\w{3,}\b', gold_answer.lower()))
-            specific_terms = gold_terms - _COMMON_CHEM_WORDS
-            if question:
-                compound_ids = set(re.findall(r'\b(\d+[a-z])\b', question.lower()))
-                specific_terms.update(compound_ids)
-            if specific_terms:
-                react_lower = react_log.lower()
-                matching_specific = sum(1 for t in specific_terms if t in react_lower)
-                if matching_specific >= 1:
-                    return True
-        # No specific terms to match — fall back to evidence count heuristic
-        return True
-    return False
-
-
-def _detect_table_reasoning_error(result: dict, react_log: str, question: str) -> bool:
-    """Check if table data was present in evidence but the LLM misinterpreted it
-    (e.g., wrong row, wrong column, entry confusion).
-
-    This should ONLY trigger when:
-    1. The question involves table data
-    2. The system generated a WRONG answer (not "insufficient")
-    3. Table data was actually present in the retrieved evidence
-
-    If the system said "insufficient", the failure is either:
-    - routing_error (evidence didn't contain the answer)
-    - assessment_false_negative (evidence contained the answer but assessment missed it)
-    """
-    question_lower = question.lower()
-    # Table-related questions
-    table_signals = ["entry", "table", "row", "column", "yield", "solvent"]
-    if not any(s in question_lower for s in table_signals):
-        return False
-    answer = result.get("system_answer", "").lower()
-    score = result.get("score", 1.0)
-    # Only classify as table_reasoning_error if the system produced a WRONG answer
-    # (not a refusal/non-answer). If it refused, it's routing or assessment failure.
-    _REFUSAL_SIGNALS = [
-        "insufficient", "not enough", "does not include", "cannot determine",
-        "unable to", "not sufficient", "not found", "no data", "no evidence",
-        "does not contain", "not available", "could not find",
-    ]
-    is_refusal = any(s in answer for s in _REFUSAL_SIGNALS)
-    if score < 0.3 and not is_refusal:
-        # System generated a wrong answer from table data
-        if "table" in react_log.lower() or "entry" in react_log.lower():
-            return True
-    return False
-
-
-def _detect_generation_error(result: dict, react_log: str) -> bool:
-    """Check if evidence was sufficient but answer generation failed."""
-    answer = result.get("system_answer", "").lower()
-    score = result.get("score", 1.0)
-    # If evidence was marked sufficient by assessment but score is low
-    if score < 0.5 and "sufficient" in react_log.lower():
-        # Assessment said yes but answer was wrong
-        if "assessment: sufficient=true" in react_log:
-            return True
-    return False
-
-
-def _detect_routing_error(result: dict, react_log: str, gold_answer: str = "", question: str = "") -> bool:
-    """Check if wrong retrieval channels were used.
-
-    Detects two cases:
-    1. Very few evidence items retrieved across all rounds (low recall)
-    2. Evidence was retrieved but none contained the answer (wrong evidence)
-       - detected by: score < 0.3, answer says "insufficient", and assessment
-         said "sufficient=False" in the react log, AND the gold answer terms
-         do NOT appear in the retrieved evidence
-
-    If the gold answer terms DO appear in the evidence, it's an
-    assessment_false_negative (evidence was there but assessment missed it).
-    """
-    score = result.get("score", 1.0)
-    if score >= 0.5:
-        return False
-
-    answer = result.get("system_answer", "").lower()
-    _REFUSAL_SIGNALS = [
-        "insufficient", "not enough", "does not include", "cannot determine",
-        "unable to", "not sufficient", "not found", "no data", "no evidence",
-        "does not contain", "not available", "could not find",
-    ]
-    is_refusal = any(s in answer for s in _REFUSAL_SIGNALS)
-
-    # Case 1: Very few evidence items
-    new_counts = re.findall(r"(\d+) new", react_log)
-    if new_counts:
-        total_new = sum(int(n) for n in new_counts)
-        if total_new < 3:
-            return True
-
-    # Case 2: Evidence was retrieved but assessment said insufficient
-    react_lower = react_log.lower()
-    assessment_said_insufficient = (
-        "insufficient" in react_lower or "sufficient=false" in react_lower
-    )
-    if is_refusal and assessment_said_insufficient:
-        if new_counts and sum(int(n) for n in new_counts) >= 3:
-            # Check if SPECIFIC gold answer terms appear in the evidence.
-            # Filter out common chemistry words to avoid false matches.
-            _COMMON_CHEM_WORDS = {
-                "product", "yield", "reaction", "solvent", "conditions",
-                "temperature", "catalyst", "oxidation", "compound", "molecule",
-                "experimental", "standard", "higher", "lower", "percent",
-                "obtained", "formed", "gave", "showed", "reported",
-                "table", "entry", "data", "results", "paper", "authors",
-                "the", "and", "for", "was", "were", "are", "has", "have",
-                "with", "from", "this", "that", "which", "than", "versus",
-            }
-            if gold_answer:
-                gold_terms = set(re.findall(r'\b\w{3,}\b', gold_answer.lower()))
-                specific_terms = gold_terms - _COMMON_CHEM_WORDS
-                # Also extract compound IDs from the question (e.g., "2c", "2k", "1a")
-                if question:
-                    compound_ids = set(re.findall(r'\b(\d+[a-z])\b', question.lower()))
-                    specific_terms.update(compound_ids)
-                if specific_terms:
-                    react_lower = react_log.lower()
-                    matching_specific = sum(1 for t in specific_terms if t in react_lower)
-                    if matching_specific >= 1:
-                        # Specific gold answer terms found in evidence
-                        # — assessment missed it, not a routing error
-                        return False
-            # Evidence was retrieved but didn't contain the answer
-            # This is a routing error — wrong evidence channels
-            return True
-
-    return False
-
-
-def _get_proposed_patch_targets(failure_type: FailureType) -> list[str]:
-    """Map failure type to patch target paths."""
+def _get_proposed_patch_targets(ft: FailureType) -> list[str]:
     mapping = {
         FailureType.ENTITY_MISS: ["strategy.query_rewrite", "strategy.retrieval_routing"],
         FailureType.ALIAS_MISS: ["strategy.query_rewrite", "strategy.retrieval_routing"],
         FailureType.LOCAL_ID_MISS: ["strategy.query_rewrite"],
         FailureType.ROUTING_ERROR: ["strategy.retrieval_routing"],
-        FailureType.EVIDENCE_EXPANSION_ERROR: ["strategy.evidence_expansion"],
+        FailureType.GRAPH_EXPANSION_ERROR: ["strategy.evidence_expansion"],
         FailureType.PLANNER_ERROR: ["strategy.query_rewrite"],
         FailureType.ASSESSMENT_FALSE_NEG: ["strategy.assessment"],
-        FailureType.TABLE_EXTRACTION_ERROR: [],  # not patchable
         FailureType.TABLE_REASONING_ERROR: ["strategy.assessment", "strategy.answer_generation"],
         FailureType.GENERATION_ERROR: ["strategy.answer_generation"],
+        FailureType.TOOL_ERROR: [],
         FailureType.UNKNOWN_FAILURE: [],
     }
-    return mapping.get(failure_type, [])
+    return mapping.get(ft, [])
 
 
-def _attribute_failure_rule(
-    result: dict,
-    react_log: str,
-    question: str,
-    gold_answer: str = "",
-) -> tuple[FailureType, float, str]:
-    """Rule-based failure attribution.
+def _detect_assessment_false_neg(trace: StandardTrace, react_log: str, gold_answer: str) -> CandidateAttributionEntry | None:
+    """Check if assessment incorrectly declared evidence insufficient."""
+    answer = trace.answer.lower()
+    _REFUSAL = ["insufficient", "not enough", "does not include", "cannot determine",
+                "unable to", "not sufficient", "not found", "no data", "no evidence"]
+    is_refusal = any(s in answer for s in _REFUSAL)
+    if not is_refusal:
+        return None
+    if not trace.evidence_items:
+        return None
+    # Check react log for evidence with assessment false negative
+    if "sufficient=false" in react_log.lower():
+        new_counts = re.findall(r"(\d+) new", react_log)
+        if new_counts and int(new_counts[0]) >= 3:
+            return CandidateAttributionEntry(
+                type="assessment_false_negative", confidence=0.85,
+                signals=["assessment.sufficient=false", f"retrieved={new_counts[0]}", "answer_is_refusal"])
+    return None
 
-    Returns (failure_type, confidence, explanation).
-    Runs through priority order; first match wins.
+
+def _detect_routing_error(trace: StandardTrace, react_log: str, gold_answer: str) -> CandidateAttributionEntry | None:
+    """Check if wrong retrieval channels were used."""
+    answer = trace.answer.lower()
+    _REFUSAL = ["insufficient", "not enough", "does not include", "cannot determine"]
+    is_refusal = any(s in answer for s in _REFUSAL)
+    if trace.score >= 0.3:
+        return None
+    new_counts = re.findall(r"(\d+) new", react_log)
+    total_new = sum(int(n) for n in new_counts) if new_counts else 0
+    if total_new < 3 and is_refusal:
+        return CandidateAttributionEntry(type="routing_error", confidence=0.65,
+                                         signals=[f"low_evidence={total_new}"])
+    if is_refusal and "sufficient=false" in react_log.lower() and total_new >= 3:
+        # Check if gold terms appear in evidence
+        if gold_answer:
+            gold_terms = set(re.findall(r'\b\w{4,}\b', gold_answer.lower()))
+            common = {"product", "yield", "reaction", "solvent", "conditions", "table", "entry", "data"}
+            specific = gold_terms - common
+            if specific and not any(t in react_log.lower() for t in specific):
+                return CandidateAttributionEntry(type="routing_error", confidence=0.70,
+                                                 signals=["gold_terms_missing_from_evidence"])
+    return None
+
+
+def _detect_entity_miss(trace: StandardTrace, react_log: str, gold_answer: str = "") -> CandidateAttributionEntry | None:
+    answer = trace.answer.lower()
+    if "not found" in answer or "does not mention" in trace.feedback.lower():
+        return CandidateAttributionEntry(type="entity_miss", confidence=0.65,
+                                         signals=["entity_not_found"])
+    return None
+
+
+def _detect_local_id_miss(trace: StandardTrace, react_log: str, gold_answer: str = "") -> CandidateAttributionEntry | None:
+    local_ids = re.findall(r"\b(\d+[a-z])\b", trace.question.lower())
+    if not local_ids:
+        return None
+    answer = trace.answer.lower()
+    if "not found" in answer:
+        return CandidateAttributionEntry(type="local_id_miss", confidence=0.70,
+                                         signals=[f"local_ids={local_ids}"])
+    return None
+
+
+def _detect_table_reasoning_error(trace: StandardTrace, react_log: str, gold_answer: str = "") -> CandidateAttributionEntry | None:
+    q = trace.question.lower()
+    table_signals = ["entry", "table", "row", "column", "yield", "solvent"]
+    if not any(s in q for s in table_signals):
+        return None
+    answer = trace.answer.lower()
+    _REFUSAL = ["insufficient", "not found", "no data"]
+    if any(s in answer for s in _REFUSAL):
+        return None
+    if trace.score < 0.3 and ("table" in react_log.lower() or "entry" in react_log.lower()):
+        return CandidateAttributionEntry(type="table_reasoning_error", confidence=0.65,
+                                         signals=["table_evidence_present", "wrong_answer"])
+    return None
+
+
+def _detect_generation_error(trace: StandardTrace, react_log: str, gold_answer: str = "") -> CandidateAttributionEntry | None:
+    if trace.score >= 0.5:
+        return None
+    if "sufficient=true" in react_log.lower():
+        return CandidateAttributionEntry(type="generation_error", confidence=0.70,
+                                         signals=["assessment.sufficient=true", "wrong_answer"])
+    return None
+
+
+def candidate_attribution(trace: StandardTrace, react_log: str = "",
+                          gold_answer: str = "") -> CandidateAttribution:
+    """Rule-based candidate attribution — priority-ordered detection.
+
+    Runs each detector and collects candidates with confidence scores.
+    LLM will verify in Stage 2. NOT a single conclusion.
     """
-    # 1. coverage_gap_check — handled separately in generate_trace_report
+    qid = trace.question_id
+    candidates: list[CandidateAttributionEntry] = []
+    uncertainty: list[str] = []
 
-    # 2. entity_miss
-    if _detect_entity_miss(result, react_log, question):
-        return FailureType.ENTITY_MISS, 0.80, "Entities from question not found in retrieved evidence."
+    # Tool error check first (immediate return — not patchable)
+    answer = trace.answer.lower()
+    if any(s in answer for s in ["rdkit", "neo4j", "parse error", "could not parse"]):
+        candidates.append(CandidateAttributionEntry(
+            type="tool_error", confidence=0.80, signals=["tool_error_in_answer"]))
+        return CandidateAttribution(
+            question_id=qid, candidate_failure_types=candidates,
+            candidate_target_paths=[], candidate_prompt_role="",
+            uncertainty_flags=["tool_error_detected"], needs_llm_review=False)
 
-    # 3. alias_miss
-    if _detect_alias_miss(result, react_log):
-        return FailureType.ALIAS_MISS, 0.75, "Abbreviation/alias not expanded to full chemical name."
+    # Priority-ordered detectors
+    detectors = [
+        _detect_assessment_false_neg,
+        _detect_routing_error,
+        _detect_entity_miss,
+        _detect_local_id_miss,
+        _detect_table_reasoning_error,
+        _detect_generation_error,
+    ]
+    for detector in detectors:
+        result = detector(trace, react_log, gold_answer)
+        if result:
+            candidates.append(result)
 
-    # 4. local_id_miss
-    if _detect_local_id_miss(result, question):
-        return FailureType.LOCAL_ID_MISS, 0.80, "Local compound ID mapping failed."
+    if not candidates:
+        candidates.append(CandidateAttributionEntry(
+            type="unknown_failure", confidence=0.30, signals=["no_rule_matched"]))
+        uncertainty.append("no_rule_matched")
 
-    # 5. routing_error
-    if _detect_routing_error(result, react_log, gold_answer, question):
-        return FailureType.ROUTING_ERROR, 0.70, "Wrong evidence retrieved — answer terms not found in evidence."
+    if not gold_answer:
+        uncertainty.append("missing_gold_answer")
 
-    # 6. evidence_expansion_error
-    # (hard to detect without comparing expected vs actual expansion)
+    best_type = candidates[0].type
+    ft = FailureType(best_type) if best_type in [e.value for e in FailureType] else FailureType.UNKNOWN_FAILURE
 
-    # 7. planner_error — only if the planner's query refinement was ineffective
-    # (don't trigger if the real issue is retrieval or assessment)
-    rounds = result.get("react_rounds_used", 1)
-    stop_reason = result.get("stop_reason", "")
-    if rounds == 3 and stop_reason == "max_rounds_exhausted":
-        # Check if this is actually a planner issue vs retrieval/assessment
-        # If assessment ever said sufficient, it's not a planner error
-        if "sufficient=true" not in react_log.lower():
-            # Check if new evidence was found in later rounds (planner was working)
-            new_counts = re.findall(r"(\d+) new", react_log)
-            if new_counts and len(new_counts) >= 2:
-                later_new = sum(int(n) for n in new_counts[1:])
-                if later_new == 0:
-                    # Planner's refined queries found nothing — planner error
-                    return FailureType.PLANNER_ERROR, 0.60, "ReAct loop exhausted all rounds — refined queries found no new evidence."
-
-    # 8. table_extraction_error vs table_reasoning_error
-    if _detect_table_reasoning_error(result, react_log, question):
-        # Assume table was correctly extracted but LLM reasoning failed
-        return FailureType.TABLE_REASONING_ERROR, 0.75, "Table data present in evidence but LLM failed to interpret correctly."
-
-    # 9. assessment_false_negative
-    if _detect_assessment_false_negative(result, react_log, gold_answer, question):
-        return FailureType.ASSESSMENT_FALSE_NEG, 0.85, "Assessment LLM incorrectly judged evidence insufficient despite answer being present."
-
-    # 10. generation_error
-    if _detect_generation_error(result, react_log):
-        return FailureType.GENERATION_ERROR, 0.80, "Evidence was sufficient per assessment, but answer generation produced incorrect output."
-
-    # 11. fallback
-    return FailureType.UNKNOWN_FAILURE, 0.30, "No rule matched. Manual review recommended."
+    return CandidateAttribution(
+        question_id=qid,
+        candidate_failure_types=candidates,
+        candidate_target_paths=_get_proposed_patch_targets(ft),
+        candidate_prompt_role=_get_prompt_role(ft),
+        uncertainty_flags=uncertainty,
+        needs_llm_review=ft.is_patchable and candidates[0].confidence < 0.85,
+    )
 
 
-# ---------------------------------------------------------------------------
-# §4.7 Trace report generator
-# ---------------------------------------------------------------------------
+# ══════════════════════════════════════════════════════════════════════════
+# Analysis clusters (cross-skill)
+# ══════════════════════════════════════════════════════════════════════════
 
-def _load_react_log(react_logs_dir: Path, doc_tag: str, query_hash: str) -> str:
-    """Load a specific react log file."""
-    log_path = react_logs_dir / f"{doc_tag}_{query_hash}.log"
-    if log_path.exists():
-        return log_path.read_text("utf-8")
-    return ""
+def build_analysis_clusters(failures: list[FailureRecord]) -> list[dict[str, Any]]:
+    """Group failures into analysis clusters for LLM analysis (cross-skill).
+
+    Key = (failure_type, normalized_target_path, prompt_role)
+    """
+    groups: dict[tuple, dict[str, Any]] = {}
+
+    for f in failures:
+        if not f.primary_failure_type.is_patchable:
+            continue
+        if f.attribution_confidence < 0.5:
+            continue
+
+        key = (
+            f.primary_failure_type.value,
+            _get_normalized_target(f.primary_failure_type),
+            _get_prompt_role(f.primary_failure_type),
+        )
+
+        if key not in groups:
+            groups[key] = {
+                "cluster_id": f"{key[0]}__{key[1]}__{key[2]}",
+                "failure_type": key[0],
+                "normalized_target_path": key[1],
+                "prompt_role": key[2],
+                "failures": [],
+                "affected_skills": set(),
+            }
+
+        groups[key]["failures"].append(f)
+        groups[key]["affected_skills"].add(f.skill_name)
+
+    result: list[dict[str, Any]] = []
+    for c in groups.values():
+        c["affected_skills"] = sorted(c["affected_skills"])
+        c["cluster_size"] = len(c["failures"])
+        result.append(c)
+
+    return result
 
 
-def _extract_react_rounds(react_log: str) -> int:
-    """Extract the number of rounds used from react log."""
-    round_matches = re.findall(r"\[ReAct\] Round (\d+)/(\d+)", react_log)
-    if round_matches:
-        return max(int(m[0]) for m in round_matches)
-    return 1
+# ══════════════════════════════════════════════════════════════════════════
+# Success pattern mining
+# ══════════════════════════════════════════════════════════════════════════
+
+def mine_success_pattern(trace: StandardTrace) -> SuccessPattern:
+    """Extract structural pattern from a successful query."""
+    q_lower = trace.question.lower()
+    answer_lower = trace.answer.lower()
+    evidence_text = " ".join(
+        ev.summary for rr in trace.retrieval_rounds
+        for ev in rr.retrieved_evidence
+    ).lower()
+
+    # Query structure
+    query_structure = "simple_lookup"
+    if any(w in q_lower for w in ["compare", "versus", "vs", "higher", "lower", "best"]):
+        query_structure = "comparison"
+    elif any(w in q_lower for w in ["yield", "temperature", "solvent", "catalyst", "pressure"]):
+        query_structure = "property_extraction"
+    elif any(w in q_lower for w in ["which", "what compound", "what molecule", "identify"]):
+        query_structure = "identification"
+    elif any(w in q_lower for w in ["why", "mechanism", "reason", "explain"]):
+        query_structure = "explanation"
+    elif any(w in q_lower for w in ["synthesis", "procedure", "protocol", "how to"]):
+        query_structure = "procedure_query"
+
+    # Evidence type
+    evidence_type = "text_evidence"
+    if "table" in evidence_text or "entry" in evidence_text:
+        evidence_type = "table_evidence"
+    elif "reaction_event" in evidence_text or "reaction card" in evidence_text:
+        evidence_type = "reaction_event"
+    elif "molecule" in evidence_text:
+        evidence_type = "entity_evidence"
+
+    # Answer structure
+    answer_structure = "narrative"
+    if re.search(r'\d+%', answer_lower):
+        answer_structure = "numeric_value"
+    elif "," in trace.answer and len(trace.answer.split(",")) >= 3:
+        answer_structure = "list"
+    elif any(w in answer_lower for w in ["yes", "no", "true", "false"]):
+        answer_structure = "boolean"
+
+    pattern = f"{query_structure}_{evidence_type}_{answer_structure}"
+
+    # Trigger conditions
+    trigger: dict[str, Any] = {"intent": trace.intent}
+    if query_structure == "comparison":
+        trigger["query_signals"] = ["compare", "versus", "higher", "lower", "best"]
+    elif query_structure == "property_extraction":
+        trigger["query_signals"] = ["yield", "temperature", "solvent", "catalyst"]
+
+    # Reusable template
+    reusable = ""
+    if query_structure == "comparison":
+        reusable = ("For comparison queries: extract all relevant values from evidence, "
+                     "identify the comparison dimension, and explicitly state which option "
+                     "ranks highest/lowest with the supporting value.")
+    elif query_structure == "property_extraction":
+        reusable = ("For property extraction queries: locate the specific property in evidence, "
+                     "extract the exact value with units, and cite the evidence source.")
+
+    return SuccessPattern(
+        intent=trace.intent,
+        pattern=pattern,
+        frequency=1,
+        avg_score=trace.score,
+        supporting_question_ids=[trace.question_id],
+        query_structure=query_structure,
+        evidence_type=evidence_type,
+        answer_structure=answer_structure,
+        trigger_conditions=trigger,
+        reusable_template=reusable,
+    )
 
 
-def _extract_stop_reason(react_log: str) -> str:
-    """Extract the stop reason from react log."""
-    if "Evidence sufficient, stopping" in react_log:
-        return "evidence_sufficient"
-    if "No refined query, stopping" in react_log:
-        return "no_refined_query"
-    if "Assessment failed" in react_log:
-        return "assessment_failed"
-    return "max_rounds_exhausted"
+# ══════════════════════════════════════════════════════════════════════════
+# Coverage gap handling
+# ══════════════════════════════════════════════════════════════════════════
 
+def record_coverage_gap(outcome: OutcomeResult) -> CoverageGapRecord:
+    """Create a coverage gap record for the backlog."""
+    return CoverageGapRecord(
+        question_id=outcome.trace_id,
+        intent=outcome.metadata.get("intent", "unknown"),
+        score=outcome.score,
+        question=outcome.metadata.get("question", ""),
+        gold_answer=outcome.metadata.get("gold_answer", ""),
+        missing_entities=outcome.metadata.get("missing_entities", []),
+        corpus_search_hint=outcome.metadata.get("corpus_search_hint", ""),
+        source_paper=outcome.metadata.get("source_paper", ""),
+        detected_at=datetime.now().strftime("%Y-%m-%d_%H%M"),
+        status="open",
+    )
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# Main pipeline function
+# ══════════════════════════════════════════════════════════════════════════
 
 def generate_trace_report(
     eval_results_path: Path,
@@ -556,25 +544,13 @@ def generate_trace_report(
     skill_configs: dict[str, dict] | None = None,
     run_id: str | None = None,
 ) -> TraceReport:
-    """Generate a TraceReport from eval results and react logs.
-
-    This is the main entry point for §4 Failure Attribution.
-
-    Args:
-        eval_results_path: Path to eval_results.json
-        react_logs_dir: Path to react_logs/ directory
-        skill_configs: Optional dict of intent → skill YAML config
-        run_id: Optional run identifier (auto-generated if not provided)
-
-    Returns:
-        TraceReport with failures, partial_successes, coverage_gaps, and success_patterns
-    """
-    eval_results = json.loads(eval_results_path.read_text("utf-8"))
-    results = eval_results.get("results", [])
-    summary = eval_results.get("summary", {})
-
+    """Main entry point for Stage 3. Generates TraceReport from eval results + react logs."""
     if not run_id:
-        run_id = f"run_{datetime.now().strftime('%Y-%m-%d_%H%M')}"
+        run_id = f"run_{datetime.now().strftime('%Y-%m-%d_%H%M%S')}"
+
+    eval_data = json.loads(eval_results_path.read_text("utf-8"))
+    results = eval_data.get("results", [])
+    summary = eval_data.get("summary", {})
 
     report = TraceReport(
         run_id=run_id,
@@ -583,163 +559,136 @@ def generate_trace_report(
         average_score=summary.get("average_score", 0.0),
     )
 
-    # Build intent stats
-    by_intent_raw: dict[str, list[float]] = {}
+    case_library = CaseLibrary()
+
     for r in results:
-        intent = r.get("intent", "unknown")
-        by_intent_raw.setdefault(intent, []).append(r.get("score", 0.0))
+        trace = _build_trace_from_result(r, react_logs_dir)
 
-    for intent, scores in by_intent_raw.items():
-        stats = IntentStats(
-            average_score=sum(scores) / len(scores) if scores else 0.0,
-            total=len(scores),
-        )
-        report.by_intent[intent] = stats
+        # Field audit
+        audit = audit_trace_fields(trace)
+        report.trace_field_audits.append(audit.model_dump(mode="json") if hasattr(audit, 'model_dump') else {})
 
-    # Analyze each result
-    for r in results:
-        score = r.get("score", 0.0)
-        intent = r.get("intent", "unknown")
-        question_id = r.get("id", "")
-        question = r.get("question", "")
-        ground_truth = r.get("ground_truth", "")
-        system_answer = r.get("system_answer", "")
+        outcome = evaluate_outcome(trace)
 
-        # Load react log for this question
-        source_paper = r.get("source_paper", "").replace(".pdf", "")
-        q_hash = __import__("hashlib").md5(question.encode()).hexdigest()[:8]
-        react_log = _load_react_log(react_logs_dir, source_paper, q_hash)
+        if outcome.outcome_type == OutcomeType.SUCCESS:
+            sp = mine_success_pattern(trace)
+            report.success_patterns.append(sp)
+            case_library.successes.append(sp)
 
-        # Determine skill_name from intent
-        skill_name = intent
-        skill_version = "1.0.0"
-        if skill_configs and intent in skill_configs:
-            skill_version = skill_configs[intent].get("skill_version", "1.0.0")
-
-        # Classify outcome
-        outcome = _classify_outcome(score)
-
-        # Update intent stats (system_failure is incremented later,
-        # only for confirmed system failures, not coverage gaps)
-        if intent in report.by_intent:
-            if outcome == OutcomeType.SUCCESS:
-                report.by_intent[intent].success += 1
-            elif outcome == OutcomeType.PARTIAL_SUCCESS:
-                report.by_intent[intent].partial_success += 1
-
-        if outcome == OutcomeType.SUCCESS:
-            # Use a unique identifier combining question_id and source paper
-            # to prevent the same question template across papers from inflating counts
-            unique_qid = f"{question_id}_{source_paper}" if source_paper else question_id
-            report.success_patterns.append(SuccessPattern(
-                intent=intent,
-                pattern=f"score_{score:.1f}",
-                frequency=1,
-                avg_score=score,
-                supporting_question_ids=[unique_qid],
-            ))
-            continue
-
-        if outcome == OutcomeType.PARTIAL_SUCCESS:
-            primary_failure, conf, explanation = _attribute_failure_rule(
-                r, react_log, question, ground_truth
-            )
+        elif outcome.outcome_type == OutcomeType.PARTIAL_SUCCESS:
+            attr = candidate_attribution(trace, _load_react_log(r, react_logs_dir), trace.gold_answer)
             report.partial_successes.append(PartialSuccessRecord(
-                question_id=question_id,
-                intent=intent,
-                score=score,
-                partial_success_reason=explanation,
-                primary_failure_type=primary_failure,
-                evolution_action="minor_patch_candidate" if score >= 0.5 else "uncertain_queue",
+                question_id=r.get("id", ""),
+                intent=r.get("intent", "unknown"),
+                score=r.get("score", 0.0),
+                partial_success_reason=attr.candidate_failure_types[0].type if attr.candidate_failure_types else "",
             ))
-            continue
 
-        # score < 0.3 → check coverage_gap or system_failure
-        is_coverage_gap = _check_coverage_gap(r, react_log, ground_truth)
-        if is_coverage_gap:
-            report.coverage_gaps.append(CoverageGapRecord(
-                question_id=question_id,
+        elif outcome.outcome_type == OutcomeType.COVERAGE_GAP:
+            cgr = record_coverage_gap(outcome)
+            report.coverage_gaps.append(cgr)
+            case_library.coverage_gaps.append(cgr)
+
+        else:  # SYSTEM_FAILURE
+            # Rule-based candidate attribution
+            attr = candidate_attribution(trace, _load_react_log(r, react_logs_dir), trace.gold_answer)
+
+            # Determine skill name
+            intent = r.get("intent", "unknown")
+            skill_name = intent
+            skill_version = "1.0.0"
+
+            # Tool error special handling
+            if any(c.type == "tool_error" for c in attr.candidate_failure_types):
+                report.failures.append(FailureRecord(
+                    question_id=r.get("id", ""),
+                    intent=intent,
+                    skill_name=skill_name,
+                    skill_version=skill_version,
+                    score=r.get("score", 0.0),
+                    primary_failure_type=FailureType.TOOL_ERROR,
+                    attribution_confidence=0.80,
+                    attribution_explanation="Tool error detected — not patchable",
+                    evolution_action="record_only",
+                ))
+                continue
+
+            # Build failure record
+            best_candidate = attr.candidate_failure_types[0] if attr.candidate_failure_types else CandidateAttributionEntry(type="unknown_failure")
+            ft = FailureType(best_candidate.type) if best_candidate.type in [e.value for e in FailureType] else FailureType.UNKNOWN_FAILURE
+
+            fr = FailureRecord(
+                question_id=r.get("id", ""),
                 intent=intent,
-                score=score,
-                gap_reason="Answer not found in retrieved evidence or corpus.",
-            ))
-            if intent in report.by_intent:
-                report.by_intent[intent].coverage_gap += 1
-            continue
+                skill_name=skill_name,
+                skill_version=skill_version,
+                score=r.get("score", 0.0),
+                primary_failure_type=ft,
+                attribution_confidence=best_candidate.confidence,
+                attribution_explanation=", ".join(best_candidate.signals),
+                gold_answer=r.get("ground_truth", ""),
+                predicted_answer=r.get("system_answer", "")[:200],
+                retrieved_evidence_ids=r.get("evidence_ids", []),
+                proposed_patch_targets=attr.candidate_target_paths,
+                evolution_action="generate_patch_candidate" if ft.is_patchable else "record_only",
+                retrieval_rounds=[_serialize_rr(rr) for rr in trace.retrieval_rounds],
+            )
+            report.failures.append(fr)
+            case_library.failures.append(fr)
 
-        # System failure — run full attribution
-        primary_failure, conf, explanation = _attribute_failure_rule(
-            r, react_log, question, ground_truth
-        )
+    # Build analysis clusters
+    report.analysis_clusters = build_analysis_clusters(report.failures)
 
-        # Determine contributing failures (simplified: check generation if assessment passed)
-        contributing = []
-        if primary_failure == FailureType.ASSESSMENT_FALSE_NEG:
-            # Check if there's also a generation component
-            if "insufficient" in system_answer.lower():
-                pass  # assessment was the root cause
-        elif primary_failure == FailureType.LOCAL_ID_MISS:
-            contributing.append(FailureType.ROUTING_ERROR)
-
-        # Determine if evidence actually contained the answer by checking
-        # if the system's answer matches the gold answer (score > 0.5)
-        # or if the react log shows the assessment found evidence sufficient
-        evidence_contained = score > 0.5 or (
-            "sufficient" in react_log.lower() and "true" in react_log.lower()
-        )
-        # For table_reasoning_error specifically: check if the answer keywords
-        # appear in the retrieved evidence text
-        if primary_failure == FailureType.TABLE_REASONING_ERROR and ground_truth:
-            # Check if any key terms from gold_answer appear in react log evidence
-            gold_terms = set(re.findall(r'\b\w{4,}\b', ground_truth.lower()))
-            react_lower = react_log.lower()
-            matching_terms = sum(1 for t in gold_terms if t in react_lower)
-            evidence_contained = matching_terms >= 2 or evidence_contained
-
-        failure = FailureRecord(
-            question_id=question_id,
-            intent=intent,
-            skill_name=skill_name,
-            skill_version=skill_version,
-            score=score,
-            primary_failure_type=primary_failure,
-            contributing_failure_types=contributing,
-            attribution_source=AttributionSource.RULE,
-            attribution_confidence=conf,
-            attribution_explanation=explanation,
-            evidence_contained_answer=evidence_contained,
-            gold_answer=ground_truth,
-            predicted_answer=system_answer[:200],
-            retrieved_evidence_ids=r.get("evidence_ids", []),
-            react_rounds_used=_extract_react_rounds(react_log),
-            stop_reason=_extract_stop_reason(react_log),
-            proposed_patch_targets=_get_proposed_patch_targets(primary_failure),
-            evolution_action="generate_patch_candidate" if conf >= 0.75 else "manual_review",
-        )
-        report.failures.append(failure)
-        if intent in report.by_intent:
-            report.by_intent[intent].system_failure += 1  # confirmed system failure
+    # Build intent stats
+    intent_scores: dict[str, list[float]] = {}
+    for r in results:
+        intent = r.get("intent", "unknown")
+        intent_scores.setdefault(intent, []).append(r.get("score", 0.0))
+    for intent, scores in intent_scores.items():
+        report.by_intent[intent] = {
+            "average_score": sum(scores) / len(scores) if scores else 0.0,
+            "total": len(scores),
+        }
 
     return report
 
 
-def generate_trace_report_from_paths(
-    eval_results_path: str | Path,
-    react_logs_dir: str | Path,
-    output_path: str | Path | None = None,
-) -> dict:
-    """CLI-friendly wrapper that generates and optionally saves a TraceReport.
+# ══════════════════════════════════════════════════════════════════════════
+# Helpers
+# ══════════════════════════════════════════════════════════════════════════
 
-    Returns the report as a dict (for JSON serialization).
-    """
-    report = generate_trace_report(
-        eval_results_path=Path(eval_results_path),
-        react_logs_dir=Path(react_logs_dir),
-    )
-    report_dict = report.model_dump(mode="json")
-    if output_path:
-        Path(output_path).write_text(
-            json.dumps(report_dict, ensure_ascii=False, indent=2),
-            encoding="utf-8",
-        )
-    return report_dict
+def _build_trace_from_result(r: dict, react_logs_dir: Path) -> StandardTrace:
+    """Build StandardTrace from eval result dict (without full trace module)."""
+    from .trace import standardize_trace as st
+
+    question = r.get("question", "")
+    q_hash = hashlib.md5(question.encode()).hexdigest()[:8] if question else "00000000"
+    source_paper = r.get("source_paper", "").replace(".pdf", "")
+    react_log = load_react_log(react_logs_dir, source_paper, q_hash)
+
+    return st(r, react_log)
+
+
+def _load_react_log(r: dict, react_logs_dir: Path) -> str:
+    question = r.get("question", "")
+    q_hash = hashlib.md5(question.encode()).hexdigest()[:8] if question else "00000000"
+    source_paper = r.get("source_paper", "").replace(".pdf", "")
+    return load_react_log(react_logs_dir, source_paper, q_hash)
+
+
+def _serialize_rr(rr) -> dict:
+    """Serialize a RetrievalRound to JSON-safe dict."""
+    if hasattr(rr, '__dict__'):
+        d = {}
+        for k, v in rr.__dict__.items():
+            if hasattr(v, '__dict__'):
+                d[k] = v.__dict__
+            elif isinstance(v, list):
+                d[k] = [x.__dict__ if hasattr(x, '__dict__') else x for x in v]
+            else:
+                d[k] = v
+        return d
+    return dict(rr)
+
+
+import hashlib

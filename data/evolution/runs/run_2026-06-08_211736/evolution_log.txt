@@ -1,0 +1,63 @@
+Run directory: D:\Desktop\evo\ChemEvoRAG_Phase1-main\data\evolution\runs\run_2026-06-08_211736
+Trace report: 5 failures, 26 partial, 86 success
+Generated 9 candidate patches
+Schema validation: 9 accepted, 0 rejected
+[1/9] Validating reaction_condition_query_round1_patch1
+  Skill:  reaction_condition_query
+  File:   config/skills/reaction_condition_query.yaml
+  Op:     update @ strategy.assessment
+  Before: {"system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM"}
+  After:  {"system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_V2"}
+  REGRESSION FAIL reaction_condition_query_round1_patch1: ['Regression failed: Average score 0.0000 below minimum 0.8; Score dropped by 0.8661 (max allowed: 0.0100); Targeted improvement -0.8227 below minimum 0.05; Failed cases increased by 118 (max allowed: 1); 110 new high-severity failure(s) detected']
+[2/9] Validating reaction_comparison_round1_patch1
+  Skill:  reaction_comparison
+  File:   config/skills/reaction_comparison.yaml
+  Op:     update @ strategy.assessment
+  Before: {"system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM"}
+  After:  {"system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_V2"}
+  REGRESSION FAIL reaction_comparison_round1_patch1: ['Regression failed: Average score 0.0000 below minimum 0.8; Score dropped by 0.8661 (max allowed: 0.0100); Targeted improvement -0.4091 below minimum 0.05; Failed cases increased by 118 (max allowed: 1); 110 new high-severity failure(s) detected']
+[3/9] Validating property_query_template_distill_2
+  Skill:  property_query
+  File:   config/skills/property_query.yaml
+  Op:     add @ templates
+  After:  {"name": "distilled_property_extraction_table_evidence_numeric_value_property_query", "description": "Auto-distilled from 14 successful queries with structure 'property_extraction_table_evidence_numeric_value' in property_query.", "applicable_when": {"intent": "property_query", "query_signals": ["yield", "temperature", "solvent", "catalyst"], "query_structure": "property_extraction", "evidence_type": "table_evidence"}, "not_applicable_when": [], "slots": [], "examples": []}
+  REGRESSION FAIL property_query_template_distill_2: ['Regression failed: Average score 0.0000 below minimum 0.8; Score dropped by 0.8661 (max allowed: 0.0100); Failed cases increased by 118 (max allowed: 1); 110 new high-severity failure(s) detected']
+[4/9] Validating reaction_comparison_template_distill_9
+  Skill:  reaction_comparison
+  File:   config/skills/reaction_comparison.yaml
+  Op:     add @ templates
+  After:  {"name": "distilled_comparison_table_evidence_numeric_value_reaction_comparison", "description": "Auto-distilled from 11 successful queries with structure 'comparison_table_evidence_numeric_value' in reaction_comparison.", "applicable_when": {"intent": "reaction_comparison", "query_signals": ["compare", "versus", "higher", "lower", "best"], "query_structure": "comparison", "evidence_type": "table_evidence"}, "not_applicable_when": [], "slots": [], "examples": []}
+  REGRESSION FAIL reaction_comparison_template_distill_9: ['Regression failed: Average score 0.0000 below minimum 0.8; Score dropped by 0.8661 (max allowed: 0.0100); Failed cases increased by 118 (max allowed: 1); 110 new high-severity failure(s) detected']
+[5/9] Validating alias_resolution_template_distill_10
+  Skill:  alias_resolution
+  File:   config/skills/alias_resolution.yaml
+  Op:     add @ templates
+  After:  {"name": "distilled_simple_lookup_table_evidence_list_alias_resolution", "description": "Auto-distilled from 7 successful queries with structure 'simple_lookup_table_evidence_list' in alias_resolution.", "applicable_when": {"intent": "alias_resolution", "query_structure": "simple_lookup", "evidence_type": "table_evidence"}, "not_applicable_when": [], "slots": [], "examples": []}
+  REGRESSION FAIL alias_resolution_template_distill_10: ['Regression failed: Average score 0.0000 below minimum 0.8; Score dropped by 0.8661 (max allowed: 0.0100); Failed cases increased by 118 (max allowed: 1); 110 new high-severity failure(s) detected']
+[6/9] Validating reaction_condition_query_template_distill_12
+  Skill:  reaction_condition_query
+  File:   config/skills/reaction_condition_query.yaml
+  Op:     add @ templates
+  After:  {"name": "distilled_property_extraction_table_evidence_list_reaction_condition_query", "description": "Auto-distilled from 6 successful queries with structure 'property_extraction_table_evidence_list' in reaction_condition_query.", "applicable_when": {"intent": "reaction_condition_query", "query_signals": ["yield", "temperature", "solvent", "catalyst"], "query_structure": "property_extraction", "evidence_type": "table_evidence"}, "not_applicable_when": [], "slots": [], "examples": []}
+  REGRESSION FAIL reaction_condition_query_template_distill_12: ['Regression failed: Average score 0.0000 below minimum 0.8; Score dropped by 0.8661 (max allowed: 0.0100); Failed cases increased by 118 (max allowed: 1); 110 new high-severity failure(s) detected']
+[7/9] Validating entity_lookup_template_distill_13
+  Skill:  entity_lookup
+  File:   config/skills/entity_lookup.yaml
+  Op:     add @ templates
+  After:  {"name": "distilled_simple_lookup_table_evidence_list_entity_lookup", "description": "Auto-distilled from 8 successful queries with structure 'simple_lookup_table_evidence_list' in entity_lookup.", "applicable_when": {"intent": "entity_lookup", "query_structure": "simple_lookup", "evidence_type": "table_evidence"}, "not_applicable_when": [], "slots": [], "examples": []}
+  REGRESSION FAIL entity_lookup_template_distill_13: ['Regression failed: Average score 0.0000 below minimum 0.8; Score dropped by 0.8661 (max allowed: 0.0100); Failed cases increased by 118 (max allowed: 1); 110 new high-severity failure(s) detected']
+[8/9] Validating entity_lookup_template_distill_15
+  Skill:  entity_lookup
+  File:   config/skills/entity_lookup.yaml
+  Op:     add @ templates
+  After:  {"name": "distilled_simple_lookup_table_evidence_numeric_value_entity_lookup", "description": "Auto-distilled from 3 successful queries with structure 'simple_lookup_table_evidence_numeric_value' in entity_lookup.", "applicable_when": {"intent": "entity_lookup", "query_structure": "simple_lookup", "evidence_type": "table_evidence"}, "not_applicable_when": [], "slots": [], "examples": []}
+  REGRESSION FAIL entity_lookup_template_distill_15: ['Regression failed: Average score 0.0000 below minimum 0.8; Score dropped by 0.8661 (max allowed: 0.0100); Failed cases increased by 118 (max allowed: 1); 110 new high-severity failure(s) detected']
+[9/9] Validating reaction_condition_query_template_distill_21
+  Skill:  reaction_condition_query
+  File:   config/skills/reaction_condition_query.yaml
+  Op:     add @ templates
+  After:  {"name": "distilled_property_extraction_table_evidence_numeric_value_reaction_condition_query", "description": "Auto-distilled from 6 successful queries with structure 'property_extraction_table_evidence_numeric_value' in reaction_condition_query.", "applicable_when": {"intent": "reaction_condition_query", "query_signals": ["yield", "temperature", "solvent", "catalyst"], "query_structure": "property_extraction", "evidence_type": "table_evidence"}, "not_applicable_when": [], "slots": [], "examples": []}
+  REGRESSION FAIL reaction_condition_query_template_distill_21: ['Regression failed: Average score 0.0000 below minimum 0.8; Score dropped by 0.8661 (max allowed: 0.0100); Failed cases increased by 118 (max allowed: 1); 110 new high-severity failure(s) detected']
+Individual regression: 0 passed, 9 failed
+
+--validate-only: 0 patches validated, not applied.

@@ -1,0 +1,26 @@
+Run directory: D:\Desktop\evo\ChemEvoRAG_Phase1-main\data\evolution\runs\run_2026-06-11_110456
+Trace report: 6 failures, 26 partial, 86 success
+
+[Distillation] 1 template_add, 4 cross-skill promotions
+
+[Integration] 2 selected, 3 rejected, 0 conflicts resolved
+
+--dry-run: 2 patches selected.
+
+--- alias_resolution_template_distill_1 ---
+  Type: template_add
+  Skill: alias_resolution
+  Target: templates
+  Op: add
+  After:  {"name": "distilled_simple_lookup_text_evidence_list_alias_resolution", "description": "Auto-distilled from 3 successful queries with structure 'simple_lookup_text_evidence_list' in alias_resolution.", "applicable_when": {"intent": "alias_resolution", "query_structure": "simple_lookup", "evidence_type": "text_evidence"}, "not_applicable_when": [], "slots": [], "examples": []}
+  Reason: Structural pattern 'simple_lookup_text_evidence_list' succeeded 3 times in alias_resolution (avg 1.00).
+  Risk: low | Confidence: 0.95
+
+--- alias_resolution_cross_skill_promotion_1 ---
+  Type: template_add
+  Skill: alias_resolution
+  Target: templates
+  Op: add
+  After:  {"name": "cross_skill_simple_lookup_table_evidence_list_entity_lookup_to_alias_resolution", "description": "Cross-skill promotion: pattern 'simple_lookup_table_evidence_list' from entity_lookup → alias_resolution (6 successes, similarity=0.80)", "applicable_when": {"intent": "alias_resolution", "query_structure": "simple_lookup", "evidence_type": "table_evidence"}, "not_applicable_when": [], "slots": [], "examples": [], "promoted_from": "entity_lookup"}
+  Reason: Cross-skill promotion from entity_lookup: pattern 'simple_lookup_table_evidence_list'.
+  Risk: medium | Confidence: 0.70

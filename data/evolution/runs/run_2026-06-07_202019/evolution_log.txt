@@ -1,0 +1,28 @@
+Run directory: D:\Desktop\evo\ChemEvoRAG_Phase1-main\data\evolution\runs\run_2026-06-07_202019
+Trace report: 5 failures, 26 partial, 86 success
+Generated 3 candidate patches
+Schema validation: 3 accepted, 0 rejected
+[1/3] Validating reaction_condition_query_round1_patch1
+  Skill:  reaction_condition_query
+  File:   config/skills/reaction_condition_query.yaml
+  Op:     update @ strategy.assessment
+  Before: {"system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM"}
+  After:  {"system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_V2"}
+  REGRESSION FAIL reaction_condition_query_round1_patch1: ['Regression eval failed: ["Eval failed: \'gbk\' codec can\'t encode character \'\\\\u2212\' in position 97: illegal multibyte sequence"]']
+[2/3] Validating reaction_comparison_round1_patch1
+  Skill:  reaction_comparison
+  File:   config/skills/reaction_comparison.yaml
+  Op:     update @ strategy.assessment
+  Before: {"system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM"}
+  After:  {"system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_V2"}
+  REGRESSION FAIL reaction_comparison_round1_patch1: ['Regression eval failed: ["Eval failed: \'gbk\' codec can\'t encode character \'\\\\u2212\' in position 97: illegal multibyte sequence"]']
+[3/3] Validating entity_lookup_round1_patch1
+  Skill:  entity_lookup
+  File:   config/skills/entity_lookup.yaml
+  Op:     update @ strategy.assessment
+  Before: {"system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM"}
+  After:  {"system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_V2"}
+  REGRESSION FAIL entity_lookup_round1_patch1: ['Regression eval failed: ["Eval failed: \'gbk\' codec can\'t encode character \'\\\\u2212\' in position 97: illegal multibyte sequence"]']
+Individual regression: 0 passed, 3 failed
+
+--validate-only: 0 patches validated, not applied.

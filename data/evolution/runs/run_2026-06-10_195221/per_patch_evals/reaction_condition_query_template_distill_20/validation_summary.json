@@ -1,0 +1,10 @@
+{
+  "patch_id": "reaction_condition_query_template_distill_20",
+  "passed": false,
+  "average_score": 0.7833333333333332,
+  "score_delta": -0.08276836158192125,
+  "targeted_improvement": 0.0,
+  "errors": [
+    "Regression failed: Average score 0.7833 below minimum 0.8; Score dropped by 0.0828 (max allowed: 0.0100)"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "baseline": "llamaindex",
+  "timestamp": "20260703_155141",
+  "total_questions": 1,
+  "metadata": {
+    "model": "DeepSeek-V4-Flash"
+  },
+  "results": [
+    {
+      "question_id": "q1",
+      "paper_id": "10",
+      "paper_title": "Iron-Catalyzed Aerobic Oxidation of Alcohols: Lower Cost and Improved Selectivity",
+      "intent": "alias_resolution",
+      "question": "In this paper, what compound does the label '1a' refer to (give the molecular formula/name exactly as shown in the article)?",
+      "ground_truth": "n-C11H23CH2OH (1a)",
+      "key_entities": [
+        "1a"
+      ],
+      "system_answer": "[ERROR] Error code: 500 - {'error': {'type': 'internal_server_error', 'code': 500, 'message': 'Internal server error. Please try again later.'}}",
+      "elapsed_sec": 18.52,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "1a"
+      ],
+      "judge_reasoning": "Error code: 500 - {'error': {'type': 'internal_server_error', 'code': 500, 'message': 'Internal server error. Please try again later.'}}"
+    }
+  ]
+}

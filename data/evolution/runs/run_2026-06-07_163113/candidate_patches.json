@@ -1,0 +1,55 @@
+[
+  {
+    "patch_id": "reaction_condition_query_round1_patch1",
+    "skill_name": "reaction_condition_query",
+    "skill_version": "1.0.0",
+    "source_failure_ids": [
+      "q3"
+    ],
+    "primary_failure_type": "table_reasoning_error",
+    "target_path": "strategy.assessment",
+    "operation": "update",
+    "current_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM"
+    },
+    "proposed_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_TABLE_V2"
+    },
+    "prompt_artifacts": [
+      {
+        "prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_TABLE_V2",
+        "created_from": "EVIDENCE_ASSESSMENT_SYSTEM",
+        "diff_summary": "Add explicit table row/column parsing instructions to prevent entry confusion.",
+        "registry_path": "config/prompts/evidence_assessment_system_table_v2.yaml"
+      }
+    ],
+    "rationale": "Table entries were misread (wrong row, wrong column, or entry confusion).",
+    "expected_improvement": "Improve table parsing accuracy for comparison and property queries.",
+    "risk_level": "medium",
+    "confidence": 0.75,
+    "status": "candidate"
+  },
+  {
+    "patch_id": "reaction_condition_query_round1_patch2",
+    "skill_name": "reaction_condition_query",
+    "skill_version": "1.0.0",
+    "source_failure_ids": [
+      "q3"
+    ],
+    "primary_failure_type": "table_reasoning_error",
+    "target_path": "strategy.answer_generation",
+    "operation": "update",
+    "current_value": {
+      "max_evidence_items": 15
+    },
+    "proposed_value": {
+      "max_evidence_items": 18
+    },
+    "prompt_artifacts": [],
+    "rationale": "Increase evidence limit to capture more context for table-based questions.",
+    "expected_improvement": "More evidence items for LLM to compare table entries.",
+    "risk_level": "low",
+    "confidence": 0.6000000000000001,
+    "status": "candidate"
+  }
+]

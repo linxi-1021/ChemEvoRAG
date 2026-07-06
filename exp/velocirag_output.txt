@@ -1,0 +1,142 @@
+﻿conda : D:\Desktop\evo\ChemEvoRAG_Phase1-main\exp\run_velocirag.py:16: DeprecationWarning: `langchain-community` is bei
+ng sunset and is no longer actively maintained. See https://github.com/langchain-ai/langchain-community/issues/674 for 
+details and migration guidance toward standalone integration packages.
+At line:1 char:124
++ ... -main\exp"; conda run -n rag_velocirag python run_velocirag.py --limi ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (D:\Desktop\evo\...ation packages.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  from langchain_community.document_loaders import PyPDFLoader
+
+VelociRAG: 118 questions
+Preparing documents (PDF 鈫� markdown chunks)...
+  949 .md chunks 鈫� C:\Users\ASUS\AppData\Local\Temp\velocirag__s7tu4ur
+Building VelociRAG index (ONNX all-MiniLM-L6-v2)...
+  Index built (ONNX, CPU, <1GB RAM)
+  [1/118] q1
+  [2/118] q2
+  [3/118] q3
+  [4/118] q4
+  [5/118] q5
+  [6/118] q1
+  [7/118] q2
+  [8/118] q3
+  [9/118] q4
+  [10/118] q5
+  [11/118] q1
+  [12/118] q2
+  [13/118] q3
+  [14/118] q4
+  [15/118] q5
+  [16/118] q1
+  [17/118] q2
+  [18/118] q3
+  [19/118] q4
+  [20/118] q5
+  [21/118] q1
+  [22/118] q2
+  [23/118] q3
+  [24/118] q4
+  [25/118] q5
+  [26/118] q_batch1_1
+  [27/118] q_batch1_2
+  [28/118] q_batch1_3
+  [29/118] q_batch2_1
+  [30/118] q_batch2_2
+  [31/118] q_batch2_3
+  [32/118] q_batch3_1
+  [33/118] q_batch3_2
+  [34/118] q1
+  [35/118] q2
+  [36/118] q3
+  [37/118] q4
+  [38/118] q5
+  [39/118] q1
+  [40/118] q2
+  [41/118] q3
+  [42/118] q4
+  [43/118] q5
+  [44/118] q1
+  [45/118] q2
+  [46/118] q3
+  [47/118] q4
+  [48/118] q5
+  [49/118] q1
+  [50/118] q2
+  [51/118] q3
+  [52/118] q4
+  [53/118] q5
+  [54/118] q1
+  [55/118] q2
+  [56/118] q3
+  [57/118] q4
+  [58/118] q5
+  [59/118] q1
+  [60/118] q2
+  [61/118] q3
+  [62/118] q4
+  [63/118] q5
+  [64/118] q1
+  [65/118] q2
+  [66/118] q3
+  [67/118] q4
+  [68/118] q5
+  [69/118] q1
+  [70/118] q2
+  [71/118] q3
+  [72/118] q4
+  [73/118] q5
+  [74/118] q1
+  [75/118] q2
+  [76/118] q3
+  [77/118] q4
+  [78/118] q5
+  [79/118] q1
+  [80/118] q2
+  [81/118] q3
+  [82/118] q4
+  [83/118] q5
+  [84/118] q1
+  [85/118] q2
+  [86/118] q3
+  [87/118] q4
+  [88/118] q5
+  [89/118] q1
+  [90/118] q2
+  [91/118] q3
+  [92/118] q4
+  [93/118] q5
+  [94/118] q1
+  [95/118] q2
+  [96/118] q3
+  [97/118] q4
+  [98/118] q5
+  [99/118] q1
+  [100/118] q2
+  [101/118] q3
+  [102/118] q4
+  [103/118] q5
+  [104/118] q1
+  [105/118] q2
+  [106/118] q3
+  [107/118] q4
+  [108/118] q5
+  [109/118] q1
+  [110/118] q2
+  [111/118] q3
+  [112/118] q4
+  [113/118] q5
+  [114/118] q1
+  [115/118] q2
+  [116/118] q3
+  [117/118] q4
+  [118/118] q5
+Scoring...
+  25/118
+  50/118
+  75/118
+  100/118
+VelociRAG: 0.503
+Done
+

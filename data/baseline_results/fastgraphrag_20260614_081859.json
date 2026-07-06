@@ -1,0 +1,29 @@
+{
+  "baseline": "fastgraphrag",
+  "timestamp": "20260614_081859",
+  "total_questions": 1,
+  "metadata": {
+    "model": "DeepSeek-V4-Flash"
+  },
+  "results": [
+    {
+      "question_id": "q1",
+      "paper_id": "10",
+      "paper_title": "Iron-Catalyzed Aerobic Oxidation of Alcohols: Lower Cost and Improved Selectivity",
+      "intent": "alias_resolution",
+      "question": "In this paper, what compound does the label '1a' refer to (give the molecular formula/name exactly as shown in the article)?",
+      "ground_truth": "n-C11H23CH2OH (1a)",
+      "key_entities": [
+        "1a"
+      ],
+      "system_answer": "4-methoxybenzaldehyde or 4-methoxybenzoic acid",
+      "elapsed_sec": 8.03,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "1a"
+      ],
+      "judge_reasoning": "The system answer lists 4-methoxybenzaldehyde or 4-methoxybenzoic acid, which are completely unrelated to the ground truth compound n-C11H23CH2OH (1a)."
+    }
+  ]
+}

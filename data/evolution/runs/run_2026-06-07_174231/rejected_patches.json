@@ -1,0 +1,96 @@
+[
+  {
+    "patch_id": "reaction_condition_query_round1_patch1",
+    "skill_name": "reaction_condition_query",
+    "skill_version": "1.0.0",
+    "source_failure_ids": [
+      "q3"
+    ],
+    "primary_failure_type": "assessment_false_negative",
+    "target_path": "strategy.assessment",
+    "operation": "update",
+    "current_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM"
+    },
+    "proposed_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_V2"
+    },
+    "prompt_artifacts": [
+      {
+        "prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_V2",
+        "created_from": "EVIDENCE_ASSESSMENT_SYSTEM",
+        "diff_summary": "Strengthen assessment to detect when numeric values are present in evidence but not recognized.",
+        "registry_path": "config/prompts/evidence_assessment_system_v2.yaml"
+      }
+    ],
+    "rationale": "Evidence contained target values but assessment judged insufficient.",
+    "expected_improvement": "Reduce false negatives in evidence assessment for numeric extraction.",
+    "risk_level": "medium",
+    "confidence": 0.85,
+    "status": "rejected",
+    "rejection_reason": "individual_regression_failed: ['Regression failed: Failed cases increased by 9 (max allowed: 1); 3 new high-severity failure(s) detected']"
+  },
+  {
+    "patch_id": "reaction_comparison_round1_patch1",
+    "skill_name": "reaction_comparison",
+    "skill_version": "1.0.0",
+    "source_failure_ids": [
+      "q4",
+      "q_batch2_3"
+    ],
+    "primary_failure_type": "assessment_false_negative",
+    "target_path": "strategy.assessment",
+    "operation": "update",
+    "current_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM"
+    },
+    "proposed_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_V2"
+    },
+    "prompt_artifacts": [
+      {
+        "prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_V2",
+        "created_from": "EVIDENCE_ASSESSMENT_SYSTEM",
+        "diff_summary": "Strengthen assessment to detect when numeric values are present in evidence but not recognized.",
+        "registry_path": "config/prompts/evidence_assessment_system_v2.yaml"
+      }
+    ],
+    "rationale": "Evidence contained target values but assessment judged insufficient.",
+    "expected_improvement": "Reduce false negatives in evidence assessment for numeric extraction.",
+    "risk_level": "medium",
+    "confidence": 0.85,
+    "status": "rejected",
+    "rejection_reason": "individual_regression_failed: ['Regression failed: Score dropped by 0.0102 (max allowed: 0.0100); Targeted improvement 0.0000 below minimum 0.05; Failed cases increased by 11 (max allowed: 1); 3 new high-severity failure(s) detected']"
+  },
+  {
+    "patch_id": "entity_lookup_round1_patch1",
+    "skill_name": "entity_lookup",
+    "skill_version": "1.0.0",
+    "source_failure_ids": [
+      "q_batch2_2"
+    ],
+    "primary_failure_type": "assessment_false_negative",
+    "target_path": "strategy.assessment",
+    "operation": "update",
+    "current_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM"
+    },
+    "proposed_value": {
+      "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_V2"
+    },
+    "prompt_artifacts": [
+      {
+        "prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_V2",
+        "created_from": "EVIDENCE_ASSESSMENT_SYSTEM",
+        "diff_summary": "Strengthen assessment to detect when numeric values are present in evidence but not recognized.",
+        "registry_path": "config/prompts/evidence_assessment_system_v2.yaml"
+      }
+    ],
+    "rationale": "Evidence contained target values but assessment judged insufficient.",
+    "expected_improvement": "Reduce false negatives in evidence assessment for numeric extraction.",
+    "risk_level": "medium",
+    "confidence": 0.85,
+    "status": "rejected",
+    "rejection_reason": "individual_regression_failed: ['Regression failed: Score dropped by 0.0212 (max allowed: 0.0100); Targeted improvement 0.0000 below minimum 0.05; Failed cases increased by 11 (max allowed: 1); 2 new high-severity failure(s) detected']"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "patch_id": "reaction_condition_query_round1_patch1",
+  "passed": false,
+  "average_score": 0.9,
+  "score_delta": 0.09999999999999998,
+  "targeted_improvement": 0.0,
+  "errors": [
+    "Regression failed: Targeted improvement 0.0000 below minimum 0.05"
+  ]
+}

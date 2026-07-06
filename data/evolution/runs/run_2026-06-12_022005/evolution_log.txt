@@ -1,0 +1,24 @@
+Run directory: D:\Desktop\evo\ChemEvoRAG_Phase1-main\data\evolution\runs\run_2026-06-12_022005
+Trace report: 6 failures, 26 partial, 86 success
+
+[SuccessAnalysis] Analyzing successful traces...
+  Global: 5 intents analyzed
+  Contrastive: 2 clusters analyzed
+
+[Mutation] Cluster: generation_error__strategy.answer_generation__answer_generation
+  Failure type: generation_error, Skills: ['alias_resolution']
+
+FATAL: _generate_fallback_patches() got an unexpected keyword argument 'failure_traces'
+Traceback (most recent call last):
+  File "D:\Desktop\evo\ChemEvoRAG_Phase1-main\src\skill_evolution\runner.py", line 94, in run
+    mutation_patches = self._stage_4a_mutation(report, success_data)
+  File "D:\Desktop\evo\ChemEvoRAG_Phase1-main\src\skill_evolution\runner.py", line 224, in _stage_4a_mutation
+    patches = generate_all_mutations(
+        cluster=cluster,
+    ...<4 lines>...
+        success_analysis_data=success_data,
+    )
+  File "D:\Desktop\evo\ChemEvoRAG_Phase1-main\src\skill_evolution\mutation.py", line 738, in generate_all_mutations
+    patches = generator(skill_name, skill_cfg, analysis, failure_ids, ft, failure_traces=failure_traces, success_analysis_data=success_analysis_data)
+TypeError: _generate_fallback_patches() got an unexpected keyword argument 'failure_traces'
+

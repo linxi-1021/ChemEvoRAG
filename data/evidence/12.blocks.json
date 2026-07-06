@@ -487,7 +487,7 @@
     "block_id": "block_12_0022",
     "doc_id": "12",
     "block_type": "table",
-    "text": "1a | $\\xrightarrow[\\text{solvent (0.8 mL)}]{\\text{X mol\\% Fe(NO}_3\\text{)}_3 \\cdot 9\\text{H}_2\\text{O}}$ 2a | 2a&#x27; not observed | Scheme 1 Aerobic oxidation of isochromans. | Table 1 Optimization of the reaction conditionsa",
+    "text": "| 1a | $\\xrightarrow[\\text{solvent (0.8 mL)}]{\\text{X mol\\% Fe(NO}_3\\text{)}_3 \\cdot 9\\text{H}_2\\text{O}}$ 2a | 2a&#x27; not observed |\n| --- | --- | --- | | Scheme 1 Aerobic oxidation of isochromans. | Table 1 Optimization of the reaction conditionsa",
     "page": 2,
     "bbox": [
       67.0,
@@ -509,7 +509,7 @@
     "block_id": "block_12_0023",
     "doc_id": "12",
     "block_type": "table",
-    "text": "Entry | X | Nitroxyl | Solvent | Recovery of 1a (%) | NMR yield of 2a (%); 1 | 5 | 4-OH-TEMPO | MeCN | 0 | $100 (94^b)$; 2 | 5 | 4-OH-TEMPO | DCM | 12 | 89; 3 | 5 | 4-OH-TEMPO | DCE | 16 | 84; 4 | 5 | 4-OH-TEMPO | CHCl3 | 50 | 50; 5 | 5 | 4-OH-TEMPO | Toluene | 78 | 22; 6 | 5 | 4-OH-TEMPO | MTBE | 58 | 40; 7 | 5 | 4-OH-TEMPO | MeOH | 97 | 1; 8 | 5 | 4-OMe-TEMPO | MeCN | 0 | 100; 9 | 5 | 4-OBz-TEMPO | MeCN | 0 | 100; 10 | 5 | 4-Oxo-TEMPO | MeCN | 25 | 75; 11 | 5 | 4-NHAc-TEMPO | MeCN | 0 | 100; 12 | 5 | 4-NH2-TEMPO | MeCN | 0 | 100; 13 | 5 | TEMPO | MeCN | 1 | 99; 14 | 2 | 4-OH-TEMPO | MeCN | 15 | 85; 15 | 1 | 4-OH-TEMPO | MeCN | 50 | 42; $16^c$ | 5 | 4-OH-TEMPO | MeCN | 100 | 0; $17^d$ | 5 | — | MeCN | 97 | 0 | a Reaction conditions: 1a (1.0 mmol), Fe(NO ) ·9H O (X mol%) and 4-OH-TEMPO (X mol%) in solvent (1.25 M) with an oxygen balloon at room temperature and the recovery and NMR yield were determined by 1 H NMR analysis of the crude product. b Isolated yield. c Without Fe | \\left( \\mathbf { N O } _ { 3 } \\right) _ { 3 } { \\cdot } 9 \\mathbf { H } _ { 2 } \\mathbf { O } . \\mathbf { \\Lambda } ^ { i } | Without 4-OH-TEMPO.",
+    "text": "| Entry | X | Nitroxyl | Solvent | Recovery of 1a (%) | NMR yield of 2a (%) |\n| --- | --- | --- | --- | --- | --- |\n| 1 | 5 | 4-OH-TEMPO | MeCN | 0 | $100 (94^b)$ |\n| 2 | 5 | 4-OH-TEMPO | DCM | 12 | 89 |\n| 3 | 5 | 4-OH-TEMPO | DCE | 16 | 84 |\n| 4 | 5 | 4-OH-TEMPO | CHCl3 | 50 | 50 |\n| 5 | 5 | 4-OH-TEMPO | Toluene | 78 | 22 |\n| 6 | 5 | 4-OH-TEMPO | MTBE | 58 | 40 |\n| 7 | 5 | 4-OH-TEMPO | MeOH | 97 | 1 |\n| 8 | 5 | 4-OMe-TEMPO | MeCN | 0 | 100 |\n| 9 | 5 | 4-OBz-TEMPO | MeCN | 0 | 100 |\n| 10 | 5 | 4-Oxo-TEMPO | MeCN | 25 | 75 |\n| 11 | 5 | 4-NHAc-TEMPO | MeCN | 0 | 100 |\n| 12 | 5 | 4-NH2-TEMPO | MeCN | 0 | 100 |\n| 13 | 5 | TEMPO | MeCN | 1 | 99 |\n| 14 | 2 | 4-OH-TEMPO | MeCN | 15 | 85 |\n| 15 | 1 | 4-OH-TEMPO | MeCN | 50 | 42 |\n| $16^c$ | 5 | 4-OH-TEMPO | MeCN | 100 | 0 |\n| $17^d$ | 5 | — | MeCN | 97 | 0 | | a Reaction conditions: 1a (1.0 mmol), Fe(NO ) ·9H O (X mol%) and 4-OH-TEMPO (X mol%) in solvent (1.25 M) with an oxygen balloon at room temperature and the recovery and NMR yield were determined by 1 H NMR analysis of the crude product. b Isolated yield. c Without Fe | \\left( \\mathbf { N O } _ { 3 } \\right) _ { 3 } { \\cdot } 9 \\mathbf { H } _ { 2 } \\mathbf { O } . \\mathbf { \\Lambda } ^ { i } | Without 4-OH-TEMPO.",
     "page": 2,
     "bbox": [
       65.0,
@@ -641,7 +641,7 @@
     "block_id": "block_12_0029",
     "doc_id": "12",
     "block_type": "table",
-    "text": "| 1a | X mol% Fe(NO3)3·9H2O X mol% 4-OH-TEMPO Ar, MeCN, 25 °C, 24 h | 2a; Entry | X mol% | Recovery of 1a (%) | NMR yield of 2a (%); 1 | 5 | 85 | 13; 2 | 15 | 62 | 35; 3 | 40 | 14 | 86 | Table 2 Control experimentsa | a Reaction conditions: 1a (1.0 mmol), Fe(NO ) ·9H O (X mol%) and 4-OH-TEMPO (X mol%) in MeCN (0.8 mL) at | 2 5 ~ ^ { \\circ } \\mathrm { C } . | . Recovery and NMR yield were determined by 1 H NMR analysis of the crude product. The reaction was carried out under an argon atmosphere and MeCN was degassed.",
+    "text": "|  | 1a | X mol% Fe(NO3)3·9H2O X mol% 4-OH-TEMPO Ar, MeCN, 25 °C, 24 h | 2a |\n| --- | --- | --- | --- |\n| Entry | X mol% | Recovery of 1a (%) | NMR yield of 2a (%) |\n| 1 | 5 | 85 | 13 |\n| 2 | 15 | 62 | 35 |\n| 3 | 40 | 14 | 86 | | Table 2 Control experimentsa | a Reaction conditions: 1a (1.0 mmol), Fe(NO ) ·9H O (X mol%) and 4-OH-TEMPO (X mol%) in MeCN (0.8 mL) at | 2 5 ~ ^ { \\circ } \\mathrm { C } . | . Recovery and NMR yield were determined by 1 H NMR analysis of the crude product. The reaction was carried out under an argon atmosphere and MeCN was degassed.",
     "page": 3,
     "bbox": [
       67.0,
@@ -663,7 +663,7 @@
     "block_id": "block_12_0030",
     "doc_id": "12",
     "block_type": "table",
-    "text": "Entry | X (equiv.) | Y (mg) | Recovery of 1a (%) | NMR yield of 2a (%); 1 | 0 | 0 | 0 | 100; 2 | 1 | 0 | 44 | 53; 3 | 2 | 0 | 62 | 35; 4 | 0 | 20 | 7 | 93; 5 | 0 | 40 | 15 | 85; 6 | 0 | 60 | 65 | 25 | Table 3 The effect of | { \\sf H } _ { 2 } { \\sf O } | in aerobic oxidation of isochroman | \\pmb { 1 } \\hat { \\mathbf { a } } ^ { a } | a Reaction conditions: 1a (1.0 mmol), Fe(NO ) ·9H O (5 mol%), 4-OH-TEMPO (5 mol%) and H2O (X equiv.) or 5 Å molecular sieves (Y mg) in MeCN (0.8 mL) with an oxygen balloon at 25 °C. Recovery and NMR yield were determined by 1 H NMR analysis of the crude product.",
+    "text": "| Entry | X (equiv.) | Y (mg) | Recovery of 1a (%) | NMR yield of 2a (%) |\n| --- | --- | --- | --- | --- |\n| 1 | 0 | 0 | 0 | 100 |\n| 2 | 1 | 0 | 44 | 53 |\n| 3 | 2 | 0 | 62 | 35 |\n| 4 | 0 | 20 | 7 | 93 |\n| 5 | 0 | 40 | 15 | 85 |\n| 6 | 0 | 60 | 65 | 25 | | Table 3 The effect of | { \\sf H } _ { 2 } { \\sf O } | in aerobic oxidation of isochroman | \\pmb { 1 } \\hat { \\mathbf { a } } ^ { a } | a Reaction conditions: 1a (1.0 mmol), Fe(NO ) ·9H O (5 mol%), 4-OH-TEMPO (5 mol%) and H2O (X equiv.) or 5 Å molecular sieves (Y mg) in MeCN (0.8 mL) with an oxygen balloon at 25 °C. Recovery and NMR yield were determined by 1 H NMR analysis of the crude product.",
     "page": 3,
     "bbox": [
       505.0,

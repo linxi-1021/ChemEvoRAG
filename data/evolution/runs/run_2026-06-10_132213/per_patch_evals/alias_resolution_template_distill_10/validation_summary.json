@@ -1,0 +1,10 @@
+{
+  "patch_id": "alias_resolution_template_distill_10",
+  "passed": false,
+  "average_score": 0.7166666666666667,
+  "score_delta": -0.1494350282485878,
+  "targeted_improvement": 0.0,
+  "errors": [
+    "Regression failed: Average score 0.7167 below minimum 0.8; Score dropped by 0.1494 (max allowed: 0.0100); 2 new high-severity failure(s) detected"
+  ]
+}

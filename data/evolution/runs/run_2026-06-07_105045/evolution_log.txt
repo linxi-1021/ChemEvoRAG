@@ -1,0 +1,65 @@
+Run directory: D:\Desktop\evo\ChemEvoRAG_Phase1-main\data\evolution\runs\run_2026-06-07_105045
+Trace report: 5 failures, 26 partial, 86 success
+Generated 9 candidate patches
+Schema validation: 9 accepted, 0 rejected
+[1/9] Validating reaction_condition_query_round1_patch1
+  Skill:  reaction_condition_query
+  File:   config/skills/reaction_condition_query.yaml
+  Op:     update @ strategy.assessment
+  Before: {"system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM"}
+  After:  {"system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_TABLE_V2"}
+  REGRESSION FAIL reaction_condition_query_round1_patch1: ['Regression failed: Score dropped by 0.0144 (max allowed: 0.01); Failed cases increased by 11 (max allowed: 1)']
+[2/9] Validating reaction_condition_query_round1_patch2
+  Skill:  reaction_condition_query
+  File:   config/skills/reaction_condition_query.yaml
+  Op:     update @ strategy.answer_generation
+  Before: {"max_evidence_items": 15}
+  After:  {"max_evidence_items": 18}
+  REGRESSION FAIL reaction_condition_query_round1_patch2: ['Regression failed: Score dropped by 0.0593 (max allowed: 0.01); Failed cases increased by 16 (max allowed: 1)']
+[3/9] Validating reaction_comparison_round1_patch1
+  Skill:  reaction_comparison
+  File:   config/skills/reaction_comparison.yaml
+  Op:     update @ strategy.assessment
+  Before: {"system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM"}
+  After:  {"system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_TABLE_V2"}
+  REGRESSION FAIL reaction_comparison_round1_patch1: ['Regression failed: Failed cases increased by 9 (max allowed: 1)']
+[4/9] Validating reaction_comparison_round1_patch2
+  Skill:  reaction_comparison
+  File:   config/skills/reaction_comparison.yaml
+  Op:     update @ strategy.answer_generation
+  Before: {"max_evidence_items": 15}
+  After:  {"max_evidence_items": 18}
+  REGRESSION FAIL reaction_comparison_round1_patch2: ['Regression failed: Score dropped by 0.0280 (max allowed: 0.01); Failed cases increased by 11 (max allowed: 1)']
+[5/9] Validating entity_lookup_template_distill_1
+  Skill:  entity_lookup
+  File:   config/skills/entity_lookup.yaml
+  Op:     add @ templates
+  After:  {"name": "distilled_score_1.0_entity_lookup", "description": "Auto-distilled from 21 successful queries with pattern 'score_1.0'.", "applicable_when": {"intent": "entity_lookup", "pattern": "score_1.0"}, "frequency": 21}
+  REGRESSION FAIL entity_lookup_template_distill_1: ['Regression failed: Score dropped by 0.0568 (max allowed: 0.01); Failed cases increased by 14 (max allowed: 1)']
+[6/9] Validating property_query_template_distill_2
+  Skill:  property_query
+  File:   config/skills/property_query.yaml
+  Op:     add @ templates
+  After:  {"name": "distilled_score_1.0_property_query", "description": "Auto-distilled from 18 successful queries with pattern 'score_1.0'.", "applicable_when": {"intent": "property_query", "pattern": "score_1.0"}, "frequency": 18}
+  REGRESSION FAIL property_query_template_distill_2: ['Regression failed: Failed cases increased by 11 (max allowed: 1)']
+[7/9] Validating alias_resolution_template_distill_3
+  Skill:  alias_resolution
+  File:   config/skills/alias_resolution.yaml
+  Op:     add @ templates
+  After:  {"name": "distilled_score_1.0_alias_resolution", "description": "Auto-distilled from 19 successful queries with pattern 'score_1.0'.", "applicable_when": {"intent": "alias_resolution", "pattern": "score_1.0"}, "frequency": 19}
+  REGRESSION FAIL alias_resolution_template_distill_3: ['Regression failed: Failed cases increased by 9 (max allowed: 1)']
+[8/9] Validating reaction_condition_query_template_distill_4
+  Skill:  reaction_condition_query
+  File:   config/skills/reaction_condition_query.yaml
+  Op:     add @ templates
+  After:  {"name": "distilled_score_1.0_reaction_condition_query", "description": "Auto-distilled from 15 successful queries with pattern 'score_1.0'.", "applicable_when": {"intent": "reaction_condition_query", "pattern": "score_1.0"}, "frequency": 15}
+  REGRESSION FAIL reaction_condition_query_template_distill_4: ['Regression failed: Score dropped by 0.0424 (max allowed: 0.01); Failed cases increased by 13 (max allowed: 1)']
+[9/9] Validating reaction_comparison_template_distill_5
+  Skill:  reaction_comparison
+  File:   config/skills/reaction_comparison.yaml
+  Op:     add @ templates
+  After:  {"name": "distilled_score_1.0_reaction_comparison", "description": "Auto-distilled from 13 successful queries with pattern 'score_1.0'.", "applicable_when": {"intent": "reaction_comparison", "pattern": "score_1.0"}, "frequency": 13}
+  REGRESSION FAIL reaction_comparison_template_distill_5: ['Regression failed: Score dropped by 0.0288 (max allowed: 0.01); Failed cases increased by 13 (max allowed: 1)']
+Individual regression: 0 passed, 9 failed
+
+--validate-only: 0 patches validated, not applied.

@@ -1,0 +1,198 @@
+[
+  {
+    "cluster_id": "assessment_false_negative__strategy.assessment__evidence_assessment",
+    "primary_failure_type": "assessment_false_negative",
+    "contributing_failure_types": [
+      "evidence_expansion_error",
+      "retrieval_routing_error"
+    ],
+    "confidence": 0.85,
+    "coverage_gap": false,
+    "explanation": "The assessment LLM incorrectly judged evidence as insufficient in all 4 samples, despite the corpus containing the answer. The root causes are: (1) the assessment prompt lacks explicit rules for handling fragmented or incomplete table data, (2) retrieval routing underweights table blocks and molecule evidence that contain the answer, and (3) evidence expansion does not retrieve adjacent blocks that provide necessary context (e.g., table captions, compound labels).",
+    "supporting_trace_signals": [
+      "gold answer appears in retrieved table_block or molecule evidence",
+      "assessment_result is sufficient=false",
+      "evidence_contained_answer is false but corpus_contained_answer is true",
+      "retrieved evidence includes partial table fragments without full context"
+    ],
+    "common_root_causes": [
+      {
+        "name": "assessment prompt lacks fragmented evidence handling",
+        "description": "The evidence_assessment prompt does not instruct the LLM to aggregate information from multiple fragmented evidence items (e.g., partial tables, separate molecule records) to infer the answer. The prompt's 'well-supported inference' rule is too vague for cases where the answer is distributed across items.",
+        "supporting_failure_ids": [
+          "q3",
+          "q4",
+          "q_batch2_3",
+          "q_batch2_2"
+        ],
+        "confidence": 0.88
+      },
+      {
+        "name": "retrieval routing underweights table and molecule evidence",
+        "description": "For reaction_comparison and reaction_condition_query skills, table_block weight is 4.0-5.0, but the answer often appears in a table that is not retrieved as a top item. For entity_lookup, molecule evidence weight is 5.0, but the molecule record containing the structure is not retrieved early enough. This leads to missing critical evidence in the assessment set.",
+        "supporting_failure_ids": [
+          "q3",
+          "q4",
+          "q_batch2_2"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "name": "evidence expansion insufficient for context",
+        "description": "The max_expanded_blocks=5 is too low to retrieve adjacent blocks that contain table captions, compound labels, or procedure details needed to interpret fragmented evidence. In q3, the table fragment lacks column headers; in q4 and q_batch2_3, the compound labels are in nearby blocks not retrieved.",
+        "supporting_failure_ids": [
+          "q3",
+          "q4",
+          "q_batch2_3"
+        ],
+        "confidence": 0.78
+      }
+    ],
+    "subclusters": [
+      {
+        "name": "fragmented table data",
+        "failure_ids": [
+          "q3"
+        ],
+        "specific_issue": "The retrieved table fragment (block_1_0041) shows only 'DCE, O2 (1 atm), r.t.' without column headers or comparison rows. The assessment LLM cannot infer that DCE is optimal because the table is incomplete. The gold answer is in the full table (not retrieved) and in the surrounding text.",
+        "recommended_rule": "Add a rule to the assessment prompt: 'If a table fragment is present, attempt to infer column headers from context (e.g., adjacent blocks, common table patterns). If the fragment contains a single condition and the question asks for optimal, check if the surrounding text explicitly states optimality.'"
+      },
+      {
+        "name": "compound label mismatch in retrieval",
+        "failure_ids": [
+          "q4",
+          "q_batch2_3"
+        ],
+        "specific_issue": "The questions ask about specific compound labels (2c, 2k, 6fe, 6ke) but the retrieved evidence contains tables with different labels (2a, 6ae, etc.). The gold answer is in a table or text block that uses the correct labels, but retrieval fails to fetch those blocks because the query rewrite does not generate variants that match the actual labels in the corpus.",
+        "recommended_rule": "For comparison questions, the query rewrite should generate variants that include the specific compound labels (e.g., '2c', '2k') and also broader terms like 'yield table' or 'scope table' to capture the relevant table."
+      },
+      {
+        "name": "structure from molecule record not used",
+        "failure_ids": [
+          "q_batch2_2"
+        ],
+        "specific_issue": "The gold answer (EtO2C(CH2)5COOMe) is present in the molecule record mol_15-SI_0035, which contains the SMILES 'COc1ccc(CCCO)cc1' (incorrect) but also the name 'methyl 6-ethoxyhexanoate' and label '6oe'. The assessment LLM did not consider the molecule record as evidence for structure, because the prompt does not mention that molecule records can contain structural information (SMILES, InChI, name).",
+        "recommended_rule": "Add to the assessment prompt: 'Molecule records (mol_*) may contain structural information such as SMILES, InChI, or systematic names. Use these to infer the structure of a compound.'"
+      }
+    ],
+    "proposed_patch_targets": [
+      "strategy.assessment",
+      "strategy.evidence_expansion",
+      "strategy.retrieval_routing",
+      "strategy.query_rewrite"
+    ],
+    "recommended_changes": {
+      "prompt": {
+        "should_change": true,
+        "priority": "primary",
+        "prompt_role": "evidence_assessment",
+        "base_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM",
+        "change_summary": [
+          "Add explicit rule for fragmented table data: 'If a table fragment is present, attempt to infer column headers from context (e.g., adjacent blocks, common table patterns). If the fragment contains a single condition and the question asks for optimal, check if the surrounding text explicitly states optimality.'",
+          "Add rule for molecule records: 'Molecule records (mol_*) may contain structural information such as SMILES, InChI, or systematic names. Use these to infer the structure of a compound.'",
+          "Add rule for compound labels: 'Compound labels (e.g., 2c, 6ke) may appear in tables or text blocks that are not directly retrieved. If the evidence contains a table with similar labels (e.g., 2a, 6ae), consider that the answer might be in a different table or section.'"
+        ],
+        "risk_level": "medium",
+        "confidence": 0.85
+      },
+      "retrieval_routing": {
+        "should_change": true,
+        "priority": "secondary",
+        "changes": [
+          {
+            "target_path": "strategy.retrieval_routing.boost_weights.table_block.weight",
+            "operation": "update",
+            "current_value": 4.0,
+            "proposed_value": 6.0,
+            "rationale": "Table evidence often contains the answer but is underweighted, leading to missing critical table blocks.",
+            "expected_improvement": "Improve recall of table blocks that contain comparison data or optimization results.",
+            "source_failure_ids": [
+              "q3",
+              "q4"
+            ],
+            "confidence": 0.78
+          },
+          {
+            "target_path": "strategy.retrieval_routing.boost_weights.molecule_evidence.weight",
+            "operation": "update",
+            "current_value": 5.0,
+            "proposed_value": 7.0,
+            "rationale": "Molecule records contain structural information (SMILES, names) that are critical for entity_lookup questions.",
+            "expected_improvement": "Improve recall of molecule records that contain the structure of the queried compound.",
+            "source_failure_ids": [
+              "q_batch2_2"
+            ],
+            "confidence": 0.75
+          }
+        ],
+        "risk_level": "low"
+      },
+      "query_rewrite": {
+        "should_change": true,
+        "priority": "secondary",
+        "changes": [
+          {
+            "target_path": "strategy.query_rewrite.fallback_terms",
+            "operation": "add",
+            "current_value": [
+              "comparison",
+              "versus",
+              "yield",
+              "higher",
+              "lower",
+              "better"
+            ],
+            "proposed_value": [
+              "comparison",
+              "versus",
+              "yield",
+              "higher",
+              "lower",
+              "better",
+              "scope table",
+              "optimization table",
+              "yield table"
+            ],
+            "rationale": "Adding broader terms like 'scope table' helps retrieve the correct table when the specific compound labels are not matched.",
+            "expected_improvement": "Improve recall of tables that contain yield data for multiple compounds.",
+            "source_failure_ids": [
+              "q4",
+              "q_batch2_3"
+            ],
+            "confidence": 0.7
+          }
+        ],
+        "risk_level": "low"
+      },
+      "evidence_expansion": {
+        "should_change": true,
+        "priority": "secondary",
+        "changes": [
+          {
+            "target_path": "strategy.evidence_expansion.max_expanded_blocks",
+            "operation": "update",
+            "current_value": 5,
+            "proposed_value": 10,
+            "rationale": "Adjacent blocks often contain table captions, compound labels, or procedure details that are needed to interpret fragmented evidence.",
+            "expected_improvement": "Improve long-range evidence completeness for table-based questions.",
+            "source_failure_ids": [
+              "q3",
+              "q4",
+              "q_batch2_3"
+            ],
+            "confidence": 0.76
+          }
+        ],
+        "risk_level": "low"
+      },
+      "answer_generation": {
+        "should_change": false,
+        "changes": [],
+        "risk_level": "low"
+      }
+    },
+    "should_generate_patch": true,
+    "risk_level": "medium",
+    "raw_llm_response": "```json\n{\n  \"cluster_id\": \"assessment_false_negative__strategy.assessment__evidence_assessment\",\n  \"primary_failure_type\": \"assessment_false_negative\",\n  \"contributing_failure_types\": [\"evidence_expansion_error\", \"retrieval_routing_error\"],\n  \"confidence\": 0.85,\n  \"coverage_gap\": false,\n  \"explanation\": \"The assessment LLM incorrectly judged evidence as insufficient in all 4 samples, despite the corpus containing the answer. The root causes are: (1) the assessment prompt lacks explicit rules for handling fragmented or incomplete table data, (2) retrieval routing underweights table blocks and molecule evidence that contain the answer, and (3) evidence expansion does not retrieve adjacent blocks that provide necessary context (e.g., table captions, compound labels).\",\n  \"supporting_trace_signals\": [\n    \"gold answer appears in retrieved table_block or molecule evidence\",\n    \"assessment_result is sufficient=false\",\n    \"evidence_contained_answer is false but corpus_contained_answer is true\",\n    \"retrieved evidence includes partial table fragments without full context\"\n  ],\n  \"common_root_causes\": [\n    {\n      \"name\": \"assessment prompt lacks fragmented evidence handling\",\n      \"description\": \"The evidence_assessment prompt does not instruct the LLM to aggregate information from multiple fragmented evidence items (e.g., partial tables, separate molecule records) to infer the answer. The prompt's 'well-supported inference' rule is too vague for cases where the answer is distributed across items.\",\n      \"supporting_failure_ids\": [\"q3\", \"q4\", \"q_batch2_3\", \"q_batch2_2\"],\n      \"confidence\": 0.88\n    },\n    {\n      \"name\": \"retrieval routing underweights table and molecule evidence\",\n      \"description\": \"For reaction_comparison and reaction_condition_query skills, table_block weight is 4.0-5.0, but the answer often appears in a table that is not retrieved as a top item. For entity_lookup, molecule evidence weight is 5.0, but the molecule record containing the structure is not retrieved early enough. This leads to missing critical evidence in the assessment set.\",\n      \"supporting_failure_ids\": [\"q3\", \"q4\", \"q_batch2_2\"],\n      \"confidence\": 0.80\n    },\n    {\n      \"name\": \"evidence expansion insufficient for context\",\n      \"description\": \"The max_expanded_blocks=5 is too low to retrieve adjacent blocks that contain table captions, compound labels, or procedure details needed to interpret fragmented evidence. In q3, the table fragment lacks column headers; in q4 and q_batch2_3, the compound labels are in nearby blocks not retrieved.\",\n      \"supporting_failure_ids\": [\"q3\", \"q4\", \"q_batch2_3\"],\n      \"confidence\": 0.78\n    }\n  ],\n  \"subclusters\": [\n    {\n      \"name\": \"fragmented table data\",\n      \"failure_ids\": [\"q3\"],\n      \"specific_issue\": \"The retrieved table fragment (block_1_0041) shows only 'DCE, O2 (1 atm), r.t.' without column headers or comparison rows. The assessment LLM cannot infer that DCE is optimal because the table is incomplete. The gold answer is in the full table (not retrieved) and in the surrounding text.\",\n      \"recommended_rule\": \"Add a rule to the assessment prompt: 'If a table fragment is present, attempt to infer column headers from context (e.g., adjacent blocks, common table patterns). If the fragment contains a single condition and the question asks for optimal, check if the surrounding text explicitly states optimality.'\"\n    },\n    {\n      \"name\": \"compound label mismatch in retrieval\",\n      \"failure_ids\": [\"q4\", \"q_batch2_3\"],\n      \"specific_issue\": \"The questions ask about specific compound labels (2c, 2k, 6fe, 6ke) but the retrieved evidence contains tables with different labels (2a, 6ae, etc.). The gold answer is in a table or text block that uses the correct labels, but retrieval fails to fetch those blocks because the query rewrite does not generate variants that match the actual labels in the corpus.\",\n      \"recommended_rule\": \"For comparison questions, the query rewrite should generate variants that include the specific compound labels (e.g., '2c', '2k') and also broader terms like 'yield table' or 'scope table' to capture the relevant table.\"\n    },\n    {\n      \"name\": \"structure from molecule record not used\",\n      \"failure_ids\": [\"q_batch2_2\"],\n      \"specific_issue\": \"The gold answer (EtO2C(CH2)5COOMe) is present in the molecule record mol_15-SI_0035, which contains the SMILES 'COc1ccc(CCCO)cc1' (incorrect) but also the name 'methyl 6-ethoxyhexanoate' and label '6oe'. The assessment LLM did not consider the molecule record as evidence for structure, because the prompt does not mention that molecule records can contain structural information (SMILES, InChI, name).\",\n      \"recommended_rule\": \"Add to the assessment prompt: 'Molecule records (mol_*) may contain structural information such as SMILES, InChI, or systematic names. Use these to infer the structure of a compound.'\"\n    }\n  ],\n  \"proposed_patch_targets\": [\"strategy.assessment\", \"strategy.evidence_expansion\", \"strategy.retrieval_routing\", \"strategy.query_rewrite\"],\n  \"recommended_changes\": {\n    \"prompt\": {\n      \"should_change\": true,\n      \"priority\": \"primary\",\n      \"prompt_role\": \"evidence_assessment\",\n      \"base_prompt_ref\": \"EVIDENCE_ASSESSMENT_SYSTEM\",\n      \"change_summary\": [\n        \"Add explicit rule for fragmented table data: 'If a table fragment is present, attempt to infer column headers from context (e.g., adjacent blocks, common table patterns). If the fragment contains a single condition and the question asks for optimal, check if the surrounding text explicitly states optimality.'\",\n        \"Add rule for molecule records: 'Molecule records (mol_*) may contain structural information such as SMILES, InChI, or systematic names. Use these to infer the structure of a compound.'\",\n        \"Add rule for compound labels: 'Compound labels (e.g., 2c, 6ke) may appear in tables or text blocks that are not directly retrieved. If the evidence contains a table with similar labels (e.g., 2a, 6ae), consider that the answer might be in a different table or section.'\"\n      ],\n      \"risk_level\": \"medium\",\n      \"confidence\": 0.85\n    },\n    \"retrieval_routing\": {\n      \"should_change\": true,\n      \"priority\": \"secondary\",\n      \"changes\": [\n        {\n          \"target_path\": \"strategy.retrieval_routing.boost_weights.table_block.weight\",\n          \"operation\": \"update\",\n          \"current_value\": 4.0,\n          \"proposed_value\": 6.0,\n          \"rationale\": \"Table evidence often contains the answer but is underweighted, leading to missing critical table blocks.\",\n          \"expected_improvement\": \"Improve recall of table blocks that contain comparison data or optimization results.\",\n          \"source_failure_ids\": [\"q3\", \"q4\"],\n          \"confidence\": 0.78\n        },\n        {\n          \"target_path\": \"strategy.retrieval_routing.boost_weights.molecule_evidence.weight\",\n          \"operation\": \"update\",\n          \"current_value\": 5.0,\n          \"proposed_value\": 7.0,\n          \"rationale\": \"Molecule records contain structural information (SMILES, names) that are critical for entity_lookup questions.\",\n          \"expected_improvement\": \"Improve recall of molecule records that contain the structure of the queried compound.\",\n          \"source_failure_ids\": [\"q_batch2_2\"],\n          \"confidence\": 0.75\n        }\n      ],\n      \"risk_level\": \"low\"\n    },\n    \"query_rewrite\": {\n      \"should_change\": true,\n      \"priority\": \"secondary\",\n      \"changes\": [\n        {\n          \"target_path\": \"strategy.query_rewrite.fallback_terms\",\n          \"operation\": \"add\",\n          \"current_value\": [\"comparison\", \"versus\", \"yield\", \"higher\", \"lower\", \"better\"],\n          \"proposed_value\": [\"comparison\", \"versus\", \"yield\", \"higher\", \"lower\", \"better\", \"scope table\", \"optimization table\", \"yield table\"],\n          \"rationale\": \"Adding broader terms like 'scope table' helps retrieve the correct table when the specific compound labels are not matched.\",\n          \"expected_improvement\": \"Improve recall of tables that contain yield data for multiple compounds.\",\n          \"source_failure_ids\": [\"q4\", \"q_batch2_3\"],\n          \"confidence\": 0.70\n        }\n      ],\n      \"risk_level\": \"low\"\n    },\n    \"evidence_expansion\": {\n      \"should_change\": true,\n      \"priority\": \"secondary\",\n      \"changes\": [\n        {\n          \"target_path\": \"strategy.evidence_expansion.max_expanded_blocks\",\n          \"operation\": \"update\",\n          \"current_value\": 5,\n          \"proposed_value\": 10,\n          \"rationale\": \"Adjacent blocks often contain table captions, compound labels, or procedure details that are needed to interpret fragmented evidence.\",\n          \"expected_improvement\": \"Improve long-range evidence completeness for table-based questions.\",\n          \"source_failure_ids\": [\"q3\", \"q4\", \"q_batch2_3\"],\n          \"confidence\": 0.76\n        }\n      ],\n      \"risk_level\": \"low\"\n    },\n    \"answer_generation\": {\n      \"should_change\": false,\n      \"changes\": [],\n      \"risk_level\": \"low\"\n    }\n  },\n  \"should_generate_patch\": true,\n  \"risk_level\": \"medium\"\n}\n```"
+  }
+]

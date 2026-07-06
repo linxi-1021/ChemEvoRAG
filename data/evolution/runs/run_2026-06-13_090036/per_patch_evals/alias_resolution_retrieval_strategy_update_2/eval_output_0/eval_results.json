@@ -1,0 +1,189 @@
+{
+  "summary": {
+    "total": 5,
+    "average_score": 0.8800000000000001,
+    "by_intent": {
+      "alias_resolution": 1.0,
+      "reaction_comparison": 1.0,
+      "property_query": 0.7,
+      "entity_lookup": 0.7
+    }
+  },
+  "results": [
+    {
+      "id": "q4",
+      "source_paper": "1.pdf",
+      "intent": "reaction_comparison",
+      "question": "Referring to the additive screen (Table 3), which additive gave a higher yield for the aerobic oxidation screening of 3-(n-hexyl)-1,2-octadien-4-ol: NaCl (entry 5) or NaNO2 (entry 1)?",
+      "ground_truth": "NaCl (entry 5) gave the higher yield: NaCl showed 100% conversion and 72% yield, whereas NaNO2 (entry 1) showed 55% conversion and 35% yield.",
+      "system_answer": "NaCl (entry 5) gave a higher yield than NaNO2 (entry 1) for the aerobic oxidation of 3-(n-hexyl)-1,2-octadien-4-ol. NaCl provided a 72% NMR yield with 100% conversion in 4 hours, whereas NaNO2 gave only a 35% NMR yield with 55% conversion after 36 hours (evidence: block_1_0017).",
+      "evidence_ids": [
+        "block_1_0018",
+        "block_1_0036",
+        "block_1_0124",
+        "block_1_0127",
+        "block_1_0009",
+        "block_1_0041",
+        "block_1_0121",
+        "block_1_0122",
+        "mol_txt_1_0047",
+        "block_1_0017",
+        "block_1_0074"
+      ],
+      "confidence": 1.0,
+      "judge_score": 1.0,
+      "entities_found": [
+        "NaCl",
+        "NaNO2",
+        "3-(n-hexyl)-1,2-octadien-4-ol"
+      ],
+      "entities_missing": [
+        "Table 3"
+      ],
+      "judge_reasoning": "The system answer correctly states all key facts from the ground truth (NaCl higher yield, 100% conversion and 72% yield vs NaNO2 55% conversion and 35% yield) and includes the substrate name, though it omits the mention of Table 3, which is not a critical factual detail for the comparison.",
+      "score": 1.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q5",
+      "source_paper": "3.pdf",
+      "intent": "property_query",
+      "question": "What isolated yield and E/Z ratio were obtained in the reported 0.1 mmol scale oxidation of E-1a to give E-2a under the optimized conditions (scale‑up/test experiment shown in Scheme 2)?",
+      "ground_truth": "90% isolated yield after 6 h; product E-2a obtained with E/Z = 97/3 (starting E-1a was E/Z = 99/1).",
+      "system_answer": "The evidence reports a 0.1 mol (not 0.1 mmol) scale-up reaction of E-1a under optimized conditions, giving E-2a in 90% isolated yield in 6 h with the same E/Z ratio as the small-scale optimized conditions (97:3) (evidence: block_3_0019, block_3_0016). The E/Z ratio is not explicitly restated for the 0.1 mol experiment, but the text says 'without changing the E/Z ratio,' and the optimized small-scale conditions (Table 1, entry 9) show an E/Z ratio of 97:3 (evidence: block_3_0013).",
+      "evidence_ids": [
+        "block_3_0013",
+        "block_3_0017",
+        "block_3_0014",
+        "block_3_0019",
+        "block_3_0009",
+        "block_3_0010",
+        "block_3_0008",
+        "block_3_0011",
+        "block_3_0016"
+      ],
+      "confidence": 0.86,
+      "judge_score": 0.7,
+      "entities_found": [
+        "E-1a",
+        "E-2a"
+      ],
+      "entities_missing": [
+        "Scheme 2"
+      ],
+      "judge_reasoning": "The system answer correctly reports 90% isolated yield, 6 h, and E/Z ratio 97:3, matching the ground truth, but omits the mention of Scheme 2 and the starting E/Z ratio of 99/1 for E-1a, which are minor details.",
+      "score": 0.7,
+      "intent_key": "property_query"
+    },
+    {
+      "id": "q1",
+      "source_paper": "8.pdf",
+      "intent": "alias_resolution",
+      "question": "In this paper, what compound does the label '2a' refer to?",
+      "ground_truth": "2a refers to benzoic acid (the carboxylic acid product obtained from benzyl alcohol 1a).",
+      "system_answer": "In this paper, the label '2a' refers to benzoic acid (evidence: block_8_0011, block_8_0013, block_8_0020). It is obtained from the aerobic oxidation of benzyl alcohol (1a) under the reported reaction conditions (evidence: block_8_0011, block_8_0020).",
+      "evidence_ids": [
+        "block_8_0011",
+        "block_8_0009",
+        "block_8_0013",
+        "block_8_0010",
+        "block_8_0020",
+        "block_8_0151",
+        "block_8_0073",
+        "block_8_0031"
+      ],
+      "confidence": 0.95,
+      "judge_score": 1.0,
+      "entities_found": [
+        "2a",
+        "1a",
+        "benzoic acid"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies 2a as benzoic acid and mentions it is obtained from benzyl alcohol 1a, matching the ground truth fully.",
+      "score": 1.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q4",
+      "source_paper": "16.pdf",
+      "intent": "reaction_comparison",
+      "question": "Under the standard substrate‑scope conditions (Table 2), which substrate gave the higher isolated yield to product 2a: n‑C8H17OTBS (1aa) or n‑C8H17OTMS (1ab)?",
+      "ground_truth": "n‑C8H17OTBS (1aa) gave the higher yield: 84% vs n‑C8H17OTMS (1ab) 77%.",
+      "system_answer": "Under the standard substrate-scope conditions (Table 2), n-C8H17OTBS (1aa) gave the higher isolated yield to product 2a at 84%, compared to n-C8H17OTMS (1ab) at 77% (evidence: block_16_0022).",
+      "evidence_ids": [
+        "block_16_0022",
+        "block_16_0017",
+        "block_16_0018",
+        "block_16_0024",
+        "block_16_0025",
+        "block_16_0019",
+        "block_16_0020",
+        "block_16_0026",
+        "block_16_0021"
+      ],
+      "confidence": 1.0,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1aa",
+        "1ab",
+        "2a"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states that n-C8H17OTBS (1aa) gave a higher yield of 84% compared to n-C8H17OTMS (1ab) at 77%, and includes all key entities.",
+      "score": 1.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q2",
+      "source_paper": "19.pdf",
+      "intent": "entity_lookup",
+      "question": "What aryl group (Ar) is used for compound 1a in the paper (how is Ar defined for 1a)?",
+      "ground_truth": "Ar for 1a is 4‑OMe‑C6H4 (p‑methoxyphenyl / p‑methoxybenzyl)",
+      "system_answer": "The evidence does not explicitly define the aryl group (Ar) for compound 1a. Compound 1a is described as a PMB (p-methoxybenzyl) ether of dodecanol, with the PMB group being 4-methoxybenzyl (evidence: block_19_0008, block_19_0022). The aryl group in the PMB protecting group is therefore a 4-methoxyphenyl ring, but the question likely refers to a different Ar substituent on 1a that is not specified in the retrieved evidence.",
+      "evidence_ids": [
+        "block_19_0004",
+        "block_19_0010",
+        "block_19_0016",
+        "block_19_0011",
+        "block_19_0009",
+        "block_19_0022",
+        "block_19_0006",
+        "block_19_0008",
+        "mol_12_0000",
+        "mol_12_0001",
+        "mol_12_0002",
+        "mol_12_0015",
+        "mol_17_0000",
+        "mol_17_0001",
+        "mol_17_0003",
+        "mol_17_0005"
+      ],
+      "confidence": 0.35,
+      "judge_score": 0.7,
+      "entities_found": [
+        "1a",
+        "Ar",
+        "4‑OMe‑C6H4"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies the aryl group as 4-methoxyphenyl (p-methoxyphenyl) and mentions PMB, which matches the ground truth, but it expresses uncertainty about whether the question refers to a different Ar substituent, causing a minor omission in confidence.",
+      "score": 0.7,
+      "intent_key": "entity_lookup"
+    }
+  ],
+  "metadata": {
+    "sampling": {
+      "mode": "random",
+      "limit": 5,
+      "seed": 42,
+      "selected_question_ids": [
+        "q4",
+        "q5",
+        "q1",
+        "q4",
+        "q2"
+      ]
+    }
+  }
+}

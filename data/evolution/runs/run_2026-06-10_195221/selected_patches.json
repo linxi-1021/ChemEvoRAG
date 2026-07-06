@@ -1,0 +1,37 @@
+[
+  {
+    "patch_id": "alias_resolution_template_distill_10",
+    "patch_type": "",
+    "skill_name": "alias_resolution",
+    "skill_version": "1.0.0",
+    "target_file": "",
+    "source_failure_ids": [],
+    "targeted_failure_ids": [],
+    "primary_failure_type": "unknown_failure",
+    "target_path": "templates",
+    "operation": "add",
+    "old_value": null,
+    "new_value": null,
+    "current_value": {},
+    "proposed_value": {
+      "name": "distilled_simple_lookup_table_evidence_list_alias_resolution",
+      "description": "Auto-distilled from 7 successful queries with structure 'simple_lookup_table_evidence_list' in alias_resolution.",
+      "applicable_when": {
+        "intent": "alias_resolution",
+        "query_structure": "simple_lookup",
+        "evidence_type": "table_evidence"
+      },
+      "not_applicable_when": [],
+      "slots": [],
+      "examples": []
+    },
+    "prompt_artifacts": [],
+    "rationale": "Structural pattern 'simple_lookup_table_evidence_list' succeeded 7 times in alias_resolution (avg 1.00). Query structure: simple_lookup, evidence type: table_evidence, answer structure: list.",
+    "expected_improvement": "Reusable template for simple_lookup queries using table_evidence.",
+    "risk_level": "low",
+    "confidence": 0.95,
+    "status": "regression_validated",
+    "dependencies": [],
+    "validation_status": "pending"
+  }
+]

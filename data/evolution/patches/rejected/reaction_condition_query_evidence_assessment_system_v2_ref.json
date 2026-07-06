@@ -1,0 +1,40 @@
+{
+  "patch_id": "reaction_condition_query_evidence_assessment_system_v2_ref",
+  "patch_type": "prompt_ref_update",
+  "skill_name": "reaction_condition_query",
+  "skill_version": "1.0.0",
+  "target_file": "config/skills/reaction_condition_query.yaml",
+  "source_failure_ids": [
+    "q4",
+    "q_batch2_3",
+    "q3",
+    "q_batch2_2"
+  ],
+  "targeted_failure_ids": [
+    "q4",
+    "q_batch2_3",
+    "q3",
+    "q_batch2_2"
+  ],
+  "primary_failure_type": "assessment_false_negative",
+  "target_path": "strategy.assessment.system_prompt_ref",
+  "operation": "update",
+  "old_value": "EVIDENCE_ASSESSMENT_SYSTEM",
+  "new_value": "EVIDENCE_ASSESSMENT_SYSTEM_V2",
+  "current_value": {
+    "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM"
+  },
+  "proposed_value": {
+    "system_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_V2"
+  },
+  "prompt_artifacts": [],
+  "rationale": "Point to V2 prompt: Preserved V1 grounding constraints; Added 'FRAGMENTED EVIDENCE HANDLING' section with rules for combining information across multiple evidence items (e.g., table caption and table body)",
+  "expected_improvement": "Use improved V2 prompt for reaction_condition_query",
+  "risk_level": "medium",
+  "confidence": 0.85,
+  "status": "candidate",
+  "dependencies": [
+    "evidence_assessment_system_v2_prompt_content"
+  ],
+  "validation_status": "pending"
+}

@@ -1,0 +1,10 @@
+{
+  "patch_id": "property_query_template_distill_13",
+  "passed": false,
+  "average_score": 0.8703389830508476,
+  "score_delta": 0.004237288135593098,
+  "targeted_improvement": 0.0,
+  "errors": [
+    "Regression failed: Failed cases increased by 9 (max allowed: 1); 5 new high-severity failure(s) detected"
+  ]
+}

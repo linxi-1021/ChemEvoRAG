@@ -1,0 +1,103 @@
+[
+  {
+    "cluster_id": "assessment_false_negative__strategy.assessment__evidence_assessment",
+    "primary_failure_type": "assessment_false_negative",
+    "contributing_failure_types": [
+      "entity_miss"
+    ],
+    "confidence": 0.85,
+    "coverage_gap": false,
+    "explanation": "The assessment LLM incorrectly judged evidence as insufficient in all 4 samples, despite the answer being present in the retrieved evidence. In Sample 1, the evidence contained a table fragment with DCE as solvent and conversion/yield data, but the assessment failed to recognize that the table, though incomplete, still indicated DCE was used and could be inferred as optimal from context. In Sample 2, the gold answer was present in block_12_0013, but the assessment missed it because the block was not parsed for the specific product labels 2c and 2k. In Sample 3, the evidence contained tables with NMR yields for compounds like 6ae, but the assessment did not find 6fe/6ke because those labels were not present in the retrieved blocks; however, the gold answer was actually in a different block not retrieved. In Sample 4, the molecule evidence mol_15-SI_0035 contained the structure for 6oe (methyl 6-ethoxyhexanoate) and its SMILES, but the assessment declared no mention of 6oe. The common root cause is that the assessment prompt lacks explicit rules for handling compound labels that may be embedded in molecule evidence (e.g., SMILES, InChI, or name fields) and for inferring structure from such data. Additionally, the assessment does not instruct the LLM to check molecule evidence blocks for compound labels and structural data, leading to false negatives.",
+    "supporting_trace_signals": [
+      "Sample 1: Assessment said 'table is incomplete... does not show comparison' but DCE was the only solvent in the table and the question asks for 'selected as optimal' — the assessment should have inferred from the table that DCE was the solvent used in the optimization.",
+      "Sample 2: Gold answer was in block_12_0013 but assessment said 'none of the 8 evidence items mention products 2c or 2k' — the block contained the scope discussion with yields for 2c and 2k, but the assessment failed to extract them.",
+      "Sample 3: Assessment said 'no 6fe or 6ke appear' but the gold answer was in a different block not retrieved; however, the assessment should have flagged that the evidence was insufficient due to missing data, not incorrectly declared sufficiency.",
+      "Sample 4: Molecule evidence mol_15-SI_0035 contained '6oe' label and SMILES, but assessment said 'none of the 8 evidence items contain any mention of compound 6oe' — the assessment ignored molecule evidence blocks."
+    ],
+    "common_root_causes": [
+      {
+        "name": "assessment_prompt_lacks_compound_label_inference",
+        "description": "The evidence_assessment prompt does not instruct the LLM to check molecule evidence blocks (e.g., SMILES, InChI, name fields) for compound labels like '6oe', '2c', '6fe'. The prompt only mentions 'compound names, aliases, labels' in the pre-flight check but does not explicitly require scanning molecule evidence for structural data that can answer structure questions.",
+        "supporting_failure_ids": [
+          "q_batch2_2",
+          "q4",
+          "q_batch2_3"
+        ],
+        "confidence": 0.9
+      },
+      {
+        "name": "assessment_prompt_lacks_table_inference_for_optimality",
+        "description": "The assessment prompt's sufficiency standard for 'optimal' questions requires 'explicit statement of optimality or comparable experimental data'. However, it does not instruct the LLM to infer optimality from a table that shows only one solvent being used (e.g., DCE in Sample 1) when the question asks which solvent was 'selected as optimal'. The prompt should add a rule: if a table shows a single solvent used in optimization and the question asks for the optimal solvent, that solvent can be inferred as optimal.",
+        "supporting_failure_ids": [
+          "q3"
+        ],
+        "confidence": 0.85
+      }
+    ],
+    "subclusters": [
+      {
+        "name": "molecule_evidence_ignored",
+        "description": "Samples where the assessment failed to recognize that molecule evidence blocks contain compound labels and structural data (e.g., SMILES, InChI) that directly answer the question. This affects entity_lookup and reaction_comparison skills.",
+        "supporting_failure_ids": [
+          "q_batch2_2",
+          "q4",
+          "q_batch2_3"
+        ],
+        "confidence": 0.9
+      },
+      {
+        "name": "table_inference_for_optimality",
+        "description": "Sample where the assessment failed to infer optimal solvent from a table showing only one solvent used in optimization. This affects reaction_condition_query skill.",
+        "supporting_failure_ids": [
+          "q3"
+        ],
+        "confidence": 0.85
+      }
+    ],
+    "proposed_patch_targets": [
+      "strategy.assessment"
+    ],
+    "recommended_changes": {
+      "prompt": {
+        "should_change": true,
+        "priority": "primary",
+        "prompt_role": "evidence_assessment",
+        "base_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM",
+        "change_summary": [
+          "Add explicit rule: 'Molecule evidence blocks (e.g., SMILES, InChI, name fields) may contain compound labels and structural data. When a question asks for a compound's structure or identity, check molecule evidence for the compound label and extract the structure from SMILES or name fields.'",
+          "Add explicit rule: 'For questions asking which solvent/condition was selected as optimal, if a table shows only one solvent/condition used in the optimization study, that solvent/condition can be inferred as the optimal one.'",
+          "Add explicit rule: 'When a question asks for a comparison of specific compounds (e.g., product 2c vs 2k), check all evidence blocks for those compound labels, including molecule evidence and scope tables. Do not assume absence if the label is not in the first few blocks.'"
+        ],
+        "risk_level": "medium",
+        "confidence": 0.85
+      },
+      "retrieval_routing": {
+        "should_change": false,
+        "priority": "secondary",
+        "changes": [],
+        "risk_level": "low"
+      },
+      "query_rewrite": {
+        "should_change": false,
+        "priority": "secondary",
+        "changes": [],
+        "risk_level": "low"
+      },
+      "evidence_expansion": {
+        "should_change": false,
+        "priority": "secondary",
+        "changes": [],
+        "risk_level": "low"
+      },
+      "answer_generation": {
+        "should_change": false,
+        "priority": "secondary",
+        "changes": [],
+        "risk_level": "low"
+      }
+    },
+    "should_generate_patch": true,
+    "risk_level": "medium",
+    "raw_llm_response": "{\n  \"primary_failure_type\": \"assessment_false_negative\",\n  \"contributing_failure_types\": [\"entity_miss\"],\n  \"confidence\": 0.85,\n  \"coverage_gap\": false,\n  \"explanation\": \"The assessment LLM incorrectly judged evidence as insufficient in all 4 samples, despite the answer being present in the retrieved evidence. In Sample 1, the evidence contained a table fragment with DCE as solvent and conversion/yield data, but the assessment failed to recognize that the table, though incomplete, still indicated DCE was used and could be inferred as optimal from context. In Sample 2, the gold answer was present in block_12_0013, but the assessment missed it because the block was not parsed for the specific product labels 2c and 2k. In Sample 3, the evidence contained tables with NMR yields for compounds like 6ae, but the assessment did not find 6fe/6ke because those labels were not present in the retrieved blocks; however, the gold answer was actually in a different block not retrieved. In Sample 4, the molecule evidence mol_15-SI_0035 contained the structure for 6oe (methyl 6-ethoxyhexanoate) and its SMILES, but the assessment declared no mention of 6oe. The common root cause is that the assessment prompt lacks explicit rules for handling compound labels that may be embedded in molecule evidence (e.g., SMILES, InChI, or name fields) and for inferring structure from such data. Additionally, the assessment does not instruct the LLM to check molecule evidence blocks for compound labels and structural data, leading to false negatives.\",\n  \"supporting_trace_signals\": [\n    \"Sample 1: Assessment said 'table is incomplete... does not show comparison' but DCE was the only solvent in the table and the question asks for 'selected as optimal' — the assessment should have inferred from the table that DCE was the solvent used in the optimization.\",\n    \"Sample 2: Gold answer was in block_12_0013 but assessment said 'none of the 8 evidence items mention products 2c or 2k' — the block contained the scope discussion with yields for 2c and 2k, but the assessment failed to extract them.\",\n    \"Sample 3: Assessment said 'no 6fe or 6ke appear' but the gold answer was in a different block not retrieved; however, the assessment should have flagged that the evidence was insufficient due to missing data, not incorrectly declared sufficiency.\",\n    \"Sample 4: Molecule evidence mol_15-SI_0035 contained '6oe' label and SMILES, but assessment said 'none of the 8 evidence items contain any mention of compound 6oe' — the assessment ignored molecule evidence blocks.\"\n  ],\n  \"common_root_causes\": [\n    {\n      \"name\": \"assessment_prompt_lacks_compound_label_inference\",\n      \"description\": \"The evidence_assessment prompt does not instruct the LLM to check molecule evidence blocks (e.g., SMILES, InChI, name fields) for compound labels like '6oe', '2c', '6fe'. The prompt only mentions 'compound names, aliases, labels' in the pre-flight check but does not explicitly require scanning molecule evidence for structural data that can answer structure questions.\",\n      \"supporting_failure_ids\": [\"q_batch2_2\", \"q4\", \"q_batch2_3\"],\n      \"confidence\": 0.9\n    },\n    {\n      \"name\": \"assessment_prompt_lacks_table_inference_for_optimality\",\n      \"description\": \"The assessment prompt's sufficiency standard for 'optimal' questions requires 'explicit statement of optimality or comparable experimental data'. However, it does not instruct the LLM to infer optimality from a table that shows only one solvent being used (e.g., DCE in Sample 1) when the question asks which solvent was 'selected as optimal'. The prompt should add a rule: if a table shows a single solvent used in optimization and the question asks for the optimal solvent, that solvent can be inferred as optimal.\",\n      \"supporting_failure_ids\": [\"q3\"],\n      \"confidence\": 0.85\n    }\n  ],\n  \"subclusters\": [\n    {\n      \"name\": \"molecule_evidence_ignored\",\n      \"description\": \"Samples where the assessment failed to recognize that molecule evidence blocks contain compound labels and structural data (e.g., SMILES, InChI) that directly answer the question. This affects entity_lookup and reaction_comparison skills.\",\n      \"supporting_failure_ids\": [\"q_batch2_2\", \"q4\", \"q_batch2_3\"],\n      \"confidence\": 0.9\n    },\n    {\n      \"name\": \"table_inference_for_optimality\",\n      \"description\": \"Sample where the assessment failed to infer optimal solvent from a table showing only one solvent used in optimization. This affects reaction_condition_query skill.\",\n      \"supporting_failure_ids\": [\"q3\"],\n      \"confidence\": 0.85\n    }\n  ],\n  \"proposed_patch_targets\": [\"strategy.assessment\"],\n  \"recommended_changes\": {\n    \"prompt\": {\n      \"should_change\": true,\n      \"priority\": \"primary\",\n      \"prompt_role\": \"evidence_assessment\",\n      \"base_prompt_ref\": \"EVIDENCE_ASSESSMENT_SYSTEM\",\n      \"change_summary\": [\n        \"Add explicit rule: 'Molecule evidence blocks (e.g., SMILES, InChI, name fields) may contain compound labels and structural data. When a question asks for a compound's structure or identity, check molecule evidence for the compound label and extract the structure from SMILES or name fields.'\",\n        \"Add explicit rule: 'For questions asking which solvent/condition was selected as optimal, if a table shows only one solvent/condition used in the optimization study, that solvent/condition can be inferred as the optimal one.'\",\n        \"Add explicit rule: 'When a question asks for a comparison of specific compounds (e.g., product 2c vs 2k), check all evidence blocks for those compound labels, including molecule evidence and scope tables. Do not assume absence if the label is not in the first few blocks.'\"\n      ],\n      \"risk_level\": \"medium\",\n      \"confidence\": 0.85\n    },\n    \"retrieval_routing\": {\n      \"should_change\": false,\n      \"priority\": \"secondary\",\n      \"changes\": [],\n      \"risk_level\": \"low\"\n    },\n    \"query_rewrite\": {\n      \"should_change\": false,\n      \"priority\": \"secondary\",\n      \"changes\": [],\n      \"risk_level\": \"low\"\n    },\n    \"evidence_expansion\": {\n      \"should_change\": false,\n      \"priority\": \"secondary\",\n      \"changes\": [],\n      \"risk_level\": \"low\"\n    },\n    \"answer_generation\": {\n      \"should_change\": false,\n      \"priority\": \"secondary\",\n      \"changes\": [],\n      \"risk_level\": \"low\"\n    }\n  },\n  \"should_generate_patch\": true,\n  \"risk_level\": \"medium\"\n}"
+  }
+]

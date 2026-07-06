@@ -1,0 +1,34 @@
+{
+  "run_id": "run_2026-06-12_024014",
+  "generated_at": "2026-06-12T02:58:04.605170",
+  "summary": {
+    "total_questions": 118,
+    "average_score": 0.8661016949152545,
+    "failures": 6,
+    "partial_successes": 26,
+    "coverage_gaps": 0,
+    "success_patterns": 86
+  },
+  "candidate_patches": 16,
+  "selected_patches": [
+    "evidence_assessment_system_v2_prompt_content",
+    "evidence_assessment_system_v2_prompt_content",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "alias_resolution_cross_skill_promotion_1",
+    "reaction_condition_query_cross_skill_promotion_2",
+    "entity_lookup_cross_skill_promotion_3",
+    "property_query_cross_skill_promotion_4",
+    "property_query_cross_skill_promotion_5",
+    "alias_resolution_evidence_assessment_system_v2_ref",
+    "reaction_comparison_evidence_assessment_system_v2_ref",
+    "reaction_condition_query_evidence_assessment_system_v2_ref"
+  ],
+  "validated_patches": [],
+  "rejected_patches": [],
+  "conflicts_resolved": []
+}

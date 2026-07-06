@@ -1,0 +1,16 @@
+Run directory: D:\Desktop\evo\ChemEvoRAG_Phase1-main\data\evolution\runs\run_2026-06-12_021528
+Trace report: 6 failures, 26 partial, 86 success
+
+[SuccessAnalysis] Analyzing successful traces...
+
+FATAL: 'FailureRecord' object has no attribute 'get'
+Traceback (most recent call last):
+  File "D:\Desktop\evo\ChemEvoRAG_Phase1-main\src\skill_evolution\runner.py", line 93, in run
+    success_data = self._run_success_analysis(report)
+  File "D:\Desktop\evo\ChemEvoRAG_Phase1-main\src\skill_evolution\runner.py", line 184, in _run_success_analysis
+    "assessment_result": f.assessment_result if hasattr(f, 'assessment_result') else f.get("assessment_result", ""),
+                                                                                     ^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\pydantic\main.py", line 1042, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'FailureRecord' object has no attribute 'get'
+

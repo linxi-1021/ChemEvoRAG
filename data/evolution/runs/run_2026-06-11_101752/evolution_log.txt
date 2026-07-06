@@ -1,0 +1,13 @@
+Run directory: D:\Desktop\evo\ChemEvoRAG_Phase1-main\data\evolution\runs\run_2026-06-11_101752
+Trace report: 6 failures, 26 partial, 86 success
+
+[Distillation] 1 template_add, 4 cross-skill promotions
+
+[Integration] 2 selected, 3 rejected, 0 conflicts resolved
+Schema validation: 2 accepted, 0 rejected
+[1/2] Validating alias_resolution_template_distill_1
+  [FAIL] ['Regression failed: Score dropped by 0.0394 (max allowed: 0.0100)']
+[2/2] Validating alias_resolution_cross_skill_promotion_1
+  [OK] score=0.8600, delta=-0.0061
+
+--validate-only: 1 patches validated.

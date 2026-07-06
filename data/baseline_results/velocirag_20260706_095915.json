@@ -1,0 +1,129 @@
+{
+  "baseline": "velocirag",
+  "timestamp": "20260706_095915",
+  "total_questions": 5,
+  "metadata": {
+    "model": "DeepSeek-V3",
+    "retrieval": "VelociRAG-ONNX",
+    "embedder": "all-MiniLM-L6-v2"
+  },
+  "results": [
+    {
+      "question_id": "q1",
+      "paper_id": "10",
+      "paper_title": "Iron-Catalyzed Aerobic Oxidation of Alcohols: Lower Cost and Improved Selectivity",
+      "intent": "alias_resolution",
+      "question": "In this paper, what compound does the label '1a' refer to (give the molecular formula/name exactly as shown in the article)?",
+      "ground_truth": "n-C11H23CH2OH (1a)",
+      "key_entities": [
+        "1a"
+      ],
+      "system_answer": "The provided context does not explicitly specify the molecular formula or name of the compound labeled '1a'. It only mentions '1a' in the context of reactions and yields (e.g., Table 4 in Document 9 (chunk 13)). For precise identification, the full paper or additional context would be required. \n\nAnswer: Not found in the provided context.",
+      "elapsed_sec": 4.17,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "1a"
+      ],
+      "judge_reasoning": "The system answer states that the molecular formula or name of '1a' is not found in the ground truth provides it as n-C11H23CH2OH (1a)."
+    },
+    {
+      "question_id": "q2",
+      "paper_id": "10",
+      "paper_title": "Iron-Catalyzed Aerobic Oxidation of Alcohols: Lower Cost and Improved Selectivity",
+      "intent": "entity_lookup",
+      "question": "What is the structure/name of the product labeled '2a' formed from oxidation of 1a (provide the exact representation used in the paper)?",
+      "ground_truth": "n-C11H23CHO (2a)",
+      "key_entities": [
+        "2a",
+        "n-C11H23CHO"
+      ],
+      "system_answer": "The product labeled **2a** is represented as **n-C<sub>11</sub>H<sub>23</sub>COOH** (undecanoic acid) in the context provided (from Document 7, chunk 11, Table 3, Entry 1). \n\nIn Document 13 (chunk 7), **2a** is also mentioned as the product of oxidation, though its structure is not explicitly shown there. The consistent naming across the context confirms its identity. \n\nExact representation:  \n**n-C<sub>11</sub>H<sub>23</sub>COOH** (or **2a** as labeled in the papers).",
+      "elapsed_sec": 2.53,
+      "judge_score": 0.3,
+      "entities_found": [
+        "2a"
+      ],
+      "entities_missing": [
+        "n-C11H23CHO"
+      ],
+      "judge_reasoning": "The system answer incorrectly identifies the product as n-C11H23COOH (undecanoic acid) instead of the correct n-C11H23CHO (aldehyde)."
+    },
+    {
+      "question_id": "q3",
+      "paper_id": "10",
+      "paper_title": "Iron-Catalyzed Aerobic Oxidation of Alcohols: Lower Cost and Improved Selectivity",
+      "intent": "reaction_condition_query",
+      "question": "For the 100 mmol-scale aerobic oxidation of 1a performed with a slow flow of air, what catalyst loadings, solvent, air flow rate, temperature and reaction time were used?",
+      "ground_truth": "Fe(NO3)3·9H2O 5 mol%, 4‑OH‑TEMPO 10 mol%, NaCl 10 mol%; solvent DCE; air flow 30 mL/min; 25 °C; 15.5 h.",
+      "key_entities": [
+        "1a",
+        "Fe(NO3)3·9H2O",
+        "4-OH-TEMPO",
+        "NaCl",
+        "DCE"
+      ],
+      "system_answer": "The provided context does not contain specific details about the 100 mmol-scale aerobic oxidation of **1a**, including catalyst loadings, solvent, air flow rate, temperature, or reaction time. The context mentions a 100 mmol-scale reaction with a slow flow of air (eq 1 and Figure 1 in Document 10 (chunk 12)), but the exact parameters are not specified. \n\nFor similar reactions, the context notes:  \n- A 40 mmol-scale oxidation of **1g** used an air flow of **30 mL/min** (Document 11 (chunk 12)).  \n- Other reactions used **Cu(NO₃)₂·3H₂O (0.1 mmol per 1.0 mmol substrate)**, **TEMPO (0.1 mmol)**, and **DCE** at **25 °C** (Document 11 (chunk 16)).  \n\nHowever, these details do not directly correspond to the 100 mmol-scale reaction of **1a**. Further information would be needed to answer your question fully.",
+      "elapsed_sec": 3.14,
+      "judge_score": 0.3,
+      "entities_found": [
+        "1a",
+        "DCE"
+      ],
+      "entities_missing": [
+        "Fe(NO3)3·9H2O",
+        "4-OH-TEMPO",
+        "NaCl"
+      ],
+      "judge_reasoning": "The system answer mentions the substrate (1a) and solvent (DCE) but misses the key catalysts (Fe(NO3)3·9H2O, 4-OH-TEMPO, NaCl) and other specific reaction conditions from the ground truth."
+    },
+    {
+      "question_id": "q4",
+      "paper_id": "10",
+      "paper_title": "Iron-Catalyzed Aerobic Oxidation of Alcohols: Lower Cost and Improved Selectivity",
+      "intent": "reaction_comparison",
+      "question": "According to Table 2 in the article, which solvent gave the higher yield for conversion of 1a to 2a — dichloromethane (DCM) or toluene — and what yields are reported for each?",
+      "ground_truth": "Toluene gave the higher yield: DCM 65% vs toluene 77% (reported yields in Table 2).",
+      "key_entities": [
+        "DCM",
+        "toluene",
+        "1a",
+        "2a"
+      ],
+      "system_answer": "According to Table 2 in the provided context (Document 10, chunk 11), toluene gave a higher yield (77% NMR yield) for the conversion of **1a** to **2a** compared to dichloromethane (DCM), which gave a 65% NMR yield. \n\nThe exact entries are:  \n- **DCM**: 65% yield of **2a** (Table 2, entry 5).  \n- **Toluene**: 77% yield of **2a** (Table 2, entry 7).  \n\nNo other yields for these solvents are mentioned in the context.",
+      "elapsed_sec": 2.31,
+      "judge_score": 1.0,
+      "entities_found": [
+        "DCM",
+        "toluene",
+        "1a",
+        "2a"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer is fully correct, containing all key facts and entities from the ground truth."
+    },
+    {
+      "question_id": "q5",
+      "paper_id": "10",
+      "paper_title": "Iron-Catalyzed Aerobic Oxidation of Alcohols: Lower Cost and Improved Selectivity",
+      "intent": "property_query",
+      "question": "What yield(s) of aldehyde 2a were obtained from the 100 mmol-scale oxidation of 1a with a slow flow of air (report both NMR and isolated yields as given)?",
+      "ground_truth": "88.5% by NMR and 88% isolated.",
+      "key_entities": [
+        "2a",
+        "1a",
+        "100 mmol scale"
+      ],
+      "system_answer": "The provided context does not contain information about the yield(s) of aldehyde **2a** from a **100 mmol-scale oxidation of 1a** with a slow flow of air. The documents discuss smaller-scale reactions (e.g., 1.0 mmol) and different oxidants (e.g., molecular oxygen or pure oxygen bags), but no data for a 100 mmol-scale reaction is mentioned. \n\nIf you need details on other scales or conditions, please clarify or provide additional context.",
+      "elapsed_sec": 2.82,
+      "judge_score": 0.0,
+      "entities_found": [
+        "2a",
+        "1a",
+        "100 mmol scale"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies the key entities but fails to provide the ground truth yield information (88.5% by NMR and 88% isolated) for the 100 mmol-scale oxidation of 1a."
+    }
+  ]
+}

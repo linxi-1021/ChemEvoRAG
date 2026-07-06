@@ -1,0 +1,23 @@
+{
+  "run_id": "run_2026-06-12_021604",
+  "generated_at": "2026-06-12T02:16:05.055938",
+  "summary": {
+    "total_questions": 118,
+    "average_score": 0.8661016949152545,
+    "failures": 6,
+    "partial_successes": 26,
+    "coverage_gaps": 0,
+    "success_patterns": 86
+  },
+  "candidate_patches": 5,
+  "selected_patches": [
+    "alias_resolution_cross_skill_promotion_1",
+    "reaction_condition_query_cross_skill_promotion_2",
+    "entity_lookup_cross_skill_promotion_3",
+    "property_query_cross_skill_promotion_4",
+    "property_query_cross_skill_promotion_5"
+  ],
+  "validated_patches": [],
+  "rejected_patches": [],
+  "conflicts_resolved": []
+}

@@ -1,0 +1,179 @@
+[
+  {
+    "cluster_id": "assessment_false_negative__strategy.assessment__evidence_assessment",
+    "primary_failure_type": "assessment_false_negative",
+    "contributing_failure_types": [
+      "retrieval_routing_error",
+      "evidence_expansion_error",
+      "query_rewrite_error"
+    ],
+    "confidence": 0.85,
+    "coverage_gap": false,
+    "explanation": "The assessment LLM incorrectly judged evidence as insufficient for 4 samples, all sharing the same failure type and target path. The root causes are varied: in samples 1 and 2, the answer is present in the retrieved evidence but the assessment fails to recognize it due to fragmented or indirect evidence; in samples 3 and 4, the answer is in the corpus but not retrieved, leading to a false negative assessment. The assessment prompt lacks explicit rules for handling fragmented evidence (e.g., table captions separated from data) and for inferring answers from partial data. Additionally, retrieval routing and evidence expansion settings are suboptimal for capturing table-heavy or compound-specific evidence.",
+    "supporting_trace_signals": [
+      "gold answer appears in retrieved table_block for sample 1",
+      "assessment_result is sufficient=false for all samples",
+      "evidence_contained_answer=false for samples 2, 3, 4",
+      "retrieved evidence lacks key table/compound data for samples 3 and 4"
+    ],
+    "common_root_causes": [
+      {
+        "name": "Assessment prompt lacks fragmented evidence aggregation rule",
+        "description": "The assessment prompt does not instruct the LLM to combine information from multiple evidence items (e.g., a table caption and a separate table body) to infer the answer. This causes false negatives when the answer is split across evidence items.",
+        "supporting_failure_ids": [
+          "q3",
+          "q4"
+        ],
+        "confidence": 0.85
+      },
+      {
+        "name": "Retrieval fails to capture table-heavy or compound-specific evidence",
+        "description": "For samples 3 and 4, the retrieval did not return the relevant table blocks or molecule records containing the answer. This is due to insufficient boost weights for table blocks and molecule evidence, and limited evidence expansion.",
+        "supporting_failure_ids": [
+          "q_batch2_3",
+          "q_batch2_2"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "name": "Query rewrite does not generate effective variants for compound codes",
+        "description": "For sample 4, the query rewrite generated variants like 'SMILES' and 'InChI' but did not include the compound code '6oe' in a way that retrieves the correct molecule record. The fallback terms are too generic.",
+        "supporting_failure_ids": [
+          "q_batch2_2"
+        ],
+        "confidence": 0.75
+      }
+    ],
+    "subclusters": [
+      {
+        "name": "Fragmented evidence in tables",
+        "failure_ids": [
+          "q3",
+          "q4"
+        ],
+        "specific_issue": "The answer is present in a table but the assessment fails because the table caption or context is in a separate evidence item. The assessment prompt does not instruct combining fragmented evidence.",
+        "recommended_rule": "Add a rule to the assessment prompt: 'If the answer is split across multiple evidence items (e.g., table caption and table body), combine the information to determine sufficiency.'"
+      },
+      {
+        "name": "Missing compound-specific retrieval",
+        "failure_ids": [
+          "q_batch2_3",
+          "q_batch2_2"
+        ],
+        "specific_issue": "The retrieval did not return the relevant table blocks or molecule records for compounds 6fe/6ke and 6oe. This is due to low boost weights for table blocks and molecule evidence, and insufficient evidence expansion.",
+        "recommended_rule": "Increase boost weight for table_block and molecule_evidence in retrieval routing, and increase max_expanded_blocks to capture adjacent table data."
+      }
+    ],
+    "proposed_patch_targets": [
+      "strategy.assessment",
+      "strategy.retrieval_routing",
+      "strategy.evidence_expansion",
+      "strategy.query_rewrite"
+    ],
+    "recommended_changes": {
+      "prompt": {
+        "should_change": true,
+        "priority": "primary",
+        "prompt_role": "evidence_assessment",
+        "base_prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM",
+        "change_summary": [
+          "Add a rule for combining fragmented evidence: 'If the answer is split across multiple evidence items (e.g., table caption and table body), combine the information to determine sufficiency.'",
+          "Add a rule for inferring answers from partial data: 'If the evidence contains a table with relevant columns but missing specific row labels, infer the answer from the closest matching data.'"
+        ],
+        "risk_level": "medium",
+        "confidence": 0.85
+      },
+      "retrieval_routing": {
+        "should_change": true,
+        "priority": "secondary",
+        "changes": [
+          {
+            "target_path": "strategy.retrieval_routing.boost_weights.table_block.weight",
+            "operation": "update",
+            "current_value": 4.0,
+            "proposed_value": 6.0,
+            "rationale": "Table evidence often contains the answer but is underweighted, leading to missed retrieval for comparison and condition queries.",
+            "expected_improvement": "Improve recall of table blocks containing yield and purity data.",
+            "source_failure_ids": [
+              "q_batch2_3",
+              "q3"
+            ],
+            "confidence": 0.8
+          },
+          {
+            "target_path": "strategy.retrieval_routing.boost_weights.molecule_evidence.weight",
+            "operation": "update",
+            "current_value": 5.0,
+            "proposed_value": 7.0,
+            "rationale": "Molecule evidence is critical for compound-specific lookups but is not boosted enough to overcome lexical noise.",
+            "expected_improvement": "Improve recall of molecule records for compound codes like 6oe.",
+            "source_failure_ids": [
+              "q_batch2_2"
+            ],
+            "confidence": 0.78
+          }
+        ],
+        "risk_level": "low"
+      },
+      "query_rewrite": {
+        "should_change": true,
+        "priority": "secondary",
+        "changes": [
+          {
+            "target_path": "strategy.query_rewrite.fallback_terms",
+            "operation": "add",
+            "current_value": [
+              "compound",
+              "molecule",
+              "structure",
+              "identity"
+            ],
+            "proposed_value": [
+              "compound",
+              "molecule",
+              "structure",
+              "identity",
+              "code",
+              "label"
+            ],
+            "rationale": "Adding 'code' and 'label' helps generate variants that match compound codes like '6oe' in the corpus.",
+            "expected_improvement": "Improve retrieval for compound-specific questions.",
+            "source_failure_ids": [
+              "q_batch2_2"
+            ],
+            "confidence": 0.75
+          }
+        ],
+        "risk_level": "low"
+      },
+      "evidence_expansion": {
+        "should_change": true,
+        "priority": "secondary",
+        "changes": [
+          {
+            "target_path": "strategy.evidence_expansion.max_expanded_blocks",
+            "operation": "update",
+            "current_value": 5,
+            "proposed_value": 8,
+            "rationale": "Adjacent blocks often contain table captions or procedure details that are needed to interpret table data. Increasing max_expanded_blocks improves the chance of capturing fragmented evidence.",
+            "expected_improvement": "Improve evidence completeness for table-supported questions.",
+            "source_failure_ids": [
+              "q3",
+              "q4"
+            ],
+            "confidence": 0.78
+          }
+        ],
+        "risk_level": "low"
+      },
+      "answer_generation": {
+        "should_change": false,
+        "changes": [],
+        "risk_level": "low"
+      }
+    },
+    "should_generate_patch": true,
+    "risk_level": "medium",
+    "raw_llm_response": "```json\n{\n  \"cluster_id\": \"assessment_false_negative__strategy.assessment__evidence_assessment\",\n  \"primary_failure_type\": \"assessment_false_negative\",\n  \"contributing_failure_types\": [\"retrieval_routing_error\", \"evidence_expansion_error\", \"query_rewrite_error\"],\n  \"confidence\": 0.85,\n  \"coverage_gap\": false,\n  \"explanation\": \"The assessment LLM incorrectly judged evidence as insufficient for 4 samples, all sharing the same failure type and target path. The root causes are varied: in samples 1 and 2, the answer is present in the retrieved evidence but the assessment fails to recognize it due to fragmented or indirect evidence; in samples 3 and 4, the answer is in the corpus but not retrieved, leading to a false negative assessment. The assessment prompt lacks explicit rules for handling fragmented evidence (e.g., table captions separated from data) and for inferring answers from partial data. Additionally, retrieval routing and evidence expansion settings are suboptimal for capturing table-heavy or compound-specific evidence.\",\n  \"supporting_trace_signals\": [\n    \"gold answer appears in retrieved table_block for sample 1\",\n    \"assessment_result is sufficient=false for all samples\",\n    \"evidence_contained_answer=false for samples 2, 3, 4\",\n    \"retrieved evidence lacks key table/compound data for samples 3 and 4\"\n  ],\n  \"common_root_causes\": [\n    {\n      \"name\": \"Assessment prompt lacks fragmented evidence aggregation rule\",\n      \"description\": \"The assessment prompt does not instruct the LLM to combine information from multiple evidence items (e.g., a table caption and a separate table body) to infer the answer. This causes false negatives when the answer is split across evidence items.\",\n      \"supporting_failure_ids\": [\"q3\", \"q4\"],\n      \"confidence\": 0.85\n    },\n    {\n      \"name\": \"Retrieval fails to capture table-heavy or compound-specific evidence\",\n      \"description\": \"For samples 3 and 4, the retrieval did not return the relevant table blocks or molecule records containing the answer. This is due to insufficient boost weights for table blocks and molecule evidence, and limited evidence expansion.\",\n      \"supporting_failure_ids\": [\"q_batch2_3\", \"q_batch2_2\"],\n      \"confidence\": 0.80\n    },\n    {\n      \"name\": \"Query rewrite does not generate effective variants for compound codes\",\n      \"description\": \"For sample 4, the query rewrite generated variants like 'SMILES' and 'InChI' but did not include the compound code '6oe' in a way that retrieves the correct molecule record. The fallback terms are too generic.\",\n      \"supporting_failure_ids\": [\"q_batch2_2\"],\n      \"confidence\": 0.75\n    }\n  ],\n  \"subclusters\": [\n    {\n      \"name\": \"Fragmented evidence in tables\",\n      \"failure_ids\": [\"q3\", \"q4\"],\n      \"specific_issue\": \"The answer is present in a table but the assessment fails because the table caption or context is in a separate evidence item. The assessment prompt does not instruct combining fragmented evidence.\",\n      \"recommended_rule\": \"Add a rule to the assessment prompt: 'If the answer is split across multiple evidence items (e.g., table caption and table body), combine the information to determine sufficiency.'\"\n    },\n    {\n      \"name\": \"Missing compound-specific retrieval\",\n      \"failure_ids\": [\"q_batch2_3\", \"q_batch2_2\"],\n      \"specific_issue\": \"The retrieval did not return the relevant table blocks or molecule records for compounds 6fe/6ke and 6oe. This is due to low boost weights for table blocks and molecule evidence, and insufficient evidence expansion.\",\n      \"recommended_rule\": \"Increase boost weight for table_block and molecule_evidence in retrieval routing, and increase max_expanded_blocks to capture adjacent table data.\"\n    }\n  ],\n  \"proposed_patch_targets\": [\"strategy.assessment\", \"strategy.retrieval_routing\", \"strategy.evidence_expansion\", \"strategy.query_rewrite\"],\n  \"recommended_changes\": {\n    \"prompt\": {\n      \"should_change\": true,\n      \"priority\": \"primary\",\n      \"prompt_role\": \"evidence_assessment\",\n      \"base_prompt_ref\": \"EVIDENCE_ASSESSMENT_SYSTEM\",\n      \"change_summary\": [\n        \"Add a rule for combining fragmented evidence: 'If the answer is split across multiple evidence items (e.g., table caption and table body), combine the information to determine sufficiency.'\",\n        \"Add a rule for inferring answers from partial data: 'If the evidence contains a table with relevant columns but missing specific row labels, infer the answer from the closest matching data.'\"\n      ],\n      \"risk_level\": \"medium\",\n      \"confidence\": 0.85\n    },\n    \"retrieval_routing\": {\n      \"should_change\": true,\n      \"priority\": \"secondary\",\n      \"changes\": [\n        {\n          \"target_path\": \"strategy.retrieval_routing.boost_weights.table_block.weight\",\n          \"operation\": \"update\",\n          \"current_value\": 4.0,\n          \"proposed_value\": 6.0,\n          \"rationale\": \"Table evidence often contains the answer but is underweighted, leading to missed retrieval for comparison and condition queries.\",\n          \"expected_improvement\": \"Improve recall of table blocks containing yield and purity data.\",\n          \"source_failure_ids\": [\"q_batch2_3\", \"q3\"],\n          \"confidence\": 0.80\n        },\n        {\n          \"target_path\": \"strategy.retrieval_routing.boost_weights.molecule_evidence.weight\",\n          \"operation\": \"update\",\n          \"current_value\": 5.0,\n          \"proposed_value\": 7.0,\n          \"rationale\": \"Molecule evidence is critical for compound-specific lookups but is not boosted enough to overcome lexical noise.\",\n          \"expected_improvement\": \"Improve recall of molecule records for compound codes like 6oe.\",\n          \"source_failure_ids\": [\"q_batch2_2\"],\n          \"confidence\": 0.78\n        }\n      ],\n      \"risk_level\": \"low\"\n    },\n    \"query_rewrite\": {\n      \"should_change\": true,\n      \"priority\": \"secondary\",\n      \"changes\": [\n        {\n          \"target_path\": \"strategy.query_rewrite.fallback_terms\",\n          \"operation\": \"add\",\n          \"current_value\": [\"compound\", \"molecule\", \"structure\", \"identity\"],\n          \"proposed_value\": [\"compound\", \"molecule\", \"structure\", \"identity\", \"code\", \"label\"],\n          \"rationale\": \"Adding 'code' and 'label' helps generate variants that match compound codes like '6oe' in the corpus.\",\n          \"expected_improvement\": \"Improve retrieval for compound-specific questions.\",\n          \"source_failure_ids\": [\"q_batch2_2\"],\n          \"confidence\": 0.75\n        }\n      ],\n      \"risk_level\": \"low\"\n    },\n    \"evidence_expansion\": {\n      \"should_change\": true,\n      \"priority\": \"secondary\",\n      \"changes\": [\n        {\n          \"target_path\": \"strategy.evidence_expansion.max_expanded_blocks\",\n          \"operation\": \"update\",\n          \"current_value\": 5,\n          \"proposed_value\": 8,\n          \"rationale\": \"Adjacent blocks often contain table captions or procedure details that are needed to interpret table data. Increasing max_expanded_blocks improves the chance of capturing fragmented evidence.\",\n          \"expected_improvement\": \"Improve evidence completeness for table-supported questions.\",\n          \"source_failure_ids\": [\"q3\", \"q4\"],\n          \"confidence\": 0.78\n        }\n      ],\n      \"risk_level\": \"low\"\n    },\n    \"answer_generation\": {\n      \"should_change\": false,\n      \"changes\": [],\n      \"risk_level\": \"low\"\n    }\n  },\n  \"should_generate_patch\": true,\n  \"risk_level\": \"medium\"\n}\n```"
+  }
+]

@@ -1,0 +1,352 @@
+{
+  "summary": {
+    "total": 10,
+    "average_score": 0.8300000000000001,
+    "by_intent": {
+      "entity_lookup": 0.5,
+      "reaction_condition_query": 0.975,
+      "reaction_comparison": 0.85,
+      "property_query": 0.85
+    }
+  },
+  "results": [
+    {
+      "id": "q5",
+      "source_paper": "3.pdf",
+      "intent": "property_query",
+      "question": "What isolated yield and E/Z ratio were obtained in the reported 0.1 mmol scale oxidation of E-1a to give E-2a under the optimized conditions (scale‑up/test experiment shown in Scheme 2)?",
+      "ground_truth": "90% isolated yield after 6 h; product E-2a obtained with E/Z = 97/3 (starting E-1a was E/Z = 99/1).",
+      "system_answer": "The evidence does not report a 0.1 mmol scale oxidation of E-1a to give E-2a under the optimized conditions. Instead, it describes a 0.1 mol (100 mmol) scale-up experiment in Scheme 2, which gave E-2a in 90% isolated yield with an unchanged E/Z ratio (97:3) (evidence: block_3_0019). The optimized conditions (0.1 M in DCE, 10 mol% Fe(NO3)3·9H2O, 10 mol% TEMPO, 10 mol% NaCl) are defined in Table 1, entry 9, which reports a 95% NMR yield and 97/3 E/Z ratio for a 1 mmol scale reaction (evidence: block_3_0014, block_3_0010).",
+      "evidence_ids": [
+        "block_3_0013",
+        "block_3_0017",
+        "block_3_0014",
+        "block_3_0019",
+        "block_3_0009",
+        "block_3_0010",
+        "block_3_0008",
+        "block_3_0011"
+      ],
+      "confidence": 0.86,
+      "judge_score": 0.7,
+      "entities_found": [
+        "E-1a",
+        "E-2a",
+        "Scheme 2"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies the 90% isolated yield and E/Z ratio of 97:3 for the scale-up experiment in Scheme 2, but it does not mention the reaction time of 6 hours or the starting E/Z ratio of 99:1, which are minor omissions.",
+      "score": 0.7,
+      "intent_key": "property_query"
+    },
+    {
+      "id": "q3",
+      "source_paper": "5.pdf",
+      "intent": "reaction_condition_query",
+      "question": "According to Table 1 and its footnote, what solvent and reaction time were used for the aerobic oxidation of aldehyde 1a to 2a?",
+      "ground_truth": "Solvent: DCE (1,2-dichloroethane), temperature: room temperature; reaction time: 12 h under O2 (or 16 h when run with air) per Table 1/footnote.",
+      "system_answer": "According to Table 1 and its footnote, the aerobic oxidation of aldehyde 1a to 2a was carried out in DCE at room temperature for 12 h (with O2) or 16 h (with air) (evidence: block_5_0009, block_5_0010). The footnote specifies that the reaction was performed on a 1.0 mmol scale of 1 in 4.0 mL of DCE with a bag of O2 or air (evidence: block_5_0010).",
+      "evidence_ids": [
+        "block_5_0027",
+        "block_5_0024",
+        "block_5_0028",
+        "block_5_0008",
+        "block_5_0026",
+        "block_5_0017",
+        "block_5_0031",
+        "block_5_0016",
+        "block_5_0010",
+        "block_5_0029",
+        "block_5_0009",
+        "block_5_0020"
+      ],
+      "confidence": 0.95,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1a",
+        "2a",
+        "DCE",
+        "Table 1"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly includes all key entities and matches the ground truth details: DCE solvent, room temperature, 12 h under O2 or 16 h with air, and references Table 1/footnote.",
+      "score": 1.0,
+      "intent_key": "reaction_condition_query"
+    },
+    {
+      "id": "q4",
+      "source_paper": "6.pdf",
+      "intent": "reaction_comparison",
+      "question": "Which gave the higher NMR yield in Table 1: the reaction with R = Ph (entry 1) or the reaction with R = Me (entry 8)?",
+      "ground_truth": "R = Me (entry 8) gave the higher NMR yield: 55% (entry 8) vs 52% for R = Ph (entry 1).",
+      "system_answer": "The reaction with R = Me (entry 8) gave an NMR yield of 57%, while the reaction with R = Ph (entry 1) gave an NMR yield of 52%. Therefore, the reaction with R = Me gave the higher NMR yield (evidence: block_6_0019).",
+      "evidence_ids": [
+        "block_6_0015",
+        "block_6_0016",
+        "block_6_0019",
+        "block_6_0030",
+        "block_6_0034",
+        "block_6_0037",
+        "block_6_0039",
+        "block_6_0041",
+        "block_6_0020",
+        "block_6_0021",
+        "block_6_0013"
+      ],
+      "confidence": 0.95,
+      "judge_score": 0.7,
+      "entities_found": [
+        "entry 1",
+        "entry 8",
+        "R = Ph",
+        "R = Me"
+      ],
+      "entities_missing": [
+        "Table 1"
+      ],
+      "judge_reasoning": "The system answer correctly identifies that R = Me gives a higher NMR yield than R = Ph, but the yield for R = Me is stated as 57% instead of the ground truth 55%, and 'Table 1' is not mentioned.",
+      "score": 0.7,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q3",
+      "source_paper": "8.pdf",
+      "intent": "reaction_condition_query",
+      "question": "Under the standard conditions reported (Table 1 and Experimental), what solvent, temperature, and reaction time were used for the aerobic oxidation of benzyl alcohol 1a to give 2a?",
+      "ground_truth": "The standard reaction used DCE (1,2-dichloroethane) as solvent, at 25 °C, for 48 h (with O2; Fe(NO3)3·9H2O 10 mol%, TEMPO 10–30 mol%, KCl 10 mol%).",
+      "system_answer": "The standard conditions for the aerobic oxidation of benzyl alcohol 1a to benzoic acid 2a were: DCE as solvent, 25 °C temperature, and 48 hours reaction time (evidence: block_8_0011, block_8_0020). The reaction was performed on a 1.0 mmol scale of 1a in 4.0 mL of DCE with 10 mol% each of Fe(NO3)3·9H2O, TEMPO, and KCl under an oxygen atmosphere (evidence: block_8_0011, block_8_0020).",
+      "evidence_ids": [
+        "block_8_0013",
+        "block_8_0010",
+        "block_8_0011",
+        "block_8_0009",
+        "block_8_0020",
+        "block_8_0018",
+        "block_8_0027",
+        "block_8_0249",
+        "block_8_0028"
+      ],
+      "confidence": 0.92,
+      "judge_score": 0.9,
+      "entities_found": [
+        "1a",
+        "2a",
+        "DCE",
+        "Fe(NO3)3·9H2O",
+        "TEMPO",
+        "KCl"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly includes all key entities and matches the ground truth on solvent, temperature, time, and catalyst loadings, with only a minor imprecision in specifying TEMPO as exactly 10 mol% instead of the range 10–30 mol%.",
+      "score": 0.9,
+      "intent_key": "reaction_condition_query"
+    },
+    {
+      "id": "q4",
+      "source_paper": "10.pdf",
+      "intent": "reaction_comparison",
+      "question": "According to Table 2 in the article, which solvent gave the higher yield for conversion of 1a to 2a — dichloromethane (DCM) or toluene — and what yields are reported for each?",
+      "ground_truth": "Toluene gave the higher yield: DCM 65% vs toluene 77% (reported yields in Table 2).",
+      "system_answer": "Toluene gave the higher yield for conversion of 1a to 2a, with a reported 77% NMR yield, compared to DCM which gave a 65% NMR yield (evidence: block_10_0017, block_10_0018).",
+      "evidence_ids": [
+        "block_10_0017",
+        "block_10_0018",
+        "block_10_0073",
+        "block_10_0023",
+        "block_10_0015",
+        "block_10_0024",
+        "block_10_0025",
+        "block_10_0012",
+        "block_10_0016",
+        "block_10_0020",
+        "rxn_tbl_10_0006"
+      ],
+      "confidence": 1.0,
+      "judge_score": 1.0,
+      "entities_found": [
+        "DCM",
+        "toluene",
+        "1a",
+        "2a"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states that toluene gave a higher yield (77%) compared to DCM (65%) for conversion of 1a to 2a, matching all key entities and facts from the ground truth.",
+      "score": 1.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q3",
+      "source_paper": "11.pdf",
+      "intent": "reaction_condition_query",
+      "question": "In Table 1, which solvent was used in the reaction of 1-phenyl-2-heptyn-1-ol (1a) that gave 99% yield of 2a with 0% recovery of 1a (Table 1, entry 9)?",
+      "ground_truth": "DCE (1,2-dichloroethane)",
+      "system_answer": "In Table 1, entry 9, DCE was the solvent used for the reaction of 1-phenyl-2-heptyn-1-ol (1a), giving 99% yield of 2a with 0% recovery of 1a (evidence: block_11_0023, block_11_0024).",
+      "evidence_ids": [
+        "block_11_0017",
+        "block_11_0023",
+        "block_11_0035",
+        "block_11_0032",
+        "block_11_0031",
+        "block_11_0026",
+        "block_11_0020",
+        "block_11_0021",
+        "block_11_0024",
+        "block_11_0028"
+      ],
+      "confidence": 1.0,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1a",
+        "2a",
+        "DCE"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies DCE as the solvent, mentions 1a and 2a, and matches the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "reaction_condition_query"
+    },
+    {
+      "id": "q2",
+      "source_paper": "14.pdf",
+      "intent": "entity_lookup",
+      "question": "What is the structure/product identity of compound 2a formed from 1a under the reported conditions?",
+      "ground_truth": "Compound 2a is γ-butyrolactone (the 5-membered lactone derived from 1,4-butanediol).",
+      "system_answer": "Compound 2a formed from 1a (butan-1,4-diol) under the reported conditions is γ-butyrolactone (evidence: block_14_0017). The evidence states that the reaction of 1a with Fe(NO3)3·9H2O, TEMPO, and KCl in DCE gave γ-butyrolactone 2a exclusively in 59% NMR yield, and the optimized conditions in toluene gave 87% NMR yield (81% isolated) of the same lactone (evidence: block_14_0017, block_14_0019).",
+      "evidence_ids": [
+        "block_14_0017",
+        "block_14_0022",
+        "block_14_0018",
+        "mol_14_0041",
+        "block_14_0013",
+        "block_14_0019",
+        "block_14_0021",
+        "block_14_0015",
+        "mol_14_0008",
+        "mol_14_0017"
+      ],
+      "confidence": 0.9,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1a",
+        "2a",
+        "γ-butyrolactone"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies compound 2a as γ-butyrolactone and mentions 1a (butan-1,4-diol), matching all key entities and the ground truth fact.",
+      "score": 1.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q5",
+      "source_paper": "14.pdf",
+      "intent": "property_query",
+      "question": "What isolated yield is reported for the synthesis of NBP (compound 2q) in Scheme 3?",
+      "ground_truth": "NBP (2q) was delivered in 70% isolated yield.",
+      "system_answer": "The isolated yield reported for the synthesis of NBP (compound 2q) in Scheme 3 is 70% (evidence: block_14_0021). The text states: 'NBP 2q was delivered with 70% isolated yield (Scheme 3).'",
+      "evidence_ids": [
+        "block_14_0021",
+        "block_14_0019",
+        "block_14_0022",
+        "block_14_0015",
+        "block_14_0018",
+        "block_14_0026",
+        "block_14_0013",
+        "block_14_0017",
+        "rxn_14_0001",
+        "rxn_14_0011",
+        "block_14_0012"
+      ],
+      "confidence": 1.0,
+      "judge_score": 1.0,
+      "entities_found": [
+        "NBP",
+        "2q"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states the 70% isolated yield for NBP (2q) and matches the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "property_query"
+    },
+    {
+      "id": "q2",
+      "source_paper": "18.pdf",
+      "intent": "entity_lookup",
+      "question": "What is the name of product 2b as given in the paper (structure/identified name)?",
+      "ground_truth": "4-Phenylbut-3-yn-2-one (2b)",
+      "system_answer": "The evidence does not contain the name of product 2b. The retrieved documents describe the oxidation of various propargylic alcohols to ketones or aldehydes, and while product 2b is mentioned in Table 2 (entry 1) as an isolated yield of 77% or 91% (evidence: block_18_0015), its chemical name is not provided in the extracted text.",
+      "evidence_ids": [
+        "block_18_0012",
+        "block_18_0014",
+        "block_18_0005",
+        "block_18_0008",
+        "block_18_0020",
+        "block_18_0024",
+        "block_18_0015",
+        "block_18_0021",
+        "block_18_0010",
+        "block_18_0027",
+        "block_18_0060"
+      ],
+      "confidence": 0.15,
+      "judge_score": 0.0,
+      "entities_found": [
+        "2b"
+      ],
+      "entities_missing": [
+        "4-phenylbut-3-yn-2-one"
+      ],
+      "judge_reasoning": "The system answer fails to provide the chemical name '4-phenylbut-3-yn-2-one' for product 2b, which is the key fact in the ground truth.",
+      "score": 0.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q3",
+      "source_paper": "22.pdf",
+      "intent": "reaction_condition_query",
+      "question": "Under the 'standard conditions' for the aerobic oxidation of alcohol 1a (Table 1 / experimental), what solvent and atmosphere were used?",
+      "ground_truth": "Solvent: DCE (1,2‑dichloroethane); Atmosphere: O2 (O2 balloon); reaction performed at room temperature (rt) for 36 h (as the standard conditions).",
+      "system_answer": "Under the standard conditions for the aerobic oxidation of alcohol 1a, the solvent was DCE and the atmosphere was O2 (balloon) (evidence: block_22_0030). The table header and footnote explicitly state: 'DCE, O2 (balloon), rt, 36 h' and 'the reaction was conducted with 1.0 mmol of 1a in 4 mL of DCE at rt for 36 h with an O2 balloon' (evidence: block_22_0030).",
+      "evidence_ids": [
+        "block_22_0030",
+        "block_22_0031",
+        "block_22_0036",
+        "block_22_0037",
+        "block_22_0033",
+        "block_22_0035",
+        "block_22_0032",
+        "block_22_0013"
+      ],
+      "confidence": 1.0,
+      "judge_score": 1.0,
+      "entities_found": [
+        "alcohol 1a",
+        "standard conditions",
+        "DCE",
+        "O2 balloon"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly includes all key entities (alcohol 1a, standard conditions, DCE, O2 balloon) and matches the ground truth details about solvent, atmosphere, room temperature, and 36-hour duration.",
+      "score": 1.0,
+      "intent_key": "reaction_condition_query"
+    }
+  ],
+  "metadata": {
+    "sampling": {
+      "mode": "random",
+      "limit": 10,
+      "seed": 44,
+      "selected_question_ids": [
+        "q5",
+        "q3",
+        "q4",
+        "q3",
+        "q4",
+        "q3",
+        "q2",
+        "q5",
+        "q2",
+        "q3"
+      ]
+    }
+  }
+}

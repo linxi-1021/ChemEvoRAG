@@ -1,0 +1,27 @@
+Run directory: D:\Desktop\evo\ChemEvoRAG_Phase1-main\data\evolution\runs\run_2026-06-06_233732
+Trace report: 5 failures, 26 partial, 86 success
+Generated 9 candidate patches
+Schema validation: 9 accepted, 0 rejected
+Regression limit: 20 randomly sampled questions per regression eval
+Regression seed: 42
+[1/9] Validating reaction_condition_query_round1_patch1 (reaction_condition_query / update / strategy.assessment)
+  REGRESSION FAIL reaction_condition_query_round1_patch1: ['Regression failed: Average score 0.4350 below minimum 0.8; Score dropped by 0.4311 (max allowed: 0.01); Failed cases increased by 10 (max allowed: 1)']
+[2/9] Validating reaction_condition_query_round1_patch2 (reaction_condition_query / update / strategy.answer_generation)
+  REGRESSION FAIL reaction_condition_query_round1_patch2: ['Regression failed: Average score 0.5100 below minimum 0.8; Score dropped by 0.3561 (max allowed: 0.01); Failed cases increased by 8 (max allowed: 1)']
+[3/9] Validating reaction_comparison_round1_patch1 (reaction_comparison / update / strategy.assessment)
+  REGRESSION FAIL reaction_comparison_round1_patch1: ['Regression failed: Average score 0.6400 below minimum 0.8; Score dropped by 0.2261 (max allowed: 0.01); Failed cases increased by 6 (max allowed: 1)']
+[4/9] Validating reaction_comparison_round1_patch2 (reaction_comparison / update / strategy.answer_generation)
+  REGRESSION FAIL reaction_comparison_round1_patch2: ['Regression failed: Average score 0.5950 below minimum 0.8; Score dropped by 0.2711 (max allowed: 0.01); Failed cases increased by 7 (max allowed: 1)']
+[5/9] Validating  (entity_lookup / add / templates)
+  REGRESSION FAIL : ['Regression failed: Average score 0.6700 below minimum 0.8; Score dropped by 0.1961 (max allowed: 0.01); Failed cases increased by 5 (max allowed: 1)']
+[6/9] Validating  (property_query / add / templates)
+  REGRESSION FAIL : ['Regression failed: Average score 0.6050 below minimum 0.8; Score dropped by 0.2611 (max allowed: 0.01); Failed cases increased by 7 (max allowed: 1)']
+[7/9] Validating  (alias_resolution / add / templates)
+  REGRESSION FAIL : ['Regression failed: Average score 0.5900 below minimum 0.8; Score dropped by 0.2761 (max allowed: 0.01); Failed cases increased by 7 (max allowed: 1)']
+[8/9] Validating  (reaction_condition_query / add / templates)
+  REGRESSION FAIL : ['Regression failed: Average score 0.5700 below minimum 0.8; Score dropped by 0.2961 (max allowed: 0.01); Failed cases increased by 8 (max allowed: 1)']
+[9/9] Validating  (reaction_comparison / add / templates)
+  REGRESSION FAIL : ['Regression failed: Average score 0.5950 below minimum 0.8; Score dropped by 0.2711 (max allowed: 0.01); Failed cases increased by 7 (max allowed: 1)']
+Individual regression: 0 passed, 9 failed
+
+--validate-only: 0 patches validated, not applied.

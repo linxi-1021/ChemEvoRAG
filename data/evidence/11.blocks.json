@@ -443,7 +443,7 @@
     "block_id": "block_11_0020",
     "doc_id": "11",
     "block_type": "table",
-    "text": "cat. CuCl, cat. Phen | ; cat. DBADH $_{2}$ , 2 equiv. K $_{2}$ CO $_{3}$ | cat. Cu(MeCN) $_{4}$ PF $_{6}$ ,cat. DBED, cat. DMAP, 4Å MS; toluene, O $_{2}$  or air | CH $_{2}$ Cl $_{2}$ , O $_{2}$  (1 atm), rt[7]",
+    "text": "| cat. CuCl, cat. Phen |  |\n| --- | --- |\n| cat. DBADH $_{2}$ , 2 equiv. K $_{2}$ CO $_{3}$ | cat. Cu(MeCN) $_{4}$ PF $_{6}$ ,cat. DBED, cat. DMAP, 4Å MS |\n| toluene, O $_{2}$  or air | CH $_{2}$ Cl $_{2}$ , O $_{2}$  (1 atm), rt[7] |",
     "page": 2,
     "bbox": [
       95.0,
@@ -465,7 +465,7 @@
     "block_id": "block_11_0021",
     "doc_id": "11",
     "block_type": "table",
-    "text": "cat. CuCl, cat.  $OsO_{4}$; cat. pyridine, Powered 4Å MS; toluene,  $O_{2}$  (1 atm), 100 °C[8]",
+    "text": "| cat. CuCl, cat.  $OsO_{4}$ |\n| --- |\n| cat. pyridine, Powered 4Å MS |\n| toluene,  $O_{2}$  (1 atm), 100 °C[8] |",
     "page": 2,
     "bbox": [
       95.0,
@@ -509,7 +509,7 @@
     "block_id": "block_11_0023",
     "doc_id": "11",
     "block_type": "table",
-    "text": "| Cu(NO3)2·3H2O (10 mol%)TEMPO (10 mol%)solvent (1.6 mL), O2 balloon25 °C, 8 h | ; Entry | Solvent | Yield of 2ab(%) | Recovery of 1ab(%); 1 | NMP | 11 | 84 | ; 2 | Cyclohexane | 12 | 76 | ; 3 | Dioxane | 42 | 50 | ; 4 | MeNO2 | 37 | 56 | ; 5 | THF | 49 | 46 | ; 6 | Et2O | 85 | 12 | ; 7 | DCM | 91 | 5 | ; 8 | Toluene | 92 | 8 | ; 9 | DCE | 99 | 0 | ; 10 | MeCN | 99 | 0 | | Scheme 1 Copper-catalyzed aerobic oxidation of alcohols to aldehydes/ketones. | Table 1 The effect of solvent in the aerobic oxidation of 1a a | a The reaction was conducted using alcohol (0.4 mmol), Cu(NO3)2·3H2O (0.04 mmol), TEMPO (0.04 mmol), and solvent (1.6 mL) with an oxygen balloon at 25 °C. b Determined by 1 H NMR analysis with dibromomethane as the internal standard.",
+    "text": "|  | Cu(NO3)2·3H2O (10 mol%)TEMPO (10 mol%)solvent (1.6 mL), O2 balloon25 °C, 8 h |  |\n| --- | --- | --- |\n| Entry | Solvent | Yield of 2ab(%) | Recovery of 1ab(%) |\n| 1 | NMP | 11 | 84 |  |\n| 2 | Cyclohexane | 12 | 76 |  |\n| 3 | Dioxane | 42 | 50 |  |\n| 4 | MeNO2 | 37 | 56 |  |\n| 5 | THF | 49 | 46 |  |\n| 6 | Et2O | 85 | 12 |  |\n| 7 | DCM | 91 | 5 |  |\n| 8 | Toluene | 92 | 8 |  |\n| 9 | DCE | 99 | 0 |  |\n| 10 | MeCN | 99 | 0 |  | | Scheme 1 Copper-catalyzed aerobic oxidation of alcohols to aldehydes/ketones. | Table 1 The effect of solvent in the aerobic oxidation of 1a a | a The reaction was conducted using alcohol (0.4 mmol), Cu(NO3)2·3H2O (0.04 mmol), TEMPO (0.04 mmol), and solvent (1.6 mL) with an oxygen balloon at 25 °C. b Determined by 1 H NMR analysis with dibromomethane as the internal standard.",
     "page": 2,
     "bbox": [
       67.0,
@@ -575,7 +575,7 @@
     "block_id": "block_11_0026",
     "doc_id": "11",
     "block_type": "table",
-    "text": "| Cu salt (10 mol%)TEMPO (10 mol%)MeCN (1.6 mL),  $O_2$  balloon25 °C, 4 h; Entry | Cu salt | Yield of $2a^b$ (%); 1 | Cu(MeCN) $_4$ PF $_6$ | 6 | 90; 2 | CuCl | 9 | 91; 3 | CuBr $_2$ | 12 | 84; 4 | CuI | 19 | 78; 5 | Cu(OAc) $_2$ | 43 | 57; 6 | Cu(NO $_3$ ) $_2$ ·3H $_2$ O | 96 | 0; 7 | Without Cu(NO $_3$ ) $_2$ ·H $_2$ O | 1 | 94; 8 | Without TEMPO | 3 | 94 | Table 2 The effect of copper saltsa | a The reaction was conducted using alcohol (0.4 mmol), copper salt (0.04 mmol), TEMPO (0.04 mmol), and MeCN (1.6 mL) with an oxygen balloon at 25 °C. b Determined by 1 H NMR analysis with dibromomethane as the internal standard.",
+    "text": "|  | Cu salt (10 mol%)TEMPO (10 mol%)MeCN (1.6 mL),  $O_2$  balloon25 °C, 4 h |\n| --- | --- |\n| Entry | Cu salt | Yield of $2a^b$ (%) |\n| 1 | Cu(MeCN) $_4$ PF $_6$ | 6 | 90 |\n| 2 | CuCl | 9 | 91 |\n| 3 | CuBr $_2$ | 12 | 84 |\n| 4 | CuI | 19 | 78 |\n| 5 | Cu(OAc) $_2$ | 43 | 57 |\n| 6 | Cu(NO $_3$ ) $_2$ ·3H $_2$ O | 96 | 0 |\n| 7 | Without Cu(NO $_3$ ) $_2$ ·H $_2$ O | 1 | 94 |\n| 8 | Without TEMPO | 3 | 94 | | Table 2 The effect of copper saltsa | a The reaction was conducted using alcohol (0.4 mmol), copper salt (0.04 mmol), TEMPO (0.04 mmol), and MeCN (1.6 mL) with an oxygen balloon at 25 °C. b Determined by 1 H NMR analysis with dibromomethane as the internal standard.",
     "page": 2,
     "bbox": [
       502.0,
@@ -685,7 +685,7 @@
     "block_id": "block_11_0031",
     "doc_id": "11",
     "block_type": "table",
-    "text": "Entry | Experimental conditions | t (h) | Solvent | Yield of 2ba(%) | Recovery of 1ba(%); [Cu] (a) | b | c | Base (d); 1b | Cu(MeCN)4PF6(5) | 5 | 5 | NMI (10) | 24 | MeCN | 0 | 23; 2b | CuBr2(5) | 5 | 5 | t-BuOK (5) | 24 | MeCN/H2O (2:1) | 0 | 33; 3b | CuCl (5) | — | 5 | DMAP (10) | 24 | H2O | 0 | 83; 4b | Cu(NO3)2·3H2O (10) | — | 10 | — | 22 | MeCN | 81 | 0; 5c | Cu(NO3)2·3H2O (10) | — | 10 | — | 6 | DCE | 46 | 48; 6c | Cu(NO3)2·3H2O (10) | — | 10 | — | 6 | MeCN | 94 (91d) | 0 | Table 3 Control experiment of aerobic oxidation of terminal propargylic alcohol 1b | a Determined by | ^ 1 \\mathrm { H } | NMR analysis with dibromomethane as the internal standard. b The reaction system was open to air. c The reaction was conducted with an oxygen balloon. d The number in parenthesis represents the isolated yield of 2b.",
+    "text": "| Entry | Experimental conditions | t (h) | Solvent | Yield of 2ba(%) | Recovery of 1ba(%) |\n| --- | --- | --- | --- | --- | --- |\n| [Cu] (a) | b | c | Base (d) |\n| 1b | Cu(MeCN)4PF6(5) | 5 | 5 | NMI (10) | 24 | MeCN | 0 | 23 |\n| 2b | CuBr2(5) | 5 | 5 | t-BuOK (5) | 24 | MeCN/H2O (2:1) | 0 | 33 |\n| 3b | CuCl (5) | — | 5 | DMAP (10) | 24 | H2O | 0 | 83 |\n| 4b | Cu(NO3)2·3H2O (10) | — | 10 | — | 22 | MeCN | 81 | 0 |\n| 5c | Cu(NO3)2·3H2O (10) | — | 10 | — | 6 | DCE | 46 | 48 |\n| 6c | Cu(NO3)2·3H2O (10) | — | 10 | — | 6 | MeCN | 94 (91d) | 0 | | Table 3 Control experiment of aerobic oxidation of terminal propargylic alcohol 1b | a Determined by | ^ 1 \\mathrm { H } | NMR analysis with dibromomethane as the internal standard. b The reaction system was open to air. c The reaction was conducted with an oxygen balloon. d The number in parenthesis represents the isolated yield of 2b.",
     "page": 3,
     "bbox": [
       67.0,
@@ -707,7 +707,7 @@
     "block_id": "block_11_0032",
     "doc_id": "11",
     "block_type": "table",
-    "text": "| 1 | Cu(NO3)2·3H2O (10 mol%)TEMPO (10 mol%)MeCN (4 mL)O2balloon25 °C, t (h) | 2; Entry | R (1) | t (h) | Isolated yield of 2a (%); 1 | 4-MeC6H4(1b) | 6 | 91 (2b); 2 | 2-MeOC6H4(1c) | 12.5 | 84 (2c); 3 | 3-MeOC6H4(1d) | 13 | 89 (2d); 4 | 4-MeOC6H4(1e) | 6 | 90 (2e); 5 | 4-MeO2CC6H4(1f) | 12.5 | 90 (2f); 6 | 2-Thienyl (1g) | 6 | 87 (2g); 7 | n-C9H19(1h) | 8 | 89b(2h) | Table 4 Room temperature aerobic oxidation of terminal 2-alkynols to the corresponding ketonesa | a The reaction was conducted using alcohol (1.0 mmol), | \\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 } { \\cdot } 3 \\mathrm { H } _ { 2 } \\mathrm { O } | (0.1 mmol), TEMPO (0.1 mmol) and MeCN (4 mL) with an oxygen balloon at 25 °C. b DCE was used as a solvent.",
+    "text": "|  | 1 | Cu(NO3)2·3H2O (10 mol%)TEMPO (10 mol%)MeCN (4 mL)O2balloon25 °C, t (h) | 2 |\n| --- | --- | --- | --- |\n| Entry | R (1) | t (h) | Isolated yield of 2a (%) |\n| 1 | 4-MeC6H4(1b) | 6 | 91 (2b) |\n| 2 | 2-MeOC6H4(1c) | 12.5 | 84 (2c) |\n| 3 | 3-MeOC6H4(1d) | 13 | 89 (2d) |\n| 4 | 4-MeOC6H4(1e) | 6 | 90 (2e) |\n| 5 | 4-MeO2CC6H4(1f) | 12.5 | 90 (2f) |\n| 6 | 2-Thienyl (1g) | 6 | 87 (2g) |\n| 7 | n-C9H19(1h) | 8 | 89b(2h) | | Table 4 Room temperature aerobic oxidation of terminal 2-alkynols to the corresponding ketonesa | a The reaction was conducted using alcohol (1.0 mmol), | \\mathrm { C u } ( \\mathrm { N O } _ { 3 } ) _ { 2 } { \\cdot } 3 \\mathrm { H } _ { 2 } \\mathrm { O } | (0.1 mmol), TEMPO (0.1 mmol) and MeCN (4 mL) with an oxygen balloon at 25 °C. b DCE was used as a solvent.",
     "page": 3,
     "bbox": [
       67.0,
@@ -773,7 +773,7 @@
     "block_id": "block_11_0035",
     "doc_id": "11",
     "block_type": "table",
-    "text": "Entry | $R^1/R^2$ | Isolated yield of 2 (%); MeCN | DCE; 1 | n-Bu/Ph (1a) | 96 (2a) | 100 (2a); 2 | Cyclopropyl/Ph (1i) | 98 (2i) | 96 (2i); 3 | Ph/Ph (1j) | 98 (2j) | $_b$; 4 | TMS/Ph (1k) | 97 (2k) | 95 (2k); 5 | n-Bu/3-ClC6H4(1l) | 97 (2l) | 98 (2l); 6 | n-Bu/2-BrC6H4(1m) | 97 (2m) | 98 (2m); 7 | n-Bu/4-MeOC6H4(1n) | 100(2n) | 97 (2n); 8 | n-Bu/4-MeO2CC6H4(1o) | 99 (2o) | $_b$; 9 | Ph/2-HOC6H4(1p) | — (2p) $^c$ | 81 (2p); 10 | n-Bu/3-NCC6H4(1q) | 92 (2q) | $_b$; 11 | n-Bu/4-O2NC6H4(1r) | 97 (2r) | $_b$; 12 | n-Bu/2-furyl (1s) | 92 (2s) | 95 (2s); 13 | n-Bu/n-Bu (1t) | 96 (2t) | 95 (2t); 14 | Ph/n-Bu (1u) | 93 (2u) | 96 (2u); 15 | Ph/cyclohexyl (1v) | 95 (2v) | 100 (2v); 16 | Ph/naphthyl (1w) | 95 (2w) | 95 (2w); 17 | 4-BrC6H4/H (1x) | 76 (2x) | 65 (2x) | Table 5 Room temperature aerobic oxidation of non-terminal 2-alkynols to aldehydes or ketonesa | a The reaction was conducted using alcohol (1.0 mmol), Cu(NO3)2·3H2O (0.1 mmol), TEMPO (0.1 mmol) and MeCN (4 mL) or DCE (4 mL) with an oxygen balloon at 25 | { \\mathrm { { \\dot { \\circ } } _ { C } } } , | and the reaction time is shown in the ESI.† b Not conducted. c 49% yield of 2p and 38% yield of (Z)-2-benzylidenebenzofuran-3(2H)-one were detected, which were determined by 1 H NMR analysis with dibromomethane as the internal standard.",
+    "text": "| Entry | $R^1/R^2$ | Isolated yield of 2 (%) |\n| --- | --- | --- |\n| MeCN | DCE |\n| 1 | n-Bu/Ph (1a) | 96 (2a) | 100 (2a) |\n| 2 | Cyclopropyl/Ph (1i) | 98 (2i) | 96 (2i) |\n| 3 | Ph/Ph (1j) | 98 (2j) | $_b$ |\n| 4 | TMS/Ph (1k) | 97 (2k) | 95 (2k) |\n| 5 | n-Bu/3-ClC6H4(1l) | 97 (2l) | 98 (2l) |\n| 6 | n-Bu/2-BrC6H4(1m) | 97 (2m) | 98 (2m) |\n| 7 | n-Bu/4-MeOC6H4(1n) | 100(2n) | 97 (2n) |\n| 8 | n-Bu/4-MeO2CC6H4(1o) | 99 (2o) | $_b$ |\n| 9 | Ph/2-HOC6H4(1p) | — (2p) $^c$ | 81 (2p) |\n| 10 | n-Bu/3-NCC6H4(1q) | 92 (2q) | $_b$ |\n| 11 | n-Bu/4-O2NC6H4(1r) | 97 (2r) | $_b$ |\n| 12 | n-Bu/2-furyl (1s) | 92 (2s) | 95 (2s) |\n| 13 | n-Bu/n-Bu (1t) | 96 (2t) | 95 (2t) |\n| 14 | Ph/n-Bu (1u) | 93 (2u) | 96 (2u) |\n| 15 | Ph/cyclohexyl (1v) | 95 (2v) | 100 (2v) |\n| 16 | Ph/naphthyl (1w) | 95 (2w) | 95 (2w) |\n| 17 | 4-BrC6H4/H (1x) | 76 (2x) | 65 (2x) | | Table 5 Room temperature aerobic oxidation of non-terminal 2-alkynols to aldehydes or ketonesa | a The reaction was conducted using alcohol (1.0 mmol), Cu(NO3)2·3H2O (0.1 mmol), TEMPO (0.1 mmol) and MeCN (4 mL) or DCE (4 mL) with an oxygen balloon at 25 | { \\mathrm { { \\dot { \\circ } } _ { C } } } , | and the reaction time is shown in the ESI.† b Not conducted. c 49% yield of 2p and 38% yield of (Z)-2-benzylidenebenzofuran-3(2H)-one were detected, which were determined by 1 H NMR analysis with dibromomethane as the internal standard.",
     "page": 3,
     "bbox": [
       502.0,

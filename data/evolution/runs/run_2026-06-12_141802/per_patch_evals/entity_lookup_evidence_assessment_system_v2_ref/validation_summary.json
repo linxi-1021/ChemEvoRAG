@@ -1,0 +1,10 @@
+{
+  "patch_id": "entity_lookup_evidence_assessment_system_v2_ref",
+  "passed": false,
+  "average_score": 0.81,
+  "score_delta": -0.05610169491525441,
+  "targeted_improvement": -0.4431818181818182,
+  "errors": [
+    "Regression failed: Score dropped by 0.0561 (max allowed: 0.0100); Targeted improvement -0.4432 below minimum 0.05"
+  ]
+}
