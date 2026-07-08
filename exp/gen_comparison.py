@@ -48,6 +48,7 @@ BASELINES = [
     ('R2R',             best_file('r2r')),
     ('ReAct Agent',     best_file('agent_react')),
     ('Codex Sim Agent', best_file('agent_codex')),
+    ('Codex Real Agent', best_file('agent_codex_real_gpt-5_5')),
     ('Claude Code Agent', best_file('agent_claude_real_opus')),
     ('ChemEvoRAG',      CHEMEVORAG),
 ]

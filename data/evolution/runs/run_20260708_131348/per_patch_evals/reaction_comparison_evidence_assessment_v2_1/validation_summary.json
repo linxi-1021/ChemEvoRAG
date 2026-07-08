@@ -1,0 +1,10 @@
+{
+  "patch_id": "reaction_comparison_evidence_assessment_v2_1",
+  "passed": false,
+  "average_score": 0.7933333333333333,
+  "score_delta": -0.07276666666666665,
+  "targeted_improvement": 0.0,
+  "errors": [
+    "Regression failed: Average score 0.7933 below minimum 0.8; Score dropped by 0.0728 (max allowed: 0.0100); Targeted improvement -0.0791 below minimum 0.05"
+  ]
+}
