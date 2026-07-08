@@ -1,9 +1,9 @@
 {
   "summary": {
-    "total": 4,
-    "average_score": 0.925,
+    "total": 5,
+    "average_score": 0.9400000000000001,
     "by_intent": {
-      "reaction_comparison": 0.925
+      "reaction_comparison": 0.9400000000000001
     }
   },
   "results": [
@@ -133,6 +133,37 @@
       ],
       "entities_missing": [],
       "judge_reasoning": "The system answer correctly states that the oxidation of 1b to 3b gave a higher yield (91%) than 1d to 3d (81%), matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q4",
+      "source_paper": "5.pdf",
+      "intent": "reaction_comparison",
+      "question": "Which gave the higher yield for the oxidation of aldehyde 1a to acid 2a in Table 1: using O2 or using air?",
+      "ground_truth": "O2 gave the higher yield: 94% with O2 vs 88% with air (Table 1, entry for 1a → 2a).",
+      "system_answer": "For the oxidation of aldehyde 1a to acid 2a in Table 1, using O2 gave a higher yield (94%) compared to using air (88%) (evidence: block_5_0010, entry 1).",
+      "evidence_ids": [
+        "block_5_0024",
+        "block_5_0027",
+        "block_5_0008",
+        "block_5_0010",
+        "block_5_0020",
+        "block_5_0017",
+        "block_5_0028",
+        "block_5_0016"
+      ],
+      "confidence": 1.0,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1a",
+        "2a",
+        "O2",
+        "air",
+        "Table 1"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states that O2 gave a higher yield (94%) compared to air (88%) for the oxidation of aldehyde 1a to acid 2a in Table 1, matching the ground truth exactly.",
       "score": 1.0,
       "intent_key": "reaction_comparison"
     }

@@ -1,9 +1,9 @@
 {
   "summary": {
-    "total": 2,
-    "average_score": 0.5,
+    "total": 3,
+    "average_score": 0.5666666666666667,
     "by_intent": {
-      "reaction_comparison": 0.5
+      "reaction_comparison": 0.5666666666666667
     }
   },
   "results": [
@@ -73,6 +73,38 @@
       "entities_missing": [],
       "judge_reasoning": "The system answer correctly states the higher yield (54%) for the Fe(NO3)3/TEMPO method compared to Sauer's CrO3 oxidation (35–41%), matching all key entities and facts from the ground truth.",
       "score": 1.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q4",
+      "source_paper": "3.pdf",
+      "intent": "reaction_comparison",
+      "question": "In Table 1, which entry gave the higher isolated yield for conversion of E-1a to 2a — entry 1 (conc. = 5.0, 12 h) or entry 9 (conc. = 0.1, 3 h) — and what were the reported yields and E/Z ratios for those entries?",
+      "ground_truth": "Entry 1 gave a slightly higher yield: entry 1 — 98% yield (reported) with E/Z = 80/20; entry 9 — 95% yield with E/Z = 97/3.",
+      "system_answer": "Entry 9 gave the higher isolated yield (95%) compared to entry 1 (98% NMR yield but 0% isolated yield, with 80/20 E/Z). Entry 1 had a yield of 98% (0% isolated) and an E/Z ratio of 80/20, while entry 9 had a yield of 95% (0% isolated) and an E/Z ratio of 97/3 (evidence: block_3_0013).",
+      "evidence_ids": [
+        "block_3_0013",
+        "block_3_0010",
+        "block_3_0017",
+        "block_3_0009",
+        "block_3_0008",
+        "block_3_0014",
+        "block_3_0015",
+        "block_3_0011"
+      ],
+      "confidence": 0.95,
+      "judge_score": 0.7,
+      "entities_found": [
+        "entry 1",
+        "entry 9"
+      ],
+      "entities_missing": [
+        "E-1a",
+        "2a",
+        "E-2a"
+      ],
+      "judge_reasoning": "The system answer correctly compares yields and E/Z ratios for entries 1 and 9, but incorrectly states both have 0% isolated yield (ground truth only mentions entry 1 has 0% isolated yield) and misses key entities E-1a, 2a, E-2a.",
+      "score": 0.7,
       "intent_key": "reaction_comparison"
     }
   ],
