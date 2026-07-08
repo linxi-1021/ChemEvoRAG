@@ -92,6 +92,14 @@ Use evolve_prompt.py for the new Reflexion-style pipeline.
         "--output-dir", type=Path,
         default=PROJECT_ROOT / "data" / "evolution" / "runs",
     )
+    parser.add_argument(
+        "--regression-limit", type=int, default=10,
+        help="Max questions for targeted regression (default: 10).",
+    )
+    parser.add_argument(
+        "--regression-workers", type=int, default=1,
+        help="Workers for regression eval (default: 1).",
+    )
     args = parser.parse_args()
 
     # Determine mode
@@ -183,10 +191,57 @@ Use evolve_prompt.py for the new Reflexion-style pipeline.
                 print("No patches passed schema validation.")
                 return 0
 
-            # Targeted regression
+            # Targeted regression — scope to target skill only
             from skill_evolution.runtime_validation import validate_individual_patch
+            from skill_evolution.regression import RegressionRunner
 
             print(f"\nRunning targeted regression on {len(valid_patches)} patch(es)...")
+
+            # Build targeted dataset: target skill failures + same-skill successes
+            all_qs = json.loads(
+                (args.eval_results.parent / "all_questions.json").read_text("utf-8")
+            )
+            dataset_by_intent = json.loads(args.eval_results.read_text("utf-8"))
+            target_intent_list = list(set(
+                p.skill_name for p in valid_patches
+            ))
+
+            # For each target intent: pick failures (score < 0.8) + successes (score >= 0.9)
+            targeted_ids: set[str] = set()
+            n_failures = 0
+            n_successes = 0
+            for intent in target_intent_list:
+                intent_results = [
+                    r for r in dataset_by_intent.get("results", [])
+                    if r.get("intent") == intent
+                ]
+                # Failures
+                for r in intent_results:
+                    score = r.get("score", r.get("judge_score", 0))
+                    if score < 0.8:
+                        targeted_ids.add(r.get("id", ""))
+                        n_failures += 1
+                # Successes (holdout)
+                for r in intent_results:
+                    score = r.get("score", r.get("judge_score", 0))
+                    if score >= 0.9 and r.get("id") not in targeted_ids:
+                        targeted_ids.add(r.get("id", ""))
+                        n_successes += 1
+
+            # Filter all_questions to targeted IDs
+            targeted_qs = [q for q in all_qs if q.get("id") in targeted_ids]
+
+            if not targeted_qs:
+                print("  WARNING: No targeted questions found, falling back to random sample")
+                targeted_qs = all_qs[:args.regression_limit]
+
+            targeted_dataset = args.eval_results.parent / "_targeted_questions.json"
+            targeted_dataset.write_text(
+                json.dumps(targeted_qs, ensure_ascii=False, indent=2), encoding="utf-8"
+            )
+            print(f"  Targeted set: {len(targeted_qs)} questions "
+                  f"({n_failures} target failures, {n_successes} same-skill successes)")
+
             regression_passed = []
             for p in valid_patches:
                 print(f"  Validating: {p.patch_id}")
@@ -198,13 +253,13 @@ Use evolve_prompt.py for the new Reflexion-style pipeline.
                     project_root=PROJECT_ROOT,
                     skills_dir=args.skills_dir,
                     prompts_dir=args.prompts_dir,
-                    regression_dataset=args.eval_results.parent / "all_questions.json",
+                    regression_dataset=targeted_dataset,
                     baseline_result={
-                        "average_score": 0.8661,  # From current baseline
+                        "average_score": 0.8661,
                     },
                     skill_filename=f"{p.skill_name}.yaml",
-                    workers=1,
-                    regression_limit=10,
+                    workers=args.regression_workers,
+                    regression_limit=len(targeted_qs),
                     regression_seed=42,
                     stream_output=True,
                     persist_dir=persist_dir,
