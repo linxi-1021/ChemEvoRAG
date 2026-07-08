@@ -1,0 +1,326 @@
+[
+  {
+    "id": "q4",
+    "intent": "reaction_comparison",
+    "question": "According to Table 2 in the article, which solvent gave the higher yield for conversion of 1a to 2a — dichloromethane (DCM) or toluene — and what yields are reported for each?",
+    "ground_truth_answer": "Toluene gave the higher yield: DCM 65% vs toluene 77% (reported yields in Table 2).",
+    "key_entities": [
+      "DCM",
+      "toluene",
+      "1a",
+      "2a"
+    ],
+    "expected_evidence_type": "reaction",
+    "source_paper": "10.pdf"
+  },
+  {
+    "id": "q4",
+    "intent": "reaction_comparison",
+    "question": "Which copper salt gave the higher yield of 2a in Table 2 — CuBr2 or Cu(NO3)2·3H2O — and what were the reported yields for each?",
+    "ground_truth_answer": "Cu(NO3)2·3H2O gave the higher yield: 96% (for 2a) vs CuBr2 which gave 12% (Table 2).",
+    "key_entities": [
+      "CuBr2",
+      "Cu(NO3)2·3H2O",
+      "2a"
+    ],
+    "expected_evidence_type": "reaction",
+    "source_paper": "11.pdf"
+  },
+  {
+    "id": "q4",
+    "intent": "reaction_comparison",
+    "question": "Under the authors' standard conditions, which product was obtained in a higher isolated/NMR yield: product 2c or product 2k?",
+    "ground_truth_answer": "Product 2c gave the higher yield (2c: 100% vs. 2k: 71%).",
+    "key_entities": [
+      "2c",
+      "2k",
+      "standard conditions"
+    ],
+    "expected_evidence_type": "reaction",
+    "source_paper": "12.pdf"
+  },
+  {
+    "id": "q4",
+    "intent": "reaction_comparison",
+    "question": "Referring to Table 1, which condition gave the higher NMR yield of carboxylic acid 2a: entry 1 (no additive) or entry 13 (KHSO4)?",
+    "ground_truth_answer": "Entry 13 with KHSO4 gave the higher yield: 100% NMR yield of 2a, whereas entry 1 (no additive) gave 0% NMR yield of 2a (instead 61% aldehyde 2a').",
+    "key_entities": [
+      "Entry 1",
+      "Entry 13",
+      "KHSO4",
+      "2a",
+      "2a'"
+    ],
+    "expected_evidence_type": "reaction",
+    "source_paper": "13.pdf"
+  },
+  {
+    "id": "q4",
+    "intent": "reaction_comparison",
+    "question": "Which gave the higher NMR yield for formation of 2a: entry 1 (using DCE as solvent) or entry 7 (using toluene) in Table 1?",
+    "ground_truth_answer": "Entry 7 (toluene) gave the higher yield: 87% NMR yield (81% isolated) vs entry 1 (DCE) 59% NMR yield.",
+    "key_entities": [
+      "entry 1",
+      "entry 7",
+      "DCE",
+      "toluene",
+      "2a"
+    ],
+    "expected_evidence_type": "reaction",
+    "source_paper": "14.pdf"
+  },
+  {
+    "id": "q_batch2_3",
+    "intent": "reaction_comparison",
+    "question": "Between compounds 6fe and 6ke, which sample was reported to have the higher purity by NMR and what were the values?",
+    "ground_truth_answer": "6ke had the higher purity: 98% for 6ke versus 96% for 6fe.",
+    "key_entities": [
+      "6fe",
+      "6ke"
+    ],
+    "expected_evidence_type": "fact",
+    "source_paper": "15-SI.pdf"
+  },
+  {
+    "id": "q4",
+    "intent": "reaction_comparison",
+    "question": "Under the standard substrate‑scope conditions (Table 2), which substrate gave the higher isolated yield to product 2a: n‑C8H17OTBS (1aa) or n‑C8H17OTMS (1ab)?",
+    "ground_truth_answer": "n‑C8H17OTBS (1aa) gave the higher yield: 84% vs n‑C8H17OTMS (1ab) 77%.",
+    "key_entities": [
+      "1aa",
+      "1ab",
+      "2a"
+    ],
+    "expected_evidence_type": "reaction",
+    "source_paper": "16.pdf"
+  },
+  {
+    "id": "q4",
+    "intent": "reaction_comparison",
+    "question": "Which reaction gave the higher NMR yield of carboxylic acid 2a under the paper's standard conditions: oxidation of PMB ether 1a or oxidation of the corresponding alcohol 1a'?",
+    "ground_truth_answer": "Oxidation of PMB ether 1a gave the higher yield: 94% NMR (1a → 2a) vs 55% NMR for the corresponding alcohol 1a' → 2a.",
+    "key_entities": [
+      "1a",
+      "1a'",
+      "2a"
+    ],
+    "expected_evidence_type": "reaction",
+    "source_paper": "17.pdf"
+  },
+  {
+    "id": "q4",
+    "intent": "reaction_comparison",
+    "question": "For substrate 1b (R = H) converted to 2b, which method reported in Table 2 (Method A or Method B) gave the higher isolated yield, and what were the two isolated yields?",
+    "ground_truth_answer": "Method B gave the higher isolated yield: Method A = 77% (2b), Method B = 91% (2b)",
+    "key_entities": [
+      "1b",
+      "2b",
+      "Method A",
+      "Method B"
+    ],
+    "expected_evidence_type": "reaction",
+    "source_paper": "18.pdf"
+  },
+  {
+    "id": "q4",
+    "intent": "reaction_comparison",
+    "question": "Comparing entries in Table 1, which solvent (toluene or DCM) gave the higher NMR yield of aldehyde 2a from 1a, and what were the two NMR yields reported?",
+    "ground_truth_answer": "Toluene gave the higher NMR yield: toluene 71% NMR yield of 2a (entry 4) vs DCM 28% NMR yield of 2a (entry 5)",
+    "key_entities": [
+      "1a",
+      "2a",
+      "toluene",
+      "DCM",
+      "Table 1"
+    ],
+    "expected_evidence_type": "reaction",
+    "source_paper": "19.pdf"
+  },
+  {
+    "id": "q4",
+    "intent": "reaction_comparison",
+    "question": "Referring to the additive screen (Table 3), which additive gave a higher yield for the aerobic oxidation screening of 3-(n-hexyl)-1,2-octadien-4-ol: NaCl (entry 5) or NaNO2 (entry 1)?",
+    "ground_truth_answer": "NaCl (entry 5) gave the higher yield: NaCl showed 100% conversion and 72% yield, whereas NaNO2 (entry 1) showed 55% conversion and 35% yield.",
+    "key_entities": [
+      "NaCl",
+      "NaNO2",
+      "3-(n-hexyl)-1,2-octadien-4-ol",
+      "Table 3"
+    ],
+    "expected_evidence_type": "reaction",
+    "source_paper": "1.pdf"
+  },
+  {
+    "id": "q4",
+    "intent": "reaction_comparison",
+    "question": "Which gave the higher yield for oxidation of 1a: the standard reaction with Cu(NO3)2·3H2O/TEMPO (Table 1, entry 1) or the reaction carried out without Cu(NO3)2·3H2O (Table 1, entry 15)?",
+    "ground_truth_answer": "The standard reaction with Cu(NO3)2·3H2O/TEMPO gave the higher yield (86%); the reaction without Cu(NO3)2·3H2O gave 0% yield.",
+    "key_entities": [
+      "1a",
+      "Cu(NO3)2·3H2O",
+      "Table 1",
+      "entry 15"
+    ],
+    "expected_evidence_type": "reaction",
+    "source_paper": "20.pdf"
+  },
+  {
+    "id": "q4",
+    "intent": "reaction_comparison",
+    "question": "Which gave the higher NMR yield of ε-caprolactone 2a: the reaction using BiCl3 as cocatalyst (the early condition reported, Table 1 entry 2) or the optimized Fe(NO3)3·9H2O/TEMPO/FeCl3 conditions (Table 1, entry 16)?",
+    "ground_truth_answer": "The optimized Fe(NO3)3·9H2O/TEMPO/FeCl3 conditions gave the higher yield (≈70% under the optimized conditions vs 53% with BiCl3).",
+    "key_entities": [
+      "2a",
+      "BiCl3",
+      "Fe(NO3)3·9H2O/TEMPO/FeCl3",
+      "Table 1 entry 2",
+      "Table 1 entry 16"
+    ],
+    "expected_evidence_type": "reaction",
+    "source_paper": "21.pdf"
+  },
+  {
+    "id": "q4",
+    "intent": "reaction_comparison",
+    "question": "Which gave the higher yield of carboxylic acid 2a in the experiments shown in Fig. 2 (eqns (4)–(5)): using the filtrate (Cu(NO3)2–TEMPO, used as catalyst) or using the precipitate (AgBr) as the catalyst?",
+    "ground_truth_answer": "The filtrate (Cu(NO3)2–TEMPO) gave the higher yield: 96% NMR (isolated) yield of 2a, whereas the precipitate (AgBr) resulted in no reaction (100% recovery of alcohol 1a, i.e., no formation of 2a).",
+    "key_entities": [
+      "filtrate (Cu(NO3)2–TEMPO)",
+      "precipitate (AgBr)",
+      "2a"
+    ],
+    "expected_evidence_type": "reaction",
+    "source_paper": "22.pdf"
+  },
+  {
+    "id": "q4",
+    "intent": "reaction_comparison",
+    "question": "Which gave the higher isolated yield of 2a: the reaction of 1a under the standard O2 conditions shown in Table 1 entry 1, or the reaction of 1a using air in DCE summarized in Table 4 entry 1?",
+    "ground_truth_answer": "Table 1 entry 1 (standard O2 conditions) gave 99% yield, which is higher than the air/DCE reaction in Table 4 entry 1 (97%).",
+    "key_entities": [
+      "1a",
+      "2a",
+      "Table 1 entry 1",
+      "Table 4 entry 1"
+    ],
+    "expected_evidence_type": "reaction",
+    "source_paper": "23.pdf"
+  },
+  {
+    "id": "q4",
+    "intent": "reaction_comparison",
+    "question": "Which gave the higher yield for preparation of propiolaldehyde, the aerobic Fe(NO3)3/TEMPO method reported here or Sauer's CrO3 oxidation, and what yields are reported for each?",
+    "ground_truth_answer": "The aerobic Fe(NO3)3/TEMPO method in this paper gave the higher yield: 54% (30.06 g, purified). Sauer's reported CrO3 oxidation gave 35–41% yield.",
+    "key_entities": [
+      "Fe(NO3)3/TEMPO oxidation",
+      "Sauer CrO3 oxidation",
+      "propiolaldehyde yield"
+    ],
+    "expected_evidence_type": "reaction",
+    "source_paper": "2.pdf"
+  },
+  {
+    "id": "q4",
+    "intent": "reaction_comparison",
+    "question": "In Table 1, which entry gave the higher isolated yield for conversion of E-1a to 2a — entry 1 (conc. = 5.0, 12 h) or entry 9 (conc. = 0.1, 3 h) — and what were the reported yields and E/Z ratios for those entries?",
+    "ground_truth_answer": "Entry 1 gave a slightly higher yield: entry 1 — 98% yield (reported) with E/Z = 80/20; entry 9 — 95% yield with E/Z = 97/3.",
+    "key_entities": [
+      "entry 1",
+      "entry 9",
+      "E-1a",
+      "2a",
+      "E-2a"
+    ],
+    "expected_evidence_type": "reaction",
+    "source_paper": "3.pdf"
+  },
+  {
+    "id": "q4",
+    "intent": "reaction_comparison",
+    "question": "Which gave the higher yield in the paper: oxidation of 1-(4-isopropylphenyl)but-3-yn-1-ol (1b) to 3b, or oxidation of 1-(4-methoxyphenyl)but-3-yn-1-ol (1d) to 3d?",
+    "ground_truth_answer": "Oxidation of 1b → 3b gave 91%, whereas 1d → 3d gave 81%; 1b → 3b is higher (91% vs 81%)",
+    "key_entities": [
+      "1b",
+      "3b",
+      "1d",
+      "3d"
+    ],
+    "expected_evidence_type": "reaction",
+    "source_paper": "4.pdf"
+  },
+  {
+    "id": "q4",
+    "intent": "reaction_comparison",
+    "question": "Which gave the higher yield for the oxidation of aldehyde 1a to acid 2a in Table 1: using O2 or using air?",
+    "ground_truth_answer": "O2 gave the higher yield: 94% with O2 vs 88% with air (Table 1, entry for 1a → 2a).",
+    "key_entities": [
+      "1a",
+      "2a",
+      "O2",
+      "air",
+      "Table 1"
+    ],
+    "expected_evidence_type": "reaction",
+    "source_paper": "5.pdf"
+  },
+  {
+    "id": "q4",
+    "intent": "reaction_comparison",
+    "question": "Which gave the higher NMR yield in Table 1: the reaction with R = Ph (entry 1) or the reaction with R = Me (entry 8)?",
+    "ground_truth_answer": "R = Me (entry 8) gave the higher NMR yield: 55% (entry 8) vs 52% for R = Ph (entry 1).",
+    "key_entities": [
+      "Table 1",
+      "entry 1",
+      "entry 8",
+      "R = Ph",
+      "R = Me"
+    ],
+    "expected_evidence_type": "reaction",
+    "source_paper": "6.pdf"
+  },
+  {
+    "id": "q4",
+    "intent": "reaction_comparison",
+    "question": "Which gave the higher NMR yield of carboxylic acid 2a: using 5 mol% Fe(NO3)3·9H2O alone (Table 1, entry 3) or using FeCl3·6H2O as the metal salt (Table 2, entry 7)? Provide both yields reported in the paper.",
+    "ground_truth_answer": "Fe(NO3)3·9H2O alone (Table 1, entry 3) gave 64% NMR yield of 2a; FeCl3·6H2O (Table 2, entry 7) gave 52% yield — Fe(NO3)3·9H2O gave the higher yield.",
+    "key_entities": [
+      "Fe(NO3)3·9H2O",
+      "FeCl3·6H2O",
+      "2a",
+      "Table 1 entry 3",
+      "Table 2 entry 7"
+    ],
+    "expected_evidence_type": "reaction",
+    "source_paper": "7.pdf"
+  },
+  {
+    "id": "q4",
+    "intent": "reaction_comparison",
+    "question": "Which substrate gave the higher isolated yield in the 100 mmol slow-flow air large-scale reactions reported in Scheme 5: 1k or 1l?",
+    "ground_truth_answer": "1l gave the higher isolated yield (93%) compared to 1k (87%).",
+    "key_entities": [
+      "1k",
+      "1l",
+      "2k",
+      "2l",
+      "Scheme 5"
+    ],
+    "expected_evidence_type": "reaction",
+    "source_paper": "8.pdf"
+  },
+  {
+    "id": "q4",
+    "intent": "reaction_comparison",
+    "question": "Which solvent gave the higher yield of 3a from 1a: DCM or MeCN, and what were the reported yields?",
+    "ground_truth_answer": "MeCN gave the higher yield: MeCN 85% NMR (82% isolated) vs DCM 8% (3a detected).",
+    "key_entities": [
+      "1a",
+      "3a",
+      "DCM",
+      "MeCN",
+      "Table 2"
+    ],
+    "expected_evidence_type": "reaction",
+    "source_paper": "9.pdf"
+  }
+]
