@@ -1,0 +1,58 @@
+{
+  "run_id": "run_20260708_144603",
+  "round": 6,
+  "generated_at": "2026-07-08T14:51:38.009162",
+  "summary": {
+    "total": 118,
+    "average_score": 0.8661016949152545,
+    "by_intent": {
+      "alias_resolution": 0.9,
+      "entity_lookup": 0.9130434782608695,
+      "reaction_condition_query": 0.8249999999999998,
+      "property_query": 0.908695652173913,
+      "reaction_comparison": 0.7826086956521737
+    }
+  },
+  "by_intent": {
+    "reaction_comparison": {
+      "total": 23,
+      "successes": 13,
+      "failures": 10,
+      "partials": 0,
+      "avg_score": 0.782608695652174
+    }
+  },
+  "reflection_count": 10,
+  "bootstrapped_examples_count": 15,
+  "candidate_patch_count": 4,
+  "candidate_patches": [
+    {
+      "patch_id": "reaction_comparison_evidence_assessment_v2_1",
+      "skill_name": "reaction_comparison",
+      "patch_type": "prompt_content_update",
+      "target_path": "config/prompts/evidence_assessment_system.yaml",
+      "confidence": 0.85
+    },
+    {
+      "patch_id": "reaction_comparison_evidence_assessment_v2_2",
+      "skill_name": "reaction_comparison",
+      "patch_type": "prompt_content_update",
+      "target_path": "config/prompts/evidence_assessment_system.yaml",
+      "confidence": 0.85
+    },
+    {
+      "patch_id": "reaction_comparison_answer_generation_v2_1",
+      "skill_name": "reaction_comparison",
+      "patch_type": "prompt_content_update",
+      "target_path": "config/prompts/answer_generation_system.yaml",
+      "confidence": 0.7
+    },
+    {
+      "patch_id": "reaction_comparison_answer_generation_v2_2",
+      "skill_name": "reaction_comparison",
+      "patch_type": "prompt_content_update",
+      "target_path": "config/prompts/answer_generation_system.yaml",
+      "confidence": 0.85
+    }
+  ]
+}
