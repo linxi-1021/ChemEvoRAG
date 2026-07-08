@@ -1,9 +1,9 @@
 {
   "summary": {
-    "total": 2,
-    "average_score": 0.5,
+    "total": 5,
+    "average_score": 0.7,
     "by_intent": {
-      "reaction_comparison": 0.5
+      "reaction_comparison": 0.7
     }
   },
   "results": [
@@ -64,6 +64,99 @@
       ],
       "entities_missing": [],
       "judge_reasoning": "The system answer correctly states the higher yield (54%) for the Fe(NO3)3/TEMPO method compared to Sauer's CrO3 oxidation (35–41%), matching all key entities and details from the ground truth.",
+      "score": 1.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q4",
+      "source_paper": "3.pdf",
+      "intent": "reaction_comparison",
+      "question": "In Table 1, which entry gave the higher isolated yield for conversion of E-1a to 2a — entry 1 (conc. = 5.0, 12 h) or entry 9 (conc. = 0.1, 3 h) — and what were the reported yields and E/Z ratios for those entries?",
+      "ground_truth": "Entry 1 gave a slightly higher yield: entry 1 — 98% yield (reported) with E/Z = 80/20; entry 9 — 95% yield with E/Z = 97/3.",
+      "system_answer": "Entry 9 gave the higher isolated yield (95%) compared to entry 1 (98% NMR yield but 0% isolated yield, meaning no product was isolated). For entry 1 (conc. = 5.0, 12 h), the reported NMR yield of 2a was 98% with 0% isolated yield, and the E/Z ratio was 80/20. For entry 9 (conc. = 0.1, 3 h), the reported NMR yield of 2a was 95% with 0% recovery of alcohol (i.e., 95% isolated yield), and the E/Z ratio was 97/3 (evidence: block_3_0013).",
+      "evidence_ids": [
+        "block_3_0013",
+        "block_3_0010",
+        "block_3_0017",
+        "block_3_0009",
+        "block_3_0008",
+        "block_3_0014",
+        "block_3_0015",
+        "block_3_0011"
+      ],
+      "confidence": 0.95,
+      "judge_score": 0.5,
+      "entities_found": [
+        "entry 1",
+        "entry 9",
+        "2a"
+      ],
+      "entities_missing": [
+        "E-1a",
+        "E-2a"
+      ],
+      "judge_reasoning": "The system answer correctly identifies yields and E/Z ratios for entries 1 and 9, but incorrectly states entry 9 has higher isolated yield (95%) while ground truth says entry 1 has slightly higher yield (98% vs 95%), and misses key entities E-1a and E-2a.",
+      "score": 0.5,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q4",
+      "source_paper": "4.pdf",
+      "intent": "reaction_comparison",
+      "question": "Which gave the higher yield in the paper: oxidation of 1-(4-isopropylphenyl)but-3-yn-1-ol (1b) to 3b, or oxidation of 1-(4-methoxyphenyl)but-3-yn-1-ol (1d) to 3d?",
+      "ground_truth": "Oxidation of 1b → 3b gave 91%, whereas 1d → 3d gave 81%; 1b → 3b is higher (91% vs 81%)",
+      "system_answer": "The oxidation of 1-(4-isopropylphenyl)but-3-yn-1-ol (1b) to 3b gave a higher yield than the oxidation of 1-(4-methoxyphenyl)but-3-yn-1-ol (1d) to 3d. At the 1.0 mmol scale, 1b gave 91% yield (evidence: block_4_0044) while 1d gave 81% yield (evidence: block_4_0051). At the 5.0 mmol scale, 1b gave 86% yield (evidence: block_4_0046) while 1d gave 88% yield (evidence: block_4_0053), but the 1.0 mmol scale comparison is more directly comparable under identical conditions.",
+      "evidence_ids": [
+        "block_4_0046",
+        "block_4_0029",
+        "block_4_0044",
+        "block_4_0051",
+        "block_4_0053",
+        "block_4_0065",
+        "block_4_0040",
+        "block_4_0073"
+      ],
+      "confidence": 0.95,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1b",
+        "3b",
+        "1d",
+        "3d"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states that 1b → 3b gave 91% yield and 1d → 3d gave 81% yield, matching the ground truth exactly, and all key entities are present.",
+      "score": 1.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q4",
+      "source_paper": "5.pdf",
+      "intent": "reaction_comparison",
+      "question": "Which gave the higher yield for the oxidation of aldehyde 1a to acid 2a in Table 1: using O2 or using air?",
+      "ground_truth": "O2 gave the higher yield: 94% with O2 vs 88% with air (Table 1, entry for 1a → 2a).",
+      "system_answer": "For the oxidation of aldehyde 1a to acid 2a in Table 1, using O2 gave a higher yield (94%) compared to using air (88%) (evidence: block_5_0008, block_5_0010).",
+      "evidence_ids": [
+        "block_5_0024",
+        "block_5_0027",
+        "block_5_0008",
+        "block_5_0010",
+        "block_5_0020",
+        "block_5_0017",
+        "block_5_0028",
+        "block_5_0016"
+      ],
+      "confidence": 1.0,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1a",
+        "2a",
+        "O2",
+        "air",
+        "Table 1"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states that O2 gives a higher yield (94%) compared to air (88%) for the oxidation of aldehyde 1a to acid 2a in Table 1, matching the ground truth exactly.",
       "score": 1.0,
       "intent_key": "reaction_comparison"
     }
