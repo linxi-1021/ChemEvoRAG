@@ -1,9 +1,9 @@
 {
   "summary": {
-    "total": 1,
-    "average_score": 0.0,
+    "total": 3,
+    "average_score": 0.5666666666666667,
     "by_intent": {
-      "reaction_comparison": 0.0
+      "reaction_comparison": 0.5666666666666667
     }
   },
   "results": [
@@ -35,6 +35,67 @@
       "entities_missing": [],
       "judge_reasoning": "The system answer incorrectly states that the evidence is insufficient, while the ground truth provides specific yield and conversion data from Table 3, so the system answer is factually wrong.",
       "score": 0.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q4",
+      "source_paper": "2.pdf",
+      "intent": "reaction_comparison",
+      "question": "Which gave the higher yield for preparation of propiolaldehyde, the aerobic Fe(NO3)3/TEMPO method reported here or Sauer's CrO3 oxidation, and what yields are reported for each?",
+      "ground_truth": "The aerobic Fe(NO3)3/TEMPO method in this paper gave the higher yield: 54% (30.06 g, purified). Sauer's reported CrO3 oxidation gave 35–41% yield.",
+      "system_answer": "The aerobic Fe(NO3)3/TEMPO method reported here gave a higher yield (54%) for the preparation of propiolaldehyde, compared to Sauer's CrO3 oxidation which afforded 35–41% yield (evidence: block_2_0006, block_2_0013). The abstract also states that the new protocol affords a higher yield than the previous CrO3 method (evidence: block_2_0005).",
+      "evidence_ids": [
+        "block_2_0006",
+        "block_2_0010",
+        "block_2_0007",
+        "block_2_0012",
+        "block_2_0003",
+        "block_2_0013",
+        "block_2_0005",
+        "block_2_0002"
+      ],
+      "confidence": 0.81,
+      "judge_score": 1.0,
+      "entities_found": [
+        "Fe(NO3)3/TEMPO oxidation",
+        "Sauer CrO3 oxidation",
+        "propiolaldehyde yield"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states the higher yield (54%) for the Fe(NO3)3/TEMPO method compared to Sauer's CrO3 oxidation (35–41%), includes the key entities, and matches the ground truth.",
+      "score": 1.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q4",
+      "source_paper": "3.pdf",
+      "intent": "reaction_comparison",
+      "question": "In Table 1, which entry gave the higher isolated yield for conversion of E-1a to 2a — entry 1 (conc. = 5.0, 12 h) or entry 9 (conc. = 0.1, 3 h) — and what were the reported yields and E/Z ratios for those entries?",
+      "ground_truth": "Entry 1 gave a slightly higher yield: entry 1 — 98% yield (reported) with E/Z = 80/20; entry 9 — 95% yield with E/Z = 97/3.",
+      "system_answer": "Entry 9 gave the higher isolated yield (95%) compared to entry 1 (98% NMR yield but 0% isolated yield, with 80/20 E/Z). Entry 1 had a yield of 98% (NMR) with 0% isolated yield and an E/Z ratio of 80/20, while entry 9 had a yield of 95% (NMR) with 0% recovery of alcohol and an E/Z ratio of 97/3 (evidence: block_3_0013).",
+      "evidence_ids": [
+        "block_3_0013",
+        "block_3_0010",
+        "block_3_0017",
+        "block_3_0009",
+        "block_3_0008",
+        "block_3_0014",
+        "block_3_0015",
+        "block_3_0011"
+      ],
+      "confidence": 0.95,
+      "judge_score": 0.7,
+      "entities_found": [
+        "entry 1",
+        "entry 9"
+      ],
+      "entities_missing": [
+        "E-1a",
+        "2a",
+        "E-2a"
+      ],
+      "judge_reasoning": "The system answer correctly compares yields and E/Z ratios for entries 1 and 9, but it introduces extraneous details (0% isolated yield, 0% recovery of alcohol) not present in the ground truth, and misses the key entities E-1a, 2a, and E-2a.",
+      "score": 0.7,
       "intent_key": "reaction_comparison"
     }
   ],

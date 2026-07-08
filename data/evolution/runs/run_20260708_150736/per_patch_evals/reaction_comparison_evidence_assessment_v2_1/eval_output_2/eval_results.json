@@ -1,9 +1,9 @@
 {
   "summary": {
-    "total": 1,
-    "average_score": 0.0,
+    "total": 2,
+    "average_score": 0.5,
     "by_intent": {
-      "reaction_comparison": 0.0
+      "reaction_comparison": 0.5
     }
   },
   "results": [
@@ -35,6 +35,36 @@
       "entities_missing": [],
       "judge_reasoning": "The system answer incorrectly states that the evidence does not contain the requested data from Table 3, while the ground truth provides specific yield and conversion numbers for NaCl and NaNO2, making the system answer factually wrong.",
       "score": 0.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q4",
+      "source_paper": "2.pdf",
+      "intent": "reaction_comparison",
+      "question": "Which gave the higher yield for preparation of propiolaldehyde, the aerobic Fe(NO3)3/TEMPO method reported here or Sauer's CrO3 oxidation, and what yields are reported for each?",
+      "ground_truth": "The aerobic Fe(NO3)3/TEMPO method in this paper gave the higher yield: 54% (30.06 g, purified). Sauer's reported CrO3 oxidation gave 35–41% yield.",
+      "system_answer": "The aerobic Fe(NO3)3/TEMPO method gave a higher yield (54% isolated) for the preparation of propiolaldehyde compared to Sauer's CrO3 oxidation, which afforded 35–41% yield (evidence: block_2_0006, block_2_0013). The abstract also states that the new protocol provides a higher yield than the previous CrO3 method (evidence: block_2_0005).",
+      "evidence_ids": [
+        "block_2_0006",
+        "block_2_0010",
+        "block_2_0007",
+        "block_2_0012",
+        "block_2_0003",
+        "block_2_0013",
+        "block_2_0005",
+        "block_2_0002",
+        "block_2_0008"
+      ],
+      "confidence": 0.81,
+      "judge_score": 1.0,
+      "entities_found": [
+        "Fe(NO3)3/TEMPO oxidation",
+        "Sauer CrO3 oxidation",
+        "propiolaldehyde yield"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states the higher yield (54%) for the Fe(NO3)3/TEMPO method compared to Sauer's CrO3 oxidation (35–41%), includes the isolated yield and mentions propiolaldehyde, matching all key entities and facts from the ground truth.",
+      "score": 1.0,
       "intent_key": "reaction_comparison"
     }
   ],
