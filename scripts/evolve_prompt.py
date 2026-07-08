@@ -260,7 +260,7 @@ Use evolve_prompt.py for the new Reflexion-style pipeline.
                     },
                     skill_filename=f"{p.skill_name}.yaml",
                     workers=args.regression_workers,
-                    regression_limit=len(targeted_qs),
+                    regression_limit=None,  # None = run all targeted questions (no sampling)
                     regression_seed=42,
                     stream_output=True,
                     persist_dir=persist_dir,
