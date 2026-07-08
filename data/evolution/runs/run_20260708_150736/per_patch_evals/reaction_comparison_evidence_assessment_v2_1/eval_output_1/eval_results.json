@@ -1,0 +1,46 @@
+{
+  "summary": {
+    "total": 1,
+    "average_score": 0.0,
+    "by_intent": {
+      "reaction_comparison": 0.0
+    }
+  },
+  "results": [
+    {
+      "id": "q4",
+      "source_paper": "1.pdf",
+      "intent": "reaction_comparison",
+      "question": "Referring to the additive screen (Table 3), which additive gave a higher yield for the aerobic oxidation screening of 3-(n-hexyl)-1,2-octadien-4-ol: NaCl (entry 5) or NaNO2 (entry 1)?",
+      "ground_truth": "NaCl (entry 5) gave the higher yield: NaCl showed 100% conversion and 72% yield, whereas NaNO2 (entry 1) showed 55% conversion and 35% yield.",
+      "system_answer": "The evidence does not contain a Table 3 or any yield data for NaCl (entry 5) or NaNO2 (entry 1) in the aerobic oxidation of 3-(n-hexyl)-1,2-octadien-4-ol. The retrieved evidence discusses NaCl as an additive in other contexts (e.g., for 1-phenylethanol oxidation) but does not provide the requested comparison from Table 3.",
+      "evidence_ids": [
+        "block_1_0018",
+        "block_1_0036",
+        "block_1_0124",
+        "block_1_0127",
+        "block_1_0009",
+        "block_1_0041",
+        "block_1_0121",
+        "block_1_0122"
+      ],
+      "confidence": 0.05,
+      "judge_score": 0.0,
+      "entities_found": [
+        "NaCl",
+        "NaNO2",
+        "3-(n-hexyl)-1,2-octadien-4-ol",
+        "Table 3"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer incorrectly states that the evidence does not contain Table 3 or the requested yield data, while the ground truth explicitly provides the yields from Table 3, so the system answer is completely wrong.",
+      "score": 0.0,
+      "intent_key": "reaction_comparison"
+    }
+  ],
+  "metadata": {
+    "sampling": {
+      "mode": "full"
+    }
+  }
+}
