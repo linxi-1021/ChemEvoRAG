@@ -1,9 +1,9 @@
 {
   "summary": {
-    "total": 2,
-    "average_score": 0.5,
+    "total": 4,
+    "average_score": 0.675,
     "by_intent": {
-      "reaction_comparison": 0.5
+      "reaction_comparison": 0.675
     }
   },
   "results": [
@@ -63,6 +63,68 @@
       ],
       "entities_missing": [],
       "judge_reasoning": "The system answer correctly states the higher yield (54%) for the Fe(NO3)3/TEMPO method compared to Sauer's CrO3 oxidation (35–41%), matching all key entities and facts from the ground truth.",
+      "score": 1.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q4",
+      "source_paper": "3.pdf",
+      "intent": "reaction_comparison",
+      "question": "In Table 1, which entry gave the higher isolated yield for conversion of E-1a to 2a — entry 1 (conc. = 5.0, 12 h) or entry 9 (conc. = 0.1, 3 h) — and what were the reported yields and E/Z ratios for those entries?",
+      "ground_truth": "Entry 1 gave a slightly higher yield: entry 1 — 98% yield (reported) with E/Z = 80/20; entry 9 — 95% yield with E/Z = 97/3.",
+      "system_answer": "Entry 9 gave the higher isolated yield (95%) compared to entry 1 (98% NMR yield, but 0% isolated yield as indicated by the parentheses showing recovery of alcohol). For entry 1 (conc. = 5.0, 12 h), the reported yield of 2a is 98% (NMR) with 0% isolated yield and an E/Z ratio of 80/20. For entry 9 (conc. = 0.1, 3 h), the reported yield is 95% (NMR) with 0% recovery of alcohol and an E/Z ratio of 97/3 (evidence: block_3_0013).",
+      "evidence_ids": [
+        "block_3_0013",
+        "block_3_0010",
+        "block_3_0017",
+        "block_3_0009",
+        "block_3_0008",
+        "block_3_0014",
+        "block_3_0015",
+        "block_3_0011"
+      ],
+      "confidence": 0.95,
+      "judge_score": 0.7,
+      "entities_found": [
+        "entry 1",
+        "entry 9",
+        "2a"
+      ],
+      "entities_missing": [
+        "E-1a",
+        "E-2a"
+      ],
+      "judge_reasoning": "The system answer correctly compares yields and E/Z ratios for entries 1 and 9, but it adds extra details (NMR vs isolated yield, recovery of alcohol) not in the ground truth and misses the key entities E-1a and E-2a.",
+      "score": 0.7,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q4",
+      "source_paper": "4.pdf",
+      "intent": "reaction_comparison",
+      "question": "Which gave the higher yield in the paper: oxidation of 1-(4-isopropylphenyl)but-3-yn-1-ol (1b) to 3b, or oxidation of 1-(4-methoxyphenyl)but-3-yn-1-ol (1d) to 3d?",
+      "ground_truth": "Oxidation of 1b → 3b gave 91%, whereas 1d → 3d gave 81%; 1b → 3b is higher (91% vs 81%)",
+      "system_answer": "The oxidation of 1-(4-isopropylphenyl)but-3-yn-1-ol (1b) to 3b gave a higher yield than the oxidation of 1-(4-methoxyphenyl)but-3-yn-1-ol (1d) to 3d. At the 1.0 mmol scale, 1b gave 91% yield (evidence: block_4_0044) while 1d gave 81% yield (evidence: block_4_0051). At the 5.0 mmol scale, 1b gave 86% yield (evidence: block_4_0046) while 1d gave 88% yield (evidence: block_4_0053), but the 1.0 mmol scale is the more direct comparison under identical conditions.",
+      "evidence_ids": [
+        "block_4_0046",
+        "block_4_0029",
+        "block_4_0044",
+        "block_4_0051",
+        "block_4_0053",
+        "block_4_0065",
+        "block_4_0040",
+        "block_4_0073"
+      ],
+      "confidence": 0.95,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1b",
+        "3b",
+        "1d",
+        "3d"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states that oxidation of 1b to 3b gave a higher yield (91%) than 1d to 3d (81%), matching the ground truth exactly and including all key entities.",
       "score": 1.0,
       "intent_key": "reaction_comparison"
     }
