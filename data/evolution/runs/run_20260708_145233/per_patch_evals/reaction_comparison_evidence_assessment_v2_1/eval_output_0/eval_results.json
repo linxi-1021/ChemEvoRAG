@@ -1,0 +1,106 @@
+{
+  "summary": {
+    "total": 2,
+    "average_score": 1.0,
+    "by_intent": {
+      "reaction_comparison": 1.0
+    }
+  },
+  "results": [
+    {
+      "id": "q4",
+      "source_paper": "1.pdf",
+      "intent": "reaction_comparison",
+      "question": "Referring to the additive screen (Table 3), which additive gave a higher yield for the aerobic oxidation screening of 3-(n-hexyl)-1,2-octadien-4-ol: NaCl (entry 5) or NaNO2 (entry 1)?",
+      "ground_truth": "NaCl (entry 5) gave the higher yield: NaCl showed 100% conversion and 72% yield, whereas NaNO2 (entry 1) showed 55% conversion and 35% yield.",
+      "system_answer": "NaCl (entry 5) gave a higher yield than NaNO2 (entry 1) for the aerobic oxidation of 3-(n-hexyl)-1,2-octadien-4-ol. NaCl achieved 72% NMR yield with 100% conversion in 4 hours, whereas NaNO2 gave only 35% NMR yield with 55% conversion after 36 hours (evidence: block_1_0017).",
+      "evidence_ids": [
+        "block_1_0018",
+        "block_1_0036",
+        "block_1_0124",
+        "block_1_0127",
+        "block_1_0009",
+        "block_1_0041",
+        "block_1_0121",
+        "block_1_0122",
+        "mol_txt_1_0047",
+        "block_1_0017",
+        "block_1_0074"
+      ],
+      "confidence": 1.0,
+      "judge_score": 1.0,
+      "entities_found": [
+        "NaCl",
+        "NaNO2",
+        "3-(n-hexyl)-1,2-octadien-4-ol"
+      ],
+      "entities_missing": [
+        "Table 3"
+      ],
+      "judge_reasoning": "The system answer correctly states all key facts (NaCl higher yield, 100% conversion, 72% yield; NaNO2 55% conversion, 35% yield) and includes the substrate, but omits the mention of 'Table 3' which is a minor detail not affecting factual correctness.",
+      "score": 1.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q4",
+      "source_paper": "2.pdf",
+      "intent": "reaction_comparison",
+      "question": "Which gave the higher yield for preparation of propiolaldehyde, the aerobic Fe(NO3)3/TEMPO method reported here or Sauer's CrO3 oxidation, and what yields are reported for each?",
+      "ground_truth": "The aerobic Fe(NO3)3/TEMPO method in this paper gave the higher yield: 54% (30.06 g, purified). Sauer's reported CrO3 oxidation gave 35–41% yield.",
+      "system_answer": "The aerobic Fe(NO3)3/TEMPO method gave a higher yield (54%) for the preparation of propiolaldehyde, compared to Sauer's CrO3 oxidation which afforded 35–41% yield (evidence: block_2_0006, block_2_0013). The abstract also states that the new protocol affords a higher yield than the previous CrO3 method (evidence: block_2_0005).",
+      "evidence_ids": [
+        "block_2_0006",
+        "block_2_0010",
+        "block_2_0007",
+        "block_2_0012",
+        "block_2_0003",
+        "block_2_0013",
+        "block_2_0005",
+        "block_2_0002"
+      ],
+      "confidence": 0.81,
+      "judge_score": 1.0,
+      "entities_found": [
+        "Fe(NO3)3/TEMPO oxidation",
+        "Sauer CrO3 oxidation",
+        "propiolaldehyde yield"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states the higher yield (54%) for the Fe(NO3)3/TEMPO method compared to Sauer's CrO3 oxidation (35–41%), matching all key entities and facts from the ground truth.",
+      "score": 1.0,
+      "intent_key": "reaction_comparison"
+    }
+  ],
+  "metadata": {
+    "sampling": {
+      "mode": "random",
+      "limit": 23,
+      "seed": 42,
+      "selected_question_ids": [
+        "q4",
+        "q4",
+        "q4",
+        "q4",
+        "q4",
+        "q4",
+        "q4",
+        "q4",
+        "q4",
+        "q4",
+        "q4",
+        "q4",
+        "q4",
+        "q4",
+        "q_batch2_3",
+        "q4",
+        "q4",
+        "q4",
+        "q4",
+        "q4",
+        "q4",
+        "q4",
+        "q4"
+      ]
+    }
+  }
+}
