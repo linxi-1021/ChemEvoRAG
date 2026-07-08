@@ -83,39 +83,51 @@ def build_prompt_update_patches(
     failure_ids: list[str],
     prompt_role: str,
     current_prompt_ref: str,
+    current_prompt_filename: str = "",
 ) -> list[PatchSchema]:
     """Convert prompt candidates into PatchSchema objects.
 
-    Generates:
-      - 1 prompt_content_update patch per candidate (writes new prompt file)
-      - 1 prompt_ref_update patch per candidate (updates skill YAML ref)
+    Generates 1 patch per candidate. The patch uses prompt_ref that is
+    IDENTICAL to the current prompt_ref — it does NOT change the ref.
+    Instead it overwrites the original prompt file's content and bumps
+    the version field.
+
+    This way skill YAML's system_prompt_ref does not need to change.
+    The V2 prompt just replaces the V1 content in the same file.
     """
     patches: list[PatchSchema] = []
 
     for i, cand in enumerate(candidates):
-        new_ref = cand["prompt_ref"]
         content = cand.get("content", "")
+        # Keep the original prompt_ref so skill YAML does not need to change
+        new_ref = current_prompt_ref
+        # Use the ORIGINAL filename so we overwrite in-place
+        if current_prompt_filename:
+            filename = current_prompt_filename
+        else:
+            filename = f"{current_prompt_ref.lower()}.yaml"
 
-        # Content patch
-        content_patch = PatchSchema(
-            patch_id=f"{skill_name}_{new_ref.lower()}_v{i+1}",
+        patch = PatchSchema(
+            patch_id=f"{skill_name}_{prompt_role}_v2_{i+1}",
             patch_type="prompt_content_update",
             skill_name=skill_name,
             skill_version=skill_version,
-            target_file=f"config/prompts/{new_ref.lower()}.yaml",
+            target_file=f"config/prompts/{filename}",
             source_failure_ids=failure_ids,
             primary_failure_type=FailureType.ASSESSMENT_FALSE_NEG,
-            target_path=f"config/prompts/{new_ref.lower()}.yaml",
-            operation=PatchOperation.ADD,
+            target_path=f"config/prompts/{filename}",
+            operation=PatchOperation.UPDATE,
+            current_value={"version": "1.0.0"},
+            proposed_value={"version": "2.0.0", "content": content},
             prompt_artifacts=[PromptArtifact(
-                prompt_ref=new_ref,
+                prompt_ref=new_ref,            # same as V1 — no rename
                 base_prompt_ref=current_prompt_ref,
                 prompt_role=prompt_role,
-                version="2.0",
-                prompt_filename=f"{new_ref.lower()}.yaml",
+                version="2.0.0",
+                prompt_filename=filename,
                 created_from=current_prompt_ref,
                 diff_summary="; ".join(cand.get("change_summary", [])),
-                registry_path=f"config/prompts/{new_ref.lower()}.yaml",
+                registry_path=f"config/prompts/{filename}",
                 content=content,
                 change_summary=cand.get("change_summary", []),
                 preserved_constraints=[],
@@ -127,32 +139,7 @@ def build_prompt_update_patches(
             risk_level="medium",
             confidence=cand.get("confidence", 0.7),
         )
-        patches.append(content_patch)
-
-        # Ref update patch
-        ref_patch = PatchSchema(
-            patch_id=f"{skill_name}_{new_ref.lower()}_ref_v{i+1}",
-            patch_type="prompt_ref_update",
-            skill_name=skill_name,
-            skill_version=skill_version,
-            target_file=f"config/skills/{skill_name}.yaml",
-            source_failure_ids=failure_ids,
-            primary_failure_type=FailureType.ASSESSMENT_FALSE_NEG,
-            target_path=f"strategy.{'assessment' if 'ASSESSMENT' in prompt_role.upper() else 'answer_generation'}",
-            operation=PatchOperation.UPDATE,
-            current_value={"system_prompt_ref": current_prompt_ref},
-            proposed_value={"system_prompt_ref": new_ref},
-            rationale=f"Point to V2 prompt '{new_ref}'",
-            expected_improvement=cand.get("rationale", ""),
-            risk_level="medium",
-            confidence=cand.get("confidence", 0.7),
-            dependencies=[content_patch.patch_id],
-        )
-        # Store the content_patch as an "auxiliary" — the ref_update implicitly
-        # requires it. The validation sandbox reads this field to know which
-        # content patches to co-apply.
-        ref_patch._auxiliary_content_patch = content_patch
-        patches.append(ref_patch)
+        patches.append(patch)
 
     return patches
 
@@ -240,9 +227,8 @@ def _heuristic_generate(
     if not current_prompt:
         return []
 
-    # Derive a V2 ref name
-    role_upper = prompt_role.upper().replace(" ", "_")
-    new_ref = f"{role_upper}_V2"
+    # Keep the original prompt_ref — we overwrite in-place, no rename
+    new_ref = current_prompt_ref
 
     # Collect improvement signals from reflections
     signals: list[str] = []
@@ -376,7 +362,6 @@ directly address the failure patterns described above.
 
 Return ONLY a JSON object:
 {{
-  "prompt_ref": "EVIDENCE_ASSESSMENT_SYSTEM_V2" (or ANSWER_GENERATION_SYSTEM_V2),
   "content": "<the full V2 prompt text>",
   "change_summary": ["change 1", "change 2", ...],
   "rationale": "<why these changes address the failures>",
