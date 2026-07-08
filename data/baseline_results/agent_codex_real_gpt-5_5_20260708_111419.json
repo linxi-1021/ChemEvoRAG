@@ -1,0 +1,79 @@
+{
+  "baseline": "agent_codex_real_gpt-5_5",
+  "timestamp": "20260708_111419",
+  "total_questions": 3,
+  "metadata": {
+    "model": "gpt-5.5",
+    "mode": "codex-cli-paper"
+  },
+  "results": [
+    {
+      "question_id": "q1",
+      "paper_id": "10",
+      "paper_title": "Iron-Catalyzed Aerobic Oxidation of Alcohols: Lower Cost and Improved Selectivity",
+      "intent": "alias_resolution",
+      "question": "In this paper, what compound does the label '1a' refer to (give the molecular formula/name exactly as shown in the article)?",
+      "ground_truth": "n-C11H23CH2OH (1a)",
+      "key_entities": [
+        "1a"
+      ],
+      "system_answer": "1-dodecanol (n-C11H23CH2OH)\nRead paper.md and answer: In this paper, what compound does the label '1a' refer to (give the molecular formula/name exactly as shown in the article)?. Answer concisely with exact values/formulas. Output ONLY the answer.\nexec\n\"C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe\" -Command \"Get-ChildItem -Force; rg -n \\\"\\\\b1a\\\\b|paper.md\\\" paper.md\" in C:\\Users\\ASUS\\AppData\\Local\\Temp\\codex_paper_t6nkrq3v\\work\n2026-07-08T02:44:18.074548Z ERROR codex_core::tools::router: error=Exit code: 1\n目录: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\nMode                 LastWriteTime         Length Name\n----                 -------------         ------ ----\nd-----         2025/3/17     19:10                en\nd-----        2025/10/16      1:30                en-US\nd-----          2024/4/1     15:26                Examples\nd-----         2026/5/30     21:48                Modules\nd-----          2024/4/1     15:26                Schemas\nd-----          2024/4/1     15:26                SessionConfig\nd-----        2025/10/16      1:30                zh-CN\nd-----          2024/4/2      0:31                zh-HANS\n-a----          2024/4/1     15:22          12825 Certificate.format.ps1xml\n-a----          2024/4/1     15:22           4994 Diagnostics.Format.ps1xml\n-a----          2024/4/1     15:22         138013 DotNetTypes.format.ps1xml\n-a----          2024/4/1     15:22          10112 Event.Format.ps1xml\n-a----          2024/4/1     15:22          25306 FileSystem.format.ps1xml\n-a----          2024/4/1     15:22           9164 getevent.types.ps1xml\n-a----          2024/4/1     15:22          91655 Help.format.ps1xml\n-a----          2024/4/1     15:22         138625 HelpV3.format.ps1xml\n-a----        2025/10/13     20:09         454656 powershell.exe\n-a----          2024/4/1     15:22            395 powershell.exe.config\n-a----          2024/4/1     15:22         206468 PowerShellCore.format.ps1xml\n-a----          2024/4/1     15:22           4097",
+      "elapsed_sec": 348.11,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1a"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly identifies the compound labeled '1a' as n-C11H23CH2OH, matching the ground truth exactly."
+    },
+    {
+      "question_id": "q2",
+      "paper_id": "10",
+      "paper_title": "Iron-Catalyzed Aerobic Oxidation of Alcohols: Lower Cost and Improved Selectivity",
+      "intent": "entity_lookup",
+      "question": "What is the structure/name of the product labeled '2a' formed from oxidation of 1a (provide the exact representation used in the paper)?",
+      "ground_truth": "n-C11H23CHO (2a)",
+      "key_entities": [
+        "2a",
+        "n-C11H23CHO"
+      ],
+      "system_answer": "$n-C_{11}H_{23}CHO$\nRead paper.md and answer: What is the structure/name of the product labeled '2a' formed from oxidation of 1a (provide the exact representation used in the paper)?. Answer concisely with exact values/formulas. Output ONLY the answer.\nexec\n\"C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe\" -Command 'Get-Content -Path paper.md' in C:\\Users\\ASUS\\AppData\\Local\\Temp\\codex_paper_c1tlphu_\\work\n2026-07-08T02:49:57.103088Z ERROR codex_core::tools::router: error=Exit code: 1\nGet-Content : Cannot find path 'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\paper.md' because it does not exist.\nAt line:2 char:1\n+ Get-Content -Path paper.md\n+ ~~~~~~~~~~~~~~~~~~~~~~~~~~\n+ CategoryInfo          : ObjectNotFound: (C:\\Windows\\Syst...l\\v1.0\\paper.md:String) [Get-Content], ItemNotFoundEx\nception\n+ FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand\nGet-Content : Cannot find path 'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\paper.md' because it does not exist.\nAt line:2 char:1\n+ Get-Content -Path paper.md\n+ ~~~~~~~~~~~~~~~~~~~~~~~~~~\n+ CategoryInfo          : ObjectNotFound: (C:\\Windows\\Syst...l\\v1.0\\paper.md:String) [Get-Content], ItemNotFoundEx\nception\n+ FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand\nexec\n\"C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe\" -Command 'Get-ChildItem -Force' in C:\\Users\\ASUS\\AppData\\Local\\Temp\\codex_paper_c1tlphu_\\work\nsucceeded in 6000ms:\n目录: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\nMode                 LastWriteTime         Length Name\n----                 -------------         ------ ----\nd-----         2025/3/17     19:10                en\nd-----        2025/10/16      1:30                en-US\nd-----          2024/4/1     15:26                Examples\nd-----         2026/5/30     21:48                Modules\nd-----          2024/4/1     15:26                Schemas\nd-----          2024/4/1     15:26                SessionConfig\nd-----",
+      "elapsed_sec": 1120.45,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "2a",
+        "n-C11H23CHO"
+      ],
+      "judge_reasoning": "The system answer does not provide the correct structure/name of the product labeled '2a' and fails to access the required information from the paper."
+    },
+    {
+      "question_id": "q3",
+      "paper_id": "10",
+      "paper_title": "Iron-Catalyzed Aerobic Oxidation of Alcohols: Lower Cost and Improved Selectivity",
+      "intent": "reaction_condition_query",
+      "question": "For the 100 mmol-scale aerobic oxidation of 1a performed with a slow flow of air, what catalyst loadings, solvent, air flow rate, temperature and reaction time were used?",
+      "ground_truth": "Fe(NO3)3·9H2O 5 mol%, 4‑OH‑TEMPO 10 mol%, NaCl 10 mol%; solvent DCE; air flow 30 mL/min; 25 °C; 15.5 h.",
+      "key_entities": [
+        "1a",
+        "Fe(NO3)3·9H2O",
+        "4-OH-TEMPO",
+        "NaCl",
+        "DCE"
+      ],
+      "system_answer": "Fe(NO3)3·9H2O (5 mol%), 4-OH-TEMPO (10 mol%), NaCl (10 mol%); DCE; air flow 30 mL/min; 25 °C; 15.5 h.\nRead paper.md and answer: For the 100 mmol-scale aerobic oxidation of 1a performed with a slow flow of air, what catalyst loadings, solvent, air flow rate, temperature and reaction time were used?. Answer concisely with exact values/formulas. Output ONLY the answer.\nexec\n\"C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe\" -Command 'git status --short; Get-ChildItem -Recurse -Filter AGENTS.md | Select-Object -ExpandProperty FullName; rg -n \"100 mmol|slow flow|air flow|aerobic oxidation|1a\" paper.md' in C:\\Users\\ASUS\\AppData\\Local\\Temp\\codex_paper_p1zmvch1\\work\n2026-07-08T03:08:41.663704Z ERROR codex_core::tools::router: error=Exit code: 1\nfatal: not a git repository (or any of the parent directories): .git\nrg: paper.md: IO error for operation on paper.md: 系统找不到指定的文件。 (os error 2)\nfatal: not a git repository (or any of the parent directories): .git\nrg: paper.md: IO error for operation on paper.md: 系统找不到指定的文件。 (os error 2)\nexec\n\"C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe\" -Command 'Get-ChildItem -Force; Get-ChildItem -Recurse -Filter paper.md | Select-Object -ExpandProperty FullName' in C:\\Users\\ASUS\\AppData\\Local\\Temp\\codex_paper_p1zmvch1\\work\nsucceeded in 5480ms:\n目录: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\nMode                 LastWriteTime         Length Name\n----                 -------------         ------ ----\nd-----         2025/3/17     19:10                en\nd-----        2025/10/16      1:30                en-US\nd-----          2024/4/1     15:26                Examples\nd-----         2026/5/30     21:48                Modules\nd-----          2024/4/1     15:26                Schemas\nd-----          2024/4/1     15:26                SessionConfig\nd-----        2025/10/16      1:30                zh-CN\nd-----          2024/4/2      0:31                zh-HANS\n-a----          2024/4/1     15:22          12825 Certificate.for",
+      "elapsed_sec": 359.97,
+      "judge_score": 1.0,
+      "entities_found": [
+        "Fe(NO3)3·9H2O",
+        "4-OH-TEMPO",
+        "NaCl",
+        "DCE"
+      ],
+      "entities_missing": [
+        "1a"
+      ],
+      "judge_reasoning": "The system answer contains all key facts from the ground truth except for the substrate '1a', which was not mentioned."
+    }
+  ]
+}
