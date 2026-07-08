@@ -1,9 +1,9 @@
 {
   "summary": {
-    "total": 4,
-    "average_score": 0.675,
+    "total": 7,
+    "average_score": 0.7714285714285715,
     "by_intent": {
-      "reaction_comparison": 0.675
+      "reaction_comparison": 0.7714285714285715
     }
   },
   "results": [
@@ -126,6 +126,100 @@
       ],
       "entities_missing": [],
       "judge_reasoning": "The system answer correctly states that 1b to 3b gave a higher yield (91%) than 1d to 3d (81%), matching the ground truth exactly, and includes all key entities.",
+      "score": 1.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q4",
+      "source_paper": "5.pdf",
+      "intent": "reaction_comparison",
+      "question": "Which gave the higher yield for the oxidation of aldehyde 1a to acid 2a in Table 1: using O2 or using air?",
+      "ground_truth": "O2 gave the higher yield: 94% with O2 vs 88% with air (Table 1, entry for 1a → 2a).",
+      "system_answer": "For the oxidation of aldehyde 1a to acid 2a in Table 1, using O2 gave a higher yield (94%) compared to using air (88%) (evidence: block_5_0010, entry 1).",
+      "evidence_ids": [
+        "block_5_0024",
+        "block_5_0027",
+        "block_5_0008",
+        "block_5_0010",
+        "block_5_0020",
+        "block_5_0017",
+        "block_5_0028",
+        "block_5_0016"
+      ],
+      "confidence": 1.0,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1a",
+        "2a",
+        "O2",
+        "air",
+        "Table 1"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states the yields and comparison between O2 and air for the oxidation of 1a to 2a in Table 1, matching the ground truth exactly.",
+      "score": 1.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q4",
+      "source_paper": "6.pdf",
+      "intent": "reaction_comparison",
+      "question": "Which gave the higher NMR yield in Table 1: the reaction with R = Ph (entry 1) or the reaction with R = Me (entry 8)?",
+      "ground_truth": "R = Me (entry 8) gave the higher NMR yield: 55% (entry 8) vs 52% for R = Ph (entry 1).",
+      "system_answer": "The reaction with R = Me (entry 8) gave a higher NMR yield of 57% compared to the reaction with R = Ph (entry 1) which gave 52% (evidence: block_6_0019).",
+      "evidence_ids": [
+        "block_6_0015",
+        "block_6_0016",
+        "block_6_0019",
+        "block_6_0030",
+        "block_6_0034",
+        "block_6_0037",
+        "block_6_0039",
+        "block_6_0041"
+      ],
+      "confidence": 1.0,
+      "judge_score": 0.7,
+      "entities_found": [
+        "entry 1",
+        "entry 8",
+        "R = Ph",
+        "R = Me"
+      ],
+      "entities_missing": [
+        "Table 1"
+      ],
+      "judge_reasoning": "The system answer correctly identifies that R = Me gives a higher yield than R = Ph, but reports 57% instead of the ground truth 55%, a minor numerical inaccuracy.",
+      "score": 0.7,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q4",
+      "source_paper": "7.pdf",
+      "intent": "reaction_comparison",
+      "question": "Which gave the higher NMR yield of carboxylic acid 2a: using 5 mol% Fe(NO3)3·9H2O alone (Table 1, entry 3) or using FeCl3·6H2O as the metal salt (Table 2, entry 7)? Provide both yields reported in the paper.",
+      "ground_truth": "Fe(NO3)3·9H2O alone (Table 1, entry 3) gave 64% NMR yield of 2a; FeCl3·6H2O (Table 2, entry 7) gave 52% yield — Fe(NO3)3·9H2O gave the higher yield.",
+      "system_answer": "Using 5 mol% Fe(NO3)3·9H2O alone (Table 1, entry 3) gave a 64% NMR yield of carboxylic acid 2a, while using FeCl3·6H2O (Table 2, entry 7) gave a 52% NMR yield of 2a. Therefore, the Fe(NO3)3·9H2O alone gave the higher NMR yield (evidence: block_7_0009, block_7_0012).",
+      "evidence_ids": [
+        "block_7_0010",
+        "block_7_0012",
+        "block_7_0009",
+        "block_7_0004",
+        "block_7_0015",
+        "block_7_0011",
+        "block_7_0030",
+        "block_7_0031"
+      ],
+      "confidence": 1.0,
+      "judge_score": 1.0,
+      "entities_found": [
+        "Fe(NO3)3·9H2O",
+        "FeCl3·6H2O",
+        "2a",
+        "Table 1 entry 3",
+        "Table 2 entry 7"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states both yields and the conclusion, matching the ground truth exactly, and includes all key entities.",
       "score": 1.0,
       "intent_key": "reaction_comparison"
     }

@@ -1,9 +1,9 @@
 {
   "summary": {
-    "total": 6,
-    "average_score": 0.7333333333333334,
+    "total": 7,
+    "average_score": 0.7714285714285715,
     "by_intent": {
-      "reaction_comparison": 0.7333333333333334
+      "reaction_comparison": 0.7714285714285715
     }
   },
   "results": [
@@ -189,6 +189,37 @@
       ],
       "judge_reasoning": "The system answer correctly identifies that R = Me gives a higher yield than R = Ph and mentions both entries, but it states 57% instead of the correct 55% for R = Me, and omits the key entity 'Table 1'.",
       "score": 0.7,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q4",
+      "source_paper": "7.pdf",
+      "intent": "reaction_comparison",
+      "question": "Which gave the higher NMR yield of carboxylic acid 2a: using 5 mol% Fe(NO3)3·9H2O alone (Table 1, entry 3) or using FeCl3·6H2O as the metal salt (Table 2, entry 7)? Provide both yields reported in the paper.",
+      "ground_truth": "Fe(NO3)3·9H2O alone (Table 1, entry 3) gave 64% NMR yield of 2a; FeCl3·6H2O (Table 2, entry 7) gave 52% yield — Fe(NO3)3·9H2O gave the higher yield.",
+      "system_answer": "Using 5 mol% Fe(NO3)3·9H2O alone (Table 1, entry 3) gave a 64% NMR yield of carboxylic acid 2a, while using FeCl3·6H2O (Table 2, entry 7) gave a 52% NMR yield of 2a. Therefore, Fe(NO3)3·9H2O alone gave the higher yield (evidence: block_7_0009, block_7_0012).",
+      "evidence_ids": [
+        "block_7_0010",
+        "block_7_0012",
+        "block_7_0009",
+        "block_7_0004",
+        "block_7_0015",
+        "block_7_0011",
+        "block_7_0030",
+        "block_7_0031"
+      ],
+      "confidence": 1.0,
+      "judge_score": 1.0,
+      "entities_found": [
+        "Fe(NO3)3·9H2O",
+        "FeCl3·6H2O",
+        "2a",
+        "Table 1 entry 3",
+        "Table 2 entry 7"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly reproduces all key facts from the ground truth, including the yields, catalysts, and the conclusion, with only minor wording differences.",
+      "score": 1.0,
       "intent_key": "reaction_comparison"
     }
   ],
