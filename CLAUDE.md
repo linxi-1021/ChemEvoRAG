@@ -6,12 +6,13 @@ Every file addition, modification, or deletion must be committed and pushed to G
 
 - Remote: `git@github.com:linxi-1021/ChemEvoRAG.git`
 
-After making any changes, always:
+After making any changes:
 1. `git add <files>`
 2. `git commit -m "<descriptive message>"`
-3. `git push origin master`
+3. **Before pushing, ask the user for permission.** Do not push unless the user explicitly approves.
+4. `git push origin master`
 
-Do not skip this step. If a push fails, diagnose and fix the issue — do not silently move on.
+Do not skip any step. If a push fails, diagnose and fix the issue — do not silently move on.
 
 ## Change Reporting
 
