@@ -278,13 +278,20 @@ def validate_individual_patch(
             if skill_path.exists():
                 import yaml
                 tmp_skill = yaml.safe_load(skill_path.read_text("utf-8"))
+                # If this is a prompt_ref_update, co-apply the paired content patch
+                # so the V2 prompt file exists AND the skill YAML points to it
+                if patch.patch_type == "prompt_ref_update" and hasattr(patch, "_auxiliary_content_patch"):
+                    content_p = patch._auxiliary_content_patch
+                    content_p.target_file = content_p.target_file or f"config/prompts/{content_p.prompt_artifacts[0].prompt_ref.lower()}.yaml" if content_p.prompt_artifacts else ""
+                    applier.write_prompt_artifacts_to_sandbox(tmp_prompts, content_p)
                 applier.apply_to_memory(tmp_skill, patch)
                 skill_path.write_text(
                     yaml.dump(tmp_skill, allow_unicode=True, default_flow_style=False, sort_keys=False),
                     encoding="utf-8",
                 )
-                # Write prompt artifacts to sandbox (uses original prompts as source)
-                applier.write_prompt_artifacts_to_sandbox(tmp_prompts, patch)
+                # Also write prompt artifacts for prompt_content_update patches
+                if patch.patch_type == "prompt_content_update":
+                    applier.write_prompt_artifacts_to_sandbox(tmp_prompts, patch)
 
             runner = RegressionRunner(project_root)
 

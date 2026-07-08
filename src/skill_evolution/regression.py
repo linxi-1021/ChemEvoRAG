@@ -114,6 +114,15 @@ class RegressionRunner:
 
         actual_output_dir.mkdir(parents=True, exist_ok=True)
 
+        # Reload .env so API_KEY is available in the sub-process / thread context.
+        # eval_questions.py loads dotenv at import time, but router/judge/solver
+        # cache env state at their own import time. Explicit reload here ensures
+        # the sandbox eval process can see API_KEY.
+        _dotenv = self.project_root / ".env"
+        if _dotenv.exists():
+            from dotenv import load_dotenv as _load_dotenv
+            _load_dotenv(_dotenv)
+
         # Ensure scripts/ is importable so we can call eval_questions directly
         scripts_dir = str(self.project_root / "scripts")
         if scripts_dir not in sys.path:

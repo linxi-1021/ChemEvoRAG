@@ -1,0 +1,329 @@
+{
+  "summary": {
+    "total": 10,
+    "average_score": 0.0,
+    "by_intent": {
+      "property_query": 0.0,
+      "reaction_condition_query": 0.0,
+      "reaction_comparison": 0.0,
+      "entity_lookup": 0.0
+    }
+  },
+  "results": [
+    {
+      "id": "q5",
+      "source_paper": "3.pdf",
+      "intent": "property_query",
+      "question": "What isolated yield and E/Z ratio were obtained in the reported 0.1 mmol scale oxidation of E-1a to give E-2a under the optimized conditions (scale‑up/test experiment shown in Scheme 2)?",
+      "ground_truth": "90% isolated yield after 6 h; product E-2a obtained with E/Z = 97/3 (starting E-1a was E/Z = 99/1).",
+      "system_answer": "Retrieved molecule identity evidence: To further show the practicality and efficiency of this catalytic system, a 0.1 mol reaction of E-1a was conducted under the optimized conditions to give E-2a in 90% isolated yield in 6 h without changing the  E / Z ratio (Scheme 2) .",
+      "evidence_ids": [
+        "block_3_0019",
+        "block_3_0009",
+        "block_3_0013",
+        "block_3_0010",
+        "block_3_0008",
+        "block_3_0017",
+        "block_3_0011",
+        "block_3_0014"
+      ],
+      "confidence": 0.718,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "E-1a",
+        "E-2a",
+        "Scheme 2"
+      ],
+      "judge_reasoning": "openai not installed",
+      "score": 0.0,
+      "intent_key": "property_query"
+    },
+    {
+      "id": "q3",
+      "source_paper": "5.pdf",
+      "intent": "reaction_condition_query",
+      "question": "According to Table 1 and its footnote, what solvent and reaction time were used for the aerobic oxidation of aldehyde 1a to 2a?",
+      "ground_truth": "Solvent: DCE (1,2-dichloroethane), temperature: room temperature; reaction time: 12 h under O2 (or 16 h when run with air) per Table 1/footnote.",
+      "system_answer": "Retrieved reaction evidence: | Entry | Alcohol | Product | Yield of $2 (\\%)^b$ |\n| --- | --- | --- | --- |\n| $O_2$ | Air |\n| 1 | $n-C_{12}H_{25}OH (3a)$ | $n-C_{11}H_{23}CO_2H (2a)$ | 100 | 95 |\n| 2 | $n-C_8H_{17}OH (3c)$ | $n-C_7H_{15}CO_2H (2c)$ | 85 | 89 |\n| 3 | $Ph(CH_2)_3OH (3d)$ | $Ph(CH_2)_2CO_2H (2d)$ | 98 | 99 |\n| 4 | $n-C_{16}H_{33}OH (3e)$ | $n-C_{15}H_{31}CO_2H (2e)$ | 99 | 98 |\n| 5 | $MeO_2C(CH_2)_5OH (3f)$ | $MeO_2C(CH_2)_4CO_2H (2f)$ | 94 | 86 |\n| 6 | $AcO(CH_2)_8OH (3g)$ | $AcO(CH_2)_7CO_2H (2g)$ | 93 | 93 |\n| 7 | (3h) | (2h) | 70 | 73 |\n| 8 | (3i) | (2i) | 85 | 81 |\n| 9 | (3k) | B   $_{2}H (2j)$ | 98 | 98 |\n| 10 | $n-C_6H_{13}OCH_2CO_2H (2k)$ | 92 | 84 |\n| 11 |  | COOH (2l) | 80 | 80 |\n| 12 |  | COOH | 60 | 68 |\n| 13 |  | $^{\\text{COOH}}(2n)$ | 95 | 90 |\n| 14 |  | OH (2o) | $66^c$ | $65^d$ |\n| 15 |  | (2p) | $81^{d,e}$ | $70^{d,e}$ |\n| 16 |  | -COOH | $55^{d,e,f}$ | - |\n| 17 | P-methoxy, aldehyde | 4-nitrobenzoic acid | $76^d$ | - | | Table 2. Aerobic Oxidation of Alcohols Using O or Air as Oxidanta | a Reaction was carried out on a 1.0 mmol scale of 3 in 4.0 mL of DCE with a bag of O (12 h) or air (16 h). b Isolated yield. c Reaction time was 36 h. d Reaction time was 48 h. e 20 mol % TEMPO was used. f 20 mol % of | \\mathrm { F e } \\left( \\mathrm { N O } _ { 3 } \\right) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } \\mathrm { O } | was used.",
+      "evidence_ids": [
+        "block_5_0017",
+        "block_5_0010",
+        "block_5_0029",
+        "block_5_0009",
+        "block_5_0012",
+        "block_5_0027",
+        "block_5_0024",
+        "block_5_0028"
+      ],
+      "confidence": 0.958,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "1a",
+        "2a",
+        "DCE",
+        "Table 1"
+      ],
+      "judge_reasoning": "openai not installed",
+      "score": 0.0,
+      "intent_key": "reaction_condition_query"
+    },
+    {
+      "id": "q4",
+      "source_paper": "6.pdf",
+      "intent": "reaction_comparison",
+      "question": "Which gave the higher NMR yield in Table 1: the reaction with R = Ph (entry 1) or the reaction with R = Me (entry 8)?",
+      "ground_truth": "R = Me (entry 8) gave the higher NMR yield: 55% (entry 8) vs 52% for R = Ph (entry 1).",
+      "system_answer": "Retrieved reaction evidence: After some unsuccessful initial attempts to construct the CvC double bond with a high E/Z ratio involving compounds 6–16 (for details, see the ESI†), we observed that the reduction of 10-dodecynol THP ether 20, which was synthesized from 1-decyne 17 in 4 steps, with Li/NH3 (l)8 gave (E)-10-dodecenol THP ether 21 successfully in 98% yield with an E/Z ratio of 96/4 (Scheme 2). After deprotection, the trans dodec-10-enol 16 underwent an aerobic oxidation reaction using Fe  \\left( \\mathrm { N O } _ { 3 } \\right) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } \\mathrm { O } / TEMPO/NaCl9,10 as catalysts to give trans 10-dodecynal 3.",
+      "evidence_ids": [
+        "block_6_0015",
+        "block_6_0016",
+        "block_6_0019",
+        "block_6_0030",
+        "block_6_0034",
+        "block_6_0037",
+        "block_6_0039",
+        "block_6_0041"
+      ],
+      "confidence": 1.0,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "Table 1",
+        "entry 1",
+        "entry 8",
+        "R = Ph",
+        "R = Me"
+      ],
+      "judge_reasoning": "openai not installed",
+      "score": 0.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q3",
+      "source_paper": "8.pdf",
+      "intent": "reaction_condition_query",
+      "question": "Under the standard conditions reported (Table 1 and Experimental), what solvent, temperature, and reaction time were used for the aerobic oxidation of benzyl alcohol 1a to give 2a?",
+      "ground_truth": "The standard reaction used DCE (1,2-dichloroethane) as solvent, at 25 °C, for 48 h (with O2; Fe(NO3)3·9H2O 10 mol%, TEMPO 10–30 mol%, KCl 10 mol%).",
+      "system_answer": "Retrieved reaction evidence: | Entry | Ar | $\\sigma_{para}$ | x (mol%) | Yield of 2 (%)b | Yield of 3 (%)b |\n| --- | --- | --- | --- | --- | --- |\n| 1 | Ph (1a) | 0 | 10 | 57 (2a) | 38c(3a) |\n| 2 | Ph (1a) | 0 | 30 | 73 (2a) | 14c(3a) |\n| 3 | 4-MeOC6H4(1b) | -0.268 | 10 | 38 (2b) | 52 (3b) |\n| 4 | 2-MeOC6H4(1c) | -0.268d | 10 | 21 (2c) | 75 (3c) |\n| 5 | 3-MeOC6H4(1d) | 0.115e | 10 | 49 (2d) | 38 (3d) |\n| 6 | 4-MeC6H4(1e) | -0.17 | 10 | 53 (2e) | 30 (3e) |\n| 7 | 4-PhC6H4(1f) | -0.01 | 10 | 67 (2f) | 33 (3f) |\n| 8 | 4-PhC6H4(1f) | -0.01 | 20 | 93 (2f) | 7c(3f) |\n| 9 | 4-IC6H4(1g) | 0.18 | 10 | 86 (2g) | 11 (3g) |\n| 10 | 4-IC6H4(1g) | 0.18 | 20 | 97 (2g) | 3c(3g) |\n| 11 | 4-BrC6H4(1h) | 0.23 | 10 | 82 (2h) | 16 (3h) |\n| 12 | 4-BrC6H4(1h) | 0.23 | 15 | 84 (2h) | 7 (3h) |\n| 13 | 4-CIC6H4(1i) | 0.23 | 10 | 82 (2i) | 1c(3i) |\n| 14 | 4-OHCC6H4(1j) | 0.22 | 10 | 80 (2j) | 1c,f(3j) |\n| 15 | 4-MeOOCC6H4(1k) | 0.45 | 10 | 91 (2k) | - |\n| 16 | 4-F3CC6H4(1l) | 0.54 | 10 | 89 (2l) | - |\n| 17 | 4-NCC6H4(1m) | 0.66 | 10 | 76 (2m) | - |\n| 18g | 4-O2NC6H4(1n) | 0.78 | 10 | 76 (2n) | - |\n| 19 | 2-O2NC6H4(1o) | 0.78d | 10 | 46 (2o) | 46 (3o) |\n| 20 | 2-O2NC6H4(1o) | 0.78d | 20 | 81 (2o) | 3c(3o) |\n| 21 | 3-O2NC6H4(1p) | 0.71e | 10 | 57 (2p) | 21 (3p) |\n| 22 | 3-O2NC6H4(1p) | 0.71e | 20 | 86 (2p) | 2c(3p) |\n| 23 | 5-Cl-2-O2NC6H3(1q) | 0.37,e0.78d | 10 | 60 (2q) | 22 (3q) |\n| 24 | 5-Cl-2-O2NC6H3(1q) | 0.37,e0.78d | 20 | 87 (2q) | 1c(3q) | | Table 1 Substrate Scope of the Aerobic Oxidation of Benzylic Alcoholsa | a The reaction was carried out on a 1.0 mmol scale of 1 in 4.0 mL of DCE at 25 °C with a bag of | { \\mathrm { ~  ~ O ~ } } _ { 2 } . | . | 2 b Yield of isolated product. | c NMR yield. | d The σpara values are shown since | \\sigma _ { o r t h c } | values were not described in the literature. 12c | _ { \\textrm { \\tiny { c } } } ^ { \\textrm { \\tiny { e } } } \\sigma _ { { \\textrm { m e t } } a } | values. | metaf Obtained with a 6% NMR yield of 1,4-benzenedicarboxylic acid (4j). | g Reaction data obtained from ref. 11d.",
+      "evidence_ids": [
+        "block_8_0013",
+        "block_8_0010",
+        "block_8_0011",
+        "block_8_0009",
+        "block_8_0020",
+        "block_8_0018",
+        "block_8_0027",
+        "block_8_0249"
+      ],
+      "confidence": 0.811,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "1a",
+        "2a",
+        "DCE",
+        "Fe(NO3)3·9H2O",
+        "TEMPO",
+        "KCl"
+      ],
+      "judge_reasoning": "openai not installed",
+      "score": 0.0,
+      "intent_key": "reaction_condition_query"
+    },
+    {
+      "id": "q4",
+      "source_paper": "10.pdf",
+      "intent": "reaction_comparison",
+      "question": "According to Table 2 in the article, which solvent gave the higher yield for conversion of 1a to 2a — dichloromethane (DCM) or toluene — and what yields are reported for each?",
+      "ground_truth": "Toluene gave the higher yield: DCM 65% vs toluene 77% (reported yields in Table 2).",
+      "system_answer": "Retrieved reaction evidence: Then we conducted a screening of other solvents. The reactions in  \\mathrm { C H } _ { 3 } \\mathrm { C N } , THF, EtOAc, and dioxane for 24 h gave only 18−31% NMR yields of aldehyde 2a (Table 2, entries 1− 4). The reaction proceeded smoothly in other chlorinated solvents such as DCM and  \\mathrm { C H C l } _ { 3 } , with ∼30% NMR recovery of alcohol 1a after 24 h (Table  ^ { 2 , } entries 5 and 6). In toluene, the reaction gave a 77% NMR yield of aldehyde 2a along with 14%",
+      "evidence_ids": [
+        "block_10_0017",
+        "block_10_0018",
+        "block_10_0073",
+        "block_10_0023",
+        "block_10_0015",
+        "block_10_0024",
+        "block_10_0025",
+        "block_10_0012"
+      ],
+      "confidence": 0.999,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "DCM",
+        "toluene",
+        "1a",
+        "2a"
+      ],
+      "judge_reasoning": "openai not installed",
+      "score": 0.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q3",
+      "source_paper": "11.pdf",
+      "intent": "reaction_condition_query",
+      "question": "In Table 1, which solvent was used in the reaction of 1-phenyl-2-heptyn-1-ol (1a) that gave 99% yield of 2a with 0% recovery of 1a (Table 1, entry 9)?",
+      "ground_truth": "DCE (1,2-dichloroethane)",
+      "system_answer": "Retrieved reaction evidence: At the beginning of our study, we selected 1-phenyl-2-heptyn-1- ol 1a as the model starting material to optimize the reaction conditions of the copper-catalyzed aerobic oxidation reaction. First, different solvents were screened; when NMP, cyclohexane and MeNO were used as solvents (Table 1, entries 1, 2 and 4), 56–84% of 1a was recovered. Ethers such as dioxane, THF, and Et2O only gave 42–85% yield of 2a (Table 1, entries 3, 5, and 6). DCM and toluene were also examined with 91% and 92% yield",
+      "evidence_ids": [
+        "block_11_0017",
+        "block_11_0023",
+        "block_11_0035",
+        "block_11_0032",
+        "block_11_0024",
+        "block_11_0031",
+        "block_11_0048",
+        "block_11_0026"
+      ],
+      "confidence": 1.0,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "1a",
+        "2a",
+        "DCE"
+      ],
+      "judge_reasoning": "openai not installed",
+      "score": 0.0,
+      "intent_key": "reaction_condition_query"
+    },
+    {
+      "id": "q2",
+      "source_paper": "14.pdf",
+      "intent": "entity_lookup",
+      "question": "What is the structure/product identity of compound 2a formed from 1a under the reported conditions?",
+      "ground_truth": "Compound 2a is γ-butyrolactone (the 5-membered lactone derived from 1,4-butanediol).",
+      "system_answer": "Retrieved molecule identity evidence: Firstly, in order to avoid the issue of regioselectivity, the simple symmetric butan-1,4-diol 1a was chosen to investigate the optimal reaction conditions. Because there are two primary hydroxy groups in butan-1,4-diol (1a), the predicted possible products are 4-hydroxybutanal 5a, butanedial 6a, 3-formylpropanoic acid 7a, and lactone 2a. We initially tried the reaction with 10 mol% each of Fe(NO3)3·9H2O, TEMPO, and KCl in DCE with a balloon of oxygen and γ-butyrolactone 2a was formed exclusively with 59% NMR yield, without observing 5a, 6a or 7a (Table 1, entry 1). Study on the solvent effect led to the observation that the highest NMR yield of 87% for lactone 2a was realized upon using toluene as solvent (Table 1, entry 7). The role of  \\mathsf { F e } ( \\mathsf { N O } _ { 3 } ) _ { 3 } { \\cdot } \\mathsf { 9 H } _ { 2 } \\mathsf { O } and TEM-PO was found to be vital, since no product 2a was formed without both catalysts (Table 1, entries 9 and 10). If the amount of Fe(NO3)3·9H2O or TEMPO was reduced to 5 mol% each, lactone 2a was formed in a similar NMR yield as compared to that in entry 7, albeit with a much longer time of 95 h (Table 1, entries 11 and 12). When the reaction was conducted in the absence of KCl, the NMR yield of 2a was 80% (Table 1, entry 8). The reaction using 4-OH-TEMPO afforded 2a with a much lower yield of 38% (Table 1, entry 13). While the reaction was conducted under air, only 3% yield of 2a was obtained (Table 1, entry 14). The reaction with other Fe(III) salts, such as  \\mathsf { F e C l } _ { 3 } { \\cdot } 6 \\mathsf { H } _ { 2 } 0 , gave no product 2a (Table 1, entry 15). As a result, we defined 10 mol% each of  \\mathsf { F e } ( \\mathsf { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathsf { H } _ { 2 } 0 _ { \\cdot } , TEMPO, and KCl in toluene with  \\scriptstyle { 0 _ { 2 } , } at  2 5 ~ ^ { \\circ } \\mathsf { C } as the optimized conditions.",
+      "evidence_ids": [
+        "block_14_0017",
+        "block_14_0022",
+        "block_14_0018",
+        "block_14_0013",
+        "block_14_0019",
+        "block_14_0021",
+        "block_14_0015",
+        "block_14_0020"
+      ],
+      "confidence": 0.742,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "1a",
+        "2a",
+        "γ-butyrolactone"
+      ],
+      "judge_reasoning": "openai not installed",
+      "score": 0.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q5",
+      "source_paper": "14.pdf",
+      "intent": "property_query",
+      "question": "What isolated yield is reported for the synthesis of NBP (compound 2q) in Scheme 3?",
+      "ground_truth": "NBP (2q) was delivered in 70% isolated yield.",
+      "system_answer": "Retrieved molecule identity evidence: γ-Butyrolactone is a very common unit in natural products and drugs.[6] For example, n-butylphthalide (NBP) is a marketed antiplatelet drug for ischemia-cerebral apoplexy.[7,8b] Canonne’s group used 3-hydroxyisobenzofuran-1(3H)-one and n-butyl magnesium bromide to afford NBP.[8a] Satyanarayana’s group synthesized NBP through palladium-catalyzed acylation of ethyl 2-iodobenzoate and reduction and in situ intramolecular nucleophilic attack with  \\mathsf { C e C l _ { 3 } / N a B H _ { 4 } } . \\mathsf { [ 8 b ] } Utpal Das’ group reported the method to obtain NBP with α-angelica lactone catalyzed oxidation of n-butyl phthalan.[8c] Our strategy on synthesis of NBP started with 2-bromobenzyl alcohol, which was converted to diol 1q via lithiation with n-BuLi and 1,2-addition with valeraldehyde.[9] By applying the standard conditions, NBP 2q was delivered with 70% isolated yield (Scheme 3).",
+      "evidence_ids": [
+        "block_14_0021",
+        "block_14_0022",
+        "block_14_0015",
+        "block_14_0018",
+        "block_14_0019",
+        "block_14_0026",
+        "block_14_0013",
+        "block_14_0017"
+      ],
+      "confidence": 0.785,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "NBP",
+        "2q"
+      ],
+      "judge_reasoning": "openai not installed",
+      "score": 0.0,
+      "intent_key": "property_query"
+    },
+    {
+      "id": "q2",
+      "source_paper": "18.pdf",
+      "intent": "entity_lookup",
+      "question": "What is the name of product 2b as given in the paper (structure/identified name)?",
+      "ground_truth": "4-Phenylbut-3-yn-2-one (2b)",
+      "system_answer": "Retrieved molecule identity evidence: of 4-aryl-3-propargylic alcohols were examined (Table 2). A wide range of functional groups such as F, Cl, Br, I, CO2Et, CN,  \\mathrm { N O } _ { 2 } , NHTs, alkyl, MeO, etc. were smoothly tolerated. When R = m-F, o-F, p-Cl, p-CO2Et, and  p { \\mathrm { - N O } } _ { 2 } , , the substrates were efficiently oxidized to give the corresponding ketones in high yields with 5 mol%  \\hat { \\mathrm { F e } } ( \\mathrm { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } \\mathrm { O } , 3 mol% TEMPO, and 5 mol% NaCl (Table 2, entries 5, 6, 7, 12, and 15); when R = H, p-F, p-Br,  p \\mathrm { - } \\mathrm { I } , p \\mathrm { - } \\mathrm { C N } , p \\mathrm { - } \\mathrm { N } \\mathrm { H T s } , the substrates were oxidized to give the corresponding ketones in full conversion with 5 mol%  \\mathrm { F e ( N O } _ { 3 } ) _ { 3 } { \\cdot } \\mathrm { \\bar { 9 } H _ { 2 } O } , 5 mol% TEMPO, and 10 mol% NaCl (Table 2, entries 2, 4, 9, 11, 14, and 17). Compared to the electron-withdrawing group, when an electron-donating group was present in the aromatic ring, the reaction was obviously slower. When  { \\sf R } = \\mathrm { \\Gamma } _ { O - { \\bf M } e O } , m-MeO, and  p \\mathrm { - } MeO, the catalyst loading should be increased to 10 mol%  \\mathrm { F e } ( \\mathrm { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } \\mathrm { O } . , 10 mol% TEMPO, and 10 mol% NaCl for full conversion of the substrate (Table 2, entries 20, 22, and 23).",
+      "evidence_ids": [
+        "block_18_0012",
+        "block_18_0014",
+        "block_18_0005",
+        "block_18_0008",
+        "block_18_0020",
+        "block_18_0024",
+        "block_18_0015",
+        "block_18_0021"
+      ],
+      "confidence": 0.661,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "2b",
+        "4-phenylbut-3-yn-2-one"
+      ],
+      "judge_reasoning": "openai not installed",
+      "score": 0.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q3",
+      "source_paper": "22.pdf",
+      "intent": "reaction_condition_query",
+      "question": "Under the 'standard conditions' for the aerobic oxidation of alcohol 1a (Table 1 / experimental), what solvent and atmosphere were used?",
+      "ground_truth": "Solvent: DCE (1,2‑dichloroethane); Atmosphere: O2 (O2 balloon); reaction performed at room temperature (rt) for 36 h (as the standard conditions).",
+      "system_answer": "Retrieved reaction evidence: |  | n-C15H31CH2OH1a | Cu(NO3)2·3H2O (10 mol%)TEMPO (10 mol%)KHSO4(10 mol%)DCE, O2(balloon), rt, 36 h | n-C15H31CHO + n-C15H31COOH2a&#x27; 2a | &quot;standard conditions&quot; |  |  |\n| --- | --- | --- | --- | --- | --- | --- |\n| Entry | Cu(NO3)2·3H2O | TEMPO | KHSO4 | Recovery of 1a (%) | NMR yield of 2a&#x27; (%) | NMR yield of 2a (%) |\n| 1 | + | + | + | 0 | 0 | 100 |\n| 2 | - | + | + | ~100 | 0 | 0 |\n| 3 | + | - | + | ~100 | 0 | 0 |\n| 4 | + | + | - | 21 | 61 | 0 | | Table 1 Control experiments for the aerobic oxidation of alcohol 1a a | a The reaction was conducted with 1.0 mmol of 1a in 4 mL of DCE at rt for 36 h with an | \\mathbf { O } _ { 2 } | balloon. The NMR yield and recovery were determined by 1 H NMR analysis using dibromomethane as the internal standard.",
+      "evidence_ids": [
+        "block_22_0030",
+        "block_22_0031",
+        "block_22_0036",
+        "block_22_0037",
+        "block_22_0033",
+        "block_22_0035",
+        "block_22_0032",
+        "block_22_0013"
+      ],
+      "confidence": 0.911,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "alcohol 1a",
+        "standard conditions",
+        "DCE",
+        "O2 balloon"
+      ],
+      "judge_reasoning": "openai not installed",
+      "score": 0.0,
+      "intent_key": "reaction_condition_query"
+    }
+  ],
+  "metadata": {
+    "sampling": {
+      "mode": "random",
+      "limit": 10,
+      "seed": 44,
+      "selected_question_ids": [
+        "q5",
+        "q3",
+        "q4",
+        "q3",
+        "q4",
+        "q3",
+        "q2",
+        "q5",
+        "q2",
+        "q3"
+      ]
+    }
+  }
+}

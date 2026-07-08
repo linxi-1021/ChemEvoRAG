@@ -138,7 +138,7 @@ def build_prompt_update_patches(
             target_file=f"config/skills/{skill_name}.yaml",
             source_failure_ids=failure_ids,
             primary_failure_type=FailureType.ASSESSMENT_FALSE_NEG,
-            target_path=f"strategy.{'assessment' if 'ASSESSMENT' in prompt_role else 'answer_generation'}",
+            target_path=f"strategy.{'assessment' if 'ASSESSMENT' in prompt_role.upper() else 'answer_generation'}",
             operation=PatchOperation.UPDATE,
             current_value={"system_prompt_ref": current_prompt_ref},
             proposed_value={"system_prompt_ref": new_ref},
@@ -148,6 +148,10 @@ def build_prompt_update_patches(
             confidence=cand.get("confidence", 0.7),
             dependencies=[content_patch.patch_id],
         )
+        # Store the content_patch as an "auxiliary" — the ref_update implicitly
+        # requires it. The validation sandbox reads this field to know which
+        # content patches to co-apply.
+        ref_patch._auxiliary_content_patch = content_patch
         patches.append(ref_patch)
 
     return patches
@@ -210,7 +214,11 @@ def _llm_generate(
                 raw = "\n".join(lines)
 
             parsed = json.loads(raw)
+            # Normalize: some LLMs return flat camelCase, others return nested
             if isinstance(parsed, dict) and "content" in parsed:
+                candidates.append(parsed)
+            elif isinstance(parsed, dict) and "prompt_ref" in parsed:
+                # LLM returned the flat dict directly — wrap it
                 candidates.append(parsed)
         except Exception:
             continue

@@ -1,0 +1,331 @@
+{
+  "summary": {
+    "total": 10,
+    "average_score": 0.0,
+    "by_intent": {
+      "reaction_comparison": 0.0,
+      "property_query": 0.0,
+      "reaction_condition_query": 0.0,
+      "entity_lookup": 0.0,
+      "alias_resolution": 0.0
+    }
+  },
+  "results": [
+    {
+      "id": "q4",
+      "source_paper": "1.pdf",
+      "intent": "reaction_comparison",
+      "question": "Referring to the additive screen (Table 3), which additive gave a higher yield for the aerobic oxidation screening of 3-(n-hexyl)-1,2-octadien-4-ol: NaCl (entry 5) or NaNO2 (entry 1)?",
+      "ground_truth": "NaCl (entry 5) gave the higher yield: NaCl showed 100% conversion and 72% yield, whereas NaNO2 (entry 1) showed 55% conversion and 35% yield.",
+      "system_answer": "Retrieved reaction evidence: Traditionally, organic ligands are frequently used, however, in order to have a cheap, readily available, easy to use ligand, we took a different approach by screening inorganic halide ligands since halide anions have been reported to act as ligands for transition metals.[21,28,31] Thus, the cheap and readily available inorganic halides were screened in the first place for such a purpose. With this approach we were excited to observe that 10 mol% of LiCl improved the conversion to 95% within 10 h (entry 4)! Furthermore, 10 mol% of NaCl, KCl, RbCl, or CsCl all converted the slow reaction into a very efficient one, which goes to completion within a couple of hours ! In terms of efficiency the order is CsCl> RbCl > KCl > NaCl > LiCl (entries 4–9). For the obvious reason of cost and availability, we chose the kitchen chemical sodium chloride as the additive: the reaction was completed within 4 h to afford 3-(n-hexyl)-1,2-octadien-4-one in 72% isolated (entry 5); the results of KF, KBr, and KI are poor (entries 9–11).",
+      "evidence_ids": [
+        "block_1_0018",
+        "block_1_0036",
+        "block_1_0124",
+        "block_1_0127",
+        "block_1_0009",
+        "block_1_0041",
+        "block_1_0121",
+        "block_1_0122"
+      ],
+      "confidence": 1.0,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "NaCl",
+        "NaNO2",
+        "3-(n-hexyl)-1,2-octadien-4-ol",
+        "Table 3"
+      ],
+      "judge_reasoning": "Error code: 500 - {'error': {'type': 'internal_server_error', 'code': 500, 'message': 'Internal server error. Please try again later.'}}",
+      "score": 0.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q4",
+      "source_paper": "3.pdf",
+      "intent": "reaction_comparison",
+      "question": "In Table 1, which entry gave the higher isolated yield for conversion of E-1a to 2a — entry 1 (conc. = 5.0, 12 h) or entry 9 (conc. = 0.1, 3 h) — and what were the reported yields and E/Z ratios for those entries?",
+      "ground_truth": "Entry 1 gave a slightly higher yield: entry 1 — 98% yield (reported) with E/Z = 80/20; entry 9 — 95% yield with E/Z = 97/3.",
+      "system_answer": "Retrieved reaction evidence: | entry | conc (mol/L) | time (h) | yield of 2ab (%) | E/Z |\n| --- | --- | --- | --- | --- |\n| 1 | 5.0 | 12 | 98 (0) | 80/20 |\n| 2 | 2.0 | 12 | 98 (0) | 89/11 |\n| 3 | 1.0 | 12 | 68 (32) | 90/10 |\n| 4 | 0.5 | 12 | 33 (51) | 91/9 |\n| 5 | 0.2 | 12 | 22 (59) | 93/7 |\n| 6 | 0.1 | 12 | 22 (66) | 97/3 |\n| 7 | 0.05 | 12 | 19 (72) | 97/3 |\n| 8c | 0.1 | 24 | 44 (50) | 97/3 |\n| 9d | 0.1 | 3 | 95 (0) | 97/3 | | a The reaction was conducted using 10 mmol of E-1a, 5 mol % | \\mathrm { F e } ( \\mathrm { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } \\mathrm { O } . | , 3 mol % TEMPO, and 5 mol % NaCl in DCE; b 1 H NMR yield of 2a with recovery of the alcohol in the parentheses; | ^ { b } \\dot { \\mathrm { ~ H ~ } } | c The reaction was conducted using 1 mmol of E-1a, 5 mol % | \\vec { \\bf \\Phi } \\mathrm { e } ( { \\bf N O } _ { 3 } ) _ { 3 } . | 2. | { \\mathrm { 9 H } } _ { 2 } { \\mathrm { O } } . | , 5 mol % TEMPO, and 10 mol % NaCl in | { \\mathrm { D C E } } ; { } ^ { d } { \\mathrm { T } } | he reaction was conducted using 1 mmol of E-1a, 10 mol | \\mathrm { \\% } \\ \\mathrm { F e } ( \\mathrm { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } \\mathrm { O } . | , 10 mol % TEMPO, and 10 mol % NaCl in DCE.",
+      "evidence_ids": [
+        "block_3_0013",
+        "block_3_0010",
+        "block_3_0017",
+        "block_3_0009",
+        "block_3_0008",
+        "block_3_0014",
+        "block_3_0015",
+        "block_3_0011"
+      ],
+      "confidence": 1.0,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "entry 1",
+        "entry 9",
+        "E-1a",
+        "2a",
+        "E-2a"
+      ],
+      "judge_reasoning": "Error code: 500 - {'error': {'type': 'internal_server_error', 'code': 500, 'message': 'Internal server error. Please try again later.'}}",
+      "score": 0.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q5",
+      "source_paper": "3.pdf",
+      "intent": "property_query",
+      "question": "What isolated yield and E/Z ratio were obtained in the reported 0.1 mmol scale oxidation of E-1a to give E-2a under the optimized conditions (scale‑up/test experiment shown in Scheme 2)?",
+      "ground_truth": "90% isolated yield after 6 h; product E-2a obtained with E/Z = 97/3 (starting E-1a was E/Z = 99/1).",
+      "system_answer": "Retrieved molecule identity evidence: To further show the practicality and efficiency of this catalytic system, a 0.1 mol reaction of E-1a was conducted under the optimized conditions to give E-2a in 90% isolated yield in 6 h without changing the  E / Z ratio (Scheme 2) .",
+      "evidence_ids": [
+        "block_3_0019",
+        "block_3_0009",
+        "block_3_0013",
+        "block_3_0010",
+        "block_3_0008",
+        "block_3_0017",
+        "block_3_0011",
+        "block_3_0014"
+      ],
+      "confidence": 0.718,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "E-1a",
+        "E-2a",
+        "Scheme 2"
+      ],
+      "judge_reasoning": "Error code: 500 - {'error': {'type': 'internal_server_error', 'code': 500, 'message': 'Internal server error. Please try again later.'}}",
+      "score": 0.0,
+      "intent_key": "property_query"
+    },
+    {
+      "id": "q3",
+      "source_paper": "4.pdf",
+      "intent": "reaction_condition_query",
+      "question": "Under the paper's standard conditions for the aerobic oxidation of 1-phenylbut-3-yn-1-ol (1a) to give 2a, what solvent, atmosphere, temperature and reaction time were used?",
+      "ground_truth": "Solvent: DCE (1,2-dichloroethane); Atmosphere: O2 (balloon); Temperature: room temperature (rt); Time: 4 h",
+      "system_answer": "Retrieved reaction evidence: | Entry | Solvent | Time (h) | Yield of 2a (%, NMR) | Recovery of 1a (%, NMR) |\n| --- | --- | --- | --- | --- |\n| 1 | DCE | 4 | 91 | — |\n| 2 | Toluene | 20 | 89 | 4 |\n| 3 | Ethyl acetate | 20 | 52 | 26 |\n| 4 | THF | 20 | 25 | 73 |\n| $5^a$ | DCE | 20 | 76 | 14 |\n| $6^b$ | DCE | 20 | 52 | 36 |",
+      "evidence_ids": [
+        "block_4_0025",
+        "block_4_0023",
+        "block_4_0016",
+        "block_4_0040",
+        "block_4_0029",
+        "block_4_0021",
+        "block_4_0024",
+        "block_4_0019"
+      ],
+      "confidence": 0.828,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "1a",
+        "2a",
+        "DCE",
+        "O2",
+        "rt",
+        "4 h"
+      ],
+      "judge_reasoning": "Error code: 500 - {'error': {'type': 'internal_server_error', 'code': 500, 'message': 'Internal server error. Please try again later.'}}",
+      "score": 0.0,
+      "intent_key": "reaction_condition_query"
+    },
+    {
+      "id": "q4",
+      "source_paper": "6.pdf",
+      "intent": "reaction_comparison",
+      "question": "Which gave the higher NMR yield in Table 1: the reaction with R = Ph (entry 1) or the reaction with R = Me (entry 8)?",
+      "ground_truth": "R = Me (entry 8) gave the higher NMR yield: 55% (entry 8) vs 52% for R = Ph (entry 1).",
+      "system_answer": "Retrieved reaction evidence: After some unsuccessful initial attempts to construct the CvC double bond with a high E/Z ratio involving compounds 6–16 (for details, see the ESI†), we observed that the reduction of 10-dodecynol THP ether 20, which was synthesized from 1-decyne 17 in 4 steps, with Li/NH3 (l)8 gave (E)-10-dodecenol THP ether 21 successfully in 98% yield with an E/Z ratio of 96/4 (Scheme 2). After deprotection, the trans dodec-10-enol 16 underwent an aerobic oxidation reaction using Fe  \\left( \\mathrm { N O } _ { 3 } \\right) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } \\mathrm { O } / TEMPO/NaCl9,10 as catalysts to give trans 10-dodecynal 3.",
+      "evidence_ids": [
+        "block_6_0015",
+        "block_6_0016",
+        "block_6_0019",
+        "block_6_0030",
+        "block_6_0034",
+        "block_6_0037",
+        "block_6_0039",
+        "block_6_0041"
+      ],
+      "confidence": 1.0,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "Table 1",
+        "entry 1",
+        "entry 8",
+        "R = Ph",
+        "R = Me"
+      ],
+      "judge_reasoning": "Error code: 500 - {'error': {'type': 'internal_server_error', 'code': 500, 'message': 'Internal server error. Please try again later.'}}",
+      "score": 0.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q2",
+      "source_paper": "7.pdf",
+      "intent": "entity_lookup",
+      "question": "What is the chemical identity/name given in the paper for Fe(NO3)3·9H2O, the catalyst used in the study?",
+      "ground_truth": "Fe(NO3)3·9H2O — iron(III) nitrate nonahydrate (used as the single-component catalyst)",
+      "system_answer": "Retrieved molecule identity evidence: As one of the most important and fundamental chemicals in industry and laboratory, carboxylic acids could be obtained by oxidation reaction of corresponding alcohols or aldehydes.[1] It is well known that some aldehydes may be oxidized to acids very slowly when exposed to  \\mathsf { a i r } . ^ { [ 2 ] } However, the process of autoxidation was too slow to meet the requirement of industrial manufacture or preparation in academic laboratory. Traditionally, strong and stoichiometric oxidants, such as  \\mathsf { K M n O } _ { 4 } , \\mathsf { \\Lambda } ^ { [ 3 ] } \\mathsf { C r O } _ { 3 } , \\mathsf { \\Lambda } ^ { [ 4 ] } and hypervalent iodine compounds,[5] have to be used to convert aldehydes to carboxylic acids. However, the cost and waste are problematic. As molecular oxygen is a clean and atom economic oxidant, aerobic oxidations of aldehydes to carboxylic acids have been pursued by chemists around the world. Non-metal catalysts were also reported (Scheme 1, eqn  ( 1 ) ! ^ { [ 6 ] } excessive amount of a base was combined with a catalytic amount of NHC to catalyze aerobic oxidation of aldehydes.[6a-6c] I n 2016, a three-component catalyst– ketoABNO,  { \\mathsf { N a N O } } _ { 2 } , and HNO3–was applied to catalyze the aerobic oxidation of aldehydes.[6d] Noble metal photocatalysts or other photosensitive reagents have been used for this transformation with visible light and molecular  \\mathsf { o x y g e n } ^ { [ 7 ] } (Scheme 1, eqn (2)). Another protocol is utilizing noble metal catalysts, such as Ag, Ru, Au, Pt, Re complexes,[8] usually using stoichiometric additives with heating (Scheme 1, eqn (3)). Earth abundant metal catalysts such as Cu, Fe, Co, Ni complexes[9] have also been reported to catalyse this reaction (Scheme 1, eqn (4)): In 2016, Li’s group[9a] reported a catalytic protocol using 5 mol% of [Cu(acac) ]/SIMes with 1 equiv. of NaOH to achieve the aerobic oxidation of aliphatic aldehydes and aromatic aldehydes; the aerobic oxidation of  \\alpha , \\beta -unsaturated aldehydes was reported by Sato in  2 0 1 6 ^ { [ 9 6 ] } using two-component catalyst–1 mol% of  \\mathsf { F e } ( \\mathsf { N O } _ { 3 } ) _ { 3 } { \\cdot } \\mathsf { 9 H } _ { 2 } \\mathsf { O } and 20 mol% of CF COONa–in EtOAc; in 2016, we utilized three-component catalyst–  \\mathsf { F e } ( \\mathsf { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathsf { H } _ { 2 } \\mathsf { O } , TEMPO, and KCl–for the aerobic oxidation of aldehydes to carboxylic acids.[10] Recently, Han and  \\mathsf { W e i } ^ { \\mathsf { [ 9 c ] } } reported two-component–the  \\mathsf { F e / M o } -based heterogeneous catalyst and 10 mol% of  { \\mathsf { N a } } _ { 2 } { \\mathsf { C O } } _ { 3 } . –to catalyze the oxidation reaction at  { 5 0 } ^ { \\circ } { \\mathsf C } . . Thus, development of efficient catalytic simple aerobic oxidation of aldehydes utilizing a cheap catalyst such as an iron catalyst[11] and an atmospheric pressure of oxygen or air at room temperature is still of high interest. In this report, we wish to report our recent observation that  \\mathsf { F e } ( \\mathsf { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathsf { H } _ { 2 } 0 may act as the single- component catalyst to accomplish aerobic oxidation reaction of aldehydes to carboxylic acids even at room temperature (Scheme 1, eqn (5)).",
+      "evidence_ids": [
+        "block_7_0004",
+        "block_7_0010",
+        "block_7_0002",
+        "block_7_0015",
+        "block_7_0011",
+        "block_7_0026",
+        "block_7_0031",
+        "block_7_0009"
+      ],
+      "confidence": 0.842,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "Fe(NO3)3·9H2O",
+        "iron(III) nitrate nonahydrate"
+      ],
+      "judge_reasoning": "Error code: 500 - {'error': {'type': 'internal_server_error', 'code': 500, 'message': 'Internal server error. Please try again later.'}}",
+      "score": 0.0,
+      "intent_key": "entity_lookup"
+    },
+    {
+      "id": "q1",
+      "source_paper": "8.pdf",
+      "intent": "alias_resolution",
+      "question": "In this paper, what compound does the label '2a' refer to?",
+      "ground_truth": "2a refers to benzoic acid (the carboxylic acid product obtained from benzyl alcohol 1a).",
+      "system_answer": "Retrieved molecule identity evidence: With 10 mol% each of  \\mathrm { F e } ( \\mathrm { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } 0 , TEMPO, and KCl in DCE at 25 °C for 48 hours as the standard conditions, the reactions were conducted with various benzylic alcohols. Some useful functional groups were well tolerated. Substituents including both electron-donating and electron-withdrawing groups at the para position were investigated. Benzoic acid (2a) was obtained in 57% yield from benzyl alcohol (1a) under the standard conditions together with a 38% NMR yield of the intermediate benzaldehyde product (Table 1, entry 1). When the loading of TEMPO was increased to 30 mol%, the yield of benzoic acid increased to 73% along with a 14% NMR yield of benzaldehyde (entry 2). For substrates with electron-donating groups, the reactions proceeded more slowly (entry 3). Substrate 1b with a para-methoxy group gave a 38% yield of acid 2b and a 52% yield of the intermediate aldehyde 3b. 2-Methoxybenzyl alcohol (1c) yielded 21% of the acid and 75% of the aldehyde, while 3- methoxybenzyl alcohol (1d) gave a 49% yield of the acid and a 38% yield of the aldehyde, which indicates that steric effects may exist (entry 4 vs entry 5). The larger steric hindrance of the ortho-substituted benzylic alcohol caused a lower yield of the acid compared with the corresponding meta- and para-substituted alcohols. For weak electron-donating groups, 4-methylbenzyl alcohol (1e) yielded 53% of 4-methylbenzoic acid (2e) and 30% of 4-methylbenzaldehyde (3e) (entry 6), which reacted similarly to benzyl alcohol. With 20 mol% of TEMPO, para-phenyl-substituted benzyl alcohol 1f generated a 93% yield of acid 2f and a 7% NMR yield of aldehyde 3f (compare entry 7 with entry 8). Benzylic alcohols with synthetically useful halogen substituents (Cl, Br, I) could be oxidized to the corresponding acids in high yields with 10–20 mol% of TEMPO, and with only minor amounts of the aldehydes being detected (entries 9– 13). Aerobic oxidation of 4-(hydroxymethyl)benzaldehyde (1j) generated an 80% yield of 4-formylbenzoic acid (2j) as well as a 6% NMR yield of 1,4-benzenedicarboxylic acid (4j), whilst the amount of 1,4-benzenedicarboxaldehyde (3j) was 1% according to NMR spectroscopy (entry 14). The reaction mainly stayed at the stage of 4-formylbenzoic acid instead of further oxidation to 1,4-benzenedicarboxylic acid. For substrates with stronger electron-withdrawing groups, 10 mol% of TEMPO was enough to enable the reaction to go to completion. Benzylic alcohols with COOMe,  { \\mathrm { C F } } _ { 3 } , CN and  { \\mathsf { N O } } _ { 2 } ^ { 1 1 { \\mathsf { d } } } substituents were fully converted into the corresponding acids in high yields under the standard conditions (entries 15–18). The results with substrates 1n– p, which have nitro groups at para, ortho, and meta positions, respectively, also showed obvious electronic and steric effects. Under the standard conditions, a 46% yield of the acid and a 46% yield of the aldehyde were obtained from 2- nitrobenzyl alcohol (1o), while a 57% yield of the acid and a 21% yield of the aldehyde were generated from 3-nitrobenzyl alcohol (1p). Using 20 mol% of TEMPO, 1o and 1p were transformed into the corresponding acids in 81% and 86% yields, respectively (entries 20 and 22). 5- Chloro-2-nitrobenzoic acid (2q) was obtained in 87% yield from the corresponding alcohol 1q (Table 1, entry 24). It can be concluded that electron-withdrawing groups promoted the oxidation reaction and steric hindrance hampered the reaction. According to the  \\sigma _ { p a r a } values in the Hammett plot,12 the order of the electronic effect of the substituent is: OMe  < \\mathrm { M e } < \\mathrm { P h } \\sim \\mathrm { H } < \\mathrm { I } < \\mathrm { B r } \\sim \\mathrm { C l } \\sim \\mathrm { C H 0 } < \\mathrm { C O O R } < \\mathrm { C ( O ) M e } < <  \\mathsf C \\mathsf F _ { 3 } < \\mathsf C \\mathsf N < \\mathsf N 0 _ { 2 } . The electronic effects of the reactions are good agreement with the order of the  { \\sigma } _ { p a r a } values.",
+      "evidence_ids": [
+        "block_8_0011",
+        "block_8_0009",
+        "block_8_0013",
+        "block_8_0010",
+        "block_8_0020",
+        "block_8_0249",
+        "block_8_0027",
+        "block_8_0028"
+      ],
+      "confidence": 0.591,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "2a",
+        "1a",
+        "benzoic acid"
+      ],
+      "judge_reasoning": "Error code: 500 - {'error': {'type': 'internal_server_error', 'code': 500, 'message': 'Internal server error. Please try again later.'}}",
+      "score": 0.0,
+      "intent_key": "alias_resolution"
+    },
+    {
+      "id": "q4",
+      "source_paper": "16.pdf",
+      "intent": "reaction_comparison",
+      "question": "Under the standard substrate‑scope conditions (Table 2), which substrate gave the higher isolated yield to product 2a: n‑C8H17OTBS (1aa) or n‑C8H17OTMS (1ab)?",
+      "ground_truth": "n‑C8H17OTBS (1aa) gave the higher yield: 84% vs n‑C8H17OTMS (1ab) 77%.",
+      "system_answer": "Retrieved reaction evidence: |  | RCH2OSi1 | Fe(NO3)3·9H2O (10 mol%)4-OH-TEMPO (10 mol%)KCl (10 mol%)O2(balloon), THF, time, 25 °C | RCO2H2 |  |\n| --- | --- | --- | --- | --- |\n| Entry | Substrate | Product | Time(h) | Yield(%) |\n| 1b | n-C8H17OTBS (1aa) | n-C7H15CO2H (2a) | 21 | 84 |\n| 2 | n-C8H17OTMS (1ab) | (2a) | 24 | 77 |\n| 3 | n-C8H17ODMPS (1ac) | (2a) | 50 | 90 |\n| 4 | n-C8H17OTPS (1ad) | (2a) | 59 | 74 |\n| 5cd | n-C15H31OTBS (1ba) | n-C14H29CO2H (2b) | 45 | 89 |\n| 6 | Ph(CH2)3OTBS (1ca) | Ph(CH2)2CO2H (2c) | 69 | 70 |\n| 7 | Cl(CH2)6OTBS (1da) | Cl(CH2)5CO2H (2d) | 64 | 74 |\n| 8 | Br(CH2)9OTBS (1ea) | Br(CH2)8CO2H (2e) | 71 | 86 |\n| 9d | BnO(CH2)3OTBS (1fa) | BnO(CH2)2CO2H (2f) | 53 | 63 |\n| 10 | n-C6H13O(CH2)2OTBS (1ga) | n-C6H13OCH2CO2H (2g) | 63 | 69 |\n| 11 | TsO(CH2)2OTBS (1ha) | TsOCH2CO2H (2h) | 60 | 57 |\n| 12d | MeO2C(CH2)5OTBS (1ia) | MeO2C(CH2)4CO2H (2i) | 35 | 75 |\n| 13 |  | TMS-≡CO2H(2j) | 65 | 59 |\n| 14 |  |  | 70 | 37 |\n| 15e |  |  | 60 | 76 | | Table 2 The substrate scopea | a Reaction conditions: 1 (1.0 mmol), | \\mathrm { F e } ( \\mathrm { N O } _ { 3 } ) _ { 3 } { \\cdot } 9 \\mathrm { H } _ { 2 } \\mathrm { O } | (10 mol%), 4-OH-TEMPO (10 mol%), KCl (10 mol%), and | { \\dot { \\bf O } } _ { 2 } | (balloon) in THF (1.0 mL) at | 2 5 ~ ^ { \\circ } \\mathbf { C } . ~ ^ { b } | Reaction was conducted using 1aa (5.0 mmol) in THF (1.2 mL) at room temperature. | \\mathrm { \\mathrm { ~ \\bar { ~ } F e ( N O _ { 3 } ) _ { 3 } { \\cdot } 9 H _ { 2 } \\mathrm { \\bar { O } } } } | (20 mol%) was used. d 4-OH-TEMPO (20 mol%) was used. e TEMPO (10 mol%) was used, with THF (0.5 mL) and DCE (0.5 mL) as the solvent.",
+      "evidence_ids": [
+        "block_16_0022",
+        "block_16_0017",
+        "block_16_0018",
+        "block_16_0024",
+        "block_16_0025",
+        "block_16_0019",
+        "block_16_0020",
+        "block_16_0026"
+      ],
+      "confidence": 1.0,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "1aa",
+        "1ab",
+        "2a"
+      ],
+      "judge_reasoning": "Error code: 500 - {'error': {'type': 'internal_server_error', 'code': 500, 'message': 'Internal server error. Please try again later.'}}",
+      "score": 0.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q4",
+      "source_paper": "17.pdf",
+      "intent": "reaction_comparison",
+      "question": "Which reaction gave the higher NMR yield of carboxylic acid 2a under the paper's standard conditions: oxidation of PMB ether 1a or oxidation of the corresponding alcohol 1a'?",
+      "ground_truth": "Oxidation of PMB ether 1a gave the higher yield: 94% NMR (1a → 2a) vs 55% NMR for the corresponding alcohol 1a' → 2a.",
+      "system_answer": "Retrieved reaction evidence: Next, the corresponding alcohol 1 a’ was submitted to the standard conditions.[4n] Surprisingly, the reaction was very slow yielding only 55% NMR yield of acid 2a with 40% NMR yield of aldehyde 3 a even after 11.5 hours. Given that 4-methoxybenzaldehyde 4 a was detected as the product in the current transformation, we reasoned that aldehyde 4 a may accelerate the process of oxidation of alcohol. Indeed, when using 4- methoxybenzaldehyde 4 a (40 mol %) as additive under the standard conditions, the alcohol 1 a’ was transformed to acid within 11.5 hours (Equation (6)). We then monitored the reactions of PMB ether and alcohol (Figure 2a and b) and found that indeed the reaction rate of PMB ether 1 a is much faster than that of alcohol 1a’ under the standard conditions. This phenomenon has been further confirmed by monitoring of alcohol 1 a’ in the presence of 4-methoxybenzaldehyde 4 a (Figure 2c). In addition, it is also surprising that only 5 % of pmethoxybenzaldehyde 4 a was oxidized to the corresponding 4- methoxybenzoic acid 5 a (Figure 2c).",
+      "evidence_ids": [
+        "block_17_0025",
+        "block_17_0012",
+        "block_17_0005",
+        "block_17_0013",
+        "block_17_0035",
+        "block_17_0010",
+        "block_17_0014",
+        "block_17_0039"
+      ],
+      "confidence": 0.997,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "1a",
+        "1a'",
+        "2a"
+      ],
+      "judge_reasoning": "Error code: 500 - {'error': {'type': 'internal_server_error', 'code': 500, 'message': 'Internal server error. Please try again later.'}}",
+      "score": 0.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q2",
+      "source_paper": "19.pdf",
+      "intent": "entity_lookup",
+      "question": "What aryl group (Ar) is used for compound 1a in the paper (how is Ar defined for 1a)?",
+      "ground_truth": "Ar for 1a is 4‑OMe‑C6H4 (p‑methoxyphenyl / p‑methoxybenzyl)",
+      "system_answer": "Retrieved molecule identity evidence: Hydroxyl groups are a class of common, versatile, and reactive functional groups in organic chemistry. In organic synthesis, the hydroxyl groups are usually protected when a targeted reaction is to be carried out selectively with another functionality. p-Methoxybenzyl (PMB) ethers are among the most frequently used protecting groups in organic synthesis.[1] In multi-step synthesis, the alcohols would be protected as PMB ethers, which were deprotected usually with DDQ (2,3-dichloro-5,6- dicyano-1,4-benzoquinone),[2a–k] Li/NH3, [2l] or TFA (trifluoroacetic acid)[2m] first to release the hydroxyl group. Subsequent oxidation with stoichiometric amounts of oxidants such as TPAP/NMO (tetrapropylammonium perruthenate/N-methylmorpholine oxide),[2a] PCC (pyridinium chlorochromate),[2b,c] dimethyl sulfoxide,[2d,e] DMP (Dess-Martin periodinane),[2f–l] BAIB ((diacetoxyiodo)benzene),[2k] and IBX (2-iodylbenzoic acid)[2m] would afford aldehydes or ketones (Scheme 1a). Such synthetic operation lacks the step economy and is environmentally unfriendly. Molecular oxygen, an important component of air, is eco-friendly and inexpensive. Thus, catalytic aerobic oxidation of PMB ethers to carbonyl compounds would be an ideal solution.",
+      "evidence_ids": [
+        "block_19_0004",
+        "block_19_0010",
+        "block_19_0016",
+        "block_19_0011",
+        "block_19_0009",
+        "block_19_0022",
+        "block_19_0006",
+        "block_19_0008"
+      ],
+      "confidence": 0.731,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "1a",
+        "Ar",
+        "4‑OMe‑C6H4"
+      ],
+      "judge_reasoning": "Error code: 500 - {'error': {'type': 'internal_server_error', 'code': 500, 'message': 'Internal server error. Please try again later.'}}",
+      "score": 0.0,
+      "intent_key": "entity_lookup"
+    }
+  ],
+  "metadata": {
+    "sampling": {
+      "mode": "random",
+      "limit": 10,
+      "seed": 42,
+      "selected_question_ids": [
+        "q4",
+        "q4",
+        "q5",
+        "q3",
+        "q4",
+        "q2",
+        "q1",
+        "q4",
+        "q4",
+        "q2"
+      ]
+    }
+  }
+}

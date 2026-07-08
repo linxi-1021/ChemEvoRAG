@@ -254,7 +254,9 @@ class SimpleEvolutionRunner:
             # Bootstrapped examples for this skill
             skill_examples = examples.get(intent, [])
 
-            failure_ids = [f.get("id", f.get("question_id", "")) for f in intent_failures]
+            failure_ids = list(set(
+                f.get("id", f.get("question_id", "")) for f in intent_failures
+            ))
 
             print(f"\n{'─'*50}")
             print(f"Generating candidates for: {intent}")

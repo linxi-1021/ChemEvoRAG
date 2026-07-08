@@ -1,0 +1,126 @@
+{
+  "baseline": "agent_codex_real_gpt_5_codex",
+  "timestamp": "20260708_093059",
+  "total_questions": 5,
+  "metadata": {
+    "model": "gpt-5-codex",
+    "mode": "codex-cli-paper"
+  },
+  "results": [
+    {
+      "question_id": "q1",
+      "paper_id": "10",
+      "paper_title": "Iron-Catalyzed Aerobic Oxidation of Alcohols: Lower Cost and Improved Selectivity",
+      "intent": "alias_resolution",
+      "question": "In this paper, what compound does the label '1a' refer to (give the molecular formula/name exactly as shown in the article)?",
+      "ground_truth": "n-C11H23CH2OH (1a)",
+      "key_entities": [
+        "1a"
+      ],
+      "system_answer": "error: unexpected argument 'this' found\nUsage: codex exec [OPTIONS] [PROMPT]\ncodex exec [OPTIONS] <COMMAND> [ARGS]\nFor more information, try '--help'.",
+      "elapsed_sec": 8.03,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "1a"
+      ],
+      "judge_reasoning": "The system answer is completely unrelated to the ground truth, which is a chemical compound."
+    },
+    {
+      "question_id": "q2",
+      "paper_id": "10",
+      "paper_title": "Iron-Catalyzed Aerobic Oxidation of Alcohols: Lower Cost and Improved Selectivity",
+      "intent": "entity_lookup",
+      "question": "What is the structure/name of the product labeled '2a' formed from oxidation of 1a (provide the exact representation used in the paper)?",
+      "ground_truth": "n-C11H23CHO (2a)",
+      "key_entities": [
+        "2a",
+        "n-C11H23CHO"
+      ],
+      "system_answer": "error: unexpected argument 'is' found\nUsage: codex exec [OPTIONS] [PROMPT]\ncodex exec [OPTIONS] <COMMAND> [ARGS]\nFor more information, try '--help'.",
+      "elapsed_sec": 1.53,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "2a",
+        "n-C11H23CHO"
+      ],
+      "judge_reasoning": "The system answer is an error message unrelated to the ground truth chemical compound."
+    },
+    {
+      "question_id": "q3",
+      "paper_id": "10",
+      "paper_title": "Iron-Catalyzed Aerobic Oxidation of Alcohols: Lower Cost and Improved Selectivity",
+      "intent": "reaction_condition_query",
+      "question": "For the 100 mmol-scale aerobic oxidation of 1a performed with a slow flow of air, what catalyst loadings, solvent, air flow rate, temperature and reaction time were used?",
+      "ground_truth": "Fe(NO3)3·9H2O 5 mol%, 4‑OH‑TEMPO 10 mol%, NaCl 10 mol%; solvent DCE; air flow 30 mL/min; 25 °C; 15.5 h.",
+      "key_entities": [
+        "1a",
+        "Fe(NO3)3·9H2O",
+        "4-OH-TEMPO",
+        "NaCl",
+        "DCE"
+      ],
+      "system_answer": "error: unrecognized subcommand 'the'\ntip: a similar subcommand exists: 'help'\nUsage: codex exec [OPTIONS] [PROMPT]\ncodex exec [OPTIONS] <COMMAND> [ARGS]\nFor more information, try '--help'.",
+      "elapsed_sec": 1.51,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "1a",
+        "Fe(NO3)3·9H2O",
+        "4-OH-TEMPO",
+        "NaCl",
+        "DCE"
+      ],
+      "judge_reasoning": "The system answer is completely unrelated to the ground truth, providing an error message about a command-line tool instead of the chemical reaction details."
+    },
+    {
+      "question_id": "q4",
+      "paper_id": "10",
+      "paper_title": "Iron-Catalyzed Aerobic Oxidation of Alcohols: Lower Cost and Improved Selectivity",
+      "intent": "reaction_comparison",
+      "question": "According to Table 2 in the article, which solvent gave the higher yield for conversion of 1a to 2a — dichloromethane (DCM) or toluene — and what yields are reported for each?",
+      "ground_truth": "Toluene gave the higher yield: DCM 65% vs toluene 77% (reported yields in Table 2).",
+      "key_entities": [
+        "DCM",
+        "toluene",
+        "1a",
+        "2a"
+      ],
+      "system_answer": "error: unexpected argument 'to' found\nUsage: codex exec [OPTIONS] [PROMPT]\ncodex exec [OPTIONS] <COMMAND> [ARGS]\nFor more information, try '--help'.",
+      "elapsed_sec": 1.44,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "DCM",
+        "toluene",
+        "1a",
+        "2a"
+      ],
+      "judge_reasoning": "The system answer is completely unrelated to the ground truth, providing an error message about command usage instead of the expected chemical yield data."
+    },
+    {
+      "question_id": "q5",
+      "paper_id": "10",
+      "paper_title": "Iron-Catalyzed Aerobic Oxidation of Alcohols: Lower Cost and Improved Selectivity",
+      "intent": "property_query",
+      "question": "What yield(s) of aldehyde 2a were obtained from the 100 mmol-scale oxidation of 1a with a slow flow of air (report both NMR and isolated yields as given)?",
+      "ground_truth": "88.5% by NMR and 88% isolated.",
+      "key_entities": [
+        "2a",
+        "1a",
+        "100 mmol scale"
+      ],
+      "system_answer": "error: unexpected argument 'yield(s)' found\nUsage: codex exec [OPTIONS] [PROMPT]\ncodex exec [OPTIONS] <COMMAND> [ARGS]\nFor more information, try '--help'.",
+      "elapsed_sec": 1.34,
+      "judge_score": 0.0,
+      "entities_found": [],
+      "entities_missing": [
+        "2a",
+        "1a",
+        "100 mmol scale"
+      ],
+      "judge_reasoning": "The system answer is an error message unrelated to the ground truth, which discusses NMR and isolated yields."
+    }
+  ]
+}

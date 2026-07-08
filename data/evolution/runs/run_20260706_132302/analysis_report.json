@@ -1,0 +1,36 @@
+{
+  "run_id": "run_20260706_132302",
+  "generated_at": "2026-07-06T13:23:02.843425",
+  "round": 3,
+  "baseline_summary": {
+    "total": 118,
+    "average_score": 0.8661016949152545,
+    "by_intent": {
+      "alias_resolution": 0.9,
+      "entity_lookup": 0.9130434782608695,
+      "reaction_condition_query": 0.8249999999999998,
+      "property_query": 0.908695652173913,
+      "reaction_comparison": 0.7826086956521737
+    }
+  },
+  "by_intent": {
+    "reaction_comparison": {
+      "total": 23,
+      "successes": 13,
+      "failures": 10,
+      "partials": 0,
+      "avg_score": 0.782608695652174
+    }
+  },
+  "total_successes": 13,
+  "total_failures": 10,
+  "total_partials": 0,
+  "evolvable_skills": [
+    {
+      "intent": "reaction_comparison",
+      "failure_count": 10,
+      "avg_failure_score": 0.5,
+      "has_bootstrappable_successes": true
+    }
+  ]
+}

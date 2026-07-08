@@ -1,0 +1,88 @@
+{
+  "run_id": "run_20260706_123539",
+  "generated_at": "2026-07-06T12:35:39.310544",
+  "round": 0,
+  "baseline_summary": {
+    "total": 118,
+    "average_score": 0.8661016949152545,
+    "by_intent": {
+      "alias_resolution": 0.9,
+      "entity_lookup": 0.9130434782608695,
+      "reaction_condition_query": 0.8249999999999998,
+      "property_query": 0.908695652173913,
+      "reaction_comparison": 0.7826086956521737
+    }
+  },
+  "by_intent": {
+    "alias_resolution": {
+      "total": 25,
+      "successes": 19,
+      "failures": 6,
+      "partials": 0,
+      "avg_score": 0.9
+    },
+    "entity_lookup": {
+      "total": 23,
+      "successes": 21,
+      "failures": 2,
+      "partials": 0,
+      "avg_score": 0.9130434782608695
+    },
+    "property_query": {
+      "total": 23,
+      "successes": 18,
+      "failures": 5,
+      "partials": 0,
+      "avg_score": 0.908695652173913
+    },
+    "reaction_comparison": {
+      "total": 23,
+      "successes": 13,
+      "failures": 10,
+      "partials": 0,
+      "avg_score": 0.782608695652174
+    },
+    "reaction_condition_query": {
+      "total": 24,
+      "successes": 15,
+      "failures": 9,
+      "partials": 0,
+      "avg_score": 0.8250000000000001
+    }
+  },
+  "total_successes": 86,
+  "total_failures": 32,
+  "total_partials": 0,
+  "evolvable_skills": [
+    {
+      "intent": "alias_resolution",
+      "failure_count": 6,
+      "avg_failure_score": 0.5833333333333334,
+      "has_bootstrappable_successes": true
+    },
+    {
+      "intent": "entity_lookup",
+      "failure_count": 2,
+      "avg_failure_score": 0.0,
+      "has_bootstrappable_successes": true
+    },
+    {
+      "intent": "property_query",
+      "failure_count": 5,
+      "avg_failure_score": 0.58,
+      "has_bootstrappable_successes": true
+    },
+    {
+      "intent": "reaction_comparison",
+      "failure_count": 10,
+      "avg_failure_score": 0.5,
+      "has_bootstrappable_successes": true
+    },
+    {
+      "intent": "reaction_condition_query",
+      "failure_count": 9,
+      "avg_failure_score": 0.5333333333333333,
+      "has_bootstrappable_successes": true
+    }
+  ]
+}

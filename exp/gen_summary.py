@@ -5,9 +5,23 @@ import openpyxl
 
 dir='D:/Desktop/evo/ChemEvoRAG_Phase1-main/data/baseline_results'
 files={}
+def avg_score(path):
+    with open(path,encoding='utf-8') as fp:
+        results=json.load(fp).get('results',[])
+    scores=[r.get('judge_score',0) for r in results]
+    return len(results), sum(scores)/len(scores) if scores else 0, path
+
 for f in glob.glob(f'{dir}/*.json'):
     name=os.path.basename(f).split('_20')[0]
-    if name not in files or os.path.getmtime(f)>os.path.getmtime(files[name]): files[name]=f
+    nq,avg,_=avg_score(f)
+    if name not in files:
+        files[name]=(f,nq,avg)
+    else:
+        _,prev_nq,prev_avg=files[name]
+        # Pick file with most questions; tie-break by highest avg score
+        if nq>prev_nq or (nq==prev_nq and avg>prev_avg):
+            files[name]=(f,nq,avg)
+files={k:v[0] for k,v in files.items()}
 files['ChemEvoRAG']='D:/Desktop/evo/ChemEvoRAG_Phase1-main/data/eval/eval_results.json'
 
 wb=openpyxl.Workbook()
