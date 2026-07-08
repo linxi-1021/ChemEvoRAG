@@ -1,9 +1,9 @@
 {
   "summary": {
-    "total": 5,
-    "average_score": 0.7,
+    "total": 6,
+    "average_score": 0.7000000000000001,
     "by_intent": {
-      "reaction_comparison": 0.7
+      "reaction_comparison": 0.7000000000000001
     }
   },
   "results": [
@@ -158,6 +158,38 @@
       "entities_missing": [],
       "judge_reasoning": "The system answer correctly states that O2 gives a higher yield (94%) compared to air (88%) for the oxidation of aldehyde 1a to acid 2a in Table 1, matching the ground truth exactly.",
       "score": 1.0,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q4",
+      "source_paper": "6.pdf",
+      "intent": "reaction_comparison",
+      "question": "Which gave the higher NMR yield in Table 1: the reaction with R = Ph (entry 1) or the reaction with R = Me (entry 8)?",
+      "ground_truth": "R = Me (entry 8) gave the higher NMR yield: 55% (entry 8) vs 52% for R = Ph (entry 1).",
+      "system_answer": "The reaction with R = Me (entry 8) gave a higher NMR yield of 57% compared to the reaction with R = Ph (entry 1) which gave 52% (evidence: block_6_0019).",
+      "evidence_ids": [
+        "block_6_0015",
+        "block_6_0016",
+        "block_6_0019",
+        "block_6_0030",
+        "block_6_0034",
+        "block_6_0037",
+        "block_6_0039",
+        "block_6_0041"
+      ],
+      "confidence": 1.0,
+      "judge_score": 0.7,
+      "entities_found": [
+        "entry 1",
+        "entry 8",
+        "R = Ph",
+        "R = Me"
+      ],
+      "entities_missing": [
+        "Table 1"
+      ],
+      "judge_reasoning": "The system answer correctly identifies that R = Me gives a higher yield than R = Ph, and includes the key entities entry 1, entry 8, R = Ph, and R = Me, but the yield for R = Me is stated as 57% instead of the ground truth 55%, and Table 1 is not mentioned.",
+      "score": 0.7,
       "intent_key": "reaction_comparison"
     }
   ],

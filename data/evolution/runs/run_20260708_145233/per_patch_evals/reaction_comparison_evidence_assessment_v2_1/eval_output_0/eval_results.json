@@ -1,9 +1,9 @@
 {
   "summary": {
-    "total": 3,
-    "average_score": 0.9,
+    "total": 4,
+    "average_score": 0.925,
     "by_intent": {
-      "reaction_comparison": 0.9
+      "reaction_comparison": 0.925
     }
   },
   "results": [
@@ -100,6 +100,40 @@
       ],
       "judge_reasoning": "The system answer correctly compares yields and E/Z ratios for entries 1 and 9, but incorrectly states entry 1 had 0% isolated yield (ground truth only mentions reported yield) and omits key entities E-1a and E-2a.",
       "score": 0.7,
+      "intent_key": "reaction_comparison"
+    },
+    {
+      "id": "q4",
+      "source_paper": "4.pdf",
+      "intent": "reaction_comparison",
+      "question": "Which gave the higher yield in the paper: oxidation of 1-(4-isopropylphenyl)but-3-yn-1-ol (1b) to 3b, or oxidation of 1-(4-methoxyphenyl)but-3-yn-1-ol (1d) to 3d?",
+      "ground_truth": "Oxidation of 1b → 3b gave 91%, whereas 1d → 3d gave 81%; 1b → 3b is higher (91% vs 81%)",
+      "system_answer": "The oxidation of 1-(4-isopropylphenyl)but-3-yn-1-ol (1b) to 3b gave a higher yield than the oxidation of 1-(4-methoxyphenyl)but-3-yn-1-ol (1d) to 3d. At the 1.0 mmol scale, 1b gave 91% yield (evidence: block_4_0044) while 1d gave 81% yield (evidence: block_4_0051). At the 5.0 mmol scale, 1b gave 86% yield (evidence: block_4_0046) while 1d gave 88% yield (evidence: block_4_0053), but the 1.0 mmol scale comparison is more directly comparable.",
+      "evidence_ids": [
+        "block_4_0046",
+        "block_4_0029",
+        "block_4_0044",
+        "block_4_0051",
+        "block_4_0053",
+        "block_4_0065",
+        "block_4_0040",
+        "block_4_0073",
+        "block_4_0016",
+        "block_4_0021",
+        "block_4_0023",
+        "block_4_0024"
+      ],
+      "confidence": 0.95,
+      "judge_score": 1.0,
+      "entities_found": [
+        "1b",
+        "3b",
+        "1d",
+        "3d"
+      ],
+      "entities_missing": [],
+      "judge_reasoning": "The system answer correctly states that the oxidation of 1b to 3b gave a higher yield (91%) than 1d to 3d (81%), matching the ground truth exactly.",
+      "score": 1.0,
       "intent_key": "reaction_comparison"
     }
   ],
